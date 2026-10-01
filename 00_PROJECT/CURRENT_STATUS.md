@@ -2,7 +2,7 @@
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-01
-VERIFICATION_BASIS: UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01; day_targets correction (migration 20260930000100); LEC-1/2/3 LAB Quality Console v0 closeout 2026-10-01 (legendstudy-lab claude/quality-console-v0 @ 325a112, PUBLIC; local lint/typecheck/test/build PASS; Production detail runtime NOT_ASSESSABLE); HQP-1 Human Quality persistence design 2026-10-01 (legendstudy-lab claude/quality-console-v0 @ b9cff1b, PUBLIC; design/plan only — no SQL/migration/Production change)
+VERIFICATION_BASIS: HQP-2 APP canonical review @ 38ebbf6ee511bb5ef343af82e90d14acf71b6ffc (documentation only; retention gate unresolved); UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01; day_targets correction (migration 20260930000100); LEC-1/2/3 LAB Quality Console v0 closeout 2026-10-01 (legendstudy-lab claude/quality-console-v0 @ 325a112, PUBLIC; local lint/typecheck/test/build PASS; Production detail runtime NOT_ASSESSABLE); HQP-1 Human Quality persistence design 2026-10-01 (legendstudy-lab claude/quality-console-v0 @ b9cff1b, PUBLIC; design/plan only — no SQL/migration/Production change)
 BOOTSTRAP_INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE; read-only)
 CORRECTION_REFS: APP codex/essay-scaffolding-vnext @ 2ebec8d (PUBLIC); docs main baseline @ 0dce101; LAB proposal @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE)
 CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP canonical evidence @ 2ebec8d
@@ -26,8 +26,8 @@ SUPERSEDED_BY: —
 | Unified Wiki P0 (this repo) | Bootstrap complete; **UWA-2D FREEZE CANDIDATE — UWA-2E pending** |
 | LAB Essay canonical contract mapping | **IMPLEMENTED / LOCAL_VERIFIED** (LEC-1) — LAB consumes deployed `ql-read-v1` as a pure consumer |
 | Quality Console v0 | **IMPLEMENTED / LOCAL_VERIFIED** (LEC-2/3) — operator-only `/ql`; Production detail runtime `NOT_ASSESSABLE` (no legitimate case) |
-| Human Quality persistence design | **DESIGNED / READY_FOR_CANONICAL_DB_REVIEW** (HQP-1) — implementation NOT_STARTED, Production NOT_APPLIED; **next gate: Codex HQP-2 canonical DB/security review** |
-| Human Quality persistence implementation | **NOT_STARTED (plan)** — gated behind HQP-2; required before real-student Pilot |
+| Human Quality persistence design | **DESIGNED / CANONICAL_DB_REVIEW: COMPLETE_WITH_FINDINGS** (HQP-2) — READY_FOR_IMPLEMENTATION=NO; Owner E1/E2 retention decisions required; implementation NOT_STARTED, Production NOT_APPLIED |
+| Human Quality persistence implementation | **NOT_STARTED (plan)** — gated behind Owner E1/E2 resolution and separate HQP-3 authorization; required before real-student Pilot |
 | Payment / commercial launch work | **planned** |
 | Release / store readiness | **planned** |
 
@@ -55,13 +55,13 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 ### LAB
 - **STATUS:** `PRODUCTION_APPLIED` for public landing/auth; Quality Console v0 web surface `IMPLEMENTED / LOCAL_VERIFIED` (not yet Production-verified)
 - **CANONICAL_SOURCE:** `legendstudy-lab` (`claude/quality-console-v0 @ 325a112`); mapping in `docs/architecture/LEC-1_CANONICAL_ESSAY_MAPPING.md`
-- **NEXT_GATE:** Human Quality persistence design (console v0 is read-mostly; no Human Quality verdict stored)
+- **NEXT_GATE:** Owner E1/E2 retention decisions → separately authorized HQP-3 (console remains read-mostly; no persisted Human Quality verdict)
 - **KNOWN_LIMITATION:** a single LAB branch does not represent all current truth — architecture docs and product branches can diverge; verify per task. The LAB `ql-read-v1` TypeScript types are a consumer representation, not DB authority.
 
 ### SHARED BACKEND
 - **STATUS:** `PRODUCTION_APPLIED` / partly `PRODUCTION_VERIFIED` · **PRODUCTION_STATE:** Supabase live
 - **CANONICAL_SOURCE:** migration ledger + live DB, physically in `legendstudy-app/supabase/migrations`
-- **NEXT_GATE:** separately authorized shared-backend support for LAB contract mapping. Separate-tracking debt remains recorded; it is not authorization to repair the ledger or run a broad db push.
+- **NEXT_GATE:** Owner retention decisions and separately authorized HQP-3; existing LAB contract mapping is delivered. Separate-tracking debt remains recorded; it is not authorization to repair the ledger or run a broad db push.
 - **KNOWN_LIMITATION:** physically hosted in APP repo but **jointly owned** — not "APP-only"
 
 ### ESSAY
@@ -74,7 +74,7 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **STATUS:** **Quality Authorization = `PRODUCTION_VERIFIED`** (unchanged); Quality Console = `IMPLEMENTED / LOCAL_VERIFIED` (web consumer)
 - **PRODUCTION_STATE:** authorization enforced in Production (see Quality Authorization block); console reads via browser session → `ql_*` RPCs; no privileged service key, no new server runtime
 - **CANONICAL_SOURCE:** `legendstudy-app` (`quality_operators` + `ql_*` RPCs, migration `20261001000100`) for the contract; `legendstudy-lab` for the web consumer
-- **NEXT_GATE:** Codex HQP-2 canonical DB/security review of the HQP-1 Human Quality persistence design (implementation still gated)
+- **NEXT_GATE:** Owner/ChatGPT review of HQP-2; resolve E1 student erasure retention and E2 reviewer attribution, then separately authorize HQP-3
 - **KNOWN_LIMITATION:** full-answer operator live retrieval = `NOT_ASSESSABLE` (no legitimate evaluation case exists yet); console code implemented ≠ Production-verified with a real case; Human Review **write** UI `NOT_IMPLEMENTED`
 
 ### AUTH
@@ -149,15 +149,16 @@ Dependent items (do not confuse with the above):
 
 - **Quality Console UI:** `IMPLEMENTED / LOCAL_VERIFIED` (operator-only `/ql`; Production detail runtime `NOT_ASSESSABLE`)
 - **LAB Essay canonical adapter:** `IMPLEMENTED / LOCAL_VERIFIED` (`ql-read-v1` consumer; fail-closed on unsupported DTO; no mock Production fallback)
-- **Human Quality persistence:** `PRIMARY_STATUS: DESIGNED` · `LIFECYCLE: ACTIVE` · `IMPLEMENTATION: NOT_STARTED` · `PRODUCTION: NOT_APPLIED` (HQP-1 design; next gate = Codex HQP-2 DB/security review)
+- **Human Quality persistence:** `PRIMARY_STATUS: DESIGNED` · `LIFECYCLE: ACTIVE` · `IMPLEMENTATION: NOT_STARTED` · `PRODUCTION: NOT_APPLIED` (HQP-2 review complete with findings; READY_FOR_IMPLEMENTATION=NO pending Owner E1/E2)
 - **Human Review write UI:** `NOT_IMPLEMENTED`
 
-Shared Backend: **NO CHANGE** by this LAB work (LEC closeout or HQP-1: no new RPC/table/RLS/migration/grant/privileged key/gateway). The Quality list index remains a separate, deferred launch decision. HQP-1 is design/plan only and proposes objects for Codex review — it creates no migration and changes no Production state.
+Shared Backend: **NO CHANGE** by this LAB work (LEC closeout or HQP-1: no new RPC/table/RLS/migration/grant/privileged key/gateway). The Quality list index remains a separate, deferred launch decision. HQP-1/HQP-2 remain design/review only; no migration or Production state changed. HQP-2 keeps ql-read-v1 and existing Essay/Credit facts unchanged.
 
 ## Human Quality
 
 - **PILOT HUMAN REVIEW:** existing Owner review evidence includes accepted/PASS original-answer and strong-answer cases; see [latest Owner update](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/essay-lab-model-bakeoff-l2-b.md). Historical receipts remain historical.
-- **SYSTEMATIC HUMAN QUALITY PERSISTENCE:** `DESIGNED` (HQP-1) but `IMPLEMENTATION: NOT_STARTED` / `PRODUCTION: NOT_APPLIED` — canonical architecture proposed in [`legendstudy-lab` `docs/architecture/HQP-1_HUMAN_QUALITY_PERSISTENCE.md` @ `b9cff1b`](https://github.com/LC3808/legendstudy-lab/blob/b9cff1b48cd4c5c664f07c69eb1ba6cc024c3152/docs/architecture/HQP-1_HUMAN_QUALITY_PERSISTENCE.md), ready for Codex HQP-2 DB/security review. Pilot reviews are not Production review infrastructure; no auto-backfill of Pilot evidence is proposed.
+- **SYSTEMATIC HUMAN QUALITY PERSISTENCE:** `DESIGNED` (HQP-1) but `IMPLEMENTATION: NOT_STARTED` / `PRODUCTION: NOT_APPLIED` — canonical architecture proposed in [`legendstudy-lab` `docs/architecture/HQP-1_HUMAN_QUALITY_PERSISTENCE.md` @ `b9cff1b`](https://github.com/LC3808/legendstudy-lab/blob/b9cff1b48cd4c5c664f07c69eb1ba6cc024c3152/docs/architecture/HQP-1_HUMAN_QUALITY_PERSISTENCE.md), reviewed by [APP HQP-2](https://github.com/LC3808/legendstudy-app/blob/38ebbf6ee511bb5ef343af82e90d14acf71b6ffc/wiki/human-quality-persistence-canonical-review.md): **ACCEPT_HQP1_WITH_NARROW_CORRECTIONS**. **CANONICAL_DB_REVIEW: COMPLETE_WITH_FINDINGS; READY_FOR_IMPLEMENTATION: NO.** Pilot reviews are not Production review infrastructure; no auto-backfill of Pilot evidence is proposed.
+- **OWNER POLICY GATE:** D1–D5 accepted. E1: decide whether student/evaluation erasure also deletes linked Human Quality judgments/findings (recommended) or requires a defined retention/redaction policy. E2: decide whether reviewer deletion may leave unattributed history through nullable auth identity. Copied UUID/hash/notes are not automatically anonymous. No retention policy chosen by this review.
 - **REAL-STUDENT PILOT:** not yet authorized; no real-student Essay traffic.
 - **FULL_ANSWER_LIVE_RETRIEVAL:** NOT_ASSESSABLE is technical coverage, not Human Quality judgment.
 
