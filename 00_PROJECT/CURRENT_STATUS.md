@@ -2,7 +2,7 @@
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-01
-VERIFICATION_BASIS: UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01; day_targets correction (migration 20260930000100)
+VERIFICATION_BASIS: UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01; day_targets correction (migration 20260930000100); LEC-1/2/3 LAB Quality Console v0 closeout 2026-10-01 (legendstudy-lab claude/quality-console-v0 @ 325a112, PUBLIC; local lint/typecheck/test/build PASS; Production detail runtime NOT_ASSESSABLE)
 BOOTSTRAP_INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE; read-only)
 CORRECTION_REFS: APP codex/essay-scaffolding-vnext @ 2ebec8d (PUBLIC); docs main baseline @ 0dce101; LAB proposal @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE)
 CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP canonical evidence @ 2ebec8d
@@ -24,9 +24,9 @@ SUPERSEDED_BY: —
 | Step | State |
 |---|---|
 | Unified Wiki P0 (this repo) | Bootstrap complete; **UWA-2D FREEZE CANDIDATE — UWA-2E pending** |
-| LAB Essay canonical contract mapping | **NOT_STARTED (plan)** |
-| Quality Console v0 | **NOT_STARTED (plan)** |
-| Human Quality persistence design | **NOT_STARTED (plan)** — design required before real-student Pilot |
+| LAB Essay canonical contract mapping | **IMPLEMENTED / LOCAL_VERIFIED** (LEC-1) — LAB consumes deployed `ql-read-v1` as a pure consumer |
+| Quality Console v0 | **IMPLEMENTED / LOCAL_VERIFIED** (LEC-2/3) — operator-only `/ql`; Production detail runtime `NOT_ASSESSABLE` (no legitimate case) |
+| Human Quality persistence design | **NOT_STARTED (plan)** — **next gate**; design required before real-student Pilot |
 | Payment / commercial launch work | **planned** |
 | Release / store readiness | **planned** |
 
@@ -52,10 +52,10 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **KNOWN_LIMITATION:** local `main` is not necessarily the current task branch; verify the task ref.
 
 ### LAB
-- **STATUS:** `PRODUCTION_APPLIED` for public landing/auth; essay/quality web surfaces `NOT_STARTED`
-- **CANONICAL_SOURCE:** `legendstudy-lab`
-- **NEXT_GATE:** LAB Essay canonical contract mapping → Quality Console v0
-- **KNOWN_LIMITATION:** a single LAB branch does not represent all current truth — architecture docs and product branches can diverge; verify per task
+- **STATUS:** `PRODUCTION_APPLIED` for public landing/auth; Quality Console v0 web surface `IMPLEMENTED / LOCAL_VERIFIED` (not yet Production-verified)
+- **CANONICAL_SOURCE:** `legendstudy-lab` (`claude/quality-console-v0 @ 325a112`); mapping in `docs/architecture/LEC-1_CANONICAL_ESSAY_MAPPING.md`
+- **NEXT_GATE:** Human Quality persistence design (console v0 is read-mostly; no Human Quality verdict stored)
+- **KNOWN_LIMITATION:** a single LAB branch does not represent all current truth — architecture docs and product branches can diverge; verify per task. The LAB `ql-read-v1` TypeScript types are a consumer representation, not DB authority.
 
 ### SHARED BACKEND
 - **STATUS:** `PRODUCTION_APPLIED` / partly `PRODUCTION_VERIFIED` · **PRODUCTION_STATE:** Supabase live
@@ -66,15 +66,15 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 ### ESSAY
 - **STATUS:** schema `PRODUCTION_APPLIED`; pre-launch (no real-student traffic)
 - **CANONICAL_SOURCE:** `legendstudy-app` (essay schema/RPC/engine)
-- **NEXT_GATE:** LAB Essay canonical contract mapping
-- **KNOWN_LIMITATION:** LAB mock is **not** the canonical Production Essay consumer
+- **NEXT_GATE:** none blocking from LAB — contract mapping delivered (LEC-1); LAB consumes the deployed `ql-read-v1` RPC surface only
+- **KNOWN_LIMITATION:** LAB mock is **not** the canonical Production Essay consumer; LAB reads no Essay tables directly
 
 ### QUALITY
-- **STATUS:** **Quality Authorization = `PRODUCTION_VERIFIED`**; Quality Console = `NOT_STARTED`
-- **PRODUCTION_STATE:** authorization enforced in Production (see Quality Authorization block)
-- **CANONICAL_SOURCE:** `legendstudy-app` (`quality_operators` + `ql_*` RPCs, migration `20261001000100`)
-- **NEXT_GATE:** Quality Console v0 (web consumer)
-- **KNOWN_LIMITATION:** full-answer operator live retrieval = `NOT_ASSESSABLE` (no legitimate evaluation case exists yet)
+- **STATUS:** **Quality Authorization = `PRODUCTION_VERIFIED`** (unchanged); Quality Console = `IMPLEMENTED / LOCAL_VERIFIED` (web consumer)
+- **PRODUCTION_STATE:** authorization enforced in Production (see Quality Authorization block); console reads via browser session → `ql_*` RPCs; no privileged service key, no new server runtime
+- **CANONICAL_SOURCE:** `legendstudy-app` (`quality_operators` + `ql_*` RPCs, migration `20261001000100`) for the contract; `legendstudy-lab` for the web consumer
+- **NEXT_GATE:** Human Quality persistence design (before real-student Pilot)
+- **KNOWN_LIMITATION:** full-answer operator live retrieval = `NOT_ASSESSABLE` (no legitimate evaluation case exists yet); console code implemented ≠ Production-verified with a real case
 
 ### AUTH
 - **AUTH FOUNDATION:** Supabase Auth is in Production use.
@@ -146,9 +146,11 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 
 Dependent items (do not confuse with the above):
 
-- **Quality Console UI:** `NOT_STARTED`
-- **LAB Essay canonical adapter:** `NOT_STARTED`
-- **Human Quality persistence:** `NOT_STARTED` / design before real-student Pilot
+- **Quality Console UI:** `IMPLEMENTED / LOCAL_VERIFIED` (operator-only `/ql`; Production detail runtime `NOT_ASSESSABLE`)
+- **LAB Essay canonical adapter:** `IMPLEMENTED / LOCAL_VERIFIED` (`ql-read-v1` consumer; fail-closed on unsupported DTO; no mock Production fallback)
+- **Human Quality persistence:** `NOT_STARTED` / design before real-student Pilot — **next gate**
+
+Shared Backend: **NO CHANGE** by this LAB closeout (no new RPC/table/RLS/migration/grant/privileged key/gateway; the Quality list index remains a separate, deferred launch decision).
 
 ## Human Quality
 
