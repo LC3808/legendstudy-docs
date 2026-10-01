@@ -3,7 +3,9 @@ DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-01
 VERIFICATION_BASIS: UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01; day_targets correction (migration 20260930000100)
-INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (local, read-only)
+BOOTSTRAP_INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE; read-only)
+CORRECTION_REFS: APP codex/essay-scaffolding-vnext @ 2ebec8d (PUBLIC); docs main baseline @ 0dce101; LAB proposal @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE)
+CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP canonical evidence @ 2ebec8d
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
@@ -15,13 +17,13 @@ SUPERSEDED_BY: —
 
 ## Launch target
 
-**2026-10-10 — before the 연세대 논술.** This supersedes any earlier "mid-October" style dates in historical docs.
+**2026-10-10 — before the 연세대 논술.** This is a target, not a guaranteed release date. This supersedes any earlier "mid-October" style dates in historical docs.
 
 ## Critical path (fact vs plan)
 
 | Step | State |
 |---|---|
-| Unified Wiki P0 (this repo) | **DONE (fact)** — bootstrapped 2026-10-01 |
+| Unified Wiki P0 (this repo) | Bootstrap complete; **UWA-2D FREEZE CANDIDATE — UWA-2E pending** |
 | LAB Essay canonical contract mapping | **NOT_STARTED (plan)** |
 | Quality Console v0 | **NOT_STARTED (plan)** |
 | Human Quality persistence design | **NOT_STARTED (plan)** — design required before real-student Pilot |
@@ -37,14 +39,17 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 ### PROJECT
 - **STATUS:** active, pre-launch · **PRODUCTION_STATE:** backend live; no real-student Essay traffic yet
 - **CANONICAL_SOURCE:** this hub (`legendstudy-docs`) for project-level state
-- **NEXT_GATE:** LAB Essay canonical contract mapping
+- **NEXT_GATE:** CODEX UWA-2E FINAL READ-ONLY FREEZE CHECK, then Owner acceptance; no product implementation authorized by this closeout.
 - **KNOWN_LIMITATION:** two user surfaces (APP/LAB) + one shared backend must stay reconciled via Daily Closeout
 
 ### APP
-- **STATUS:** `PRODUCTION_APPLIED` (Flutter app in active development) · **PRODUCTION_STATE:** live backend-connected
-- **CANONICAL_SOURCE:** `legendstudy-app`
-- **NEXT_GATE:** store readiness
-- **KNOWN_LIMITATION:** local `main` checkout is **not** necessarily the current task branch — verify (see Stale-checkout warning)
+- **MOBILE APP:** `PRIMARY_STATUS: IMPLEMENTED` · `PRE_RELEASE` (Flutter).
+- **BACKEND USED BY APP:** Production components exist; this is not a mobile store release claim.
+- **OWNER DEVICE ACCEPTANCE:** scope-specific acceptance exists; remaining checks are separate.
+- **STORE RELEASE:** PENDING / NOT YET RELEASED; Store/release gates INCOMPLETE / REMAINING.
+- **CANONICAL_SOURCE:** [APP current status](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/current-status.md); [Owner acceptance](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/auth-native-owner-acceptance.md).
+- **NEXT_GATE:** remaining store/release readiness under Owner-approved scope.
+- **KNOWN_LIMITATION:** local `main` is not necessarily the current task branch; verify the task ref.
 
 ### LAB
 - **STATUS:** `PRODUCTION_APPLIED` for public landing/auth; essay/quality web surfaces `NOT_STARTED`
@@ -55,7 +60,7 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 ### SHARED BACKEND
 - **STATUS:** `PRODUCTION_APPLIED` / partly `PRODUCTION_VERIFIED` · **PRODUCTION_STATE:** Supabase live
 - **CANONICAL_SOURCE:** migration ledger + live DB, physically in `legendstudy-app/supabase/migrations`
-- **NEXT_GATE:** reconcile separate-tracking debt (see Migration ledger)
+- **NEXT_GATE:** separately authorized shared-backend support for LAB contract mapping. Separate-tracking debt remains recorded; it is not authorization to repair the ledger or run a broad db push.
 - **KNOWN_LIMITATION:** physically hosted in APP repo but **jointly owned** — not "APP-only"
 
 ### ESSAY
@@ -72,10 +77,13 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **KNOWN_LIMITATION:** full-answer operator live retrieval = `NOT_ASSESSABLE` (no legitimate evaluation case exists yet)
 
 ### AUTH
-- **STATUS:** `PRODUCTION_VERIFIED` · **PRODUCTION_STATE:** live
-- **CANONICAL_SOURCE:** Supabase Auth + `legendstudy-app` (LSA-1 server authorization design)
-- **NEXT_GATE:** none pending at project level
-- **KNOWN_LIMITATION:** authenticated EXECUTE ≠ authorized data access (authorization is enforced separately)
+- **AUTH FOUNDATION:** Supabase Auth is in Production use.
+- **APP PROVIDER AUTH / LAB BROWSER AUTH / SHARED IDENTITY:** Owner acceptance exists. Kakao shared identity Owner PASS and historical Apple/Google acceptance are recorded; these are Owner-reported evidence, not a new independent provider re-test.
+- **QUALITY AUTHORIZATION:** independently Production verified through actual JWT/PostgREST gateway checks; this closes only the narrow Quality authorization scope.
+- **AUTH LIFECYCLE / OPERATIONS:** remaining gates include account deletion lifecycle/deployment, Apple revoke and credential renewal, Google credential rotation, and remaining Store/release operational gates. Login acceptance does not close them.
+- **CANONICAL_SOURCE:** [Auth acceptance](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/auth-native-owner-acceptance.md) · [Deletion/privacy gates](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/account-deletion-privacy.md) · [Quality verification](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/essay-lab-worker-provider-l2.md).
+- **NEXT_GATE:** separately authorized completion/verification of those remaining gates.
+- **KNOWN_LIMITATION:** Owner acceptance ≠ independent gateway verification; authenticated EXECUTE ≠ authorized data access.
 
 ### CREDIT / BILLING
 - **STATUS:** schema `PRODUCTION_APPLIED` · **PRODUCTION_STATE:** live schema; commercial flow pre-launch
@@ -90,22 +98,25 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **KNOWN_LIMITATION:** must not be presented as existing
 
 ### ADMISSION
-- **STATUS:** `FUTURE` · **PRODUCTION_STATE:** none
-- **CANONICAL_SOURCE:** none yet
-- **NEXT_GATE:** design (post-launch)
-- **KNOWN_LIMITATION:** not implemented
+- **EXISTING FOUNDATION:** `universities` / `student_target_universities` support university identity and personal targets.
+- **FUTURE CAPABILITY:** official admission facts, official conversion formula, LegendStudy analysis/prediction; PHASED + SOURCE_GATED, not implemented.
+- **CANONICAL_SOURCE:** [Academic/Admission roadmap](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/roadmap-academic-analytics.md).
+- **NEXT_GATE:** obtain sources and design under Owner-approved phasing; reuse existing university identity.
+- **KNOWN_LIMITATION:** official formula ≠ LegendStudy analysis model.
 
 ### SCHOOL / B2B
-- **STATUS:** `FUTURE` (e.g. future `school.legendstudy.com` surface) · **PRODUCTION_STATE:** none
-- **CANONICAL_SOURCE:** none yet
-- **NEXT_GATE:** design (post-launch)
-- **KNOWN_LIMITATION:** not implemented; architecture reserves room for it under Shared Backend
+- **EXISTING:** APP personal school preference / NEIS integration.
+- **FUTURE:** verified Organization/School Membership and B2B authorization; `LIFECYCLE: NOT_STARTED`.
+- **CANONICAL_SOURCE:** [School/NEIS](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/day-7-neis.md) · [Product boundaries](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/product-architecture.md).
+- **NEXT_GATE:** separately approved future B2B design.
+- **KNOWN_LIMITATION:** school preference ≠ organization membership; profile school never grants B2B authorization.
 
 ### ANALYTICS
-- **STATUS:** `PARTIAL` · **PRODUCTION_STATE:** product analytics as consumer only
-- **CANONICAL_SOURCE:** consuming repos (never a source of truth itself)
-- **NEXT_GATE:** define canonical event contracts
-- **KNOWN_LIMITATION:** analytics is a **consumer**, never a canonical source
+- **CURRENT:** design/data-readiness work; `PRIMARY_STATUS: DESIGNED`. Canonical domain facts already exist.
+- **FUTURE:** product analytics pipeline/consumers; no full APP/LAB analytics pipeline is claimed live.
+- **CANONICAL_SOURCE:** [Analytics P0](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/analytics-p0-launch-contract.md).
+- **NEXT_GATE:** scoped implementation only after authorization.
+- **KNOWN_LIMITATION:** analytics consumes canonical facts; it does not become their authority.
 
 ### COMMERCIAL
 - **STATUS:** `NOT_STARTED` (payment/commercial) · **PRODUCTION_STATE:** off
@@ -117,7 +128,7 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **STATUS:** pre-launch · **PRODUCTION_STATE:** backend live; store release pending
 - **CANONICAL_SOURCE:** `legendstudy-app` (APP release), `legendstudy-lab` (LAB web)
 - **NEXT_GATE:** release / store readiness for 2026-10-10
-- **KNOWN_LIMITATION:** store readiness work not yet started
+- **KNOWN_LIMITATION:** Store/release gates are INCOMPLETE / REMAINING; existing preparation and acceptance do not establish store release.
 
 ## Quality Authorization (verified detail)
 
@@ -139,8 +150,16 @@ Dependent items (do not confuse with the above):
 - **LAB Essay canonical adapter:** `NOT_STARTED`
 - **Human Quality persistence:** `NOT_STARTED` / design before real-student Pilot
 
+## Human Quality
+
+- **PILOT HUMAN REVIEW:** existing Owner review evidence includes accepted/PASS original-answer and strong-answer cases; see [latest Owner update](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/essay-lab-model-bakeoff-l2-b.md). Historical receipts remain historical.
+- **SYSTEMATIC HUMAN QUALITY PERSISTENCE:** MISSING / NOT_IMPLEMENTED. Pilot reviews are not Production review infrastructure.
+- **REAL-STUDENT PILOT:** not yet authorized; no real-student Essay traffic.
+- **FULL_ANSWER_LIVE_RETRIEVAL:** NOT_ASSESSABLE is technical coverage, not Human Quality judgment.
+
 ## AI / model
 
+- **PROCESSING FOUNDATION:** `essay_ai_processing_runs` and existing processing persistence/tooling exist; [canonical worker/provider record](https://github.com/LC3808/legendstudy-app/blob/2ebec8de5f1b055fc35efc3779d32a48f93e5440/wiki/essay-lab-worker-provider-l2.md).
 - **PRODUCTION_AI:** `OFF`
 - **PRIMARY_MODEL:** `NOT_SELECTED`
 - **GPT:** `PRIMARY_CANDIDATE` only (candidate ≠ selected)
@@ -151,7 +170,7 @@ Dependent items (do not confuse with the above):
 - **Remote tracked migrations:** **22** (as of the verified 2026-10-01 snapshot, after LSA-2C)
 - `20261001000100_quality_read_authorization`: SQL applied · tracking applied · Production authorization **verified** → `APPLIED_TRACKED`
 - `20260930000100_day_targets_least_privilege`: Production ACL effect **verified**, but migration **tracking remains separate/unregistered** → `SEPARATE_TRACKING_DEBT` (SQL effect ≠ ledger state)
-- `provider005`: `PRESERVED_NOT_APPLIED` → `READY_NOT_APPLIED`
+- `provider005`: `PRESERVED_NOT_APPLIED` → `READY_NOT_APPLIED`. This is not an automatic next migration; no unfiltered db push or tracking repair is authorized by this status.
 
 ## Stale-checkout warning
 

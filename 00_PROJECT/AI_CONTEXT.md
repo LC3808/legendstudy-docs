@@ -2,8 +2,10 @@
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-01
-VERIFICATION_BASIS: UWA-1 proposal (legendstudy-lab @ 94d5d61, branch claude/intelligence-school-architecture); UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d, branch codex/essay-scaffolding-vnext); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01
-INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (local, read-only)
+VERIFICATION_BASIS: UWA-1 proposal (legendstudy-lab @ 94d5d61 [LOCAL_ONLY / REMOTE_UNAVAILABLE], branch claude/intelligence-school-architecture); UWA-1B bottom-up audit (legendstudy-app @ 2ebec8d, branch codex/essay-scaffolding-vnext); LSA-2 / LSA-2C Quality authorization closeout 2026-10-01
+BOOTSTRAP_INSPECTED_REFS: legendstudy-app main @ d07671e (local, read-only); legendstudy-lab claude/intelligence-school-architecture @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE; read-only)
+CORRECTION_REFS: APP codex/essay-scaffolding-vnext @ 2ebec8d (PUBLIC); docs main baseline @ 0dce101; LAB proposal @ 94d5d61 (LOCAL_ONLY / REMOTE_UNAVAILABLE)
+CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP canonical evidence @ 2ebec8d
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
@@ -95,7 +97,7 @@ git worktree list
 git rev-list --left-right --count HEAD...origin/<branch>
 ```
 
-Then compare `git rev-parse HEAD` against the **`VERIFIED_COMMITS` / `CANONICAL_REFS`** in the [latest Handoff Snapshot](../90_HISTORY/DAILY/). A checkout is trustworthy only when it matches the canonical ref for your task.
+Then compare `git rev-parse HEAD` against the **`VERIFIED_COMMITS` / `CANONICAL_REFS`** in the [latest Handoff Snapshot](../90_HISTORY/DAILY/). Distinguish a publicly available canonical ref from LOCAL_ONLY / REMOTE_UNAVAILABLE evidence. The latter cannot be retrieved by an external reader; use the public APP UWA-1B evidence linked in the registry. Confirm the task ref and any later commits before treating a checkout as current.
 
 **Do not** run automatic `pull` / `reset` / `rebase` / `merge` to "fix" a mismatch. If the checkout does not match, **STOP** and locate the correct canonical worktree/ref first. See §7 of [`CURRENT_STATUS.md`](CURRENT_STATUS.md#stale-checkout-warning) for a real, generalized stale-checkout case.
 
@@ -105,20 +107,24 @@ LegendStudy+ uses **orthogonal status axes**, never a single ladder. A capabilit
 
 **`PRIMARY_STATUS`** — `DESIGNED` → `IMPLEMENTED` → `LOCAL_VERIFIED` → `PRODUCTION_APPLIED` → `PRODUCTION_VERIFIED`
 
+**`LIFECYCLE`** — `NOT_STARTED` · `ACTIVE` · `BLOCKED` · `DEFERRED` · `SUPERSEDED`. Use this independently of maturity; `PARTIAL` is a qualifier, not a PRIMARY_STATUS value.
+
 **`MIGRATION_STATUS`** — `NOT_APPLICABLE` · `NOT_CREATED` · `READY_NOT_APPLIED` · `SQL_APPLIED_TRACKING_PENDING` · `APPLIED_TRACKED` · `SEPARATE_TRACKING_DEBT`
 
 **`OWNER_ACCEPTANCE`** — `NOT_REQUESTED` · `PENDING` · `ACCEPTED` · `REJECTED` · `NOT_APPLICABLE`
 
 **`HUMAN_QUALITY_STATUS`** — `NOT_APPLICABLE` · `NOT_RUN` · `PARTIAL` · `PASS` · `FAIL` · `NOT_ASSESSABLE`
 
-**Qualifiers** (used only when they add precision) — `PARTIAL` · `BLOCKED` · `DEFERRED` · `SUPERSEDED` · `NOT_RUN` · `NOT_ASSESSABLE`
+**Qualifiers** (used only when they add precision) — `PRE_RELEASE` · `FUTURE` · `PARTIAL` · `BLOCKED` · `DEFERRED` · `SUPERSEDED` · `NOT_RUN` · `NOT_ASSESSABLE`
 
-Do not put every axis on every row — use the axis a statement actually needs.
+Do not put every axis on every row — use the axis a statement actually needs. Human quality describes educational judgment, never authorization or response coverage. Record technical coverage separately, e.g. `FULL_ANSWER_LIVE_RETRIEVAL: NOT_ASSESSABLE`. Evidence must distinguish Owner acceptance from independent technical verification.
 
 ## 8. Current critical path
 
+Immediate next gate: **CODEX UWA-2E FINAL READ-ONLY FREEZE CHECK**, then Owner acceptance. Product steps below remain separately authorized plans.
+
 ```
-Unified Wiki P0  (this repo — DONE 2026-10-01)
+Unified Wiki P0  (bootstrap complete; UWA-2D FREEZE CANDIDATE, UWA-2E pending)
    → LAB Essay canonical contract mapping   (NOT_STARTED)
    → Quality Console v0                      (NOT_STARTED)
    → Human Quality persistence design        (NOT_STARTED — design required before real-student Pilot)
@@ -126,7 +132,7 @@ Unified Wiki P0  (this repo — DONE 2026-10-01)
    → release / store readiness               (planned)
 ```
 
-Current launch target: **2026-10-10 (연세대 논술 전)**. Live facts and the fact/plan split are in [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
+Current launch target: **2026-10-10 (연세대 논술 전)** — a goal, not a guaranteed release date. Live facts and the fact/plan split are in [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 
 ## 9. Rules for external AI
 
@@ -152,15 +158,28 @@ Closeout is a **completion condition**, not optional:
 ```
 WORK
 → VALIDATION
-→ COMMIT
-→ PUSH (when authorized)
-→ UPDATE REPO-LOCAL STATUS/LOG (if required)
-→ UPDATE PROJECT CURRENT_STATUS.md
-→ UPDATE DAILY + HANDOFF SNAPSHOT
+→ UPDATE REQUIRED REPO-LOCAL DOCS
+→ COMMIT SOURCE REPO
+→ PUSH SOURCE REPO (only when authorized)
+→ VERIFY REMOTE AVAILABILITY (otherwise mark LOCAL_ONLY / REMOTE_UNAVAILABLE)
+→ UPDATE legendstudy-docs CURRENT_STATUS.md
+→ UPDATE SAME-DAY DAILY + HANDOFF SNAPSHOT
+→ COMMIT legendstudy-docs
+→ PUSH legendstudy-docs (only when authorized)
+→ VERIFY HEAD == origin/main AND ACTUAL REMOTE REF
 → STOP
 ```
 
 When several people/agents work the same day, each leaves their own repo/domain evidence, and the **last project-level closeout performer that day** reconciles everything into `CURRENT_STATUS.md`. This hub (`legendstudy-docs`) is the **top-level reconciliation layer**; `CURRENT_STATUS.md` is the reconciliation of record.
+
+For concurrent work:
+- Each worker owns only their domain/source evidence. Never mark another worker's unverified work COMPLETE; leave it UNKNOWN / IN_PROGRESS.
+- Before editing the shared Daily, check the latest remote docs ref read-only. If it differs, reconcile through an explicitly authorized workflow; do not automatically pull/reset or overwrite.
+- Preserve same-day entries; append/reconcile rather than replace another worker's evidence. The last project-level closeout performer reconciles **both** Current and Daily from confirmed evidence.
+- Present only remotely available commits as public source links. Label unpushed evidence LOCAL_ONLY / REMOTE_UNAVAILABLE.
+- If push is not authorized, report the local-only state and pending publication; never claim remote sync. In a docs-only task there is no separate source-code commit: commit/push the authorized docs changes once, then verify sync.
+
+The project closeout records only changes, current/Production state, validation, source repo/ref, blockers and next gates. Detailed technical records stay in their source repo. No locking/sync automation is implied.
 
 **Boundary:** `CURRENT_STATUS.md` = *what is true now*; `DAILY/*` = *how we got there*. Do not copy the Daily's execution detail into `CURRENT_STATUS.md`, and do not record a new fact only in `CURRENT_STATUS.md` while omitting the change from the Daily. A reader must understand current state from `CURRENT_STATUS.md` alone, without reading every Daily.
 
