@@ -144,12 +144,12 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 
 ### RELEASE
 - **STATUS:** pre-launch · **PRODUCTION_STATE:** backend live; store release pending. Owner-reported RELEASE-1 public LAB `https://lab.legendstudy.com` at main `16e155b71817ebe371196150a4c21e45510160f2`; main ref confirmed in PREP-1, public deployment not re-certified here. Payment feature remains unmerged.
-- **STORE_LAUNCH_PACKAGE:** COMPLETE. **APPLE_PREP / GOOGLE_PREP:** READY — APP-RELEASE-1 및 일부 Owner 입력 대기. **STORE_SUBMISSION:** BLOCKED.
+- **STORE_LAUNCH_PACKAGE:** COMPLETE. **APPLE_PREP / GOOGLE_PREP:** READY — APP-RELEASE-1 및 일부 Owner 입력 대기. **STORE_SUBMISSION:** BLOCKED. **APP_RELEASE_1_DEPENDENCY:** WAITING.
 - **OWNER BRAND / ENTITY:** APP_NAME `레전드스터디+`; 발음 `레전드스터디 플러스`; 공식 영문 브랜드 **LegendStudy Plus**; PRIMARY_CATEGORY `Education`; COPYRIGHT `2026 주식회사 코파카바나`; DEVELOPER_ENTITY `주식회사 코파카바나`; DEVELOPER_ACCOUNT_TYPE `ORGANIZATION`. 새 문서의 공식 영문 브랜드는 LegendStudy Plus로 표기한다.
 - **ACCOUNT READINESS:** DUNS `VERIFIED / COMPLETE`; NEW_DEVELOPER_ACCOUNT_REQUIRED `NO`; NEW_DUNS_REQUIRED `NO`; GOOGLE_PERSONAL_ACCOUNT_12_TESTERS_14_DAYS `NOT_APPLICABLE`. 신규 D-U-N-S, 신규 Organization 계정, 개인계정12명×14일 Closed Testing은 critical path에서 제외.
 - **CRITICAL BLOCKERS:** (1) APP-RELEASE-1 account deletion lifecycle, (2) Google Data deletion web request path, (3) APP SDK/data inventory, (4) Apple App Privacy, (5) Google Data Safety, (6) reviewer account, (7) release signing/build verification.
 - **LAUNCH:** FREE_LAUNCH `CONDITIONAL`; PAID_LAUNCH `WAITING_FOR_STORE_PAYMENT`; MARKETING_LANDING `NOT_STARTED`; `home.legendstudy.com` `NOT_CREATED`.
-- **CANONICAL_SOURCE:** Manus **STORE-LAUNCH-PACKAGE-1 최종 정정 보고 / CROSS_AGENT_HANDOFF**, Owner-confirmed ingest. [Owner 정정 수신 기록](../90_HISTORY/DAILY/2026-10-03.md#store-launch-package-1--owner-final-correction-ingest). 원본 보고 URL/저장소 경로는 아직 제공되지 않아 직접 링크 대기. 상세 행정·스크린샷·Reviewer·Owner action은 원본 보고가 authority이며 여기에 복제하지 않는다.
+- **CANONICAL_SOURCE:** Manus **STORE-LAUNCH-PACKAGE-1 최종 정정 보고 / CROSS_AGENT_HANDOFF**, Owner-confirmed ingest. [Owner 정정 수신 기록](../90_HISTORY/DAILY/2026-10-03.md#store-launch-package-1--owner-final-correction-ingest). Manus READ-ONLY 조사 결과로 repository 문서 URL/경로 없음 (`FILES_CHANGED: 0`, `UNIFIED_WIKI_CHANGED: NO`는 Manus 작업 기준). 이번 Owner-confirmed 정정 및 CROSS_AGENT_HANDOFF 요약만 상태 근거로 기록하며, 별도 Store 문서를 생성하거나 상세 내용을 복제하지 않는다.
 - **NEXT_GATE:** 위7개 blocker 해소와 남은 Owner 입력. 패키지 COMPLETE는 Store 제출/출시 완료를 의미하지 않는다.
 
 ## Quality Authorization (verified detail)
