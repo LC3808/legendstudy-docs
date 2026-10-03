@@ -30,7 +30,7 @@ SUPERSEDED_BY: —
 | Human Quality persistence implementation | **IMPLEMENTED / ISOLATED_VERIFIED**; Owner SQL/tracking APPLIED; actual gateway authorization PASS; normal INSERT NOT_ASSESSABLE |
 | Human Review write UI (HQR-1) | **IMPLEMENTED / LOCAL_VERIFIED** — operator `/ql` consumes HQP RPCs; Production operator write `NOT_ASSESSABLE` (no legitimate case) |
 | Math Essay LAB consumer (MATH-3B…7B) | **IMPLEMENTED / LOCAL_VERIFIED** — LAB consumes deployed MATH-2C/2D/2E RPC surface; `claude/math-vision-input-3b @ f1d4894`; `PRODUCTION_NOT_APPLIED`; no live provider |
-| Payment / commercial launch work | **planned** |
+| Payment / commercial launch work | **TEST implementation + E2E preparation verified locally; Hosted setup and merchant E2E pending** |
 | Release / store readiness | **planned** |
 
 > The ordering above is the current working plan; it is not a new Owner-approved reprioritization.
@@ -134,13 +134,16 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **KNOWN_LIMITATION:** analytics consumes canonical facts; it does not become their authority.
 
 ### COMMERCIAL
-- **STATUS:** `NOT_STARTED` (payment/commercial) · **PRODUCTION_STATE:** off
-- **CANONICAL_SOURCE:** TBD (will build on Credit/Billing)
-- **NEXT_GATE:** payment integration
-- **KNOWN_LIMITATION:** no payment in Production
+- **STATUS:** APP payment foundation + LAB PAYMENT-2 deterministic implementation complete; PAYMENT-E2E-PREP-1 local verification complete. **Production payment OFF; migration NOT_APPLIED.**
+- **CANONICAL PAYMENT CANDIDATE:** APP `3b3b869297a0884bfb908c87977fa14519f72d91`; `20261003000100_payment_foundation.sql`; SHA-256 `77b460bf2bf437a8d6dd03d78454ece17c6c4143fe50d7f28b6ea30a51509c75`. Old e4836eda/be808d96… SUPERSEDED_PRE_APPLY; one candidate only.
+- **APP PREP:** `codex/essay-scaffolding-vnext @ 9ea7e2a7c453bec3a9b1f47dfd39ce45ccc6602d` — [24-file isolated Hosted TEST package](https://github.com/LC3808/legendstudy-app/tree/9ea7e2a7c453bec3a9b1f47dfd39ce45ccc6602d/supabase/verification/payments/hosted-test); fresh non-superuser PG17 installation/postflight/rollback/failure PASS; Payment67, Credit84, Humanities102, Math131+37+63 PASS. No Production replay authorization.
+- **LAB:** `codex/payment-2-toss-test @ ac2913288ec84a95cd9ac3fe5677343223732eb5` — [consumer/config authority](https://github.com/LC3808/legendstudy-lab/blob/ac2913288ec84a95cd9ac3fe5677343223732eb5/docs/PAYMENT_2_TOSS_INTEGRATION_HANDOFF.md); exact approved Preview Auth pair + manual redirect rejection;186 tests,8 real-workerd scenarios, typecheck/lint/boundary/static build PASS. Feature branch only; main not merged.
+- **PROVIDER PROOF:** official documentation/Sandbox TEST proof PASS in prior LAB evidence; `leglabn24k` merchant E2E NOT_RUN. TEST records never grant spendable Credits; LIVE NOT_AUTHORIZED.
+- **NEXT_GATE:** Owner approval for independent empty Hosted TEST project → exact bootstrap/postflight → synthetic Auth/profile and finance signing/gateway → trusted Cloudflare Preview config/deploy approval → merchant TEST E2E authorization.
+- **LIMITATIONS:** Hosted JWT signature/expiry/role admission remains HOSTED_VERIFICATION_REQUIRED. No project/config/deploy changes in PREP-1. Production data/user/key copy forbidden; Production writes0.
 
 ### RELEASE
-- **STATUS:** pre-launch · **PRODUCTION_STATE:** backend live; store release pending
+- **STATUS:** pre-launch · **PRODUCTION_STATE:** backend live; store release pending. Owner-reported RELEASE-1 public LAB `https://lab.legendstudy.com` at main `16e155b71817ebe371196150a4c21e45510160f2`; main ref confirmed in PREP-1, public deployment not re-certified here. Payment feature remains unmerged.
 - **CANONICAL_SOURCE:** `legendstudy-app` (APP release), `legendstudy-lab` (LAB web)
 - **NEXT_GATE:** release / store readiness for 2026-10-10
 - **KNOWN_LIMITATION:** Store/release gates are INCOMPLETE / REMAINING; existing preparation and acceptance do not establish store release.
