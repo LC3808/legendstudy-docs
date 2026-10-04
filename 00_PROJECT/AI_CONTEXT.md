@@ -12,31 +12,40 @@ SUPERSEDED_BY: —
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
+## 0. MANDATORY DEVELOPMENT PRINCIPLES — HIGHEST PRIORITY
+
+These rules govern every LegendStudy task unless the Owner explicitly overrides them.
+
+1. **FAST / ACCURATE / MINIMUM NECESSARY / SHIP.** Build only what the current release needs; verify accurately; ship; move on.
+2. **Default loop:** IMPLEMENT → TEST → FIX → VERIFY → SHIP → NEXT. Documentation and test infrastructure must not become larger than product work.
+3. **LOCAL + EXISTING INFRA FIRST.** Reuse existing repos, DBs, environments, accounts, workers, providers and tests.
+4. **NO TEST-INFRA PROLIFERATION BY DEFAULT.** No new TEST DB/Supabase project, test site, Cloudflare project or parallel architecture unless the current environment genuinely cannot validate a risky operation. State the concrete reason first.
+5. **RISK-PROPORTIONAL VALIDATION.** Payment, destructive Production migrations and bulk personal-data erasure may justify stronger gates. UI, normal API wiring, Math evaluation, routes, copy and ordinary CRUD normally need focused tests plus smoke.
+6. **DO NOT REPEAT VERIFIED WORK.** Test the delta unless relevant code/runtime changed.
+7. **STOP IS EXCEPTIONAL.** Stop only for Owner-only secrets, meaningful external cost/approval, unexpected destructive Production action, or unresolved product policy. Ordinary failures are fix→retest→continue.
+8. **PRACTICAL DEV CREDENTIALS.** Server-only privileged JWTs may use Owner-approved release-prep TTL up to 7 days; keep secrets out of browser/Git/docs/chat/logs and preserve role/environment boundaries.
+9. **WIKI HANDOFF IS REQUIRED.** Start: AI_CONTEXT → CURRENT_STATUS → relevant canonical source → latest Daily. End: append Daily; update CURRENT_STATUS if facts changed; update AI_CONTEXT if routing changed; commit/push. Daily-only logging is not a complete handoff.
+10. **NO SILENT ARCHITECTURE EXPANSION.** Future features and hypothetical risks do not authorize extra systems in the current release path.
+
+---
+
 > This is the **first file** any external AI or new developer reads. Read it fully before touching anything.
 > It tells you what LegendStudy+ is, where canonical facts live, in what order to read, how to confirm you are on the right code, and what you must **not** infer.
 
 ---
 
-## Current handoff routing — 2026-10-03 PAYMENT-E2E-PREP-1
+## Current handoff routing — 2026-10-04 RELEASE CLOSEOUT
 
-This existing document remains the canonical AI handoff entrypoint; no competing AI_HANDOFF
-file is needed. Read [Current Status](CURRENT_STATUS.md), then [today's Daily](../90_HISTORY/DAILY/2026-10-03.md).
-
-| Area | Current route / next gate |
+| Area | Current truth / next gate |
 |---|---|
-| Production | Owner-reported RELEASE-1 LAB public site; main16e155b. Payment/AI activation not implied. See Current Status RELEASE. |
-| APP/shared backend | canonical branch `codex/essay-scaffolding-vnext`; [payment TEST package](https://github.com/LC3808/legendstudy-app/tree/9ea7e2a7c453bec3a9b1f47dfd39ce45ccc6602d/supabase/verification/payments/hosted-test); verify actual HEAD before work |
-| LAB Payment | feature `codex/payment-2-toss-test`; [physical/config handoff](https://github.com/LC3808/legendstudy-lab/blob/ac2913288ec84a95cd9ac3fe5677343223732eb5/docs/PAYMENT_2_TOSS_INTEGRATION_HANDOFF.md); not merged/deployed |
-| LAB Pricing | Owner `FINAL_APPROVED` 2026-10-04 and **released**: main `3370dad`; `PRODUCTION_VERIFIED` at lab.legendstudy.com/pricing/; `PURCHASE_CTA` PRESENT_DISABLED — the only open gate is CTA activation under Codex PAYMENT-PRODUCTION-READINESS-1. See [Current Status PRICING](CURRENT_STATUS.md#pricing-lab-public-pricing) |
-| Math | Current Status MATH + today's Claude MATH-3B…7B handoff; preserve `claude/math-vision-input-3b`; no provider activation inferred |
-| Payment | candidate3b3b869/hash77b460bf…; isolated tests PASS; empty Hosted TEST, gateway and leglabn24k E2E pending |
-| Store | [Current Status RELEASE](CURRENT_STATUS.md#release): package COMPLETE, Apple/Google prep READY, submission BLOCKED; Owner final correction governs Store identity and remaining7 blockers |
-| Unapplied migrations | Payment20261003000100 NOT_APPLIED; ADR/Math last read-only snapshot in Current Status; refresh catalog before any future apply, never replay local inventory |
-| Separate debt | provider005 and day_targets Production tracking remain separate; TEST allowlist does not authorize Production repair |
-| Next Owner action | approve new empty TEST project only; then exact bootstrap/config/merchant E2E gates; no Production changes |
-
-The TEST bootstrap needs no Production data or real student accounts. Hosted Auth/JWT,
-Cloudflare config/deployment and merchant E2E remain external verification, not implied PASS.
+| Development | **FAST / ACCURATE / MINIMUM NECESSARY / SHIP**. Existing infrastructure first; no new test infrastructure without concrete necessity. |
+| Payment | Implementation + Toss TEST E2E complete; LIVE OFF. Paid launch only: Production payment activation/config + external Toss/card approval + small LIVE smoke. |
+| Pricing | Production verified on LAB main `3370dad`; purchase CTA disabled until payment activation. |
+| APP release | APP closeout `0570099`: prior 5 failures fixed; Flutter 936 PASS/analyze PASS; Android/iOS unsigned release compile PASS. Remaining P0: deletion runtime, Apple revoke/social reauth, policy consistency, final integration; Owner signing/device/Console. |
+| Math | APP `35d2376`: Production preflight PASS; approved ADR/Math/Storage migrations 5/5 applied; private Storage + SQL kill switch applied; evaluation OFF. Remaining: reuse existing provider/runtime, minimal real-model + student-flow smoke, Storage byte/erasure and hosted Credit confirmation. **No new test environment.** |
+| Account deletion | ADR SQL applied; lifecycle structure implemented; worker OFF; Apple revoke token capture/exchange/adapter + Google/Apple/Kakao reauth remain; LAB web deletion exists at `e512974`, not publicly enabled. |
+| Privacy/data | Owner authority: APP + LAB are connected surfaces sharing backend/data; integrated privacy/data strategy. Existing no-server-storage wording must be reconciled before Store submission. |
+| Next 3 | 1) finish Math existing-runtime smoke; 2) deletion/Apple/social + policy closeout; 3) integrate final RC → Owner signing/device/Console. |
 
 ## 1. What is LegendStudy+
 
