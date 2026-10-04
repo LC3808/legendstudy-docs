@@ -15,6 +15,27 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## 2026-10-04 Owner stop — current handoff override
+
+**WORK PAUSED BY OWNER.** Development, runtime calls and deployments must not resume until Owner names the next task. This section supersedes older conflicting status below; it does not certify untested runtime. [Stop record](../90_HISTORY/DAILY/2026-10-04.md#owner-stop--status-reset-and-development-principles).
+
+| Area | Completed | Actually remaining |
+|---|---|---|
+| Payment | Merchant TEST confirm/cancel/idempotency/foreign-owner checks; LIVE/TEST adapter, shared Ledger, refund/recovery implementation and scoped local tests | Payment-specific Production migrations/runtime activation, credentials reuse/configuration, Toss/card approval and separately authorized LIVE smoke. LIVE OFF. Shared ADR SQL was subsequently applied by Math work. |
+| Pricing | Approved page released on LAB main3370dad; Production verification recorded in Wiki main321b97e | Purchase CTA only after Payment activation; buttons remain disabled. |
+| APP release | Five stale baseline tests fixed;936 Flutter PASS/2 unchanged opt-in skips, analyze PASS; Android AAB/iOS unsigned compile PASS; lifecycle restriction/account-switch fixes and reviewer/privacy drafts | Deletion runtime, Apple revoke/social reauth, public policy consistency, branch integration; Owner signing/build number/reviewer/device/Console. Not Store-ready. |
+| Math | Consumer/student route and local initial-1/included-reevaluation0; Production exact ADR/Math/Storage5/5, private bucket/policies, SQL kill switch; three worker-role admission checks; synthetic Auth/session verified | Actual worker job/provider connection,3–5 synthetic model cases and student flow, Hosted Credit-1/0, actual Storage bytes/erasure/foreign-owner smoke. General Math OFF; real provider calls0; RC NO. |
+| Account deletion | APP request/restriction/cleanup code, ADR SQL applied, web request/status candidate and Apple transport tests | Full worker operation OFF; Apple token-to-revoke binding/social reauth and real lifecycle E2E; web publication/policy consistency. SQL applied is not service activated. |
+
+Math latest code: LAB4fe733e adds required server synthetic-subject allowlist;26 scoped tests/typecheck/lint PASS. Latest independently verified Math Pages deployment63a7319d is at340b2f4; deployment of4fe733e NOT_VERIFIED. Static scan18 delivered files PASS (bounded sample only). Existing Math Pages site connects to Production Supabase; no new infrastructure needed.
+
+Credential policy: development/release-prep default7 DAYS. Tool updated/tested locally; existing configured24h tokens preserved, expiry2026-10-05 21:11:37 KST. Do not imply7-day tokens were issued/deployed. Resume checks actual expiry without requiring signing-key rotation. Additional MATH_PROVIDER_API_KEY registration request CANCELLED: inspect existing server provider/credential reuse first, do not assume missing. No secret/identity values recorded.
+
+Refs at stop: APP codex/math-production-activation-1@35d237607f2ccbb70a15f09a420035a65636f9fa (uncommitted credential tools/Math wiki; supabase/.temp is CLI metadata, exclude from commits); LAB same branch@4fe733e4828ad5e4f4b7ff57fade05c3f311b66b (clean/pushed); Wiki same branch pre-stop@479141ab5b9ea4a9eac32792dbb603b1ff968258 plus Daily changes; remote Wiki main321b97e747b226db7686e33f5cb1ebb3fc5d0314 lacks later APP/Math/Payment implementation updates; Production LAB main3370dad08ad4042046d158f56fd1d38f778c9e26. Do not silently merge/reset. Wiki stop update is documentation-only.
+
+Next priorities ONLY after Owner resumes: (1) reuse existing AI connection and finish Math minimal runtime smoke; (2) finish deletion/Apple/social/policy blockers; (3) integrate completed branches into RC, then Owner signing/device/Console. No future features or new test infrastructure.
+
+
 ## Launch target
 
 **2026-10-10 — before the 연세대 논술.** This is a target, not a guaranteed release date. This supersedes any earlier "mid-October" style dates in historical docs.

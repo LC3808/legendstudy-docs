@@ -229,3 +229,9 @@ Each of these is a **real distinction** that has caused or could cause incidents
 - **structural validation ≠ human quality PASS**
 - **authenticated EXECUTE ≠ authorized data access**
 - **`NOT_ASSESSABLE` ≠ `PASS`**
+
+## Owner development principles and stop — 2026-10-04
+
+FAST, ACCURATE, MINIMUM NECESSARY, SHIP. Reuse existing implementation/infrastructure; local tests first, then proportional Production smoke. Fix the observed problem and continue. Do not copy Payment-grade isolation into ordinary Math/API/UI work, repeat already-passed broad audits, or create new DB/site/account/framework by default. Documentation supports delivery, not the reverse. Server-only privileged JWT default7 DAYS during release preparation; preserve secret exclusion, environment separation and least privilege. Reuse existing provider credentials before requesting Owner input. Rotation is not a ritual; address actual expiry or exposure/misconfiguration as needed.
+
+Owner explicitly paused work after status reset. Only the documentation handoff was authorized; wait for the next named task. On resume, request Owner action only for genuinely Owner-only credentials, actual external payment/approval, unexpected destructive Production changes or required product decisions. No additional API-key registration is currently requested. See CURRENT_STATUS stop override and Daily2026-10-04; older1h/24h defaults and NOT_APPLIED Math/ADR statements are historical.
