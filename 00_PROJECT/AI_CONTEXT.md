@@ -27,10 +27,10 @@ file is needed. Read [Current Status](CURRENT_STATUS.md), then [today's Daily](.
 | Production | Owner-reported RELEASE-1 LAB public site; main16e155b. Payment/AI activation not implied. See Current Status RELEASE. |
 | APP/shared backend | canonical branch `codex/essay-scaffolding-vnext`; [payment TEST package](https://github.com/LC3808/legendstudy-app/tree/9ea7e2a7c453bec3a9b1f47dfd39ce45ccc6602d/supabase/verification/payments/hosted-test); verify actual HEAD before work |
 | LAB Payment | feature `codex/payment-2-toss-test`; [physical/config handoff](https://github.com/LC3808/legendstudy-lab/blob/ac2913288ec84a95cd9ac3fe5677343223732eb5/docs/PAYMENT_2_TOSS_INTEGRATION_HANDOFF.md); not merged/deployed |
-| Math | Current Status MATH +2026-10-04 activation prep; Claude6dec4f preserved, APP0570099 deletion authority reconciled. Route/package local PASS, OFF/NOT_APPLIED; actual Hosted/model smoke pending, RC NO. No Payment change |
+| Math | Current Status MATH +2026-10-04 activation prep; Claude6dec4f preserved, APP0570099 deletion authority reconciled. Route/package local PASS; Hosted exact5 SQL applied/tracked, OFF; credentials/byte/model E2E blocked, RC NO. No Payment change |
 | Payment | candidate3b3b869/hash77b460bf…; isolated tests PASS; empty Hosted TEST, gateway and leglabn24k E2E pending |
 | Store | [Current Status RELEASE](CURRENT_STATUS.md#release): package COMPLETE, Apple/Google prep READY, submission BLOCKED; Owner final correction governs Store identity and remaining7 blockers |
-| Unapplied migrations | Payment20261003000100 NOT_APPLIED; ADR/Math last read-only snapshot in Current Status; refresh catalog before any future apply, never replay local inventory |
+| Unapplied migrations | Payment20261003000100 NOT_APPLIED; ADR/Math/Storage exact5 now applied/tracked (23→28), runtime OFF; see Math Hosted evidence, never replay installed files |
 | Separate debt | provider005 and day_targets Production tracking remain separate; TEST allowlist does not authorize Production repair |
 | Next Owner action | approve new empty TEST project only; then exact bootstrap/config/merchant E2E gates; no Production changes |
 
