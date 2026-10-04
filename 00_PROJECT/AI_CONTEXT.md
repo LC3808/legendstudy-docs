@@ -27,6 +27,7 @@ file is needed. Read [Current Status](CURRENT_STATUS.md), then [today's Daily](.
 | Production | Owner-reported RELEASE-1 LAB public site; main16e155b. Payment/AI activation not implied. See Current Status RELEASE. |
 | APP/shared backend | canonical branch `codex/essay-scaffolding-vnext`; [payment TEST package](https://github.com/LC3808/legendstudy-app/tree/9ea7e2a7c453bec3a9b1f47dfd39ce45ccc6602d/supabase/verification/payments/hosted-test); verify actual HEAD before work |
 | LAB Payment | feature `codex/payment-2-toss-test`; [physical/config handoff](https://github.com/LC3808/legendstudy-lab/blob/ac2913288ec84a95cd9ac3fe5677343223732eb5/docs/PAYMENT_2_TOSS_INTEGRATION_HANDOFF.md); not merged/deployed |
+| LAB Pricing | Owner `FINAL_APPROVED` 2026-10-04: `feat/pricing-ux-cleanup @ f84b81e`; `PURCHASE_CTA` PRESENT_DISABLED; not merged/deployed; CTA activation waits on Codex PAYMENT-PRODUCTION-READINESS-1 — see [Current Status PRICING](CURRENT_STATUS.md#pricing-lab-public-pricing) |
 | Math | Current Status MATH + today's Claude MATH-3B…7B handoff; preserve `claude/math-vision-input-3b`; no provider activation inferred |
 | Payment | candidate3b3b869/hash77b460bf…; isolated tests PASS; empty Hosted TEST, gateway and leglabn24k E2E pending |
 | Store | [Current Status RELEASE](CURRENT_STATUS.md#release): package COMPLETE, Apple/Google prep READY, submission BLOCKED; Owner final correction governs Store identity and remaining7 blockers |
