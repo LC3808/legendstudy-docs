@@ -19,6 +19,34 @@ SUPERSEDED_BY: —
 
 **2026-10-10 — before the 연세대 논술.** This is a target, not a guaranteed release date. This supersedes any earlier "mid-October" style dates in historical docs.
 
+## RELEASE CLOSEOUT — 2026-10-04 latest operational truth
+
+> This block supersedes older domain bullets below where they conflict. Older cited evidence remains historical context.
+
+| Area | Current state | What is actually left |
+|---|---|---|
+| Payment | **IMPLEMENTATION COMPLETE / TEST E2E COMPLETE / LIVE OFF.** LIVE/TEST server paths, canonical Credit Ledger, confirm/cancel/refund/reconciliation implemented. | Paid launch only: Production payment activation/config, Toss/card approval, small LIVE smoke. Free launch may keep LIVE payment off. |
+| Pricing | **PRODUCTION_VERIFIED** — LAB main `3370dad`; approved 1/3/5/10 products/IA live; CTA disabled. | Connect/enable CTA only after payment activation. |
+| APP Release | APP closeout `0570099`: **936 Flutter PASS**, analyze PASS; Android AAB + iOS unsigned release compile PASS; feature/data/reviewer packages prepared. | P0 code: deletion runtime, Apple revoke + social reauth, public privacy/deletion consistency, final integration. Owner: signed builds/build number/reviewer/device/Console. |
+| Math | Production preflight PASS. Approved ADR/Math/Storage migrations **5/5 APPLIED**; ledger 23→28; private Math Storage created; SQL kill switch PASS; Math data/files 0; evaluation OFF. APP evidence `35d2376`. | Reuse existing provider/runtime; minimal synthetic real-model + student-flow smoke; actual Storage byte deletion/foreign-owner and hosted Credit -1/0 confirmation. **No new test infrastructure.** |
+| Account deletion | ADR SQL applied; app request/status/cancel/restriction/local purge structure implemented; worker OFF. LAB web deletion code exists on `e512974`, not publicly enabled. | Apple authorizationCode→server token exchange→revoke adapter; Google/Apple/Kakao reauth; worker activation; synthetic deletion E2E; public deletion/policy consistency. |
+| Privacy/data | Owner authority: APP and LAB are connected surfaces sharing backend/data; integrated privacy framework is target. | Replace contradictory no-server-storage public wording with implementation-aligned integrated policy before Store submission. |
+| Release target | **Final RC / Store standby** | Finish only P0 above; Community/admissions/subscription/goods are out of scope. |
+
+### Canonical handoff refs
+
+- APP latest Math/Production activation evidence: `35d237607f2ccbb70a15f09a420035a65636f9fa`.
+- APP release closeout evidence: `0570099c98929b27f8e484210efc14fe061e8476`.
+- LAB account-deletion implementation: `e512974`.
+- LAB Production pricing/main: `3370dad08ad4042046d158f56fd1d38f778c9e26`.
+- Math LAB consumer closeout: `6dec4f98887cee2e7c661996e083289b853054b3`; verify the later Codex Math activation branch HEAD before editing.
+- Unified Wiki authority: `main`; verify HEAD before work.
+
+### Handoff completion rule
+
+Every task ends with: code/runtime result → Daily append → CURRENT_STATUS update if facts changed → AI_CONTEXT routing update if next gate changed → commit/push. **Daily-only logging is not a complete handoff.** Another AI must be able to resume without reconstructing chat history.
+
+---
 ## Critical path (fact vs plan)
 
 | Step | State |
