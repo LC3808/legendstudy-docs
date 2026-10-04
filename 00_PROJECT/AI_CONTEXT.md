@@ -151,18 +151,15 @@ Do not put every axis on every row — use the axis a statement actually needs. 
 
 ## 8. Current critical path
 
-Immediate next gate: **CODEX UWA-2E FINAL READ-ONLY FREEZE CHECK**, then Owner acceptance. Product steps below remain separately authorized plans.
+Current release-closeout critical path (2026-10-04):
 
-```
-Unified Wiki P0  (bootstrap complete; UWA-2D FREEZE CANDIDATE, UWA-2E pending)
-   → LAB Essay canonical contract mapping   (NOT_STARTED)
-   → Quality Console v0                      (NOT_STARTED)
-   → Human Quality persistence design        (NOT_STARTED — design required before real-student Pilot)
-   → payment / commercial launch work        (planned)
-   → release / store readiness               (planned)
-```
+1. **Math:** reuse the existing provider/runtime and finish only the minimum real-model + student-flow smoke; verify Hosted Credit -1/0 and Storage byte/erasure behavior. No new test infrastructure.
+2. **Account deletion / Auth:** finish deletion worker runtime, Apple authorizationCode→server token exchange→revoke adapter, Google/Apple/Kakao reauth, and public web deletion activation.
+3. **Privacy / Store consistency:** publish implementation-aligned integrated LegendStudy privacy/deletion wording; then finalize App Privacy / Data Safety.
+4. **Final RC:** integrate completed branches, produce signed/numbered builds, run minimal physical-device smoke, prepare reviewer account and Store Console submission.
+5. **Payment:** implementation + TEST E2E are complete; LIVE remains OFF. Production payment activation is required only for paid launch.
 
-Current launch target: **2026-10-10 (연세대 논술 전)** — a goal, not a guaranteed release date. Live facts and the fact/plan split are in [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
+Out of current critical path: Community, admissions prediction, Subscription, Goods, advanced analytics.
 
 ## 9. Rules for external AI
 
