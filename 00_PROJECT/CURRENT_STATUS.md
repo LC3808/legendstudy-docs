@@ -217,6 +217,23 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **NEXT_GATE:** Owner approval of the P0 scope/phases → `ADMIN-P0-A` (no Owner dependency) can start immediately; `ADMIN-P0-B` waits on the Production finance credential; `ADMIN-P0-C` runs in parallel via `/ql` reuse.
 - **KNOWN_LIMITATION:** nothing in this section is implemented. `admin_users` must not be widened into the verified `quality_operators` scope, and the console must not read answer bodies, tokens or provider secrets.
 
+## ADMIN CONSOLE — ADMIN-P0-A implemented, not deployed (2026-10-05)
+
+| Item | State |
+|---|---|
+| Backend | `legendstudy-app manus/admin-console-p0-a @ 625903d` — `20261005000200_admin_console_read.sql` |
+| Front end | `legendstudy-lab manus/admin-console-p0-a @ 1244916` — `/admin/`, `/admin/members/`, `/admin/credit/` |
+| Authorization | `admin_operator()` fail-closed on `public.admin_users`; separate from `quality_operators`, neither widened |
+| Read surface | `admin_dashboard`, `admin_member_search`, `admin_member_detail`, `admin_member_credit` |
+| Internal helpers | `admin_count`, `admin_account_state`, `admin_credit_snapshot` — revoked from anon/authenticated/service_role |
+| Write authority | **NONE.** No grant, balance update, transaction insert or payment action |
+| Pending subsystems | deletion/Math/payment absent -> `installed=false`, counts JSON null, never a fake 0; Math `RUNTIME_OFF`, payment `LIVE_OFF` |
+| Verification | isolated PostgreSQL harness, **126 checks / 0 failed**; lint, typecheck, 175 tests, boundary audit, static export PASS |
+| Accessibility | no console-owned axe violation; the only finding is the pre-existing shared header accent button |
+| Production | **NOT applied, NOT deployed, NOT merged to `main`** |
+| Next gate | Phase **B** Credit grant + Payment ops — **BLOCKED** on a Production `essay_finance` credential |
+| Activation gate | when the payment runtime lands, `admin_credit_snapshot` must adopt the `CANCEL_PENDING` grant fence or it will drift above `credit_summary` during a cancellation window |
+
 ## Quality Authorization (verified detail)
 
 **`PRODUCTION_VERIFIED`** as of 2026-10-01:
