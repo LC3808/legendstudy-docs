@@ -34,18 +34,18 @@ These rules govern every LegendStudy task unless the Owner explicitly overrides 
 
 ---
 
-## Current handoff routing — 2026-10-04 RELEASE CLOSEOUT
+## Current handoff routing — 2026-10-05 RELEASE CLOSEOUT
 
 | Area | Current truth / next gate |
 |---|---|
 | Development | **FAST / ACCURATE / MINIMUM NECESSARY / SHIP**. Existing infrastructure first; no new test infrastructure without concrete necessity. |
 | Payment | Implementation + Toss TEST E2E complete; LIVE OFF. Paid launch only: Production payment activation/config + external Toss/card approval + small LIVE smoke. |
 | Pricing | Production verified on LAB main `3370dad`; purchase CTA disabled until payment activation. |
-| APP release | APP closeout `0570099`: prior 5 failures fixed; Flutter 936 PASS/analyze PASS; Android/iOS unsigned release compile PASS. Remaining P0: deletion runtime, Apple revoke/social reauth, policy consistency, final integration; Owner signing/device/Console. |
+| APP release | APP closeout `0570099`: prior 5 failures fixed; Flutter 936 PASS/analyze PASS; Android/iOS unsigned release compile PASS. Apple revoke + Google/Apple social-reauth now **code-complete** (`claude/app-release-blocker-closeout-1 @ 60d48f0`, Owner credential/flag gated). Remaining P0: deletion runtime activation, policy consistency, final integration; Owner signing/device/Console. |
 | Math | APP `35d2376`: Production preflight PASS; approved ADR/Math/Storage migrations 5/5 applied; private Storage + SQL kill switch applied; evaluation OFF. Remaining: reuse existing provider/runtime, minimal real-model + student-flow smoke, Storage byte/erasure and hosted Credit confirmation. **No new test environment.** |
-| Account deletion | ADR SQL applied; lifecycle structure implemented; worker OFF; Apple revoke token capture/exchange/adapter + Google/Apple/Kakao reauth remain; LAB web deletion exists at `e512974`, not publicly enabled. |
-| Privacy/data | Owner authority: APP + LAB are connected surfaces sharing backend/data; integrated privacy/data strategy. Existing no-server-storage wording must be reconciled before Store submission. |
-| Next 3 | 1) finish Math existing-runtime smoke; 2) deletion/Apple/social + policy closeout; 3) integrate final RC → Owner signing/device/Console. |
+| Account deletion | ADR SQL applied; lifecycle structure implemented; worker OFF. **Apple revoke chain + Google/Apple social reauth code-complete** on `legendstudy-app claude/app-release-blocker-closeout-1 @ 60d48f0` (51 deno tests PASS; additive worker-only migration `20261005000100` NOT applied). LAB web deletion merges clean at `e512974`, not publicly enabled. Owner gate: Apple `.p8`/Services ID credential + `ACCOUNT_SOCIAL_REAUTH_ENABLED` + apply `20261005000100` + worker secrets/deploy. Code remaining: Kakao reauth (no native id_token), cancel-UI provider wiring, synthetic deletion E2E. |
+| Privacy/data | Owner authority: APP + LAB are connected surfaces sharing backend/data; integrated privacy/data strategy. Reconciliation input prepared (2026-10-05 Daily): the stale "LAB stores nothing on the server" wording is in `legendstudy-lab src/lib/legal-documents.ts:345` (+ `legal-documents.test.ts:171`) and must be corrected to reflect shared-backend storage before Store submission. |
+| Next 3 | 1) finish Math existing-runtime smoke; 2) Owner-gated deletion activation (Apple credential, `ACCOUNT_SOCIAL_REAUTH_ENABLED`, apply `20261005000100`, worker deploy) + public privacy wording; 3) integrate final RC → Owner signing/device/Console. |
 
 ## 1. What is LegendStudy+
 
