@@ -204,7 +204,30 @@ Each domain: `STATUS` · `PRODUCTION_STATE` · `CANONICAL_SOURCE` · `NEXT_GATE`
 - **CANONICAL_SOURCE:** Manus **STORE-LAUNCH-PACKAGE-1 최종 정정 보고 / CROSS_AGENT_HANDOFF**, Owner-confirmed ingest. [Owner 정정 수신 기록](../90_HISTORY/DAILY/2026-10-03.md#store-launch-package-1--owner-final-correction-ingest). Manus READ-ONLY 조사 결과로 repository 문서 URL/경로 없음 (`FILES_CHANGED: 0`, `UNIFIED_WIKI_CHANGED: NO`는 Manus 작업 기준). 이번 Owner-confirmed 정정 및 CROSS_AGENT_HANDOFF 요약만 상태 근거로 기록하며, 별도 Store 문서를 생성하거나 상세 내용을 복제하지 않는다.
 - **NEXT_GATE:** 위7개 blocker 해소와 남은 Owner 입력. 패키지 COMPLETE는 Store 제출/출시 완료를 의미하지 않는다.
 
-### ADMIN CONSOLE
+### NOTIFICATION CENTER
+
+LegendStudy 앱과 LAB이 **같은 알림 행과 같은 읽음 상태**를 공유한다. 어느
+클라이언트에서 확인했는지는 사용자에게 중요하지 않다.
+
+- 모델: `public.user_notifications` (RLS on, 클라이언트 롤 테이블 권한 없음),
+  단일 생산자 `notification_private.emit` (클라이언트 실행 권한 없음)
+- 소비자 RPC: `user_notifications_list` / `user_notifications_unread_count` /
+  `user_notification_mark_read` / `user_notifications_mark_all_read`
+- 생산자: 문의 답변 트리거, Credit 지급 트리거, 첨삭 완료 트리거,
+  결제·수리논술 서버 진입점, 일일 스케줄러
+- LAB: `/notifications/` + 헤더 종 배지 (noindex, sitemap 제외)
+- 앱: **미연결**. 계약은 `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
+
+검증(격리 PostgreSQL, 표준 체인): CANONICAL_CHAIN=OK,
+ADMIN_CONSOLE_CHECKS 158/158, ADMIN_P0B_CHECKS 351/351,
+NOTIFICATION_CENTER_CHECKS 59/59. LAB: 208 tests, lint, typecheck,
+boundary audit, static export, 320px·200% overflow 0.
+
+커밋: LAB `66a3533` · APP `02cf12c` (branch `manus/admin-console-p0-a`)
+Production 반영: **없음** (main merge 없음)
+
+---
+## ADMIN CONSOLE
 - **STATUS:** `DESIGNED` · `LIFECYCLE: PLANNED` — **READ + AUDIT + PLAN ONLY. No implementation, no Production mutation, no deploy, no migration apply.** Owner authority (2026-10-05): this is the integrated **release-operations** console, not a Quality Console replacement.
 - **P0 IA:** 대시보드 · 회원 관리 · Credit 관리 · 결제 관리 · 논술 운영 · AI 품질. Target: ordinary post-launch operations without opening the SQL Editor. No ERP, no new wallet, no new analytics DB, no new Auth system, no new TEST DB/Supabase/Cloudflare project.
 - **QUALITY CONSOLE REUSE:** `/ql` (Quality Console + Human Review write UI) is **not** discarded and becomes the `AI 품질` module. It exists only on `legendstudy-lab claude/quality-console-v0 @ 253867b` and is **NOT on `main` or Production** (`/ql/` = HTTP404 live).
