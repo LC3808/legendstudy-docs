@@ -214,16 +214,20 @@ LegendStudy 앱과 LAB이 **같은 알림 행과 같은 읽음 상태**를 공�
 - 소비자 RPC: `user_notifications_list` / `user_notifications_unread_count` /
   `user_notification_mark_read` / `user_notifications_mark_all_read`
 - 생산자: 문의 답변 트리거, Credit 지급 트리거, 첨삭 완료 트리거,
-  결제·수리논술 서버 진입점, 일일 스케줄러
+  결제·수리논술 서버 진입점, 일일 스케줄러(만료 전용)
+- **Credit 부족은 상태가 아니라 진입이다.** 3 이하로 내려오는 순간 1회
+  (`low_credit_notification`). 매일 반복 잔액 알림은 폐기.
+  5→4 없음 · 4→3 1회 · 3→2→1→0 없음 · 회복 후 재진입은 새 cycle.
+  예약/해제는 원장 잔액을 움직이지 않으므로 재시도가 알림을 되살리지 않음.
 - LAB: `/notifications/` + 헤더 종 배지 (noindex, sitemap 제외)
 - 앱: **미연결**. 계약은 `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
 
 검증(격리 PostgreSQL, 표준 체인): CANONICAL_CHAIN=OK,
 ADMIN_CONSOLE_CHECKS 158/158, ADMIN_P0B_CHECKS 351/351,
-NOTIFICATION_CENTER_CHECKS 59/59. LAB: 208 tests, lint, typecheck,
+NOTIFICATION_CENTER_CHECKS 70/70. LAB: 208 tests, lint, typecheck,
 boundary audit, static export, 320px·200% overflow 0.
 
-커밋: LAB `66a3533` · APP `02cf12c` (branch `manus/admin-console-p0-a`)
+커밋: LAB `ec79032` · APP `e2b9b61` (branch `manus/admin-console-p0-a`)
 Production 반영: **없음** (main merge 없음)
 
 ---
