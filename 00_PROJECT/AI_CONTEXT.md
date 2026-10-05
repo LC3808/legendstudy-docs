@@ -237,3 +237,14 @@ Each of these is a **real distinction** that has caused or could cause incidents
 - **structural validation ≠ human quality PASS**
 - **authenticated EXECUTE ≠ authorized data access**
 - **`NOT_ASSESSABLE` ≠ `PASS`**
+
+
+## 14. Owner product / execution authority — 2026-10-05
+
+- **최상위 실행 원칙:** 빠르게 · 가볍게 · 정확하게 · 사용자 관점에서 가치를 만든다. 특정 AI가 작업을 소유하지 않는다. Claude / Manus / Codex / Owner 중 현재 컨텍스트·사용량·권한을 기준으로 가장 효율적인 주체가 수행한다.
+- Existing code / DB / credentials / workers / RPCs를 우선 재사용한다. Owner가 exact command를 1–2분 실행하는 편이 permission/automation 우회보다 빠르면 Owner 실행을 택한다. 이미 PASS한 영역은 관련 delta가 없으면 반복 검증하지 않는다.
+- **Copacabana service architecture:** Muselry + LegendStudy+.
+- **LegendStudy+ public positioning:** “내신 관리부터 수능, 논술 준비까지. 데이터가 쌓일수록 나의 가능성은 더 선명해집니다.” 기출·AI를 대외 headline의 중심으로 두지 않는다.
+- **LegendStudy LAB routing:** LAB은 논술 LAB의 동의어가 아니다. 상위 체계 LegendStudy LAB 아래에 **내신 LAB / 수능 LAB / 논술 LAB**을 구분한다. 현재 논술 LAB이 먼저 구현됐다는 이유로 parent LAB을 논술 전용으로 재정의하지 않는다.
+- **Notification product rule:** 중요한 상태 변화만 알린다. 반복/소음 알림은 피한다. 저잔액은 3 이하 진입 cycle당 1회, Credit 만료는 D-30/D-14/D-7/D-3. APP/Web read state는 공유한다.
+- **Current next gate:** Account Deletion Production activation closeout → Flutter notification integration + ADMIN-P0-C/Web cleanup → final APP/LAB RC → Owner signing/device/Store Console. Math RC is YES with runtime OFF; Payment LIVE remains separate.
