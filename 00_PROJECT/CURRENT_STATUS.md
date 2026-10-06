@@ -340,3 +340,12 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 - **Deletion E2E remaining:** worker auth patch verify→commit/push→redeploy; dispatch scheduler + watchdog; lifecycle enable; test1 synthetic account request→email reauth cancel→re-request; Owner-approved test1 current request only deadline move to past (global 336h unchanged); canonical destructive worker; verify Math byte/metadata erasure, stale reservation cleanup, Auth deletion; activate public web deletion page; Store deletion blocker verdict.
 - **Migration namespace warning:** Production now uses 20261005000200 for **account_ops_sink**, while Manus ADMIN-P0-A branch previously used the same version for 20261005000200_admin_console_read.sql. **Resolve/renumber the Admin migration before branch integration or Production apply. Do not replay or overwrite the Production version.**
 - **Store/Final RC remaining:** Flutter notification-center integration; ADMIN-P0-C; merge/deploy Admin + notification code after migration-number reconciliation; web deletion activation + 404/foundation copy cleanup; final APP/LAB branch integration; signed build number, physical-device smoke, reviewer account, Apple/Google Console declarations/screenshots. Payment LIVE remains separately OFF and does not block a free launch.
+
+
+## APP first-run personalization — Release P0 authority (2026-10-06)
+
+- Final APP RC still requires **APP-FIRST-RUN-PERSONALIZATION-1** after shared notification integration.
+- Scope: brand onboarding + school + grade + interested universities + desired major/interest field. Interested universities = **1–5, ~3 recommended**, and are explicitly informational/personalization data rather than actual application schools. Desired major must support undecided users.
+- School/university selection UX: search candidates → unselected candidates remain visually secondary → selected name + available logo/symbol comes forward and is emphasized. Reuse existing profile/NEIS identity where applicable.
+- Product connection: the resulting personalization profile becomes common context for **내신 LAB / 수능 LAB / 논술 LAB** and future admissions-information surfaces, supporting the product promise that students can manage admissions preparation in one place. Actual application schools/history remain a separate future data model.
+- User can edit school, grade, interested universities and desired major later in My Page. Do not make onboarding a mandatory account-signup wall.
