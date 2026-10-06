@@ -262,6 +262,22 @@ Production 반영: **없음** (main merge 없음)
 | Next gate | Phase **B** Credit grant + Payment ops — **BLOCKED** on a Production `essay_finance` credential |
 | Activation gate | when the payment runtime lands, `admin_credit_snapshot` must adopt the `CANCEL_PENDING` grant fence or it will drift above `credit_summary` during a cancellation window |
 
+## ADMIN CONSOLE — ADMIN-P0-B / P0-C implemented, not deployed (2026-10-06)
+**Branch:** backend `legendstudy-app manus/admin-console-p0-a @ 49c02de`; front end `legendstudy-lab manus/admin-console-p0-a @ bbc23cb`. **NOT merged to `main`, NOT applied to Production.**
+
+| Item | State |
+|---|---|
+| Migration number collision | **RESOLVED.** ADMIN-P0-A/B/C were renumbered out of `2026100500xx` to **`20261007000400_admin_console_p0c.sql`** (plus the earlier P0-B file in the same band), so the other agent's `20261005000200_account_ops_sink` no longer collides. A migration-version guard in the harness now fails if this workstream re-enters that band. |
+| P0-B read surface | `admin_payment_orders`, `admin_inquiry_list`, `admin_inquiry_detail`, `admin_support_metrics` |
+| P0-B write surface | `inquiry_submit` (member), `inquiry_reply` / `inquiry_set_status` (operator) — idempotent by `request_key`, operator-scoped |
+| P0-C read surface | `admin_essay_operations`, `admin_math_operations`, `admin_operations_summary` |
+| P0-C deployment honesty | `essay_private.admin_relation_ready` separates **NOT_INSTALLED** from **SCHEMA_INCOMPLETE**, so a partially deployed Math schema is reported as undeployed instead of raising or reading as zero |
+| Answer text | **never returned** by any operations read; the boundary guard fails the build if `answer_text` / `submission_body` / `question_text` reach the console view |
+| Quality Console | `/ql/` imported **unchanged** from `claude/quality-console-v0` into the branch and reached as an `AI 품질` nav link. `quality_operators` is **not** merged into `admin_users`; `/ql` is now noindex + robots-disallowed + sitemap-absent |
+| Verification | isolated PostgreSQL harness: P0-A **167**, P0-B **360**, notifications **70**, P0-C **170** checks, all 0 failed. LAB: lint, typecheck, **324 tests**, boundary audit, static export PASS |
+| Accessibility | no console-owned axe violation; the only finding remains the pre-existing shared header accent button |
+| Production | **NOT applied, NOT deployed, NOT merged to `main`.** `/admin/*` and `/ql/` are absent from Production, and the console backend migration must be reconciled with the account-ops work before any Production apply |
+
 ## Quality Authorization (verified detail)
 
 **`PRODUCTION_VERIFIED`** as of 2026-10-01:
