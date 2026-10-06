@@ -248,3 +248,14 @@ Each of these is a **real distinction** that has caused or could cause incidents
 - **LegendStudy LAB routing:** LAB은 논술 LAB의 동의어가 아니다. 상위 체계 LegendStudy LAB 아래에 **내신 LAB / 수능 LAB / 논술 LAB**을 구분한다. 현재 논술 LAB이 먼저 구현됐다는 이유로 parent LAB을 논술 전용으로 재정의하지 않는다.
 - **Notification product rule:** 중요한 상태 변화만 알린다. 반복/소음 알림은 피한다. 저잔액은 3 이하 진입 cycle당 1회, Credit 만료는 D-30/D-14/D-7/D-3. APP/Web read state는 공유한다.
 - **Current next gate:** Account Deletion Production activation closeout → Flutter notification integration + ADMIN-P0-C/Web cleanup → final APP/LAB RC → Owner signing/device/Store Console. Math RC is YES with runtime OFF; Payment LIVE remains separate.
+
+
+## 15. First-run personalization authority — 2026-10-06
+
+- **APP first-run is personalization, not a generic intro-only onboarding.** Release P0 flow: Splash → concise brand onboarding → school → grade → 관심 대학 → 희망 학과/관심 전공 → Home.
+- **School:** search/select the student's current school; selected school name + available logo/symbol moves visually forward and becomes stronger/bolder while unselected candidates recede. Reuse canonical profile/NEIS school codes; do not create onboarding-only school truth.
+- **Grade:** current high-school grade; editable later in My Page/profile.
+- **Interested universities:** personalization interest, **not application history**. Allow **1–5 universities, recommend about 3**; selected university name + logo receives the same foreground/emphasis interaction. Must remain distinct from future `지원 예정 대학` and `실제 지원 대학` data.
+- **Desired major / interest field:** collect 희망 학과/관심 전공, with an explicit undecided option (e.g. `아직 정하지 못했어요`). It is exploratory personalization, not a binding application choice.
+- These inputs are the shared personalization foundation for **내신 LAB / 수능 LAB / 논술 LAB** and future admissions-information delivery, so the user should feel that learning + admissions preparation can be managed in one place. Do not overclaim admission prediction or treat interest data as actual applications.
+- All first-run values must be editable later under My Page / 학습·입시 정보. Onboarding completion is a device/install UX state; profile/admissions interests are server-side user data.
