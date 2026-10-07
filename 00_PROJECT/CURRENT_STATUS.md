@@ -25,8 +25,11 @@ or dependency change. Native personalization/LAB/notification implementations re
 Manus logos optional/deferred. Standard Android build regenerates release registrant;
 `--no-pub` after pub get failed on dev-only integration_test, no source workaround needed.
 
-**Store NOT READY:** upload/distribution signing, final release defines (essay write/eval
-currently OFF; recovery redirect verification), external-web-link policy decision, device
+**Owner release defines CONFIRMED:** deletion, essay writes and evaluation all true.
+APP tool/store-release preserves other production values and shares flags across Android/iOS.
+Android existing upload-key binding prepared; no feature-code changes. Opus independent
+audit P0=0/P1=2 was cross-check evidence; both define P1s resolved.
+**Store NOT READY:** upload/distribution signing, recovery redirect verification, external-web-link policy review, device
 smoke and Console/reviewer/screenshots/build-number inputs. Physical iPhone detected but
 not installed/tested; no Android connected. Required public policy/support/deletion URLs
 HTTP200. Oct06 destructive deletion authority preserved, not rerun. Report +25-item smoke

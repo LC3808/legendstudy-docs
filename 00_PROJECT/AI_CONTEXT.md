@@ -263,7 +263,8 @@ Each of these is a **real distinction** that has caused or could cause incidents
 ## APP final RC handoff — 2026-10-07
 
 APP73a2a35 includes personalization/native LAB/notification/deletion. Owner full967~2
-PASS; fresh3.47.6 analyze, unsigned AAB/iOS release/archive PASS. Next APP gate is final
-public defines/policy→Owner signing→25-item physical-device smoke→Console inputs; do not
+PASS; fresh3.47.6 analyze, unsigned AAB/iOS release/archive PASS. Owner confirms
+deletion/essay-write/evaluation flags true; shared tool/store-release enforces them.
+Next APP gate is Owner signing→focused physical-device smoke→Console inputs/policy review; do not
 reopen completed feature work or run Math/Payment work as part of APP RC. See CURRENT_STATUS
 and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.
