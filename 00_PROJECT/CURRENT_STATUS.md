@@ -44,20 +44,16 @@ REVIEW RPC401 diagnostics and canonical completion/failure UI; latest HOME chang
 scan PASS. TEST completion says test confirmation only; LIVE completion requires
 PAID/POSTED. Failure retains manual retry/account link and never claims success.
 
-**BLOCKED: remote finance JWT rejected.** Existing latest Owner TEST order reproduced
-`CONFIRM_HTTP_401 [FINANCE_RPC:PGRST301]` on the actual deployed success page. The
-reviewer gate (403 on denial) and buyer order read passed; `cloudflare/payments.ts`
-rpc(payment_process, finance=true) receives401. PostgREST rejects the worker JWT
-before the operation is created. Expiry vs signature vs malformed value is not
-claimed; encrypted remote value was not read. Same order, existing local finance
-JWT, read-only payment_process(get) returns200. Latest DB order remains
-ORDER_CREATED/NONE/NULL with operation count0; payment success is not certified.
-No token mint/rotation/signing/config/schema/LIVE/provider mutation. Owner asked
-to restore only existing PAYMENT_FINANCE_TOKEN binding using the already-valid
-local credential, because current task forbids provisioning changes. After binding
-restoration/redeploy: existing order retry, then exactly one fresh Owner TEST payment
-and PAID/TEST_RECORDED/NULL + CONFIRM/SUCCEEDED + spendable delta0 verification.
-CARD_REVIEW_READY:NO. TOSS_EMAIL_READY:NO.
+**Finance JWT binding restored (Owner), runtime401 resolved.** Previous deployed
+failure was CONFIRM_HTTP_401 [FINANCE_RPC:PGRST301]. After Owner re-registered the
+existing PAYMENT_FINANCE_TOKEN, same-order confirm now returns409, not401. DB verifies
+old order expired at2026-10-07 10:36:59UTC; remains TEST/ORDER_CREATED/NONE/grant NULL.
+Latest successful Production deployment d1ee4a58 at main6584e25 includes e1adc86;
+parallel Pricing changes preserved. No new token/signing/schema/code change here.
+
+**Awaiting exactly one fresh Owner TEST payment** to verify PAID/TEST_RECORDED/NULL,
+CONFIRM/SUCCEEDED and spendable delta0. Auth restoration does not certify payment
+completion. CARD_REVIEW_READY:NO. TOSS_EMAIL_READY:NO.
 
 ## Launch target
 
