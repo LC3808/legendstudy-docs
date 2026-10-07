@@ -21,7 +21,11 @@ and today's Daily for evidence and Auth read-only limits. Overall PARTIAL only f
 unverified Production bonus timing/idempotency; hosted Email confirmation is ON.
 Payment/Toss/finance, Credit authority, deletion lifecycle, Admin/QL remain unchanged.
 Owner next queue: AUTH/CREDIT/MY → ADMIN → APPLICATION/COUPON/ESSAY/GROWTH.
-Do not restart Home/Header reconciliation or start this next queue without a new task.
+Visual follow-up main `3a1c69f` now adds subtle depth, centered LAB heroes and direct
+Pricing → existing Toss checkout. IA/copy preserved. See CURRENT_STATUS visual follow-up.
+Owner's follow-up authorizes Overnight continuation; its referenced detailed phase
+plan is not present in the supplied request/Wiki and was requested. Existing Admin
+signing/migration changes cannot be blindly imported under the Payment freeze.
 
 ## 0. MANDATORY DEVELOPMENT PRINCIPLES — HIGHEST PRIORITY
 
