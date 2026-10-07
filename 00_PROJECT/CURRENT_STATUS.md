@@ -35,21 +35,29 @@ not installed/tested; no Android connected. Required public policy/support/delet
 HTTP200. Oct06 destructive deletion authority preserved, not rerun. Report +25-item smoke
 checklist: APP `wiki/final-store-rc-1.md`. No Production mutation, upload or Toss work.
 
-## Toss REVIEW confirm closeout — 2026-10-07
+## Toss REVIEW confirm closeout 2 — 2026-10-07
 
-LAB main/Production `1437b99` (deployment d6fc9fa7) includes bounded return-session wait,
-single-flight confirm and one replacement for server-rejected stale checkout orders.
-`pnpm verify`256 tests/23files PASS; actual public5routes HTTP200, new JS marker verified,
-local/live static secret scan PASS. UI09db4c2 and later axis-label d018d78 preserved.
+LAB main/Production `e1adc86`, successful deployment `52e432a9` includes bounded
+REVIEW RPC401 diagnostics and canonical completion/failure UI; latest HOME changes
+9691ef3 preserved. 264 tests, lint/typecheck/boundary PASS; direct Node22 build PASS
+(pnpm fallback build hit a local port sandbox limit). Local223/live12 assets secret
+scan PASS. TEST completion says test confirmation only; LIVE completion requires
+PAID/POSTED. Failure retains manual retry/account link and never claims success.
 
-**Not yet card-review ready:** Owner fresh TEST card→success→DB PAID/TEST_RECORDED/NULL
-and CONFIRM/SUCCEEDED verification pending. Existing reviewer3orders expired ORDER_CREATED,
-no linked grants. getSession already awaits Supabase initialization; fresh Production
-success/status restored session correctly before patch, so original incident's hydration
-race remains UNPROVEN. New diagnostic distinguishes SESSION_UNAVAILABLE from action HTTP401.
-Existing local finance token passes read-only RPC auth; no credential/config/SQL/LIVE changes.
-Do not reopen signing/roles/migrations. Next: Owner TEST payment, inspect exact result,
-fix only evidenced remaining error. No Toss email yet. See LAB docs/TOSS_REVIEW_CONFIRM_CLOSEOUT.md.
+**BLOCKED: remote finance JWT rejected.** Existing latest Owner TEST order reproduced
+`CONFIRM_HTTP_401 [FINANCE_RPC:PGRST301]` on the actual deployed success page. The
+reviewer gate (403 on denial) and buyer order read passed; `cloudflare/payments.ts`
+rpc(payment_process, finance=true) receives401. PostgREST rejects the worker JWT
+before the operation is created. Expiry vs signature vs malformed value is not
+claimed; encrypted remote value was not read. Same order, existing local finance
+JWT, read-only payment_process(get) returns200. Latest DB order remains
+ORDER_CREATED/NONE/NULL with operation count0; payment success is not certified.
+No token mint/rotation/signing/config/schema/LIVE/provider mutation. Owner asked
+to restore only existing PAYMENT_FINANCE_TOKEN binding using the already-valid
+local credential, because current task forbids provisioning changes. After binding
+restoration/redeploy: existing order retry, then exactly one fresh Owner TEST payment
+and PAID/TEST_RECORDED/NULL + CONFIRM/SUCCEEDED + spendable delta0 verification.
+CARD_REVIEW_READY:NO. TOSS_EMAIL_READY:NO.
 
 ## Launch target
 
