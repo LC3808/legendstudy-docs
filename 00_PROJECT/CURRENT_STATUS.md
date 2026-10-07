@@ -15,6 +15,22 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## Overnight Phase A — verified signup (2026-10-07)
+
+**PARTIAL.** Existing canonical +3 ledger/benefit pipeline reused. Source eligibility
+formerly checked only signup cohort time; a minimal guard adds verified email to
+`credit_signup_eligible` while retaining installation cutoff, OID/owner/ACL and all
+ledger idempotency/locks. APP RC-based `codex/overnight-verified-signup` contains
+migration `20261007150000` + 11 local PostgreSQL/PGlite assertions PASS and Wiki checks.
+No APP main promotion: APP main is not backend authority. No Production apply,
+backfill, transaction, credential issuance or deletion/Payment architecture change.
+Hosted migration ledger/function/activation reads and new-user grant E2E BLOCKED:
+no DB/admin credential or relevant connector in this environment. Email confirmation
+ON is the verified public setting; deployed guard presence is not inferred.
+[Backend evidence](https://github.com/LC3808/legendstudy-app/blob/codex/overnight-verified-signup/wiki/verified-signup-overnight.md).
+Owner supplied full Overnight plan; prior missing-plan gate resolved. Proceed to
+MY, then Admin/QL; only blocked credentials/Production writes are deferred.
+
 ## LAB visual follow-up / direct checkout — 2026-10-07
 
 Owner approved the prior IA/copy and requested subtle visual depth, centered score

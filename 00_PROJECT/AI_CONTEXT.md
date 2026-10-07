@@ -27,6 +27,13 @@ Owner's follow-up authorizes Overnight continuation; its referenced detailed pha
 plan is not present in the supplied request/Wiki and was requested. Existing Admin
 signing/migration changes cannot be blindly imported under the Payment freeze.
 
+## Overnight execution authority — 2026-10-07
+
+Owner supplied detailed Phase A/B/C plan. Missing-plan gate is resolved.
+Phase A guard is source/local verified, Production apply blocked by absent DB binding;
+continue independent MY and existing Admin/QL reconciliation. Payment/Toss frozen,
+no new finance credential/signing. See CURRENT_STATUS Overnight sections.
+
 ## 0. MANDATORY DEVELOPMENT PRINCIPLES — HIGHEST PRIORITY
 
 These rules govern every LegendStudy task unless the Owner explicitly overrides them.
