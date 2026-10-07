@@ -15,6 +15,24 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## Overnight Phase B — MY Dashboard (2026-10-07)
+
+**PARTIAL (implemented/deployed; hosted member-data acceptance unavailable).**
+LAB main `f0e612df4eda57d04695e440cd17b4a99a1638e7`; Cloudflare Production
+`f2719534-9362-457a-b418-d6e2869e174a` SUCCESS. MY final six-section IA,
+canonical Credit usage/history, shared profile/target edit, actual Essay records /
+1–5 dimensions, other LABs and account/support links. No Application schema, coupon,
+new ledger, fake score or Payment change. Account switch/logout clears private state.
+320 tests/30 files, lint/typecheck/boundary/build/static secret scan PASS. Local and
+actual deployed bundle 32 responsive conditions, goal edits, history, dimensions and
+logout PASS using intercepted fixtures only. Hosted unauthenticated routes HTTP200
+with login gate (release query distinguished stale proxy-cached old responses).
+No real user mutation or real authenticated-data acceptance; no credentials provided.
+[Details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/OVERNIGHT_MY_2026-10-07.md).
+Proceed to Phase C. Read-only anonymous Production probe: admin_operator/admin_dashboard
+PGRST202 (not in schema cache), is_quality_operator 42501 (exists, anon denied).
+Existing operator membership retained from Owner/Claude verified evidence, not re-read.
+
 ## Overnight Phase A — verified signup (2026-10-07)
 
 **PARTIAL.** Existing canonical +3 ledger/benefit pipeline reused. Source eligibility
