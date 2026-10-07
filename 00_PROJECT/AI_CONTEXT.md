@@ -12,6 +12,16 @@ SUPERSEDED_BY: —
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
+## Production activation handoff — 2026-10-08
+
+Latest functional release LAB63f8dc3 preserves Manus visual mainae44317. Backend
+candidates APPafada0d correct Admin Credit/UUID and MY intended-major column ACL;
+review branch, NOT_APPLIED. Signup guard/lifecycle/concurrency locally verified.
+Hosted DB/real-session/finance authority access still missing: overall PARTIAL.
+See CURRENT_STATUS Production activation closeout and Oct8 Daily. Public visuals
+belong to Manus; Codex owns functions/data/backend. STOP after this task; next Owner
+queue APPLICATION / COUPON / ESSAY RUNTIME / GROWTH is not automatically started.
+
 ## Current LAB frontend handoff — 2026-10-07
 
 LAB final main `f7f05f5` (implementation `65aa957`) has the reconciled public product
