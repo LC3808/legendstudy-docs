@@ -12,6 +12,17 @@ SUPERSEDED_BY: —
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
+## Current LAB frontend handoff — 2026-10-07
+
+LAB final main `f7f05f5` (implementation `65aa957`) has the reconciled public product
+shell, verified live at lab.legendstudy.com. See
+[CURRENT_STATUS: LAB frontend reconciliation](CURRENT_STATUS.md#lab-frontend-reconciliation--2026-10-07)
+and today's Daily for evidence and Auth read-only limits. Overall PARTIAL only for
+unverified Production bonus timing/idempotency; hosted Email confirmation is ON.
+Payment/Toss/finance, Credit authority, deletion lifecycle, Admin/QL remain unchanged.
+Owner next queue: AUTH/CREDIT/MY → ADMIN → APPLICATION/COUPON/ESSAY/GROWTH.
+Do not restart Home/Header reconciliation or start this next queue without a new task.
+
 ## 0. MANDATORY DEVELOPMENT PRINCIPLES — HIGHEST PRIORITY
 
 These rules govern every LegendStudy task unless the Owner explicitly overrides them.

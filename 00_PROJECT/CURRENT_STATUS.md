@@ -15,6 +15,56 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## LAB frontend reconciliation — 2026-10-07
+
+**LAB_FRONTEND_RECONCILIATION: PARTIAL** — UI implemented, main pushed and live shell
+verified; Production bonus timing/idempotency read-only verification remains unavailable.
+LAB implementation `65aa9571de6b2a6674274cee66f48c57a77d6481`; final main
+`f7f05f56c0c79d117d8416ddf106ccb45e2bd00f` adds verified Auth/publication notes.
+Existing Git-connected Production serves the new shell at https://lab.legendstudy.com.
+Cloudflare deployment ID/status is not exposed by the available GitHub APIs; live
+content is verified, not inferred from push. No Cloudflare configuration changed.
+
+Same public Header before/after login: 내신 LAB / 모의·수능 LAB / 논술 LAB / 이용 안내;
+brand is Home. Credit uses existing `useCreditSummary`, no loading-as-zero or invented
+entitlement. Home typography/wrapping/duplicate CTAs and graphic cleaned; concise
+login/signup and APP-authority LAB copy; new `/exam-analysis/`; footer email purposes.
+Pricing: 판매 상품 → 학교 단체 이용 / 이벤트 프로모션 → 구매 안내. Existing checkout,
+Essay Credit and lifecycle preserved. Auth soft-navigation `next` / duplicate redirect
+and initial hydration fixed without backend policy changes. Legacy guide redirects
+resolve in one hop. Examples remain clearly examples, no new evaluation capability.
+
+Verification: lint/typecheck, 307 tests (28 files), boundary audit, static build,
+GitHub-readiness/static-secret scan PASS. Local 96 public responsive conditions plus
+40 intercepted signed-in/out conditions PASS, including mobile MY/Credit/logout and
+login→account. Production 12 routes ×1440/1280/390/360 ×100%/200% text =96 PASS,
+HTTP200/no horizontal overflow. Home/Login/Pricing screenshots reviewed; no broken
+Korean desktop words. Live Home CTA preserves `next=/account/`, form enabled, no
+page errors; Pricing order and four legacy redirects PASS. Actual signed-in Production
+was not tested (no supplied account); local fixture is not a live-account claim.
+
+Production Auth public settings read-only: `mailer_autoconfirm=false` (Email
+confirmation ON), `disable_signup=false`. New email/password signup should return
+no session and pre-confirm password login requires confirmation under this setting;
+no new Production signup/login was executed. Bonus current deployment/activation and
+exactly-once enforcement remain **NOT_ASSESSABLE** without privileged read access.
+Source APP final RC `7d1c036`: +3 profile/claim path in `20260929000300`, superseded
+when lifecycle enabled by confirmed-email worker/benefit recovery in `20261001000300`.
+Source idempotency: `credit_signup_once_per_account`, external ref/transaction keys,
+`benefit_claims`/`benefit_delivery` and locks. Do not infer deployed state from source.
+
+Read-only branch reconciliation: home-simplification and lab-ui-reconciliation fully
+included in baseline main; privacy patch files identical to main despite different
+ancestry; admin-console (5 unique commits) and quality-console (4 unique) left intact,
+not merged/cherry-picked. Full evidence:
+[LAB closeout](https://github.com/LC3808/legendstudy-lab/blob/main/docs/FRONTEND_RECONCILIATION_2026-10-07.md).
+
+**PAYMENT_CHANGED: NONE. DB_CHANGED: NONE.** Toss/finance/Functions, Credit schema,
+account deletion lifecycle and Admin/QL untouched. No payment transactions, live
+activation, new wallet/coupon/signup bonus/Application backend. Stop this task here.
+Next Owner queue: **AUTH/CREDIT/MY → ADMIN → APPLICATION/COUPON/ESSAY/GROWTH**;
+this routing does not authorize starting them. Read deployed Auth/Credit authority first.
+
 ## APP final Store RC — verified 2026-10-07
 
 APP base `73a2a35` (`origin/claude/app-release-blocker-closeout-1`), closeout branch
