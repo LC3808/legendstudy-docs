@@ -15,6 +15,23 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## APP final Store RC — verified 2026-10-07
+
+APP base `73a2a35` (`origin/claude/app-release-blocker-closeout-1`), closeout branch
+`codex/final-store-rc-1`. Owner full test **+967 ~2 PASS** supersedes older936/CI-pending
+APP claims below. Fresh Flutter3.47.6/Dart3.13.5 analyze **PASS**, unsigned Android AAB,
+iOS release and Xcode archive **PASS**. SDK wrapper corrected3.47.5→3.47.6; no app feature
+or dependency change. Native personalization/LAB/notification implementations retained;
+Manus logos optional/deferred. Standard Android build regenerates release registrant;
+`--no-pub` after pub get failed on dev-only integration_test, no source workaround needed.
+
+**Store NOT READY:** upload/distribution signing, final release defines (essay write/eval
+currently OFF; recovery redirect verification), external-web-link policy decision, device
+smoke and Console/reviewer/screenshots/build-number inputs. Physical iPhone detected but
+not installed/tested; no Android connected. Required public policy/support/deletion URLs
+HTTP200. Oct06 destructive deletion authority preserved, not rerun. Report +25-item smoke
+checklist: APP `wiki/final-store-rc-1.md`. No Production mutation, upload or Toss work.
+
 ## Launch target
 
 **2026-10-10 — before the 연세대 논술.** This is a target, not a guaranteed release date. This supersedes any earlier "mid-October" style dates in historical docs.
@@ -221,7 +238,7 @@ LegendStudy 앱과 LAB이 **같은 알림 행과 같은 읽음 상태**를 공�
   5→4 없음 · 4→3 1회 · 3→2→1→0 없음 · 회복 후 재진입은 새 cycle.
   예약/해제는 원장 잔액을 움직이지 않으므로 재시도가 알림을 되살리지 않음.
 - LAB: `/notifications/` + 헤더 종 배지 (noindex, sitemap 제외)
-- 앱: **연결 완료(코드, consumer-only)** — `legendstudy-app claude/app-release-blocker-closeout-1 @ 6736167` (`lib/features/notifications/*`). Home 종 배지(서버 unread 권위) + `/notifications` 받은함, notification-v1 RPC 4개, target allowlist(`inquiry→/my/feedback`, essay/math/credit/payment/essay_lab→`/lab`, unknown→무시), 로컬 unread/영구 local DB 금지. 포커스+UI 테스트 작성(`test/notification_center_test.dart`). **flutter analyze/test는 CI 검증 대기**(로컬 Flutter 3.32.0 < 요구 ≥3.47.3). 계약: `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
+- 앱: **연결 완료(코드, consumer-only)** — `legendstudy-app claude/app-release-blocker-closeout-1 @ 6736167` (`lib/features/notifications/*`). Home 종 배지(서버 unread 권위) + `/notifications` 받은함, notification-v1 RPC 4개, target allowlist(`inquiry→/my/feedback`, essay/math/credit/payment/essay_lab→`/lab`, unknown→무시), 로컬 unread/영구 local DB 금지. 포커스+UI 테스트 작성(`test/notification_center_test.dart`). **검증 갱신 2026-10-07:** APP73a2a35 Owner967~2 PASS; Flutter3.47.6 fresh analyze PASS. 계약: `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
 
 검증(격리 PostgreSQL, 표준 체인): CANONICAL_CHAIN=OK,
 ADMIN_CONSOLE_CHECKS 158/158, ADMIN_P0B_CHECKS 351/351,
@@ -351,11 +368,11 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 - **Math:** MATH_RELEASE_CANDIDATE=YES, 실제 OpenAI gpt-5.6-sol Hosted 학습 루프 PASS, 최초 평가 Credit −1 / 포함 재평가 0, runtime kill switch는 **OFF로 복구·read-back 확인**. 실제 Math Storage byte erasure + metadata erasure는 동일 synthetic subject의 Account Deletion destructive E2E에서 최종 확인한다.
 - **Privacy:** LAB Production 개인정보처리방침 correction **LIVE PASS** (legendstudy-lab main @ ed8a1ca). Shared-backend 저장 사실과 일치하며 기존 “답안/성적/학교·학년 서버 미저장” 오표현은 제거됐다.
 - **Admin Console:** P0-A + P0-B는 **구현/격리 검증 완료, Production 미배포/main 미통합**. P0-A = dashboard/member/Credit read. P0-B = Credit canonical grant boundary + Payment ops + 1:1 문의(접수/운영자 조회·답변·상태/Resend). ADMIN-P0-C(논술/Math ops + 기존 /ql AI 품질 통합)는 남음.
-- **Shared Notification Center:** backend + LAB **CODE COMPLETE / NOT DEPLOYED**; **Flutter consumer integration CODE COMPLETE (2026-10-06, app `6736167`)** — Home bell + badge + `/notifications` inbox + mark read/all via notification-v1 RPCs, CI analyze/test pending (local Flutter too old). APP/Web 동일 user_notifications/read state. 저잔액은 매일/매 사용 알림 금지: 원장 잔액이 3 이하로 진입할 때 cycle당 1회, 3→2→1→0은 추가 알림 없음, 3 초과 회복 후 재진입 시 새 1회. Credit expiry는 D-30/D-14/D-7/D-3. Push(APNs/FCM)는 이번 release 범위 밖.
+- **Shared Notification Center:** backend + LAB **CODE COMPLETE / NOT DEPLOYED**; **Flutter consumer integration CODE COMPLETE (2026-10-06, app `6736167`)** — Home bell + badge + `/notifications` inbox + mark read/all via notification-v1 RPCs, Owner full967~2 PASS + fresh Flutter3.47.6 analyze PASS (2026-10-07). APP/Web 동일 user_notifications/read state. 저잔액은 매일/매 사용 알림 금지: 원장 잔액이 3 이하로 진입할 때 cycle당 1회, 3→2→1→0은 추가 알림 없음, 3 초과 회복 후 재진입 시 새 1회. Credit expiry는 D-30/D-14/D-7/D-3. Push(APNs/FCM)는 이번 release 범위 밖.
 - **Account Deletion Production activation — IN PROGRESS:** migration 20261005000100 applied/verified; delete-account + account-deletion-worker deployed fail-closed; privacy live. Minimal durable ops sink migration 20261005000200 account_ops_sink applied and account-ops-sink deployed; receipt stores hash+size only, not raw manifest/PII. ACCOUNT_OPERATIONS_TOKEN, restore/notification sink URLs, ACCOUNT_FINANCE_REVIEWED=true set. Edge/Vault ACCOUNT_DISPATCH_SECRET re-synchronized by Owner; secret value not recorded. Worker authentication was simplified to reuse existing server-side SUPABASE_SERVICE_ROLE_KEY; Owner applied exact EXECUTE grants to the **22 RPCs actually called by the worker** (22/22), not a broad account_* grant. Local worker auth patch exists but, at this checkpoint, Claude has not yet reported commit/push/redeploy/runtime verification. Lifecycle global enable remains OFF until worker/scheduler/watchdog are ready.
 - **Deletion E2E remaining:** worker auth patch verify→commit/push→redeploy; dispatch scheduler + watchdog; lifecycle enable; test1 synthetic account request→email reauth cancel→re-request; Owner-approved test1 current request only deadline move to past (global 336h unchanged); canonical destructive worker; verify Math byte/metadata erasure, stale reservation cleanup, Auth deletion; activate public web deletion page; Store deletion blocker verdict.
 - **Migration namespace warning:** Production now uses 20261005000200 for **account_ops_sink**, while Manus ADMIN-P0-A branch previously used the same version for 20261005000200_admin_console_read.sql. **Resolve/renumber the Admin migration before branch integration or Production apply. Do not replay or overwrite the Production version.**
-- **Store/Final RC remaining:** CI Flutter analyze/test for the notification consumer (app `6736167`); ADMIN-P0-C; merge/deploy Admin + notification backend code after migration-number reconciliation; `/account-deletion` scope-copy cleanup + 404/foundation copy; final APP/LAB branch integration; signed build number, physical-device smoke, reviewer account, Apple/Google Console declarations/screenshots. **Done since:** web deletion activation (LIVE), account-deletion destructive E2E, Flutter notification-center consumer integration (code). Payment LIVE remains separately OFF and does not block a free launch.
+- **Store/Final RC remaining:** ADMIN-P0-C; merge/deploy Admin + notification backend code after migration-number reconciliation; `/account-deletion` scope-copy cleanup + 404/foundation copy; final APP/LAB branch integration; signed build number, physical-device smoke, reviewer account, Apple/Google Console declarations/screenshots. **Done since:** web deletion activation (LIVE), account-deletion destructive E2E, Flutter notification-center consumer integration (code). Payment LIVE remains separately OFF and does not block a free launch.
 
 
 ## APP first-run personalization — Release P0 authority (2026-10-06)

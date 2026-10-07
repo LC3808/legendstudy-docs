@@ -259,3 +259,11 @@ Each of these is a **real distinction** that has caused or could cause incidents
 - **Desired major / interest field:** collect 희망 학과/관심 전공, with an explicit undecided option (e.g. `아직 정하지 못했어요`). It is exploratory personalization, not a binding application choice.
 - These inputs are the shared personalization foundation for **내신 LAB / 수능 LAB / 논술 LAB** and future admissions-information delivery, so the user should feel that learning + admissions preparation can be managed in one place. Do not overclaim admission prediction or treat interest data as actual applications.
 - All first-run values must be editable later under My Page / 학습·입시 정보. Onboarding completion is a device/install UX state; profile/admissions interests are server-side user data.
+
+## APP final RC handoff — 2026-10-07
+
+APP73a2a35 includes personalization/native LAB/notification/deletion. Owner full967~2
+PASS; fresh3.47.6 analyze, unsigned AAB/iOS release/archive PASS. Next APP gate is final
+public defines/policy→Owner signing→25-item physical-device smoke→Console inputs; do not
+reopen completed feature work or run Math/Payment work as part of APP RC. See CURRENT_STATUS
+and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.
