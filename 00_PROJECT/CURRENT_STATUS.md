@@ -15,6 +15,57 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## Overnight Phase C / final closeout — 2026-10-07
+
+**OVERNIGHT_STATUS: PARTIAL. AUTH_SIGNUP_CREDIT: PARTIAL. MY_DASHBOARD: PARTIAL.
+ADMIN_QL: PARTIAL.** Independent implementation, main/Production release and Wiki
+closeout complete; unavailable hosted credentials and migration discrepancies remain.
+
+LAB main `b79e9baf3b02a6ed3ed0c7f53cbb3f4fb89a0dab`; Cloudflare Production
+`984fa6fe-608d-452d-9312-ae5accd29109` SUCCESS (GitHub check). Prior MY deployment
+`f2719534-9362-457a-b418-d6e2869e174a` also succeeded. Existing Admin/QL consumers
+selectively reused, preserving current public UI, Auth, Credit, Payment and deletion.
+Internal IA: `/admin/`, members, credit, payment, operations, inquiries; AI Quality
+links to existing `/ql/`, with separate operator authorization. No public nav link,
+noindex/robots excluded. Account switch/logout unmounts prior user data.
+
+485 tests/43 files, lint/typecheck/boundary/build/readiness PASS. Browser fixture:
+168 Admin/QL conditions (7 routes ×4 widths ×100%/200% ×3 Auth states) PASS; ordinary
+members do not request operational data, logout clears member data, finance grant
+button disabled. Production unauthenticated HTTP200 for all17 tested public/MY/Admin/QL
+routes; internal noindex verified. Actual Production assets also passed the same168 intercepted browser conditions,
+with zero browser errors and no horizontal overflow.
+MY prior actual-bundle fixture32 checks PASS. These intercepted checks prove frontend
+behavior, not real operator access or hosted data mutation.
+
+Hosted read-only probes: admin_operator/admin_dashboard PGRST202; is_quality_operator
+42501 to anon. Existing admin@legendstudy.com membership is Owner/Claude evidence,
+not independently re-read. No new account or privileged credential. Finance server
+from old branch not imported because it independently mints a JWT. Credit grant and
+payment finance writes remain closed; no TEST/REVIEW grant performed (quantity0,
+ledger/MY/Essay-header grant-chain E2E NOT_RUN).
+
+Admin migrations20261007000100/200/400 NOT_APPLIED. No live migration ledger/ownership/
+ACL connection available, and old SQL must not be applied unchanged: Admin balance
+calculations omit canonical Payment CANCEL_PENDING spendability exclusion, and P0B
+inquiry detail passes Auth UUID to a helper requiring credit-account UUID. Reconcile
+Admin reads against canonical credit_summary, verify distinct identities and current
+ledger/collisions/rollback before apply. Payment itself remains frozen.
+
+Phase A APP branch `codex/overnight-verified-signup` at `ba1f875` retains minimal
+verified-email eligibility guard20261007150000 (implementation066fa90), local11
+PostgreSQL/PGlite assertions and Wiki checker PASS. No APP main promotion or hosted
+apply: canonical base is final Store RC, not old APP main. Existing +3 once-per-account
+idempotency remains source authority; deployed bonus timing/activation/verified-email
+behavior are NOT_ASSESSABLE. Public Auth email confirmation ON. No signup policy
+setting changed, backfill, general-user credit, actual payment or deletion occurred.
+
+DB_APPLIED: NONE. PAYMENT_TOSS_CHANGED: NO. DESTRUCTIVE_ACTIONS: NONE.
+NEXT (Owner queue, not started): APPLICATION / COUPON / ESSAY RUNTIME / GROWTH.
+STOP after this closeout. Remaining prerequisites: existing secure hosted DB binding,
+real review/operator session, existing finance credential reuse (never mint/rotate).
+[Admin source/reconciliation details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/OVERNIGHT_ADMIN_QL_2026-10-07.md).
+
 ## Overnight Phase B — MY Dashboard (2026-10-07)
 
 **PARTIAL (implemented/deployed; hosted member-data acceptance unavailable).**
@@ -29,7 +80,7 @@ logout PASS using intercepted fixtures only. Hosted unauthenticated routes HTTP2
 with login gate (release query distinguished stale proxy-cached old responses).
 No real user mutation or real authenticated-data acceptance; no credentials provided.
 [Details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/OVERNIGHT_MY_2026-10-07.md).
-Proceed to Phase C. Read-only anonymous Production probe: admin_operator/admin_dashboard
+Phase C closeout is recorded above. Read-only anonymous Production probe: admin_operator/admin_dashboard
 PGRST202 (not in schema cache), is_quality_operator 42501 (exists, anon denied).
 Existing operator membership retained from Owner/Claude verified evidence, not re-read.
 
@@ -46,8 +97,8 @@ Hosted migration ledger/function/activation reads and new-user grant E2E BLOCKED
 no DB/admin credential or relevant connector in this environment. Email confirmation
 ON is the verified public setting; deployed guard presence is not inferred.
 [Backend evidence](https://github.com/LC3808/legendstudy-app/blob/codex/overnight-verified-signup/wiki/verified-signup-overnight.md).
-Owner supplied full Overnight plan; prior missing-plan gate resolved. Proceed to
-MY, then Admin/QL; only blocked credentials/Production writes are deferred.
+Owner supplied full Overnight plan; prior missing-plan gate resolved. MY/Admin UI
+now deployed (closeout above); blocked hosted operations remain deferred.
 
 ## LAB visual follow-up / direct checkout — 2026-10-07
 
