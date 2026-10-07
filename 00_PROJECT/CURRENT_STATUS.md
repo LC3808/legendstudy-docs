@@ -51,9 +51,15 @@ old order expired at2026-10-07 10:36:59UTC; remains TEST/ORDER_CREATED/NONE/gran
 Latest successful Production deployment d1ee4a58 at main6584e25 includes e1adc86;
 parallel Pricing changes preserved. No new token/signing/schema/code change here.
 
-**Awaiting exactly one fresh Owner TEST payment** to verify PAID/TEST_RECORDED/NULL,
-CONFIRM/SUCCEEDED and spendable delta0. Auth restoration does not certify payment
-completion. CARD_REVIEW_READY:NO. TOSS_EMAIL_READY:NO.
+**TOSS CONFIRM CLOSEOUT 2: COMPLETE.** Owner fresh3-Credit TEST payment verified
+2026-10-07 10:56:27UTC: PAID / TEST_RECORDED / grant_id NULL / CONFIRM SUCCEEDED
+(exactly1 successful confirm). Reviewer payment-linked grants remain0: payment-
+attributable spendable Credit delta0. Real charge:NO (TEST). Actual success page
+shows “결제가 완료되었습니다.” and “3 Credits 상품의 테스트 결제가 정상적으로
+확인되었습니다.” with /essay-lab/ and /account/ links. HTTP401 blocker resolved by
+Owner restoration of existing finance Secret binding; no new JWT/provisioning,
+schema, architecture or LIVE change. No further Owner payment retest needed for
+this closeout. External card approval and email sending are separate; no email sent.
 
 ## Launch target
 
