@@ -10,6 +10,35 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay Web runtime activation — PARTIAL — 2026-10-08
+
+[Owner authority / unattended override](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-essay-web-runtime-activation.md).
+APP candidate361880b; LAB implementationea144bc (preserves Manuse251c7c).
+Existing Math consumer/private upload/extraction/evaluation/learning restored from
+34bfab5; authenticated server availability fails closed. Humanities canonical RPC
+adapter is fixture-tested, not a live worker/editor integration. New010 read projection
+LOCAL_VERIFIED only; no DB migration applied. No privileged Supabase/Cloudflare binding
+exists in the current cloud environment, including config metadata. Git deployment is
+separate from DB/provider activation. No Owner operator request under away override.
+
+- Production inventory: published Humanities questions0,criteria0; Math set/problem/
+  leaf/profile1 each, bucket private20MiB. Counts do not establish reviewed content.
+- Humanities blocked by content/worker; mixed blocked by reviewed capability binding
+  and atomic orchestration; science blocked by evaluator/rubric/fixtures. Math remains
+  narrowly allowlisted and unavailable until trusted config/DB/content admission passes.
+-824 LAB tests, lint/typecheck/boundary/build PASS;31 Python contract/worker tests;
+  existing PG17 Math/learning/legacy/install regressions PASS;010 projection10 checks
+  with a stubbed lifecycle fixture PASS. These are NOT four successful live E2Es.
+- Local browser4 route/viewport checks PASS, anonymous evaluation controls absent.
+  Provider calls0; no Credit, payment, private artifact or student data mutation.
+-005 HOLD; Signup frozen; MY/Admin frontend, Payment/Toss/IAP and Manus visuals unchanged.
+
+Production release: LAB `ea144bc0c19d64c916fb4485b8bd7b175a465154`, Cloudflare
+`2e7b5c14-953b-497c-b873-88567c521442` SUCCESS. Actual anonymous `/essay-lab/` and
+`/math/` at390/1440px:4 browser checks PASS, HTTP200/no page errors/no evaluation
+controls. Availability200/all types false; upload/extract409/evaluate503 with no
+credentials, answers or artifacts. Authenticated evaluation/Credit E2E NOT_VERIFIED.
+
 ## Admin Member Management / Essay Mixed-mode — FOUNDATION COMPLETE — 2026-10-08
 
 [Owner execution authority](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md)

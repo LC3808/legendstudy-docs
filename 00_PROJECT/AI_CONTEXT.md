@@ -10,15 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Restore route — Admin members / Essay next foundation Oct08
+## Restore route — Essay Web runtime Oct08
 
-Owner explicitly permits next task with predecessor PARTIAL; [current execution
-order](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md)
-supersedes the original COMPLETE-only gate.006 Application+Events,007 Study and008
-Student360 are PRODUCTION_APPLIED and postflight verified; authenticated acceptance
-pending.005 HELD; Signup frozen. Track A directory009 and Track B offline Essay
-planning are on APP/LAB codex/admin-members-essay-foundation; see CURRENT_STATUS and
-latest Daily before apply/deploy. Preserve Manus main and frozen Payment/Toss/IAP.
+[Current Owner authority / unattended override](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-essay-web-runtime-activation.md)
+now follows completed Admin/Essay foundation. Runtime activation is PARTIAL, not a
+four-type live launch. APP/LAB branch codex/essay-web-runtime; current evidence in
+CURRENT_STATUS/latest Daily and APP wiki/essay-web-runtime-activation.md. Reuse existing
+engines/ledger;010 read projection is not Production-applied.005 HELD, Signup CLOSED,
+Payment/Toss/IAP frozen. Preserve Claude MY/Admin and Manus Header/Icon/Favicon.
+No Owner SQL/terminal/intermediate requests; continue independently and consolidate
+actual access/content/provider blockers in final OWNER_ACTION_REQUIRED.
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
