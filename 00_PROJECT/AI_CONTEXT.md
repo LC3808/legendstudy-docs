@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — MY shared foundation Oct08
+
+Signup +3 predecessor CLOSED/OWNER_VERIFIED. Current task: MY/Application/Study/Student360.
+School3c432cd Production Owner verified. APP35ab994/LAB6434fe1 (+Manus13fc77c merge1a215d4)
+are foundation candidates, NOT_APPLIED. Owner006–008 SQL package/postflight pending;
+Target005 unique replacement separately HELD §74 and APP runtime test pending.
+Read latest CURRENT_STATUS and Daily2026-10-08 shared foundation section, then the
+linked APP/LAB contracts. Preserve current Manus main; no Payment/Toss/IAP/worker changes.
+
+
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
 ## User-facing copy authority — 2026-10-08
