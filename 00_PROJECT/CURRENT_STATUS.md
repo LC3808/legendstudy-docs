@@ -10,7 +10,7 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Admin Member Management / Essay Mixed-mode — PARTIAL — 2026-10-08
+## Admin Member Management / Essay Mixed-mode — FOUNDATION COMPLETE — 2026-10-08
 
 [Owner execution authority](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md)
 permits proceeding despite predecessor authenticated acceptance pending. Do not
@@ -26,7 +26,7 @@ rebuild006 Application+Events/007 Study/008 Student360.005 remains HELD.
   list external NEIS calls0, missing-vs-unresolved distinct. No profile/master rewrite.
 -009 PRODUCTION_APPLIED: Owner returned20261008000900/admin_member_directory. Exact preparation package,
  13395bytes SHA256cc2a6f4a3e0b7f7f1624b7220e9070d3b675d5bf0ff62a2693b842c3ecd0d2cd.
-  No005, no replay006–008, no Essay migration. Actual anonymous admin_member_list returns401/42501. Postflight owner/hash/ACL/cache verification pending; LAB main remains507ed7b until that check.
+  No005, no replay006–008, no Essay migration. Actual anonymous admin_member_list returns401/42501. Owner postflight PASS: RPC MD5 4ad4a5be429a5b43788b23502ca863e7, postgres/SECDEF/empty search_path, anonymous execute denied; cache RLS/direct CRUD denial and both school names match. LAB e7810c2 Production deployment9e2dc6f2-af55-4210-9953-e64a092ae11a; live member route/new RPC bundle/anonymous login gate verified. Main bfc20c0 adds Owner-requested result ordinals; concurrent brand0847170 preserved. Ordinal Production deployment0494a6f8-c82d-40af-8722-f59f2f519d43 succeeded.
 - Track B ANALYZED + OFFLINE FOUNDATION IMPLEMENTED: [gap/mapping/contract](https://github.com/LC3808/legendstudy-app/blob/9b8f75a89877c2b284fbf6e22c0869fed4d248d0/wiki/essay-mixed-mode-foundation.md).
   Current Production50 active universities/21 active exams,0 registered questions/
   criteria within those21. All21 mapped conservatively:8 humanities_social label
@@ -45,8 +45,7 @@ rebuild006 Application+Events/007 Study/008 Student360.005 remains HELD.
   installation checks PASS. Flutter NOT_RUN (pinned SDK unavailable); APP UI unchanged.
 
 Full details: [Admin contract](https://github.com/LC3808/legendstudy-app/blob/9b8f75a89877c2b284fbf6e22c0869fed4d248d0/wiki/admin-member-directory.md).
-Payment/Toss/Signup/IAP/Manus/Claude APP UI unchanged. Next: Owner009 result→postflight
-→ LAB main/deploy→actual operator acceptance. Larger Essay runtime/content QA requires
+Payment/Toss/Signup/IAP/Manus/Claude APP UI unchanged. Owner authenticated directory acceptance: all requested checks PASS. Follow-up ordinals implemented/local verified in bfc20c0. Larger Essay runtime/content QA requires
 separate approval; stop after foundation closeout.
 
 ## Shared MY foundation — PARTIAL — 2026-10-08
@@ -934,3 +933,6 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 - School/university selection UX: search candidates → unselected candidates remain visually secondary → selected name + available logo/symbol comes forward and is emphasized. Reuse existing profile/NEIS identity where applicable.
 - Product connection: the resulting personalization profile becomes common context for **내신 LAB / 수능 LAB / 논술 LAB** and future admissions-information surfaces, supporting the product promise that students can manage admissions preparation in one place. Actual application schools/history remain a separate future data model.
 - User can edit school, grade, interested universities and desired major later in My Page. Do not make onboarding a mandatory account-signup wall.
+
+
+Owner authenticated acceptance: all requested Admin directory checks passed (immediate list/count, search/filter/sort/pagination where applicable, school names, Member Detail/Student360, tested denial boundaries). Owner requested ordinal numbers; bfc20c0 implements display-only server offset + position +1. No claim of extra test accounts or >25 Production members created.
