@@ -24,9 +24,9 @@ rebuild006 Application+Events/007 Study/008 Student360.005 remains HELD.
 - School names: existing NEIS proxy verified J10/7530932 진접고등학교,
   R10/8750182 순심고등학교. Small private2-entry display cache joined by code;
   list external NEIS calls0, missing-vs-unresolved distinct. No profile/master rewrite.
--009 NOT_PRODUCTION_APPLIED yet. Owner exact preparation package provided,
+-009 PRODUCTION_APPLIED: Owner returned20261008000900/admin_member_directory. Exact preparation package,
  13395bytes SHA256cc2a6f4a3e0b7f7f1624b7220e9070d3b675d5bf0ff62a2693b842c3ecd0d2cd.
-  No005, no replay006–008, no Essay migration. LAB main remains507ed7b pending009.
+  No005, no replay006–008, no Essay migration. Actual anonymous admin_member_list returns401/42501. Postflight owner/hash/ACL/cache verification pending; LAB main remains507ed7b until that check.
 - Track B ANALYZED + OFFLINE FOUNDATION IMPLEMENTED: [gap/mapping/contract](https://github.com/LC3808/legendstudy-app/blob/9b8f75a89877c2b284fbf6e22c0869fed4d248d0/wiki/essay-mixed-mode-foundation.md).
   Current Production50 active universities/21 active exams,0 registered questions/
   criteria within those21. All21 mapped conservatively:8 humanities_social label
