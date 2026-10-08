@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-09",
+  "status": "PARTIAL",
+  "lab_commit": "1da1bb00575a417c1bc9ce1d3abcce7c02ef23f0",
+  "app_candidate": "26579523cea3c85f759bf7ec74af23765adc2586",
+  "app_store_rc": "85aefb10c6dd680580ce20ecbae1b0959d3e48bd",
+  "actual_provider_evaluations": 0,
+  "provider_calls": 0,
+  "production_db_writes": 0,
+  "activation": {
+    "math": "GATED",
+    "humanities": "GATED",
+    "econ_business": "GATED",
+    "science": "GATED"
+  },
+  "migration_010": {
+    "status": "BLOCKED_NO_PRIVILEGE",
+    "sha256": "cc911a6d7ad90c768b388e52520a7e72c40ebb885b4d862c0e07231b34e49734"
+  },
+  "component_candidate": {
+    "applied": false,
+    "ledger_registered": false,
+    "sha256": "cf14fa8d33ba9491fb41672f9d336ba96b7d5cf9916883c41c34f2a68871e5ea"
+  },
+  "tests": {
+    "lab_pass": 854,
+    "python_pass": 70,
+    "python_skipped": 29,
+    "component_sql": {
+      "scope": "isolated PG17, real canonical finalizer, synthetic content/provider; NOT Production E2E",
+      "checks": [
+        "interrupted_install_rolls_back",
+        "non_superuser_install",
+        "temporary_memberships_restored",
+        "existing_function_bodies_acls_unchanged",
+        "rls_enabled",
+        "anon_no_direct_table",
+        "authenticated_no_direct_table",
+        "service_role_no_direct_table",
+        "essay_worker_no_direct_table",
+        "student_finalize_denied",
+        "anon_finalize_denied",
+        "missing_section",
+        "wrong_parent",
+        "wrong_snapshot",
+        "missing_capability",
+        "extra_raw_answer",
+        "bad_base",
+        "invalid_output_no_charge",
+        "invalid_output_no_result",
+        "atomic_insert_failure",
+        "atomic_failure_no_charge",
+        "atomic_failure_parent_processing",
+        "concurrent_finalization",
+        "single_parent_one_credit",
+        "replay_no_charge",
+        "stale_fence_replay",
+        "replay_changed_section",
+        "owner_result",
+        "foreign_result",
+        "anonymous_result",
+        "included_rewrite_no_extra_credit",
+        "history_both_results",
+        "science_canonical_result",
+        "failure_no_consumption",
+        "failed_parent_no_sections",
+        "canonical_erasure_cascades",
+        "pending_deletion_read_denied",
+        "account_fk_cascade"
+      ],
+      "count": 38,
+      "production_writes": 0
+    },
+    "math_wire": {
+      "scope": "isolated PG17 role claims + LAB actual TypeScript wire, synthetic evaluation; NOT hosted JWT/storage/provider E2E",
+      "checks": [
+        "wire_submit_replay",
+        "wire_foreign_input_denied",
+        "wire_request_replay",
+        "wire_fenced_finalize_replay",
+        "wire_initial_one_credit",
+        "wire_completed",
+        "wire_included_eligible",
+        "wire_14day_boundary",
+        "wire_foreign_result_denied",
+        "wire_resolve_replay",
+        "wire_reevaluation_replay",
+        "wire_fenced_finalize_replay",
+        "wire_included_no_extra_credit",
+        "wire_history",
+        "wire_failure_no_consumption",
+        "wire_failed_no_result"
+      ],
+      "count": 16,
+      "production_writes": 0,
+      "provider_calls": 0
+    },
+    "010_projection_stubbed_lifecycle": 10
+  },
+  "access_audit": {
+    "supabase_management_http": 401,
+    "cloudflare_management_http": 400,
+    "cloudflare_error_code": 9106,
+    "github_actions_workflows": {
+      "app": 0,
+      "lab": 0
+    },
+    "existing_cloud_secret_bindings": 0,
+    "previous_apply_path": "Owner Mac Supabase CLI / Owner SQL Editor"
+  },
+  "environment_draft": {
+    "status": "saved",
+    "requires_publish": true,
+    "requirements_only": [
+      "SUPABASE_ACCESS_TOKEN",
+      "CLOUDFLARE_API_TOKEN",
+      "MATH_TEST_ACCESS_TOKEN"
+    ],
+    "credentials_created": false
+  },
+  "deployment": {
+    "id": "e99edc89-742c-469b-9bc1-e8f0c6c370a4",
+    "status": "SUCCESS"
+  },
+  "production_browser": {
+    "checks": [
+      {
+        "route": "/essay-lab/",
+        "width": 390,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/math/",
+        "width": 390,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/essay-lab/",
+        "width": 1440,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/math/",
+        "width": 1440,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      }
+    ],
+    "scope": "Production anonymous browser; no authenticated/provider/credit action"
+  },
+  "production_gate": {
+    "availability_http": 200,
+    "all_types_active": false,
+    "upload": 409,
+    "extract": 409,
+    "evaluate": 503
+  }
+}

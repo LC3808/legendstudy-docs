@@ -10,15 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Restore route — Essay runtime completion Oct09 KST
+## Restore route — Essay activation Oct09
 
-[Current unattended continuation](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-completion.md).
-Status PARTIAL: APP23d4555/LAB390ac39, all four types GATED. Current evidence is in
-CURRENT_STATUS/latest Daily and APP wiki/essay-runtime-completion.md.010 is still
-BLOCKED; no actual provider/authenticated E2E. Mixed/science persistence remains
-engineering work, not merely a deployment toggle. Preserve existing engines/ledger,
-Claude MY/Admin and Manus visuals.005 HELD; Signup/Payment/Toss/IAP frozen.
-No Owner SQL/terminal/login/intermediate requests; aggregate blockers at final report.
+[Current activation directive](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-activation.md).
+Status PARTIAL; real evaluations0; all four types GATED. APP2657952 introduces locally
+verified canonical component persistence (38 SQL checks), not a Production migration.
+010 remains BLOCKED_NO_PRIVILEGE. Existing management/test binding requirements saved
+as draft metadata only. Current implementation/content/access gates are in CURRENT_STATUS,
+latest Daily and APP wiki/essay-runtime-activation-2026-10-09.md. Keep005 HELD and
+Signup/Payment/Toss/IAP frozen; preserve Claude MY/Admin/APP and Manus visuals.
+Do not ask Owner to operate SQL/terminal/login; no activation from fixture tests alone.
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 

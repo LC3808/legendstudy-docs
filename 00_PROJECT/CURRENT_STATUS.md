@@ -10,6 +10,50 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay runtime activation — PARTIAL — 2026-10-09
+
+[Owner activation directive](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-activation.md).
+Primary goal (one real provider-backed authenticated evaluation): BLOCKED; completed0.
+No type enabled. Previous foundation evidence below remains historical.
+
+- APP2657952: canonical component persistence candidate, NOT_APPLIED and outside the
+  migration ledger. One parent claim/finalizer/charge, transactional component extension,
+  optional owner read. No core function/ACL/unique constraint/Credit policy replacement.
+-38 real isolated PG17 checks PASS: non-superuser install + interrupted-install rollback,
+  original function/ACL preservation, concurrent finalization/replay, initial1Credit,
+  included rewrite0, forced result insert failure rolls back charge/parent completion,
+  owner History, foreign/anonymous deny, failure/no consumption, pending-deletion deny,
+  canonical essay erasure and account FK cascade. Synthetic content/provider only.
+- LAB server bridge: student ownership before worker claim, frozen reviewed manifest,
+  durable checkpoint before commit, replay without provider re-execution. Existing
+  evaluation History identity reused; account-switch safety and legacy-null/error split.
+  Quantitative feedback excludes unrevealed hints/generated solution/source internals.
+- Science/mixed still require real reviewed content and a valid canonical1.3 parent output.
+  No automatic scientific-verdict→level conversion; artifact/submission linkage remains
+  unverified. No real science/mixed exam or rubric published.
+-854 LAB tests + lint/typecheck/boundary/build PASS; Python70 PASS/29 private-fixture
+  skips; Math canonical SQL↔Web16 PASS; unchanged010 projection10 PASS (stubbed lifecycle).
+-010=BLOCKED_NO_PRIVILEGE. Earlier DB successes used Owner Mac Supabase CLI/SQL Editor;
+  current cloud has no such credentials/path. Supabase management401; Cloudflare
+  management400/code9106; both repos Actions workflows0. Git/Cloudflare Git deploy works.
+- Existing reviewed Humanities manifests found, accepted full private packages absent.
+  Last Owner count0 published questions/criteria is not a new privileged DB observation.
+- Environment draft saved ONLY three existing-access requirements (no values):
+  SUPABASE_ACCESS_TOKEN, CLOUDFLARE_API_TOKEN, MATH_TEST_ACCESS_TOKEN. Requires secure
+  environment-settings review/save/publish; not current runtime access. No new credential
+  issuance, Owner SQL/terminal/login request, provider call or Production DB write.
+- All four GATED; Target005 HOLD; Payment/Toss/IAP/Signup/Credit policy untouched.
+  Claude APP release85aefb1 and MY/Admin + Manus visual changes preserved.
+
+
+Production closeout: LAB `1da1bb00575a417c1bc9ce1d3abcce7c02ef23f0`, Cloudflare
+`e99edc89-742c-469b-9bc1-e8f0c6c370a4` SUCCESS. APP candidate
+`26579523cea3c85f759bf7ec74af23765adc2586` branch pushed; no DB/worker apply.
+Post-deploy browser4 checks at390/1440px: Essay/Math HTTP200, no page errors or evaluation
+control. Availability200/all four false; anonymous upload409/extract409/evaluate503.
+Production authentication/provider/private-storage E2E remain NOT_VERIFIED. No ordinary
+user Credit consumed. Evidence: `90_HISTORY/EVIDENCE/2026-10-09-essay-activation.json`.
+
 ## Essay runtime completion follow-up — PARTIAL — 2026-10-09 KST
 
 [Owner continuation](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-completion.md).
