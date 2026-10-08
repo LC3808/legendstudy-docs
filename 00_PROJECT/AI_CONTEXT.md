@@ -12,6 +12,41 @@ SUPERSEDED_BY: —
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
+## Production activation handoff — 2026-10-08
+
+Latest functional release LAB63f8dc3 preserves Manus visual mainae44317. Backend
+candidates APPafada0d correct Admin Credit/UUID and MY intended-major column ACL;
+review branch, NOT_APPLIED. Signup guard/lifecycle/concurrency locally verified.
+Hosted DB/real-session/finance authority access still missing: overall PARTIAL.
+See CURRENT_STATUS Production activation closeout and Oct8 Daily. Public visuals
+belong to Manus; Codex owns functions/data/backend. STOP after this task; next Owner
+queue APPLICATION / COUPON / ESSAY RUNTIME / GROWTH is not automatically started.
+
+## Current LAB frontend handoff — 2026-10-07
+
+LAB final main `f7f05f5` (implementation `65aa957`) has the reconciled public product
+shell, verified live at lab.legendstudy.com. See
+[CURRENT_STATUS: LAB frontend reconciliation](CURRENT_STATUS.md#lab-frontend-reconciliation--2026-10-07)
+and today's Daily for evidence and Auth read-only limits. Overall PARTIAL only for
+unverified Production bonus timing/idempotency; hosted Email confirmation is ON.
+Payment/Toss/finance, Credit authority, deletion lifecycle, Admin/QL remain unchanged.
+Owner next queue: AUTH/CREDIT/MY → ADMIN → APPLICATION/COUPON/ESSAY/GROWTH.
+Visual follow-up main `3a1c69f` now adds subtle depth, centered LAB heroes and direct
+Pricing → existing Toss checkout. IA/copy preserved. See CURRENT_STATUS visual follow-up.
+Owner's follow-up authorizes Overnight continuation; its referenced detailed phase
+plan is not present in the supplied request/Wiki and was requested. Existing Admin
+signing/migration changes cannot be blindly imported under the Payment freeze.
+
+## Overnight execution authority — 2026-10-07
+
+Owner supplied detailed Phase A/B/C plan. Missing-plan gate is resolved.
+Overnight closeout: LAB main b79e9ba deployed; MY/Admin/QL frontend reconciled.
+Overall PARTIAL: Phase A guard source/local verified (APP ba1f875 branch), hosted
+apply/real-user acceptance/finance grant blocked; old Admin SQL requires Credit
+fence and UUID reconciliation before apply. No DB writes or new credential/signing.
+See CURRENT_STATUS Overnight final closeout. STOP; next Owner queue is
+APPLICATION / COUPON / ESSAY RUNTIME / GROWTH, not automatically started.
+
 ## 0. MANDATORY DEVELOPMENT PRINCIPLES — HIGHEST PRIORITY
 
 These rules govern every LegendStudy task unless the Owner explicitly overrides them.
@@ -259,3 +294,12 @@ Each of these is a **real distinction** that has caused or could cause incidents
 - **Desired major / interest field:** collect 희망 학과/관심 전공, with an explicit undecided option (e.g. `아직 정하지 못했어요`). It is exploratory personalization, not a binding application choice.
 - These inputs are the shared personalization foundation for **내신 LAB / 수능 LAB / 논술 LAB** and future admissions-information delivery, so the user should feel that learning + admissions preparation can be managed in one place. Do not overclaim admission prediction or treat interest data as actual applications.
 - All first-run values must be editable later under My Page / 학습·입시 정보. Onboarding completion is a device/install UX state; profile/admissions interests are server-side user data.
+
+## APP final RC handoff — 2026-10-07
+
+APP73a2a35 includes personalization/native LAB/notification/deletion. Owner full967~2
+PASS; fresh3.47.6 analyze, unsigned AAB/iOS release/archive PASS. Owner confirms
+deletion/essay-write/evaluation flags true; shared tool/store-release enforces them.
+Next APP gate is Owner signing→focused physical-device smoke→Console inputs/policy review; do not
+reopen completed feature work or run Math/Payment work as part of APP RC. See CURRENT_STATUS
+and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.

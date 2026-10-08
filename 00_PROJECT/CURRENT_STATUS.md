@@ -15,6 +15,305 @@ SUPERSEDED_BY: —
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
 > Status axes are defined in [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`.
 
+## Production activation closeout — 2026-10-08
+
+**PRODUCTION_ACTIVATION_STATUS: PARTIAL. DB_PRODUCTION_APPLIED: NONE.**
+Owner separates Codex function/data/backend authority from Manus public visual
+ownership. Codex preserved Manus main371e30a/ae44317 unchanged and shipped only
+conditional Admin navigation plus existing member-detail data fields.
+
+LAB main `63f8dc37484eebff533b7b84caaec2753f5a1972` on latest mainae44317.
+Cloudflare Production46948063-e9a9-41cb-a234-e582785d8a30 SUCCESS.
+Header [관리자] appears only after existing admin_operator returns boolean true;
+anonymous, normal user, recovery, missing/error RPC, account switch/logout fail closed.
+No email-based admin flag or new role. Existing Admin IA and /ql remain intact.
+Members add only existing verified-email/provider/major/interested university fields.
+No CSS/Home/LAB/Pricing visual edits by Codex.
+
+Backend candidate `codex/production-activation-closeout` at `afada0d` (APP canonical
+final Store RC7d1c036 + verified-signup guardba1f875). Original Admin candidates
+20261007000100/200/400 retained byte-for-byte; additive20261008000100 fixes canonical
+CANCEL_PENDING exclusion (spendable/reserved/expiry), inquiry Auth UUID→credit account
+mapping, and bounded member fields. Exact body/security property preflight rejects
+unknown live definitions; OID/owner/ACL preserved. No old migration history rewritten.
+
+A real MY SQL defect was found: profiles.intended_major had no authenticated UPDATE
+column privilege. Additive20261008000200 fixes only that column with exact existing
+owner-RLS checks and rejection of extra permissive user-write policies. Target/major
+save and other-owner denial verified locally, not on a hosted member.
+Signup20261007150000 remains the existing verified-email guard: canonical once,+3,
+no intrinsic expiry, existing lifecycle/ledger/idempotency unchanged. No worker or
+Auth setting activation, new wallet, signup backfill or general-user mutation.
+
+Tests: LAB496/44 files, lint/typecheck/boundary/build/readiness PASS. Local browser9
+role/route functional checks PASS (intercepted data). Original402 Admin SQL checks
++46 correction/signup/MY RLS assertions PASS in PGlite. Real local PostgreSQL17.11
+reran402 checks plus8 concurrent signup connections: one grant,one transaction,+3,
+no expiry; pre-confirm denied and relogin retry same grant. Existing full lifecycle
+suite with signup guard:112 checks plus ownership/rollback PASS, including synthetic
+local erase/grant race. No hosted/destructive/general-user test data used.
+Actual Production assets passed the same9 intercepted functional role/route checks.
+13 relevant routes returned HTTP200; Admin/QL noindex retained. No visual audit or
+real authenticated data write was claimed.
+
+Fresh Production public probes: Auth confirmation ON, signup enabled;
+admin_operator/admin_dashboard PGRST202; is_quality_operator and credit_summary deny
+anon (42501). Payment read-only runtime: REVIEW/TEST, consumer_purchase=false. Config
+presence does not establish finance JWT subject/role/expiry or Admin audit-safe reuse;
+essay_admin_grant derives actor from signed finance subject. No new signer/token or
+finance server is introduced. Credit grant/cancel/refund remain closed.
+
+**Verification axes:** ROUTE verified as below. AUTHORIZATION: Production anon QL/
+Credit denial verified; real normal/admin/quality-operator session NOT_ASSESSABLE.
+DATA: hosted authenticated Admin/MY NOT_ASSESSABLE. WRITE: hosted NOT_RUN.
+CROSS_SURFACE: actual Admin grant→ledger→summary→MY→Essay header NOT_RUN.
+No real test/review grant: accountnone,quantity0,origin/reasonnot recorded.
+Existing admin@legendstudy.com account/allowlists remain Owner/Claude evidence,
+not independently re-read. No new Admin account or password lookup.
+
+Blocking prerequisites remain absent: existing hosted DB/Supabase management access,
+real safe admin/reviewer sessions, verified reuse of existing finance authority.
+No migration ledger/function activation/worker state could be read or applied.
+Safe preflight/apply/rollback instructions are in the backend candidate; no broad
+migration push, history repair or inferred Production success. Runtime-not-assessable
+MY implementation is retained. User was asked only about secure environment binding,
+never to paste credentials. No new secret/credential issued.
+
+PAYMENT_TOSS_CHANGED: NO. PUBLIC_FRONTEND_VISUAL_CHANGED_BY_CODEX: NO (approved
+conditional navigation only). DESTRUCTIVE_PRODUCTION_ACTIONS: NONE.
+NEXT: APPLICATION / COUPON / ESSAY RUNTIME / GROWTH — not started. STOP.
+[LAB details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/PRODUCTION_ACTIVATION_2026-10-08.md).
+[Backend candidates and verification](https://github.com/LC3808/legendstudy-app/blob/codex/production-activation-closeout/wiki/production-activation-closeout.md).
+
+## Overnight Phase C / final closeout — 2026-10-07
+
+**OVERNIGHT_STATUS: PARTIAL. AUTH_SIGNUP_CREDIT: PARTIAL. MY_DASHBOARD: PARTIAL.
+ADMIN_QL: PARTIAL.** Independent implementation, main/Production release and Wiki
+closeout complete; unavailable hosted credentials and migration discrepancies remain.
+
+LAB main `b79e9baf3b02a6ed3ed0c7f53cbb3f4fb89a0dab`; Cloudflare Production
+`984fa6fe-608d-452d-9312-ae5accd29109` SUCCESS (GitHub check). Prior MY deployment
+`f2719534-9362-457a-b418-d6e2869e174a` also succeeded. Existing Admin/QL consumers
+selectively reused, preserving current public UI, Auth, Credit, Payment and deletion.
+Internal IA: `/admin/`, members, credit, payment, operations, inquiries; AI Quality
+links to existing `/ql/`, with separate operator authorization. No public nav link,
+noindex/robots excluded. Account switch/logout unmounts prior user data.
+
+485 tests/43 files, lint/typecheck/boundary/build/readiness PASS. Browser fixture:
+168 Admin/QL conditions (7 routes ×4 widths ×100%/200% ×3 Auth states) PASS; ordinary
+members do not request operational data, logout clears member data, finance grant
+button disabled. Production unauthenticated HTTP200 for all17 tested public/MY/Admin/QL
+routes; internal noindex verified. Actual Production assets also passed the same168 intercepted browser conditions,
+with zero browser errors and no horizontal overflow.
+MY prior actual-bundle fixture32 checks PASS. These intercepted checks prove frontend
+behavior, not real operator access or hosted data mutation.
+
+Hosted read-only probes: admin_operator/admin_dashboard PGRST202; is_quality_operator
+42501 to anon. Existing admin@legendstudy.com membership is Owner/Claude evidence,
+not independently re-read. No new account or privileged credential. Finance server
+from old branch not imported because it independently mints a JWT. Credit grant and
+payment finance writes remain closed; no TEST/REVIEW grant performed (quantity0,
+ledger/MY/Essay-header grant-chain E2E NOT_RUN).
+
+Admin migrations20261007000100/200/400 NOT_APPLIED. No live migration ledger/ownership/
+ACL connection available, and old SQL must not be applied unchanged: Admin balance
+calculations omit canonical Payment CANCEL_PENDING spendability exclusion, and P0B
+inquiry detail passes Auth UUID to a helper requiring credit-account UUID. Reconcile
+Admin reads against canonical credit_summary, verify distinct identities and current
+ledger/collisions/rollback before apply. Payment itself remains frozen.
+
+Phase A APP branch `codex/overnight-verified-signup` at `ba1f875` retains minimal
+verified-email eligibility guard20261007150000 (implementation066fa90), local11
+PostgreSQL/PGlite assertions and Wiki checker PASS. No APP main promotion or hosted
+apply: canonical base is final Store RC, not old APP main. Existing +3 once-per-account
+idempotency remains source authority; deployed bonus timing/activation/verified-email
+behavior are NOT_ASSESSABLE. Public Auth email confirmation ON. No signup policy
+setting changed, backfill, general-user credit, actual payment or deletion occurred.
+
+DB_APPLIED: NONE. PAYMENT_TOSS_CHANGED: NO. DESTRUCTIVE_ACTIONS: NONE.
+NEXT (Owner queue, not started): APPLICATION / COUPON / ESSAY RUNTIME / GROWTH.
+STOP after this closeout. Remaining prerequisites: existing secure hosted DB binding,
+real review/operator session, existing finance credential reuse (never mint/rotate).
+[Admin source/reconciliation details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/OVERNIGHT_ADMIN_QL_2026-10-07.md).
+
+## Overnight Phase B — MY Dashboard (2026-10-07)
+
+**PARTIAL (implemented/deployed; hosted member-data acceptance unavailable).**
+LAB main `f0e612df4eda57d04695e440cd17b4a99a1638e7`; Cloudflare Production
+`f2719534-9362-457a-b418-d6e2869e174a` SUCCESS. MY final six-section IA,
+canonical Credit usage/history, shared profile/target edit, actual Essay records /
+1–5 dimensions, other LABs and account/support links. No Application schema, coupon,
+new ledger, fake score or Payment change. Account switch/logout clears private state.
+320 tests/30 files, lint/typecheck/boundary/build/static secret scan PASS. Local and
+actual deployed bundle 32 responsive conditions, goal edits, history, dimensions and
+logout PASS using intercepted fixtures only. Hosted unauthenticated routes HTTP200
+with login gate (release query distinguished stale proxy-cached old responses).
+No real user mutation or real authenticated-data acceptance; no credentials provided.
+[Details](https://github.com/LC3808/legendstudy-lab/blob/main/docs/OVERNIGHT_MY_2026-10-07.md).
+Phase C closeout is recorded above. Read-only anonymous Production probe: admin_operator/admin_dashboard
+PGRST202 (not in schema cache), is_quality_operator 42501 (exists, anon denied).
+Existing operator membership retained from Owner/Claude verified evidence, not re-read.
+
+## Overnight Phase A — verified signup (2026-10-07)
+
+**PARTIAL.** Existing canonical +3 ledger/benefit pipeline reused. Source eligibility
+formerly checked only signup cohort time; a minimal guard adds verified email to
+`credit_signup_eligible` while retaining installation cutoff, OID/owner/ACL and all
+ledger idempotency/locks. APP RC-based `codex/overnight-verified-signup` contains
+migration `20261007150000` + 11 local PostgreSQL/PGlite assertions PASS and Wiki checks.
+No APP main promotion: APP main is not backend authority. No Production apply,
+backfill, transaction, credential issuance or deletion/Payment architecture change.
+Hosted migration ledger/function/activation reads and new-user grant E2E BLOCKED:
+no DB/admin credential or relevant connector in this environment. Email confirmation
+ON is the verified public setting; deployed guard presence is not inferred.
+[Backend evidence](https://github.com/LC3808/legendstudy-app/blob/codex/overnight-verified-signup/wiki/verified-signup-overnight.md).
+Owner supplied full Overnight plan; prior missing-plan gate resolved. MY/Admin UI
+now deployed (closeout above); blocked hosted operations remain deferred.
+
+## LAB visual follow-up / direct checkout — 2026-10-07
+
+Owner approved the prior IA/copy and requested subtle visual depth, centered score
+LAB heroes and direct Pricing checkout. LAB main `3a1c69f99812321778bb166aa4376a0013b88462`
+implements warm neutral canvas, white surfaces/borders/shadows, shared centered
+내신/모의·수능 hero cards and Essay surface harmony. No repeated diagram, new imagery,
+Home copy/IA change, or MY redesign. Brand `#ffac14` retained.
+
+**CHECKOUT_DIRECT: PASS (frontend contract/browser).** Pricing embeds the existing
+PaymentCheckout controller: SKU selection → existing order API → existing official
+Toss SDK request. No second checkout-selection page. The old checkout route remains
+for direct links/fallback. Buyer session, server authorization, per-SKU idempotency,
+stale-order retry, server amount/customer/success/failure URLs preserved. Login returns
+to Pricing with selected SKU; no automatic purchase after login. Double clicks guarded.
+
+Local lint/typecheck, 313 tests/28 files (20 focused checkout tests), boundary/static
+build/readiness/secret/link audits PASS. 96 responsive public checks PASS. Intercepted
+browser direct checkout at 1440/1280/390/360 ×100%/200% text and guest login/SKU flow
+PASS; no external order/payment. Production 12 pages ×4 widths ×100%/200% text =96 PASS, HTTP200 and no horizontal
+overflow; new surface/centered hero confirmed live. Actual deployed bundle direct
+entry + guest SKU flow also PASS with Auth/orders/SDK fully intercepted. No new
+Production payment or signup transaction. Deployment ID unavailable from GitHub APIs.
+No new real Toss transaction or authenticated reviewer acceptance is claimed.
+
+**PAYMENT_BACKEND_CHANGED: NO. DB_CHANGED: NONE.** Functions/payment runtime/mode/
+keys/finance/confirm/cancel/signing/schema/migrations unchanged. Credit/deletion
+and Admin/QL implementations preserved. Detail:
+[LAB visual follow-up](https://github.com/LC3808/legendstudy-lab/blob/main/docs/VISUAL_FOLLOWUP_2026-10-07.md).
+
+Owner now directs continuation to Overnight AUTH/CREDIT → MY → ADMIN/QL; this
+supersedes the previous task's STOP routing. **Detailed Overnight authority is missing
+from the supplied follow-up and Wiki** (MY six section names are known; feature/data
+contracts and phase acceptance are not). Requested the referenced detailed plan.
+Existing Admin branch inspected read-only: includes independent finance JWT signing
+and unapplied backend migrations, so it cannot be blindly merged under frozen
+Payment/signing constraints. Hosted bonus definitions/activation still cannot be read
+with available public credentials. No backend policy, provisional MY dashboard or
+Admin write path was invented while those requirements/access remain unresolved.
+
+## LAB frontend reconciliation — 2026-10-07
+
+**LAB_FRONTEND_RECONCILIATION: PARTIAL** — UI implemented, main pushed and live shell
+verified; Production bonus timing/idempotency read-only verification remains unavailable.
+LAB implementation `65aa9571de6b2a6674274cee66f48c57a77d6481`; final main
+`f7f05f56c0c79d117d8416ddf106ccb45e2bd00f` adds verified Auth/publication notes.
+Existing Git-connected Production serves the new shell at https://lab.legendstudy.com.
+Cloudflare deployment ID/status is not exposed by the available GitHub APIs; live
+content is verified, not inferred from push. No Cloudflare configuration changed.
+
+Same public Header before/after login: 내신 LAB / 모의·수능 LAB / 논술 LAB / 이용 안내;
+brand is Home. Credit uses existing `useCreditSummary`, no loading-as-zero or invented
+entitlement. Home typography/wrapping/duplicate CTAs and graphic cleaned; concise
+login/signup and APP-authority LAB copy; new `/exam-analysis/`; footer email purposes.
+Pricing: 판매 상품 → 학교 단체 이용 / 이벤트 프로모션 → 구매 안내. Existing checkout,
+Essay Credit and lifecycle preserved. Auth soft-navigation `next` / duplicate redirect
+and initial hydration fixed without backend policy changes. Legacy guide redirects
+resolve in one hop. Examples remain clearly examples, no new evaluation capability.
+
+Verification: lint/typecheck, 307 tests (28 files), boundary audit, static build,
+GitHub-readiness/static-secret scan PASS. Local 96 public responsive conditions plus
+40 intercepted signed-in/out conditions PASS, including mobile MY/Credit/logout and
+login→account. Production 12 routes ×1440/1280/390/360 ×100%/200% text =96 PASS,
+HTTP200/no horizontal overflow. Home/Login/Pricing screenshots reviewed; no broken
+Korean desktop words. Live Home CTA preserves `next=/account/`, form enabled, no
+page errors; Pricing order and four legacy redirects PASS. Actual signed-in Production
+was not tested (no supplied account); local fixture is not a live-account claim.
+
+Production Auth public settings read-only: `mailer_autoconfirm=false` (Email
+confirmation ON), `disable_signup=false`. New email/password signup should return
+no session and pre-confirm password login requires confirmation under this setting;
+no new Production signup/login was executed. Bonus current deployment/activation and
+exactly-once enforcement remain **NOT_ASSESSABLE** without privileged read access.
+Source APP final RC `7d1c036`: +3 profile/claim path in `20260929000300`, superseded
+when lifecycle enabled by confirmed-email worker/benefit recovery in `20261001000300`.
+Source idempotency: `credit_signup_once_per_account`, external ref/transaction keys,
+`benefit_claims`/`benefit_delivery` and locks. Do not infer deployed state from source.
+
+Read-only branch reconciliation: home-simplification and lab-ui-reconciliation fully
+included in baseline main; privacy patch files identical to main despite different
+ancestry; admin-console (5 unique commits) and quality-console (4 unique) left intact,
+not merged/cherry-picked. Full evidence:
+[LAB closeout](https://github.com/LC3808/legendstudy-lab/blob/main/docs/FRONTEND_RECONCILIATION_2026-10-07.md).
+
+**PAYMENT_CHANGED: NONE. DB_CHANGED: NONE.** Toss/finance/Functions, Credit schema,
+account deletion lifecycle and Admin/QL untouched. No payment transactions, live
+activation, new wallet/coupon/signup bonus/Application backend. Stop this task here.
+Next Owner queue: **AUTH/CREDIT/MY → ADMIN → APPLICATION/COUPON/ESSAY/GROWTH**;
+this routing does not authorize starting them. Read deployed Auth/Credit authority first.
+
+## APP final Store RC — verified 2026-10-07
+
+APP base `73a2a35` (`origin/claude/app-release-blocker-closeout-1`), closeout branch
+`codex/final-store-rc-1`. Owner full test **+967 ~2 PASS** supersedes older936/CI-pending
+APP claims below. Fresh Flutter3.47.6/Dart3.13.5 analyze **PASS**, unsigned Android AAB,
+iOS release and Xcode archive **PASS**. SDK wrapper corrected3.47.5→3.47.6; no app feature
+or dependency change. Native personalization/LAB/notification implementations retained;
+Manus logos optional/deferred. Standard Android build regenerates release registrant;
+`--no-pub` after pub get failed on dev-only integration_test, no source workaround needed.
+
+**Owner release defines CONFIRMED:** deletion, essay writes and evaluation all true.
+APP tool/store-release preserves other production values and shares flags across Android/iOS.
+Android existing upload-key binding prepared; no feature-code changes. Opus independent
+audit P0=0/P1=2 was cross-check evidence; both define P1s resolved.
+**Store NOT READY:** upload/distribution signing, recovery redirect verification, external-web-link policy review, device
+smoke and Console/reviewer/screenshots/build-number inputs. Physical iPhone detected but
+not installed/tested; no Android connected. Required public policy/support/deletion URLs
+HTTP200. Oct06 destructive deletion authority preserved, not rerun. Report +25-item smoke
+checklist: APP `wiki/final-store-rc-1.md`. No Production mutation, upload or Toss work.
+
+## Toss REVIEW confirm closeout 2 — 2026-10-07
+
+LAB main/Production `e1adc86`, successful deployment `52e432a9` includes bounded
+REVIEW RPC401 diagnostics and canonical completion/failure UI; latest HOME changes
+9691ef3 preserved. 264 tests, lint/typecheck/boundary PASS; direct Node22 build PASS
+(pnpm fallback build hit a local port sandbox limit). Local223/live12 assets secret
+scan PASS. TEST completion says test confirmation only; LIVE completion requires
+PAID/POSTED. Failure retains manual retry/account link and never claims success.
+
+**Finance JWT binding restored (Owner), runtime401 resolved.** Previous deployed
+failure was CONFIRM_HTTP_401 [FINANCE_RPC:PGRST301]. After Owner re-registered the
+existing PAYMENT_FINANCE_TOKEN, same-order confirm now returns409, not401. DB verifies
+old order expired at2026-10-07 10:36:59UTC; remains TEST/ORDER_CREATED/NONE/grant NULL.
+Latest successful Production deployment d1ee4a58 at main6584e25 includes e1adc86;
+parallel Pricing changes preserved. No new token/signing/schema/code change here.
+
+**TOSS CONFIRM CLOSEOUT 2: COMPLETE.** Owner fresh3-Credit TEST payment verified
+2026-10-07 10:56:27UTC: PAID / TEST_RECORDED / grant_id NULL / CONFIRM SUCCEEDED
+(exactly1 successful confirm). Reviewer payment-linked grants remain0: payment-
+attributable spendable Credit delta0. Real charge:NO (TEST). Actual success page
+shows “결제가 완료되었습니다.” and “3 Credits 상품의 테스트 결제가 정상적으로
+확인되었습니다.” with /essay-lab/ and /account/ links. HTTP401 blocker resolved by
+Owner restoration of existing finance Secret binding; no new JWT/provisioning,
+schema, architecture or LIVE change. No further Owner payment retest needed for
+this closeout. External card approval and email sending are separate; no email sent.
+
+Owner-requested final DB recheck: same latest order and all success assertions PASS;
+public runtime REVIEW/TEST confirms LIVE_PAYMENT_ENABLED:NO. CARD_REVIEW_READY:YES
+(TEST technical evidence), TOSS_EMAIL_READY:YES (evidence ready, not sent).
+Known-good payment runtime frozen: no further transactions/backend/env/key changes.
+Success-page presentation polish main9827a9f uses existing brand tokens, confirmed
+order quantity/price, responsive completion card and two CTAs; POSTED guard unchanged.
+No balance fabricated; authoritative balance absent from current response.278tests,
+lint/typecheck/boundary/Node22 build and static secret scan PASS.
+
 ## Launch target
 
 **2026-10-10 — before the 연세대 논술.** This is a target, not a guaranteed release date. This supersedes any earlier "mid-October" style dates in historical docs.
@@ -221,7 +520,7 @@ LegendStudy 앱과 LAB이 **같은 알림 행과 같은 읽음 상태**를 공�
   5→4 없음 · 4→3 1회 · 3→2→1→0 없음 · 회복 후 재진입은 새 cycle.
   예약/해제는 원장 잔액을 움직이지 않으므로 재시도가 알림을 되살리지 않음.
 - LAB: `/notifications/` + 헤더 종 배지 (noindex, sitemap 제외)
-- 앱: **연결 완료(코드, consumer-only)** — `legendstudy-app claude/app-release-blocker-closeout-1 @ 6736167` (`lib/features/notifications/*`). Home 종 배지(서버 unread 권위) + `/notifications` 받은함, notification-v1 RPC 4개, target allowlist(`inquiry→/my/feedback`, essay/math/credit/payment/essay_lab→`/lab`, unknown→무시), 로컬 unread/영구 local DB 금지. 포커스+UI 테스트 작성(`test/notification_center_test.dart`). **flutter analyze/test는 CI 검증 대기**(로컬 Flutter 3.32.0 < 요구 ≥3.47.3). 계약: `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
+- 앱: **연결 완료(코드, consumer-only)** — `legendstudy-app claude/app-release-blocker-closeout-1 @ 6736167` (`lib/features/notifications/*`). Home 종 배지(서버 unread 권위) + `/notifications` 받은함, notification-v1 RPC 4개, target allowlist(`inquiry→/my/feedback`, essay/math/credit/payment/essay_lab→`/lab`, unknown→무시), 로컬 unread/영구 local DB 금지. 포커스+UI 테스트 작성(`test/notification_center_test.dart`). **검증 갱신 2026-10-07:** APP73a2a35 Owner967~2 PASS; Flutter3.47.6 fresh analyze PASS. 계약: `legendstudy-app/docs/APP_NOTIFICATION_HANDOFF.md`
 
 검증(격리 PostgreSQL, 표준 체인): CANONICAL_CHAIN=OK,
 ADMIN_CONSOLE_CHECKS 158/158, ADMIN_P0B_CHECKS 351/351,
@@ -351,11 +650,11 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 - **Math:** MATH_RELEASE_CANDIDATE=YES, 실제 OpenAI gpt-5.6-sol Hosted 학습 루프 PASS, 최초 평가 Credit −1 / 포함 재평가 0, runtime kill switch는 **OFF로 복구·read-back 확인**. 실제 Math Storage byte erasure + metadata erasure는 동일 synthetic subject의 Account Deletion destructive E2E에서 최종 확인한다.
 - **Privacy:** LAB Production 개인정보처리방침 correction **LIVE PASS** (legendstudy-lab main @ ed8a1ca). Shared-backend 저장 사실과 일치하며 기존 “답안/성적/학교·학년 서버 미저장” 오표현은 제거됐다.
 - **Admin Console:** P0-A + P0-B는 **구현/격리 검증 완료, Production 미배포/main 미통합**. P0-A = dashboard/member/Credit read. P0-B = Credit canonical grant boundary + Payment ops + 1:1 문의(접수/운영자 조회·답변·상태/Resend). ADMIN-P0-C(논술/Math ops + 기존 /ql AI 품질 통합)는 남음.
-- **Shared Notification Center:** backend + LAB **CODE COMPLETE / NOT DEPLOYED**; **Flutter consumer integration CODE COMPLETE (2026-10-06, app `6736167`)** — Home bell + badge + `/notifications` inbox + mark read/all via notification-v1 RPCs, CI analyze/test pending (local Flutter too old). APP/Web 동일 user_notifications/read state. 저잔액은 매일/매 사용 알림 금지: 원장 잔액이 3 이하로 진입할 때 cycle당 1회, 3→2→1→0은 추가 알림 없음, 3 초과 회복 후 재진입 시 새 1회. Credit expiry는 D-30/D-14/D-7/D-3. Push(APNs/FCM)는 이번 release 범위 밖.
+- **Shared Notification Center:** backend + LAB **CODE COMPLETE / NOT DEPLOYED**; **Flutter consumer integration CODE COMPLETE (2026-10-06, app `6736167`)** — Home bell + badge + `/notifications` inbox + mark read/all via notification-v1 RPCs, Owner full967~2 PASS + fresh Flutter3.47.6 analyze PASS (2026-10-07). APP/Web 동일 user_notifications/read state. 저잔액은 매일/매 사용 알림 금지: 원장 잔액이 3 이하로 진입할 때 cycle당 1회, 3→2→1→0은 추가 알림 없음, 3 초과 회복 후 재진입 시 새 1회. Credit expiry는 D-30/D-14/D-7/D-3. Push(APNs/FCM)는 이번 release 범위 밖.
 - **Account Deletion Production activation — IN PROGRESS:** migration 20261005000100 applied/verified; delete-account + account-deletion-worker deployed fail-closed; privacy live. Minimal durable ops sink migration 20261005000200 account_ops_sink applied and account-ops-sink deployed; receipt stores hash+size only, not raw manifest/PII. ACCOUNT_OPERATIONS_TOKEN, restore/notification sink URLs, ACCOUNT_FINANCE_REVIEWED=true set. Edge/Vault ACCOUNT_DISPATCH_SECRET re-synchronized by Owner; secret value not recorded. Worker authentication was simplified to reuse existing server-side SUPABASE_SERVICE_ROLE_KEY; Owner applied exact EXECUTE grants to the **22 RPCs actually called by the worker** (22/22), not a broad account_* grant. Local worker auth patch exists but, at this checkpoint, Claude has not yet reported commit/push/redeploy/runtime verification. Lifecycle global enable remains OFF until worker/scheduler/watchdog are ready.
 - **Deletion E2E remaining:** worker auth patch verify→commit/push→redeploy; dispatch scheduler + watchdog; lifecycle enable; test1 synthetic account request→email reauth cancel→re-request; Owner-approved test1 current request only deadline move to past (global 336h unchanged); canonical destructive worker; verify Math byte/metadata erasure, stale reservation cleanup, Auth deletion; activate public web deletion page; Store deletion blocker verdict.
 - **Migration namespace warning:** Production now uses 20261005000200 for **account_ops_sink**, while Manus ADMIN-P0-A branch previously used the same version for 20261005000200_admin_console_read.sql. **Resolve/renumber the Admin migration before branch integration or Production apply. Do not replay or overwrite the Production version.**
-- **Store/Final RC remaining:** CI Flutter analyze/test for the notification consumer (app `6736167`); ADMIN-P0-C; merge/deploy Admin + notification backend code after migration-number reconciliation; `/account-deletion` scope-copy cleanup + 404/foundation copy; final APP/LAB branch integration; signed build number, physical-device smoke, reviewer account, Apple/Google Console declarations/screenshots. **Done since:** web deletion activation (LIVE), account-deletion destructive E2E, Flutter notification-center consumer integration (code). Payment LIVE remains separately OFF and does not block a free launch.
+- **Store/Final RC remaining:** ADMIN-P0-C; merge/deploy Admin + notification backend code after migration-number reconciliation; `/account-deletion` scope-copy cleanup + 404/foundation copy; final APP/LAB branch integration; signed build number, physical-device smoke, reviewer account, Apple/Google Console declarations/screenshots. **Done since:** web deletion activation (LIVE), account-deletion destructive E2E, Flutter notification-center consumer integration (code). Payment LIVE remains separately OFF and does not block a free launch.
 
 
 ## APP first-run personalization — Release P0 authority (2026-10-06)
