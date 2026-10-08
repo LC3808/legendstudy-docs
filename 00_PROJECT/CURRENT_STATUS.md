@@ -10,6 +10,21 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Signup bonus Production ledger verified — 2026-10-08
+
+Owner read-only result for the affected verified test account confirms exactly1
+signup_bonus grant, balance3, benefit_delivery linked to that signup grant, and0
+signup grants with expiry. Missing ACCOUNT_BENEFIT_KEYS was provisioned with explicit
+Owner approval; missing nested postgres EXECUTE was fixed by recorded migration
+20261008000400. Temporary role bridge absent. Existing worker recovery now delivered
+through canonical authority; no manual grant or replacement wallet. Diagnostic
+Worker remains v22. This verifies actual Production delivery/ledger for one account,
+not both queued accounts, a new complete signup E2E, or a hosted duplicate-attempt
+test. Local duplicate/concurrency checks passed. MY and Essay Header display still
+await Owner confirmation; no authenticated browser credit_summary response supplied
+in this final check. No Payment/Toss or Public/MY visual change.
+
+
 ## Signup grant ACL correction — 2026-10-08
 
 **Root cause confirmed; Production correction PENDING.** Owner diagnostic Worker v22
