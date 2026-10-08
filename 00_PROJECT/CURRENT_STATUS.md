@@ -9,6 +9,24 @@ CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
+## School aggregate Production activation — 2026-10-08
+
+Owner applied20261008000300 and returned ledger/owner/ACL plus both added-field
+checks true. DB function response extended; no table/column/RLS or profile mutation.
+LAB main `63abe32` includes school-display candidate and preserves Manus MY
+commit013a1ef. Integrated519 tests/lint/typecheck/boundary/static build PASS.
+Cloudflare `e0635cd3-d1a8-427a-b1ab-c12ec0d09ea1` SUCCESS; actual Production
+Admin JS contains school-name aggregate and unset labels. Authenticated actual
+Dashboard school-label spot-check remains Owner-side; no session inferred from assets.
+School-name source remains NEIS exact office/school pair, max20 group lookups/cache,
+no per-user request; missing name does not display numeric code as label.
+
+Owner reports signup Credit still0 after4de6dfa. Do NOT mark signup verified.
+Next targeted read checks profile, service gate, eligibility, worker20/100 candidate
+inclusion, credit account, delivery, grant and transactions. Heartbeat alone is
+insufficient; no manual grant, worker activation or finance-key change performed.
+New-user MY full runtime checklist remains unanswered separately.
+
 ## Admin school display / MY contract candidate — 2026-10-08
 
 IN_PROGRESS / NOT_PRODUCTION_DEPLOYED. LAB candidate `0c2b266` on
