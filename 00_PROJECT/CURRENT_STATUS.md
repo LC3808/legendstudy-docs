@@ -10,6 +10,36 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Owner-assisted activation — 2026-10-08 (in progress)
+
+Six migrations Production-applied by Owner, ledger results returned: signup
+20261007150000, MY20261008000200, Admin20261007000100/200/400 +20261008000100.
+All17 Admin function bodies match source including corrective; anon execute
+denied; internal helpers denied to client roles; Inquiry RLS enabled/direct
+policies absent by design. Signup cutoff/owner/ACL preserved; major column
+UPDATE=true, table UPDATE=false, owner/lifecycle RLS retained. Owner reports
+actual admin session Header, Dashboard, Members/review Credit/Ledger, Payment
+reads, Ops, Inquiries and /ql all working. This is read verification only.
+Normal-user/anonymous browser denial, MY actual writes/isolation, signup actual
+E2E remain pending. Finance grant/refund/cancel stay disabled; no TEST grant.
+Admin uses multi-member admin_users; QL uses independent quality_operators.
+No role inferred from email and no new admin boolean.
+
+Future/P1 backlog ONLY (not implemented): Super Admin (Owner, full service and
+Admin Management); Service Admin (scoped Support/Credit/Essay Ops/Quality/Finance
+read); Super-Admin-only Admin Management with role/status/permissions/created date
+and add administrator. Permission candidates: Members, Credit, Payment Read,
+Finance Write, Essay Ops, Math Ops, Inquiries, AI Quality, Admin Management.
+Future organization/school memberships, staff/teacher roles, student membership,
+scoped admin/reporting, school entitlement/Credit/analytics. Cross-school access
+must be denied; no profiles.is_school_admin boolean. Not a launch blocker.
+
+School display follow-up reuses existing APP NEIS public proxy in Admin member
+detail, no DB/new credential/Public visual/Payment change. Overall closeout
+remains PARTIAL until remaining runtime verification.
+
+
+
 # CURRENT_STATUS — LegendStudy+ (as of 2026-10-05)
 
 > **This document holds current facts only.** It is *not* an append-only log — see the [Daily history](../90_HISTORY/DAILY/) for how we got here.
