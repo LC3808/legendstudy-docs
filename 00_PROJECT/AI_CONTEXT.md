@@ -12,6 +12,13 @@ SUPERSEDED_BY: —
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 
+## User-facing copy authority — 2026-10-08
+
+Owner-approved user-facing strings live in
+[COPY_AUTHORITY.md](COPY_AUTHORITY.md) and are not rewritten by an AI without a new
+Owner decision. Current entry: 논술 LAB hero — identity label `논술 LAB`, headline
+`대학별 평가 기준에 맞춰 내 답안을 점검하고, 직접 다시 써보세요.` (LAB `13fc77c`).
+
 ## Production activation handoff — 2026-10-08
 
 Latest functional release LAB63f8dc3 preserves Manus visual mainae44317. Backend
