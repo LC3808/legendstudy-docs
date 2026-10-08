@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="대학 논술 LAB 와이드 배너 마스터 템플릿">
+  <!-- PACKAGE C · UNIVERSITY WIDE MASTER · PC 1200x360 · status READY_AFTER_FEATURE (per-university gate) -->
+  <!-- VARIABLES: {{university_name}} {{university_short}} {{exam_year}} {{exam_type}} {{cta_label}} {{destination}} {{campaign_id}} -->
+  <!-- Logo zone OFF by default (rights review). Name-centric layout works alone. NO ranking/score. -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:19px;font-weight:600;fill:#8a8a8a;letter-spacing:.3px;}
+      .h1{font-size:38px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:20px;font-weight:400;fill:#4a4a4a;}
+      .cta{font-size:20px;font-weight:800;fill:#1f1300;}
+      .var{fill:#b08900;}
+    </style>
+  </defs>
+  <rect width="1200" height="360" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="360" fill="none" stroke="#e6e8ec" stroke-width="2"/>
+  <rect x="0" y="0" width="8" height="360" fill="#ffac14"/>
+
+  <!-- eyebrow: {{university_name}} · {{exam_year}} {{exam_type}} -->
+  <text class="ko eyebrow" x="64" y="90"><tspan class="var">{{university_name}}</tspan> · <tspan class="var">{{exam_year}}</tspan> <tspan class="var">{{exam_type}}</tspan></text>
+
+  <text class="ko h1" x="64" y="158">대학별 평가 기준에 맞춰, 내 답안을 점검하세요.</text>
+  <text class="ko sub" x="64" y="208">기출을 찾았다면 직접 풀어보세요. 첨삭 → 재작성 → 변화 확인까지.</text>
+  <text class="ko sub" x="64" y="242" fill="#8a8a8a">신규 가입 시 첨삭권 3회 제공</text>
+
+  <!-- CTA variable zone (right) -->
+  <rect x="820" y="140" width="316" height="68" rx="12" fill="#ffac14"/>
+  <text class="ko cta" x="978" y="182" text-anchor="middle"><tspan class="var" fill="#1f1300">{{cta_label}}</tspan></text>
+  <text class="ko" x="978" y="236" text-anchor="middle" font-size="14" fill="#8a8a8a">→ <tspan class="var">{{destination}}</tspan></text>
+
+  <!-- Optional logo zone (OFF by default) -->
+  <rect x="820" y="64" width="60" height="60" rx="10" fill="#f7f8fa" stroke="#e6e8ec" stroke-dasharray="4 3"/>
+  <text class="ko" x="850" y="100" text-anchor="middle" font-size="11" fill="#b0b4bb">LOGO?</text>
+</svg>

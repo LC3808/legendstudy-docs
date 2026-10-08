@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-label="APP 내부 논술 LAB 프로모션 배너">
+  <!-- PACKAGE G · APP INTERNAL ESSAY LAB PROMO · 1080x420 · status READY_AFTER_FEATURE (DD-3/DD-4) -->
+  <!-- Destination = app native /lab/essay (NOT web redirect, NOT App Store). Confirm APP-home slot before locking. -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:22px;font-weight:700;fill:#b08900;}
+      .h1{font-size:40px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:23px;font-weight:400;fill:#4a4a4a;}
+      .chip{font-size:18px;font-weight:700;fill:#1f1300;}
+      .cta{font-size:24px;font-weight:800;fill:#1f1300;}
+    </style>
+  </defs>
+  <rect x="2" y="2" width="1076" height="416" rx="20" fill="#ffffff" stroke="#e6e8ec" stroke-width="2"/>
+  <rect x="2" y="2" width="10" height="416" rx="5" fill="#ffac14"/>
+
+  <text class="ko eyebrow" x="56" y="94">논술 LAB</text>
+  <text class="ko h1" x="56" y="162">내 논술 답안, 지금 먼저</text>
+  <text class="ko h1" x="56" y="210">고쳐야 할 부분은?</text>
+  <text class="ko sub" x="56" y="266">대학별 평가 기준에 맞춰 확인해보세요.</text>
+
+  <rect x="56" y="300" width="300" height="46" rx="23" fill="#fff3dc" stroke="#ffd98a"/>
+  <text class="ko chip" x="206" y="330" text-anchor="middle">신규 가입 첨삭권 3회 제공</text>
+
+  <rect x="784" y="300" width="232" height="66" rx="12" fill="#ffac14"/>
+  <text class="ko cta" x="900" y="341" text-anchor="middle">논술 LAB 시작</text>
+</svg>

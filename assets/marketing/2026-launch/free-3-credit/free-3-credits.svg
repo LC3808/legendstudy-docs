@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="신규 가입 시 첨삭권 3회 제공 프로모션">
+  <!-- PACKAGE H · SIGNUP FREE 3-CREDITS PROMO · 1080x1080 square · status READY_AFTER_FEATURE (DD-3) -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:30px;font-weight:600;fill:#8a8a8a;}
+      .big{font-size:88px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:34px;font-weight:400;fill:#4a4a4a;}
+      .step{font-size:28px;font-weight:700;fill:#4a4a4a;}
+      .fine{font-size:22px;font-weight:400;fill:#8a8a8a;}
+      .cta{font-size:36px;font-weight:800;fill:#1f1300;}
+    </style>
+  </defs>
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  <rect x="0" y="0" width="1080" height="16" fill="#ffac14"/>
+
+  <text class="ko eyebrow" x="90" y="200">레전드스터디 LAB · 논술 LAB</text>
+  <text class="ko big" x="90" y="310">신규 가입 시</text>
+  <text class="ko big" x="90" y="410"><tspan fill="#b08900">첨삭권 3회</tspan> 제공</text>
+  <text class="ko sub" x="90" y="490">가입하고 내 논술 답안을 직접 점검해보세요.</text>
+
+  <!-- micro-step loop -->
+  <g transform="translate(90,560)">
+    <rect x="0" y="0" width="900" height="92" rx="14" fill="#f7f8fa" stroke="#e6e8ec"/>
+    <text class="ko step" x="36" y="58">답안 작성 → 첨삭 → 재작성 → 변화 확인</text>
+  </g>
+
+  <!-- fine print (truthful) -->
+  <text class="ko fine" x="90" y="730">첨삭권 1회 = 최초 첨삭 + 동일 답안 첫 재첨삭.</text>
+  <text class="ko fine" x="90" y="764">자세한 조건은 이용안내를 확인하세요.</text>
+
+  <!-- CTA -->
+  <rect x="90" y="830" width="440" height="96" rx="16" fill="#ffac14"/>
+  <text class="ko cta" x="310" y="890" text-anchor="middle">논술 LAB 시작하기</text>
+</svg>

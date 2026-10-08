@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600" role="img" aria-label="논술 LAB — 내 논술 답안, 무엇이 부족할까?">
+  <!-- PACKAGE B · MAIN SLIDER 2 · ESSAY LAB · MOBILE 720x600 · status READY_AFTER_FEATURE (DD-3/DD-4) -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:22px;font-weight:600;fill:#8a8a8a;}
+      .h1{font-size:40px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:23px;font-weight:400;fill:#4a4a4a;}
+      .chip{font-size:18px;font-weight:700;fill:#1f1300;}
+      .cta{font-size:24px;font-weight:800;fill:#1f1300;}
+    </style>
+  </defs>
+  <rect width="720" height="600" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#ffac14"/>
+
+  <text class="ko eyebrow" x="48" y="96">레전드스터디 LAB · 논술 LAB</text>
+  <text class="ko h1" x="48" y="166">내 논술 답안,</text>
+  <text class="ko h1" x="48" y="216">무엇이 부족할까?</text>
+  <text class="ko sub" x="48" y="276">대학별 평가·채점 기준에 맞춰</text>
+  <text class="ko sub" x="48" y="310">내 답안을 점검하고 다시 써보세요.</text>
+
+  <rect x="48" y="348" width="330" height="48" rx="24" fill="#fff3dc" stroke="#ffd98a"/>
+  <text class="ko chip" x="213" y="379" text-anchor="middle">신규 가입 시 첨삭권 3회 제공</text>
+
+  <rect x="48" y="434" width="330" height="70" rx="12" fill="#ffac14"/>
+  <text class="ko cta" x="213" y="478" text-anchor="middle">논술 LAB 시작하기</text>
+</svg>

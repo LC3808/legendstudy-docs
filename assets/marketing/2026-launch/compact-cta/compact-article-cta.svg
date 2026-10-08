@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-label="대학 논술 LAB 컴팩트 아티클 CTA">
+  <!-- PACKAGE E · COMPACT ARTICLE CTA · 960x220 · status READY_AFTER_FEATURE -->
+  <!-- VARIABLES: {{university_short}} {{cta_label}} {{destination}} {{campaign_id}} -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .title{font-size:26px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:18px;font-weight:400;fill:#4a4a4a;}
+      .cta{font-size:19px;font-weight:800;fill:#1f1300;}
+      .var{fill:#b08900;}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="958" height="218" rx="14" fill="#f7f8fa" stroke="#e6e8ec" stroke-width="2"/>
+  <rect x="1" y="1" width="8" height="218" rx="4" fill="#ffac14"/>
+
+  <text class="ko title" x="44" y="80"><tspan class="var">{{university_short}}</tspan> 논술 LAB</text>
+  <text class="ko sub" x="44" y="120">대학별 평가·채점 기준에 맞춰 내 답안을 점검하고 다시 써보세요.</text>
+  <text class="ko sub" x="44" y="150" fill="#8a8a8a">신규 가입 시 첨삭권 3회 제공</text>
+
+  <rect x="660" y="78" width="256" height="60" rx="12" fill="#ffac14"/>
+  <text class="ko cta" x="788" y="116" text-anchor="middle"><tspan class="var" fill="#1f1300">{{cta_label}}</tspan></text>
+</svg>

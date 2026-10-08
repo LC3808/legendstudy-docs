@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600" role="img" aria-label="레전드스터디+ 모바일 앱 — 기출 문제부터 학습 관리까지">
+  <!-- PACKAGE A · MAIN SLIDER 1 · APP · MOBILE 720x600 · status READY_AFTER_URL (DD-2) -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:22px;font-weight:600;fill:#8a8a8a;}
+      .h1{font-size:40px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:24px;font-weight:400;fill:#4a4a4a;}
+      .ph{font-size:17px;font-weight:600;fill:#b08900;}
+    </style>
+  </defs>
+  <rect width="720" height="600" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="720" height="8" fill="#ffac14"/>
+
+  <text class="ko eyebrow" x="48" y="104">레전드스터디+ 모바일 앱</text>
+  <text class="ko h1" x="48" y="176">기출 문제부터</text>
+  <text class="ko h1" x="48" y="226">학습 관리까지,</text>
+  <text class="ko h1" x="48" y="276">앱에서 더 편하게.</text>
+  <text class="ko sub" x="48" y="340">자료 탐색 · 저장 · D-Day ·</text>
+  <text class="ko sub" x="48" y="374">학습 타이머를 한 곳에서.</text>
+
+  <!-- Single store button for the current OS (operator drops official badge, OS-detected) -->
+  <rect x="48" y="430" width="360" height="72" rx="12" fill="#ffffff" stroke="#d7dae0" stroke-dasharray="5 4"/>
+  <text class="ko ph" x="228" y="474" text-anchor="middle">STORE_BADGE_PLACEHOLDER (현재 OS)</text>
+  <text class="ko ph" x="48" y="546">QR 없음 · URL/배지는 교체 레이어</text>
+</svg>

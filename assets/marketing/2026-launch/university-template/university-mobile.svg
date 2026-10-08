@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600" role="img" aria-label="대학 논술 LAB 모바일 배너 마스터 템플릿">
+  <!-- PACKAGE D · UNIVERSITY MOBILE MASTER · 720x600 · status READY_AFTER_FEATURE (per-university gate) -->
+  <!-- VARIABLES: {{university_name}} {{exam_year}} {{exam_type}} {{cta_label}} {{destination}} {{campaign_id}} -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:21px;font-weight:600;fill:#8a8a8a;}
+      .h1{font-size:36px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:22px;font-weight:400;fill:#4a4a4a;}
+      .cta{font-size:23px;font-weight:800;fill:#1f1300;}
+      .var{fill:#b08900;}
+    </style>
+  </defs>
+  <rect width="720" height="600" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#ffac14"/>
+
+  <text class="ko eyebrow" x="48" y="96"><tspan class="var">{{university_name}}</tspan> · <tspan class="var">{{exam_year}}</tspan> <tspan class="var">{{exam_type}}</tspan></text>
+  <text class="ko h1" x="48" y="168">대학별 평가 기준에 맞춰,</text>
+  <text class="ko h1" x="48" y="214">내 답안을 점검하세요.</text>
+  <text class="ko sub" x="48" y="278">기출을 찾았다면 직접 풀어보세요.</text>
+  <text class="ko sub" x="48" y="312">첨삭 → 재작성 → 변화 확인까지.</text>
+  <text class="ko sub" x="48" y="356" fill="#8a8a8a">신규 가입 시 첨삭권 3회 제공</text>
+
+  <rect x="48" y="430" width="360" height="72" rx="12" fill="#ffac14"/>
+  <text class="ko cta" x="228" y="474" text-anchor="middle"><tspan class="var" fill="#1f1300">{{cta_label}}</tspan></text>
+  <text class="ko" x="48" y="544" font-size="14" fill="#8a8a8a">→ <tspan class="var">{{destination}}</tspan></text>
+</svg>

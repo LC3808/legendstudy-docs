@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-label="레전드스터디+ 모바일 앱 — 기출 문제부터 학습 관리까지, 이제 앱에서 더 편하게">
+  <!-- PACKAGE A · MAIN SLIDER 1 · APP · PC 1200x480 · status READY_AFTER_URL (DD-2) -->
+  <defs>
+    <style>
+      .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}
+      .eyebrow{font-size:20px;font-weight:600;fill:#8a8a8a;letter-spacing:.5px;}
+      .h1{font-size:44px;font-weight:800;fill:#1a1a1a;}
+      .sub{font-size:22px;font-weight:400;fill:#4a4a4a;}
+      .badgeTxt{font-size:16px;font-weight:600;fill:#8a8a8a;}
+      .ph{font-size:15px;font-weight:600;fill:#b08900;letter-spacing:.3px;}
+    </style>
+  </defs>
+  <rect width="1200" height="480" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="480" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="8" height="480" fill="#ffac14"/>
+
+  <!-- TEXT (left ~60%) -->
+  <text class="ko eyebrow" x="72" y="118">레전드스터디+ 모바일 앱</text>
+  <text class="ko h1" x="72" y="190">기출 문제부터 학습 관리까지,</text>
+  <text class="ko h1" x="72" y="244">이제 앱에서 더 편하게.</text>
+  <text class="ko sub" x="72" y="300">자료 탐색 · 저장 · D-Day · 학습 타이머를 한 곳에서.</text>
+
+  <!-- CTA: official store badges go in STORE_BADGE_PLACEHOLDER (operator drops real badge art) -->
+  <g>
+    <rect x="72" y="344" width="210" height="60" rx="10" fill="#ffffff" stroke="#d7dae0"/>
+    <text class="ko ph" x="177" y="380" text-anchor="middle">STORE_BADGE · App Store</text>
+    <rect x="296" y="344" width="210" height="60" rx="10" fill="#ffffff" stroke="#d7dae0"/>
+    <text class="ko ph" x="401" y="380" text-anchor="middle">STORE_BADGE · Google Play</text>
+  </g>
+
+  <!-- RIGHT (~40%): phone mock + QR placeholder -->
+  <g>
+    <rect x="760" y="70" width="210" height="340" rx="28" fill="#ffffff" stroke="#e6e8ec" stroke-width="2"/>
+    <rect x="782" y="104" width="166" height="272" rx="10" fill="#f0f2f5"/>
+    <rect x="800" y="128" width="130" height="14" rx="7" fill="#d7dae0"/>
+    <rect x="800" y="156" width="90" height="10" rx="5" fill="#e2e5ea"/>
+    <rect x="800" y="196" width="130" height="44" rx="8" fill="#ffe7b8"/>
+    <rect x="800" y="256" width="130" height="14" rx="7" fill="#d7dae0"/>
+    <rect x="800" y="282" width="110" height="10" rx="5" fill="#e2e5ea"/>
+
+    <!-- QR replaceable layer -->
+    <rect x="1000" y="140" width="130" height="130" rx="10" fill="#ffffff" stroke="#d7dae0" stroke-dasharray="5 4"/>
+    <text class="ko ph" x="1065" y="205" text-anchor="middle">QR_PLACEHOLDER</text>
+    <text class="ko badgeTxt" x="1065" y="296" text-anchor="middle" fill="#8a8a8a">스캔하고 설치</text>
+  </g>
+
+  <!-- NOTE (non-printing guidance, remove before publish): no fake URL/QR/release date baked in. -->
+</svg>
