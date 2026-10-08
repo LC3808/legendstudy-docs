@@ -9,6 +9,30 @@ CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
+## Admin school display / MY contract candidate — 2026-10-08
+
+IN_PROGRESS / NOT_PRODUCTION_DEPLOYED. LAB candidate `0c2b266` on
+`codex/admin-school-display`, APP backend `757f8e9` on existing activation branch.
+20261008000300 additive dashboard response: top20 office+school identities and
+unset count, old field untouched. Exact previous function hash/OID/owner/ACL gates.
+Owner live migration-ledger/collision check still required before apply.
+Names use existing NEIS proxy per aggregate identity (max20, concurrency4, bounded
+public-name cache); no per-user request, new master/profile write/role or MY visual.
+Known/unresolved/unset distinguished, counts unchanged, numeric codes hidden in
+Dashboard labels. Existing member detail school-name resolver preserved.
+Local SQL402+54, LAB513 tests/lint/typecheck/boundary/build and9role-route browser
+checks PASS, with aggregate-name/count/unknown/unset checks. These use local SQL
+and intercepted browser fixtures, not hosted authorization/DB-apply evidence.
+
+Manus/Student360 contract: profiles display_name, Auth email, school pair/status/grade,
+major/interested university/division, canonical Credit states, period entitlementnull.
+Essay attempt count unavailable until actual attempts fetched; no evaluation-count
+substitution. Conservative 1–5 comparison gate requires full matching criterion/version/
+question/regime/evidence context and distinct ordered attempts; no trend shipped.
+[Contract](https://github.com/LC3808/legendstudy-lab/blob/codex/admin-school-display/docs/MY_STUDENT_360_CONTRACT.md).
+New-web-account MY runtime and +3 actual delivery after4de6dfa still awaiting Owner.
+No manual bonus, finance write, application schema or Student360 page created.
+
 ## Shared APP/Web profile initialization gap — 2026-10-08
 
 LAB main `4de6dfa`; Cloudflare `025826b1-3966-4760-ada5-2c470fb76179`
