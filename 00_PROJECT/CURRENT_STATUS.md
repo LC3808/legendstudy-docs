@@ -10,6 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Signup Credit closeout — OWNER_VERIFIED — 2026-10-08
+
+Predecessor task is CLOSED for the affected verified account: canonical grant1,
+Credit3, delivery relation, no expiry, and Owner confirms MY plus Essay Header
+display. No manual Credit issuance. Missing benefit key and nested helper EXECUTE
+were corrected; migration20261008000400 recorded, temporary bridge absent, Workerv22.
+Hosted duplicate stress and all social-provider signup E2E were not performed;
+local canonical duplicate/concurrency tests PASS. This limited runtime closeout
+is separate from the newly authorized MY Data / Application / Study Time /
+Student360 work. Existing signup/worker authority is frozen for that next task.
+
+
 ## Signup bonus Production ledger verified — 2026-10-08
 
 Owner read-only result for the affected verified test account confirms exactly1
