@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="google-site-verification" content="SKpyh0UJBIJpL892Hb1TSIE5ZRUI6UEbAJU-0f4sM0k" />
+    <meta name="naver-site-verification" content="c6e15a83e87aea32e585ca36ca11ee3e0eb34d1b"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레전드스터디 닷컴 | Legendstudy.com</title>
+    <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico">
+    <!-- 부트스트랩(그리드/폼) + 아이콘 : 글·댓글 페이지 레이아웃 유지용 -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- Pretendard -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://img1.daumcdn.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <!-- 스킨 스타일 -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      /* 모바일 전용 인기글 미니 (슬라이드 아래) */
+      .ls-popmini{display:none;}
+      @media(max-width:767px){
+        .ls-popmini{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 14px 6px;margin:16px 0 4px;box-shadow:0 1px 2px rgba(20,24,32,.04),0 4px 12px rgba(20,24,32,.05);}
+        .ls-popmini__title{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:800;margin:0 0 8px;}
+        .ls-popmini__title .ico{color:var(--primary);}
+        .ls-popmini ol{list-style:none;margin:0;padding:0;}
+        .ls-popmini li a{display:flex;gap:10px;align-items:flex-start;padding:8px 4px;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--ink);font-weight:600;line-height:1.4;}
+        .ls-popmini li:last-child a{border-bottom:none;}
+        .ls-popmini .rk{flex:none;width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;background:var(--line-strong);}
+        .ls-popmini li:nth-child(-n+3) .rk{background:var(--primary);}
+        .ls-popmini .tt{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;}
+      }
+    </style>
+
+    <script>var jbShowTistoryToolbar = 1;</script>
+
+    <!-- 구글 애널리틱스 (개인 삽입 블록 · 그대로 유지) -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-47366112-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body><s_t3>
+
+<div id="jbContainer">
+
+  <!-- ===== 헤더 : 타이틀 이미지 ===== -->
+  <div id="jbHeaderArea" class="container-fluid">
+    <button class="ls-burger" id="lsBurger" aria-label="메뉴 열기" aria-controls="jbSidebarRight" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div id="jbBlogTitle">
+      <h1 class="jbBlogTitleText">
+        <a href="https://legendstudy.com">
+          <img src="https://tistory3.daumcdn.net/tistory/780233/skin/images/legend_title_2015.png" alt="레전드스터디 닷컴" />
+        </a>
+      </h1>
+    </div>
+  </div>
+
+  <div class="ls-backdrop" id="lsBackdrop" hidden></div>
+
+  <!-- ===== 본문 + 사이드바 ===== -->
+  <div id="jbMainArea" class="container">
+    <div class="row">
+      <div id="jbContent" class="col-sm-9">
+
+        <!-- ========== 커스텀 홈 랜딩 (홈에서만 표시) ========== -->
+        <div id="lsLanding" style="display:none">
+
+          <!-- ① 타이틀 문구 슬라이더 (텍스트 전용) -->
+          <div class="ls-slider" id="slider" aria-label="메인 배너">
+            <div class="ls-slider__track">
+
+              <!-- 슬라이드 1 -->
+              <div class="ls-slide ls-slide--text">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">로그인·회원가입 없이 바로 다운로드</span>
+                  <h2 class="ls-slide__title">고1·2·3 학력평가와 논술 기출 <b>무료</b>로 받으세요</h2>
+                  <p class="ls-slide__sub">모의고사·수능·논술 기출의 문제·답·해설·등급컷·영어듣기 파일을 학년별로 모았습니다.</p>
+                </div>
+              </div>
+
+              <!-- 슬라이드 2 (필요 없으면 이 블록 삭제) -->
+              <div class="ls-slide ls-slide--text">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">2026 · 최신 업데이트</span>
+                  <h2 class="ls-slide__title">레전드스터디닷컴은 항상 여러분의 <b>합격</b>을 기원합니다!</h2>
+                  <p class="ls-slide__sub">수험생 여러분들의 성공이 레전드스터디닷컴의 기쁨입니다 :)</p>
+                </div>
+              </div>
+
+              <!--  [슬라이드 추가 예시] 이미지 배너를 넣을 때 아래 주석 해제
+              <div class="ls-slide"><a href="이동링크"><img src="배너URL" alt="배너설명" style="width:100%;height:100%;object-fit:cover"></a></div>
+              -->
+
+              <!-- LEGENDSTUDY MARKETING START : 메인 슬라이드 (APP + 논술 LAB) -->
+              <!-- 기본 비활성. legendstudy-marketing.js 의 CONFIG(APP_BANNER_ENABLED /
+                   ESSAY_SLIDE_ENABLED)로 제어. 플래그 OFF거나 URL 미설정이면
+                   initSlider 전에 자동 제거되어 dead link / 빈 점(dot)이 생기지 않음. -->
+              <div class="ls-slide ls-slide--text ls-slide--mkt" data-mkt="app">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">레전드스터디+ 모바일 앱</span>
+                  <h2 class="ls-slide__title">기출 문제부터 학습 관리까지, 이제 앱에서 더 편하게</h2>
+                  <p class="ls-slide__sub">자료 탐색 · 저장 · D-Day · 학습 타이머를 한 곳에서.</p>
+                  <div class="ls-mkt-stores">
+                    <a class="ls-mkt-store" data-store="ios" href="#" rel="noopener">App Store</a>
+                    <a class="ls-mkt-store" data-store="android" href="#" rel="noopener">Google Play</a>
+                  </div>
+                  <div class="ls-mkt-qr" data-qr></div>
+                </div>
+              </div>
+              <div class="ls-slide ls-slide--text ls-slide--mkt" data-mkt="essay">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">레전드스터디 LAB · 논술 LAB</span>
+                  <h2 class="ls-slide__title">내 논술 답안, <b>무엇이 부족할까?</b></h2>
+                  <p class="ls-slide__sub">대학별 평가·채점 기준에 맞춰 내 답안을 점검하고 직접 다시 써보세요.</p>
+                  <span class="ls-mkt-chip" data-bonus>신규 가입 시 첨삭권 3회 제공</span>
+                  <div><a class="ls-mkt-slide-cta" data-cta href="#" target="_blank" rel="noopener">논술 LAB 시작하기 <span aria-hidden="true">→</span></a></div>
+                </div>
+              </div>
+              <!-- LEGENDSTUDY MARKETING END : 메인 슬라이드 -->
+
+            </div>
+            <button class="ls-arrow ls-arrow--prev" aria-label="이전 배너">‹</button>
+            <button class="ls-arrow ls-arrow--next" aria-label="다음 배너">›</button>
+            <div class="ls-dots" aria-label="배너 선택"></div>
+          </div>
+
+          <!-- 모바일 전용 : 슬라이드 아래 인기글 미니(상위 5개) -->
+          <div class="ls-popmini" id="popularMini"></div>
+
+          <!-- ② 홈 상단 애드센스 (개인 삽입 · 반응형 상단 광고 재사용) -->
+          <div class="ls-adsense">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9982087108968257" crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9982087108968257"
+                 data-ad-slot="8237784312"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+          <!-- ③④ 섹션(최신/고3/고2/고1/논술) : 스크립트가 카드로 채움 -->
+          <main id="app"></main>
+
+          <!-- 홈 하단 애드센스 (⚠ data-ad-slot 을 실제 광고단위 ID로 교체해야 노출됨) -->
+          <div class="ls-adsense">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9982087108968257"
+                 data-ad-slot="새_광고단위ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+        </div>
+        <!-- ========== /커스텀 홈 랜딩 ========== -->
+
+
+        <!-- ========== 티스토리 기본 콘텐츠 (홈 외 페이지) ========== -->
+        <div id="jbTistoryContent">
+          <s_list>
+            <div class="jbSearchResult">
+
+<!-- 글 목록 애드센스 시작 (개인 삽입 · 그대로 유지) -->
+<center>
+<!--			 <table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tbody><tr><td width="50%" align="center">
+		<div style="display:block;margin: 5px 5px 5px 5px;">
+			<style>.legend-middle { width: 300px; height: 250px; } @media(min-width: 500px) { .legend-middle { width: 300px; height: 250px; } } @media(min-width: 800px) { .legend-middle { width: 336px; height: 280px; } }</style>
+			<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
+<!-- Legend_Middle -->
+<!--			<ins class="adsbygoogle legend-middle" style="display:inline-block" data-ad-client="ca-pub-9982087108968257" data-ad-slot="2216318712"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+		</div>
+	</td><td width="50%" align="center">
+		<div style="display:block;margin: 5px 5px 5px 5px;">
+			<style>.legend-bottom { width: 300px; height: 250px; } @media(min-width: 500px) { .legend-bottom { width: 300px; height: 250px; } } @media(min-width: 800px) { .legend-bottom { width: 336px; height: 280px; } }</style>
+			<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
+<!-- Legend_Bottom -->
+<!--			<ins class="adsbygoogle legend-bottom" style="display:inline-block" data-ad-client="ca-pub-9982087108968257" data-ad-slot="4750982715"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+		</div>
+	</td></tr></tbody></table>
+-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9982087108968257" crossorigin="anonymous"></script>
+<!-- 반응형 상단2(동기) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9982087108968257"
+     data-ad-slot="8237784312"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<!-- 글 목록 애드센스 끝 -->
+
+              <h2 class="jbArticleTitle">'[##_list_conform_##]'에 있는 자료 [##_list_count_##]건</h2>
+              <ul>
+                <s_list_rep>
+                  <li>
+                    <span class="jbSearchResultTitle"><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a></span>
+                    <span class="jbSearchResultCnt">[##_list_rep_rp_cnt_##]</span>
+                  </li>
+                </s_list_rep>
+              </ul>
+            </div>
+          </s_list>
+
+          <s_notice_rep>
+            <div class="jbArticleList">
+              <h2 class="jbArticleTitle"><a href="[##_article_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+              <p class="jbArticleInfo"><span><i class="fa fa-calendar"></i> [##_notice_rep_date_##]</span></p>
+              <div class="jbArticle">[##_notice_rep_desc_##]</div>
+            </div>
+          </s_notice_rep>
+
+          <s_article_protected>
+            <div class="jbArticleList">
+              <h2 class="jbArticleTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+              <p class="jbArticleInfo"><span><i class="fa fa-calendar"></i> [##_article_rep_date_##]</span></p>
+              <p class="alert alert-danger">보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+              <div class="jbProtectedArticleForm">
+                <div class="input-group">
+                  <input type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" class="form-control">
+                  <span class="input-group-btn"><input type="submit" value="Submit" onclick="[##_article_dissolve_##]" class="btn btn-default"></span>
+                </div>
+              </div>
+            </div>
+          </s_article_protected>
+
+          <s_article_rep>
+            <div class="ls-popmini" id="popularMiniPost"></div>
+            <div class="jbArticleList">
+              <h2 class="jbArticleTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+              <p class="jbArticleInfo"><span><i class="fa fa-folder-open-o"></i> <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></span></p>
+              <s_ad_div>
+                <p class="jbAdmin">
+                  <strong>관리자 메뉴</strong>
+                  <a href="[##_s_ad_m_link_##]">수정</a> :
+                  <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a> |
+                  ([##_s_ad_s1_label_##])→<a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> |
+                  <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                </p>
+              </s_ad_div>
+
+<!-- 구글 애드센스 상단 광고 시작 (개인 삽입 · 그대로 유지) -->
+<!--			<div style="display:block;float:right;margin: 5px 0px 10px 10px;">
+	<style>.legend-up {max-width:100%; width: 300px; height: 250px; } @media(max-width: 400px) { .legend-up { width: 320px; height: 100px; } } @media(min-width: 500px) { .legend-up { width: 300px; height: 250px; } } @media(min-width: 800px) { .legend-up { width: 336px; height: 280px; } }</style>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>       -->
+<!-- Legend_Up -->
+<!--	<ins class="adsbygoogle legend-up" style="display:inline-block" data-full-width-responsive="true" data-ad-client="ca-pub-9982087108968257" data-ad-slot="6786119119"></ins>
+	<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	</div>    -->
+<!-- 구글 애드센스 상단 끝 -->
+
+<!-- 셀티 이벤트 배너 (개인 삽입 · 그대로 유지)
+<div style="display:block;float:right;margin: 5px 0px 10px 10px; text-align: center;">
+	<a href="https://smartstore.naver.com/lstudyedu/products/12553214605" target="_blank"><img src="https://tistory1.daumcdn.net/tistory/780233/skin/images/2025-1111-ad.gif"/></a>
+</div>
+-->
+
+              <div class="jbArticle">[##_article_rep_desc_##]</div>
+              <s_tag_label><p class="jbArticleTag"><i class="fa fa-tags"></i> [##_tag_label_rep_##]</p></s_tag_label>
+              <div class="jbDiscuss">
+                <p class="jbDiscussCount"><i class="fa fa-comments-o"></i> <a href="#rp" onclick="[##_article_rep_rp_link_##]">Comments <s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></a></p>
+                <s_rp>
+                  <s_rp_container>
+                    <div class="jbDiscussList"><ul>
+                      <s_rp_rep>
+                        <li id="[##_rp_rep_id_##]" class="[##_rp_rep_class_##]">
+                          <div class="jbDiscussList1">
+                            <p class="jbDiscussListInfo">
+                              <span class="jbDiscussListName">[##_rp_rep_name_##]</span>
+                              <span class="jbDiscussListDate">[##_rp_rep_date_##]</span>
+                              <span class="jbDiscussListEdit">
+                                <a href="#" onclick="[##_rp_rep_onclick_reply_##]" title="Reply" class="action"><i class="fa fa-comment-o"></i></a>
+                                <a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="Edit" class="action"><i class="fa fa-pencil-square-o"></i></a>
+                              </span>
+                            </p>
+                            <p>[##_rp_rep_desc_##]</p>
+                          </div>
+                          <s_rp2_container><ul>
+                            <s_rp2_rep>
+                              <li id="[##_rp_rep_id_##]" class="[##_rp_rep_class_##]">
+                                <div class="jbDiscussList2">
+                                  <p class="jbDiscussListInfo">
+                                    <span class="jbDiscussListName">[##_rp_rep_name_##]</span>
+                                    <span class="jbDiscussListDate">[##_rp_rep_date_##]</span>
+                                    <span class="jbDiscussListEdit"><a href="#" onclick="[##_rp_rep_onclick_delete_##]" title="Edit" class="action"><i class="fa fa-pencil-square-o"></i></a></span>
+                                  </p>
+                                  <p>[##_rp_rep_desc_##]</p>
+                                </div>
+                              </li>
+                            </s_rp2_rep>
+                          </ul></s_rp2_container>
+                        </li>
+                      </s_rp_rep>
+                    </ul></div>
+                  </s_rp_container>
+                  <s_rp_input_form>
+                    <div class="jbFormWrite form-horizontal">
+                      <s_rp_member>
+                        <s_rp_guest>
+                          <div class="form-group"><div class="col-sm-12"><div class="input-group margin-bottom-sm"><span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span><input type="text" id="[##_rp_input_name_##]_[##_article_rep_id_##]" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="Name" class="form-control"></div></div></div>
+                          <div class="form-group"><div class="col-sm-12"><div class="input-group margin-bottom-sm"><span class="input-group-addon"><i class="fa fa-home fa-fw"></i></span><input type="text" id="[##_rp_input_homepage_##]_[##_article_rep_id_##]" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]" class="form-control"></div></div></div>
+                          <div class="form-group"><div class="col-sm-12"><div class="input-group margin-bottom-sm"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><input type="password" id="[##_rp_input_password_##]_[##_article_rep_id_##]" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="Password" class="form-control"></div></div></div>
+                        </s_rp_guest>
+                        <div class="form-group"><div class="col-sm-12"><input type="checkbox" id="[##_rp_input_is_secret_##]_[##_article_rep_id_##]" name="[##_rp_input_is_secret_##]" value="1" class="jbCheckbox"><label for="[##_rp_input_is_secret_##]_[##_article_rep_id_##]" class="jbCheckboxLabel">Secret</label></div></div>
+                      </s_rp_member>
+                      <div class="form-group"><div class="col-sm-12"><textarea name="[##_rp_input_comment_##]" rows="5" class="form-control"></textarea></div></div>
+                      <div class="form-group"><div class="col-sm-12"><input type="submit" value="Submit" onclick="[##_rp_onclick_submit_##]" class="btn btn-default"></div></div>
+                    </div>
+                  </s_rp_input_form>
+                </s_rp>
+              </div>
+            </div>
+          </s_article_rep>
+
+          <s_tag>
+            <div class="jbArticleList">
+              <h2 class="jbArticleTitle">Tag Cloud</h2>
+              <ul class="jbTagCloud">
+                <s_tag_rep><li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li></s_tag_rep>
+              </ul>
+            </div>
+          </s_tag>
+
+          <s_paging>
+            <div class="jbPagination">
+              <ul class="pagination">
+                <li><a [##_prev_page_##]>&laquo;</a></li>
+                <s_paging_rep><li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li></s_paging_rep>
+                <li><a [##_next_page_##]>&raquo;</a></li>
+              </ul>
+            </div>
+          </s_paging>
+        </div>
+        <!-- ========== /티스토리 기본 콘텐츠 ========== -->
+      </div>
+
+      <!-- ===== 사이드바 (우) ===== -->
+      <div id="jbSidebarRight" class="col-sm-3">
+        <button class="ls-drawer-close" id="lsDrawerClose" aria-label="메뉴 닫기">✕</button>
+
+        <div class="ls-widget">
+          <h3 class="ls-widget__title"><i class="fa fa-search ico"></i> 자료 검색</h3>
+          <form class="ls-search" id="lsSearchForm" role="search">
+            <input type="search" id="lsSearchInput" placeholder="예: 고3 6월 모의고사" aria-label="자료 검색">
+            <button type="submit">검색</button>
+          </form>
+        </div>
+
+        <div class="ls-widget">
+          <h3 class="ls-widget__title"><i class="fa fa-fire ico"></i> 인기글 TOP 10</h3>
+          <!-- 티스토리 자동 집계 인기글(숨김 소스) : 스크립트가 이걸 읽어 아래 목록으로 다시 그림 -->
+          <div id="lsPopularSrc" style="display:none">
+            <s_rp_popular>
+              <s_rp_popular_rep>
+                <a href="[##_rp_popular_rep_link_##]">[##_rp_popular_rep_title_##]</a>
+              </s_rp_popular_rep>
+            </s_rp_popular>
+          </div>
+          <ol class="ls-popular" id="popular"></ol>
+        </div>
+
+        <div class="ls-widget">
+          <h3 class="ls-widget__title"><i class="fa fa-folder-open-o ico"></i> 자료실 </h3>
+          <ul class="ls-menu" id="menu"></ul>
+        </div>
+
+        <!-- 사이드바 애드센스 (자료실 아래 · 테두리 없음 / ⚠ data-ad-slot 확인) -->
+        <div class="ls-adsense" style="margin:2px 0 18px;">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9982087108968257"
+               data-ad-slot="8762379918"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 푸터 ===== -->
+  <div id="jbCopyrightAreaBg" class="container-fluid">
+    <div id="jbCopyrightArea" class="container">
+      <div id="jbCopyright">
+        <h6>Copyright © 2012-2026 레전드스터디 닷컴!  All Rights Reserved <a href="https://coroico.tistory.com/admin"> # </a></h6>
+        <h6>| 카카오톡 플러스친구 ID : 레전드스터디닷컴 |</h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  jQuery(document).ready(function($){
+    $('div.hentry').contents().unwrap();
+    $('a[id^="entry"]').remove();
+    $('div.hfeed').contents().unwrap();
+    if (jbShowTistoryToolbar == 0) { $('#tistorytoolbarid').fadeIn(0); }
+    $('span.interword').replaceWith('<li><a>&middot;</a></li>');
+    $('.jbPagination span[class="selected"]').parent('a').parent('li').addClass('active');
+    $('#jbContainer').fadeIn(1);
+  });
+</script>
+
+<!-- LEGENDSTUDY MARKETING START : script (대학맵 + 마케팅 로직) -->
+<!-- ⚠ 이 블록은 아래 "커스텀 랜딩 스크립트"보다 반드시 앞에 둔다
+     (prepareHomeSlides 가 initSlider 보다 먼저 실행되어야 점(dot) 수가 맞음). -->
+<script>
+/* university-map.js (inline) */
+(function (root) {
+  var UNIVERSITIES = [
+    { key:'GACHON',   name:'가천대',   aliases:['가천대학교','가천대'],             destination:'', campaign:'u_gachon',   active:false },
+    { key:'CATHOLIC', name:'가톨릭대', aliases:['가톨릭대학교','가톨릭대'],         destination:'', campaign:'u_catholic', active:false },
+    { key:'KONKUK',   name:'건국대',   aliases:['건국대학교','건국대'],             destination:'', campaign:'u_konkuk',   active:false },
+    { key:'KYONGGI',  name:'경기대',   aliases:['경기대학교','경기대'],             destination:'', campaign:'u_kyonggi',  active:false },
+    { key:'KNU',      name:'경북대',   aliases:['경북대학교','경북대'],             destination:'', campaign:'u_knu',      active:false },
+    { key:'PNU',      name:'부산대',   aliases:['부산대학교','부산대'],             destination:'', campaign:'u_pnu',      active:false },
+    { key:'KHU',      name:'경희대',   aliases:['경희대학교','경희대'],             destination:'', campaign:'u_khu',      active:false },
+    { key:'KW',       name:'광운대',   aliases:['광운대학교','광운대'],             destination:'', campaign:'u_kw',       active:false },
+    { key:'DANKOOK',  name:'단국대',   aliases:['단국대학교','단국대'],             destination:'', campaign:'u_dankook',  active:false },
+    { key:'DUKSUNG',  name:'덕성여대', aliases:['덕성여자대학교','덕성여대'],       destination:'', campaign:'u_duksung',  active:false },
+    { key:'SWU',      name:'서울여대', aliases:['서울여자대학교','서울여대'],       destination:'', campaign:'u_swu',      active:false },
+    { key:'SSWU',     name:'성신여대', aliases:['성신여자대학교','성신여대'],       destination:'', campaign:'u_sswu',     active:false },
+    { key:'SOOKMYUNG',name:'숙명여대', aliases:['숙명여자대학교','숙명여대'],       destination:'', campaign:'u_sookmyung',active:false },
+    { key:'EWHA',     name:'이화여대', aliases:['이화여자대학교','이화여대'],       destination:'', campaign:'u_ewha',     active:false },
+    { key:'DONGGUK',  name:'동국대',   aliases:['동국대학교','동국대'],             destination:'', campaign:'u_dongguk',  active:false },
+    { key:'UOS',      name:'서울시립대',aliases:['서울시립대학교','서울시립대'],     destination:'', campaign:'u_uos',      active:false },
+    { key:'SOGANG',   name:'서강대',   aliases:['서강대학교','서강대'],             destination:'', campaign:'u_sogang',   active:false },
+    { key:'SKKU',     name:'성균관대', aliases:['성균관대학교','성균관대'],         destination:'', campaign:'u_skku',     active:false },
+    { key:'SEOULTECH',name:'서울과기대',aliases:['서울과학기술대학교','서울과기대'], destination:'', campaign:'u_seoultech',active:false },
+    { key:'SSU',      name:'숭실대',   aliases:['숭실대학교','숭실대'],             destination:'', campaign:'u_ssu',      active:false },
+    { key:'AJOU',     name:'아주대',   aliases:['아주대학교','아주대'],             destination:'', campaign:'u_ajou',     active:false },
+    { key:'INHA',     name:'인하대',   aliases:['인하대학교','인하대'],             destination:'', campaign:'u_inha',     active:false },
+    { key:'YONSEI',   name:'연세대',   aliases:['연세대학교','연세대'],             destination:'', campaign:'u_yonsei',   active:false },
+    { key:'KOREA',    name:'고려대',   aliases:['고려대학교','고려대'],             destination:'', campaign:'u_korea',    active:false },
+    { key:'CAU',      name:'중앙대',   aliases:['중앙대학교','중앙대'],             destination:'', campaign:'u_cau',      active:false },
+    { key:'HUFS',     name:'한국외대', aliases:['한국외국어대학교','한국외대'],     destination:'', campaign:'u_hufs',     active:false },
+    { key:'KOREATECH',name:'한국기술교육대',aliases:['한국기술교육대학교','한국기술교육대'], destination:'', campaign:'u_koreatech', active:false },
+    { key:'KAU',      name:'항공대',   aliases:['한국항공대학교','항공대'],         destination:'', campaign:'u_kau',      active:false },
+    { key:'HANYANG',  name:'한양대',   aliases:['한양대학교','한양대'],             destination:'', campaign:'u_hanyang',  active:false },
+    { key:'HONGIK',   name:'홍익대',   aliases:['홍익대학교','홍익대'],             destination:'', campaign:'u_hongik',   active:false },
+    { key:'SEJONG',   name:'세종대',   aliases:['세종대학교','세종대'],             destination:'', campaign:'u_sejong',   active:false },
+    { key:'SANGMYUNG',name:'상명대',   aliases:['상명대학교','상명대'],             destination:'', campaign:'u_sangmyung',active:false },
+    { key:'SKUNIV',   name:'서경대',   aliases:['서경대학교','서경대'],             destination:'', campaign:'u_skuniv',   active:false },
+    { key:'EULJI',    name:'을지대',   aliases:['을지대학교','을지대'],             destination:'', campaign:'u_eulji',    active:false }
+  ];
+  root.LS_MKT_UNIVERSITIES = UNIVERSITIES;
+})(window);
+</script>
+<script>
+/* legendstudy-marketing.js (inline) — 설정은 CONFIG 한 곳에서 편집 */
+(function (w, d) {
+  'use strict';
+  var CONFIG = {
+    APP_BANNER_ENABLED:        false, // 실제 Store URL 확정 후 true (DD-2)
+    ESSAY_SLIDE_ENABLED:       false, // Essay 공개 runtime 검증 후 true (DD-4)
+    ARTICLE_ESSAY_CTA_ENABLED: false, // 게시물 CTA (DD-4)
+    SHOW_SIGNUP_BONUS:         false, // 신규가입 +3 실사용 E2E 확인 후 true (DD-3)
+    LAB_HOME:       'https://lab.legendstudy.com',
+    ESSAY_LAB_MAIN: 'https://lab.legendstudy.com', // 공개 essay 진입 route 확인 후 교체
+    STORE_URL_IOS:     '', // App Store URL (DD-2) — 비어 있으면 APP 배너 미노출
+    STORE_URL_ANDROID: '', // Google Play URL (DD-2)
+    QR_IMAGE_URL:      '',
+    UNIVERSITY_FALLBACK: 'lab_main', // 'lab_main' | 'disable'
+    ANALYTICS_ENABLED: true,
+    UTM_SOURCE: 'legendstudy_com'
+  };
+  var UNIS = w.LS_MKT_UNIVERSITIES || [];
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function addUTM(url, medium, content, campaign){ if(!url) return url; try{ var sep=url.indexOf('?')===-1?'?':'&'; var q='utm_source='+encodeURIComponent(CONFIG.UTM_SOURCE)+'&utm_medium='+encodeURIComponent(medium)+'&utm_campaign='+encodeURIComponent(campaign||'essay_lab_2026')+(content?'&utm_content='+encodeURIComponent(content):''); return url+sep+q; }catch(e){ return url; } }
+  function track(action,label){ if(!CONFIG.ANALYTICS_ENABLED) return; try{ if(typeof w.ga==='function'){ w.ga('send','event','legendstudy_marketing',action,label); } }catch(e){} }
+  function isEssayText(t){ return /논술|모의논술/.test(t||''); }
+  function detectUniversity(title,category){ var hay=(title||'')+' '+(category||''); for(var i=0;i<UNIS.length;i++){ var u=UNIS[i]; for(var j=0;j<u.aliases.length;j++){ if(hay.indexOf(u.aliases[j])>-1) return u; } } return null; }
+  function resolveDestination(uni){ if(!uni){ return {href:CONFIG.ESSAY_LAB_MAIN,label:'논술 LAB',active:true,campaign:'essay_general'}; } if(uni.active&&uni.destination){ return {href:uni.destination,label:uni.name+' 논술 LAB',active:true,campaign:uni.campaign}; } if(CONFIG.UNIVERSITY_FALLBACK==='disable') return null; return {href:CONFIG.ESSAY_LAB_MAIN,label:'논술 LAB',active:true,campaign:uni.campaign}; }
+  function prepareHomeSlides(){
+    var track=d.querySelector('#slider .ls-slider__track'); if(!track) return;
+    var appSlide=track.querySelector('[data-mkt="app"]');
+    if(appSlide){ var hasStore=CONFIG.STORE_URL_IOS||CONFIG.STORE_URL_ANDROID; if(!CONFIG.APP_BANNER_ENABLED||!hasStore){ appSlide.parentNode.removeChild(appSlide); } else { wireAppSlide(appSlide); } }
+    var essaySlide=track.querySelector('[data-mkt="essay"]');
+    if(essaySlide){ if(!CONFIG.ESSAY_SLIDE_ENABLED){ essaySlide.parentNode.removeChild(essaySlide); } else { wireEssaySlide(essaySlide); } }
+  }
+  function wireAppSlide(slide){
+    var ios=slide.querySelector('[data-store="ios"]'), and=slide.querySelector('[data-store="android"]');
+    if(ios){ if(CONFIG.STORE_URL_IOS){ ios.setAttribute('href',CONFIG.STORE_URL_IOS); ios.addEventListener('click',function(){track('app_store_click','ios');}); } else { ios.style.display='none'; } }
+    if(and){ if(CONFIG.STORE_URL_ANDROID){ and.setAttribute('href',CONFIG.STORE_URL_ANDROID); and.addEventListener('click',function(){track('app_store_click','android');}); } else { and.style.display='none'; } }
+    var qr=slide.querySelector('[data-qr]'); if(qr){ if(CONFIG.QR_IMAGE_URL){ qr.innerHTML='<img src="'+esc(CONFIG.QR_IMAGE_URL)+'" alt="앱 설치 QR" width="112" height="112">'; } else { qr.style.display='none'; } }
+  }
+  function wireEssaySlide(slide){
+    var cta=slide.querySelector('[data-cta]'); if(cta){ cta.setAttribute('href',addUTM(CONFIG.ESSAY_LAB_MAIN,'home_slider','essay_slide','essay_lab_2026')); cta.addEventListener('click',function(){track('slide_cta_click','essay_lab');}); }
+    var bonus=slide.querySelector('[data-bonus]'); if(bonus&&!CONFIG.SHOW_SIGNUP_BONUS){ bonus.style.display='none'; }
+  }
+  function injectArticleCTA(){
+    if(!CONFIG.ARTICLE_ESSAY_CTA_ENABLED) return;
+    var article=d.querySelector('#jbTistoryContent .jbArticle'), titleEl=d.querySelector('#jbTistoryContent .jbArticleTitle');
+    if(!article||!titleEl) return;
+    var title=(titleEl.textContent||'').replace(/\s+/g,' ').trim();
+    var catEl=d.querySelector('#jbTistoryContent .jbArticleInfo a'); var category=catEl?(catEl.textContent||'').trim():'';
+    if(!isEssayText(title)&&!isEssayText(category)) return;
+    var uni=detectUniversity(title,category), dest=resolveDestination(uni); if(!dest) return;
+    var uniName=uni?uni.name:null, campaign=dest.campaign||'essay_general';
+    var infoEl=d.querySelector('#jbTistoryContent .jbArticleInfo');
+    var top=d.createElement('div'); top.className='ls-mkt-cta ls-mkt-cta--top'; top.setAttribute('role','complementary');
+    top.innerHTML='<p class="ls-mkt-cta__lead">'+esc(uniName?(uniName+' 논술 준비 중인가요?'):'논술 준비 중인가요?')+'</p>'+
+      '<p class="ls-mkt-cta__desc">대학별 평가·채점 기준에 맞춰 내 답안을 점검하고 다시 써보세요.</p>'+
+      '<a class="ls-mkt-cta__btn ls-mkt-cta__btn--ghost" data-top href="'+esc(addUTM(dest.href,'article_top',(uni?uni.key:'general'),campaign))+'" target="_blank" rel="noopener">'+esc(dest.label)+' <span aria-hidden="true">→</span></a>';
+    if(infoEl&&infoEl.parentNode){ infoEl.parentNode.insertBefore(top,infoEl.nextSibling); } else { article.parentNode.insertBefore(top,article); }
+    var bottom=d.createElement('div'); bottom.className='ls-mkt-cta ls-mkt-cta--bottom'; bottom.setAttribute('role','complementary');
+    var bonusLine=CONFIG.SHOW_SIGNUP_BONUS?'<p class="ls-mkt-cta__bonus">신규 가입 시 첨삭권 3회 제공</p>':'';
+    bottom.innerHTML='<p class="ls-mkt-cta__lead">기출을 찾았다면, 이제 직접 풀어보세요.</p>'+
+      '<p class="ls-mkt-cta__desc">'+esc((uniName?(uniName+' '):'')+'논술 LAB에서 답안을 작성하고, 첨삭 → 재작성 → 변화 확인까지.')+'</p>'+bonusLine+
+      '<a class="ls-mkt-cta__btn" data-bottom href="'+esc(addUTM(dest.href,'article_after',(uni?uni.key:'general'),campaign))+'" target="_blank" rel="noopener">이 문제로 첨삭 시작하기 <span aria-hidden="true">→</span></a>';
+    if(article.nextSibling){ article.parentNode.insertBefore(bottom,article.nextSibling); } else { article.parentNode.appendChild(bottom); }
+    var tb=top.querySelector('[data-top]'); if(tb) tb.addEventListener('click',function(){track('article_cta_top',(uni?uni.key:'general'));});
+    var bb=bottom.querySelector('[data-bottom]'); if(bb) bb.addEventListener('click',function(){track('article_cta_bottom',(uni?uni.key:'general'));});
+  }
+  function onReady(){ try{ prepareHomeSlides(); }catch(e){} try{ injectArticleCTA(); }catch(e){} }
+  if(d.readyState==='loading'){ d.addEventListener('DOMContentLoaded',onReady); } else { onReady(); }
+  w.LS_MKT={ config:CONFIG, prepareHomeSlides:prepareHomeSlides, injectArticleCTA:injectArticleCTA };
+})(window, document);
+</script>
+<!-- LEGENDSTUDY MARKETING END : script -->
+
+<!-- ===== 커스텀 랜딩/사이드바 스크립트 ===== -->
+<script>
+(function(){
+  var CAT={
+    g3:'/category/%E2%97%86%EF%BB%BF%20%22%EA%B3%A03%22%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B3%B5%EA%B0%84%20',
+    g2:'/category/%E2%97%86%EF%BB%BF%20%22%EA%B3%A02%22%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B3%B5%EA%B0%84%20',
+    g1:'/category/%E2%97%86%EF%BB%BF%20%22%EA%B3%A01%22%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B3%B5%EA%B0%84',
+    essay:'/category/%E2%97%86%EF%BB%BF%20%EB%85%BC%EC%88%A0%20%EA%B8%B0%EC%B6%9C%20%EC%9E%90%EB%A3%8C'
+  };
+  var TREE=[
+    { label:'"고3"을 위한 공간', color:'var(--g3)', children:[
+      ['전체 보기', CAT.g3],
+      ['3학년 모의고사 전과목 자료', CAT.g3+'/3%ED%95%99%EB%85%84%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC%20%EC%A0%84%EA%B3%BC%EB%AA%A9%20%EC%9E%90%EB%A3%8C'],
+      ['07~25년 국영수(평가원)', CAT.g3+'/07%7E25%EB%85%84%20%20%EA%B5%AD%EC%98%81%EC%88%98%28%ED%8F%89%EA%B0%80%EC%9B%90%29'],
+      ['07~25년 국영수(교육청)', CAT.g3+'/07%7E25%EB%85%84%20%20%EA%B5%AD%EC%98%81%EC%88%98%28%EA%B5%90%EC%9C%A1%EC%B2%AD%29'],
+      ['07~25년 과학탐구(평가원)', CAT.g3+'/07%7E25%EB%85%84%20%EA%B3%BC%ED%95%99%ED%83%90%EA%B5%AC%28%ED%8F%89%EA%B0%80%EC%9B%90%29'],
+      ['07~25년 사회탐구(평가원)', CAT.g3+'/07%7E25%EB%85%84%20%EC%82%AC%ED%9A%8C%ED%83%90%EA%B5%AC%28%ED%8F%89%EA%B0%80%EC%9B%90%29'],
+      ['07~25년 사탐·과탐(교육청)', CAT.g3+'/07%7E25%EB%85%84%20%EC%82%AC%ED%83%90%2C%20%EA%B3%BC%ED%83%90%28%EA%B5%90%EC%9C%A1%EC%B2%AD%29'],
+      ['2004~2006년 수능 & 모의고사', CAT.g3+'/2004%7E2006%EB%85%84%20%EC%88%98%EB%8A%A5%20%26%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC']
+    ]},
+    { label:'"고2"를 위한 공간', color:'var(--g2)', children:[
+      ['전체 보기', CAT.g2],
+      ['2학년 모의고사 전과목 자료', CAT.g2+'/2%ED%95%99%EB%85%84%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC%20%EC%A0%84%EA%B3%BC%EB%AA%A9%20%EC%9E%90%EB%A3%8C'],
+      ['08~25년 국영수 문제', CAT.g2+'/08%7E25%EB%85%84%20%20%EA%B5%AD%EC%98%81%EC%88%98%20%EB%AC%B8%EC%A0%9C'],
+      ['08~25년 사탐·과탐 문제', CAT.g2+'/08%7E25%EB%85%84%20%20%EC%82%AC%ED%83%90%2C%EA%B3%BC%ED%83%90%20%EB%AC%B8%EC%A0%9C'],
+      ['2004~2007년 모의고사', CAT.g2+'/2004%7E2007%EB%85%84%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC']
+    ]},
+    { label:'"고1"을 위한 공간', color:'var(--g1)', children:[
+      ['전체 보기', CAT.g1],
+      ['1학년 모의고사 전과목 자료', CAT.g1+'/1%ED%95%99%EB%85%84%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC%20%EC%A0%84%EA%B3%BC%EB%AA%A9%20%EC%9E%90%EB%A3%8C'],
+      ['08~25년 국영수 문제', CAT.g1+'/08%7E25%EB%85%84%20%20%EA%B5%AD%EC%98%81%EC%88%98%20%EB%AC%B8%EC%A0%9C'],
+      ['08~25년 사탐·과탐 문제', CAT.g1+'/08%7E25%EB%85%84%20%20%EC%82%AC%ED%83%90%2C%EA%B3%BC%ED%83%90%20%EB%AC%B8%EC%A0%9C'],
+      ['2004~2007년 모의고사', CAT.g1+'/2004%7E2007%EB%85%84%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC']
+    ]},
+    { label:'논술 기출 자료', color:'var(--essay)', children:[
+      ['전체 보기', CAT.essay],
+      ['가톨릭대, 건국대, 경기대', CAT.essay+'/%EA%B0%80%ED%86%A8%EB%A6%AD%EB%8C%80%2C%20%EA%B1%B4%EA%B5%AD%EB%8C%80%2C%20%EA%B2%BD%EA%B8%B0%EB%8C%80'],
+      ['경북대, 부산대', CAT.essay+'/%EA%B2%BD%EB%B6%81%EB%8C%80%2C%20%EB%B6%80%EC%82%B0%EB%8C%80'],
+      ['경희대, 광운대, 단국대', CAT.essay+'/%EA%B2%BD%ED%9D%AC%EB%8C%80%2C%20%EA%B4%91%EC%9A%B4%EB%8C%80%2C%20%EB%8B%A8%EA%B5%AD%EB%8C%80'],
+      ['덕성여대, 서울여대, 성신여대', CAT.essay+'/%EB%8D%95%EC%84%B1%EC%97%AC%EB%8C%80%2C%20%EC%84%9C%EC%9A%B8%EC%97%AC%EB%8C%80%2C%20%EC%84%B1%EC%8B%A0%EC%97%AC%EB%8C%80'],
+      ['숙명여대, 이화여대', CAT.essay+'/%EC%88%99%EB%AA%85%EC%97%AC%EB%8C%80%2C%20%EC%9D%B4%ED%99%94%EC%97%AC%EB%8C%80'],
+      ['동국대, 서울시립대', CAT.essay+'/%EB%8F%99%EA%B5%AD%EB%8C%80%2C%20%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%8C%80'],
+      ['서강대, 성균관대', CAT.essay+'/%EC%84%9C%EA%B0%95%EB%8C%80%2C%20%EC%84%B1%EA%B7%A0%EA%B4%80%EB%8C%80'],
+      ['서울과기대, 숭실대', CAT.essay+'/%EC%84%9C%EC%9A%B8%EA%B3%BC%EA%B8%B0%EB%8C%80%2C%20%EC%88%AD%EC%8B%A4%EB%8C%80'],
+      ['아주대, 인하대', CAT.essay+'/%EC%95%84%EC%A3%BC%EB%8C%80%2C%20%EC%9D%B8%ED%95%98%EB%8C%80'],
+      ['연세대, 고려대', CAT.essay+'/%EC%97%B0%EC%84%B8%EB%8C%80%2C%20%EA%B3%A0%EB%A0%A4%EB%8C%80'],
+      ['중앙대, 한국외대', CAT.essay+'/%EC%A4%91%EC%95%99%EB%8C%80%2C%20%ED%95%9C%EA%B5%AD%EC%99%B8%EB%8C%80'],
+      ['한국기술교육대, 항공대', CAT.essay+'/%ED%95%9C%EA%B5%AD%EA%B8%B0%EC%88%A0%EA%B5%90%EC%9C%A1%EB%8C%80%2C%20%ED%95%AD%EA%B3%B5%EB%8C%80'],
+      ['한양대, 홍익대', CAT.essay+'/%ED%95%9C%EC%96%91%EB%8C%80%2C%20%ED%99%8D%EC%9D%B5%EB%8C%80'],
+      ['세종대, 가천대', CAT.essay+'/%EC%84%B8%EC%A2%85%EB%8C%80%2C%20%EA%B0%80%EC%B2%9C%EB%8C%80'],
+      ['상명대, 서경대, 을지대', CAT.essay+'/%EC%83%81%EB%AA%85%EB%8C%80%2C%20%EC%84%9C%EA%B2%BD%EB%8C%80%2C%20%EC%9D%84%EC%A7%80%EB%8C%80']
+    ]},
+    { label:'적성고사·면접 자료', color:'var(--sub)', href:'/category/%E2%97%86%EF%BB%BF%20%EC%A0%81%EC%84%B1%EA%B3%A0%EC%82%AC%2C%20%EB%A9%B4%EC%A0%91%20%EC%9E%90%EB%A3%8C' },
+    { label:'사관학교·경찰대 자료', color:'var(--sub)', href:'/category/%E2%97%86%EF%BB%BF%20%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90%2C%20%EA%B2%BD%EC%B0%B0%EB%8C%80%20%EC%9E%90%EB%A3%8C' },
+    { label:'국가수준 학업성취도 평가', color:'var(--sub)', href:'/category/%E2%97%86%20%EF%BB%BF%EA%B5%AD%EA%B0%80%EC%88%98%EC%A4%80%20%ED%95%99%EC%97%85%EC%84%B1%EC%B7%A8%EB%8F%84%20%ED%8F%89%EA%B0%80' },
+    { label:'강의 자료실', color:'var(--sub)', href:'/category/%E2%97%86%EF%BB%BF%20%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C%EC%8B%A4' },
+    { label:'대학 학과 알아보기', color:'var(--sub)', href:'/category/%E2%97%86%EF%BB%BF%20%EB%8C%80%ED%95%99%20%ED%95%99%EA%B3%BC%20%EC%95%8C%EC%95%84%20%EB%B3%B4%EA%B8%B0' },
+    { label:'요청 자료', color:'var(--sub)', href:'/category/%E2%97%86%EF%BB%BF%20%EC%9A%94%EC%B2%AD%20%EC%9E%90%EB%A3%8C' },
+    { label:'수업 자료실', color:'var(--sub)', href:'/category/%EC%88%98%EC%97%85%20%EC%9E%90%EB%A3%8C%EC%8B%A4' },
+    { label:'교육 입시 관련 소식', color:'var(--sub)', href:'/category/%EA%B5%90%EC%9C%A1%20%EC%9E%85%EC%8B%9C%20%EA%B4%80%EB%A0%A8%20%EC%86%8C%EC%8B%9D' }
+  ];
+  var SECTIONS=[
+    { key:'latest', title:'최신 등록 게시글', source:'/',       more:'/?page=1',grade:null },
+    { key:'g3',     title:'고3 학력평가 자료', source:CAT.g3,     more:CAT.g3,    grade:{label:'고3',cc:'var(--g3)',ph:'고3'} },
+    { key:'g2',     title:'고2 학력평가 자료', source:CAT.g2,     more:CAT.g2,    grade:{label:'고2',cc:'var(--g2)',ph:'고2'} },
+    { key:'g1',     title:'고1 학력평가 자료', source:CAT.g1,     more:CAT.g1,    grade:{label:'고1',cc:'var(--g1)',ph:'고1'} },
+    { key:'essay',  title:'논술 기출 자료',    source:CAT.essay,  more:CAT.essay, grade:{label:'논술',cc:'var(--essay)',ph:'논술'} }
+  ];
+  /* 인기글 TOP 10 (월간 조회수 순 · 수동 관리 — 이 배열만 편집) */
+  var POPULAR=[
+    ['[2025년 11월 시행] 2026학년도 수능','/1700'],
+    ['[2024년 11월 시행] 2025학년도 수능','/1649'],
+    ['[2025년 9월 시행] 2026학년도 9월 모의평가','/1686'],
+    ['[2026년 6월 시행] 2027학년도 6월 모의평가','/1706'],
+    ['[2024년 11월 시행] 2025학년도 수능','/1649'],
+    ['[2024년 9월 시행] 2025학년도 9월 모의평가','/1634'],
+    ['[2023년 11월 시행] 2024학년도 수능','/1574'],
+    ['2025년 9월 고1 모의고사','/1684'],
+    ['[2022년 11월 시행] 2023학년도 수능','/1509'],
+    ['[2021년 11월 시행] 2022학년도 수능','/1487']
+  ];
+  /* (선택) 인기글을 특정 '추천글 카테고리' 최신순으로 자동 노출하려면 그 카테고리 URL을 넣으세요.
+     비워두면 아래 POPULAR 수동 목록을 사용합니다.
+     예: var POPULAR_CAT='/category/%E2%97%86%20%EC%9D%B8%EA%B8%B0%20%EC%9E%90%EB%A3%8C'; */
+  var POPULAR_CAT='';
+  var SAMPLE={
+    latest:[{url:'/1708',title:'2026학년도 7월 고3 모의고사 기출'},{url:'/1707',title:'2026년 6월 고1 모의고사 기출'},{url:'/1706',title:'2027학년도 6월 모의평가'}],
+    g3:[{url:'/1708',title:'2026년 7월 고3 모의고사 기출'},{url:'/1705',title:'2026년 5월 고3 모의고사'},{url:'/1702',title:'2026년 3월 고3 모의고사'}],
+    g2:[{url:'/1703',title:'2026년 3월 고2 모의고사 기출'},{url:'/1694',title:'2025년 10월 고2 모의고사'},{url:'/1685',title:'2025년 9월 고2 모의고사 기출'}],
+    g1:[{url:'/1707',title:'2026년 6월 고1 모의고사 기출'},{url:'/1704',title:'2026년 3월 고1 모의고사 기출'},{url:'/1695',title:'2025년 10월 고1 모의고사 기출'}],
+    essay:[{url:'/1699',title:'서강대 2025학년도 논술 & 모의논술 기출'},{url:'/1698',title:'숙명여대 2026학년도 수시 모의논술 기출'},{url:'/1697',title:'숙명여대 2025학년도 수시 논술 기출'}]
+  };
+
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function detectGrade(t){
+    if(/논술|모의논술/.test(t)) return {label:'논술',cc:'var(--essay)',ph:'논술'};
+    if(/수능|모의평가|고\s*3|고3/.test(t)) return {label:'고3',cc:'var(--g3)',ph:'고3'};
+    if(/고\s*2|고2/.test(t)) return {label:'고2',cc:'var(--g2)',ph:'고2'};
+    if(/고\s*1|고1/.test(t)) return {label:'고1',cc:'var(--g1)',ph:'고1'};
+    return {label:'최신',cc:'var(--primary)',ph:'자료'};
+  }
+  function metaFromTitle(t){
+    var m=t.match(/(\d{4})년\s*(\d{1,2})월/); if(m) return m[1]+'.'+('0'+m[2]).slice(-2)+' 시행';
+    m=t.match(/(\d{4})학년도/); if(m) return m[1]+'학년도';
+    return '기출 자료';
+  }
+  function cleanTitle(t){return t.replace(/^[→▶»►\s\[\]]+/,'').replace(/\s+\d+$/,'').replace(/\s+/g,' ').trim();}
+
+  var docCache={};
+  function fetchDoc(url){
+    if(docCache[url]) return Promise.resolve(docCache[url]);
+    return fetch(url,{credentials:'same-origin'}).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+      .then(function(html){ var d=new DOMParser().parseFromString(html,'text/html'); docCache[url]=d; return d; });
+  }
+  function fetchPosts(url,limit){
+    return fetchDoc(url).then(function(doc){
+      var seen={},posts=[],as=doc.querySelectorAll('a[href]');
+      for(var i=0;i<as.length && posts.length<limit;i++){
+        var href=as[i].getAttribute('href')||'';
+        var m=href.match(/^(?:https?:\/\/[^/]+)?\/(\d+)(?:[?#].*)?$/);
+        if(!m) continue; var id=m[1]; if(seen[id]) continue;
+        var title=cleanTitle(as[i].textContent);
+        if(title.length<6||/더보기|목록|이전|다음/.test(title)) continue;
+        seen[id]=1; posts.push({url:'/'+id,title:title});
+      }
+      return posts;
+    });
+  }
+  function fetchOgImage(postUrl){
+    return fetchDoc(postUrl).then(function(doc){
+      var og=doc.querySelector('meta[property="og:image"]')||doc.querySelector('meta[name="twitter:image"]');
+      return og?og.getAttribute('content'):'';
+    });
+  }
+  function cardHTML(post,forced){
+    var g=forced||detectGrade(post.title);
+    return '<a class="ls-card" href="'+post.url+'" data-post="'+post.url+'" style="--cc:'+g.cc+'">'+
+      '<div class="ls-card__thumb"><div class="ls-card__media"><div class="ls-card__ph"><b>'+g.ph+'</b></div></div>'+
+      '<span class="ls-badge">'+g.label+'</span></div>'+
+      '<div class="ls-card__body"><h3 class="ls-card__title">'+esc(post.title)+'</h3>'+
+      '<p class="ls-card__meta"><span>'+metaFromTitle(post.title)+'</span><span class="ls-card__mdot"></span><span>다운로드</span></p></div></a>';
+  }
+  function skeleton(){
+    var one='<div class="ls-card ls-card--skel is-in"><div class="ls-card__thumb"><div class="ls-card__media"><div class="ls-card__ph"></div></div></div><div class="ls-card__body"><h3 class="ls-card__title">불러오는 중입니다 자료제목</h3><p class="ls-card__meta">&nbsp;</p></div></div>';
+    return '<div class="ls-grid">'+one+one+one+'</div>';
+  }
+  function renderShell(){
+    document.getElementById('app').innerHTML=SECTIONS.map(function(s){
+      return '<section class="ls-section" data-key="'+s.key+'"><div class="ls-section__head">'+
+        '<span class="ls-section__bar"></span><h2 class="ls-section__title">'+s.title+'</h2>'+
+        '<span class="ls-section__count">최신 3</span>'+
+        '<a class="ls-more" href="'+s.more+'">전체 보기 <span aria-hidden="true">→</span></a></div>'+
+        '<div class="ls-body">'+skeleton()+'</div></section>';
+    }).join('');
+  }
+  function renderMenu(){
+    var el=document.getElementById('menu'); if(!el) return;
+    el.innerHTML=TREE.map(function(item){
+      if(item.children){
+        var subs=item.children.map(function(c){return '<li><a href="'+c[1]+'">'+esc(c[0])+'</a></li>';}).join('');
+        var open=item.label.indexOf('고3')>-1?' open':'';
+        return '<li><details'+open+'><summary><span class="dot" style="--dc:'+item.color+'"></span>'+esc(item.label)+'<span class="chev">▶</span></summary><ul class="sub">'+subs+'</ul></details></li>';
+      }
+      return '<li><a href="'+item.href+'"><span class="dot" style="--dc:'+item.color+'"></span>'+esc(item.label)+'</a></li>';
+    }).join('');
+  }
+  function renderPopular(){
+    var el=document.getElementById('popular'); if(!el) return;
+    function paint(items){
+      if(!items || !items.length) items=POPULAR;
+      el.innerHTML=items.map(function(p,i){
+        return '<li><a href="'+p[1]+'"><span class="rk">'+(i+1)+'</span><span class="tt">'+esc(p[0])+'</span></a></li>';
+      }).join('');
+    }
+    // 1순위: 티스토리 인기글 숨김 소스(플러그인 있을 때만 채워짐)
+    var items=[], src=document.getElementById('lsPopularSrc');
+    if(src){
+      var links=src.querySelectorAll('a[href]');
+      for(var i=0;i<links.length && items.length<10;i++){
+        var t=(links[i].textContent||'').replace(/\s+/g,' ').trim();
+        var h=links[i].getAttribute('href')||'';
+        if(t && h && h.indexOf('##')===-1) items.push([t,h]); // 미치환 치환자 제외
+      }
+    }
+    if(items.length){ paint(items); return; }
+    // 2순위: 추천글 카테고리 최신순 자동
+    if(POPULAR_CAT){
+      fetchPosts(POPULAR_CAT,10).then(function(posts){
+        paint(posts.map(function(p){ return [p.title,p.url]; }));
+      }).catch(function(){ paint(POPULAR); });
+      return;
+    }
+    // 3순위: 수동 배열
+    paint(POPULAR);
+  }
+  function renderPopularMini(){
+    var mini=document.getElementById('popularMini'); if(!mini) return;
+    mini.innerHTML='<h3 class="ls-popmini__title"><i class="fa fa-fire ico"></i> 인기글</h3><ol>'+
+      POPULAR.slice(0,5).map(function(p,i){
+        return '<li><a href="'+p[1]+'"><span class="rk">'+(i+1)+'</span><span class="tt">'+esc(p[0])+'</span></a></li>';
+      }).join('')+'</ol>';
+  }
+  function renderPopularMiniPost(){
+    var box=document.getElementById('popularMiniPost'); if(!box) return;
+    box.innerHTML='<h3 class="ls-popmini__title"><i class="fa fa-fire ico"></i> 인기글</h3><ol>'+
+      POPULAR.slice(0,5).map(function(p,i){
+        return '<li><a href="'+p[1]+'"><span class="rk">'+(i+1)+'</span><span class="tt">'+esc(p[0])+'</span></a></li>';
+      }).join('')+'</ol>';
+  }
+  function load(){
+    renderShell();
+    var fallback=false;
+    var jobs=SECTIONS.map(function(s){
+      var body=document.querySelector('[data-key="'+s.key+'"] .ls-body');
+      return fetchPosts(s.source,3).then(function(posts){
+        if(!posts.length) throw new Error('empty');
+        body.innerHTML='<div class="ls-grid">'+posts.map(function(p){return cardHTML(p,s.grade);}).join('')+'</div>';
+      }).catch(function(){
+        fallback=true;
+        var posts=SAMPLE[s.key]||[];
+        body.innerHTML='<div class="ls-grid">'+posts.map(function(p){return cardHTML(p,s.grade);}).join('')+'</div>';
+      });
+    });
+    Promise.all(jobs).then(function(){ hydrateCards(fallback); });
+  }
+  function hydrateCards(fallback){
+    var cards=document.querySelectorAll('.ls-card:not(.is-in)');
+    var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+    function activate(card){ card.classList.add('is-in'); if(!fallback) loadOg(card); }
+    if(!('IntersectionObserver' in window)||reduce){ [].forEach.call(cards,activate); return; }
+    var io=new IntersectionObserver(function(ents,obs){
+      ents.forEach(function(en){ if(en.isIntersecting){ activate(en.target); obs.unobserve(en.target); } });
+    },{threshold:.12,rootMargin:'80px'});
+    [].forEach.call(cards,function(c){io.observe(c);});
+  }
+  function loadOg(card){
+    if(card.dataset.oged) return; card.dataset.oged='1';
+    var url=card.dataset.post; if(!url) return;
+    fetchOgImage(url).then(function(src){
+      if(!src) return;
+      var im=new Image();
+      im.onload=function(){ var media=card.querySelector('.ls-card__media'); if(media) media.innerHTML='<img src="'+src+'" alt="" loading="lazy">'; };
+      im.src=src;
+    }).catch(function(){});
+  }
+  function initSlider(){
+    var slider=document.getElementById('slider'); if(!slider) return;
+    var track=slider.querySelector('.ls-slider__track');
+    var slides=[].filter.call(track.children,function(el){return el.classList.contains('ls-slide');});
+    var dotsWrap=slider.querySelector('.ls-dots');
+    var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+    var i=0,timer=null;
+    if(slides.length<=1){ [].forEach.call(slider.querySelectorAll('.ls-arrow,.ls-dots'),function(e){e.style.display='none';}); return; }
+    slides.forEach(function(_,k){ var b=document.createElement('button'); b.className='ls-dot'; b.setAttribute('aria-label',(k+1)+'번 배너'); b.addEventListener('click',function(){go(k);restart();}); dotsWrap.appendChild(b); });
+    var dots=[].slice.call(dotsWrap.children);
+    function go(n){ i=(n+slides.length)%slides.length; track.style.transform='translateX('+(-i*100)+'%)'; dots.forEach(function(d,k){d.classList.toggle('is-on',k===i);}); }
+    function next(){go(i+1);} function prev(){go(i-1);}
+    slider.querySelector('.ls-arrow--next').addEventListener('click',function(){next();restart();});
+    slider.querySelector('.ls-arrow--prev').addEventListener('click',function(){prev();restart();});
+    function start(){ if(reduce) return; timer=setInterval(next,5000); }
+    function stop(){ if(timer){clearInterval(timer);timer=null;} }
+    function restart(){ stop(); start(); }
+    slider.addEventListener('mouseenter',stop);
+    slider.addEventListener('mouseleave',start);
+    var x0=null;
+    track.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;stop();},{passive:true});
+    track.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40){ dx<0?next():prev(); } x0=null; start(); },{passive:true});
+    go(0); start();
+  }
+  function initSearch(){
+    var f=document.getElementById('lsSearchForm'); if(!f) return;
+    f.addEventListener('submit',function(e){ e.preventDefault(); var q=document.getElementById('lsSearchInput').value.trim(); if(q) location.href='/search/'+encodeURIComponent(q); });
+  }
+  function initDrawer(){
+    var burger=document.getElementById('lsBurger'), side=document.getElementById('jbSidebarRight');
+    if(!burger||!side) return;
+    var close=document.getElementById('lsDrawerClose'), backdrop=document.getElementById('lsBackdrop');
+    function open(){ side.classList.add('is-open'); if(backdrop){ backdrop.hidden=false; requestAnimationFrame(function(){backdrop.classList.add('show');}); } burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+    function shut(){ side.classList.remove('is-open'); if(backdrop){ backdrop.classList.remove('show'); setTimeout(function(){ if(backdrop && !backdrop.classList.contains('show')) backdrop.hidden=true; },220); } burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    burger.addEventListener('click',open);
+    if(close) close.addEventListener('click',shut);
+    if(backdrop) backdrop.addEventListener('click',shut);
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') shut(); });
+    side.addEventListener('click',function(e){ if(e.target.closest('a') && window.innerWidth<768) shut(); });
+  }
+
+  document.addEventListener('DOMContentLoaded',function(){
+    renderMenu(); renderPopular(); renderPopularMini(); renderPopularMiniPost(); initSearch(); initDrawer();
+    var path=location.pathname||'/';
+    var isHome=(path==='/'||path===''||path==='/index') && location.search.indexOf('page=')===-1;
+    var landing=document.getElementById('lsLanding');
+    var tist=document.getElementById('jbTistoryContent');
+    if(isHome && landing){
+      if(tist) tist.style.display='none';
+      landing.style.display='';
+      load(); initSlider();
+    } else if(landing){
+      landing.style.display='none';
+    }
+  });
+})();
+</script>
+
+<!-- 네이버 애널리틱스 (개인 삽입 블록 · 그대로 유지) -->
+<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "b93c6dfbf0aed8";
+wcs_do();
+</script>
+
+  </s_t3>
+  </body>
+</html>

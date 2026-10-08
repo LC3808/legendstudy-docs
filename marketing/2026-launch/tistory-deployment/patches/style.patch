@@ -1,0 +1,44 @@
+--- original/style.css	2026-10-08 18:43:26
++++ modified/style.css	2026-10-08 18:48:06
+@@ -201,3 +201,41 @@
+ }
+ 
+ 
++
++/* LEGENDSTUDY MARKETING START */
++/* =========================================================
++   LegendStudy.com 마케팅 레이어 — 기존 스킨 변수(--primary/--ink/--sub/--line…) 재사용
++   (standalone 원본: modules/legendstudy-marketing.css) · accent = var(--primary) = #ffa400
++   ========================================================= */
++.ls-slide--mkt .ls-slide__inner{ max-width:720px; }
++.ls-mkt-chip{ display:inline-block; margin-top:12px; padding:5px 12px; border-radius:999px; font-size:12.5px; font-weight:700; color:var(--primary-dark); background:#fff; border:1px solid #ffe4a6; }
++.ls-mkt-slide-cta{ display:inline-flex; align-items:center; gap:7px; margin-top:14px; padding:11px 20px; border-radius:12px; font-size:15px; font-weight:800; color:#fff; background:var(--primary); border:1px solid var(--primary); transition:background var(--t,.2s), transform var(--t,.2s); }
++.ls-mkt-slide-cta:hover{ background:var(--primary-dark); transform:translateY(-1px); color:#fff; }
++.ls-mkt-slide-cta:focus-visible{ outline:3px solid color-mix(in srgb,var(--primary) 45%,#fff); outline-offset:2px; }
++.ls-mkt-stores{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:14px; }
++.ls-mkt-store{ display:inline-flex; align-items:center; gap:7px; padding:10px 16px; border-radius:12px; font-size:14px; font-weight:700; color:var(--ink); background:#fff; border:1px solid var(--line-strong); }
++.ls-mkt-store:hover{ border-color:var(--primary); color:var(--primary-dark); }
++.ls-mkt-store:focus-visible{ outline:3px solid color-mix(in srgb,var(--primary) 45%,#fff); outline-offset:2px; }
++.ls-mkt-qr{ margin-top:12px; display:flex; justify-content:center; }
++.ls-mkt-qr img{ border-radius:10px; border:1px solid var(--line); }
++.ls-mkt-cta{ border:1px solid var(--line); border-radius:var(--radius,16px); background:var(--surface,#fff); box-shadow:var(--shadow-sm); padding:16px 18px; margin:16px 0; word-break:keep-all; overflow-wrap:anywhere; }
++.ls-mkt-cta--top{ margin:12px 0 18px; }
++.ls-mkt-cta--bottom{ margin:22px 0 10px; border-color:#ffe4a6; background:linear-gradient(135deg,var(--primary-light,#fff4de),#ffffff 78%); }
++.ls-mkt-cta__lead{ margin:0; font-size:16px; font-weight:800; color:var(--ink); line-height:1.5; }
++.ls-mkt-cta--bottom .ls-mkt-cta__lead{ font-size:17px; }
++.ls-mkt-cta__desc{ margin:6px 0 0; font-size:14px; color:var(--sub); line-height:1.6; }
++.ls-mkt-cta__bonus{ margin:10px 0 0; display:inline-block; padding:4px 11px; border-radius:999px; font-size:12.5px; font-weight:700; color:var(--primary-dark); background:#fff; border:1px solid #ffe4a6; }
++.ls-mkt-cta__btn{ display:inline-flex; align-items:center; gap:7px; margin-top:13px; padding:11px 18px; border-radius:11px; font-size:15px; font-weight:800; color:#fff; background:var(--primary); border:1px solid var(--primary); transition:background var(--t,.2s), transform var(--t,.2s); }
++.ls-mkt-cta__btn:hover{ background:var(--primary-dark); transform:translateY(-1px); color:#fff; }
++.ls-mkt-cta__btn:focus-visible{ outline:3px solid color-mix(in srgb,var(--primary) 45%,#fff); outline-offset:2px; }
++.ls-mkt-cta__btn--ghost{ color:var(--primary-dark); background:#fff; border:1px solid var(--primary); }
++.ls-mkt-cta__btn--ghost:hover{ background:var(--primary-light,#fff4de); color:var(--primary-dark); }
++@media(max-width:767px){
++  .ls-mkt-cta{ padding:14px 15px; }
++  .ls-mkt-cta__lead{ font-size:15.5px; }
++  .ls-mkt-cta__btn, .ls-mkt-slide-cta{ width:100%; justify-content:center; }
++  .ls-mkt-stores{ flex-direction:column; }
++  .ls-mkt-store{ justify-content:center; }
++}
++@media(prefers-reduced-motion:reduce){ .ls-mkt-slide-cta, .ls-mkt-cta__btn{ transition:none; } }
++/* LEGENDSTUDY MARKETING END */

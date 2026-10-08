@@ -30,6 +30,8 @@ Growth/Marketing deliverables for the 2026 launch. **Marketing documentation and
 
 Assets: [`../../assets/marketing/2026-launch/`](../../assets/marketing/2026-launch/) — SVG banners with replaceable placeholder layers (no fake URL/QR/date/deep-link).
 
+**Tistory deployment package:** [`tistory-deployment/`](tistory-deployment/README.md) — ready-to-apply skin changes for LegendStudy.com (main slides + auto-injected 논술 post CTAs), additive & OFF-by-default, built from the real Production skin. Owner applies; Claude does not modify the Tistory site.
+
 ## Deliverable map (brief section 50)
 
 | # | Required output | Location |

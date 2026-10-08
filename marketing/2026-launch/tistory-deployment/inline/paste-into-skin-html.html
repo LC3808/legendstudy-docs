@@ -1,0 +1,161 @@
+<!-- ============================================================
+  LEGENDSTUDY MARKETING — skin.html 에 붙여넣을 블록 (2곳)
+  ============================================================
+  Tistory 관리자 > 꾸미기 > 스킨편집 > HTML 편집 에서 아래를 붙여넣습니다.
+  적용 위치/순서는 DEPLOYMENT.md 참조. 모든 기능은 CONFIG 로 기본 OFF.
+
+  [1] 메인 슬라이드 블록
+      → 기존 슬라이더 트랙(.ls-slider__track) 안, 마지막 .ls-slide 뒤에 붙여넣기.
+  [2] 마케팅 스크립트 블록
+      → 기존 "<!-- ===== 커스텀 랜딩/사이드바 스크립트 ===== -->" 바로 "앞"에 붙여넣기.
+        (반드시 앞에 두어야 슬라이드 준비가 initSlider 보다 먼저 실행됩니다.)
+  ============================================================ -->
+
+
+<!-- ============ [1] 메인 슬라이드 블록 (슬라이더 트랙 안에) ============ -->
+<!-- LEGENDSTUDY MARKETING START : 메인 슬라이드 (APP + 논술 LAB) -->
+              <!-- 기본 비활성. legendstudy-marketing.js 의 CONFIG(APP_BANNER_ENABLED /
+                   ESSAY_SLIDE_ENABLED)로 제어. 플래그 OFF거나 URL 미설정이면
+                   initSlider 전에 자동 제거되어 dead link / 빈 점(dot)이 생기지 않음. -->
+              <div class="ls-slide ls-slide--text ls-slide--mkt" data-mkt="app">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">레전드스터디+ 모바일 앱</span>
+                  <h2 class="ls-slide__title">기출 문제부터 학습 관리까지, 이제 앱에서 더 편하게</h2>
+                  <p class="ls-slide__sub">자료 탐색 · 저장 · D-Day · 학습 타이머를 한 곳에서.</p>
+                  <div class="ls-mkt-stores">
+                    <a class="ls-mkt-store" data-store="ios" href="#" rel="noopener">App Store</a>
+                    <a class="ls-mkt-store" data-store="android" href="#" rel="noopener">Google Play</a>
+                  </div>
+                  <div class="ls-mkt-qr" data-qr></div>
+                </div>
+              </div>
+              <div class="ls-slide ls-slide--text ls-slide--mkt" data-mkt="essay">
+                <div class="ls-slide__inner">
+                  <span class="ls-slide__eyebrow">레전드스터디 LAB · 논술 LAB</span>
+                  <h2 class="ls-slide__title">내 논술 답안, <b>무엇이 부족할까?</b></h2>
+                  <p class="ls-slide__sub">대학별 평가·채점 기준에 맞춰 내 답안을 점검하고 직접 다시 써보세요.</p>
+                  <span class="ls-mkt-chip" data-bonus>신규 가입 시 첨삭권 3회 제공</span>
+                  <div><a class="ls-mkt-slide-cta" data-cta href="#" target="_blank" rel="noopener">논술 LAB 시작하기 <span aria-hidden="true">→</span></a></div>
+                </div>
+              </div>
+              <!-- LEGENDSTUDY MARKETING END : 메인 슬라이드 -->
+
+
+<!-- ============ [2] 마케팅 스크립트 블록 (커스텀 랜딩 스크립트 '앞'에) ============ -->
+<!-- LEGENDSTUDY MARKETING START : script (대학맵 + 마케팅 로직) -->
+<!-- ⚠ 이 블록은 아래 "커스텀 랜딩 스크립트"보다 반드시 앞에 둔다
+     (prepareHomeSlides 가 initSlider 보다 먼저 실행되어야 점(dot) 수가 맞음). -->
+<script>
+/* university-map.js (inline) */
+(function (root) {
+  var UNIVERSITIES = [
+    { key:'GACHON',   name:'가천대',   aliases:['가천대학교','가천대'],             destination:'', campaign:'u_gachon',   active:false },
+    { key:'CATHOLIC', name:'가톨릭대', aliases:['가톨릭대학교','가톨릭대'],         destination:'', campaign:'u_catholic', active:false },
+    { key:'KONKUK',   name:'건국대',   aliases:['건국대학교','건국대'],             destination:'', campaign:'u_konkuk',   active:false },
+    { key:'KYONGGI',  name:'경기대',   aliases:['경기대학교','경기대'],             destination:'', campaign:'u_kyonggi',  active:false },
+    { key:'KNU',      name:'경북대',   aliases:['경북대학교','경북대'],             destination:'', campaign:'u_knu',      active:false },
+    { key:'PNU',      name:'부산대',   aliases:['부산대학교','부산대'],             destination:'', campaign:'u_pnu',      active:false },
+    { key:'KHU',      name:'경희대',   aliases:['경희대학교','경희대'],             destination:'', campaign:'u_khu',      active:false },
+    { key:'KW',       name:'광운대',   aliases:['광운대학교','광운대'],             destination:'', campaign:'u_kw',       active:false },
+    { key:'DANKOOK',  name:'단국대',   aliases:['단국대학교','단국대'],             destination:'', campaign:'u_dankook',  active:false },
+    { key:'DUKSUNG',  name:'덕성여대', aliases:['덕성여자대학교','덕성여대'],       destination:'', campaign:'u_duksung',  active:false },
+    { key:'SWU',      name:'서울여대', aliases:['서울여자대학교','서울여대'],       destination:'', campaign:'u_swu',      active:false },
+    { key:'SSWU',     name:'성신여대', aliases:['성신여자대학교','성신여대'],       destination:'', campaign:'u_sswu',     active:false },
+    { key:'SOOKMYUNG',name:'숙명여대', aliases:['숙명여자대학교','숙명여대'],       destination:'', campaign:'u_sookmyung',active:false },
+    { key:'EWHA',     name:'이화여대', aliases:['이화여자대학교','이화여대'],       destination:'', campaign:'u_ewha',     active:false },
+    { key:'DONGGUK',  name:'동국대',   aliases:['동국대학교','동국대'],             destination:'', campaign:'u_dongguk',  active:false },
+    { key:'UOS',      name:'서울시립대',aliases:['서울시립대학교','서울시립대'],     destination:'', campaign:'u_uos',      active:false },
+    { key:'SOGANG',   name:'서강대',   aliases:['서강대학교','서강대'],             destination:'', campaign:'u_sogang',   active:false },
+    { key:'SKKU',     name:'성균관대', aliases:['성균관대학교','성균관대'],         destination:'', campaign:'u_skku',     active:false },
+    { key:'SEOULTECH',name:'서울과기대',aliases:['서울과학기술대학교','서울과기대'], destination:'', campaign:'u_seoultech',active:false },
+    { key:'SSU',      name:'숭실대',   aliases:['숭실대학교','숭실대'],             destination:'', campaign:'u_ssu',      active:false },
+    { key:'AJOU',     name:'아주대',   aliases:['아주대학교','아주대'],             destination:'', campaign:'u_ajou',     active:false },
+    { key:'INHA',     name:'인하대',   aliases:['인하대학교','인하대'],             destination:'', campaign:'u_inha',     active:false },
+    { key:'YONSEI',   name:'연세대',   aliases:['연세대학교','연세대'],             destination:'', campaign:'u_yonsei',   active:false },
+    { key:'KOREA',    name:'고려대',   aliases:['고려대학교','고려대'],             destination:'', campaign:'u_korea',    active:false },
+    { key:'CAU',      name:'중앙대',   aliases:['중앙대학교','중앙대'],             destination:'', campaign:'u_cau',      active:false },
+    { key:'HUFS',     name:'한국외대', aliases:['한국외국어대학교','한국외대'],     destination:'', campaign:'u_hufs',     active:false },
+    { key:'KOREATECH',name:'한국기술교육대',aliases:['한국기술교육대학교','한국기술교육대'], destination:'', campaign:'u_koreatech', active:false },
+    { key:'KAU',      name:'항공대',   aliases:['한국항공대학교','항공대'],         destination:'', campaign:'u_kau',      active:false },
+    { key:'HANYANG',  name:'한양대',   aliases:['한양대학교','한양대'],             destination:'', campaign:'u_hanyang',  active:false },
+    { key:'HONGIK',   name:'홍익대',   aliases:['홍익대학교','홍익대'],             destination:'', campaign:'u_hongik',   active:false },
+    { key:'SEJONG',   name:'세종대',   aliases:['세종대학교','세종대'],             destination:'', campaign:'u_sejong',   active:false },
+    { key:'SANGMYUNG',name:'상명대',   aliases:['상명대학교','상명대'],             destination:'', campaign:'u_sangmyung',active:false },
+    { key:'SKUNIV',   name:'서경대',   aliases:['서경대학교','서경대'],             destination:'', campaign:'u_skuniv',   active:false },
+    { key:'EULJI',    name:'을지대',   aliases:['을지대학교','을지대'],             destination:'', campaign:'u_eulji',    active:false }
+  ];
+  root.LS_MKT_UNIVERSITIES = UNIVERSITIES;
+})(window);
+</script>
+<script>
+/* legendstudy-marketing.js (inline) — 설정은 CONFIG 한 곳에서 편집 */
+(function (w, d) {
+  'use strict';
+  var CONFIG = {
+    APP_BANNER_ENABLED:        false, // 실제 Store URL 확정 후 true (DD-2)
+    ESSAY_SLIDE_ENABLED:       false, // Essay 공개 runtime 검증 후 true (DD-4)
+    ARTICLE_ESSAY_CTA_ENABLED: false, // 게시물 CTA (DD-4)
+    SHOW_SIGNUP_BONUS:         false, // 신규가입 +3 실사용 E2E 확인 후 true (DD-3)
+    LAB_HOME:       'https://lab.legendstudy.com',
+    ESSAY_LAB_MAIN: 'https://lab.legendstudy.com', // 공개 essay 진입 route 확인 후 교체
+    STORE_URL_IOS:     '', // App Store URL (DD-2) — 비어 있으면 APP 배너 미노출
+    STORE_URL_ANDROID: '', // Google Play URL (DD-2)
+    QR_IMAGE_URL:      '',
+    UNIVERSITY_FALLBACK: 'lab_main', // 'lab_main' | 'disable'
+    ANALYTICS_ENABLED: true,
+    UTM_SOURCE: 'legendstudy_com'
+  };
+  var UNIS = w.LS_MKT_UNIVERSITIES || [];
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function addUTM(url, medium, content, campaign){ if(!url) return url; try{ var sep=url.indexOf('?')===-1?'?':'&'; var q='utm_source='+encodeURIComponent(CONFIG.UTM_SOURCE)+'&utm_medium='+encodeURIComponent(medium)+'&utm_campaign='+encodeURIComponent(campaign||'essay_lab_2026')+(content?'&utm_content='+encodeURIComponent(content):''); return url+sep+q; }catch(e){ return url; } }
+  function track(action,label){ if(!CONFIG.ANALYTICS_ENABLED) return; try{ if(typeof w.ga==='function'){ w.ga('send','event','legendstudy_marketing',action,label); } }catch(e){} }
+  function isEssayText(t){ return /논술|모의논술/.test(t||''); }
+  function detectUniversity(title,category){ var hay=(title||'')+' '+(category||''); for(var i=0;i<UNIS.length;i++){ var u=UNIS[i]; for(var j=0;j<u.aliases.length;j++){ if(hay.indexOf(u.aliases[j])>-1) return u; } } return null; }
+  function resolveDestination(uni){ if(!uni){ return {href:CONFIG.ESSAY_LAB_MAIN,label:'논술 LAB',active:true,campaign:'essay_general'}; } if(uni.active&&uni.destination){ return {href:uni.destination,label:uni.name+' 논술 LAB',active:true,campaign:uni.campaign}; } if(CONFIG.UNIVERSITY_FALLBACK==='disable') return null; return {href:CONFIG.ESSAY_LAB_MAIN,label:'논술 LAB',active:true,campaign:uni.campaign}; }
+  function prepareHomeSlides(){
+    var track=d.querySelector('#slider .ls-slider__track'); if(!track) return;
+    var appSlide=track.querySelector('[data-mkt="app"]');
+    if(appSlide){ var hasStore=CONFIG.STORE_URL_IOS||CONFIG.STORE_URL_ANDROID; if(!CONFIG.APP_BANNER_ENABLED||!hasStore){ appSlide.parentNode.removeChild(appSlide); } else { wireAppSlide(appSlide); } }
+    var essaySlide=track.querySelector('[data-mkt="essay"]');
+    if(essaySlide){ if(!CONFIG.ESSAY_SLIDE_ENABLED){ essaySlide.parentNode.removeChild(essaySlide); } else { wireEssaySlide(essaySlide); } }
+  }
+  function wireAppSlide(slide){
+    var ios=slide.querySelector('[data-store="ios"]'), and=slide.querySelector('[data-store="android"]');
+    if(ios){ if(CONFIG.STORE_URL_IOS){ ios.setAttribute('href',CONFIG.STORE_URL_IOS); ios.addEventListener('click',function(){track('app_store_click','ios');}); } else { ios.style.display='none'; } }
+    if(and){ if(CONFIG.STORE_URL_ANDROID){ and.setAttribute('href',CONFIG.STORE_URL_ANDROID); and.addEventListener('click',function(){track('app_store_click','android');}); } else { and.style.display='none'; } }
+    var qr=slide.querySelector('[data-qr]'); if(qr){ if(CONFIG.QR_IMAGE_URL){ qr.innerHTML='<img src="'+esc(CONFIG.QR_IMAGE_URL)+'" alt="앱 설치 QR" width="112" height="112">'; } else { qr.style.display='none'; } }
+  }
+  function wireEssaySlide(slide){
+    var cta=slide.querySelector('[data-cta]'); if(cta){ cta.setAttribute('href',addUTM(CONFIG.ESSAY_LAB_MAIN,'home_slider','essay_slide','essay_lab_2026')); cta.addEventListener('click',function(){track('slide_cta_click','essay_lab');}); }
+    var bonus=slide.querySelector('[data-bonus]'); if(bonus&&!CONFIG.SHOW_SIGNUP_BONUS){ bonus.style.display='none'; }
+  }
+  function injectArticleCTA(){
+    if(!CONFIG.ARTICLE_ESSAY_CTA_ENABLED) return;
+    var article=d.querySelector('#jbTistoryContent .jbArticle'), titleEl=d.querySelector('#jbTistoryContent .jbArticleTitle');
+    if(!article||!titleEl) return;
+    var title=(titleEl.textContent||'').replace(/\s+/g,' ').trim();
+    var catEl=d.querySelector('#jbTistoryContent .jbArticleInfo a'); var category=catEl?(catEl.textContent||'').trim():'';
+    if(!isEssayText(title)&&!isEssayText(category)) return;
+    var uni=detectUniversity(title,category), dest=resolveDestination(uni); if(!dest) return;
+    var uniName=uni?uni.name:null, campaign=dest.campaign||'essay_general';
+    var infoEl=d.querySelector('#jbTistoryContent .jbArticleInfo');
+    var top=d.createElement('div'); top.className='ls-mkt-cta ls-mkt-cta--top'; top.setAttribute('role','complementary');
+    top.innerHTML='<p class="ls-mkt-cta__lead">'+esc(uniName?(uniName+' 논술 준비 중인가요?'):'논술 준비 중인가요?')+'</p>'+
+      '<p class="ls-mkt-cta__desc">대학별 평가·채점 기준에 맞춰 내 답안을 점검하고 다시 써보세요.</p>'+
+      '<a class="ls-mkt-cta__btn ls-mkt-cta__btn--ghost" data-top href="'+esc(addUTM(dest.href,'article_top',(uni?uni.key:'general'),campaign))+'" target="_blank" rel="noopener">'+esc(dest.label)+' <span aria-hidden="true">→</span></a>';
+    if(infoEl&&infoEl.parentNode){ infoEl.parentNode.insertBefore(top,infoEl.nextSibling); } else { article.parentNode.insertBefore(top,article); }
+    var bottom=d.createElement('div'); bottom.className='ls-mkt-cta ls-mkt-cta--bottom'; bottom.setAttribute('role','complementary');
+    var bonusLine=CONFIG.SHOW_SIGNUP_BONUS?'<p class="ls-mkt-cta__bonus">신규 가입 시 첨삭권 3회 제공</p>':'';
+    bottom.innerHTML='<p class="ls-mkt-cta__lead">기출을 찾았다면, 이제 직접 풀어보세요.</p>'+
+      '<p class="ls-mkt-cta__desc">'+esc((uniName?(uniName+' '):'')+'논술 LAB에서 답안을 작성하고, 첨삭 → 재작성 → 변화 확인까지.')+'</p>'+bonusLine+
+      '<a class="ls-mkt-cta__btn" data-bottom href="'+esc(addUTM(dest.href,'article_after',(uni?uni.key:'general'),campaign))+'" target="_blank" rel="noopener">이 문제로 첨삭 시작하기 <span aria-hidden="true">→</span></a>';
+    if(article.nextSibling){ article.parentNode.insertBefore(bottom,article.nextSibling); } else { article.parentNode.appendChild(bottom); }
+    var tb=top.querySelector('[data-top]'); if(tb) tb.addEventListener('click',function(){track('article_cta_top',(uni?uni.key:'general'));});
+    var bb=bottom.querySelector('[data-bottom]'); if(bb) bb.addEventListener('click',function(){track('article_cta_bottom',(uni?uni.key:'general'));});
+  }
+  function onReady(){ try{ prepareHomeSlides(); }catch(e){} try{ injectArticleCTA(); }catch(e){} }
+  if(d.readyState==='loading'){ d.addEventListener('DOMContentLoaded',onReady); } else { onReady(); }
+  w.LS_MKT={ config:CONFIG, prepareHomeSlides:prepareHomeSlides, injectArticleCTA:injectArticleCTA };
+})(window, document);
+</script>
+<!-- LEGENDSTUDY MARKETING END : script -->
