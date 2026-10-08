@@ -74,6 +74,14 @@ In the university map, a university's CTA points to its own LAB only when **both
 - [ ] AdSense still renders; GA/Naver still fire; search + sidebar drawer still work.
 - [ ] Keyboard: CTAs focusable with visible focus ring; `prefers-reduced-motion` respected.
 
+## Favicon (full-orange brand)
+
+Separate from the marketing layer: `favicon/` replaces the site favicon with the
+new full-orange App Icon. Minimal apply = back up the current favicon, then upload
+`favicon/assets/favicon.ico` in Tistory (blog favicon setting / skin file upload);
+the skin's existing `shortcut icon` line serves it. Optional: add `head-snippet.html`
+for crisp PNG + Apple touch icon. Full steps + rollback in `favicon/README.md`.
+
 ## Analytics
 
 CTA links carry UTM (`utm_source=legendstudy_com`, `utm_medium=article_top|article_after|home_slider`, `utm_campaign`, `utm_content=<university_key>`), no PII. If `window.ga` exists, click events fire to the existing GA (category `legendstudy_marketing`). No new analytics system is created — reconcile campaign/UTM naming with the existing Analytics contract (**DD-7**) before scaling.

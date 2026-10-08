@@ -28,6 +28,7 @@ Ready-to-apply package that adds the 2026 launch marketing layer to the **actual
 | `modules/university-map.js` | Per-university detection/activation map. |
 | `modules/legendstudy-marketing.css` | Marketing styles, standalone. |
 | `patches/skin.patch`, `patches/style.patch` | Unified diffs (additive; 0 removals). |
+| `favicon/` | Full-orange web favicon package (assets + `export_favicon.py` + apply/rollback). See `favicon/README.md`. |
 
 ## How it works (one paragraph)
 
