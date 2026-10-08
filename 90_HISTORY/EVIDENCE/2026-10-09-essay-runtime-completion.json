@@ -1,0 +1,75 @@
+{
+  "lab_commit": "390ac3951b521a1dc58eff0404e868851c6a8aff",
+  "app_commit": "23d455569b9cc926e76338fc1a4cb3d098ca7522",
+  "deployment": "f4811c21-b30d-4655-9a13-5aa824f7f394",
+  "lab_tests_pass": 848,
+  "python_pass": 70,
+  "python_skipped": 29,
+  "sql_wire": {
+    "scope": "isolated PG17 role claims + LAB actual TypeScript wire, synthetic evaluation; NOT hosted JWT/storage/provider E2E",
+    "checks": [
+      "wire_submit_replay",
+      "wire_foreign_input_denied",
+      "wire_request_replay",
+      "wire_fenced_finalize_replay",
+      "wire_initial_one_credit",
+      "wire_completed",
+      "wire_included_eligible",
+      "wire_14day_boundary",
+      "wire_foreign_result_denied",
+      "wire_resolve_replay",
+      "wire_reevaluation_replay",
+      "wire_fenced_finalize_replay",
+      "wire_included_no_extra_credit",
+      "wire_history",
+      "wire_failure_no_consumption",
+      "wire_failed_no_result"
+    ],
+    "count": 16,
+    "production_writes": 0,
+    "provider_calls": 0
+  },
+  "production_browser": {
+    "checks": [
+      {
+        "route": "/essay-lab/",
+        "width": 390,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/math/",
+        "width": 390,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/essay-lab/",
+        "width": 1440,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      },
+      {
+        "route": "/math/",
+        "width": 1440,
+        "http": 200,
+        "anonymous_evaluation_control": false,
+        "page_errors": 0
+      }
+    ],
+    "scope": "Production anonymous browser; no authenticated/provider/credit action"
+  },
+  "migration_010_applied": false,
+  "authenticated_production_e2e": "BLOCKED",
+  "provider_calls": 0,
+  "production_db_writes": 0,
+  "activation": {
+    "humanities": "GATED",
+    "econ_business": "GATED",
+    "math": "GATED",
+    "science": "GATED"
+  }
+}
