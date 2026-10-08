@@ -9,6 +9,23 @@ CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
+
+## Signup benefit runtime — 2026-10-08 diagnostic candidate
+
+**PARTIAL.** Owner explicitly approved and registered the first benefit HMAC key
+(v1); prior missing-secret blocker is resolved. Values were never shared. There
+were zero prior marker versions/deliveries and2 eligible candidates; subsequent
+read still showed no credit account/grant. Canonical grant policy is unchanged.
+Cron targets the expected /dispatch; pg_net reports200 processed0/retryable0. These
+are deletion counters, not benefit results. Gateway/three RPC ACLs and reviewed
+deployed source hashes checked; hidden individual benefit failure remains unlocated.
+APP candidate [ec2b560](https://github.com/LC3808/legendstudy-app/commit/ec2b560096f9f2716804d0585e875577111c98c9)
+adds only sanitized aggregate AUTH/MARKERS/CLAIM diagnostics.66 Deno tests/typecheck
+and production-file lint PASS. Owner deployment helper retains current files/JWT
+gate and stops on concurrent changes. **Diagnostic Production deployment PENDING;
+actual signup3 NOT_VERIFIED.** No manual grants, new finance credentials, DB/SQL,
+Payment/Toss, deletion architecture or Public/MY visual changes.
+
 ## Signup worker configuration blocker — 2026-10-08
 
 Owner targeted live read: verified/profile/service allowed/eligible=true and
