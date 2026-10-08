@@ -9,6 +9,24 @@ CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
+## Signup worker configuration blocker — 2026-10-08
+
+Owner targeted live read: verified/profile/service allowed/eligible=true and
+in both next20/100 candidates; credit account/delivery/grant absent, posted0.
+Thus shared profile initialization is now confirmed for this test user, but
+MY edit/persistence acceptance remains a separate Owner check.
+Owner Supabase secret-name inventory: ACCOUNT_BENEFIT_KEYS NOT_LISTED;
+ACCOUNT_LIFECYCLE_ENABLED and ACCOUNT_WORKER_JWT PRESENT (values not inspected).
+Canonical worker defaults missing benefit keys to empty map; markers() rejects
+empty map and scheduled benefit catches failure, so heartbeat can remain healthy
+with no grant. This is a concrete missing prerequisite, not Credit ledger redesign.
+No secret generated/rotated, restore/finance credential reuse, manual credit grant,
+lifecycle toggle or DB mutation performed. Next read existing benefit key versions/
+marker counts and bounded pending queue to distinguish lost historical key from
+first provisioning. No marker values or credentials requested. If no existing
+authorized key can be restored, new secret provisioning requires Owner authorization
+under the explicit stop condition. Other completed Admin/School work remains intact.
+
 ## School aggregate Production activation — 2026-10-08
 
 Owner applied20261008000300 and returned ledger/owner/ACL plus both added-field
