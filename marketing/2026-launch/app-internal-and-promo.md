@@ -15,12 +15,12 @@ Covers package items **G** (app-internal Essay LAB banner) and **H** (signup 3-C
 **Status:** `READY_AFTER_FEATURE` (DD-3/DD-4). Asset: `assets/marketing/2026-launch/app-internal/app-internal-essay-lab.svg` (1080×420).
 
 ### Placement — READ-ONLY confirm before locking
-The brief's candidate position (D-Day/학습정보 → 급식 → Essay LAB → 자료검색) is from an older APP layout. **Do not fix the old position.** The current APP already has a dedicated LAB home with 3 services (내신분석/수능·모의고사/논술) where 논술 LAB = app-first native `/lab/essay` (app `e1398d8`).
+The brief's candidate position (D-Day/학습정보 → 급식 → Essay LAB → 자료검색) is from an older APP layout. **Do not fix the old position.** The current APP has a dedicated LAB home with 3 services (내신/모의·수능/논술); confirm the exact slot against the latest APP Home UI before locking.
 
-**Recommendation:** place the promo card on the **APP Home**, above the resource-search block, as a single entry into the native 논술 LAB — reusing the existing LAB-home routing rather than inventing a new surface. Confirm exact slot against the latest APP Home UI before final placement (Owner/APP authority).
+**Recommendation:** place the promo card on the **APP Home**, above the resource-search block, as a single entry into the app's own 논술 LAB — reusing the existing LAB-home routing rather than inventing a new surface. Confirm exact slot against the latest APP Home UI before final placement (Owner/APP authority).
 
-### Destination (corrected vs brief)
-APP-internal → **native `/lab/essay`** (not a web redirect, not App Store). "웹에서 이어서" is secondary/optional only.
+### Destination
+This is an **in-app** promo, so it naturally opens the APP's own 논술 LAB surface (same shared backend / account / Credit / Essay / History as LAB Web). This is an in-app convenience, **not** a statement that the app is the primary surface: LAB Web is an equal full-service surface for web users, and app install is never forced. A marketing banner on the web points to **LAB Web**, not the store.
 
 ### Copy
 | Slot | Text |

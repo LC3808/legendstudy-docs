@@ -40,7 +40,8 @@ Run per asset before go-live. Each asset ends with a status:
 | Signup 3-Credits | H | `READY_AFTER_FEATURE` | DD-3 |
 
 ## Pre-publish gate (whole launch)
-- [ ] Product Readiness Matrix re-checked against the **latest** daily (currently 2026-10-06; re-verify if a newer daily lands).
+- [ ] Product Readiness Matrix re-checked against the **latest** authority (currently origin/main `8bd0b5d`, daily 2026-10-08; always `git fetch` and read `origin/main`, never a local checkout, and re-verify if a newer daily lands).
+- [ ] No "app-first" framing / no forced app install; essay funnel destination is **LAB Web** (peer surfaces, shared backend).
 - [ ] No `DO_NOT_ADVERTISE_YET` item referenced as available (Toss LIVE, IAP, 내신/수능 LAB, home.legendstudy.com).
 - [ ] Per-university activation list is Owner-approved (`owner-decisions.md`).
 - [ ] Analytics params reconciled with the existing contract (DD-7) or omitted.

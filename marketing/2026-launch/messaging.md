@@ -2,7 +2,7 @@
 DOCUMENT_STATUS: MARKETING_WORKING
 SCOPE: MARKETING / GROWTH
 CREATED: 2026-10-08
-VERIFICATION_BASIS: legendstudy-docs @ 1c03917
+VERIFICATION_BASIS: legendstudy-docs origin/main @ 8bd0b5d (2026-10-08)
 -->
 
 # MESSAGING SYSTEM — 2026 Launch
@@ -58,12 +58,12 @@ Do **not** dress this as a discount/limited event. It exists to make students ex
 
 | Context | Label | Destination logic | Tag |
 |---|---|---|---|
-| Essay LAB start | 논술 LAB 시작하기 | Live LAB route at the time (web: `lab.legendstudy.com` essay entry; app: native `/lab/essay`) | KEEP |
-| Article top (awareness) | [대학]논술 LAB | University LAB entry (gated) | KEEP |
-| Article post-download (conversion) | 이 문제로 첨삭 시작하기 | University LAB entry (gated) | KEEP |
-| App internal | 논술 LAB 시작 | app native `/lab/essay` | KEEP |
+| Essay LAB start (web/marketing default) | 논술 LAB 시작하기 | **LAB Web** essay entry on `lab.legendstudy.com` (PC + mobile web, full service) | KEEP |
+| Article top (awareness) | [대학]논술 LAB | University LAB entry on LAB Web (gated) | KEEP |
+| Article post-download (conversion) | 이 문제로 첨삭 시작하기 | University LAB entry on LAB Web (gated) | KEEP |
+| App internal (inside APP only) | 논술 LAB 시작 | APP's own 논술 LAB surface (shared backend) — used only within the app, not a marketing destination | KEEP |
 | Web continue | 웹에서 계속하기 | `lab.legendstudy.com` | KEEP |
-| App view | 앱에서 보기 | Store URL (gated, placeholder) | KEEP |
+| App view (optional, never forced) | 앱에서 보기 | Store URL (gated, placeholder) | KEEP |
 | Text fallback | 레전드스터디 논술 LAB에서 내 답안 점검하기 → | Live route | KEEP |
 
 Never mix Slider 1 (APP awareness/install) and Slider 2 (Essay LAB → start learning) CTA intents.

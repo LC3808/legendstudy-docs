@@ -25,12 +25,12 @@ CREATED: 2026-10-08
 
 ## 2. Deep-link priority (section 19)
 
-Preferred target order, **only if the route actually resolves**:
-1. Specific 기출 문항
+Preferred target order on **LAB Web**, **only if the route actually resolves**:
+1. Specific 문항 LAB (per-problem)
 2. The university's 논술 LAB
-3. Essay LAB main
+3. 논술 LAB main
 
-Never ship a deep link that doesn't work.
+Never ship a deep link that doesn't work. The default destination for the essay funnel is LAB Web (not the App Store); app install is never forced.
 
 ## 3. Route classification (confirm with LAB/APP — DD-6)
 
@@ -39,16 +39,17 @@ Never ship a deep link that doesn't work.
 | LAB web home | `lab.legendstudy.com` | **CONFIRMED** (Production live) |
 | LAB pricing | `lab.legendstudy.com/pricing/` | **CONFIRMED** (Production live) |
 | LAB account-deletion | `lab.legendstudy.com/account-deletion/` | **CONFIRMED** (Production live) |
-| APP native essay LAB | app `/lab/essay` | **CONFIRMED** (app-internal, app `e1398d8`) — in-app only, not a web URL |
-| LAB web essay entry (public student) | essay entry route | **PLANNED / verify** — no real-student Essay traffic yet (DD-4); confirm the public route + login + mobile before use |
+| LAB Web essay LAB (primary marketing destination) | `lab.legendstudy.com` essay entry | **PARTIAL / verify** — full-service surface shell is live, but public Essay E2E not yet Production-verified (ESSAY RUNTIME next, not started — DD-4). Confirm public route + login + mobile web before using as a LIVE CTA |
+| APP 논술 LAB (peer surface, in-app) | APP's own 논술 LAB | **CONFIRMED** (in-app only, shared backend) — used inside the app, not a web marketing URL |
 | Per-university essay deep link (web) | per-university route | **NOT_AVAILABLE until confirmed** (DD-4/DD-6) — do not build a university CTA link until this resolves |
 | Per-problem deep link | per-문항 route | **NOT_AVAILABLE until confirmed** (DD-6) |
 | APP Store (Apple) | — | **NOT_AVAILABLE** (DD-2) — placeholder only |
 | Google Play | — | **NOT_AVAILABLE** (DD-2) — placeholder only |
 
-## 4. App ↔ Web continuity
-- Web → "앱에서도 이어서 학습할 수 있습니다." (soft; Store link gated DD-2)
-- App → "논술 LAB에서 답안을 점검해보세요." → native `/lab/essay`
+## 4. App ↔ Web continuity (peer surfaces, shared backend)
+- Web is a complete surface on its own — a web user can do the full essay loop on LAB Web without installing anything.
+- Web → "앱에서도 이어서 학습할 수 있습니다." (soft, optional; Store link gated DD-2)
+- App → "논술 LAB에서 답안을 점검해보세요." → the app's own 논술 LAB surface
 - Never force a web user to the App Store.
 
 ## 5. Go-live rule

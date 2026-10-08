@@ -64,7 +64,7 @@ No fake Store URL, no fake QR, no 출시일. All in replaceable layers.
 | CTA | 논술 LAB 시작하기 |
 
 ### Destination
-Confirm the live Production essay-entry route at go-live time; default `lab.legendstudy.com` essay entry. Verify the route resolves on PC + mobile and the login flow works (gate #13 in product-readiness).
+**LAB Web** essay entry on `lab.legendstudy.com` (the full-service surface — PC + mobile web). Confirm the live Production essay-entry route at go-live time, that it resolves on PC + mobile web, and that the login flow works (DD-4 + gate #13 in product-readiness). This slide sends users to LAB Web, not the App Store; app install is not forced.
 
 ### Guardrails
 Benefit chip go-live gated on DD-3 (hide the chip if the public signup bonus is not yet confirmed; the rest of the slide can still run). No 합격/채점-by-university wording.

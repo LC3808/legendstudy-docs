@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-label="APP 내부 논술 LAB 프로모션 배너">
   <!-- PACKAGE G · APP INTERNAL ESSAY LAB PROMO · 1080x420 · status READY_AFTER_FEATURE (DD-3/DD-4) -->
-  <!-- Destination = app native /lab/essay (NOT web redirect, NOT App Store). Confirm APP-home slot before locking. -->
+  <!-- In-app promo: opens the APP's own 논술 LAB (shared backend). Peer to LAB Web; app install never forced. Confirm APP-home slot before locking. -->
   <defs>
     <style>
       .ko{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;}

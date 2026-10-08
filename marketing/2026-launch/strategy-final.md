@@ -3,7 +3,8 @@ DOCUMENT_STATUS: MARKETING_WORKING
 SCOPE: MARKETING / GROWTH
 OWNER: Claude Growth/Marketing
 CREATED: 2026-10-08
-VERIFICATION_BASIS: legendstudy-docs @ 1c03917 — see product-readiness.md
+VERIFICATION_BASIS: legendstudy-docs origin/main @ 8bd0b5d (2026-10-08) — see product-readiness.md
+CORRECTION: 2026-10-08 reconciled to current authority; "app-first native" framing removed; LAB Web recorded as an independent full-service surface.
 -->
 
 # FINAL MARKETING STRATEGY — 2026 Launch
@@ -19,11 +20,11 @@ Convert LegendStudy.com's existing organic 기출 search traffic into **real, re
 ## 2. Service roles (KEEP)
 
 - **LegendStudy.com** — free 기출/입시 자료 + organic acquisition surface.
-- **LegendStudy LAB** (`lab.legendstudy.com`) — web admissions/learning service; parent system of **내신 LAB / 수능 LAB / 논술 LAB** (논술 LAB live first — do **not** rename the parent to essay-only).
-- **LegendStudy+ APP** — mobile study + 자료 탐색 + 학습 관리 + LAB 연결.
-- **Shared backend** — one account / Credit / Essay / History.
+- **LegendStudy LAB** (`lab.legendstudy.com`) — an **independent full-service web surface** for admissions/learning; parent system of **내신 LAB / 수능 LAB / 논술 LAB** (논술 LAB live first — do **not** rename the parent to essay-only). On PC **and** mobile web it provides the full loop: 대학/시험 선택 → 문제 확인 → 답안 작성 → 첨삭 → 재작성 → 재첨삭 → 결과/History.
+- **LegendStudy+ APP** — a **peer** mobile surface of the same product (study + 자료 탐색 + 학습 관리 + 논술 LAB). Not required to use the LAB.
+- **Shared backend** — APP and LAB Web share **one account / Credit / Essay authority / History**. They are two full user surfaces of one product.
 
-LAB web is **not** an "app-install landing page." It is a real service surface.
+LAB Web is **not** an "app-install landing page," and the APP is **not** the primary destination. App install is **never forced**; "앱에서 보기"/"웹에서 계속하기" are offered as a choice.
 
 ## 3. Positioning (KEEP — Owner authority)
 
@@ -54,7 +55,7 @@ Essay sub-funnel (the money path):
 | Brief decision | Verdict | Why / change |
 |---|---|---|
 | Two main sliders (APP, Essay LAB) | **KEEP** | Matches "don't grow slider count"; destinations verified. |
-| 논술 marketing destination = LAB Web (not App Store) for web traffic | **KEEP + REFINE** | For **web** acquisition, LAB Web is the destination. **Correction:** inside the APP, 논술 LAB is **app-first native `/lab/essay`** (app `e1398d8`), not a web redirect — so APP-internal promo must point to the native route, "웹에서 이어서" is secondary/optional. |
+| 논술 marketing destination = LAB Web (not App Store) | **KEEP** | LAB Web is the full-service destination for the essay funnel on both PC and mobile web; app install is not forced. The APP offers the same 논술 LAB (shared backend) as a peer surface, but web traffic is **not** funneled into the store. (Corrects the first build's "app-first native / web secondary" framing.) |
 | Signup "첨삭권 3회 제공" copy | **KEEP (build) / HOLD (go-live)** | Policy accurate; public go-live gated on DD-3. |
 | "결제 가능 / 지금 구매" messaging | **HOLD** | Toss LIVE OFF (DD-1). Build launch-ready assets; do not activate. |
 | Per-university banners, all on at once | **REFINE** | Phase on per readiness (gate #11/#13, DD-4/DD-5). Build the master template now; activate a short confirmed list first. |

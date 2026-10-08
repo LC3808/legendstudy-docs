@@ -11,7 +11,7 @@ PRODUCT_CODE_CHANGED: NO · DB_CHANGED: NO · PRODUCTION_CHANGED: NO
 
 Growth/Marketing deliverables for the 2026 launch. **Marketing documentation and assets only** — no product code, DB, migration, payment, or Production changes. Everything here is gated by `product-readiness.md`.
 
-> **Authority note:** verified against `legendstudy-docs` main @ `1c03917` (AI_CONTEXT, CURRENT_STATUS, DAILY/2026-10-06 — the latest *verified* daily). The brief's "2026-10-08 working context" runs ahead of the wiki (no 2026-10-07/08 daily exists); where they differ, the verified wiki wins.
+> **Authority note (reconciled 2026-10-08):** verified against `legendstudy-docs` **origin/main @ `8bd0b5d`** (AI_CONTEXT, CURRENT_STATUS Production-activation-closeout 2026-10-08 + Overnight 2026-10-07, DAILY/2026-10-07 + 2026-10-08), and `legendstudy-lab` origin/main @ `4f2e349`. The first build used a stale local checkout (`1c03917` / daily 2026-10-06) and has been corrected. **Product policy:** APP and LAB Web are two **full user surfaces** of one product sharing one backend/account/Credit/Essay/History — LAB Web is an independent full-service surface, not an app-install landing, and app install is never forced. The "app-first native" framing has been removed.
 
 ## Read in this order
 
