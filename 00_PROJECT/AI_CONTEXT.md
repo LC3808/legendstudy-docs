@@ -10,15 +10,15 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Restore route — MY shared foundation Oct08
+## Restore route — Admin members / Essay next foundation Oct08
 
-Signup +3 predecessor CLOSED/OWNER_VERIFIED. Current task: MY/Application/Study/Student360.
-School3c432cd Production Owner verified. APP35ab994/LAB6434fe1 (+Manus13fc77c merge1a215d4)
-are foundation candidates, NOT_APPLIED. Owner006–008 SQL package/postflight pending;
-Target005 unique replacement separately HELD §74 and APP runtime test pending.
-Read latest CURRENT_STATUS and Daily2026-10-08 shared foundation section, then the
-linked APP/LAB contracts. Preserve current Manus main; no Payment/Toss/IAP/worker changes.
-
+Owner explicitly permits next task with predecessor PARTIAL; [current execution
+order](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md)
+supersedes the original COMPLETE-only gate.006 Application+Events,007 Study and008
+Student360 are PRODUCTION_APPLIED and postflight verified; authenticated acceptance
+pending.005 HELD; Signup frozen. Track A directory009 and Track B offline Essay
+planning are on APP/LAB codex/admin-members-essay-foundation; see CURRENT_STATUS and
+latest Daily before apply/deploy. Preserve Manus main and frozen Payment/Toss/IAP.
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point
 

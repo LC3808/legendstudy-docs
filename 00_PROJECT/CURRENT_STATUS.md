@@ -10,6 +10,45 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Admin Member Management / Essay Mixed-mode — PARTIAL — 2026-10-08
+
+[Owner execution authority](../90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md)
+permits proceeding despite predecessor authenticated acceptance pending. Do not
+rebuild006 Application+Events/007 Study/008 Student360.005 remains HELD.
+
+- Track A IMPLEMENTED/LOCAL_VERIFIED: APP9b8f75a, LABe7810c2, both on
+  codex/admin-members-essay-foundation.009 adds admin_member_list,25/page max50,
+  source total/filtered total, literal email/name + exact UUID search, lifecycle/
+  academic status/grade/school filters, deterministic newest/oldest. Existing
+  Member Detail/Student360 reused. Credit remains in detail; recent activity omitted.
+- School names: existing NEIS proxy verified J10/7530932 진접고등학교,
+  R10/8750182 순심고등학교. Small private2-entry display cache joined by code;
+  list external NEIS calls0, missing-vs-unresolved distinct. No profile/master rewrite.
+-009 NOT_PRODUCTION_APPLIED yet. Owner exact preparation package provided,
+ 13395bytes SHA256cc2a6f4a3e0b7f7f1624b7220e9070d3b675d5bf0ff62a2693b842c3ecd0d2cd.
+  No005, no replay006–008, no Essay migration. LAB main remains507ed7b pending009.
+- Track B ANALYZED + OFFLINE FOUNDATION IMPLEMENTED: [gap/mapping/contract](https://github.com/LC3808/legendstudy-app/blob/9b8f75a89877c2b284fbf6e22c0869fed4d248d0/wiki/essay-mixed-mode-foundation.md).
+  Current Production50 active universities/21 active exams,0 registered questions/
+  criteria within those21. All21 mapped conservatively:8 humanities_social label
+  proposals,7 math label proposals,6 UNRESOLVED; no classification backfill.
+  Math C/D/E+Storage applied,5 function hashes match, math-private public=false.
+  Runtime readiness/Math content counts/provider E2E not inferred from those facts.
+- Owner four service categories adopted: humanities_social/business_economics/math/
+  science, distinct from question requirements/evaluator bindings. Existing Math
+  mixed input/ordered artifacts and Humanities learning/Credit reused conceptually.
+  Typed offline planner rejects spoofing/context/rubric mismatch; no runtime/API
+  integration or new science evaluator. No AI quality completion claim.
+- Tests: LAB539, lint/typecheck/boundary/build PASS; browser8 role/viewport cases
+  with page/detail/Student360 and0 list NEIS calls PASS. SQL directory tests and
+  PG17 NOSUPERUSER exact activation/grants/denial/collision/rollback PASS. Essay8
+  contract tests PASS; existing Math learning/C-D, legacy Humanities102 and14
+  installation checks PASS. Flutter NOT_RUN (pinned SDK unavailable); APP UI unchanged.
+
+Full details: [Admin contract](https://github.com/LC3808/legendstudy-app/blob/9b8f75a89877c2b284fbf6e22c0869fed4d248d0/wiki/admin-member-directory.md).
+Payment/Toss/Signup/IAP/Manus/Claude APP UI unchanged. Next: Owner009 result→postflight
+→ LAB main/deploy→actual operator acceptance. Larger Essay runtime/content QA requires
+separate approval; stop after foundation closeout.
+
 ## Shared MY foundation — PARTIAL — 2026-10-08
 
 Signup predecessor stays CLOSED separately; no Credit worker/ledger changes.
