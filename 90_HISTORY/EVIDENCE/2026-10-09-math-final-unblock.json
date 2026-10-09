@@ -1,0 +1,157 @@
+{
+  "status": "REAL_TYPED_E2E_PASS_PUBLIC_RELEASE_HOLD",
+  "source_commit": "f9512aafc9d17bcb58d1694874c2b4e2ca6d88ff",
+  "signing_keys_changed": false,
+  "new_signing_keys": 0,
+  "worker_jwt_roles": [
+    "math_extraction_worker",
+    "math_evaluation_worker"
+  ],
+  "worker_ttl_days": 7,
+  "worker_expires_kst": "2026-10-16T18:57:41+09:00",
+  "worker_role_probes": {
+    "own": "400/22023",
+    "cross": "403/42501"
+  },
+  "approved_user_session": {
+    "uid_allowlist_match": true,
+    "auth_http": 200,
+    "credit_http": 200,
+    "math_history_http": 200,
+    "session_source": "verified Auth magiclink generated for existing approved verified account",
+    "service_role_as_user": false,
+    "emails_sent": 0,
+    "password_changed": false
+  },
+  "runtime_test_deployment": "235ed4eb-7a72-495c-be1b-8abb4657cc41",
+  "e2e": {
+    "mock": false,
+    "public_ui_enabled": false,
+    "provider_requests": 2,
+    "steps": [
+      {
+        "step": "submit_idempotency",
+        "passed": true
+      },
+      {
+        "step": "request_idempotency",
+        "evaluation_id": "5a5df99b-7b42-45d6-a9fe-fcada439634d",
+        "passed": true
+      },
+      {
+        "step": "real_production_gateway",
+        "http": 200,
+        "code": "COMPLETED",
+        "evaluation_id": "5a5df99b-7b42-45d6-a9fe-fcada439634d"
+      },
+      {
+        "step": "evaluation_state",
+        "state": "COMPLETED"
+      },
+      {
+        "step": "result_read",
+        "passed": true
+      },
+      {
+        "step": "initial_credit",
+        "before": 5,
+        "after": 4,
+        "passed": true
+      },
+      {
+        "step": "included_reevaluation",
+        "eligible": true,
+        "expires_at": "2026-10-23T10:01:59.837121+00:00"
+      },
+      {
+        "step": "request_idempotency",
+        "evaluation_id": "6b49f12d-d07a-4ecc-8822-310f4a01a6d9",
+        "passed": true
+      },
+      {
+        "step": "real_production_gateway",
+        "http": 200,
+        "code": "COMPLETED",
+        "evaluation_id": "6b49f12d-d07a-4ecc-8822-310f4a01a6d9"
+      },
+      {
+        "step": "evaluation_state",
+        "state": "COMPLETED"
+      },
+      {
+        "step": "result_read",
+        "passed": true
+      },
+      {
+        "step": "reevaluation_credit",
+        "before": 4,
+        "after": 4,
+        "additional": 0
+      },
+      {
+        "step": "history_persisted",
+        "passed": true
+      },
+      {
+        "step": "gate_restored",
+        "evaluations_enabled": false,
+        "balance": 4
+      }
+    ],
+    "balance_before": 5,
+    "initial_attempt_id": "e927924d-3d95-462d-b580-3ac242643b22",
+    "initial_evaluation_id": "5a5df99b-7b42-45d6-a9fe-fcada439634d",
+    "rewrite_evaluation_id": "6b49f12d-d07a-4ecc-8822-310f4a01a6d9",
+    "status": "PASS",
+    "balance_after": 4
+  },
+  "ledger": [
+    {
+      "evidence": {
+        "control": false,
+        "evaluations": [
+          {
+            "id": "5a5df99b-7b42-45d6-a9fe-fcada439634d",
+            "state": "COMPLETED",
+            "completed_at": "2026-10-09T10:01:59.837121+00:00",
+            "request_kind": "MATH_INITIAL_EVALUATION",
+            "balance_delta": -1,
+            "billing_status": "settled",
+            "reserved_delta": 0,
+            "credit_required": 1
+          },
+          {
+            "id": "6b49f12d-d07a-4ecc-8822-310f4a01a6d9",
+            "state": "COMPLETED",
+            "completed_at": "2026-10-09T10:02:23.871267+00:00",
+            "request_kind": "MATH_REEVALUATION",
+            "balance_delta": 0,
+            "billing_status": "settled",
+            "reserved_delta": 0,
+            "credit_required": 0
+          }
+        ]
+      }
+    }
+  ],
+  "closing_deployment": "03943e58-4c4d-49cf-8d8a-22affa77ff82",
+  "closing_verified": true,
+  "public_release": false,
+  "schema_migrations": 0,
+  "known_limitations": [
+    "existing signing-key exposure is not remediated by token reissuance",
+    "typed evaluation only; no repeated image extraction E2E",
+    "token renewal needed before seven-day expiry",
+    "other Essay types remain unverified/gated"
+  ],
+  "final_checks": {
+    "cloudflare_three_flags": false,
+    "database_evaluations_enabled": false,
+    "public_availability_all_false": true,
+    "closed_gateway_http": 503,
+    "worker_secrets_present": true,
+    "all_five_key_states_unchanged": true,
+    "canonical_source_sha_verified": true
+  },
+  "owner_action_required": false
+}

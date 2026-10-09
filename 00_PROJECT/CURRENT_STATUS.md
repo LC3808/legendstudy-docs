@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Latest Math final unblock — Oct09
+
+Existing-key dedicated Worker JWT reissuance and real approved-user login resolved
+both blockers without signing-key changes. Real typed Math Provider E2E PASS:
+initial5→4 Credits, included rewrite/re-evaluation4→4, results/History persisted.
+No mock, new runtime or schema changes. General release HOLD; seven-day worker
+credentials expire2026-10-16 18:57:41 KST. Existing signer exposure remains a separate
+incident; no rotation/revocation permitted without Owner approval. [Full evidence and final gate state](../90_HISTORY/DAILY/2026-10-09.md).
+
+
 ## Latest JWT safety authority — Oct09
 
 Owner prohibits any Rotate/Revoke or standby deactivation without separate approval.
