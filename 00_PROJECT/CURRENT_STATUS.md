@@ -10,6 +10,30 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Integrated backend / Web MY — PARTIAL — 2026-10-09
+
+LAB6e09f38: MY LAB unified above Study; private /account/essay/ summary/History,
+selected original/rewrite feedback and canonical Credit; browser A4/PDF sharing;
+2 unavailable LABs use accessible dialog.860 tests + lint/typecheck/boundary/build
+PASS;35 Chromium fixture checks at6 widths/200% text/A4. No actual provider E2E.
+APP f200cba on independent codex/integrated-account-data, base Claudeb59ca82:
+existing profile skips repeated full onboarding, async owner recheck, Google
+Android cancellation/configuration errors separated, publication-date fallback
+sorting. Flutter3.47.6 missing; NOT tested/merged/released. Claude UI untouched.
+
+Current secrets ALL bound, including test token (supersedes earlier missing-token
+reports). APIs200; test Auth200 BUT subject is not Math allowlisted. Do not request
+duplicate API keys. LAB/math-test HTTP200 with normal browser User-Agent; Python
+UA403 is NOT evidence that domain settings failed.010 ledger1; evaluations false.
+Own profile/Essay/Math/Credit reads200, other-user profile result0; no auth bypass.
+Materials newest accepted source publication Sep19, crawl Sep26; Essay active135;
+no ingestion cron found. Original blog egress blocked; legendstudy.com addition
+saved to environment draft, requires publication. No unsafe ingestion/publication.
+Advanced exam-first search sorting/year cutoff remain OPEN, not globally fixed.
+Google real-device root cause/signing configuration unresolved; provider enabled.
+All four evaluation types GATED; actual calls0. Payment/Toss/IAP/Signup/005 frozen.
+See latest Daily for evidence and precise remaining actions.
+
 ## Essay activation resumed — PARTIAL — 2026-10-09
 
 Supersedes earlier ACCESS_BLOCKED findings below: Supabase and Cloudflare management

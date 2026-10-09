@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Integrated backend / Web MY Oct09
+
+Latest task: LAB6e09f38 new personal Essay report /account/essay/; APPf200cba candidate
+NOT merged into Claude RC (Flutter missing). Use CURRENT_STATUS/latest Daily before
+historical activation notes. Management APIs and test token work, but Math subject
+not allowlisted; normal-browser HTTP200.010 already applied; never reapply/enable.
+Materials original-host egress blocked; source sync and full-catalog sort OPEN.
+
 ## Restore route — Essay activation Oct09
 
 Activation resumed: management access verified; Migration010 PRODUCTION_APPLIED and

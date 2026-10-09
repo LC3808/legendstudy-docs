@@ -1,0 +1,36 @@
+{
+  "status": "PARTIAL",
+  "app_base": "b59ca82da560e76df1b965ecbaec8bb5bd22a637",
+  "app_candidate": "f200cba34552c1849d6c1f52035e3fa0fc977632",
+  "lab": "6e09f3844aa62e2353254c1fd5cb5468419eb814",
+  "tests": {
+    "lab": 860,
+    "browser_fixture": 35,
+    "widths": [
+      1440,
+      1280,
+      768,
+      390,
+      375,
+      360
+    ],
+    "app": "NOT_RUN_PINNED_SDK_MISSING"
+  },
+  "authenticated_reads": {
+    "auth": 200,
+    "own_profile_rows": 1,
+    "foreign_profile_rows": 0,
+    "essay_sessions": 200,
+    "math_history": 200,
+    "credit_summary": 200,
+    "runtime_status": 200
+  },
+  "test_subject_allowlisted": false,
+  "provider_calls": 0,
+  "migration010_rows": 1,
+  "evaluation_switch": false,
+  "db_writes": 0,
+  "materials_source_fetch": "EGRESS_BLOCKED",
+  "materials_global_ordering": "PARTIAL",
+  "google_device": "NOT_VERIFIED"
+}
