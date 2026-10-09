@@ -1,0 +1,20 @@
+{
+  "deployment": "9746e575-b118-4e60-8f64-f46381339368",
+  "stage": {
+    "name": "deploy",
+    "started_on": "2026-10-09T09:09:06.646792Z",
+    "ended_on": "2026-10-09T09:09:20.822133Z",
+    "status": "success"
+  },
+  "commit": "2cd74ed07b819e66145e25af6733b8edcc056637",
+  "allowlist_count": 1,
+  "old_test_allowlist_match": false,
+  "worker_secrets_present": false,
+  "provider_secret_present": true,
+  "test_auth_http": 403,
+  "test_auth_error": "session_not_found",
+  "public_availability_http": 200,
+  "all_types_gated": true,
+  "provider_calls": 0,
+  "credit_mutations": 0
+}
