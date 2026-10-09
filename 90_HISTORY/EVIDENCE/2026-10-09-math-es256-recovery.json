@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED",
+  "code": "6bcd0a6",
+  "local_tests": 5,
+  "create_signing_key_http": 422,
+  "reason": "There already are 3 previously used signing keys. To proceed first revoke at least 1.",
+  "original_signing_states_restored": true,
+  "original_keys_revoked": 0,
+  "imported_keys": 0,
+  "task_generated_unimported_backups_cleaned": 3,
+  "task_backups_remaining": 0,
+  "worker_tokens_connected": 0,
+  "provider_calls": 0,
+  "credit_mutations": 0,
+  "test_token_prior_error": "session_not_found",
+  "proposed_standby_candidate_requires_usage_confirmation": "40a721a3-c77a-4bcc-b2f2-4d9d6b9dd05f",
+  "payment_toss_iap_changed": false
+}
