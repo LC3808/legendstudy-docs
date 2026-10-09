@@ -11,6 +11,25 @@ SUPERSEDED_BY: —
 -->
 
 
+
+## Essay voice feedback — Owner policy update — 2026-10-09
+
+- Math voice feedback is **OUT OF SCOPE for the first release**. Hide the entire
+  voice UI on Math evaluations. Do not develop additional Math TTS in this scope.
+- Preserve Math text evaluations, strengths/weaknesses, reevaluation comparison
+  and growth visualization unchanged. Existing evaluation data and Credit policy
+  remain unchanged. No Provider, Ledger or DB migration changes.
+- Humanities and economics/business voice feedback remain in development scope.
+- Science voice feedback stays undecided/gated pending formula/symbol handling
+  review. Unknown types do not opt into voice automatically.
+- Future Math formula-to-speech conversion and high-quality voice may be reviewed
+  as a separate update; they are not a first-release acceptance gap.
+
+This supersedes the earlier general voice scope in the Evaluation & Growth UX
+record. APP has no active Math TTS to remove. WEB explicitly allows voice only
+for humanities_social/business_economics; existing Humanities consumer opts in.
+The Math report path remains text-only, including first/revised evaluations.
+
 ## Latest Evaluation & Growth UX — Oct09 — PARTIAL
 
 LAB main `f838911794f3a651645f089fc9f722ec41b92048` and APP isolated

@@ -1,0 +1,22 @@
+{
+  "real_auth": true,
+  "local_candidate": false,
+  "production_ui": true,
+  "analysis": true,
+  "history": true,
+  "credit_history": true,
+  "same_balance": true,
+  "same_ledger_digest": true,
+  "spendable": 4,
+  "provider_calls": 0,
+  "math_voice_ui_absent": true,
+  "errors": [],
+  "unexpected_writes": [],
+  "lab_commit": "8991b510d2c9702ecfb05315fe21363ab6df7012",
+  "deployment": "3b53a14f-9e9a-4488-8453-ccff3ea82044",
+  "deployment_status": "success",
+  "policy_tests_pass": 9,
+  "math_tts_first_release": "EXCLUDED",
+  "humanities_business_voice": "RETAINED",
+  "science_voice": "PENDING_REVIEW"
+}
