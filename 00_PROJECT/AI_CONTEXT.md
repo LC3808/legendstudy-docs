@@ -10,6 +10,36 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Math registration / exposed Legacy signer follow-up — Oct09
+
+Fresh Cloudflare metadata confirms main legendstudy-lab Production has the Provider
+API Secret but **neither extraction nor evaluation Worker JWT**; Preview also has
+neither. math-test Production still has both. Main allowlist is absent; all three
+Math activation flags remain false. Different total binding counts are expected
+(main has Kakao/account/payment settings); missing Worker credentials are a separate
+runtime blocker. Secret presence does not prove issuer/expiry or server acceptance.
+
+Owner pasted the Legacy signing secret into chat during local signing instructions.
+Treat it as exposed; do not repeat, persist, use it to mint more tokens, or recommend
+registering its generated tokens. LAB recovery instructions superseded at eceaf60.
+No key rotation/revocation or service changes performed in this follow-up.
+
+Live Supabase key metadata: legacy anon and service_role are HS256; non-JWT default
+publishable and secret keys also exist. Deployed Edge platform verify_jwt=true for
+delete-account and verify-iap-purchase. Source references service-role credentials
+in resource-resolver, feedback notifications, account worker/ops sink and IAP.
+Cloudflare also retains PAYMENT_FINANCE_TOKEN (encrypted; algorithm not inspected).
+Therefore revoking Legacy immediately risks existing services; alternative key
+existence is NOT proof of compatible Bearer/gateway/RPC behavior. Replacement must
+first preserve dedicated Math role ACLs and verify each affected client/worker.
+Payment/Toss/IAP changes remain frozen, so a cross-service authentication migration
+cannot be disguised as Math secret registration. No blanket service-role grants or
+JWT verifier disabling, no E2E/provider/credit mutations in this follow-up.
+
+Current safe boundary: keep Math gated. Complete replacement-auth compatibility and
+rollout preparation before key retirement; any frozen-service changes require their
+separate scope. Do not ask Owner to repeat the exposed-key generation procedure.
+
 ## Restore route — Math config recovery (latest Oct09)
 
 LAB recovery9ae2715; Production same-code2cd74ed redeploy feef6f7d SUCCESS.
