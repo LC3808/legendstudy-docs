@@ -12,11 +12,11 @@ SUPERSEDED_BY: —
 
 ## Integrated backend / Web MY — PARTIAL — 2026-10-09
 
-LAB6e09f38: MY LAB unified above Study; private /account/essay/ summary/History,
+LAB6e09f38 PRODUCTION_DEPLOYED (f16b8526, HTTP200): MY LAB unified above Study; private /account/essay/ summary/History,
 selected original/rewrite feedback and canonical Credit; browser A4/PDF sharing;
 2 unavailable LABs use accessible dialog.860 tests + lint/typecheck/boundary/build
 PASS;35 Chromium fixture checks at6 widths/200% text/A4. No actual provider E2E.
-APP f200cba on independent codex/integrated-account-data, base Claudeb59ca82:
+APP418d957 (codef200cba) on independent codex/integrated-account-data, base Claudeb59ca82:
 existing profile skips repeated full onboarding, async owner recheck, Google
 Android cancellation/configuration errors separated, publication-date fallback
 sorting. Flutter3.47.6 missing; NOT tested/merged/released. Claude UI untouched.

@@ -32,5 +32,17 @@
   "db_writes": 0,
   "materials_source_fetch": "EGRESS_BLOCKED",
   "materials_global_ordering": "PARTIAL",
-  "google_device": "NOT_VERIFIED"
+  "google_device": "NOT_VERIFIED",
+  "app_tip": "418d957",
+  "deployment": {
+    "id": "f16b8526-1727-4e01-a604-7a46ff516e3d",
+    "status": "success",
+    "commit": "6e09f3844aa62e2353254c1fd5cb5468419eb814"
+  },
+  "production_http": {
+    "/account/": 200,
+    "/account/essay/": 200,
+    "all_four_types_gated": true
+  },
+  "wiki_handoff": "PASS"
 }
