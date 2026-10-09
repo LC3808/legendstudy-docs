@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-09",
+  "admin_credit_grant": "PARTIAL",
+  "essay_production_go_live": "BLOCKED",
+  "lab_commit": "343bd1e4d6e57fc1e66d24c39a076953b089342b",
+  "app_commit": "4c87231",
+  "branch": "codex/admin-credit-go-live",
+  "pushed": true,
+  "remote_sha_verified": true,
+  "production": {
+    "deployment": "f150ba03-14c5-4b2f-b386-81783b895d4b",
+    "commit": "343bd1e4d6e57fc1e66d24c39a076953b089342b",
+    "state": "success",
+    "completed_at": "2026-10-09T03:18:41.392626Z",
+    "member_credit_routes_http": 200,
+    "new_credit_copy_present": true
+  },
+  "migration": {
+    "version": "20261009000100",
+    "name": "admin_manual_credit_grant",
+    "state": "PRODUCTION_APPLIED",
+    "source_sha256": "6f25a4a97ca0c94e92ee9874fec749df8a43d87dd48f1a5ba2ff41db8cd8b388",
+    "rpc_md5": "3361f212c1332d1413ce82eadcf6fc9c",
+    "owner": "postgres",
+    "security_definer": true,
+    "search_path": "",
+    "anon_execute": false,
+    "service_execute": false,
+    "authenticated_execute": true,
+    "ledger_rls": true,
+    "direct_write": false,
+    "finance_rpc_exposed": false,
+    "old_function_hashes_unchanged": true
+  },
+  "actual_grant": {
+    "count": 0,
+    "authenticated_admin_success": "NOT_VERIFIED",
+    "balance_increment": "NOT_VERIFIED",
+    "transaction": "NOT_VERIFIED",
+    "reload": "NOT_VERIFIED"
+  },
+  "tests": {
+    "local_ledger_behavior": "PASS; lifecycle allowed stub, not deletion E2E",
+    "lab": 864,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "boundary": "PASS",
+    "build": "PASS",
+    "ui_fixture_widths": [
+      1440,
+      390,
+      360
+    ],
+    "text_200_percent": true,
+    "modal_escape_focus": true,
+    "production_anonymous_rpc": {
+      "status": 401,
+      "code": "42501"
+    },
+    "transaction_failure_rollback": "PASS: injected ledger insert failure leaves no partial grant",
+    "production_assets_fixture_browser": "PASS at1440/390/360; not real authenticated Admin E2E"
+  },
+  "auth": {
+    "math_test_binding": "PRESENT_BUT_INVALID",
+    "initial_error": "session_not_found",
+    "latest_error": "bad_jwt: token expired",
+    "admin_test_binding": "ABSENT; requirement saved in environment draft",
+    "impersonation": false
+  },
+  "essay": {
+    "provider": "OPENAI (configured only)",
+    "model": "gpt-5.6-sol (configured only)",
+    "math_test_secret_bindings": true,
+    "secrets_readable_via_management": false,
+    "lab_math_secret_bindings": false,
+    "provider_calls": 0,
+    "billing": "NOT_ASSESSABLE",
+    "balance": "NOT_ASSESSABLE",
+    "cost_per_evaluation": "NOT_ASSESSABLE",
+    "all_four_gated": true,
+    "evaluations_enabled": false,
+    "published_essay_questions": 0,
+    "essay_criteria": 0,
+    "math_problem_sets": 1,
+    "active_math_profiles": 1,
+    "math_private_storage": true,
+    "app_native_math_history": "NOT_CONNECTED"
+  },
+  "preserved": [
+    "Payment",
+    "Toss",
+    "IAP",
+    "Signup policy",
+    "Credit ledger architecture",
+    "Target005 HOLD",
+    "migration010",
+    "Claude APP UI",
+    "Manus visual"
+  ],
+  "owner_actions": [
+    "Fresh approved Math user session in MATH_TEST_ACCESS_TOKEN",
+    "Existing Admin user session in ADMIN_TEST_ACCESS_TOKEN; secure draft value/save/publish",
+    "Original three Math secrets in primary LAB Production; no key regeneration and no public enablement"
+  ],
+  "app_implementation_commit": "bc91805a1b7b1226fb6b321f7490346bbc041f7d"
+}

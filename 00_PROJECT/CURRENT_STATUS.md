@@ -10,29 +10,29 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Integrated backend / Web MY — PARTIAL — 2026-10-09
+## Admin manual Credit / Go-Live — PARTIAL — 2026-10-09
 
-LAB6e09f38 PRODUCTION_DEPLOYED (f16b8526, HTTP200): MY LAB unified above Study; private /account/essay/ summary/History,
-selected original/rewrite feedback and canonical Credit; browser A4/PDF sharing;
-2 unavailable LABs use accessible dialog.860 tests + lint/typecheck/boundary/build
-PASS;35 Chromium fixture checks at6 widths/200% text/A4. No actual provider E2E.
-APP418d957 (codef200cba) on independent codex/integrated-account-data, base Claudeb59ca82:
-existing profile skips repeated full onboarding, async owner recheck, Google
-Android cancellation/configuration errors separated, publication-date fallback
-sorting. Flutter3.47.6 missing; NOT tested/merged/released. Claude UI untouched.
+LAB343bd1e PRODUCTION_DEPLOYED (f150ba03, HTTP200); APP4c87231 (codebc91805) backend branch. New migration
+20261009000100 PRODUCTION_APPLIED: Admin-only1–100 grant RPC reuses canonical
+Ledger; reason/operator/target/key recorded, no new wallet/finance credential.
+Postflight ACL/RLS PASS; actual anonymous grant denied401. Dialog/retry/refresh
+implemented;864 tests + lint/typecheck/boundary/build and Chromium fixtures PASS.
+Actual grant NOT_VERIFIED (manual grants0); no authenticated Admin token available.
+Test user Auth now403 session_not_found then expired bad_jwt, superseding earlier
+Auth200 evidence. Secure ADMIN_TEST_ACCESS_TOKEN requirement saved in draft;
+MATH_TEST_ACCESS_TOKEN needs a fresh approved active session. No SQL/terminal needed.
 
-Current secrets ALL bound, including test token (supersedes earlier missing-token
-reports). APIs200; test Auth200 BUT subject is not Math allowlisted. Do not request
-duplicate API keys. LAB/math-test HTTP200 with normal browser User-Agent; Python
-UA403 is NOT evidence that domain settings failed.010 ledger1; evaluations false.
-Own profile/Essay/Math/Credit reads200, other-user profile result0; no auth bypass.
-Materials newest accepted source publication Sep19, crawl Sep26; Essay active135;
-no ingestion cron found. Original blog egress blocked; legendstudy.com addition
-saved to environment draft, requires publication. No unsafe ingestion/publication.
-Advanced exam-first search sorting/year cutoff remain OPEN, not globally fixed.
-Google real-device root cause/signing configuration unresolved; provider enabled.
-All four evaluation types GATED; actual calls0. Payment/Toss/IAP/Signup/005 frozen.
-See latest Daily for evidence and precise remaining actions.
+Go-Live BLOCKED: real Provider/Credit/reevaluation/History E2E0. Math-test bindings
+present; primary LAB Math bindings absent. Billing/balance/cost unverified, not a
+funding diagnosis. Published Essay questions/criteria0; Math set/profile1. All four
+GATED; no public activation before real verification + Owner final approval.
+010 unchanged;005 HOLD; Payment/Toss/IAP/Signup/Claude APP UI/Manus preserved.
+See latest Daily + evidence2026-10-09-admin-grant-golive.json for acceptance details.
+
+Prior integrated work: LAB6e09f38 Production MY LAB/report/print. APP418d957
+(codef200cba) profile/onboarding/Google error mapping/sort fallback candidate remains
+unmerged into Claude RC, Flutter unverified. Materials sync/full-catalog ordering,
+Google device root cause and native Math History remain open; see earlier Daily.
 
 ## Essay activation resumed — PARTIAL — 2026-10-09
 

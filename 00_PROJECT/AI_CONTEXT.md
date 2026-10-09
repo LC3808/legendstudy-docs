@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Admin manual grant / Go-Live Oct09
+
+Latest LAB343bd1e + APPbc91805.20261009000100 Admin RPC applied; ACL/RLS/anon denial
+verified. Actual1Credit grant still NOT_VERIFIED; no Admin session. Current Math test
+token Auth403 (session missing then expired); earlier Auth200 is historical.
+Do not impersonate via Management SQL, mint credentials or duplicate API bindings.
+Math public switch false; real E2E0; billing unknown. Use latest Daily/evidence.
+
 ## Restore route — Integrated backend / Web MY Oct09
 
 Latest task: LAB6e09f38 new personal Essay report /account/essay/; APPf200cba candidate
