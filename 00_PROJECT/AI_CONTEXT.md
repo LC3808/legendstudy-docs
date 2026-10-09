@@ -10,6 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Production integration Oct09 (latest)
+
+APP codex/production-integration8e89dfc integrates Claude Release/IAP + Codex backend.
+LAB2cd74ed unchanged. See latest Daily/evidence: materials7/78 Production active;
+IAP RPC20261009000200 + Edgev1 JWT=true deployed but OFF, grants0; Flutter analyze and
+Android debug build PASS. Prior SDK-missing/ingestion-blocked/server-missing notes are
+historical. Test Auth JWTs expired,3 main Math secrets missing, actual Math/Store E2E0.
+Native History read surface implemented; native full Math and post-grant IAP refund
+lifecycle incomplete.005 HOLD;010 not reapplied; Payment/Toss/Signup unchanged.
+Do not ask Owner for SQL/terminal or fabricate user sessions; one-batch unavoidable
+Console/secret/device steps documented. Keep all types/IAP gated pending acceptance.
+
 ## Restore route — Credit history display Oct09
 
 Owner confirms real Admin grant + correct history/balance (OWNER_VERIFIED).

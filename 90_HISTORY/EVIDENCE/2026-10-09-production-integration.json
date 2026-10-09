@@ -1,0 +1,157 @@
+{
+  "status": "PARTIAL",
+  "date": "2026-10-09",
+  "app": {
+    "branch": "codex/production-integration",
+    "commit": "8e89dfce2ce3b2f2af4beca28f068c0bc668ce4e",
+    "remote_verified": true,
+    "integrated": [
+      "f642de6",
+      "e50e072",
+      "418d957",
+      "4c87231",
+      "2657952"
+    ],
+    "analyze": "PASS",
+    "android_debug_build": "PASS — no Production dart-defines; no device acceptance",
+    "ios_build": "BLOCKED — Linux/no Xcode",
+    "native_history": "implemented, actual authenticated read blocked",
+    "native_math_submission": "NOT_COMPLETE"
+  },
+  "lab": {
+    "commit": "2cd74ed07b819e66145e25af6733b8edcc056637",
+    "changed": false
+  },
+  "production": {
+    "iap_migration": "20261009000200",
+    "migration_010": "already applied; not reapplied",
+    "target_005": "ABSENT / HOLD",
+    "iap_function": {
+      "name": "verify-iap-purchase",
+      "version": 1,
+      "status": "ACTIVE",
+      "verify_jwt": true,
+      "anonymous_status": 401,
+      "enabled": false
+    },
+    "iap_postflight": [
+      {
+        "iap_postflight": {
+          "rpc": {
+            "md5": "c216866a95254f1ce3206db9737d38c2",
+            "anon": false,
+            "owner": "postgres",
+            "settings": [
+              "search_path=\"\""
+            ],
+            "service_role": true,
+            "authenticated": false,
+            "security_definer": true
+          },
+          "migration": "iap_verified_credit",
+          "iap_grants": 0
+        }
+      }
+    ],
+    "materials": [
+      {
+        "external_post_id": "1719",
+        "title": "[중앙대] 2027학년도 수시 모의논술 기출(일반형/창의형)) : 문제, 해설, 예시답안 등",
+        "published_at": "2026-10-08 16:37:42+00",
+        "is_active": true,
+        "resources": 14,
+        "active_resources": 14
+      },
+      {
+        "external_post_id": "1718",
+        "title": "[중앙대] 2026학년도 수시 논술 + 모의논술 기출 : 문제, 해설, 예시답안 등",
+        "published_at": "2026-10-08 15:26:08+00",
+        "is_active": true,
+        "resources": 14,
+        "active_resources": 14
+      },
+      {
+        "external_post_id": "1717",
+        "title": "[중앙대] 2025학년도 수시 논술 + 모의논술 기출 : 문제, 해설, 예시답안 등",
+        "published_at": "2026-10-05 13:23:43+00",
+        "is_active": true,
+        "resources": 14,
+        "active_resources": 14
+      },
+      {
+        "external_post_id": "1716",
+        "title": "[중앙대] 2024학년도 중앙대 논술 기출 - 문제, 해설, 예시답안 등",
+        "published_at": "2026-10-05 12:45:47+00",
+        "is_active": true,
+        "resources": 8,
+        "active_resources": 8
+      },
+      {
+        "external_post_id": "1715",
+        "title": "[가톨릭대] 2027학년도 수시 모의논술 기출 - 문제, 해설, 답안 등",
+        "published_at": "2026-10-04 11:32:24+00",
+        "is_active": true,
+        "resources": 5,
+        "active_resources": 5
+      },
+      {
+        "external_post_id": "1714",
+        "title": "[가톨릭대] 2026학년도 수시 논술 + 모의논술 기출 - 문제, 해설, 예시답안 등",
+        "published_at": "2026-10-04 10:56:21+00",
+        "is_active": true,
+        "resources": 14,
+        "active_resources": 14
+      },
+      {
+        "external_post_id": "1713",
+        "title": "[연세대] 2026학년도 연세대 수시 논술 기출 - 문제, 해설, 출제의도 등 +2027학년도 논술 경쟁률",
+        "published_at": "2026-10-04 10:15:26+00",
+        "is_active": true,
+        "resources": 9,
+        "active_resources": 9
+      }
+    ],
+    "new_active_resource_count": 78,
+    "advisory_quarantine_count": 11
+  },
+  "verification": {
+    "full_app_regression": {
+      "passed": 984,
+      "skipped": 2,
+      "initial_failed": 7,
+      "failed_groups_corrected_and_retested": true,
+      "second_full_suite_run": false
+    },
+    "final_billing_lifetime": 18,
+    "resolved_related_suite": 21,
+    "search_discovery": 26,
+    "deno_boundary_tests": 13,
+    "sql": "isolated canonical ledger assertions PASS; not real Store",
+    "provider_real_calls_this_task": 0,
+    "store_real_purchases": 0,
+    "device_qa_this_task": false
+  },
+  "blockers": {
+    "production_math_missing": [
+      "MATH_PROVIDER_API_KEY",
+      "MATH_EXTRACTION_WORKER_JWT",
+      "MATH_EVALUATION_WORKER_JWT"
+    ],
+    "math_test_auth": "403 bad_jwt token expired",
+    "admin_test_auth": "403 bad_jwt token expired",
+    "store_secrets": "IAP_ bindings absent",
+    "iap_refund_reconciliation": "NOT_IMPLEMENTED",
+    "provider_billing": "NOT_ASSESSABLE; no top-up requested"
+  },
+  "preserved": [
+    "Payment/Toss",
+    "Signup Credit policy",
+    "canonical ledger",
+    "RLS",
+    "private storage",
+    "Claude APP visual",
+    "Manus visual",
+    "LAB MY/Admin"
+  ],
+  "owner_actions": "See latest Daily and APP wiki/production-integration-2026-10-09.md; no SQL/terminal requests"
+}
