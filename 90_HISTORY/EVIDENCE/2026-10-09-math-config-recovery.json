@@ -1,0 +1,40 @@
+{
+  "id": "feef6f7d-113e-4193-9f59-3288c6449610",
+  "environment": "production",
+  "latest_stage": {
+    "name": "deploy",
+    "started_on": "2026-10-09T08:25:26.798341Z",
+    "ended_on": "2026-10-09T08:25:34.95537Z",
+    "status": "success"
+  },
+  "source_commit": "9ae2715",
+  "math_binding_names": [
+    "MATH_ENABLED",
+    "MATH_ORIGIN",
+    "MATH_PRIMARY_MODEL",
+    "MATH_PROJECT_REF",
+    "MATH_PROVIDER",
+    "MATH_PROVIDER_CALLS_ENABLED",
+    "MATH_SUPABASE_PUBLISHABLE_KEY",
+    "MATH_SUPABASE_URL",
+    "NEXT_PUBLIC_MATH_ENABLED"
+  ],
+  "status": "PARTIAL",
+  "secrets_recovered": 0,
+  "test_auth_http": 200,
+  "test_subject_allowlisted": true,
+  "credit_read_http": 200,
+  "history_read_http": 200,
+  "jwks_algorithms": [
+    "ES256"
+  ],
+  "worker_issuance_procedure": "NOT_FOUND",
+  "github_actions_secret_inventory_http": 403,
+  "vault_math_backup_names": [],
+  "provider_calls": 0,
+  "credit_debits": 0,
+  "source_branch": "codex/math-configuration-recovery",
+  "production_gate": "CLOSED",
+  "unrelated_bindings": "PRESERVED",
+  "preview": "PRESERVED"
+}

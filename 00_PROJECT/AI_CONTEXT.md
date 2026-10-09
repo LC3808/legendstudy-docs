@@ -10,6 +10,15 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Math config recovery (latest Oct09)
+
+LAB recovery9ae2715; Production same-code2cd74ed redeploy feef6f7d SUCCESS.
+9 non-secret bindings set, activation flags false. Test Auth now200 (prior expired
+checkpoint superseded), own Credit/History200. Three secret originals still missing;
+original JWT issuance recipe NOT_FOUND. Current JWKS ES256; do not guess HS256 signing
+or replace Math roles with service_role. Owner one-block steps in latest Daily/link.
+No actual Provider/Credit E2E; all types GATED. No Payment/Toss/IAP/ledger changes.
+
 ## Restore route — Production integration Oct09 (latest)
 
 APP codex/production-integration8e89dfc integrates Claude Release/IAP + Codex backend.
