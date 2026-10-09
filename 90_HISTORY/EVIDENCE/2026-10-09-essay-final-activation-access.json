@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-09",
+  "status": "BLOCKED",
+  "source_changes": false,
+  "production_db_writes": 0,
+  "provider_calls": 0,
+  "baseline_tests_rerun": false,
+  "lab": "1da1bb00575a417c1bc9ce1d3abcce7c02ef23f0",
+  "app_candidate": "26579523cea3c85f759bf7ec74af23765adc2586",
+  "app_rc": "cc954c171e13c54ae6ca9d37778df4ccc41c5ddc",
+  "environment_location": "Current chat-bound cloud environment settings",
+  "draft_id": "fe290730-dc30-4eba-af69-60f6af89ae44~cecfgdraft_6ac64067eda481918ffe96c706231160",
+  "revision": 4,
+  "bindings": {
+    "SUPABASE_ACCESS_TOKEN": false,
+    "CLOUDFLARE_API_TOKEN": false,
+    "MATH_TEST_ACCESS_TOKEN": false
+  },
+  "supabase_management_http": 401,
+  "cloudflare_management_http": 400,
+  "cloudflare_error": 9106,
+  "actions_workflows": {
+    "app": 0,
+    "lab": 0
+  },
+  "categories": {
+    "supabase_production": "BLOCKED",
+    "cloudflare_git_deploy": "AVAILABLE",
+    "cloudflare_management": "BLOCKED",
+    "provider_configuration_access": "BLOCKED",
+    "worker_code": "AVAILABLE",
+    "worker_operational_verification": "BLOCKED",
+    "auth_test": "BLOCKED",
+    "content_manifests": "AVAILABLE",
+    "full_reviewed_packages": "BLOCKED",
+    "canonical_candidate": "AVAILABLE",
+    "canonical_production_apply": "BLOCKED"
+  },
+  "migration_010": "BLOCKED_NO_PRIVILEGE",
+  "app_path": {
+    "primary": "/lab/essay",
+    "secondary": "https://lab.legendstudy.com",
+    "session_transfer": false,
+    "native_math_history_connected": false
+  },
+  "owner_acceptance_required_before_public_activation": true
+}

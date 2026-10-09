@@ -10,6 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay final activation — BLOCKED — 2026-10-09
+
+Activation-only follow-up: real provider evaluations0. Environment draft revision4
+exists but all3 requirements have no saved binding; APIs401/400, CLI auth absent.
+No code/DB/deploy change or repeated baseline tests. LAB1da1bb0/APP2657952 retained;
+Claude RCcc954c1 preserved. All four types GATED;010 BLOCKED_NO_PRIVILEGE.
+APP native path is Essay-only; Math uses secondary external Web entry with separate
+browser authentication. See latest Daily final-activation entry and
+[access evidence](../90_HISTORY/EVIDENCE/2026-10-09-essay-final-activation-access.json)
+for exact environment location/scopes. Existing binding connection is the remaining
+access prerequisite; no new credential or Owner SQL/terminal request.
+
 ## Essay runtime activation — PARTIAL — 2026-10-09
 
 [Owner activation directive](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-activation.md).

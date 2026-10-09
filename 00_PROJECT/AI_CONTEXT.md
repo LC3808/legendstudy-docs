@@ -12,6 +12,9 @@ SUPERSEDED_BY: —
 
 ## Restore route — Essay activation Oct09
 
+Final activation recheck: ACCESS_BLOCKED; revision4 requirements have no saved bindings.
+See CURRENT_STATUS/latest Daily; do not repeat foundation development/tests for this blocker.
+
 [Current activation directive](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-activation.md).
 Status PARTIAL; real evaluations0; all four types GATED. APP2657952 introduces locally
 verified canonical component persistence (38 SQL checks), not a Production migration.
