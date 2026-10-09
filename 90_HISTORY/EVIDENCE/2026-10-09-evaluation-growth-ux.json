@@ -1,0 +1,247 @@
+{
+  "status": "PARTIAL",
+  "date": "2026-10-09",
+  "lab_commit": "f838911794f3a651645f089fc9f722ec41b92048",
+  "app_commit": "b0facde42c5df7ee38969b72b89ed2228a2a4c48",
+  "lab_branch": "main / codex/essay-growth-ux",
+  "app_branch": "codex/essay-growth-ux",
+  "cloudflare_deployment": "e10bb962-54e5-46e4-b95c-86b89c35dba7",
+  "deployment_status": "success",
+  "web_full_regression_pass": 931,
+  "web_additional_pending_answer_tests_pass": 2,
+  "app_focused_tests_pass": 21,
+  "web_lint": true,
+  "web_typecheck": true,
+  "web_boundaries": true,
+  "web_build": true,
+  "app_analyze": true,
+  "real_user": {
+    "real_auth": true,
+    "local_candidate": false,
+    "production_ui": true,
+    "analysis": true,
+    "history": true,
+    "credit_history": true,
+    "same_balance": true,
+    "same_ledger_digest": true,
+    "spendable": 4,
+    "provider_calls": 0,
+    "errors": [],
+    "unexpected_writes": []
+  },
+  "gates": {
+    "production_flags": {
+      "MATH_ENABLED": "false",
+      "MATH_PROVIDER_CALLS_ENABLED": "false",
+      "NEXT_PUBLIC_MATH_ENABLED": "false"
+    },
+    "db_evaluations_enabled": false,
+    "public_activation": "HOLD"
+  },
+  "responsive": {
+    "fixture_only": true,
+    "checks": [
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/my/essays/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/my/essays/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 2
+      }
+    ],
+    "errors": []
+  },
+  "human_pdf_stars_and_delta": true,
+  "math_pdf_A4": true,
+  "provider_prompt_changed": false,
+  "new_provider_evaluations": 0,
+  "db_migrations": [],
+  "payment_toss_iap_changed": false,
+  "voice_control_tests": true,
+  "real_audible_voice_verified": false,
+  "app_physical_devices_verified": false,
+  "app_store_deployed": false,
+  "known_limitations": [
+    "Missing legacy feedback is not manufactured",
+    "Historical university/year/exam-type metadata incomplete",
+    "Provider teacher-style prompt and generated causal growth not changed or newly validated",
+    "Native voice absent; Web requires installed local Korean voice",
+    "Physical Android/iPhone and Store release not verified"
+  ],
+  "app_android_debug_build": "PASS",
+  "app_android_build_defines": "No Production dart-defines; compile verification only",
+  "environment_configuration_changed": false
+}
