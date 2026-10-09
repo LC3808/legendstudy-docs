@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Latest Web Essay/Credit UX — Oct09
+
+LAB `f9512aa` (main / codex/essay-credit-ux) refines navigation, analysis summary and
+user-only Credit history. Admin/financial contracts unchanged; Math branch6bcd0a6
+and its unresolved signer/E2E status remain separate. See the [Oct09 daily record](../90_HISTORY/DAILY/2026-10-09.md)
+for exact deployment and verification evidence. No new Math activation is implied.
+
+
 ## Math Production configuration recovery — PARTIAL — Oct09 17:25 KST
 
 LAB `codex/math-configuration-recovery` **9ae2715** adds only a safe configuration

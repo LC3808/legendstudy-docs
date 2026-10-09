@@ -1,0 +1,418 @@
+{
+  "status": "PRODUCTION_VERIFIED",
+  "lab_commit": "f9512aafc9d17bcb58d1694874c2b4e2ca6d88ff",
+  "branch": "codex/essay-credit-ux",
+  "remote_main_verified": true,
+  "tests": {
+    "focused": 57,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "boundaries": "PASS",
+    "github_readiness": "PASS",
+    "build": "PASS"
+  },
+  "local_browser": {
+    "fixture_only": true,
+    "checks": [
+      {
+        "width": 1440,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 2
+      }
+    ],
+    "errors": []
+  },
+  "production_deployment": {
+    "id": "0ec43f35-4296-4dd4-8edc-70b9ab4a598f",
+    "status": "success",
+    "canonical": true,
+    "sha": "f9512aafc9d17bcb58d1694874c2b4e2ca6d88ff"
+  },
+  "real_authenticated_owner_qa": "NOT_RUN",
+  "database_mutations": false,
+  "admin_changes": false,
+  "payment_toss_iap_changes": false,
+  "math_recovery_branch_preserved": "6bcd0a66cd627cb3c4f197c8af726b9b9ae2a660",
+  "math_activation_flags": false,
+  "production_browser_fixture": {
+    "fixture_only": true,
+    "checks": [
+      {
+        "width": 1440,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1440,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 1280,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 768,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 390,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 375,
+        "path": "/account/credits/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/essay-lab/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/essay-lab/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/essay/",
+        "text_scale": 2
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 1
+      },
+      {
+        "width": 360,
+        "path": "/account/credits/",
+        "text_scale": 2
+      }
+    ],
+    "errors": []
+  },
+  "production_anonymous": {
+    "results": [
+      {
+        "path": "/essay-lab/",
+        "status": 200,
+        "anonymous_gate": true
+      },
+      {
+        "path": "/account/essay/",
+        "status": 200,
+        "anonymous_gate": true
+      },
+      {
+        "path": "/account/credits/",
+        "status": 200,
+        "anonymous_gate": true
+      }
+    ],
+    "errors": []
+  }
+}
