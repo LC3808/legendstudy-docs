@@ -1,0 +1,24 @@
+[
+  {
+    "essay_web_runtime_postflight": {
+      "function": {
+        "md5": "3b9c9a83bdc8363b9fab5d99dc5ab410",
+        "owner": "postgres",
+        "settings": [
+          "search_path=\"\""
+        ],
+        "anon_execute": false,
+        "security_definer": true,
+        "service_role_execute": false,
+        "authenticated_execute": true
+      },
+      "migration": [
+        {
+          "name": "essay_web_runtime_status",
+          "version": "20261008001000"
+        }
+      ],
+      "math_evaluations_enabled": false
+    }
+  }
+]

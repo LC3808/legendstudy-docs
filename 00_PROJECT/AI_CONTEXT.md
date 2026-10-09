@@ -12,16 +12,13 @@ SUPERSEDED_BY: —
 
 ## Restore route — Essay activation Oct09
 
-Final activation recheck: ACCESS_BLOCKED; revision4 requirements have no saved bindings.
-See CURRENT_STATUS/latest Daily; do not repeat foundation development/tests for this blocker.
-
-[Current activation directive](../90_HISTORY/OWNER_DIRECTIVES/2026-10-09-essay-runtime-activation.md).
-Status PARTIAL; real evaluations0; all four types GATED. APP2657952 introduces locally
-verified canonical component persistence (38 SQL checks), not a Production migration.
-010 remains BLOCKED_NO_PRIVILEGE. Existing management/test binding requirements saved
-as draft metadata only. Current implementation/content/access gates are in CURRENT_STATUS,
-latest Daily and APP wiki/essay-runtime-activation-2026-10-09.md. Keep005 HELD and
-Signup/Payment/Toss/IAP frozen; preserve Claude MY/Admin/APP and Manus visuals.
+Activation resumed: management access verified; Migration010 PRODUCTION_APPLIED and
+ACL/owner postflight PASS. Earlier access-blocked reports are historical. Actual E2E0:
+MATH_TEST_ACCESS_TOKEN absent and math-test egress blocked. Required network/secret
+metadata saved in environment draft, not yet published. See CURRENT_STATUS/latest Daily.
+All four types GATED; DB evaluation switch false. Reuse LAB1da1bb0/APP2657952;
+component candidate remains unapplied. Preserve Signup/Payment/Toss/IAP/Target005
+and Claude/Manus surfaces. No repeated foundation or baseline tests required.
 Do not ask Owner to operate SQL/terminal/login; no activation from fixture tests alone.
 
 # AI_CONTEXT — LegendStudy+ Single Entry Point

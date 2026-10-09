@@ -10,17 +10,24 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Essay final activation — BLOCKED — 2026-10-09
+## Essay activation resumed — PARTIAL — 2026-10-09
 
-Activation-only follow-up: real provider evaluations0. Environment draft revision4
-exists but all3 requirements have no saved binding; APIs401/400, CLI auth absent.
-No code/DB/deploy change or repeated baseline tests. LAB1da1bb0/APP2657952 retained;
-Claude RCcc954c1 preserved. All four types GATED;010 BLOCKED_NO_PRIVILEGE.
-APP native path is Essay-only; Math uses secondary external Web entry with separate
-browser authentication. See latest Daily final-activation entry and
-[access evidence](../90_HISTORY/EVIDENCE/2026-10-09-essay-final-activation-access.json)
-for exact environment location/scopes. Existing binding connection is the remaining
-access prerequisite; no new credential or Owner SQL/terminal request.
+Supersedes earlier ACCESS_BLOCKED findings below: Supabase and Cloudflare management
+now authenticate (HTTP200); database writes run as postgres. Verified original010
+SHA256 cc911a6d7ad90c768b388e52520a7e72c40ebb885b4d862c0e07231b34e49734
+applied with ledger in one transaction. Postflight owner/postgres, SECURITY DEFINER,
+empty search_path, authenticated EXECUTE only (anon/service_role denied) PASS.
+Function body MD5 3b9c9a83bdc8363b9fab5d99dc5ab410; DB evaluation switch remains false.
+
+Existing math-test Pages has provider/worker bindings (OPENAI/gpt-5.6-sol), but their
+operational validity is unverified. Main LAB has no Math provider/worker bindings.
+Actual provider-backed E2E0: test token absent; math-test hostname blocked by current
+cloud network policy. Network addition + scoped MATH_TEST_ACCESS_TOKEN requirement
+saved as environment draft, requires publication/value. No auth bypass/token issuance.
+LAB anonymous probes also received Cloudflare403/1010, not application-auth results.
+Credit/rewrite/History live acceptance remains unverified; all four types GATED.
+No code/provider/deployment/Payment/Toss/IAP/Signup/Target005/visual change.
+See latest Daily and [postflight evidence](../90_HISTORY/EVIDENCE/2026-10-09-essay010-production-postflight.json).
 
 ## Essay runtime activation — PARTIAL — 2026-10-09
 
