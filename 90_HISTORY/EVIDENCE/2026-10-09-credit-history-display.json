@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-09",
+  "lab_commit": "2cd74ed07b819e66145e25af6733b8edcc056637",
+  "branch": "codex/credit-history-display",
+  "owner_verified_predecessor": {
+    "actual_admin_grant": true,
+    "history_and_balance": true,
+    "source": "Owner display-refinement directive"
+  },
+  "mapping": {
+    "shared_module": "src/lib/credit-display.ts",
+    "consumers": [
+      "Admin member detail",
+      "Admin Credit lookup and overview",
+      "MY Credit history",
+      "Essay personal dashboard usage"
+    ],
+    "manual_reason": "strip manual_support prefix only; preserve original meaning",
+    "actor_uuid_displayed": false,
+    "unknown_type_actor_fallback": "Korean"
+  },
+  "tests": {
+    "relevant_tests": 85,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "boundary": "PASS",
+    "build": "PASS",
+    "local_browser_screens": 9,
+    "viewports": [
+      1440,
+      390,
+      360
+    ],
+    "credit_content_at_200_percent": "PASS",
+    "raw_codes_hidden": true,
+    "ledger_input_immutable": true,
+    "amounts_preserved": true,
+    "grant_requests": 0,
+    "data_source": "synthetic intercepts, no real grant repeated",
+    "production_assets_browser_screens": 9,
+    "production_browser_data": "synthetic intercepted auth/history; no real grant"
+  },
+  "known_existing_issue": {
+    "surface": "Admin member search/filter outside Credit section",
+    "width": 390,
+    "text_percent": 200,
+    "overflow_px": 216,
+    "reproduced_on_previous_production": "343bd1e",
+    "credit_region_in_viewport": true
+  },
+  "preserved": [
+    "Ledger",
+    "Credit Grant",
+    "Balance",
+    "Summary",
+    "RLS",
+    "Admin authorization",
+    "Idempotency",
+    "Payment",
+    "Toss",
+    "IAP"
+  ],
+  "db_migrations": [],
+  "db_writes": 0,
+  "production": {
+    "deployment_id": "23d2723b-d5ac-4c65-9b9e-87bb25a9ad39",
+    "status": "SUCCESS",
+    "commit": "2cd74ed07b819e66145e25af6733b8edcc056637"
+  },
+  "credit_history_display": "COMPLETE"
+}

@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Credit history display — COMPLETE — 2026-10-09
+
+LAB2cd74ed PRODUCTION_DEPLOYED (23d2723b);9 Production-asset fixture checks PASS.
+Shared type/reason/actor formatter consumed by Admin member detail,
+Credit overview, MY history and Essay dashboard. Raw reasons preserved; no inferred
+compensation. Unknown types/actors have Korean fallbacks; actor UUID never displayed.
+85 relevant tests + lint/typecheck/boundary/build PASS;9 Chromium fixture screens.
+No migration, grant repetition, Ledger/balance/RLS/authorization/Payment change.
+Owner separately confirmed real Admin grant and correct history/balance:
+OWNER_VERIFIED; earlier zero-grant/unverified snapshot is historical.
+
 ## Admin manual Credit / Go-Live — PARTIAL — 2026-10-09
 
 LAB343bd1e PRODUCTION_DEPLOYED (f150ba03, HTTP200); APP4c87231 (codebc91805) backend branch. New migration
@@ -17,7 +28,8 @@ LAB343bd1e PRODUCTION_DEPLOYED (f150ba03, HTTP200); APP4c87231 (codebc91805) bac
 Ledger; reason/operator/target/key recorded, no new wallet/finance credential.
 Postflight ACL/RLS PASS; actual anonymous grant denied401. Dialog/retry/refresh
 implemented;864 tests + lint/typecheck/boundary/build and Chromium fixtures PASS.
-Actual grant NOT_VERIFIED (manual grants0); no authenticated Admin token available.
+Actual grant/history/balance OWNER_VERIFIED in the subsequent display directive.
+Prior Codex zero-grant snapshot is historical; no repeated actual grant requested.
 Test user Auth now403 session_not_found then expired bad_jwt, superseding earlier
 Auth200 evidence. Secure ADMIN_TEST_ACCESS_TOKEN requirement saved in draft;
 MATH_TEST_ACCESS_TOKEN needs a fresh approved active session. No SQL/terminal needed.

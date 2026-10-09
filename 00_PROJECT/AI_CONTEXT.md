@@ -10,10 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Credit history display Oct09
+
+Owner confirms real Admin grant + correct history/balance (OWNER_VERIFIED).
+Do not repeat grants. LAB2cd74ed unifies Korean Credit type/reason/actor formatting
+across Admin/MY/Essay. Presentation only; no migration/Ledger/Payment change.
+See latest Daily for deployment evidence. Earlier manual-grant0/unverified notes
+are historical; they do not supersede Owner acceptance. Essay Go-Live unchanged.
+
 ## Restore route — Admin manual grant / Go-Live Oct09
 
 Latest LAB343bd1e + APPbc91805.20261009000100 Admin RPC applied; ACL/RLS/anon denial
-verified. Actual1Credit grant still NOT_VERIFIED; no Admin session. Current Math test
+verified. Admin grant now OWNER_VERIFIED (later display directive). Current Math test
 token Auth403 (session missing then expired); earlier Auth200 is historical.
 Do not impersonate via Management SQL, mint credentials or duplicate API bindings.
 Math public switch false; real E2E0; billing unknown. Use latest Daily/evidence.
