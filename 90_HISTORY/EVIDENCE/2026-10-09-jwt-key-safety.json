@@ -1,0 +1,34 @@
+{
+  "scope": "read-only JWT signing key safety review",
+  "new_es256_required": "NOT_ESTABLISHED",
+  "signing_keys_changed": false,
+  "standby_preserved": "40a721a3-c77a-4bcc-b2f2-4d9d6b9dd05f",
+  "worker_contract": "existing dedicated-role JWT through Supabase PostgREST",
+  "hs256_existing_anon_probes": [
+    {
+      "rpc": "math_extraction",
+      "http": 401,
+      "db_code": "42501",
+      "outcome": "function authorization denied"
+    },
+    {
+      "rpc": "math_evaluation",
+      "http": 401,
+      "db_code": "42501",
+      "outcome": "function authorization denied"
+    }
+  ],
+  "custom_worker_jwt_validity": "NOT_ASSESSABLE",
+  "cloudflare_worker_secrets": {
+    "legendstudy-lab": "both absent",
+    "legendstudy-lab-math-test": "both secret_text bindings present"
+  },
+  "test_student_auth": {
+    "http": 403,
+    "error_code": "bad_jwt"
+  },
+  "runtime_deployments": 0,
+  "provider_calls": 0,
+  "credit_writes": 0,
+  "production_main": "f9512aafc9d17bcb58d1694874c2b4e2ca6d88ff"
+}

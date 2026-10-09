@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Latest JWT safety authority — Oct09
+
+Owner prohibits any Rotate/Revoke or standby deactivation without separate approval.
+Do not execute the earlier ES256 key import/status-changing recovery sequence.
+New ES256 key necessity is unproven; reuse the original dedicated-role JWT contract.
+HS256 anon probe reaches DB42501 (authorization), so the prior blanket HS256-rejection
+claim is not justified. Worker token validity remains unverified; Production worker
+bindings absent, original math-test encrypted bindings present. See [Oct09 review](../90_HISTORY/DAILY/2026-10-09.md).
+No keys/runtime/DB changed; Provider/Credit E2E still blocked.
+
+
 ## Latest Web Essay/Credit UX — Oct09
 
 LAB `f9512aa` (main / codex/essay-credit-ux) refines navigation, analysis summary and
