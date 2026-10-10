@@ -10,6 +10,19 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Quality traceability refinement Oct10
+
+Fetch APP/LAB `codex/quality-traceability-refinement`; checkpoints APP1e4d92f /
+LAB501d272, not permanent HEAD definitions. LAB productiona2e09fea verified.
+Overall PARTIAL: grouped explicit evaluation roots and existing Human Review work;
+student pseudonym/exam/year projection requires separate Owner DB approval.
+APP school/MY/Credit source fixes and existing animation tests complete; NO device
+use. FullFlutter1034/2 skips/analyze and WEB180/lint/typecheck/build PASS.
+Official service content remains blocked: active Math1 is synthetic; general
+published questions/criteria/evaluations0. PublicHOLD/allflagsOFF/allowlist1.
+No Provider/Credit/review/DB mutation during QA. See exact next approval and evidence:
+[Current refinement](CURRENT_STATUS.md#quality-traceability-refinement--2026-10-10--partial).
+
 ## Restore route — Admin quality / LAB preview Oct10
 
 Both requested UI tasks are COMPLETE. Fetch APP/LAB `codex/app-web-ux-cleanup`;
