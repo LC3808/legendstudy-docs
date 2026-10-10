@@ -10,6 +10,47 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Admin Quality metadata — 2026-10-10 — READY FOR FINAL APPLY APPROVAL
+
+Bounded implementation complete on `codex/quality-traceability-refinement`.
+Verified checkpoints (not permanent HEAD definitions): APP
+`4de212539878004bd0b6f38151df54761ae687f1`, LAB
+`c97749373fe8fbf7a89302419e6d513196e8645d`, pushed/remote SHA verified.
+APP changes are SQL/tests/Wiki only; completed mobile UI was not reworked.
+
+Existing qlm_list_cases/qlm_case_detail add quality_metadata: purpose-scoped server
+SHA256 pseudonym, validated root/lineage/prior keys, content IDs, verified university/
+year and pinned rubric. Legacy fields/DTO/cursor/sort/ACL/operator/lifecycle retained.
+No new table/GRANT or raw Auth UID/email/name; student APIs remain unchanged. WEB
+separates problem/rubric → pseudonymous user → independent answer process → initial/
+revision → comparison/review. Missing or conflicting pins stay separate. Existing
+Human Review write/history is unchanged; missing prior does not hide current detail.
+
+Actual production SELECT-only acceptance:8 evaluations,1 pseudonym,4 independent
+roots,4 initial/reevaluation pairs,0 invalid links. Verified exam labels0: the current
+synthetic exam is review, so university/year correctly stay NULL. This is NOT an
+applied RPC or newly deployed UI acceptance. Final production function hashes,
+owner/ACL match original backup; anonymous EXECUTE remains false.
+
+Validation:34 isolated PG17 checks PASS, including non-superuser apply, original
+wire/OID/ACL preservation, forged cross-user root rejection, tied cursor pagination,
+anonymous/nonoperator/expired/revoked/lifecycle denial, unchanged student/review/fact
+hashes, exact rollback and drift protection. WEB full963 tests plus final78 related
+PASS; typecheck/lint/static build PASS. APP Wiki handoff PASS. No device/debug/build,
+Provider/Credit transaction, original evaluation/answer/History/ledger/backfill or
+Payment/Toss/IAP/RLS change. Public activation HOLD.
+
+**Production Applied: NO. Owner final migration apply approval: REQUIRED.**
+[Exact migration, backup, rollback, impact and tests](https://github.com/LC3808/legendstudy-app/tree/4de212539878004bd0b6f38151df54761ae687f1/supabase/verification/quality_metadata).
+Migration20261010134235 SHA256:
+`ecde6a4b44e2208b9d969bd69ec466d8722609c338019b17c8984e7e05add74b`.
+Rollback SHA256: `b1dc65b1e619accc9d290188182f99d86defcd7b700772c4f26b5d7746e4f6a0`.
+Next: Owner approval → reviewed migration through existing formal path → real-role
+operator/nonoperator and8-record postflight → existing Pages deployment/UI check.
+No LAB deployment this task; production remains501d272/a2e09fea. Documentation main
+push was blocked by automatic approval review; this update is on the working branch
+for PR review, not claimed present on canonical main.
+
 ## Quality traceability refinement — 2026-10-10 — PARTIAL
 
 Owner-approved continuation on independent `codex/quality-traceability-refinement`.
@@ -31,7 +72,7 @@ Read-only SQL confirms8 evaluations/1 student/4 lineages/4 valid same-owner edge
 all8 source/hash-bound. RLS true/direct authenticated SELECT+INSERT false and anon
 RPC execute false verified; role tests are mocks plus deployed ACL/definition audit.
 
-**Metadata blocker / Owner approval required:** current qlm list/detail omit student
+**Historical checkpoint (source implementation superseded above; apply pending):** deployed qlm list/detail omit student
 reference/lineage and exam/university projection. UI therefore states user unconfirmed
 and problem information unlinked. It cannot provide complete pseudonymous user or
 university/year grouping yet. Minimal proposal is an additive operator-only read

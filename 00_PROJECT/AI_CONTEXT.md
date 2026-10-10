@@ -10,18 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Restore route — Quality traceability refinement Oct10
+## Restore route — Admin Quality metadata Oct10
 
-Fetch APP/LAB `codex/quality-traceability-refinement`; checkpoints APP1e4d92f /
-LAB501d272, not permanent HEAD definitions. LAB productiona2e09fea verified.
-Overall PARTIAL: grouped explicit evaluation roots and existing Human Review work;
-student pseudonym/exam/year projection requires separate Owner DB approval.
-APP school/MY/Credit source fixes and existing animation tests complete; NO device
-use. FullFlutter1034/2 skips/analyze and WEB180/lint/typecheck/build PASS.
-Official service content remains blocked: active Math1 is synthetic; general
-published questions/criteria/evaluations0. PublicHOLD/allflagsOFF/allowlist1.
-No Provider/Credit/review/DB mutation during QA. See exact next approval and evidence:
-[Current refinement](CURRENT_STATUS.md#quality-traceability-refinement--2026-10-10--partial).
+Fetch APP/LAB `codex/quality-traceability-refinement`; checkpoints APP4de2125 /
+LABc977493. Bounded implementation done, PRODUCTION NOT APPLIED.34 isolated SQL,
+full963 WEB + final78 related tests/typecheck/lint/build PASS. Actual read-only
+production8 evaluations/1 pseudonym/4 roots/4 pairs/0 bad links; exam labels NULL.
+Owner final migration apply approval REQUIRED. Read exact SQL/rollback/impact packet
+before applying only the reviewed migration through the existing formal path; then
+real-role postflight and Pages QA. No mobile debugging/APP UI redo/Provider/Credit.
+Public HOLD, prior Math E2E preserved, current deployed LAB501d272/a2e09fea.
+Wiki main push was auto-review blocked; update is pending PR review from this branch.
+[Current approval packet](CURRENT_STATUS.md#admin-quality-metadata--2026-10-10--ready-for-final-apply-approval).
 
 ## Restore route — Admin quality / LAB preview Oct10
 
