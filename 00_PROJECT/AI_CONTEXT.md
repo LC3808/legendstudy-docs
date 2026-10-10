@@ -16,8 +16,9 @@ Fetch APP/LAB `codex/app-web-ux-cleanup`; APPd8a7e7f / LAB015f6e9 are verified
 checkpoints, not permanent HEAD definitions. Login/CTA/LAB/MY Credit/WEB copy and
 refund layout are cleaned. Approved catalog read is separated from evaluation OFF.
 Production015f6e9 deployed; public HOLD, all evaluation flags OFF and allowlist1.
-Current test account sessions expired: Owner Android re-login requested for final
-read-only catalog UI verification. No new Provider or Credit transaction authorized.
+Android fresh-login catalog/evaluation-OFF read-only UI verified; UX task COMPLETE
+(APP closeout1bb8569). Admin quality/preview follow-up now continues on same branch.
+No new Provider or Credit transaction authorized.
 [Current evidence](CURRENT_STATUS.md#app-web-ux-cleanup--2026-10-10).
 
 ## Restore route — Google Auth / Essay user flow Oct10
