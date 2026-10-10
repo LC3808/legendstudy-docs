@@ -10,6 +10,20 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Essay full service Oct11
+
+Latest reviewed work is `codex/essay-full-service-implementation` in all3 repos;
+APP9081ee85e849c05b884a9a64e0743ae0429598a0 / LABa942aa7f828979a1225b566bbb88ff57b194f9c5 are verified checkpoints,
+not permanent HEAD definitions. Overall PARTIAL: retained official SKKU3 questions/
+9 criteria connect to existing DB/worker input in isolated tests; canonical WEB
+Draft/Submit/result gateway and bounded Math recovery implemented. No live E2E.
+Production general questions/evidence/criteria remain0. Hosted private worker,
+source rights and student prompt/figure delivery remain incomplete. Recovery SQL
+and prior QA metadata SQL NOT_APPLIED; all public activation HOLD. Existing Wiki
+PR#1/#2 stay OPEN/unchanged. No device, Provider, production Credit or deployment.
+Read [latest full-service Daily](../90_HISTORY/DAILY/2026-10-11.md) then the APP
+linked implementation report and SQL review packet before continuing.
+
 ## Restore route — Quality traceability refinement Oct10
 
 Fetch APP/LAB `codex/quality-traceability-refinement`; checkpoints APP1e4d92f /

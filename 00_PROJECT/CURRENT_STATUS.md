@@ -10,6 +10,44 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay full service — 2026-10-11 — PARTIAL
+
+Owner's Oct10 full-service directive continues past V2 preview; safe implementation
+committed and remote verified on separate `codex/essay-full-service-implementation`.
+APP `9081ee85e849c05b884a9a64e0743ae0429598a0`; LAB `a942aa7f828979a1225b566bbb88ff57b194f9c5`.
+Production apply/public activation are not authorized by this implementation result.
+
+- Reused frozen SKKU2025 인문1:3 questions,9 numbered official dimensions,21 source
+  excerpts/34 per-question mappings,1 package; exact source PDF/hash/locator preserved.
+  Transactional isolated import, immutable conflicts rejected, publication false.
+- General runtime Production catalog still0 questions/criteria/evidence (read-only
+  verified). Previous8 Math evaluations/4 pairs are separate preserved data.
+- Existing WEB catalog + authenticated Draft/CAS/Submit/result/history/direct rewrite
+  connected. Private server worker admission default CLOSED; only confirmed failed,
+  no-Credit-consumed requests get a new retry key. Same-key unknown retry preserved.
+- Hosted worker service binding is not implemented/provisioned. Student passages/
+  figures are not published; Q2/Q3 graph input is rejected by current text-worker
+  adapter. No official-content real Provider E2E for any new type is claimed.
+- Recovery gateway uses existing single-job RPC. Bounded batch migration prepared,
+  backup/ACL/dependency/fingerprint/rollback reviewed; Cron not installed. No Ledger
+  policy, RLS, Auth, Payment/Toss/IAP, QA metadata or existing output modification.
+- Validation: isolated PG19 content +21 recovery assertions; WEB96 PASS/1 optional
+  privateV2 bundle skip; lint/typecheck/boundary audit/Webpack export PASS. Guest
+  browser360/390/768/1280 no overflow. No authenticated browser E2E/200% acceptance.
+- Real Provider calls0; Production Credit transactions0; Production writes0;
+  deployments0; native/device work0. HOLD and current allowlist remain unchanged.
+
+The source-independent next work is hosted reviewed-worker integration with durable
+checkpoint/reviewer boundaries. It cannot be enabled until verified provider policy
+and source rights exist. Then controlled question import/delivery and private real
+initial+reevaluation E2E across WEB/APP; each supported type needs real evidence.
+[Complete evidence, preservation and next steps](../90_HISTORY/DAILY/2026-10-11.md).
+
+Prior QA metadata was completed in APP4de2125/LABc977493; older sections below that
+call its code missing are historical. Its Production migration and WikiPR#1 remain
+approval-held. WikiPR#2 preserves overnightV2; this update is a separate stacked PR,
+with no merge or rewrite of either existing PR.
+
 ## Quality traceability refinement — 2026-10-10 — PARTIAL
 
 Owner-approved continuation on independent `codex/quality-traceability-refinement`.
