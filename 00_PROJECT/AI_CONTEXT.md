@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Admin quality / LAB preview Oct10
+
+Both requested UI tasks are COMPLETE. Fetch APP/LAB `codex/app-web-ux-cleanup`;
+verified checkpoints APP1bb8569 / LABbf42452 (not permanent HEAD definitions).
+Production6d55736d serves LABbf42452. `/ql/` now reads existing Math RPCs through
+an operator-only selector; 4 initial + 4 reevaluation records verified in actual UI.
+Math review is read-only; no new QA registration, migration or permission change.
+Shared disabled preview buttons replace personal-entry links. Public HOLD, all
+Math evaluation flags OFF, allowlist1 unchanged. No new Provider/Credit transaction.
+[Final evidence](CURRENT_STATUS.md#admin-quality-and-lab-preview--2026-10-10--complete).
+
 ## Restore route — APP WEB UX cleanup Oct10
 
 Fetch APP/LAB `codex/app-web-ux-cleanup`; APPd8a7e7f / LAB015f6e9 are verified
@@ -17,7 +28,7 @@ checkpoints, not permanent HEAD definitions. Login/CTA/LAB/MY Credit/WEB copy an
 refund layout are cleaned. Approved catalog read is separated from evaluation OFF.
 Production015f6e9 deployed; public HOLD, all evaluation flags OFF and allowlist1.
 Android fresh-login catalog/evaluation-OFF read-only UI verified; UX task COMPLETE
-(APP closeout1bb8569). Admin quality/preview follow-up now continues on same branch.
+(APP closeout1bb8569). Admin quality/preview follow-up completed on the same branch; see latest section.
 No new Provider or Credit transaction authorized.
 [Current evidence](CURRENT_STATUS.md#app-web-ux-cleanup--2026-10-10).
 

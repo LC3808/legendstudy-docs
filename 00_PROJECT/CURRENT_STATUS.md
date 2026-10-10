@@ -10,6 +10,44 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Admin quality and LAB preview — 2026-10-10 — COMPLETE
+
+Continued the completed UX branch without rebuilding the earlier feature work.
+LAB `bf424528ffe33eadba27eb3341fc90c423309bfd` is pushed and remotely verified.
+Canonical Pages deployment `6d55736d-8954-4153-bed0-3f58dc8376e1` is SUCCESS
+with this exact source SHA; production browser verification completed.
+
+Empty-list cause: the existing Quality Console read `ql_list_cases` /
+`ql_case_detail` from general `essay_evaluations` (0 records). Math stores its
+results separately: 8 COMPLETED evaluations, comprising 4 initial and 4 linked
+reevaluations. Existing `qlm_quality` list/detail/review_state RPCs already expose
+these records; no separate Quality Case registration or DB migration is needed.
+The new Math selector consumes the verified flat runtime DTO, leaving general
+review behavior intact. Stored answers, rubric results, strengths, missing-feedback
+states, initial/revised comparison and UNREVIEWED state were verified in the actual
+production operator UI. Current Math human judgments: 0. Math UI is read-only;
+existing review history is preserved. University/admission-year metadata is not in
+this read projection and was not invented; no new review-write system was added.
+
+Existing operator membership, verified JWT/account lifecycle checks and RLS remain.
+Direct anon/authenticated SELECT on protected Math/review/operator tables is denied;
+RPC execution still requires the existing operator gate. No permissions were expanded.
+Back uses safe same-origin history or `/admin/` fallback; direct entry and return
+from admin navigation were checked with the authenticated session preserved.
+Both 내신 LAB and 수능 LAB now reuse one gray disabled 서비스 준비 중 button,
+with no href or active hover transform, while keeping service descriptions.
+
+Validation: 151 tests / 14 suites PASS; full ESLint, TypeScript and production
+static build PASS. Actual console/detail and both preview routes at
+360/390/768/1280/1440px have no horizontal overflow; console stacks on mobile and
+retains two columns on desktop. Read-only UI checks confirmed both submitted answers,
+filter and next-unreviewed navigation. No new Provider call, submission, review write,
+Credit transaction, migration, RLS or Payment/Toss/IAP change. CF Math flags remain
+false, DB evaluations_enabled=false and existing single-account allowlist retained.
+Public activation HOLD. APP stays at verified UX closeout1bb8569; no APP main merge
+or store submission. OWNER_ACTION_REQUIRED: NO for these two completed UI tasks.
+Earlier OAuth/clean-install/orphan-recovery and Worker-expiry follow-ups remain separate.
+
 ## APP WEB UX cleanup — 2026-10-10
 
 Owner-approved UI cleanup on `codex/app-web-ux-cleanup`, based on APP938b02b
