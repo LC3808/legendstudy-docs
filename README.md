@@ -48,3 +48,7 @@ Canonical facts live in their canonical repository; this hub **links** to them. 
 ## Public repository — security rule
 
 This repository is **PUBLIC**. It contains **only sanitized** architecture, status, public repo links, commit/migration IDs, and abstract contracts. It must **never** contain passwords, JWTs, access/refresh tokens, `service_role` keys, API keys, credential-file contents, student answer text, student PII, private calibration/reviewer artifacts, or raw provider payloads with private data. See the Security section of [`AI_CONTEXT.md`](00_PROJECT/AI_CONTEXT.md#12-security--privacy-rules).
+
+## Pending local Essay research V2 review
+
+[2026-10-10 overnight implementation and morning report](90_HISTORY/DAILY/2026-10-10-overnight-v2.md). Separate review from unmerged QA metadata PR#1; no production application/publication.
