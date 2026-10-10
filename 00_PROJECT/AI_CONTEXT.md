@@ -10,7 +10,15 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Google Auth / Essay user flow Oct10
 
+Fetch APP/LAB `codex/essay-production-user-flow`. Android Google real OAuth,
+WEB + physical Android/iPhone Math initial and included reevaluation, shared
+History/Credit1 verified. Production9c66fe2 deployed; Math gates OFF/public HOLD.
+Remaining OAuth/clean-install/Profile matrix, orphan recovery and Worker renewal
+are recorded; do not reopen evaluation or treat this as general-public approval.
+[Current cross-repo evidence](CURRENT_STATUS.md#google-auth--essay-user-flow--oct10--partial-real-math-ui-verified)
+→ [APP detail](https://github.com/LC3808/legendstudy-app/blob/codex/essay-production-user-flow/wiki/essay-runtime-activation-2026-10-09.md#google-auth--essay-production-user-flow--2026-10-10).
 
 ## Restore route — Local APP integration Oct10
 
