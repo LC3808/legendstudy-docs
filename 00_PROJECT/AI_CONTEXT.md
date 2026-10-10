@@ -12,6 +12,16 @@ SUPERSEDED_BY: —
 
 
 
+## Restore route — Local APP integration Oct10
+
+Use fetched APP `codex/local-app-integration`; verified closeout `6b003888a8cebd58adf6d7e4e34f630328947688`.
+This combines production-integration, essay-growth-ux and Claude login UI with
+analyze/full tests/Android debug/iOS simulator PASS. Existing local Claude checkout
+and its untracked SDK/cache files were preserved. No new feature or deployment.
+[Current state](CURRENT_STATUS.md#local-app-integration--oct10--complete) →
+[canonical APP evidence](https://github.com/LC3808/legendstudy-app/blob/6b003888a8cebd58adf6d7e4e34f630328947688/wiki/production-integration-2026-10-09.md#local-app-branch-integration--2026-10-10).
+Physical OAuth/first-run/iPhone/Store and remaining native voice/Math gaps stay separate.
+
 ## Essay voice feedback — Owner policy update — 2026-10-09
 
 - Math voice feedback is **OUT OF SCOPE for the first release**. Hide the entire

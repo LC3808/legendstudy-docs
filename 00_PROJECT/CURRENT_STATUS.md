@@ -12,6 +12,26 @@ SUPERSEDED_BY: —
 
 
 
+## Local APP integration — Oct10 — COMPLETE
+
+APP `codex/local-app-integration` at `6b003888a8cebd58adf6d7e4e34f630328947688` is committed, pushed and
+remote-SHA verified. Latest fetched base8e89dfc + essay-growthb0facde +
+Claude loginc11fc84 integrated in that order, without conflicts or reimplementation.
+Flutter3.47.6 analyze PASS; final **1015 tests PASS / 2 existing opt-in skips / 0 failures**;
+Android debug APK and iOS simulator build PASS. Four obsolete baseline search-policy
+assertions were reproduced on8e89dfc and corrected in tests only. Backend contracts,
+Payment/Toss/Credit Ledger, IAP and existing native features are preserved.
+No APP main merge, Store submission or Production deployment.
+
+Next APP starting branch is `codex/local-app-integration` (fetch before use).
+Android Google OAuth console/device acceptance, signed Splash/first-run and iPhone
+physical QA remain separate. Device-once pre-login onboarding and full native Math
+submission/rewrite remain existing gaps. APP voice absent; Math voice excluded from
+first release, humanities/economics in scope, science gated. IAP sandbox/refund gates
+remain. Owner actions concern subsequent OAuth/device/release acceptance, not this merge.
+[Canonical integration evidence](https://github.com/LC3808/legendstudy-app/blob/6b003888a8cebd58adf6d7e4e34f630328947688/wiki/production-integration-2026-10-09.md#local-app-branch-integration--2026-10-10);
+[closeout history](../90_HISTORY/DAILY/2026-10-09.md#local-app-branch-integration--2026-10-10).
+
 ## Essay voice feedback — Owner policy update — 2026-10-09
 
 - Math voice feedback is **OUT OF SCOPE for the first release**. Hide the entire
