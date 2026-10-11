@@ -10,6 +10,20 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Oct11 Demand data integration — COMPLETE / LIVE
+
+Recovered44 university/campus research rows and linked all42 existing Catalog IDs.
+Source workbook itself marks every statistic officially unverified; no draft count
+or rate is exposed as official. Separate Owner22 sequence now replaces the unknown
+alphabetical fallback: Gachon→Cau→SKKU. Korea Sejong/Yonsei Mirae records remain
+separate; no campus sums.42/49,30 preparation,22 focus and existing UI preserved.
+Source provenance, verification state and current policy are recorded in APP631eb65.
+Production source2f22fe6 / Pagesff21b878 succeeded2026-10-11T03:10:03.465758Z;
+LAB closeout ad4ea67.117 WEB files/1041 PASS,1 optional skip; lint/types/build/audits
+PASS. Live42/Owner22/tail2/search/filters/detail/mobile verified. Public AI HOLD and
+config/allowlist unchanged; no DB/Provider/Credit operations. Rollback28e4c1ff/00106fb.
+[Canonical source and release record](https://github.com/LC3808/legendstudy-app/blob/631eb65/wiki/essay-full-service-implementation-20261011.md#oct11-demand-data-integration--owner-policy-correction).
+
 ## Oct11 Catalog sorting correction — LIVE / statistics unavailable
 
 Default service-priority groups preserve fixed22 ahead of additional/future cohorts;
