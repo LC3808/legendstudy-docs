@@ -10,6 +10,47 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Oct11 runtime + national catalog continuation — PARTIAL
+
+Verified continuation checkpoints (not permanent HEAD definitions):
+APP [8aee844](https://github.com/LC3808/legendstudy-app/commit/8aee844249dbbeac8b680d527771656f6405b45d),
+LAB [3744171](https://github.com/LC3808/legendstudy-lab/commit/37441710d7061fe2bfc4a0bdea40dece6e17f9fd).
+Both pushed; exact `git ls-remote` SHA matched. Existing working branches preserved.
+[UI/runtime/catalog evidence](https://github.com/LC3808/legendstudy-app/blob/8aee844249dbbeac8b680d527771656f6405b45d/wiki/essay-full-service-implementation-20261011.md)
+and [activation impact/rollback packet](https://github.com/LC3808/legendstudy-app/blob/8aee844249dbbeac8b680d527771656f6405b45d/supabase/verification/essay_service/runtime-integration-review.md).
+
+Continuing `codex/essay-full-service-implementation` in APP/LAB/DOCS; no restart or
+reimplementation of QA metadata/native UI. Source checkpoints at start were
+APP9081ee8/LABa942aa7/DOCSc50d6d4, re-fetched and verified.
+
+- Existing reviewed Python worker now has private WSGI admission/evaluate adapter
+  and Pages HTTPS/service-binding transport. Rights/graph/provider/reviewer/journal
+  preflight fails closed before reservations; durable finalize replay avoids repeats.
+  Actual host dependency composition, deployment and Auth/PostgREST proof are pending.
+- Sep28 APP f153c43/ebbc43c UX mapped to WEB:42:58, mobile tabs, approved result order,
+  five-level status/star/details, direct rewrite, collapsed differentiated examples.
+  Shared MY results compare only actual previous evaluation with identical pins.
+  In-page official passages/figures and real Provider feedback quality remain pending.
+- 42-university public read model from retained Manus V2,49 verified offerings after
+  LSL27-052 quarantine;27 exact existing DB UUID matches/15 null. Source IDs and
+  campus offerings retained, no duplicate DB catalog/WEB identity or CORE promotion.
+  Five sample discovery list removed; search/region/type/admission-year/pagination
+  and common details connected.2027 admissions never become invented2027 exam content.
+- Read-only actual state: general questions/evaluations0; Math COMPLETED8/FAILED1.
+  Anonymous PostgREST question read200/0, active verified exams200/21. Existing Math
+  remains separate. Localhost Auth boundary intentionally closed, not bypassed.
+- Cloudflare current Production501d272/deploymenta2e09fea; Math gatesfalse, general
+  runtime/recovery unset, allowlist retained. Worker secret opaque; JWT validity not
+  confirmed. No production deployment while paired QA metadata migration is pending.
+- Python26 synthetic-transport tests PASS; full WEB1014 PASS +1 optional source skip,
+  lint/typecheck/boundaries/Node22 build PASS. Catalog/detail6 widths no overflow;
+  catalog/detail200% root-font simulation passes. Authenticated result visual E2E pending.
+- No new Provider call, Credit transaction, DB apply, device QA, main merge or store
+  release. General public HOLD. Existing QA metadata/recovery migrations and Wiki
+  PR#1/#2 remain held; PR#3 remains stacked. Current APP Wiki records UI correspondence
+  and `supabase/verification/essay_service/runtime-integration-review.md` gives
+  activation prerequisites, impacts and rollback. Production and real E2E are NOT PASS.
+
 ## Essay full service — 2026-10-11 — PARTIAL
 
 Owner's Oct10 full-service directive continues past V2 preview; safe implementation
