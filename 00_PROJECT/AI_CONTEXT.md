@@ -10,7 +10,33 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Oct11 university scope correction + Production Catalog — COMPLETE
+## Oct11 Catalog/detail UX final refinement — COMPLETE / PRODUCTION VERIFIED
+
+Owner final policy: public42 universities/49 offerings, retained30 preparation,
+fixed22 focus universities,GroupA4/B18.22+Seoul optionalview32; no verified applicant
+counts/rates, so no fabricated8000 threshold or statistical ranking. Default name order.
+Existing source IDs/campuses/year scopes,27 UUIDs/15 nulls and original dates retained.
+
+Cards/detail now use structured admissions facts, distinct question/source sections,
+Navy CTA, truthful disabled state, responsive4/2/1 grid. Existing52 Master records and
+10 Manus research entries/27 official reference links reused. Unresolved source notes
+are excluded from public facts; private originals and Evidence Packages preserved.
+
+Production source LAB `d39cb5b29565ae48ccd31188402d347e72145388`, Pages
+`437bd406-9afe-4a5c-80da-98d098802ac9` successful2026-10-11T02:10:07.770175Z.
+Live catalog/search/filters/Konkuk/Eulji/mobile verified;6 widths and200% text simulation
+checked. WEB1022 + Python5 PASS,1 optional skip; lint/types/build/boundary/audit PASS.
+Exact env maps unchanged, no DB/Provider/Credit transaction. Public AI **HOLD**.
+Rollback prior UI `9d802cb2-13c8-42b1-8909-6c2bcccde573`/`35fd8f9`.
+APP `54cbfef` and LAB documentation `2fc7d15` closeout; no native UI/device work.
+
+[Canonical full release evidence and verification limits](https://github.com/LC3808/legendstudy-app/blob/54cbfef388adf69b4ebf85c113ac2293d74f2be0/wiki/essay-full-service-implementation-20261011.md#oct11-catalogdetail-ux-final-refinement--complete).
+[Named22 policy and preserved30 readiness matrix](https://github.com/LC3808/legendstudy-app/blob/54cbfef388adf69b4ebf85c113ac2293d74f2be0/wiki/roadmap-essay-lab.md#2026-10-11-owner-final-policy--22-focus--30-retained--42-public).
+UI release needs no Owner action. Official Humanities runtime remains PARTIAL;
+metadata/recovery migration approval and Wiki PR#1 remain unchanged separate gates.
+Prior checkpoints below are historical and do not override this Owner22 policy.
+
+## Prior Oct11 scope correction + Catalog release — historical
 
 Latest Owner decision supersedes the historical10–15 Core size: **service preparation
 minimum20, metropolitan minimum15, Pusan and Kyungpook mandatory; no upper cap**.
