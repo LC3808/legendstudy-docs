@@ -10,6 +10,204 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Oct11 Demand data integration — COMPLETE / LIVE
+
+Recovered44 university/campus research rows and linked all42 existing Catalog IDs.
+Source workbook itself marks every statistic officially unverified; no draft count
+or rate is exposed as official. Separate Owner22 sequence now replaces the unknown
+alphabetical fallback: Gachon→Cau→SKKU. Korea Sejong/Yonsei Mirae records remain
+separate; no campus sums.42/49,30 preparation,22 focus and existing UI preserved.
+Source provenance, verification state and current policy are recorded in APP631eb65.
+Production source2f22fe6 / Pagesff21b878 succeeded2026-10-11T03:10:03.465758Z;
+LAB closeout ad4ea67.117 WEB files/1041 PASS,1 optional skip; lint/types/build/audits
+PASS. Live42/Owner22/tail2/search/filters/detail/mobile verified. Public AI HOLD and
+config/allowlist unchanged; no DB/Provider/Credit operations. Rollback28e4c1ff/00106fb.
+[Canonical source and release record](https://github.com/LC3808/legendstudy-app/blob/631eb65/wiki/essay-full-service-implementation-20261011.md#oct11-demand-data-integration--owner-policy-correction).
+
+## Oct11 Catalog sorting correction — LIVE / statistics unavailable
+
+Default service-priority groups preserve fixed22 ahead of additional/future cohorts;
+Kangnam/Eulji last, all42/49 retained. Four sort options/search/filters verified live.
+Verified2027 applicant/rate totals remain absent: unknowns sort alphabetically within
+groups. Exact Gachon→Cau→SKKU numeric ranking is NOT claimed. Public AI HOLD;
+Production flags/allowlist unchanged.1034 WEB PASS/1 optional skip, lint/types/build,
+6 widths and local200% text simulation verified. Source00106fb, Pages28e4c1ff
+success2026-10-11T03:01:04.376194Z; rollback997c9086/2fa8af7. APP Wiki e52c122,
+LAB closeout e4ea542. No DB/Credit/Provider/device operations.
+[Canonical policy and release limits](https://github.com/LC3808/legendstudy-app/blob/e52c122/wiki/essay-full-service-implementation-20261011.md#oct11-catalog-sorting-correction--live--statistics-unavailable).
+
+## Oct11 university visual fidelity — UI DEPLOYED / logo1 pending
+
+Owner target image applied to catalog/detail: official logo/region top row, colored
+essay types, three icon status rows, black CTA and aligned search/filter controls.
+41/42 official assets verified with source URL/date/hash; Sogang temporary monogram.
+Original logo variants and source-backed labels take precedence over mockup details.
+42/49 public,30 preparation,22 focus retained; no invented applicant/rate sorting.
+
+Deployment LAB `2fa8af7f0794f9f0a2e13225f42b8ede9d6db8c9`, Pages
+`997c9086-0147-4fd4-9cac-a7d56990e85c`, successful2026-10-11T02:47:15.580263Z.
+Live domain and reference-versus-actual screenshots verified;360–1440px4/2/1 and
+200% text-size simulation no overflow.1026 WEB +5 Python PASS,1 optional skip;
+lint/types/build/audits PASS. Allowlist/env maps unchanged; no DB/Credit/Provider
+transaction, no mobile debugging. General AI **HOLD**. Overall PARTIAL for one logo
+only; UI implementation/deployment complete. No Owner action needed for this release.
+APP `819cf13`, LAB docs `0a5a30a` closeout; rollback previous `437bd406`/`d39cb5b`.
+[Canonical reference, logo policy and full evidence](https://github.com/LC3808/legendstudy-app/blob/819cf13/wiki/essay-full-service-implementation-20261011.md#oct11-university-catalog-visual-fidelity--ui-live--logo1-pending).
+
+## Oct11 Catalog/detail UX final refinement — COMPLETE / PRODUCTION VERIFIED
+
+Owner final policy: public42 universities/49 offerings, retained30 preparation,
+fixed22 focus universities,GroupA4/B18.22+Seoul optionalview32; no verified applicant
+counts/rates, so no fabricated8000 threshold or statistical ranking. Default name order.
+Existing source IDs/campuses/year scopes,27 UUIDs/15 nulls and original dates retained.
+
+Cards/detail now use structured admissions facts, distinct question/source sections,
+Navy CTA, truthful disabled state, responsive4/2/1 grid. Existing52 Master records and
+10 Manus research entries/27 official reference links reused. Unresolved source notes
+are excluded from public facts; private originals and Evidence Packages preserved.
+
+Production source LAB `d39cb5b29565ae48ccd31188402d347e72145388`, Pages
+`437bd406-9afe-4a5c-80da-98d098802ac9` successful2026-10-11T02:10:07.770175Z.
+Live catalog/search/filters/Konkuk/Eulji/mobile verified;6 widths and200% text simulation
+checked. WEB1022 + Python5 PASS,1 optional skip; lint/types/build/boundary/audit PASS.
+Exact env maps unchanged, no DB/Provider/Credit transaction. Public AI **HOLD**.
+Rollback prior UI `9d802cb2-13c8-42b1-8909-6c2bcccde573`/`35fd8f9`.
+APP `54cbfef` and LAB documentation `2fc7d15` closeout; no native UI/device work.
+
+[Canonical full release evidence and verification limits](https://github.com/LC3808/legendstudy-app/blob/54cbfef388adf69b4ebf85c113ac2293d74f2be0/wiki/essay-full-service-implementation-20261011.md#oct11-catalogdetail-ux-final-refinement--complete).
+[Named22 policy and preserved30 readiness matrix](https://github.com/LC3808/legendstudy-app/blob/54cbfef388adf69b4ebf85c113ac2293d74f2be0/wiki/roadmap-essay-lab.md#2026-10-11-owner-final-policy--22-focus--30-retained--42-public).
+UI release needs no Owner action. Official Humanities runtime remains PARTIAL;
+metadata/recovery migration approval and Wiki PR#1 remain unchanged separate gates.
+Prior checkpoints below are historical and do not override this Owner22 policy.
+
+## Prior Oct11 scope correction + Catalog release — historical
+
+Latest Owner decision supersedes the historical10–15 Core size: **service preparation
+minimum20, metropolitan minimum15, Pusan and Kyungpook mandatory; no upper cap**.
+Existing Manus30-university inventory restored in full, not an invented top20 list.
+Previous11 was10 deeply researched entries + Pusan, an incorrect planning reduction;
+no11-entry code filter existed. All11 preserved and19 omitted candidates restored.
+Current30 =28 unique metropolitan + Pusan/Kyungpook. Seoul offerings21 and
+Gyeonggi/Incheon offerings11 overlap at4 universities. Gangnam/Eulji special-format
+deferral and all42 Public Catalog universities/49 offerings remain intact.
+
+[Canonical30-university A–H readiness matrix, sources/types and correction rationale](https://github.com/LC3808/legendstudy-app/blob/00d877f522ea472f88a3c47980b632c5fd36e8c6/wiki/roadmap-essay-lab.md#2026-10-11-owner-scope-correction--current-service-preparation-scope).
+Available records did not contain the complete earlier expanded named approval list;
+no retrospective approval is fabricated. Current Owner correction is authoritative.
+A-stage scope is independent of official source, question, rubric, package, Worker,
+Provider and public activation stages. Missing evidence never removes an A-stage row.
+All30 have preserved official admissions links;10 detailed research records;5 scoped
+inner-content/rubric findings;3 retained historical private packages. SKKU2025 alone
+has the currently wired local3-question/9-criterion package; Q1 first runtime target,
+Q2/Q3 graph-blocked. Actual official Humanities production Worker/Provider-ready0;
+existing historical pilots and Math E2E are preserved, not relabelled as new proof.
+
+**Production deployed** https://lab.legendstudy.com/essay-lab/ : Pages
+`9d802cb2-13c8-42b1-8909-6c2bcccde573`, source
+`35fd8f97aa791aeb2bdc855c8c06a3ab7a22f867`, success2026-10-11T01:30:33Z.
+Live42 distinct universities/4 pages, search, region/type/admission-year filters,
+campus-preserving common detail, official source hrefs and accurate question empty
+states verified. Math19/economics0 follow verified public mappings, no inferred engine.
+6 live widths360/375/390/768/1280/1440 no overflow (catalog/Pusan detail); separate
+built-copy200% text simulation passes catalog/Kyungpook detail at all6 widths.
+WEB1016 PASS/1 optional private-fixture skip; lint/types/boundary/audit/webpack build PASS.
+
+Production environment/allowlist exactly unchanged before/after. Math flags false;
+reviewed-runtime/recovery flags unset. Read-only postflight Math8 COMPLETED/1 FAILED,
+general questions/evaluations0. No Provider/Credit/DB/native-device work. Anonymous
+command-line admission request was Cloudflare403 before app code, not application E2E.
+Default-closed behavior supported by unchanged configuration, UI and regression tests.
+No migration needed: optional quality metadata accepts legacy RPC/cursor responses.
+Pending metadata/recovery migrations and Wiki PR#1 remain unapproved/unmerged.
+The earlier deployment hold is superseded only for this Owner-authorized migration-free
+Catalog release. **General AI public activation HOLD.** Payment/Toss/IAP/Credit preserved.
+
+Checkpoints: APP [00d877f](https://github.com/LC3808/legendstudy-app/commit/00d877f522ea472f88a3c47980b632c5fd36e8c6),
+LAB [11421ab](https://github.com/LC3808/legendstudy-lab/commit/11421ab6ff719f61130107d7202eaed765316400)
+(documentation closeout after deployed35fd8f9). Both pushed and exact remote SHA verified;
+all repos remain `codex/essay-full-service-implementation`. No main merge or force push.
+Rollback target Pagesa2e09fea/501d272, no DB rollback needed; not executed.
+[Release evidence](https://github.com/LC3808/legendstudy-app/blob/00d877f522ea472f88a3c47980b632c5fd36e8c6/wiki/essay-full-service-implementation-20261011.md).
+
+## Historical pre-release Oct11 runtime/catalog checkpoint — PARTIAL
+
+Verified continuation checkpoints (not permanent HEAD definitions):
+APP [8aee844](https://github.com/LC3808/legendstudy-app/commit/8aee844249dbbeac8b680d527771656f6405b45d),
+LAB [3744171](https://github.com/LC3808/legendstudy-lab/commit/37441710d7061fe2bfc4a0bdea40dece6e17f9fd).
+Both pushed; exact `git ls-remote` SHA matched. Existing working branches preserved.
+[UI/runtime/catalog evidence](https://github.com/LC3808/legendstudy-app/blob/8aee844249dbbeac8b680d527771656f6405b45d/wiki/essay-full-service-implementation-20261011.md)
+and [activation impact/rollback packet](https://github.com/LC3808/legendstudy-app/blob/8aee844249dbbeac8b680d527771656f6405b45d/supabase/verification/essay_service/runtime-integration-review.md).
+
+Continuing `codex/essay-full-service-implementation` in APP/LAB/DOCS; no restart or
+reimplementation of QA metadata/native UI. Source checkpoints at start were
+APP9081ee8/LABa942aa7/DOCSc50d6d4, re-fetched and verified.
+
+- Existing reviewed Python worker now has private WSGI admission/evaluate adapter
+  and Pages HTTPS/service-binding transport. Rights/graph/provider/reviewer/journal
+  preflight fails closed before reservations; durable finalize replay avoids repeats.
+  Actual host dependency composition, deployment and Auth/PostgREST proof are pending.
+- Sep28 APP f153c43/ebbc43c UX mapped to WEB:42:58, mobile tabs, approved result order,
+  five-level status/star/details, direct rewrite, collapsed differentiated examples.
+  Shared MY results compare only actual previous evaluation with identical pins.
+  In-page official passages/figures and real Provider feedback quality remain pending.
+- 42-university public read model from retained Manus V2,49 verified offerings after
+  LSL27-052 quarantine;27 exact existing DB UUID matches/15 null. Source IDs and
+  campus offerings retained, no duplicate DB catalog/WEB identity or CORE promotion.
+  Five sample discovery list removed; search/region/type/admission-year/pagination
+  and common details connected.2027 admissions never become invented2027 exam content.
+- Read-only actual state: general questions/evaluations0; Math COMPLETED8/FAILED1.
+  Anonymous PostgREST question read200/0, active verified exams200/21. Existing Math
+  remains separate. Localhost Auth boundary intentionally closed, not bypassed.
+- Cloudflare current Production501d272/deploymenta2e09fea; Math gatesfalse, general
+  runtime/recovery unset, allowlist retained. Worker secret opaque; JWT validity not
+  confirmed. No production deployment while paired QA metadata migration is pending.
+- Python26 synthetic-transport tests PASS; full WEB1014 PASS +1 optional source skip,
+  lint/typecheck/boundaries/Node22 build PASS. Catalog/detail6 widths no overflow;
+  catalog/detail200% root-font simulation passes. Authenticated result visual E2E pending.
+- No new Provider call, Credit transaction, DB apply, device QA, main merge or store
+  release. General public HOLD. Existing QA metadata/recovery migrations and Wiki
+  PR#1/#2 remain held; PR#3 remains stacked. Current APP Wiki records UI correspondence
+  and `supabase/verification/essay_service/runtime-integration-review.md` gives
+  activation prerequisites, impacts and rollback. Production and real E2E are NOT PASS.
+
+## Essay full service — 2026-10-11 — PARTIAL
+
+Owner's Oct10 full-service directive continues past V2 preview; safe implementation
+committed and remote verified on separate `codex/essay-full-service-implementation`.
+APP `9081ee85e849c05b884a9a64e0743ae0429598a0`; LAB `a942aa7f828979a1225b566bbb88ff57b194f9c5`.
+Production apply/public activation are not authorized by this implementation result.
+
+- Reused frozen SKKU2025 인문1:3 questions,9 numbered official dimensions,21 source
+  excerpts/34 per-question mappings,1 package; exact source PDF/hash/locator preserved.
+  Transactional isolated import, immutable conflicts rejected, publication false.
+- General runtime Production catalog still0 questions/criteria/evidence (read-only
+  verified). Previous8 Math evaluations/4 pairs are separate preserved data.
+- Existing WEB catalog + authenticated Draft/CAS/Submit/result/history/direct rewrite
+  connected. Private server worker admission default CLOSED; only confirmed failed,
+  no-Credit-consumed requests get a new retry key. Same-key unknown retry preserved.
+- Hosted worker service binding is not implemented/provisioned. Student passages/
+  figures are not published; Q2/Q3 graph input is rejected by current text-worker
+  adapter. No official-content real Provider E2E for any new type is claimed.
+- Recovery gateway uses existing single-job RPC. Bounded batch migration prepared,
+  backup/ACL/dependency/fingerprint/rollback reviewed; Cron not installed. No Ledger
+  policy, RLS, Auth, Payment/Toss/IAP, QA metadata or existing output modification.
+- Validation: isolated PG19 content +21 recovery assertions; WEB96 PASS/1 optional
+  privateV2 bundle skip; lint/typecheck/boundary audit/Webpack export PASS. Guest
+  browser360/390/768/1280 no overflow. No authenticated browser E2E/200% acceptance.
+- Real Provider calls0; Production Credit transactions0; Production writes0;
+  deployments0; native/device work0. HOLD and current allowlist remain unchanged.
+
+The source-independent next work is hosted reviewed-worker integration with durable
+checkpoint/reviewer boundaries. It cannot be enabled until verified provider policy
+and source rights exist. Then controlled question import/delivery and private real
+initial+reevaluation E2E across WEB/APP; each supported type needs real evidence.
+[Complete evidence, preservation and next steps](../90_HISTORY/DAILY/2026-10-11.md).
+
+Prior QA metadata was completed in APP4de2125/LABc977493; older sections below that
+call its code missing are historical. Its Production migration and WikiPR#1 remain
+approval-held. WikiPR#2 preserves overnightV2; this update is a separate stacked PR,
+with no merge or rewrite of either existing PR.
+
 ## Quality traceability refinement — 2026-10-10 — PARTIAL
 
 Owner-approved continuation on independent `codex/quality-traceability-refinement`.
