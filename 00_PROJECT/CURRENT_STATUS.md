@@ -10,7 +10,56 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Oct11 runtime + national catalog continuation — PARTIAL
+## Oct11 university scope correction + Production Catalog — COMPLETE
+
+Latest Owner decision supersedes the historical10–15 Core size: **service preparation
+minimum20, metropolitan minimum15, Pusan and Kyungpook mandatory; no upper cap**.
+Existing Manus30-university inventory restored in full, not an invented top20 list.
+Previous11 was10 deeply researched entries + Pusan, an incorrect planning reduction;
+no11-entry code filter existed. All11 preserved and19 omitted candidates restored.
+Current30 =28 unique metropolitan + Pusan/Kyungpook. Seoul offerings21 and
+Gyeonggi/Incheon offerings11 overlap at4 universities. Gangnam/Eulji special-format
+deferral and all42 Public Catalog universities/49 offerings remain intact.
+
+[Canonical30-university A–H readiness matrix, sources/types and correction rationale](https://github.com/LC3808/legendstudy-app/blob/00d877f522ea472f88a3c47980b632c5fd36e8c6/wiki/roadmap-essay-lab.md#2026-10-11-owner-scope-correction--current-service-preparation-scope).
+Available records did not contain the complete earlier expanded named approval list;
+no retrospective approval is fabricated. Current Owner correction is authoritative.
+A-stage scope is independent of official source, question, rubric, package, Worker,
+Provider and public activation stages. Missing evidence never removes an A-stage row.
+All30 have preserved official admissions links;10 detailed research records;5 scoped
+inner-content/rubric findings;3 retained historical private packages. SKKU2025 alone
+has the currently wired local3-question/9-criterion package; Q1 first runtime target,
+Q2/Q3 graph-blocked. Actual official Humanities production Worker/Provider-ready0;
+existing historical pilots and Math E2E are preserved, not relabelled as new proof.
+
+**Production deployed** https://lab.legendstudy.com/essay-lab/ : Pages
+`9d802cb2-13c8-42b1-8909-6c2bcccde573`, source
+`35fd8f97aa791aeb2bdc855c8c06a3ab7a22f867`, success2026-10-11T01:30:33Z.
+Live42 distinct universities/4 pages, search, region/type/admission-year filters,
+campus-preserving common detail, official source hrefs and accurate question empty
+states verified. Math19/economics0 follow verified public mappings, no inferred engine.
+6 live widths360/375/390/768/1280/1440 no overflow (catalog/Pusan detail); separate
+built-copy200% text simulation passes catalog/Kyungpook detail at all6 widths.
+WEB1016 PASS/1 optional private-fixture skip; lint/types/boundary/audit/webpack build PASS.
+
+Production environment/allowlist exactly unchanged before/after. Math flags false;
+reviewed-runtime/recovery flags unset. Read-only postflight Math8 COMPLETED/1 FAILED,
+general questions/evaluations0. No Provider/Credit/DB/native-device work. Anonymous
+command-line admission request was Cloudflare403 before app code, not application E2E.
+Default-closed behavior supported by unchanged configuration, UI and regression tests.
+No migration needed: optional quality metadata accepts legacy RPC/cursor responses.
+Pending metadata/recovery migrations and Wiki PR#1 remain unapproved/unmerged.
+The earlier deployment hold is superseded only for this Owner-authorized migration-free
+Catalog release. **General AI public activation HOLD.** Payment/Toss/IAP/Credit preserved.
+
+Checkpoints: APP [00d877f](https://github.com/LC3808/legendstudy-app/commit/00d877f522ea472f88a3c47980b632c5fd36e8c6),
+LAB [11421ab](https://github.com/LC3808/legendstudy-lab/commit/11421ab6ff719f61130107d7202eaed765316400)
+(documentation closeout after deployed35fd8f9). Both pushed and exact remote SHA verified;
+all repos remain `codex/essay-full-service-implementation`. No main merge or force push.
+Rollback target Pagesa2e09fea/501d272, no DB rollback needed; not executed.
+[Release evidence](https://github.com/LC3808/legendstudy-app/blob/00d877f522ea472f88a3c47980b632c5fd36e8c6/wiki/essay-full-service-implementation-20261011.md).
+
+## Historical pre-release Oct11 runtime/catalog checkpoint — PARTIAL
 
 Verified continuation checkpoints (not permanent HEAD definitions):
 APP [8aee844](https://github.com/LC3808/legendstudy-app/commit/8aee844249dbbeac8b680d527771656f6405b45d),
