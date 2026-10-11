@@ -10,6 +10,24 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Oct11 university visual fidelity — UI DEPLOYED / logo1 pending
+
+Owner target image applied to catalog/detail: official logo/region top row, colored
+essay types, three icon status rows, black CTA and aligned search/filter controls.
+41/42 official assets verified with source URL/date/hash; Sogang temporary monogram.
+Original logo variants and source-backed labels take precedence over mockup details.
+42/49 public,30 preparation,22 focus retained; no invented applicant/rate sorting.
+
+Deployment LAB `2fa8af7f0794f9f0a2e13225f42b8ede9d6db8c9`, Pages
+`997c9086-0147-4fd4-9cac-a7d56990e85c`, successful2026-10-11T02:47:15.580263Z.
+Live domain and reference-versus-actual screenshots verified;360–1440px4/2/1 and
+200% text-size simulation no overflow.1026 WEB +5 Python PASS,1 optional skip;
+lint/types/build/audits PASS. Allowlist/env maps unchanged; no DB/Credit/Provider
+transaction, no mobile debugging. General AI **HOLD**. Overall PARTIAL for one logo
+only; UI implementation/deployment complete. No Owner action needed for this release.
+APP `819cf13`, LAB docs `0a5a30a` closeout; rollback previous `437bd406`/`d39cb5b`.
+[Canonical reference, logo policy and full evidence](https://github.com/LC3808/legendstudy-app/blob/819cf13/wiki/essay-full-service-implementation-20261011.md#oct11-university-catalog-visual-fidelity--ui-live--logo1-pending).
+
 ## Oct11 Catalog/detail UX final refinement — COMPLETE / PRODUCTION VERIFIED
 
 Owner final policy: public42 universities/49 offerings, retained30 preparation,
