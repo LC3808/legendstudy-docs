@@ -10,6 +10,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Oct11 Catalog sorting correction — LIVE / statistics unavailable
+
+Default service-priority groups preserve fixed22 ahead of additional/future cohorts;
+Kangnam/Eulji last, all42/49 retained. Four sort options/search/filters verified live.
+Verified2027 applicant/rate totals remain absent: unknowns sort alphabetically within
+groups. Exact Gachon→Cau→SKKU numeric ranking is NOT claimed. Public AI HOLD;
+Production flags/allowlist unchanged.1034 WEB PASS/1 optional skip, lint/types/build,
+6 widths and local200% text simulation verified. Source00106fb, Pages28e4c1ff
+success2026-10-11T03:01:04.376194Z; rollback997c9086/2fa8af7. APP Wiki e52c122,
+LAB closeout e4ea542. No DB/Credit/Provider/device operations.
+[Canonical policy and release limits](https://github.com/LC3808/legendstudy-app/blob/e52c122/wiki/essay-full-service-implementation-20261011.md#oct11-catalog-sorting-correction--live--statistics-unavailable).
+
 ## Oct11 university visual fidelity — UI DEPLOYED / logo1 pending
 
 Owner target image applied to catalog/detail: official logo/region top row, colored
