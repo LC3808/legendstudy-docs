@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Full essay integration continuation — 2026-10-13 — PARTIAL
+
+APP98b235f/LAB146727f pushed/remote verified. Canonical account text Draft/CAS
+connection added to Native+WEB, optional text-image attachment; source-only/photos
+stay local. Production general questions0: live cross-device sync/new eval NOT verified.
+Registration review76exam-subject/234questions,1/3 held; local PG17 apply/replay/rollback
+PASS. Unpublished review SQL NOT applied. WEB1080PASS/1SKIP+2boundary checks,
+APP46PASS/analyze/APK/iOS,lint/types/build PASS. Pagesdd8a45d0 SUCCESS, config unchanged.
+Full package verification, mounted exam runtime/History/growth/QA remain development
+work; real Credit/migration/public launch held. [Evidence](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct13-canonical-draft-and-registration-continuation--partial).
+
 ## Overnight exam contract continuation — 2026-10-12 — LOCAL PARTIAL
 
 APP50632ee/LABd0b812b pushed and remote verified. Local atomic exam Credit SQL,

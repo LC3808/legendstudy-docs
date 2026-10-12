@@ -372,3 +372,80 @@ fingerprint/ownership review and a formal migration package are ready, request
 production migration/test-account Credit E2E authorization. The present candidate
 must NOT be applied. Public evaluation stays HOLD. Existing Math, Credit History,
 Payment/Toss/IAP and source corpus remain unchanged.
+
+## Oct13 canonical Draft and registration continuation — PARTIAL
+
+Owner full-service continuation preserved all existing21 source universities,
+77 exam/subject selection records and237 answer slots, source IDs,42/49 Public
+Catalog,30 retained and22 priority universities. Original ZIP/PDF untouched and
+not committed. The1030-PDF/581-candidate corpus is not fully verified: prior9 whole
+groups reviewed/572 remain; this continuation adds no approved Evaluation Package.
+
+### Implemented and verified
+
+- APP `98b235fe1509e3848ae228f19fab7450b6058056`, LAB
+  `146727f7c6db6ba94e96a92e81ffa4ea38613258`, existing branch
+  `codex/essay-shared-app-integration`, pushed and remote SHA matched.
+- Native and WEB source writers reuse existing `essay_open_session` and
+  `essay_save_draft` for canonical question UUIDs and the same account/question
+  default session identity. Restore/save with revision checks, local-first
+  persistence and conflict protection. Different nonempty answers are preserved
+  for comparison, never silently overwritten. Guest/source-only drafts stay local.
+  Native saves after canonical open; WEB uses explicit account-save. 20,000-character
+  server limit is enforced without truncating30,000-character local drafts.
+- Text-first questions can attach an optional image; natural/math remains image-first.
+  Current image Draft is one per question, local only, not cross-device evidence.
+- Public Catalog joins exact published source question keys to canonical UUIDs,
+  using anonymous RLS and only the existing project publishable key. Cross-project,
+  ambiguous or inconsistent exam/year/university mappings fail closed. Worker/user
+  credentials are not sent. This does not infer evaluation readiness.
+- Read-only Production baseline:51 DB university rows (includes nonpublic rows),
+  22 exams,0 general questions. These counts differ from the42-university Public Catalog.
+- LAB registration review:76 exam/subject records (74new,2preserved),234question
+  metadata rows; Yonsei2025 additional-natural1exam/3questions held. The extracted
+  body does not disambiguate the existing additional exam; no filename-only merge.
+  Stable candidate UUIDs do not change source keys or existing DB IDs.
+- Exact registration/rollback SQL and manifest are under
+  `scripts/essay-materials/sql/registration-review/`. Unpublished/inactive DML only,
+  no new tables/grants/RLS/Credit changes. NOT applied or promoted to production
+  migration. Registration alone does not authorize publication, Draft or evaluation.
+  Owner apply package still requires source/provenance/rights review and the canonical
+  APP migration procedure. Never apply these files as service activation.
+
+### Tests
+
+WEB full suite1080PASS/1conditional SKIP, plus2 added anonymous transport-boundary
+checks PASS; lint/typecheck/boundary/static build PASS. Flutter3.47.6 analyze PASS,
+46 related tests PASS, Android debug APK and iOS Simulator PASS. Three registration
+generator tests PASS. Disposable PostgreSQL17 with actual15 legacy prerequisites:
+registration replay, unpublished state, edited rollback refusal and exact22-exam
+baseline restoration PASS. Test fixtures are local, not operating student data.
+Prior exam billing12SQL/15Worker tests remain local synthetic evidence, not real E2E.
+
+### Deployment and limits
+
+Pages Production `dd8a45d0-564f-47ea-978e-12cb802429bc` SUCCESS at LAB146727f;
+Cloudflare deployment configuration exactly unchanged. Rollback deployment
+`ed6e37f9-5f84-42ab-acc2-a2cb67d43d0b` at9a28856. No Git main merge, APP store release,
+Production DB migration, actual Credit transaction or new Provider evaluation.
+
+Live browser QA PASS: all21 source university routes,77 exam/subject selectors,
+237 question tabs; text/photo restore and question isolation; disabled submission
+GATE;360/375/390/768/1280/1440px at100%/200% no horizontal overflow. Mobile screenshots
+visually inspected for humanities and photo-first math. Read-only live API confirms
+21/77/237, canonicalQuestions0, evaluationReady0. Guest/local Draft tests only;
+no Provider/Credit calls or physical device QA.
+
+Live cross-device Draft is NOT verified: production canonical questions remain0.
+EvaluationReady0; new-source submission stays disabled. Current implementation is
+not full essay service completion. Remaining development: full source/Rubric/evidence
+and rights verification; Yonsei identity reconciliation; exam runtime lifecycle,
+least-privilege authorization, durable journal/recovery and reviewed whole-exam
+synthesis; mounted exam submit/result/reevaluation; shared exam History/growth,
+admin QA and erasure adapters; photo cloud Draft. These are not approval-only gaps.
+
+Separate approval holds: production registration/migration only after complete
+review package, approved-account actual Provider/Credit E2E, public activation and
+store submission. No broad approval is requested as a substitute for unfinished
+implementation. Math, existing Ledger/History/QA, Payment/Toss/IAP remain unchanged.
+Public AI evaluation remains HOLD.
