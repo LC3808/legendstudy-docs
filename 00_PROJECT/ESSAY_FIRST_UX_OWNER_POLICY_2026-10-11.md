@@ -85,3 +85,11 @@ Worker HTTP 402/422 오류 매핑, APP/LAB Catalog 정책 일치는 **미해결 
 - 배포: LAB `codex/essay-first-web-phase1` @ `b6c784e7458cbc54c3e28fffafd7f349b0474544`, Production Pages `262ca551-64d2-4f3a-ba5e-07edbbb92bfe` SUCCESS. 운영 화면에서 확인.
 - 검증 및 배포 근거: [당일 Phase 1 기록](../90_HISTORY/DAILY/2026-10-12.md#essay-first-web-phase-1--implemented-and-production-verified).
 - **다음 단계는 Owner의 Phase 2 지시 대기.** Grok 리뷰의 기존 미해결 기술 과제는 이번 UI 작업으로 해결되었다고 간주하지 않는다. APP 코드·DB·Credit/Payment/Toss/IAP·Math/Essay 평가·History·QA·Allowlist 불변, 일반 공개 HOLD.
+
+
+### Phase 1 Owner 화면 피드백 반영 (2026-10-12)
+
+메인 Credit 영역 아래의 `수리논술 문항 보기`는 기존 EssayRuntimeEntry의 로그인 후 Math 전용 바로가기였다.
+Owner 지적에 따라 메인에서 해당 entry를 제거한다. 대학 선택 → 기존 상세 진입으로 흐름을 통일하며,
+기존 Math workspace/인증/평가 GATE 자체는 변경하지 않는다. 메인 카드 테두리는 검은 CTA와 같은
+`#171717` 1px로 맞춘다. 기존 흰 배경·그림자·곡률·Focus 유지.
