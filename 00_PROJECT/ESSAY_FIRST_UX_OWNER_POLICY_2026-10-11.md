@@ -308,3 +308,67 @@ Source metadata is not a complete Evaluation Package inventory. Prior581candidat
 New source evaluation-ready count remains0. Canonical question registration/package rights, atomic exam1Credit reservation/finalization/failure recovery, remote Draft, exam reevaluation/History/growth/QA integration still require development and isolated verification. Existing per-question RPC must not be called repeatedly to bill an exam bundle.
 Existing Math per-question Credit preserved; humanities/business policy remains initial selected exam-question set1Credit and same frozen set reevaluation once within14days at0additionalCredit. Actual new exam Credit/reevaluation/shared evaluation consistency E2E NOT executed.
 No production migration/DB writes/permission changes/actual Credit/provider transactions. General AI activation HOLD. A new production migration must first have complete SQL/rollback/authorization/concurrency evidence and then separate Owner approval; this turn does not provide an executable production migration or claim its readiness.
+
+
+## Overnight exam contract continuation — 2026-10-12 — LOCAL PARTIAL
+
+Owner continuation preserved the deployed21-university/77 exam-subject/237-input
+Native+WEB UI. No repeat ingestion or original ZIP/PDF modification/upload.
+Private581-group review remains9 whole-group metadata verified/572 needing review;
+this turn adds no newly verified source package. Input metadata readiness is not
+Rubric, materials-rights or Provider readiness.
+
+### Implemented locally
+
+- APP `50632eeffc5af76d766f40822645277c26873eb4`: private atomic exam billing
+  candidate using the actual existing Credit Ledger tables/triggers. One selected
+  bundle reserves/settles1, partial failure cannot settle, release idempotent,
+  one successful included rewrite within14 days, frozen question/version set.
+  Initial/independent runs retain separate lineage. No ledger schema changes.
+- Existing `ReviewedRuntimeWorker` reused through a question-output staging adapter:
+  no child success invokes per-question financial finalization; only the full exam
+  checkpoints and finalizes. Unknown outcomes do not automatically refund/retry.
+  Current prompt/Provider identity/independent review remain required.
+- Native exam snapshot +14-day rewrite contract added. LAB
+  `d0b812bad5863800c56c002c97be32e1fda78b59` strips extraneous answer fields and
+  verifies the same ordered JSON and SHA-256 fixture as Native. Contracts are
+  unmounted; no claim that disabled submit buttons are now enabled.
+- Both remain on `codex/essay-shared-app-integration`; Commit/Push/remote SHA verified.
+
+### Validation and actual service state
+
+PostgreSQL17 disposable Unix-socket DB, actual canonical legacy prerequisites,
+12 scenario groups PASS. Includes8 concurrent same-key retries, different-key
+last-credit race, late transaction rollback, incomplete result, immutable history,
+failed rewrite retry, expired/foreign-account denial, empty rollback and nonempty
+rollback refusal. API roles anon/authenticated/service_role cannot invoke helpers.
+This used a local superuser: production owner/ACL/lifecycle topology is NOT proven.
+Python15 PASS (7 new exam cases +8 existing ReviewedRuntimeWorker cases), fake
+Provider transport only. Native12 tests PASS; WEB12 contract/reservation tests
+PASS. Flutter analyze, Android debug APK, iOS Simulator, WEB lint/typecheck/build,
+boundary/secret audit PASS. No physical-device debugging or real Provider E2E.
+
+Read-only live Catalog recheck:21 universities/77 selections/237 inputs,
+evaluationReady0. Existing Pages deployment ed6e37f9 at LAB9a28856 preserved;
+no new WEB deployment for the unmounted development contracts. No production DB
+migration, real Credit transaction, public activation, store release or main merge.
+
+### Remaining development versus approval holds
+
+**Development still required:** authoritative canonical exam/question mapping and
+initial Rubric/evidence/rights checks; Auth/Allowlist/lifecycle and deployer role
+integration; durable Worker lease/journal and interrupted-child recovery;
+reviewed exam-wide synthesis; shared server Draft; new exam owner History,
+existing admin Quality Console and privacy erasure adapters; mounted APP/WEB
+submission and result routes. This is not merely awaiting approval.
+
+Candidate and rollback are under APP `supabase/candidates/essay_exam_unit/`.
+The historical LAB storage rehearsal is retained as historical design, not a
+second deployable schema. Candidate rollback refuses any nonempty run table;
+never delete learning records or ledger entries to force rollback.
+
+**Separate Owner approval later:** only after the above development, production
+fingerprint/ownership review and a formal migration package are ready, request
+production migration/test-account Credit E2E authorization. The present candidate
+must NOT be applied. Public evaluation stays HOLD. Existing Math, Credit History,
+Payment/Toss/IAP and source corpus remain unchanged.

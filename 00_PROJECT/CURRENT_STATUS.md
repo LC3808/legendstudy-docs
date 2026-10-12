@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Overnight exam contract continuation — 2026-10-12 — LOCAL PARTIAL
+
+APP50632ee/LABd0b812b pushed and remote verified. Local atomic exam Credit SQL,
+existing reviewed Worker staging and Native/WEB snapshot parity implemented/tested.
+PG17 scenarios12/Python15/Native12/WEB12 PASS; analyze/APK/iOS/Web build PASS.
+No production migration/Credit/Provider call. Live21/77/237, evaluationReady0 unchanged.
+Lifecycle/lease/content authority/shared Draft/History/QA and mounted UI remain
+**development gaps**, not approval-only blockers. Current SQL is NOT deployable.
+[Full evidence and next steps](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#overnight-exam-contract-continuation--2026-10-12--local-partial).
+
 ## Shared APP WEB integration — 2026-10-12 — PARTIAL
 
 APP `cb65be0`,LAB `9a28856` on `codex/essay-shared-app-integration`,both pushed/remote verified.
