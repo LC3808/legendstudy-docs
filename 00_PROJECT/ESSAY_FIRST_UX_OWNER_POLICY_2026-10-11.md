@@ -212,3 +212,74 @@ Lint/Typecheck/webpack Build/Boundary/secret audit PASS.
 누락 JSON identity 거부,빈 객체rollback,비어있지 않은rollback 거부 PASS.
 이 SQL테스트는 실제 lifecycle/동시 Credit/운영 RLS 통합 검증이 아니다.
 실제 Provider E2E·Credit 거래·Production Migration·배포 없음. 기존 Phase2 운영 상태 및 공개 HOLD 유지.
+
+## Full essay service connection — 2026-10-12 — PARTIAL
+
+Owner의 최신 FULL ESSAY SERVICE COMPLETION 지시를 적용했다. 이 절의 결과는 선택·작성 UI 연결이며 전체 첨삭 서비스 완료가 아니다.
+LAB `codex/essay-full-service-connection` @ `89dcbe737245e3063503dafcdf4c7dabe7dd3cdb`, Push/remote 일치.
+
+### 실제 연결과 검증 범위
+
+- 기존 20 ZIP/1,030 PDF/581 후보를 재사용. 21대학의 **77 시험·과목 선택 레코드 / 237 답안 입력 항목**을 공개 metadata read model에 연결했다. 전체 시험의 하위 문항·해설·Rubric 검증 완료 수로 해석하지 않는다.
+- 기존 DB 질문 조회를 먼저 사용하고, 대학에 등록 문항이 없거나 비로그인인 경우 source registry로 선택·작성을 제공한다. 운영 `essay_questions=0` 자체를 변경한 것은 아니다. 신규 canonical question UUID를 만들지 않았으며 DB ID가 확인된 시험은 재사용했다.
+- 학년도 → 수시/모의 → 계열 → 실제 복수 회차 시 캠퍼스·회차 → 문항 탭 → 개별 답안 작성. 단일 값은 자동 선택. Desktop42:58 / Mobile 문제·답안 전환 유지.
+- Draft는 기존 browser storage adapter 재사용. 계정/guest/시험/문항별 분리, 재진입 복원, 저장 실패와 다른 창 충돌 시 덮어쓰기 차단. **계정 간·WEB/APP 동기화 Draft가 아니다.**
+- 인문·경제경영 화면의 전체/일부 문항 선택과 시험1Credit/14일 동일집합 재첨삭 정책을 보존했다. 실제 제출은 `첨삭 준비 중` disabled. 표시용 계열 판별을 Provider 라우팅이나 정산 근거로 사용하지 않는다.
+- 2027 일정은 최신 지시대로 작성 영역 아래, 기본 접힘. 기존42대학/49전형/22우선/30준비 대상 및 공식 출처 보존.
+- 원본PDF/ZIP/추출문/개별 검토 기록은 private local 폴더만 사용. Git에는 선택 metadata·해시·nullable canonical ID와 코드만 반영.
+
+### 검토 상태와 자료 대조
+
+581 후보 그룹의 보수적 상태: VERIFIED9 / NEEDS_REVIEW572 / UNRESOLVED0.
+여기서 VERIFIED도 시험 정체성과 답안 입력 라벨 범위다. 79개 후보 그룹이 공개 선택 레코드와 연결되지만, 나머지 source의 해설/평가자료 관계가 미완성인 그룹은 NEEDS_REVIEW로 남겼다.
+77개 선택 레코드와 581개 검토 그룹은 서로 다른 단위이며, 77개 Evaluation Package 완성을 뜻하지 않는다.
+
+- 연세2027 “수시 논술전형 … 모의 문항”을 수시 실전으로 오인하지 않고 MOCK으로 정정.
+- 한양2024 모의 자연 `[문제 2번]` 누락 방지. 인하 오후는 별도 회차.
+- 숙명2025 인문1/2 자료는 계열1/2가 아니라 동일 시험의1-1/1-2/2-1/2-2 답안 항목. 광운2022 자연1/2도 문항 파트로 연결.
+- 서강2024 1차 경제경영의 번호 없는 단일 문항에 임의 번호를 표시하지 않는다.
+- 홍익2025 세종은 Owner 이미지PDF를 공식2025 영향평가 보고서 표지·동일 인쇄면93–107과 대조. [공식 자료](https://www.hongik.ac.kr/kr/admission/notice-admission.do?articleNo=134109&mode=view), 원문 확인일을 임의로 과거 연구자료에 덮어쓰지 않았다.
+
+| 대학 | 시험·과목 선택 레코드 | 답안 입력 항목 |
+|---|---:|---:|
+| 아주대학교 | 6 | 12 |
+| 가톨릭대학교 | 1 | 3 |
+| 중앙대학교 | 24 | 75 |
+| 동국대학교 | 6 | 18 |
+| 이화여자대학교 | 1 | 3 |
+| 한양대학교 | 3 | 5 |
+| 홍익대학교 | 1 | 7 |
+| 한국외국어대학교 | 1 | 3 |
+| 인하대학교 | 3 | 9 |
+| 경북대학교 | 1 | 3 |
+| 건국대학교 | 3 | 8 |
+| 광운대학교 | 1 | 2 |
+| 경희대학교 | 2 | 7 |
+| 부산대학교 | 2 | 6 |
+| 세종대학교 | 3 | 9 |
+| 성균관대학교 | 2 | 6 |
+| 서강대학교 | 1 | 1 |
+| 숙명여자대학교 | 1 | 4 |
+| 숭실대학교 | 1 | 2 |
+| 서울시립대학교 | 1 | 4 |
+| 연세대학교 | 13 | 50 |
+
+### 기존 Humanities 평가의 실제 상태
+
+APP `codex/essay-full-service-implementation` 및 기존 `essay-scaffolding-vnext` wiki/tool을 읽어 한양2024오후2·숙명2025모의 근거를 추적했다.
+기존 실행은 ChatGPT 인증 Codex CLI 실제 모델 호출이며 execution PASS / quality PARTIAL이었다. 운영 Provider API + 시험Credit + History 성공의 증거로 재분류하지 않는다.
+기존 prompt/rubric/schema/evidence 재사용 가능하나 source 권한 확인과 private package 주입, canonical 질문 등록 및 시험 단위 atomic reservation/finalization이 남아 있다.
+
+이번 registry의 평가 활성 시험 **0**. 실제 Provider 호출/실제 Credit 거래 없음.
+기존 per-question session/evaluation의 question_id NOT NULL 및 billing 관계 때문에 다중 문항을 기존 RPC 반복으로 처리하면 시험1Credit을 보장하지 못한다.
+앞선 저장 SQL 초안은 billing/History/QA 연결을 구현한 정식 Migration이 아니므로 운영 적용 대상으로 제출하지 않는다.
+남은 작업: 전체 후보 본문·시각 검토, 하위문항/분량/해설/공식Rubric·권한 확정 → canonical 등록 및 원자적 시험 정산/부분실패 복구/동시성 검증 → History/관리자QA adapter → 정확한SQL·Rollback과 검증결과 제출 → 별도 운영 승인 → 승인계정 Provider E2E.
+
+### 검증 / 배포
+
+- Node22 전체 Vitest1,068PASS/1SKIP 후 저장실패·다른창 충돌2개 추가PASS; 최종 관련11PASS. Python7PASS. Lint/Typecheck/Next webpack Build/PDF·secret/boundary audit PASS.
+- 실제 Chrome local: 21대학 진입,77선택 레코드의 모든237라벨 확인, 숙명 문항별 저장/복원·분리, disabled gate 확인. 360/375/390/768/1280/1440 및 각200% 글자 확대에서 가로overflow0. 실제 screenshot 육안확인.
+- Production Pages `1110b09e-d4ec-4f58-9a94-58997c743daa`, SHA `89dcbe737245e3063503dafcdf4c7dabe7dd3cdb`, 배포SUCCESS.
+- 운영 env/deployment configs 전후 동일. DB Migration/권한/Allowlist/평가GATE/Math/Credit/Payment/Toss/IAP 변경 없음. 일반 사용자 평가 HOLD.
+- Rollback point: Pages `29a34f22-4a1e-477b-a65b-f11ebb876be7`, SHA `f6de765871d6e72ef7a085c249be2ae3784291e8`. UI 배포 롤백만으로 이전 화면 복구 가능; DB 롤백 없음.
+- 운영 도메인 Live QA PASS: 21대학/77시험·과목 선택과237답안 항목, Draft 복원·문항 분리·disabled GATE,6폭×100/200% overflow0 확인. 실제 Provider E2E는 미실행.

@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Full essay service connection — 2026-10-12 — PARTIAL
+
+LAB `codex/essay-full-service-connection` @ `89dcbe737245e3063503dafcdf4c7dabe7dd3cdb`, Push/remote 일치.
+21대학77시험·과목 선택 레코드/237답안 입력 항목을 WEB에 연결. 학년도·수시/모의·계열·회차·문항 선택과 browser-local Draft 구현.
+전체581후보 중 그룹 전체 선택metadata 검증9,추가검토572. 전체 자료/Rubric/Provider 검증 완료 수가 아님.
+신규 평가 활성0; 시험Credit/History/QA 운영 연결 미완료. 기존 한양·숙명CLI 모델 실행과 Production E2E를 구분.
+Pages `1110b09e-d4ec-4f58-9a94-58997c743daa` SUCCESS; 설정 불변,DB 적용 없음,공개HOLD. 운영21대학/77선택·237입력 및6폭/200% Live QA PASS; 실제 Provider E2E 미실행.
+다음: 남은 후보·private Evidence 검증 및 원자적 시험Credit/History/QA 개발 후 정식SQL·Rollback/운영 승인.
+자세한 실제 범위와 대학별 수치는 [기존 Essay-first 정책](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#full-essay-service-connection--2026-10-12--partial).
+
+
 ## Essay material ingestion & exam-unit preparation — 2026-10-12 — PARTIAL
 
 LAB `codex/essay-material-integration` @ `7d62bb5975a0602e5b043dff0083339bc77478d4`, Commit/Push/remote SHA 일치.
