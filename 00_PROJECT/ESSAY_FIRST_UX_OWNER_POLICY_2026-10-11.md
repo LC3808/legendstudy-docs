@@ -283,3 +283,28 @@ APP `codex/essay-full-service-implementation` 및 기존 `essay-scaffolding-vnex
 - 운영 env/deployment configs 전후 동일. DB Migration/권한/Allowlist/평가GATE/Math/Credit/Payment/Toss/IAP 변경 없음. 일반 사용자 평가 HOLD.
 - Rollback point: Pages `29a34f22-4a1e-477b-a65b-f11ebb876be7`, SHA `f6de765871d6e72ef7a085c249be2ae3784291e8`. UI 배포 롤백만으로 이전 화면 복구 가능; DB 롤백 없음.
 - 운영 도메인 Live QA PASS: 21대학/77시험·과목 선택과237답안 항목, Draft 복원·문항 분리·disabled GATE,6폭×100/200% overflow0 확인. 실제 Provider E2E는 미실행.
+
+
+## Shared APP WEB image input — 2026-10-12 — PARTIAL
+
+Owner mandatory APP integration and image-first addendum are reflected in both clients. Existing21-university WEB selection work was reused, not restarted.
+- APP branch `codex/essay-shared-app-integration`: implementation5428748; final docs handoff `cb65be0356a235cbc7a135f3547203de5b86c169`.
+- LAB same branch: `9a288560df32a2e91b825e2626538fb243e01acc`. Both pushed/remote verified; APP main unchanged.
+- One public metadata endpoint `/api/essay/catalog` serves existing source registry and university IDs. Native APP's actual Dart client read the deployed endpoint and compared every exam/question metadata field against WEB source:21 universities/77 exam-subject selections/237 answer inputs, exact match. No duplicate APP dataset or invented UUIDs.
+- Native cascading year/admission-mock/track/campus-session choices, per-question writing, official source link, whole/subset humanities selection and existing History entry are connected. WEB42/49 Catalog, Owner22/retained30 and existing UI remain.
+- Input preference:133 photo-first natural/math/science slots;104 text-first humanities/business slots. This is presentation preference, not verified evaluator classification or a scientific/Math billing mapping. Actual mixed/science question routing still requires official packages.
+- WEB and APP camera/gallery controls precede optional supplemental text. Existing WEB Math photo/PDF pipeline remains; APP now reuses `math_input` register/read/confirm, existing `/api/math/upload` and `/extract`, then existing evaluation/reevaluation/History. No new evaluator/ledger.
+- Local draft restoration is per owner/question: WEB text localStorage and photos IndexedDB; APP private atomic files, text revisions, OS backup exclusion. Account-deletion cleanup includes drafts. Guest data is not silently transferred. **Cross-device cloud Draft sync remains unimplemented.** Local image drafts are not evaluation artifacts or immutable History.
+
+### Verification and release
+
+APP Flutter3.47.6 analyze PASS, relevant75PASS/1SKIP; Android Debug APK/iOS Simulator builds PASS. Native360dp/100-200% widget selection/photo controls/text draft restore PASS. Actual camera/gallery hardware and Android lost-picker recovery NOT verified; no physical device testing or store release.
+WEB relevant169PASS; lint/typecheck/build/boundary/readiness audit PASS. Actual Chrome local and Production21university/77selection paths and237question labels, text/photo reload persistence and question isolation PASS.360/375/390/768/1280/1440 at100/200% no horizontal overflow; mobile/desktop screenshots inspected. These checks used synthetic local answer drafts and did not invoke actual Provider or Credit.
+Production Pages `ed6e37f9-5f84-42ab-acc2-a2cb67d43d0b` SUCCESS, deployment source SHA `9a288560df32a2e91b825e2626538fb243e01acc`; live domain QA PASS. Deployment configuration unchanged. Rollback:Pages `1110b09e-d4ec-4f58-9a94-58997c743daa`,source89dcbe737245e3063503dafcdf4c7dabe7dd3cdb; UI/Functions rollback, no DB rollback.
+
+### Remaining work — not a completed full service
+
+Source metadata is not a complete Evaluation Package inventory. Prior581candidate review limitations remain9reviewed groups/572additional review; no claims that all1030PDFs' questions/rubrics are resolved.
+New source evaluation-ready count remains0. Canonical question registration/package rights, atomic exam1Credit reservation/finalization/failure recovery, remote Draft, exam reevaluation/History/growth/QA integration still require development and isolated verification. Existing per-question RPC must not be called repeatedly to bill an exam bundle.
+Existing Math per-question Credit preserved; humanities/business policy remains initial selected exam-question set1Credit and same frozen set reevaluation once within14days at0additionalCredit. Actual new exam Credit/reevaluation/shared evaluation consistency E2E NOT executed.
+No production migration/DB writes/permission changes/actual Credit/provider transactions. General AI activation HOLD. A new production migration must first have complete SQL/rollback/authorization/concurrency evidence and then separate Owner approval; this turn does not provide an executable production migration or claim its readiness.

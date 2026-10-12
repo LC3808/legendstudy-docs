@@ -10,6 +10,15 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Shared APP WEB integration — 2026-10-12 — PARTIAL
+
+APP `cb65be0`,LAB `9a28856` on `codex/essay-shared-app-integration`,both pushed/remote verified.
+Native APP+WEB share deployed Catalog21/77/237 with exact source IDs; photo-first133/text-first104 inputs and device-local drafts connected. Existing Math image upload/recognition/confirmation reused in APP.
+APP analyze75PASS/1SKIP and Android/iOS builds PASS; WEB169PASS+lint/typecheck/build; live Catalog/photo/text/6widths/200% QA PASS.
+Pages `ed6e37f9-5f84-42ab-acc2-a2cb67d43d0b` SUCCESS; configs unchanged. New source evaluation-enabled0; actual Provider/Credit E2E not run. Public HOLD.
+Remaining: canonical questions/private packages, atomic exam billing, shared Draft and exam History/QA development; then approved production SQL/E2E. No DB applied.
+[Full evidence and limits](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#shared-app-web-image-input--2026-10-12--partial).
+
 ## Full essay service connection — 2026-10-12 — PARTIAL
 
 LAB `codex/essay-full-service-connection` @ `89dcbe737245e3063503dafcdf4c7dabe7dd3cdb`, Push/remote 일치.
