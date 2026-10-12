@@ -18,8 +18,11 @@ Grok reviewed the Essay full-service branch: [LAB #1](https://github.com/LC3808/
 Re-verified 2026-10-12: both review branches `codex/essay-full-service-implementation`
 are **unmerged** — LAB `main` still `8991b510`, APP `main` `d07671e` — so a docs/wiki PR
 does **not** integrate app code; confirm the real integration branch before any store build.
-Review findings are **proposals, not verified fixes**. OWNER_ACTION_REQUIRED: (1) final sort
-metric 지원자 수 vs 경쟁률; (2) Owner Priority 22 single source + 강남대 inclusion — not decided here.
+Review findings are **proposals, not verified fixes**. Owner correction2026-10-12:
+keep the existing ordered22; 강남대/을지대 deferred. 지원자 수 is primary, 경쟁률 secondary;
+Owner order until official verification, then applicant-descending. Policy confirmed;
+duplicate22, sorting mismatch, admission Context, HTTP402/422 and APP/LAB parity remain
+unresolved. Docs only; implementation, branch merge and deployment await separate direction.
 Essay-first product principle reaffirmed; general-user AI feedback stays **HOLD**.
 See [Grok review record](../90_HISTORY/REVIEWS/2026-10-12-grok-code-review.md) ·
 [Essay-first policy](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md) ·

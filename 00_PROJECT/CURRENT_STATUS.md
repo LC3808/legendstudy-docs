@@ -32,15 +32,20 @@ Review-proposed fixes (unimplemented/unverified): sort-metric inconsistency (pro
 competition vs logic/UI/button by applicant count); Owner Priority 22 duplicated in
 `catalog-policy.ts` vs `university-discovery.tsx` with differing 강남대 inclusion; admission
 `ctx` not passed to `callEssayGateway`; legacy "준비 중 = separate low-priority group"
-logic conflicting with the Owner decision (keep in same list, disable action only); Worker
+logic requires reconciliation with Owner priority (keep in catalog, disable unavailable actions,
+retain 강남대/을지대 deferred order); Worker
 `evaluate.ts` 402/422 mapping gap; APP/LAB catalog-policy parity; native essay flow
 completion must distinguish gateway wiring from screen state (no fake results); confirm
 main's security changes reach the integration/store build; do not record Flutter tests as
 passing without actual runs.
 
-**OWNER_ACTION_REQUIRED (not decided here):** (1) final single sort metric — applicant
-count vs competition — across projection/logic/UI/button copy; (2) Owner Priority 22 single
-source + whether 강남대 is included. Both left to Owner; no arbitrary policy chosen.
+**Owner policy corrected 2026-10-12:** preserve the existing ordered Priority 22;
+강남대/을지대 remain deferred. Applicant count is the primary demand metric, competition
+is secondary. Keep the Owner order until official verification; then sort by applicants
+descending. No further policy confirmation is required for these points. Priority-list
+duplication, sort-contract mismatch, admission Context, HTTP 402/422 mapping and APP/LAB
+policy parity remain **unresolved technical work**. Documentation only; no code change,
+branch merge or Production deployment. Essay-first and public AI HOLD remain unchanged.
 
 Distinct concepts kept separate (not merged into one sort rule): default list exposure order ·
 applicant-vs-competition metric · in-list position of 준비 중 universities (Owner: keep in list) ·
