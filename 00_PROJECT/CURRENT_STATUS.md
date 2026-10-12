@@ -10,6 +10,17 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## P0 private registration —2026-10-13 — APPLIED / service PARTIAL
+
+Owner-approved74new exams+234unpublished questions applied;2existing exams reused,
+Yonsei1/3held. Hosted migration20261012212352, exact IDs/RLS/ACL read-back PASS.
+APPb0aa1ee/LABa8bb3c8 pushed/remote verified. Existing real SKKU package bound to
+Registry IDs;19local RPC/3binding/34Worker/12Ledger checks PASS. No actual Provider
+or operating Credit transaction. Published canonical0/evaluationReady0; public HOLD.
+Production lacks ESSAY_* worker configuration; Hanyang year and Sookmyung partial
+package coverage require exact connections. Exam submission/History/QA unfinished.
+[Evidence](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct13-p0-connection--private-registration-applied--service-partial).
+
 ## Full essay integration continuation — 2026-10-13 — PARTIAL
 
 APP98b235f/LAB146727f pushed/remote verified. Canonical account text Draft/CAS

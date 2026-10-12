@@ -449,3 +449,50 @@ review package, approved-account actual Provider/Credit E2E, public activation a
 store submission. No broad approval is requested as a substitute for unfinished
 implementation. Math, existing Ledger/History/QA, Payment/Toss/IAP remain unchanged.
 Public AI evaluation remains HOLD.
+
+## Oct13 P0 connection — private registration APPLIED / service PARTIAL
+
+Owner explicitly approved74new private exams,2existing exam identities reused,
+234unpublished questions; Yonsei unconfirmed1/3 excluded. Applied named migration
+`essay_source_registration_76_234`, hosted version20261012212352. Read-back:
+96total exams/74new/234questions/0published/0active new exams. Exact234-ID set MD5
+f5c1407ffbf7c735e22d587aaff27fbd equals approved manifest. Existing RLS expression
+hashes and ACLs unchanged. No Credit posting, Provider call or public activation.
+CLI draft version20261012211746 was renamed to hosted version without changing SQL
+SHA256127473bcf490aa9ecf2e5fa5f6b6b3fd9d449e13419d2a609d695d2d0e5d3bed.
+APP package: supabase/reviews/essay-source-registration (SQL, rollback, postflight,
+manifest, hashes and verification). Rollback tested locally only, never on live rows.
+
+APP b0aa1ee72835a0cda80efd566169c6a1330aa0af / LAB a8bb3c82e0cae422702bac6923a258bde5285775,
+branch codex/essay-shared-app-integration, pushed and remote verified.
+
+Existing reviewed SKKU private evidence3questions/9criteria is bound to registered
+IDs through exact exam/PDF hash/unique labels. Source text/evidence/criterion IDs
+preserved; private CLI generates bound plan without uploading source text. Actual
+private package + local canonical DB/RPC19checks PASS, including owner Draft,
+submission, Worker frozen evidence, stale/foreign rejection and failure reservation
+release. Binding3tests PASS; Worker/durable journal34tests PASS; existing exam
+Ledger12local scenarios PASS. Durable pending marker and atomic/fsync checkpoint
+prevent blind Provider redispatch after process loss. Single persistent host only;
+distributed lease and retention integration remain deployment requirements.
+Registration migration replay/RLS client denial/security drift/Rollback PASS.
+No actual Provider/Credit E2E or new Native UI build claimed in this continuation.
+
+Verified runtime gaps:
+- Read-only current Production Pages config contains no ESSAY_* worker settings.
+  Current Pages deployment remains dd8a45d0 at146727f. No test-only commit redeploy.
+- Hanyang existing quality2025 package is2025mock Humanities. Registered Hanyang
+  source subset is2024mock natural/business and2024admission Humanities afternoon2;
+  do not cross-bind different exams because the university matches.
+- Sookmyung2025mock existing package covers1-1/1-2, not2-1/2-2. Do not label the
+  entire exam package verified from this subset.
+- SKKU2/3 require a figure; existing text-only Worker gate retained.
+- Source public API still21/77/237, published canonical IDs0,evaluationReady0 after
+  private registration. Existing published-question RLS and Draft RPCs unchanged.
+
+Full service NOT complete: exact remaining package mappings/rights, production
+Worker composition, exam lifecycle/least-privilege backend, mounted exam submit,
+reevaluation/shared History/growth/admin QA/erasure remain development work. The
+existing atomic Ledger candidate is not a deployed exam service. This is not a
+claim that another generic Owner approval alone completes all remaining work.
+General AI activation HOLD, Math/payment/Toss/IAP/History preserved.
