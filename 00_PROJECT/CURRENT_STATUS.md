@@ -13,8 +13,8 @@ SUPERSEDED_BY: —
 ## Essay-first WEB Phase 1 — 2026-10-12 — PRODUCTION VERIFIED
 
 Owner 승인 범위 `/essay-lab/` 메인 Hero·대학 검색·카드 간소화 완료.
-LAB `codex/essay-first-web-phase1` @ `a7194bd45699efd3c3a6a880a9590314c9b7d776` Push/remote 확인.
-Production Pages `bb35a1f6-a5d5-408e-be1b-7a4e6fd94261` SUCCESS, canonical Production SHA 일치 및 live UI 검증.
+LAB `codex/essay-first-web-phase1` @ `d0b73b26278962691e5a9e0a10099b519e2211f6` Push/remote 확인.
+Production Pages `ad928a2b-ad13-4275-8913-0ee79c4cc913` SUCCESS, canonical Production SHA 일치 및 live UI 검증.
 42개 대학/49개 전형·Owner22 순서·30개 준비 대상·기존 상세 경로 보존.
 카드 CTA는 상세 진입만 수행. 메인 필터/메타데이터 UI만 제거. Credit navigation 유지.
 117개 테스트 파일의 최종 결과 총1042 PASS/1 optional private-fixture SKIP
@@ -1542,3 +1542,5 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 
 
 Owner authenticated acceptance: all requested Admin directory checks passed (immediate list/count, search/filter/sort/pagination where applicable, school names, Member Detail/Student360, tested denial boundaries). Owner requested ordinal numbers; bfc20c0 implements display-only server offset + position +1. No claim of extra test accounts or >25 Production members created.
+
+성균관대 공식 로고 투명 여백 표시 보정(원본 불변) 배포 완료. 관련8 tests/lint/typecheck/build, Desktop112px/Mobile104px 및 live QA PASS.

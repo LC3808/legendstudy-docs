@@ -13,7 +13,7 @@ SUPERSEDED_BY: —
 ## Latest restore point — Essay-first WEB Phase 1 (2026-10-12)
 
 메인 `/essay-lab/`만 별도 Owner 승인으로 구현·배포 완료. LAB `codex/essay-first-web-phase1`
-@ `a7194bd45699efd3c3a6a880a9590314c9b7d776`; Pages Production `bb35a1f6-a5d5-408e-be1b-7a4e6fd94261` live verified.
+@ `d0b73b26278962691e5a9e0a10099b519e2211f6`; Pages Production `ad928a2b-ad13-4275-8913-0ee79c4cc913` live verified.
 Hero/대학 검색/로고+대학명+첨삭 시작하기 카드, 4/2/1열. 42/49·22 순서·30 준비대상·상세경로·Credit 보존.
 CTA는 상세 이동이며 평가 활성화가 아니다. AI HOLD/Allowlist 유지. APP·DB·Payment/평가 계약 변경 없음.
 Phase 2 이후는 Owner 지시 대기. 아래의 당일 이전 Wiki-only 기록과 구분한다. Grok 미해결 기술 과제는 그대로다.
@@ -580,3 +580,5 @@ deletion/essay-write/evaluation flags true; shared tool/store-release enforces t
 Next APP gate is Owner signing→focused physical-device smoke→Console inputs/policy review; do not
 reopen completed feature work or run Math/Payment work as part of APP RC. See CURRENT_STATUS
 and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.
+
+성균관대 공식 로고 투명 여백 표시 보정(원본 불변) 배포 완료. 관련8 tests/lint/typecheck/build, Desktop112px/Mobile104px 및 live QA PASS.
