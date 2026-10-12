@@ -496,3 +496,104 @@ reevaluation/shared History/growth/admin QA/erasure remain development work. The
 existing atomic Ledger candidate is not a deployed exam service. This is not a
 claim that another generic Owner approval alone completes all remaining work.
 General AI activation HOLD, Math/payment/Toss/IAP/History preserved.
+
+
+## Oct13 universal service — approved registry read, production UI, runtime PARTIAL
+
+최신 Owner 정책은 **범용 평가 Runtime + 시험별 독립 평가자료**다. 한양대·숙명여대는
+검증 사례이며 적용 범위의 상한이 아니다. 전체21대학을 유지한다. 기존42대학/49전형,
+Owner22/준비30 정책과 Native/WEB 승인 결과 UI를 보존한다. 인문·경제경영 시험묶음1Credit,
+동일 문항집합14일1회 무료 재첨삭, Math 문항별 계약을 유지한다.
+
+### 실제 운영 적용과 배포
+
+- 명시적 Owner 승인에 따라 `essay_registered_questions(uuid)` 적용: hosted migration
+  `20261012215054`. 기존 private 등록 `20261012212352` 재적용하지 않음.
+- 운영 함수 직접 조회234문항/76시험, Manifest ID MD5
+  `f5c1407ffbf7c735e22d587aaff27fbd` 일치. 전부 unpublished; RLS/테이블 권한/평가/Credit 불변.
+- EXECUTE 기존 essay_worker만 허용; anon/authenticated/service_role 거부 확인.
+  DB owner read-back이며 실제 앱JWT 인증 검증과 구분한다.
+- WEB Production `b95c09d6-f388-47ed-81a9-8f68376231f4`, source
+  `96d6572f392c6f79e09f6083d5270fdac7f16dc1`, 배포 SUCCESS 및 설정 불변 확인.
+  Rollback point `dd8a45d0-564f-47ea-978e-12cb802429bc`.
+- Live21대학/77선택/237입력 유지. 운영 제외 Yonsei1시험/3문항은 검수 대기.
+  검색→숙명대→문항 선택, 문항별Draft, 다중사진 복원/삭제,6폭360–1440 및200% no overflow 확인.
+  evaluationReady0/평가 버튼 차단. Public activation **HOLD**.
+
+### 구현 및 재사용
+
+- WEB/APP 동일 인증 POST Registry 경로. 기존 online Auth/allowlist 뒤 narrow worker RPC.
+  GET은 공개 메타데이터. private ID 조회로 Draft/평가 권한을 임의 부여하지 않는다.
+- 두 플랫폼 문항별 사진 최대6장, 순서·미리보기·삭제·기기 내 저장/복원·저장 실패 재시도.
+  Native 기존 카메라/갤러리 및 private atomic files, WEB 기존 IndexedDB 재사용.
+  사진은 아직 **기기 내 저장**이다. 업로드/서버사진Draft/기기 간 사진 동기화 완료가 아니다.
+- 공통 package adapter는 대학·연도·유형·계열·회차·캠퍼스·문항·원본해시·cache digest를 검사.
+  text Runtime에 Math/science package를 넣지 않는다. DB 승인 regime을 입력받으며
+  Python JSON hash로 DB jsonb 정책 해시를 임의 생성하지 않는다.
+- 기존 검증된 한양2024수시 오후2문항1, 숙명2025모의1-1 입력자료를 해당 Registry ID에 연결.
+  과거 학생 답안/사진을 제외한다. 한양2025 예시와 연도가 다르다는 과거 포괄적 장애 설명은
+  정정한다. 일치하는2024자료가 실제 존재하며 공통 Runtime 적용 범위는21개 전체다.
+- 기존 SKKU3문항 package 보존. 새로운 전송권한/운영 콘텐츠 연결을 자동 승인하지 않는다.
+- 기존 ReviewedRuntimeWorker에 공식 자료 이미지의 해시/참조검증 및 기존 Responses image
+  transport 연결. 새 평가 엔진 없음. 기존 prompt/review/store:false 정책 유지.
+- 시험 adapter는 exact frozen-claim hash로 완료 child를 복원한다. 불확실/pending 요청은
+  재호출/임의환불 없이 reconciling 유지. 운영 journal/store 연결 완료와는 구분한다.
+
+### 21개 대학 자료 범위
+
+20ZIP/1030PDF/581후보를 다시 수집하지 않고 기존 추출·그룹을 재사용했다.
+등록76시험의 모든 원본 해시가 inventory와 일치. 같은 기존 검토그룹의 별도 해설·답안
+자료76건(시험별 연결 건수)을 후보로 연결했다.56시험에 평가기준 페이지 후보가 존재한다.
+**56개 검증 Rubric 또는 실제 평가 가능한 package라는 의미가 아니다.** 문항별 관계·근거
+검수가 필요하며 부족한 항목은 private manifest에 기록했다. 원본/PDF/비공개 평가내용은
+Git·공개Storage에 올리지 않았다. 아래 수치는 Source selection/등록 및 후보 수다.
+
+| 대학 | 운영 시험 | 운영 문항 | 평가기준 페이지 후보 시험 |
+|---|---:|---:|---:|
+| 건국대학교 | 3 | 8 | 3 |
+| 경희대학교 | 2 | 7 | 0 |
+| 중앙대학교 | 24 | 75 | 23 |
+| 가톨릭대학교 | 1 | 3 | 1 |
+| 연세대학교 | 12 | 47 | 1 |
+| 동국대학교 | 6 | 18 | 6 |
+| 부산대학교 | 2 | 6 | 2 |
+| 성균관대학교 | 2 | 6 | 2 |
+| 세종대학교 | 3 | 9 | 3 |
+| 아주대학교 | 6 | 12 | 5 |
+| 인하대학교 | 3 | 9 | 3 |
+| 한양대학교 | 3 | 5 | 1 |
+| 숙명여자대학교 | 1 | 4 | 1 |
+| 서울시립대학교 | 1 | 4 | 0 |
+| 경북대학교 | 1 | 3 | 1 |
+| 이화여자대학교 | 1 | 3 | 0 |
+| 서강대학교 | 1 | 1 | 1 |
+| 한국외국어대학교 | 1 | 3 | 1 |
+| 숭실대학교 | 1 | 2 | 1 |
+| 광운대학교 | 1 | 2 | 1 |
+| 홍익대학교 | 1 | 7 | 0 |
+
+### 검증과 미완료 — 승인만 받으면 끝나는 상태가 아님
+
+PASS: private RPC 로컬7체크/rollback, runtime/package37(모의 Provider), WEB172관련,
+Native11, Flutter analyze, WEB lint/typecheck/boundary/secret audit/build,
+Android debug/iOS Simulator build, 실제 브라우저 local/live 사진 및 반응형 QA.
+실기기 디버깅/실제 Provider/운영 Credit 거래는 실행하지 않았다.
+
+운영 읽기 확인: `essay_private.provider_policy`, `provider_binding_valid`,
+`essay_record_provider_telemetry`가 아직 존재하지 않는다. Git의 기존 migration 존재와
+운영 적용을 혼동하지 않는다. 기존 essay_worker 서버 인증 설정도 현재 없다.
+
+남은 구현: 문항별 자료/Rubric 검수와 전송권한 확인, production runtime 배치,
+시험묶음 lifecycle/lease/whole-exam synthesis/원자적 Credit 운영 연결,
+공유 서버Draft 및 사진 업로드, 기존 canonical History/성장/관리자QA 연결,
+Native/WEB 실제 제출·재첨삭 경로. 기존 결과 UI를 새로 만들지 않는다.
+
+Owner 사항: 기존 worker credential을 서버 Secret으로 공급해야 한다(채팅에 전송 금지).
+새 운영 SQL은 구현·영향·rollback 검증 완료 후 별도 적용 승인; 실제 Credit 거래도
+정확한 테스트 범위를 제시한 뒤 별도 승인. 현재 미완성 시험 SQL을 배포용으로 제출하지 않는다.
+기존 approved registry read는 적용 완료이므로 반복 승인받지 않는다.
+
+GIT: 같은 `codex/essay-shared-app-integration` 보존.
+APP `63309b2797c50170deb995a163a14d88f093bbcb` (구현0b99cdd, 후속 배포증거63309b2),
+LAB `96d6572f392c6f79e09f6083d5270fdac7f16dc1`; Push/Remote SHA 일치 확인.
+APP main 병합/스토어 제출 없음. **UNIVERSAL_ESSAY_SERVICE: PARTIAL**.
