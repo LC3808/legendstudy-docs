@@ -10,6 +10,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+### Phase 2 후속 — 일정 영역 순서 (2026-10-12)
+
+Owner 요청: `2027학년도 논술 일정`을 위에, `논술 첨삭 시작`을 아래에 배치. 기본 접힘 유지.
+LAB `4dad37cea8ce7b9d234542731cae6d25f02b1fe3` Push/remote 일치. 관련3 tests/Lint/TypeScript 포함 webpack build PASS.
+Production `c9602e71-745a-492f-91c3-3799eb1e1306` SUCCESS, canonical SHA 일치. 운영 가천대 화면에서 일정→첨삭 순서 및 collapsed 확인. 운영 설정 불변.
+
+
 ## Essay-first WEB Phase 2 — 2026-10-12 — UI DEPLOYED / RUNTIME PARTIAL
 
 LAB `codex/essay-first-web-phase2` @ `6469ada1c447b78b9cdceff9fafdd8a2940123ca` Commit/Push/remote 일치。
