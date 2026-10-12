@@ -10,6 +10,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+### Phase 2 후속 — 구분선 보정 (2026-10-12)
+
+일정 상단 중복 border/margin 제거, 일정 하단과 첨삭 시작 사이 구분선 배치. 기본 접힘 유지.
+LAB `f6de765871d6e72ef7a085c249be2ae3784291e8` Push/remote 일치. 관련3 tests/TypeScript 포함 build PASS, Desktop/360px 브라우저 확인.
+Production `29a34f22-4a1e-477b-a65b-f11ebb876be7` SUCCESS; 운영 건국대에서 border-top0/bottom1px/margin-top0 확인. 설정 불변.
+
+
 ### Phase 2 후속 — 일정 영역 순서 (2026-10-12)
 
 Owner 요청: `2027학년도 논술 일정`을 위에, `논술 첨삭 시작`을 아래에 배치. 기본 접힘 유지.
