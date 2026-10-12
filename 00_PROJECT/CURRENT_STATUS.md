@@ -10,6 +10,23 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay material ingestion & exam-unit preparation — 2026-10-12 — PARTIAL
+
+LAB `codex/essay-material-integration` @ `7d62bb5975a0602e5b043dff0083339bc77478d4`, Commit/Push/remote SHA 일치.
+Owner 제공20 ZIP 모두 확인: PDF1,030/고유1,030/바이너리 중복0,9,027페이지,기존 Catalog21대학 연결.
+원본20ZIP 해시 불변. 비공개 원문/추출문/개별 metadata는 로컬 `essay-materials-private` 폴더에만 보관.
+581개 검토 후보는 검증된 시험이 아님. SKKU2025 언어형1교시 기존1패키지/3문항 구조 재사용, 신규 검증패키지0.
+854본문검토/173시각·OCR검토/2손상PDF/1범위외. 전체 문항 구조화 및 Provider 자료 권한 검증 미완료.
+운영DB read-only: essay_exams22(검증Catalog21+Math합성1),essay_questions0.
+시험 snapshot/동일집합재첨삭/버전별비교 계약 후보 및 예약 RPC402/422 매핑 구현. 시험 단위 실제 Credit/History/QA 연결은 미완료.
+SQL 저장 초안은 격리PG17 의존성stub에서만 검증, 자동ROLLBACK. 정식운영Migration이 아니며 적용하지 말 것.
+Node22 Vitest1,062PASS/1SKIP,Python7PASS,Lint/Typecheck/Build/Boundary/secret audit PASS; SQL 역할차단9건·forcedRLS3개·빈rollback/비어있지않은거부 확인.
+실제 ProviderE2E/실제Credit/ProductionMigration/배포 없음. 기존Math·Ledger·History·APP·Phase2UI 불변; 공개 HOLD.
+Next: 자료 본문·시각 검토 및 시험/문항 확정 → 원자적 시험Credit RPC/복구/History/QA 및 실제schema 동시성 테스트 → 정식SQL·Rollback 제출 후 운영 적용 별도 승인.
+상세와 운영영향: [기존 Essay-first 정책](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#essay-material-ingestion--2026-10-12--phase-abc-partial).
+
+
+
 ### Phase 2 후속 — 구분선 보정 (2026-10-12)
 
 일정 상단 중복 border/margin 제거, 일정 하단과 첨삭 시작 사이 구분선 배치. 기본 접힘 유지.

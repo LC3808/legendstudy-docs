@@ -144,3 +144,71 @@ Phase 3 최소 설계 검토 항목(아직 SQL/Migration 적용 승인 요청 �
 6. 문항별 결과와 시험 종합 결과, 최초/재첨삭 비교를 공통 WEB/APP History read model에 추가하되 과거 단일 문항 기록을 수정·추정 backfill하지 않는다.
 7. additive schema/RPC 및 권한 영향, rollback, 중복 요청·부분 Provider 실패·예약 복구·14일 경계·동시 재첨삭 테스트를 먼저 제출한 뒤 별도 Owner 승인으로 적용한다.
 8. 기존 문항별 Math, Human Review, RLS 및 private storage 계약은 유지한다. 일반 공개 HOLD.
+
+
+## Essay material ingestion — 2026-10-12 — PHASE A/B/C PARTIAL
+
+Owner 추가 지시: A 전체 인벤토리/문항·자료 연결 → B 시험 단위 Runtime/Credit → C 자동화·Math 회귀·운영 영향 검토.
+운영 Migration·실제 Credit 거래는 별도 승인 전 금지. 원본 ZIP/PDF는 수정·삭제·Git 업로드 금지.
+자료 범위2001학년도 이후. 수시/모의는 별도 시험이며 대학·캠퍼스·학년도·원본 계열·회차를 유지한다.
+SHORT/LONG/MATH/SCIENCE 등 문항별 실제 형식은 자료로 판정한다. 300자나 대학 GROUP A/B로 평가 엔진을 결정하지 않는다.
+
+### 자료와 구조화 현황
+
+- 실제 확인된 Mac 바탕화면 `완료` 폴더의20 ZIP, PDF1,030개/고유SHA1,030개/동일 바이너리 중복0.
+- 분석 전후 ZIP20개 SHA 동일. 파싱 페이지9,027. 기존 Catalog21개 대학 ID 연결, 미매핑0.
+- 파일명 학년도 후보2020–2027. 이 입력에2001–2019가 포함됐다고 주장하지 않는다.
+- 파일명 유형 후보: 모의418/명시적 수시41/미확정571 PDF. 이는 시험 개수가 아니다.
+- 검토 상태: 본문 검토854, 낮은 텍스트량·시각/OCR 검토173, 손상/읽기 실패2, 구술면접 범위 밖1.
+- 아주대2021 모의 인문/의학과 예시답안2개는 pypdf와PDFium 양쪽에서 읽기 실패. 원본 보존.
+- 581개 자료 연결 후보에 페이지별 문제 표제·의도·기준·해설·예시 위치를 기록. **검증된 시험 또는 Evaluation Package가 아니다.**
+- 신규 검증 완료 Exam/Question/Package는0. 이름/표제만으로 문항 수와 ID를 생성하지 않음. 의미적 중복 검토 미완료.
+- SKKU2025 언어형1교시 PDF SHA `43371e05adaecbd324cadd2e28895d2b76e7d1598c9e857d1bd75aaa34d53e0d` 기존 자료와 동일.
+  기존 Exam `e15a43a8-5a50-501a-8a60-a632316240e8`, package version
+  `v1-sha256:bac7afbcbc2d11c18360d464d687065abf32a242d2a8545ad8fb3b1935576fd4`,3문항 구조·21근거항목 재사용.
+  원문 페이지1/7/9/14/17 시각 대조. 문항2 도표/문항3 앞 문항 참조를 보존해야 하며, 일부 답안 제출이 공유 문제 근거 제거를 뜻하지 않는다.
+- 원문·추출문·개별 inventory/CSV/연결 후보/기존 manifest/HTML 검토보고서는 로컬 비공개 `essay-materials-private` 폴더에만 저장.
+  Git에는 도구·집계 메타데이터만 포함. 내부 분석 승인과 외부 Provider 전송 권한은 별개이며 후자는 미확인.
+
+### DB/Runtime 검증과 구현 한계
+
+운영 DB read-only: essay_exams22(검증된 Catalog21+Math 합성1), essay_questions0.
+essay_practice_sessions.question_id 및 essay_evaluations.question_id/attempt_id/session_id는 NOT NULL.
+기존 billing decision은 기존 평가 FK에 묶이며 평가 단위는 여전히 문항이다. 문항 RPC 반복으로 시험 묶음을 과금하지 않는다.
+
+LAB exam-unit 계약 후보 구현: 검증 catalog의 owner/exam/kind/year/track/session/campus 및 문항/Rubric/Evidence 버전 고정,
+전체/일부 문항 snapshot과 정렬된 요청 hash, 재첨삭 문항 추가 차단, 수정하지 않은 답안 유지,
+revision후퇴/교차 사용자·시험/기간 초과/이미 사용한 포함 재첨삭 차단, 동일 Rubric의 개선·유지·하락 비교.
+**HTTP/DB 예약에 연결하지 않았으며 실제 Credit 구현 완료가 아니다.** 기존 단일문항 Math 계약 변경 없음.
+
+SQL: `scripts/essay-materials/sql/exam-unit-storage.draft.sql`은 세 private 저장 테이블의 로컬 설계 초안이며 마지막 ROLLBACK으로 종료한다.
+기존 Ledger/평가/History 원본을 변경하지 않고 직접 접근은 전부 차단한다. 정식 APP migration 경로에 등록하지 않음.
+아직 완성된 운영 Migration이 아니므로 이 초안의 운영 적용 승인을 요청하지 않는다.
+`rollback-empty-draft.sql`은 비어 있는 초안 객체만 제거하며, 데이터가 있으면 거부한다.
+
+정식 변경 전 추가 구현/검증:
+1. 원본 문항 ID·시험 membership·snapshot immutability와 lifecycle guard.
+2. account→cycle→grant 잠금, 최초1Credit·동일집합14일 포함재첨삭1회를 원자적으로 처리하는 RPC.
+3. idempotency/fence, 부분 Provider 실패의 전체 결과 미게시, 확정 실패 release와 불명확 상태 reconcile.
+4. 문항 결과 + 시험 종합 결과를 하나의 완료 트랜잭션으로 게시. 기존 unbilled composition 재사용; 문항별 과금 금지.
+5. 과거 단일문항 History/QLM/Human Review 계약을 보존하는 additive 읽기 투영. 미존재 결과를 생성하지 않음.
+6. 실제 전체 schema에서 동시 요청/권한/Worker/복구 테스트 후 APP 정식 migration 및 전체 rollback 제출.
+
+운영 영향/복귀: 사전 승인 전 모든 기능 binding OFF. 승인된 적용 시에도 자료 등록과 평가 활성화 별도 검증.
+복귀 시 신규 요청 차단→진행 중 예약 조정→필요한 audit/history 보존→이전 앱/Worker 복귀.
+거래가 있는 테이블을 DROP하거나 소비 내역을 삭제해서 되돌리지 않는다. 신규 예약이 없다면 빈 객체 rollback만 허용.
+
+### Grok 및 검증
+
+현재 admission.ts는 reviewedWorkerBinding→readReviewedAdmission 직접 호출로, 과거 callEssayGateway(ctx) 경로가 없다.
+Context 누락을 확인 없이 고쳤다고 주장하지 않으며 과거 리뷰와 현 HEAD의 차이를 기록한다.
+예약 RPC HTTP402/PT402 및422/PT422 일치 시 안전한 오류 코드 반환 구현. 원문DB진단 노출 없음.
+예약 이후 Worker402/422/timeout은202+evaluation ID 상태조회 유지; 함부로 재예약·release하지 않는다.
+Math 공통 transport/Worker/Ledger는 수정하지 않음. 나머지 Grok 정책 이슈는 별도 미해결 상태 유지.
+
+검증: Node22.23.2 전체Vitest120파일/1,062PASS/1 optional private fixture SKIP, Python7PASS,
+Lint/Typecheck/webpack Build/Boundary/secret audit PASS.
+격리PG17에서 의존성stub으로 저장 초안 실행/자동rollback,3개 forcedRLS,9개 직접역할 조회거부,
+누락 JSON identity 거부,빈 객체rollback,비어있지 않은rollback 거부 PASS.
+이 SQL테스트는 실제 lifecycle/동시 Credit/운영 RLS 통합 검증이 아니다.
+실제 Provider E2E·Credit 거래·Production Migration·배포 없음. 기존 Phase2 운영 상태 및 공개 HOLD 유지.
