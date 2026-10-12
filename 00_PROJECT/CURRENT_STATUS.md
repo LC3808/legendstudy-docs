@@ -10,6 +10,21 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay-first WEB Phase 1 — 2026-10-12 — PRODUCTION VERIFIED
+
+Owner 승인 범위 `/essay-lab/` 메인 Hero·대학 검색·카드 간소화 완료.
+LAB `codex/essay-first-web-phase1` @ `b6c784e7458cbc54c3e28fffafd7f349b0474544` Push/remote 확인.
+Production Pages `262ca551-64d2-4f3a-ba5e-07edbbb92bfe` SUCCESS, canonical Production SHA 일치 및 live UI 검증.
+42개 대학/49개 전형·Owner22 순서·30개 준비 대상·기존 상세 경로 보존.
+카드 CTA는 상세 진입만 수행. 메인 필터/메타데이터 UI만 제거. Credit navigation 유지.
+117개 테스트 파일의 최종 결과 총1042 PASS/1 optional private-fixture SKIP
+(전체 실행1041 PASS 후 새 테스트의 Next Link trailing-slash 기대값 수정, 해당 파일5 PASS 재검증).
+Lint/typecheck/webpack build/boundary/secret audit PASS. 6개 폭 실제 브라우저 및 동일 빌드 200% root-font simulation overflow 없음.
+배포 전후 Cloudflare deployment_configs 동일. APP·DB·평가/결제 계약·Allowlist 변경 없음; AI 공개 HOLD.
+**Next: Owner Phase 2 지시 대기.** 기존 Grok 미해결 기술 과제는 별도 유지. main 병합 없음.
+상세: [Phase 1 기록](../90_HISTORY/DAILY/2026-10-12.md#essay-first-web-phase-1--implemented-and-production-verified) · [정책](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md).
+
+
 ## Grok code review (LAB #1 / APP #9) + Essay-first reaffirmation — 2026-10-12 — RECORDED (documentation only)
 
 Recorded the Grok code review of the Essay full-service implementation and reaffirmed

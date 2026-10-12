@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Latest restore point — Essay-first WEB Phase 1 (2026-10-12)
+
+메인 `/essay-lab/`만 별도 Owner 승인으로 구현·배포 완료. LAB `codex/essay-first-web-phase1`
+@ `b6c784e7458cbc54c3e28fffafd7f349b0474544`; Pages Production `262ca551-64d2-4f3a-ba5e-07edbbb92bfe` live verified.
+Hero/대학 검색/로고+대학명+첨삭 시작하기 카드, 4/2/1열. 42/49·22 순서·30 준비대상·상세경로·Credit 보존.
+CTA는 상세 이동이며 평가 활성화가 아니다. AI HOLD/Allowlist 유지. APP·DB·Payment/평가 계약 변경 없음.
+Phase 2 이후는 Owner 지시 대기. 아래의 당일 이전 Wiki-only 기록과 구분한다. Grok 미해결 기술 과제는 그대로다.
+[Phase 1 검증·배포 기록](../90_HISTORY/DAILY/2026-10-12.md#essay-first-web-phase-1--implemented-and-production-verified).
+
+
 ## Restore route — Grok code review + Essay-first reaffirmation Oct12
 
 Documentation only — no code/DB/Provider/Production/public-activation change.
