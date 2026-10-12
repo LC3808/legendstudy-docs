@@ -106,3 +106,41 @@ Owner 지적에 따라 메인에서 해당 entry를 제거한다. 대학 선택 
 ### 서강대 로고 교체 (2026-10-12)
 
 Owner가 제공한 `sogang.jpeg` 원본을 기존 모노그램 대신 연결한다. 원본을 변형하지 않고 공통 로고 크기로 표시한다. manifest에는 Owner 제공 출처와 SHA-256을 기록하며, 별도 공식 사이트 검증을 했다고 표기하지 않는다.
+
+
+## Phase 2 — 대학 상세 Essay-first / 시험 단위 정책 (2026-10-12)
+
+Owner Phase 2 및 Credit Unit 추가 지시가 Phase 1의 상세 화면 보류를 대체한다.
+대학명 → 상단 공식 자료 링크 → 논술 첨삭 시작 → 실제 기출 학년도·계열·문항 선택 → 답안 작성·저장 순서로 재구성한다.
+2027학년도 논술 일정은 기본 접힘. 전형 안내·모집인원·학생부/논술 반영·수능최저·특징은 기본 화면에서 제거하고 원본 데이터는 보존한다.
+캠퍼스/시험 회차는 실제 등록된 문항이 있고 선택 구분이 필요한 경우만 제공한다. 전형 학년도와 기출 학년도는 별개이다.
+공식 기출 링크가 없는 경우 기존 공식 입학처 링크의 실제 성격을 정직하게 표시한다. 확인되지 않은 시험 시작 시간을 만들지 않는다.
+Desktop 문제42%/답안58%, Mobile 문제/답안 탭, 기존 owner-scoped Draft/CAS 및 History·결과 UI 재사용.
+
+### 인문·경제경영 Credit 단위 — Phase 3 적용 대기
+
+- 실제 동일 대학·학년도·계열의 **시험 1회차**가 첨삭 단위이며, 캠퍼스/회차가 다른 시험을 합치지 않는다.
+- 문항별로 직접 답안을 작성하고 전체 또는 일부 문항을 선택한다. 최초 제출한 문항 집합을 확정하며 이후 새 문항을 추가하지 않는다.
+- 최초 성공 첨삭 1 Credit, 같은 문항 집합에 대해 14일 이내 재첨삭 1회 추가 차감 없음.
+- 결과는 문항별 분석과 시험 전체 종합 분석을 구분하고, 재첨삭에서는 문항별 개선·유지·하락과 근거를 제시한다.
+- **수리논술 기존 문항별 Credit 계약은 그대로 유지**한다.
+- Phase 2는 선택·작성 UI 및 영향 분석만 반영한다. 신규 상세의 답안 제출은 비활성 상태이며, legacy 문항별 평가 RPC 반복 호출로 묶음 평가를 구현하지 않는다.
+- 기존 Math/Worker/Ledger/History/결제/Allowlist 계약과 일반 공개 HOLD는 유지한다.
+
+### 검증된 현황과 Phase 3 계약 영향
+
+2026-10-12 Production read-only 점검: `essay_exams` 공개 조회21건, `essay_questions` 테이블 실제 등록0건.
+익명 RLS 때문에 빈 결과라고 추정하지 않고 DB count/join으로 확인했다. 기존 Math 별도 문항/평가 기록과 혼동하지 않는다.
+따라서 실제 선택·작성·Provider E2E는 완료가 아니며, UI 흐름은 합성 fixture 및 자동화 테스트로 검증했다.
+기존 `essay_open_session`은 question ID, `essay_submit_attempt`는 session/revision/body hash, `essay_request_evaluation`은 attempt ID를 받는다.
+세션/평가/billing decision은 문항·attempt 중심이며 시험 묶음 원자성 계약이 없다. 기존 unbilled composition adapter만으로 운영 계약 완성을 주장할 수 없다.
+
+Phase 3 최소 설계 검토 항목(아직 SQL/Migration 적용 승인 요청 또는 운영 적용 아님):
+1. owner + 실제 exam ID + campus/track + immutable question-set으로 시험 진행 과정을 식별한다. 기존 ID를 재사용한다.
+2. 최초 제출 snapshot에 문항별 draft revision/body hash 및 검증된 Rubric/Evidence version을 고정한다. 빈 답안/타인 문항/다른 시험 혼합을 차단한다.
+3. 문항별 결과를 하나의 parent evaluation에 연결하고 기존 Ledger 원칙에 따라 단 한 번 예약·성공 확정한다. 확정 실패는 복구, 불명확한 Provider 상태는 조정 절차로 해결한다.
+4. idempotency key와 request hash는 시험/문항 집합/답안 revision을 포함하고 재시도는 동일 예약을 재사용한다. 동시 요청은 서버 트랜잭션 잠금으로 차단한다.
+5. 최초 확정과 연결된 포함 재첨삭1회/14일 조건을 원자적으로 검사한다. 새 문항 추가·교차 계정/시험 연결은 거부한다.
+6. 문항별 결과와 시험 종합 결과, 최초/재첨삭 비교를 공통 WEB/APP History read model에 추가하되 과거 단일 문항 기록을 수정·추정 backfill하지 않는다.
+7. additive schema/RPC 및 권한 영향, rollback, 중복 요청·부분 Provider 실패·예약 복구·14일 경계·동시 재첨삭 테스트를 먼저 제출한 뒤 별도 Owner 승인으로 적용한다.
+8. 기존 문항별 Math, Human Review, RLS 및 private storage 계약은 유지한다. 일반 공개 HOLD.

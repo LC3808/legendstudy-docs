@@ -10,6 +10,24 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Essay-first WEB Phase 2 — 2026-10-12 — UI DEPLOYED / RUNTIME PARTIAL
+
+LAB `codex/essay-first-web-phase2` @ `6469ada1c447b78b9cdceff9fafdd8a2940123ca` Commit/Push/remote 일치。
+Production Pages `3a02acef-feb0-404e-a7df-6ae3424834cd` SUCCESS (2026-10-12T10:48:13.939904Z), canonical SHA 일치, live 대학 상세 확인.
+대학명/공식 링크/첨삭 선택·작성 중심으로 상세 재구성, 전형 설명은 기본 화면에서 제거, 2027 일정 기본 접힘.
+실제 DB 등록 문항 기반 학년도·계열·문항/필요시 캠퍼스·회차 선택, 기존 Draft 저장·복원 및42:58/모바일 탭 재사용.
+인문·경제경영 시험 묶음 선택 및1Credit/14일/동일 문항 집합 정책을 UI에 반영. 실제 제출·과금 변경은 Phase3 대기하여 신규 상세 제출 비활성.
+**운영 essay_questions 실제0건**(DB read-only 확인). 선택·저장 브라우저 검증은 합성 데이터. 실제 Provider/Credit E2E는 이번에 실행하지 않았으며 서비스 전체 COMPLETE 아님.
+118 test files /1047 PASS/1 optional private-fixture SKIP. Lint/typecheck/build/boundary/secret audit PASS.
+실제 브라우저360/375/390/768/1280/1440 및 동일 출력물의200% root-font simulation에서 가로 overflow 없음; 운영6개 폭/일정 접힘 확인.
+임시 합성 QA route는 소스·Production 산출물에서 제거. 배포 전후 Cloudflare deployment_configs 동일.
+42개/49개 전형·Owner22·준비30·Math/Credit/History/Allowlist 보존. APP/DB/결제 변경·main 병합 없음. 공개 HOLD.
+Rollback: Pages `26bd089c-e54a-4e21-b8fa-b8888a557ee9` / LAB `df4888f46ad80173e84b127fd651d072daa1ab96`.
+Next: 공식 문항 등록·출처 검증, 시험 묶음 계약의 additive schema/RPC·예약/실패복구·idempotency 설계 검증 후 별도 승인으로 Phase3 적용.
+계약 분석과 Owner 정책: [기존 정책 문서 Phase2](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#phase-2--대학-상세-essay-first--시험-단위-정책-2026-10-12).
+
+
+
 ## Essay-first WEB Phase 1 — 2026-10-12 — PRODUCTION VERIFIED
 
 Owner 승인 범위 `/essay-lab/` 메인 Hero·대학 검색·카드 간소화 완료.
