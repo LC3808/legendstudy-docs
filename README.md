@@ -45,6 +45,11 @@ Canonical facts live in their canonical repository; this hub **links** to them. 
 4. [`00_PROJECT/SOURCE_OF_TRUTH.md`](00_PROJECT/SOURCE_OF_TRUTH.md) — where each fact canonically lives
 5. [`90_HISTORY/DAILY/`](90_HISTORY/DAILY/) — how we got here (latest day = most recent)
 
+**Key Owner decisions & reviews**
+
+- [`00_PROJECT/ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md`](00_PROJECT/ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md) — Essay-first product principle (Owner-approved)
+- [`90_HISTORY/REVIEWS/`](90_HISTORY/REVIEWS/) — external code reviews (e.g. 2026-10-12 Grok LAB #1 / APP #9)
+
 ## Public repository — security rule
 
 This repository is **PUBLIC**. It contains **only sanitized** architecture, status, public repo links, commit/migration IDs, and abstract contracts. It must **never** contain passwords, JWTs, access/refresh tokens, `service_role` keys, API keys, credential-file contents, student answer text, student PII, private calibration/reviewer artifacts, or raw provider payloads with private data. See the Security section of [`AI_CONTEXT.md`](00_PROJECT/AI_CONTEXT.md#12-security--privacy-rules).

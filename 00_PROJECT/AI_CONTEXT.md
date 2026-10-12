@@ -10,6 +10,21 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore route — Grok code review + Essay-first reaffirmation Oct12
+
+Documentation only — no code/DB/Provider/Production/public-activation change.
+Grok reviewed the Essay full-service branch: [LAB #1](https://github.com/LC3808/legendstudy-lab/issues/1)
+@ `ad4ea67` and [APP #9](https://github.com/LC3808/legendstudy-app/issues/9) @ `631eb65`.
+Re-verified 2026-10-12: both review branches `codex/essay-full-service-implementation`
+are **unmerged** — LAB `main` still `8991b510`, APP `main` `d07671e` — so a docs/wiki PR
+does **not** integrate app code; confirm the real integration branch before any store build.
+Review findings are **proposals, not verified fixes**. OWNER_ACTION_REQUIRED: (1) final sort
+metric 지원자 수 vs 경쟁률; (2) Owner Priority 22 single source + 강남대 inclusion — not decided here.
+Essay-first product principle reaffirmed; general-user AI feedback stays **HOLD**.
+See [Grok review record](../90_HISTORY/REVIEWS/2026-10-12-grok-code-review.md) ·
+[Essay-first policy](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md) ·
+[CURRENT_STATUS](CURRENT_STATUS.md#grok-code-review-lab-1--app-9-essay-first-reaffirmation--2026-10-12--recorded-documentation-only).
+
 ## Restore route — Quality traceability refinement Oct10
 
 Fetch APP/LAB `codex/quality-traceability-refinement`; checkpoints APP1e4d92f /

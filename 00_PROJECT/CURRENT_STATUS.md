@@ -10,6 +10,46 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Grok code review (LAB #1 / APP #9) + Essay-first reaffirmation — 2026-10-12 — RECORDED (documentation only)
+
+Recorded the Grok code review of the Essay full-service implementation and reaffirmed
+the Owner Essay-first product principle. **No code/DB/Provider/Production/public-activation
+change.** Review findings are **proposals, not verified fixes** — none are "fixed on main."
+
+Current remote state re-verified read-only 2026-10-12 (`git ls-remote`):
+- **LAB** review branch `codex/essay-full-service-implementation` @ `ad4ea678538009c698a39041b8be0d9d5c2348af`;
+  `refs/heads/main` still `8991b510d2c9702ecfb05315fe21363ab6df7012` → **review branch NOT merged**, main behind.
+- **APP** review branch `codex/essay-full-service-implementation` @ `631eb65efe8a24f971aee3890226c6c26dd185d8`;
+  `refs/heads/main` `d07671e985929ad1aa4ba2c811919cc592a37b34` → **Essay implementation NOT in APP main.**
+- Consequence: merging a docs/wiki PR does **not** integrate app/web code; verify the real integration branch before any store build.
+
+Kept-by-review designs (do not change): Worker fail-closed when Provider unbound; Credit
+balance from server response; unverified 2027 applicant/competition figures not shown;
+no arbitrary per-campus summation; general-user AI feedback **HOLD**; APP `service-role`
+key not observed in the reviewed SHA (scoped observation, not a whole-repo absence proof).
+
+Review-proposed fixes (unimplemented/unverified): sort-metric inconsistency (projection by
+competition vs logic/UI/button by applicant count); Owner Priority 22 duplicated in
+`catalog-policy.ts` vs `university-discovery.tsx` with differing 강남대 inclusion; admission
+`ctx` not passed to `callEssayGateway`; legacy "준비 중 = separate low-priority group"
+logic conflicting with the Owner decision (keep in same list, disable action only); Worker
+`evaluate.ts` 402/422 mapping gap; APP/LAB catalog-policy parity; native essay flow
+completion must distinguish gateway wiring from screen state (no fake results); confirm
+main's security changes reach the integration/store build; do not record Flutter tests as
+passing without actual runs.
+
+**OWNER_ACTION_REQUIRED (not decided here):** (1) final single sort metric — applicant
+count vs competition — across projection/logic/UI/button copy; (2) Owner Priority 22 single
+source + whether 강남대 is included. Both left to Owner; no arbitrary policy chosen.
+
+Distinct concepts kept separate (not merged into one sort rule): default list exposure order ·
+applicant-vs-competition metric · in-list position of 준비 중 universities (Owner: keep in list) ·
+their disabled-action state · actual available feedback status (GATED/HOLD, no fake results).
+
+Detail: [Grok review record](../90_HISTORY/REVIEWS/2026-10-12-grok-code-review.md) ·
+[Essay-first policy](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md) ·
+[daily](../90_HISTORY/DAILY/2026-10-12.md).
+
 ## Quality traceability refinement — 2026-10-10 — PARTIAL
 
 Owner-approved continuation on independent `codex/quality-traceability-refinement`.
