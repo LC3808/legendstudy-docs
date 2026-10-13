@@ -872,3 +872,23 @@ question role at question PDF2; empty erroneous question mapping on criteria PDF
 removed. Remaining15 mappings keep human verification; all closing checks unchanged.
 No rights approval or runtime activation; Provider/Credit not called. Owner needs
 to reconfirm only corrected question mapping and regenerate reviewed Package.
+
+
+### Oct13 final Owner review → Package v16
+
+DB revision15 VERIFIED/all16 mappings confirmed. Package missing after ordinary
+save, so generated using existing approved admin action; revision16 VERIFIED,
+approval_requested true, package16. Digest recomputed valid:
+09b50772b37f69ec7544a752ba88f5cde6c8de555ab17339a13eb6ef4fdcf106.
+Exact canonical binding succeeds: question4cbe8b69-2ccc-5c4e-9e77-0644f90e2cde,
+13 existing-runtime evidence inputs and5criteria. Question identity/content blocker
+resolved. Owner review not repeated; no text or verification changes.
+
+APP f0ea749 adds worker RPC fetch into existing loader; candidate read-only package
+RPC validated in temporary PG17 (role denial, rights denial, digest, content, replay,
+rollback), adapter7 tests PASS. Existing material private schema reused; no new
+table/engine. Owner approval requested for one RPC EXECUTE grant to essay_worker,
+not authenticator membership. SQL/rollback in existing essay_material_review folder.
+Not applied. Per-document Provider rights remain empty. No real Provider/Credit.
+Current status PARTIAL: role switching, Provider policy/telemetry, operational host,
+exam Credit/History shared E2E remain implementation/deployment gaps. HOLD maintained.
