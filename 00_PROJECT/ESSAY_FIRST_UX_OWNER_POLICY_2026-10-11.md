@@ -914,9 +914,12 @@ modal/close, existing renderer and page persistence. No forced PDF split; no
 download/print/share controls. Native e957602: pdfrx full-screen route with close,
 underlying text/photo Draft retained; no WebView. Same gated student_question DTO.
 Private evaluation PDFs are not passed to student renderer. No student asset
-publication or rights change. Viewer changes currently committed, not deployed.
+publication or rights change. Viewer deployed to Production:3332403b-c0a9-4521-86bb-8964111c3bf0,
+source2c4eebf326c26e4497bab54b366cefd4817e0fb4. Cloudflare Production source
+verified; live Hanyang page HTTP200. Rollback: previous deployment
+4aa528c7-0f65-4655-9172-8b2b2e9a12f7 (178d4bf). This does not verify actual PDF/E2E.
 
-WEB2 interaction tests, types/lint; Native analyze/3 related tests PASS. Real local
+WEB2 interaction tests, types/lint and production-environment static build; Native analyze/3 related tests PASS. Real local
 mobile browser error-state viewer opened/closed with answer retained. PC popup
 not observable in IAB; approved PDF display and fresh native platform builds are
 unverified. Temporary QA route removed. Actual end-to-end viewer QA still needed.
