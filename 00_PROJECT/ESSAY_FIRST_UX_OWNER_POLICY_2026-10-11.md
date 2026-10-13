@@ -864,3 +864,11 @@ Production deploy4aa528c7-0f65-4655-9172-8b2b2e9a12f7 source178d4bf verified.
 Live admin shows revision12 VERIFIED, Package v12 preserved, empty-question
 warning and generation disabled. No review data changed. Remote LAB178d4bf/
 APP9bfa44d verified. Rollback WEB to0590ec46 if needed.
+
+
+Oct13 Owner-authorized question-only correction: saved revision13 NEEDS_REVIEW
+through existing administrator UI. Original question text218chars restored to
+question role at question PDF2; empty erroneous question mapping on criteria PDF6
+removed. Remaining15 mappings keep human verification; all closing checks unchanged.
+No rights approval or runtime activation; Provider/Credit not called. Owner needs
+to reconfirm only corrected question mapping and regenerate reviewed Package.

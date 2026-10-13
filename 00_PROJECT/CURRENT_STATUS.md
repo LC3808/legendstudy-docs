@@ -17,6 +17,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 한양대 문제 연결 정정 — Oct13
+
+Owner 승인대로 문제 연결만 수정, 운영 revision13 NEEDS_REVIEW 저장 확인.
+문제 PDF2의 원문 복원·잘못 추가된 빈 문제 연결 제거. 나머지15개 검수 근거와
+체크리스트 보존. 정정 문항1개 재확인 및 Provider 권리 확인 대기. 공개 HOLD.
+
+
 ## Owner Package 생성 확인 — Oct13 — PARTIAL
 
 한양대2024수시인문오후2 Package v12 실제 DB 저장 확인. revision12 VERIFIED,
