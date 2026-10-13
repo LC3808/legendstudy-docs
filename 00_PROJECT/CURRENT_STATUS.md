@@ -17,6 +17,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Owner Package 생성 확인 — Oct13 — PARTIAL
+
+한양대2024수시인문오후2 Package v12 실제 DB 저장 확인. revision12 VERIFIED,
+approval_requested=true,17개 근거, digest 재계산 일치. runtime_ready=false,
+rights_status={}이므로 평가 승인/실행은 아직 아님. 검수 내용을 반복하지 않음.
+기존 문제 문장이 intent로 변경되고 question은 빈 내용/평가기준 PDF6쪽으로
+추가되어 실제 Runtime 로더가 차단. Owner에게 해당 연결만 정정 가능 여부 확인.
+APP9bfa44d: 기존 RuntimeHost용 Package 로더·사전 검사6테스트 PASS.
+LAB178d4bf: 빈 문제 Package 생성 방지 및 승인 대기 의미 안내18테스트 PASS.
+실제 Provider/Credit E2E는 미실행, 운영 연결 개발 미완료. 일반 공개 HOLD.
+
+
 ## 한양대 자동 추출·검수 연결 — 2026-10-13 — PARTIAL
 
 Owner 업로드 PDF2개를 해시 일치로 즉시 재사용(A). 한양대2024수시 인문

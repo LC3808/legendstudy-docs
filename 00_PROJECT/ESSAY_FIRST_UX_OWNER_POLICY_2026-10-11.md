@@ -831,3 +831,31 @@ Rollback WEB to prior321d34b deployment0bd29d65; saved private review remains in
 APP adapter rollback is code-only. Public evaluation HOLD; no Provider/Credit call,
 no payment/Auth/RLS changes. First exam remains incomplete pending human review
 and actual Runtime/Credit integration; do not expand activation before first E2E.
+
+
+### Oct13 Owner-generated Package v12 verification
+
+DB verified revision12/VERIFIED, approval_requested=true; version12 digest
+978b4c6f07432b75055eff63baa415bb9061adf2b5ebbeb17c95dbecce323543 recomputes
+correctly.17 mappings stored. The list's approval-pending label is a saved request,
+not an implemented separate approval action or runtime-ready status. No automatic
+activation; runtime_ready=false and rights_status empty.
+
+Production package exported privately (not Git) and fed to new existing-RuntimeHost
+loader using canonical registration manifest. It correctly returns no enabled
+question: original question text now intent; added question text empty and on
+evaluation PDF6 instead of question PDF2. Owner correction confirmation requested,
+other human-reviewed mappings untouched. Empty optional image/model-answer entries
+mean no content, not a mandate to invent evidence. Two source Provider rights need
+actual basis recorded by Owner. Existing Package version is preserved.
+
+Owner next: correct just question mapping (or authorize Codex to prepare correction),
+record actual Provider transmission permission for the two PDFs, then regenerate a
+new Package version after reviewing changes. Full prior review need not be repeated.
+Runtime operating SQL and actual Credit require separately scoped approval; no grant
+or transaction performed here. Telemetry RPC/role/policy/host, selected-set Credit,
+History/QA and cross-device E2E are remaining implementation/deployment gaps.
+
+APP9bfa44d6 local tests; LAB178d4bf18 related tests/typecheck/lint/build check.
+No Provider call or actual Credit. Revert these code commits to roll back; reviewed
+DB package untouched. Current first-exam service status remains PARTIAL.
