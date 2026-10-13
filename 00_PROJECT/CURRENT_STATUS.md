@@ -17,6 +17,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 관리자 대학별 검수 UX — 2026-10-13
+
+운영 관리자 로그인/76시험 목록 확인. 대학 탭·완료 수·최신순 테이블/모바일
+목록·검수 후 해당 대학 복귀 구현 및 운영 배포 완료. LAB321d34b,
+Pages0bd29d65-2a20-4dc1-af8f-32c7add517b5. 실제 PDF 저장 QA 및 전체 첨삭
+E2E는 미완료. 상세 근거는 기존 Essay-first 정책 문서 최신 절 참조.
+
 ## Universal Essay continuation — 2026-10-13 — PARTIAL
 
 Existing reviewed exam Worker now has persistent child/review/synthesis/finalization

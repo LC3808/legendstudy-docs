@@ -749,3 +749,25 @@ aec0f8af-8a01-4b62-b690-f2c71e007816; DB rollback은 접근만 차단하며 검�
 
 현재의 운영 미적용/웹 미배포/Package 생성 미구현 문구는 위 승인 전 기록이다.
 일반 사용자 AI 공개 HOLD, 학생 PDF와 전체 Universal E2E는 여전히 PARTIAL.
+
+
+### Oct13 관리자 대학별 검수 목록 UX — 운영 반영
+
+Owner 보완 반영: 전체/대학별 가로 스크롤 탭, 기존 Priority22 순서, 대학별
+검수 완료/전체 시험 수. 실제 등록 대학만 표시하며 탭 숫자는 검색 필터에 따라
+줄어들지 않는다. 데스크톱은 학년도/시험 유형/계열·회차/문항 수/검수 상태/작업
+테이블, 900px 미만은 간결한 목록. 시험은 학년도 최신순이다.
+기존 검색·필터 유지 및 초기화 지원. 검수 화면 진입/복귀에도 필터를 보존한다.
+서버 저장 성공 결과로 목록 상태와 완료 수를 즉시 갱신하며 검수 완료 후 해당
+대학 탭으로 복귀한다. 저장 실패 시 입력 유지와 기존 오류 처리를 보존한다.
+
+LAB `321d34bbdb35f71c9e918eb4f6b815fe4a47d8b6`, 기존 브랜치 Push/Remote 확인.
+Pages `0bd29d65-2a20-4dc1-af8f-32c7add517b5` Production 성공/소스 SHA 확인.
+Rollback WEB 배포점: `5987e864-8cbf-413b-806d-9fa497d9d3f8`. DB 변경 없음.
+관련 7개 테스트, 타입 검사, 변경 영역 lint, boundary/secrets audit, WEB build PASS.
+실제 관리자 로그인 후 76시험 목록, 한양대0/3 범위, 검색·상세 진입·복귀 확인.
+1280px 테이블/360px 목록 시각 확인; 360/768px 문서 가로 overflow 없음.
+완료 후 상태 갱신은 mocked server 응답의 UI 테스트로 검증했고 운영 자료를
+임의 VERIFIED 처리하지 않았다. 실제 PDF 업로드/저장·복원은 계속 미완료이다.
+이번 UX 배포는 Provider/Credit 호출, 권한 변경, 학생 공개를 수행하지 않았다.
+관리자 URL https://lab.legendstudy.com/admin/materials/ ; 일반 AI 공개 HOLD.
