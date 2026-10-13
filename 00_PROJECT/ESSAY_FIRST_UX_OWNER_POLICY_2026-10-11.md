@@ -905,3 +905,24 @@ No membership changes, Provider calls, Credit, publication or student-data chang
 Rollback: revoke this function's Worker EXECUTE using existing worker_read_rollback.sql.
 Remaining: source transmission permission, Worker authentication, Provider policy/
 telemetry, runtime hosting and Credit/History E2E; overall service PARTIAL/HOLD.
+
+
+### Oct13 Owner viewer policy — implementation partial
+
+WEB2c4eebf: retain existing writer, PC window/new-tab attempt, mobile full-screen
+modal/close, existing renderer and page persistence. No forced PDF split; no
+download/print/share controls. Native e957602: pdfrx full-screen route with close,
+underlying text/photo Draft retained; no WebView. Same gated student_question DTO.
+Private evaluation PDFs are not passed to student renderer. No student asset
+publication or rights change. Viewer changes currently committed, not deployed.
+
+WEB2 interaction tests, types/lint; Native analyze/3 related tests PASS. Real local
+mobile browser error-state viewer opened/closed with answer retained. PC popup
+not observable in IAB; approved PDF display and fresh native platform builds are
+unverified. Temporary QA route removed. Actual end-to-end viewer QA still needed.
+
+First-exam priority unchanged: Hanyang Package16 already mapped correctly; no PDF
+reanalysis or Owner-review repetition. No Provider or Credit call. Worker package
+RPC applied, but role membership/Provider policy/telemetry/host/settlement remain
+incomplete. Rights still unset. Public HOLD. Source review alone does not authorize
+Provider transmission. No additional operating SQL requested in this viewer change.
