@@ -597,3 +597,73 @@ GIT: 같은 `codex/essay-shared-app-integration` 보존.
 APP `63309b2797c50170deb995a163a14d88f093bbcb` (구현0b99cdd, 후속 배포증거63309b2),
 LAB `96d6572f392c6f79e09f6083d5270fdac7f16dc1`; Push/Remote SHA 일치 확인.
 APP main 병합/스토어 제출 없음. **UNIVERSAL_ESSAY_SERVICE: PARTIAL**.
+
+
+## Oct13 durable runtime and Worker Secret correction
+
+기존 범위/우선순위/UI/Catalog/Registry/Math/Ledger/Payment/IAP 유지.
+`codex/essay-shared-app-integration`에서 이어서 작업했다.
+
+### 구현 및 로컬 검증 완료
+
+- Existing ReviewedRuntimeWorker + ExamQuestionChannel + DurableJournal를 시험
+  단위 복구 경로로 연결했다. 최초 run/owner/exam/claim digest 고정, 문항별 실행 의도,
+  독립 검수 결과, 시험 종합 평가 의도/결과, 최종 정산 checkpoint를 보존한다.
+- 완료 문항은 재호출하지 않고, 불명확한 Provider/종합 평가 실행은 재실행·임의 환불하지
+  않는다.8개 경쟁 프로세스가 동일 시험을 요청해도 문항2회/종합1회만 실행했다.
+- 실제 임시 PostgreSQL의 기존 Ledger + 후보 시험 SQL 연결 검증: 정산 commit 후
+  응답 유실→정확한 재시도, 중복 차감/Provider 재호출0, 최초1 Credit/재첨삭0.
+  Provider와 검수 입력은 합성 fixture다. 실제 Provider E2E PASS가 아니다.
+- WEB/APP 공통 private catalog gateway에 Worker JWT 설정 사전 검사 추가:
+  malformed/wrong role/expired/near-expiry 설정이면 호출 전503. 서명 검증 대체 아님;
+  학생 온라인 Auth/allowlist와 Supabase 서명/ACL 검증은 그대로 유지한다.
+- Python45, local PG14 scenarios, WEB142 관련 테스트 PASS. lint/typecheck/경계/
+  secret audit/Node22 webpack static build133 pages PASS. 신규 Flutter 변경 없음.
+  Android/iOS 빌드는 직전 결과 유지이며 이번에 재실행했다고 주장하지 않는다.
+
+### 운영 확인 및 배포
+
+운영 읽기: 등록76시험/234문항/공개0. DB 변경·운영 Credit·Provider 호출 없음.
+Pages `9cd0d891-06e3-4454-b7fe-9a2b44853be5`, Production SUCCESS,
+LAB `2b295fdddf33bd02f361b0101a53c58eebb8a485`; 환경 설정 전후 동일.
+Live GET21대학/77선택레코드/237입력항목, evaluationReady0. 이 공개 source view 수와
+실제 등록76/234를 혼동하지 않는다. Private POST503/private,no-store: Secret 미설정.
+실제 브라우저 숙명여대2025모의/인문 문항4개 선택·입력 화면, 평가 비활성 확인.
+Rollback point `b95c09d6-f388-47ed-81a9-8f68376231f4`.
+
+### Owner Action — 정확한 설정 절차
+
+[기존 Registry review의 Owner runbook](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/supabase/reviews/essay-private-registry/README.md#owner-action--worker-authentication-correction-2026-10-13)을 단일 상세 절차로 유지한다.
+
+1. Supabase LegendStudy(stlhijzpjfgwwdgunlsd) → SQL Editor에서 읽기 전용 ACL 확인;
+   Settings → JWT Signing Keys에서 신뢰 키/기존 발급 담당자의 보관 키 확인.
+2. 기존 JWT가 있다고 단정하지 않는다. role만 존재, 발급기는 미배포이며 scoped local
+   확인에서 자격증명 미발견. Cloudflare Production/Preview에도 ESSAY Secret 없음.
+3. `authenticator → essay_worker` membership가 FALSE이므로 JWT만 넣어도 동작하지 않는다.
+   이 역할에는 기존 finalize/claim 등 권한도 있어 새 권한 부여는 별도 검토·승인 대상.
+   운영키 도입/회전도 자동 실행하지 않는다. 미검증 키나 API key를 JWT로 대체하지 않는다.
+4. 승인된 발급자가 해당 프로젝트가 신뢰하는 키로 role=essay_worker/exp JWT를 확보한 뒤,
+   Cloudflare → Workers & Pages → legendstudy-lab → Settings → Variables and Secrets
+   → Production → Add → ESSAY_REGISTRY_WORKER_JWT → Secret/Encrypt → Save → 재배포.
+   값은 JWT만, Bearer 접두사 없음. 키/JWT를 채팅·로그·Git에 출력/저장하지 않는다.
+5. 배포 SHA 성공, 승인 계정 private POST와 canonical76/234 ID 일치, 미승인 차단,
+   no-store/HOLD 보존을 확인한다. 검증은 조회만 하며 Credit 거래가 필요하지 않다.
+   단기 JWT 만료 전 갱신 체계는 별도 운영 전제다.
+
+일반 테스트 계정 JWT는 학생 인증용일 뿐 Worker 권한이 아니다. Publishable/anon,
+secret/service_role, Math Worker 자격증명도 대체 불가. 해당 Registry RPC EXECUTE는
+essay_worker만 true, 나머지 API roles false로 재확인했다.
+
+### 구현 미완료 / 승인 대기 / 실제 검증 구분
+
+구현 미완료:21개 대학 문항별 자료/권리 검수(56개는 후보), server Draft/사진 공유,
+production lifecycle/lease/retention 및 시험 submit·History·growth·QA 통합,
+검수된 whole-exam synthesis/Worker 운영 배치. 현재 후보 SQL은 배포 준비 완료가 아니다.
+승인/Owner 설정: issuer와 role 권한 결정, 직접 Secret 설정, 완성된 SQL 별도 승인,
+명시적 운영 Credit E2E 범위 승인. 일반 공개/Store 배포는 계속 HOLD.
+실제 서비스 검증: Registry DB/공개 selection UI/배포 확인만 완료.
+새 시험의 실제 Provider·Credit 및 WEB↔APP 전체 E2E는 미완료다.
+
+APP `76408fa53ba095fb37210c29f4fef977a2148549` / LAB `2b295fdddf33bd02f361b0101a53c58eebb8a485`
+Push/remote SHA 일치. APP main 병합/스토어 제출 없음.
+**UNIVERSAL_ESSAY_SERVICE: PARTIAL.**

@@ -10,6 +10,28 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Universal Essay continuation — 2026-10-13 — PARTIAL
+
+Existing reviewed exam Worker now has persistent child/review/synthesis/finalization
+recovery, verified with actual disposable PostgreSQL Ledger (lost settlement response,
+initial1/rewrite0, concurrency). WEB rejects invalid Worker credential configuration.
+APP76408fa / LAB2b295fd pushed and remote SHA verified. Python45 tests, local PG14
+scenarios, WEB142 related tests, lint/typecheck/boundary/build PASS. No real Provider
+or operating Credit call. Flutter UI/build inputs unchanged; prior builds retained.
+
+Pages9cd0d891-06e3-4454-b7fe-9a2b44853be5 Production SUCCESS, LAB2b295fd; settings
+unchanged. Live source Catalog21/77/237, evaluationReady0; private POST503/no-store
+without worker Secret. Browser Sookmyung selection/drafting and disabled evaluation
+verified. Production registry76/234/unpublished234 remains unchanged. Public HOLD.
+
+**Correction:** essay_worker exists with RPC EXECUTE, but authenticator membership
+is FALSE; operational issuer/JWT has not been found or provisioned. Cloudflare
+Production/Preview lack ESSAY Secret. Pasting a test JWT/API key is not a solution.
+Owner's exact menu/check/issuance/Secret/verification procedure is linked in the
+[policy continuation](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct13-durable-runtime-and-worker-secret-correction).
+Server Draft/photos, exam submission/History/growth/QA and production lifecycle/
+lease/retention composition remain implementation gaps, not approval-only blockers.
+
 ## Universal Essay — 2026-10-13 — PARTIAL
 
 APP63309b2/LAB96d6572 pushed/remote verified. Owner-approved worker-only private
