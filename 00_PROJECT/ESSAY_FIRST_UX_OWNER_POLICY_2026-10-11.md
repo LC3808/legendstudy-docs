@@ -720,3 +720,32 @@ finalize 권한 때문에 단순 조회 권한처럼 확대하면 안 된다. �
 최종Package 승인/기존Runtime 연결, Worker 권한, 시험Credit/서버Draft/사진 공유의
 운영 연결, 실제 Provider·History·재첨삭·QA·WEB/APP E2E. 일반 공개 HOLD.
 이번 변경은 운영배포/DB변경/실제Credit/Provider/Store 제출을 수행하지 않았다.
+
+
+### Owner 승인 후 운영 연결 — Oct13
+
+검수용 비공개 DB와 관리자 웹 연결 추가 승인 수신. 적용된 migration:
+20261013032726_essay_material_review_private /
+20261013033132_essay_material_package_generation. 실제 DB에서3개 private RLS
+table,비공개32MiB PDF bucket,익명 차단 RPC5개 확인. 기존234문항 유지.
+DROP은 새 검수 정책2개의 재생성뿐이며 학생/Registry/Ledger/History 삭제 없음.
+
+서버 Evaluation Package 생성 추가: 검수한 텍스트/문항/페이지/출처/권한과
+canonical ID,version,digest 저장. 기존 평가결과를 소급 변경하지 않는다.
+Package는 runtime_ready=false이며 생성 자체가 평가 활성화는 아니다.
+
+관리자 URL: https://lab.legendstudy.com/admin/materials/
+기존 관리자 로그인→논술 자료 검수→대학/시험 선택→기존 문서 또는 PDF 등록
+→자동 분석 초안→문항/역할/페이지/추출 근거 수정→저장→체크리스트 검수 완료
+→Evaluation Package 생성. 기존 문서는SHA256으로 중복 방지한다.
+권한은 기존quality operator이며 새 관리자 계정이나 권한을 만들지 않았다.
+
+LAB e4644774732e56c0f603a2a612b8a73173c58b95 / Pages
+5987e864-8cbf-413b-806d-9fa497d9d3f8 Production 성공 및 실도메인 로그인 차단
+화면 확인. 기존 Auth/운영 환경 유지. Rollback 배포점은
+aec0f8af-8a01-4b62-b690-f2c71e007816; DB rollback은 접근만 차단하며 검수 이력
+보존. 로그인된 관리자 세션이 없어 실제 upload/save/reload 검증은 Owner 로그인
+대기. 로컬 테스트를 운영 E2E로 보고하지 않는다. 실제 Provider/Credit 호출0.
+
+현재의 운영 미적용/웹 미배포/Package 생성 미구현 문구는 위 승인 전 기록이다.
+일반 사용자 AI 공개 HOLD, 학생 PDF와 전체 Universal E2E는 여전히 PARTIAL.

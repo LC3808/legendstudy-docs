@@ -2,8 +2,8 @@
 
 ## Oct13 materials review continuation — PARTIAL
 
-관리자 PDF 검수/WEB·Native 조건부 뷰어 로컬 구현·검증 완료. 신규 private DB는
-승인 대기, 학생 PDF/평가 활성화0. Worker Secret 설정 완료, role membership는
+관리자 PDF 검수/WEB·Native 조건부 뷰어 로컬 구현·검증 완료. 신규 private DB 승인 후 적용, 관리자 웹 운영배포 완료. 로그인 세션을 통한
+실제 저장 QA 대기; 학생 PDF/평가 활성화0. Worker Secret 설정 완료, role membership는
 아직 false. [현재 상세/Owner 절차](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct13-university-by-university-materials-delivery--partial).
 
 DOCUMENT_STATUS: CANONICAL
