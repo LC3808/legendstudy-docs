@@ -859,3 +859,8 @@ History/QA and cross-device E2E are remaining implementation/deployment gaps.
 APP9bfa44d6 local tests; LAB178d4bf18 related tests/typecheck/lint/build check.
 No Provider call or actual Credit. Revert these code commits to roll back; reviewed
 DB package untouched. Current first-exam service status remains PARTIAL.
+
+Production deploy4aa528c7-0f65-4655-9172-8b2b2e9a12f7 source178d4bf verified.
+Live admin shows revision12 VERIFIED, Package v12 preserved, empty-question
+warning and generation disabled. No review data changed. Remote LAB178d4bf/
+APP9bfa44d verified. Rollback WEB to0590ec46 if needed.
