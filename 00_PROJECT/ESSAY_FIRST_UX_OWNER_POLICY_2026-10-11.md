@@ -771,3 +771,63 @@ Rollback WEB 배포점: `5987e864-8cbf-413b-806d-9fa497d9d3f8`. DB 변경 없음
 임의 VERIFIED 처리하지 않았다. 실제 PDF 업로드/저장·복원은 계속 미완료이다.
 이번 UX 배포는 Provider/Credit 호출, 권한 변경, 학생 공개를 수행하지 않았다.
 관리자 URL https://lab.legendstudy.com/admin/materials/ ; 일반 AI 공개 HOLD.
+
+
+### Oct13 Hanyang first exam extraction and review — PARTIAL
+
+**Reuse A:** Owner-uploaded question3pages and integrated evidence8pages already
+private-stored; exact SHA256 matches local Downloads. No reupload/recollection.
+Exam345d3caa-3438-58c3-8f80-62a6242179ec; question4cbe8b69-2ccc-5c4e-9e77-0644f90e2cde.
+Integrated pages1–4 belong to afternoon1 and are excluded; target pages5–8.
+Question/passages on PDF2–3. Official5criteria include10/25/25/30/10percent; no
+model answer in these two documents. Table reading order still needs human review.
+
+Codex analyzed actual PDF text and rendered criteria page, generated14 mappings
+and7 interpretation/missing-source notes. Source quotations and AI judgment remain
+separate. Imported via authenticated admin UI after hash/exam/quote validation;
+server revision1 NEEDS_REVIEW saved and browser reload restored. All14 mappings
+unverified; no Owner checks or rights approved by Codex. This is not a live external
+Provider extraction E2E. PDF/image contents and private JSON are not committed.
+
+WEB adds administrator-only same-origin AI extraction endpoint, existing Provider
+transport reuse, saved-document/revision/rights checks and exact quotation rejection.
+Owner-approved Provider transmission per document is required; endpoint not called
+against a live Provider this turn. Scanned PDFs with no usable text still need visual
+analysis; automatic visual-provider fallback is not implemented.
+
+Review UI now shows exact exam, question/type tabs, source-page jump, PDF on left,
+large editable text on right, one evidence item at a time and5 grouped human checks.
+Existing17 backend conditions remain intact. Save conflict preserves edits. Connected
+documents/upload/analysis controls collapse to keep review primary. No DB migration.
+
+Owner: https://lab.legendstudy.com/admin/materials/ → 한양대학교 → 2024 수시
+인문계열 오후2 검수하기. Review the extracted14 evidence entries using tabs and
+근거 selector; correct only mistakes and mark 원문·문항 연결 확인. Check5 closing
+items, record actual rights basis under 자료별 이용권한, save, then 검수 완료.
+Return to the same exam and generate Evaluation Package. Approval does not activate
+student evaluation. No file reupload or manual initial extraction required.
+
+Existing Runtime adapter in APP d97a7e4 accepts trusted server package/pinned
+digest and verifies exact canonical identity, source key, version, human review and
+Provider rights. Uses package_registry/HostedQuestion; no new engine. It is not
+mounted in production. Existing four-role Runtime does not yet forward separate
+explanation/model-answer/image roles; unsupported roles explicitly reported.
+
+Validation:17 related WEB tests, lint/typecheck/boundary/secret audit/build PASS;
+3 adapter unit tests PASS. Production admin revision1 restore and evidence page6
+selection verified. Desktop1440 and mobile390 visually inspected,390px no document
+overflow. No new Flutter build (Native code unchanged). Actual Provider/Credit,
+WEB→APP results, paid1/free14day rewrite, History/growth/QA E2E NOT PASS.
+
+Read-only production audit: authenticator→essay_worker membership FALSE, public
+essay_record_provider_telemetry absent while current Worker calls it. Existing
+essay_claim dispatches v1.3 scaffold, so runtime/DB contract is only partially aligned.
+Do not apply grant-only fix and claim service completion. Provider policy/telemetry,
+production host and exam Credit/shared Draft/History/QA remain implementation and
+deployment work, not merely Owner approval. No operational SQL applied this turn.
+
+LAB f7c97b7 deployed Production0590ec46-9cbf-49af-99c0-84dc9c5ce5c2.
+Rollback WEB to prior321d34b deployment0bd29d65; saved private review remains intact.
+APP adapter rollback is code-only. Public evaluation HOLD; no Provider/Credit call,
+no payment/Auth/RLS changes. First exam remains incomplete pending human review
+and actual Runtime/Credit integration; do not expand activation before first E2E.

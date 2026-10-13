@@ -17,6 +17,18 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 한양대 자동 추출·검수 연결 — 2026-10-13 — PARTIAL
+
+Owner 업로드 PDF2개를 해시 일치로 즉시 재사용(A). 한양대2024수시 인문
+오후2의14개 근거/5개 평가요소 초안을 운영 revision1 NEEDS_REVIEW로 저장하고
+브라우저 재진입 복원 확인. 문항/유형 탭·대형 편집기·원문 페이지 연결 운영배포.
+LAB f7c97b7, Pages0590ec46-9cbf-49af-99c0-84dc9c5ce5c2; APP d97a7e4.
+Owner 검수/권리 확인 전 Package 승인0, 실제 Provider/Credit E2E 미실행.
+Worker 역할 전환과 Provider telemetry RPC 운영 연결 미완료. Secret만으로
+해결되지 않음. 신규 DB 변경/실제 Credit/공개 전환 없음. 아래 기존 정책 문서
+최신 절에 사용법·검증·남은 개발·Rollback 기록.
+
+
 ## 관리자 대학별 검수 UX — 2026-10-13
 
 운영 관리자 로그인/76시험 목록 확인. 대학 탭·완료 수·최신순 테이블/모바일
