@@ -1,4 +1,11 @@
 <!--
+
+## Oct13 materials review continuation — PARTIAL
+
+관리자 PDF 검수/WEB·Native 조건부 뷰어 로컬 구현·검증 완료. 신규 private DB는
+승인 대기, 학생 PDF/평가 활성화0. Worker Secret 설정 완료, role membership는
+아직 false. [현재 상세/Owner 절차](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct13-university-by-university-materials-delivery--partial).
+
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-04 (PRICING-UX-CLEANUP-1D: legendstudy-lab feat/pricing-ux-cleanup @ f84b81e merged into main 3370dad and released to Production, PRODUCTION_VERIFIED on the live site; Math LAB consumer MATH-RELEASE-CLOSEOUT-1 (MATH-3B…7B) @ 6dec4f98887cee2e7c661996e083289b853054b3 local-verified 405 tests, PRODUCTION_NOT_APPLIED; all other domains retain their cited verification unchanged)

@@ -667,3 +667,56 @@ production lifecycle/lease/retention 및 시험 submit·History·growth·QA 통�
 APP `76408fa53ba095fb37210c29f4fef977a2148549` / LAB `2b295fdddf33bd02f361b0101a53c58eebb8a485`
 Push/remote SHA 일치. APP main 병합/스토어 제출 없음.
 **UNIVERSAL_ESSAY_SERVICE: PARTIAL.**
+
+
+## Oct13 university-by-university materials delivery — PARTIAL
+
+Owner 최신 결정: 공통 Runtime을 유지하며 시험별 검수→Package→실제 E2E로 확장한다.
+학생 문제 PDF 뷰어는 신규 승인 범위다. 앞선 원문 링크만 제공 정책을 이 범위에서
+대체하되, 문제 전용 안전 자산·학생 표시 권한 검증 전에는 기존 링크를 유지한다.
+42/49 Catalog, Owner22, 기존21대학/Registry76시험234문항은 변경하지 않는다.
+첫 대상은 정확히 일치하는 한양2024수시 인문 오후2 문항이며, 숙명/성균관→20대학
+→30~40대학 확장은 검수 단위로 진행한다. 특정 대학의 기준을 다른 시험에 적용하지 않는다.
+
+### 구현 및 검증
+
+LAB 보호 경로 `/admin/materials/` 구현: 기존 quality operator 서버 검사, 대학/
+학년도/유형/계열/상태 검색, Owner22 순서, 대학별 진행률, PDF 원본과 매핑 검수,
+17항목 체크, 권한별 상태, 서버 수정본 저장/충돌 보존, 이력, Package 승인 요청.
+아직 운영 검수 DB 미적용이므로 Owner가 실제 자료를 저장하는 운영 URL은 제공 전이다.
+
+WEB PDF.js와 Flutter Native pdfrx를 기존 작성 UI에 연결했다. 문제 전용 DTO의
+question ID/자산 SHA256/검수/학생 표시 권한을 모두 확인하며, 원본 통합 PDF를
+페이지 숨김으로 학생에게 전달하지 않는다. Desktop42:58 가변 폭, mobile 전환,
+페이지/확대/오류재시도/위치 복원. 학생용 자산의 실제 생성·서버 발행은 미완료다.
+
+로컬 분석은 PDF 원본 수정 없이 역할/페이지 후보를 생성한다. 한양 오후2 PDF2개
+분석, 모두 NEEDS_REVIEW, 공개0. 기존21대학 검토 자료는 보존하며 전체 검수 완료로
+취급하지 않는다. 문항별 version/digest manifest는 구현했으나 완성된 Runtime용
+Evaluation Package 생성/승인/활성화로 보고하지 않는다.
+
+검증: 신규WEB9, 관련 source/Math57, Python4, 로컬PG 권한/동시성/재실행/Rollback,
+Flutter analyze/관련10 tests, Android debug/iOS simulator build PASS. WEB134페이지
+build PASS. 실제 브라우저 합성 PDF 페이지 이동/복원,360/375/390/768/1280/1440,
+360px200% 글자 확대 no-overflow. 합성 QA route/PDF는 배포 산출물에서 제거했다.
+실제 Provider/Credit/WEB↔APP 첨삭 E2E는 수행하지 않았다.
+
+### 운영 승인과 남은 작업
+
+[APP 후보 SQL/runbook](https://github.com/LC3808/legendstudy-app/tree/codex/essay-shared-app-integration/supabase/candidates/essay_material_review):
+private schema3개 table + operator RPC5개 + private original bucket. 기존Registry/
+RLS membership/Ledger/평가 활성화는 변경하지 않는다. 운영 미적용; 별도 승인 요청.
+Rollback은 접근을 차단하고 원본/검수 이력을 보존한다. 실제 API/Storage 권한 검증은
+승인 후 수행한다. DBfixture테스트는 운영 E2E가 아니다.
+
+**Secret 정정:** Owner가1년 essay_worker JWT를 Cloudflare Production Secret으로
+설정했고 Pages aec0f8af-8a01-4b62-b690-f2c71e007816 성공이 확인됐다. 이전 절의
+‘Secret 없음/Owner 설정 필요’는 설정 전 기록이다. 비밀값은 출력·저장하지 않았다.
+JWT 사전 형식/만료 검사는 통과하지만 `authenticator→essay_worker` membership는
+여전히 false다. 따라서 실제 Worker DB 인증 성공은 미확인. 기존 role의 claim/
+finalize 권한 때문에 단순 조회 권한처럼 확대하면 안 된다. 별도 최소권한 검토 유지.
+
+남은 항목: 운영 검수 저장, 원본의 상세 자동 분류/시각 분석, 안전한 학생 자산,
+최종Package 승인/기존Runtime 연결, Worker 권한, 시험Credit/서버Draft/사진 공유의
+운영 연결, 실제 Provider·History·재첨삭·QA·WEB/APP E2E. 일반 공개 HOLD.
+이번 변경은 운영배포/DB변경/실제Credit/Provider/Store 제출을 수행하지 않았다.
