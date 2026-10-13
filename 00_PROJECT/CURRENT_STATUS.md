@@ -17,6 +17,19 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+### Oct13 Package read RPC production applied
+
+Owner explicitly approved only Package read RPC. Migration20261013115731 applied
+to stlhijzpjfgwwdgunlsd. Worker EXECUTE=true; anon/authenticated=false,
+authenticator membership remains false; registered questions234. Current Hanyang
+v16 read fails PROVIDER_RIGHTS_REQUIRED as expected; rights not fabricated.
+SQL-admin cannot SET ROLE essay_worker, so actual Worker JWT path NOT verified.
+No membership changes, Provider calls, Credit, publication or student-data changes.
+Rollback: revoke this function's Worker EXECUTE using existing worker_read_rollback.sql.
+Remaining: source transmission permission, Worker authentication, Provider policy/
+telemetry, runtime hosting and Credit/History E2E; overall service PARTIAL/HOLD.
+
+
 ### Oct13 final Owner review → Package v16
 
 DB revision15 VERIFIED/all16 mappings confirmed. Package missing after ordinary
