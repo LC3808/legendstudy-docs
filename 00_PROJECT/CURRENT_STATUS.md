@@ -1923,4 +1923,4 @@ Owner authenticated acceptance: all requested Admin directory checks passed (imm
 서강대 임시 모노그램은 Owner 제공 sogang.jpeg 원본으로 교체·배포 완료. 관련8 tests/lint/typecheck/build 및 모바일/live QA PASS. 출처는 Owner 제공으로 기록.
 
 ### Oct14 disabled exam API approval follow-up
-Owner approved installation only. Migration connector request-state failure prevented both attempts; DB postflight confirms NOT_APPLIED. No Provider/Credit transaction or activation. See [daily](../90_HISTORY/DAILY/2026-10-14.md).
+Owner applied approved SQL through SQL Editor. Read-only postflight confirms installed private table and5 RPCs (bodies match approved SQL), forced RLS/caller ACL, runs/billing0, null model/runtime policies, Registry234 and unchanged Math/account functions. No Provider/Credit transaction or activation. See [daily](../90_HISTORY/DAILY/2026-10-14.md).
