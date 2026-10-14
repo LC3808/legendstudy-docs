@@ -1,3 +1,43 @@
+### Oct14 Owner PDF PASS; actual evaluation connection — PARTIAL
+
+Owner confirmed Hanyang problem PDF viewing PASS. PDF viewer/admin UX work stops;
+priority is actual AI evaluation, existing result UX, exam Credit and shared History.
+
+Fresh Production read-only verification: Hanyang review16 VERIFIED; Package16
+09b50772b37f69ec7544a752ba88f5cde6c8de555ab17339a13eb6ef4fdcf106;
+approval_requested=true; provider rights map empty. Package read RPC exists.
+authenticator→essay_worker membership is false, and Provider telemetry RPC is absent.
+Secret configuration alone therefore does not provide an operating evaluation path.
+Owner review is preserved; no PDF analysis or review was repeated.
+
+APP/shared backend branch `codex/essay-shared-app-integration`, commit `e4c11d4`:
+existing material adapter now binds the verified Package to all frozen selected
+question claims, checks exact evidence/criteria/version/Provider bindings before
+any dispatch, then uses existing ReviewedRuntimeWorker + DurableExamRunner.
+Canonical university/exam/year/type/track/session/question identity accompanies
+Provider evidence. Existing Prompt and result schema remain. Single-question
+summary reuses the reviewed result; multiple questions need reviewed exam synthesis.
+
+44 related local tests PASS (fake Provider transport/reviewer). Covered wrong
+Package/pin/rights, missing criterion, invalid later question before any dispatch,
+account recheck, timeout without repeat or settlement, exact completed replay and
+durable recovery. Actual Provider calls=0; operating Credit transactions=0.
+
+Remaining implementation: authenticated deployed host, operational exam
+reservation/lease/settlement API, existing History/QA/erasure projections, and
+WEB/Native submission/result routing. Existing exam SQL candidate remains
+NOT DEPLOYABLE; this is not a configuration-only blocker. Source transmission
+rights, Worker role/policy/telemetry deployment and actual Provider/Credit E2E
+also require their explicit bounded approvals. No new SQL, public activation,
+WEB deployment, APP main merge or Store release performed. Math/Toss/IAP unchanged.
+
+A Provider success / B result UX / C first1Credit / D History / E free rewrite /
+F WEB–APP consistency: operational E2E all NOT RUN. Local engine/bundle/recovery
+checks do not establish these end-to-end acceptance criteria. Public HOLD.
+Do not request another Secret entry or redo Owner materials review. Prepare a
+specific test account/model/call count/cost cap/rollback only when the missing
+operational connections and permissions are ready.
+
 ### Oct14 Owner-approved question PDF read access applied
 
 Owner approved only one Hanyang question PDF SELECT. Production migration
