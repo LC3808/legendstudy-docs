@@ -1,3 +1,28 @@
+### Oct14 operating UX correction — live verification
+
+Scope: missing Hanyang question button and schedule order only. Root cause was
+missing studentPdf metadata plus a nonexistent student-question bucket, not a CSS
+visibility issue. Reused the existing question-only original (SHA4f3b87f2…fc73b,
+3 pages: cover/question/passages). Existing canonical exam/question UUIDs verified
+against Production; accountDraftReady=false and evaluationReady=false preserved.
+No private integrated evaluation PDF is passed to the viewer. Original bucket
+read permissions remain operator-only; ordinary authenticated access to this exact
+question PDF awaits Owner approval. SQL and rollback in LAB docs/reviews/
+hanyang-question-access. No SQL/permission change applied.
+
+Schedule moved between university header and writing entry; stays collapsed.
+PC Chrome revealed missing glyphs because PDF fonts loaded in the parent document.
+Renderer now supplies the canvas ownerDocument to the existing PDF.js loader.
+WEB9 related tests/lint/production build passed. Mobile390 live question rendering,
+page2→3, reopen at3 and temporary answer retention verified; test text cleared
+back to the initially empty answer. PC Chrome separate window now renders Korean question text correctly; close returns
+to the existing answer screen. Production00b356d8-4ac7-46ae-972c-59ef8020a683,
+LABf71de60 (remote verified). Screenshot evidence retained locally: hanyang-viewer/
+pc-pdf.png, mobile-pdf.jpg, pc-layout.jpg, mobile-layout.jpg. Rollback: prior
+3332403b-c0a9-4521-86bb-8964111c3bf0. Ordinary-user PDF read approval pending;
+operator success does not prove ordinary-user access.
+No Provider/Credit calls, evaluation activation, APP or payment changes. Public HOLD.
+
 # Essay-first UX — Owner 결정 (2026-10-11)
 
 **상태:** OWNER APPROVED · 제품 방향의 최상위 UX 원칙 · 2026-10-12 Phase 1 메인 화면 배포 완료, Phase 2 이후 대기
