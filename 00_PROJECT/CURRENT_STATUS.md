@@ -1,3 +1,15 @@
+### Oct14 Cloudflare dashboard visibility — VERIFIED
+
+Owner reported missing Worker. Read-only API confirms `legendstudy-essay-reviewed`
+and LAB Pages share account `b9d221b20fdf8b9a9a8df0971a6b2347`. Existing dashboard
+showed five Pages apps; browser reload showed six applications including the Worker
+immediately below LAB. Actual screenshot checked. No duplicate creation/redeployment.
+Wrangler deployment at 13:54:57 KST: version `6eec8e98-6040-4e71-8d12-6ae3a3953288`.
+Assigned `legendstudy-essay-reviewed.forbeelite.workers.dev` remains disabled;
+“No active routes” is expected for the private service-binding deployment. Secret
+entry/authenticated admission remains pending; Provider/Credit not called, public HOLD.
+[Worker dashboard](https://dash.cloudflare.com/b9d221b20fdf8b9a9a8df0971a6b2347/workers/services/view/legendstudy-essay-reviewed/production).
+
 ### Oct14 approved Cloudflare/DB application — deployed disabled
 
 Checkpoint migration20261014044957 applied and ACL/RLS/zero-runs/Registry234 verified.
@@ -9,7 +21,7 @@ revoked, still-used Secret. Safe terminal issuance helper prepared; Owner entry 
 actual authenticated Worker admission still pending. No Provider/Credit call or key
 rotation. Independent reviewer/model/material-policy work remains PARTIAL.
 
-### Oct14 Owner A — Cloudflare execution / PARTIAL
+### Oct14 Owner A — Cloudflare execution / PARTIAL (earlier checkpoint)
 
 Disabled operating exam API installation is VERIFIED; do not reapply it. Latest Owner
 chooses Cloudflare + Supabase, no external Python host. Runtime/async/DB candidate
