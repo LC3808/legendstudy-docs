@@ -1,3 +1,14 @@
+### Oct14 Owner-approved Worker role transition — APPLIED
+
+Production migration20261014020622 applied within role-only approval. authenticator
+may SET essay_worker; INHERIT=false/ADMIN=false. Worker retains NOLOGIN/NOSUPERUSER/
+NOBYPASSRLS; anon/student cannot assume Worker; Worker cannot assume essay_executor.
+Read-only rollback transaction verified authenticator→Worker and Registry RPC234
+questions. SQL access PASS; fresh Cloudflare Secret/JWT HTTP E2E not yet verified.
+No Secret read/output, Provider/Credit transaction, public activation or other SQL.
+Prior role-only approval-pending statements are historical. Provider/exam API/host
+and actual E2E remain PARTIAL; no claim that this grant completes the service.
+
 ### Oct14 operating essay connection continuation — PARTIAL
 
 Owner accepted previous44 local runtime tests; this continuation connects new paths.
