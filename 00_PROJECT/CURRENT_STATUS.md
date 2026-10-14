@@ -1,3 +1,37 @@
+### Oct14 first paid E2E — preparation only / approval pending
+
+Target: review@legendstudy.com, Hanyang2024 admission humanities afternoon2, Package17
+(`40ef4e7bbe5295facf146946b7f1924f086ff6e540108a3def8efb22e37ba4ae`), one question.
+Operating Ledger read: balance11, reserved0, available11. No Credit transaction made.
+One initial submission, test text <=2000 characters, no image: evaluator1 + independent
+review1 = at most2 normal Provider requests, no automatic Provider retry. No free
+reevaluation in this first authorization scope. Existing max_output_tokens12000 each.
+Official gpt-5.6-sol price (2026-10-14): input$4/output$20 per million tokens; estimate
+$0.20–$0.80 total (not a quote; depends on input/reasoning/output). Proposed operational
+budget$2; no extra model requests after failure without another approval. Source:
+https://developers.openai.com/api/docs/models/gpt-5.6-sol . Package size30499 UTF8 bytes.
+
+No schema/RLS/Registry migration. After explicit approval only: temporarily set Worker
+ESSAY_EXECUTION_ENABLED=true and Pages Production ESSAY_EXAM_RUNTIME_ENABLED=true;
+retain/narrow Essay access to this test account only, confirm before first submission.
+Do not alter MATH settings/allowlist, Payment/IAP or allow any other account. Existing
+DB policy covers only this exam. One reserve(+1 reserved), success consume(-1 balance,
+-1 reserved): expected available10, reserved0. Store actual result and History, then
+verify existing result UX. Normal failure releases reservation, leaving balance11.
+
+Ambiguous timeout: keep original run/request identity; no fresh evaluation, no blind
+refund. Read existing checkpoints and original lease: finalized result -> existing
+finish once, otherwise verify no in-flight job and finish that same run as failed to
+release once. Request the approval to include this run-only recovery transaction.
+Do not edit Ledger rows directly or erase History. Provider fees may still accrue on
+failed/timeout requests. Automatic full recovery is not claimed.
+
+Stop/restore: close Pages submission gate first (false+Production redeploy), allow
+current approved run to settle/reconcile, Worker flag false+deploy. Verify both active
+settings and unavailable submit, then Ledger/run terminal state. On unknown status
+keep further execution disabled, retain evidence for controlled reconciliation.
+No other Provider call, Credit charge, general rollout or app-store release authorized.
+
 ### Oct14 Provider/review Secrets — operating preflight PASS
 
 Owner entered ESSAY_PROVIDER_KEY and ESSAY_REVIEW_VERIFY_KEYS. Cloudflare metadata
