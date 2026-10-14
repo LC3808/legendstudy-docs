@@ -1921,3 +1921,6 @@ Owner authenticated acceptance: all requested Admin directory checks passed (imm
 성균관대 공식 로고 투명 여백 표시 보정(원본 불변) 배포 완료. 관련8 tests/lint/typecheck/build, Desktop112px/Mobile104px 및 live QA PASS.
 
 서강대 임시 모노그램은 Owner 제공 sogang.jpeg 원본으로 교체·배포 완료. 관련8 tests/lint/typecheck/build 및 모바일/live QA PASS. 출처는 Owner 제공으로 기록.
+
+### Oct14 disabled exam API approval follow-up
+Owner approved installation only. Migration connector request-state failure prevented both attempts; DB postflight confirms NOT_APPLIED. No Provider/Credit transaction or activation. See [daily](../90_HISTORY/DAILY/2026-10-14.md).
