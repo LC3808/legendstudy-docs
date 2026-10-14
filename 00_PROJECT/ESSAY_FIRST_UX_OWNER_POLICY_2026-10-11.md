@@ -1027,7 +1027,9 @@ PostgreSQL Ledger/checkpoint permissions/concurrent begin/immutable write/first1
 free rewrite/History/erasure/rollback PASS. Simulated lost-finalization response resumes
 without repeating Provider (request count1). Real local workerd imports existing runtime
 and rejects missing service credentials. WEB binding/API11 tests and typecheck PASS.
-No live Provider, live Credit or new operating SQL/configuration applied.
+Actual local Queue smoke with fixture Auth/consumer: HTTP202 → queue1/1 ACK; SDK
+handler context/native send compatibility fixed. No live Provider, live Credit or new
+operating SQL/configuration applied.
 
 Operating prerequisites:
 1. Approve/apply only APP `supabase/candidates/essay_cloudflare_execution/install.sql`;
