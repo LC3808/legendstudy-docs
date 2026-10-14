@@ -1,3 +1,15 @@
+## 2026-10-14 — iPhone usability closeout; today stopped
+
+Owner confirmed prior dc722315 iPhone Release, login, Credit10, first/rewrite results,
+comparison/stars, Native PDF and photos. New15-item UX polish implemented: tab-scoped
+PDF/CTA, writer identity, fit-width root PDF, one photo picker/confirmed × deletion,
+truthful Draft status, collapsed/deduplicated feedback, N/5 labels, empty-evidence
+hiding, changed-first comparison and consistent actions. Existing components reused.
+41 local tests, Analyze and iOS simulator build PASS. No Provider/Credit/DB operation.
+Physical recheck of these new changes remains for next workday; public HOLD retained.
+WEB/APP photo sharing and AI quality excluded. Today ends after Git/Wiki handoff.
+[Exact findings, changes, evidence and remaining device checks](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#iphone-usability-closeout--2026-10-14).
+
 ## 2026-10-14 — Approved Flutter Essay UX connected; device acceptance pending
 
 Owner GO implemented on `codex/essay-shared-app-integration` only. Existing
