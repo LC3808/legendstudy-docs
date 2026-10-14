@@ -1,10 +1,26 @@
+### Oct14 actual Worker HTTP — VERIFIED; exam API apply pending
+
+Existing allowlisted Chrome account: Cloudflare→Supabase Registry **HTTP200/234**
+verified11:35KST. IAB had a different/revoked administrator session; no Secret reset,
+allowlist or Math policy change needed. WEB b16867e deployed f247776b; source SHA
+and remote verified. Submission remains OFF; displayed Credit11 unchanged.
+
+APP22706f1 adds real Auth/worker HTTP host composition and formal disabled API SQL.
+NOSUPERUSER/BYPASSRLS + real lifecycle function bodies uncovered private hash ACL
+mismatch, fixed without extending old grants. Local Ledger/History/rewrite/formal
+install/reapplication refusal/rollback PASS; Provider is fake. Owner approval for
+SQL20261014023133 requested, not applied. Private runtime/reviewer provisioning,
+material transmission/model approval, old Package-version retrieval, QA projection
+and approved actual Provider/Credit E2E remain pending. Public HOLD.
+[Current policy detail](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct14-operating-http-proof-and-disabled-exam-api).
+
 ### Oct14 Owner-approved Worker role transition — APPLIED
 
 Production migration20261014020622 applied within role-only approval. authenticator
 may SET essay_worker; INHERIT=false/ADMIN=false. Worker retains NOLOGIN/NOSUPERUSER/
 NOBYPASSRLS; anon/student cannot assume Worker; Worker cannot assume essay_executor.
 Read-only rollback transaction verified authenticator→Worker and Registry RPC234
-questions. SQL access PASS; fresh Cloudflare Secret/JWT HTTP E2E not yet verified.
+questions. SQL access PASS; fresh Cloudflare JWT HTTP200/234 now verified (see latest section).
 No Secret read/output, Provider/Credit transaction, public activation or other SQL.
 Prior role-only approval-pending statements are historical. Provider/exam API/host
 and actual E2E remain PARTIAL; no claim that this grant completes the service.

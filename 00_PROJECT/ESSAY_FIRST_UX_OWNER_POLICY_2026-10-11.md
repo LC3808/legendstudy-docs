@@ -966,3 +966,38 @@ reanalysis or Owner-review repetition. No Provider or Credit call. Worker packag
 RPC applied, but role membership/Provider policy/telemetry/host/settlement remain
 incomplete. Rights still unset. Public HOLD. Source review alone does not authorize
 Provider transmission. No additional operating SQL requested in this viewer change.
+
+
+## Oct14 operating HTTP proof and disabled exam API
+
+Worker role grant20261014020622 is already applied; do not repeat. Owner logged
+into existing allowed Chrome test account. Browser console at02:35:04.953Z:
+`Essay registry HTTP verified 200 registered questions 234`. Cloudflare POST and
+Supabase REST RPC200 independently observed. Earlier IAB503 was another account's
+allowlist/Auth rejection, not evidence of a broken worker Secret. No credentials
+were displayed, no Math configuration or access policy changed.
+
+WEB b16867e976472e0dd24541b3ac891177f285c1a4 production deployment
+f247776b-8f87-4fc8-afca-218167326d17 verified, prior00b356d8 rollback retained.
+Existing Hanyang2024/admission/humanities/afternoon2 selection and PDF link remain;
+new submit adapter stays disabled. No real Provider/Credit call; displayed balance11.
+
+APP22706f1 prepares disabled operating API migration20261014023133 and concrete
+`OperatingTransport`→ReservedExamRuntime→RuntimeHost composition. It reuses current
+prompt/ReviewedRuntimeWorker, requires a persistent private host plus independently
+provisioned SignedReview and receipt sink, defaults OFF. No replacement engine.
+Four new boundary tests PASS. Existing44accepted tests not repeated.
+
+[Exact SQL, impact, verification and rollback](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/supabase/reviews/essay-exam-operating-api/README.md).
+Local actual Ledger and lifecycle function bodies with NOSUPERUSER/BYPASSRLS deployer:
+first1Credit/free rewrite/replay/owner History/erasure/telemetry redaction PASS;
+formal installation/reapplication fail-before-change/empty rollback PASS. Package,
+Provider and deletion table remain synthetic fixtures; not production E2E. The
+existing private hash ACL is preserved by using its identical builtin SHA256.
+
+Owner approval requested only for disabled DB installation (one private runs table,
+four Worker RPCs, owner History RPC, future erasure hook). Existing Ledger/Registry/
+History are not deleted. Actual apply, exact model and material-transmission approval,
+private runtime/reviewer deployment, retained old Package access, admin QA projection,
+and limited real initial+free rewrite cross-platform E2E remain pending. No public
+activation, APP main merge, Store submission or payment changes.
