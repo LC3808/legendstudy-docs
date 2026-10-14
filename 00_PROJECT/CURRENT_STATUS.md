@@ -1,3 +1,20 @@
+### Oct14 Hanyang rights approval and independent review — PARTIAL
+
+Implementation APP commit `740faa9` (existing integration branch); SQL candidate and rollback: `supabase/candidates/essay_hanyang_execution_policy/README.md`.
+
+Owner confirmed OpenAI transmission permission for Hanyang2024 admission humanities
+afternoon2 Packagev16's two PDFs, evaluation and independent review only. No operating
+DB change or Provider/Credit call was performed. Prepared rights-only v17 candidate
+with exact-exam/model policy, content/version guards and non-destructive rollback.
+Local PostgreSQL17 non-superuser apply/content-preservation/repeat/rollback PASS.
+Separate semantic review request reuses Responses and existing SignedReview; evidence,
+usage and receipt use existing checkpoints. Five synthetic semantic/runtime checks
+PASS, async parity and queue boundary checks PASS; local Cloudflare workerd startup
+PASS after staging module fix. Not deployed; operating E2E NOT_RUN.
+Next: Owner approval of candidate SQL, Owner Provider/review-signing Secrets, disabled
+Worker deployment/configuration, then separately scoped actual Provider/Credit E2E.
+No Math, Payment/IAP, Registry IDs, evaluation prompt/schema or approved UX changes.
+
 ### Oct14 Secrets and private connection — operating PASS / evaluation PARTIAL
 
 Owner Secrets confirmed secret_text on Worker and Pages. Pages previously lacked
