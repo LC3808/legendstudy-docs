@@ -1047,3 +1047,34 @@ Operating prerequisites:
 Rollback: keep execution OFF, disable consumer, preserve pending/checkpoint/Ledger
 records; new checkpoint rollback refuses nonempty state. Do not reapply approved
 Registry/Package/role/disabled exam API migrations. APP main/store unchanged.
+
+
+## Oct14 approved checkpoint application and private Worker deployment
+
+Owner approved checkpoint DB only and completed Cloudflare OAuth. Required scopes
+verified. Applied migration20261014044957 adds only private checkpoints + worker RPC.
+Postflight: forced/enabledRLS, WorkerEXECUTE true, anon/student false, direct student
+read false; runs/checkpoints0, canonical question IDs234 preserved. No old SQL replay.
+Local CLI generated tracking file renamed to exact returned remote version, content
+matches approved candidate. No migration-history repair.
+
+Deployed legendstudy-essay-reviewed version6eec8e98-6040-4e71-8d12-6ae3a3953288 with
+execution false, workers.dev and preview URLs false. Created legendstudy-essay-exams
+and legendstudy-essay-exams-dlq, main consumer1. Existing publishable key and exact
+one-subject allowlist reused; Math settings unchanged. Pages Production services
+ESSAY_REVIEWED_WORKER now targets this Worker. Existing env preserved. WEB build PASS,
+deployment197c1ef5-a1b0-4d95-b5fe-e1b2ab74b925 source da479da verified; Hanyang200 and
+POST submit503 EVALUATION_UNAVAILABLE confirm public HOLD. Rollback Pages f247776b;
+Worker disable/retain queues+checkpoints; DB empty-only rollback in candidate folder.
+
+Owner reports existing JWT not retained. Read-only actual Supabase dashboard:
+current ECC P-256, Legacy HS256 PREVIOUS/not revoked; legacy tab explicitly says
+still used. Public JWKS has EC verification keys, not exportable private signing key.
+Owner helper APP tool/cloudflare_essay/issue_worker_jwt.py uses hidden terminal input,
+fixed essay_worker role/365-day expiry, then read-only Registry RPC verification;
+only HTTP200/234 copies JWT to clipboard. No credentials in code/stdout/Git. Local
+signature/role/expiry/wrong-input tests PASS; actual signing/probe awaits Owner.
+No Rotate/Revoke/Math/Auth changes. Ordinary user JWT/API keys cannot replace Worker
+role. Owner must put signed JWT (not Legacy Secret) into Worker Secret and identical
+separate service token into Worker and Pages Production. Full instructions in APP
+Cloudflare README. Secrets entry alone is not E2E; reviewer/policies still pending.

@@ -1,3 +1,14 @@
+### Oct14 approved Cloudflare/DB application — deployed disabled
+
+Checkpoint migration20261014044957 applied and ACL/RLS/zero-runs/Registry234 verified.
+Cloudflare Worker + main/DLQ queues deployed; version6eec8e98-6040-4e71-8d12-6ae3a3953288,
+execution OFF, workers.dev/preview URLs disabled. Pages service binding deployed as
+197c1ef5-a1b0-4d95-b5fe-e1b2ab74b925 (LAB da479da); Hanyang HTTP200, submit503 HOLD.
+Owner JWT not retained: actual Supabase screen confirms Legacy HS256 previous/not
+revoked, still-used Secret. Safe terminal issuance helper prepared; Owner entry and
+actual authenticated Worker admission still pending. No Provider/Credit call or key
+rotation. Independent reviewer/model/material-policy work remains PARTIAL.
+
 ### Oct14 Owner A — Cloudflare execution / PARTIAL
 
 Disabled operating exam API installation is VERIFIED; do not reapply it. Latest Owner
