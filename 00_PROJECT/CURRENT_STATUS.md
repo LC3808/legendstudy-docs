@@ -1,36 +1,42 @@
-### Oct14 first paid E2E — preparation only / approval pending
+### Oct14 first paid E2E — operating WEB PASS; overall service PARTIAL
 
-Target: review@legendstudy.com, Hanyang2024 admission humanities afternoon2, Package17
-(`40ef4e7bbe5295facf146946b7f1924f086ff6e540108a3def8efb22e37ba4ae`), one question.
-Operating Ledger read: balance11, reserved0, available11. No Credit transaction made.
-One initial submission, test text <=2000 characters, no image: evaluator1 + independent
-review1 = at most2 normal Provider requests, no automatic Provider retry. No free
-reevaluation in this first authorization scope. Existing max_output_tokens12000 each.
-Official gpt-5.6-sol price (2026-10-14): input$4/output$20 per million tokens; estimate
-$0.20–$0.80 total (not a quote; depends on input/reasoning/output). Proposed operational
-budget$2; no extra model requests after failure without another approval. Source:
-https://developers.openai.com/api/docs/models/gpt-5.6-sol . Package size30499 UTF8 bytes.
+Owner approved one initial submission, at most2 Provider calls/$2, 1Credit and same-run
+recovery. review@legendstudy.com submitted one 1152-character QA-generated text answer
+for Hanyang2024 admission humanities afternoon2, Package17, question
+4cbe8b69-2ccc-5c4e-9e77-0644f90e2cde. Package digest:
+40ef4e7bbe5295facf146946b7f1924f086ff6e540108a3def8efb22e37ba4ae.
+Run5b636cda-9915-42e1-b209-9934c7c0fcb1 completed at2026-10-14T08:30:54.827523Z
+(17:30:54KST), submitted08:29:19Z. No schema/RLS/Registry change.
 
-No schema/RLS/Registry migration. After explicit approval only: temporarily set Worker
-ESSAY_EXECUTION_ENABLED=true and Pages Production ESSAY_EXAM_RUNTIME_ENABLED=true;
-retain/narrow Essay access to this test account only, confirm before first submission.
-Do not alter MATH settings/allowlist, Payment/IAP or allow any other account. Existing
-DB policy covers only this exam. One reserve(+1 reserved), success consume(-1 balance,
--1 reserved): expected available10, reserved0. Store actual result and History, then
-verify existing result UX. Normal failure releases reservation, leaving balance11.
+Actual OpenAI requests2: evaluator12934 input/2552 output tokens,31954ms;
+independent review12546 input/3984 output tokens,52044ms. All8 independent checks
+passed; signed review, reviewed output and final checkpoints persisted. No retry or
+recovery transaction was required. Price-based estimate$0.23264 using input$4/output$20
+per million (https://developers.openai.com/api/docs/models/gpt-5.6-sol); Provider
+cost_amount is null, so this is NOT an invoiced cost or proven billing amount.
+Ledger exactly reserve(0,+1), consume(-1,-1); available11→10, reserved0.
+Existing History and result UI visibly show completed initial evaluation, summary,
+strengths, five criteria/star ratings and improvement advice; screenshot local
+/private/tmp/essay-first-e2e-result.png. Actual browser, not mock/build-only proof.
 
-Ambiguous timeout: keep original run/request identity; no fresh evaluation, no blind
-refund. Read existing checkpoints and original lease: finalized result -> existing
-finish once, otherwise verify no in-flight job and finish that same run as failed to
-release once. Request the approval to include this run-only recovery transaction.
-Do not edit Ledger rows directly or erase History. Provider fees may still accrue on
-failed/timeout requests. Automatic full recovery is not claimed.
+LAB093d417 adds server-only ESSAY_E2E_SCOPE pinning account/exam/request key and
+rejecting parent runs;9 focused tests, typecheck, targeted lint and build PASS.
+Request key b21dabf9-2d51-4446-9e0e-c2d6b4dc3796 retained to prevent another run.
+Pages partial-variable PATCH initially blocked by automatic approval review; confirmed
+official API null-only deletion and Wrangler single-key PATCH implementation, then
+review permitted update. Before/after unrelated bindings identical; no secret values
+printed, round-tripped or committed. Math/Payment/IAP/allowlists unchanged.
 
-Stop/restore: close Pages submission gate first (false+Production redeploy), allow
-current approved run to settle/reconcile, Worker flag false+deploy. Verify both active
-settings and unavailable submit, then Ledger/run terminal state. On unknown status
-keep further execution disabled, retain evidence for controlled reconciliation.
-No other Provider call, Credit charge, general rollout or app-store release authorized.
+Both actual gates restored OFF: Pages deployment991b59fd-78a9-4a4f-a9f0-bd6b9d206993,
+Worker version21c5dc83-ebcf-4962-b753-73d878a19c06. Metadata verified false on active
+Pages deployment and Worker. Public HOLD remains. No extra Owner action for this run.
+
+Remaining: separately approved free reevaluation E2E, native APP result consistency,
+real failure recovery exercise and QA review. They are NOT claimed PASS by this run.
+Observed UI follow-ups: repeated university in History title/raw admission label,
+long criterion headings, formal rather than consistently teacher-style feedback,
+and no linked evidence displayed in existing result UX. Do not confuse successful
+runtime flow with full pedagogical/product acceptance. Preserve stored Package/output.
 
 ### Oct14 Provider/review Secrets — operating preflight PASS
 
