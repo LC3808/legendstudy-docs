@@ -1,4 +1,12 @@
-### Oct14 actual Worker HTTP — VERIFIED; exam API apply pending
+### Oct14 Owner A — Cloudflare execution / PARTIAL
+
+Disabled operating exam API installation is VERIFIED; do not reapply it. Latest Owner
+chooses Cloudflare + Supabase, no external Python host. Runtime/async/DB candidate
+implemented and local checks pass; operating Worker/Queues not provisioned. Checkpoint
+SQL approval pending. No Provider/Credit transaction or public activation.
+[Implementation, prerequisites and rollback](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct14-owner-a-cloudflare-execution).
+
+### Oct14 actual Worker HTTP — VERIFIED (earlier checkpoint)
 
 Existing allowlisted Chrome account: Cloudflare→Supabase Registry **HTTP200/234**
 verified11:35KST. IAB had a different/revoked administrator session; no Secret reset,
@@ -1925,9 +1933,12 @@ Owner authenticated acceptance: all requested Admin directory checks passed (imm
 ### Oct14 disabled exam API approval follow-up
 Owner applied approved SQL through SQL Editor. Read-only postflight confirms installed private table and5 RPCs (bodies match approved SQL), forced RLS/caller ACL, runs/billing0, null model/runtime policies, Registry234 and unchanged Math/account functions. No Provider/Credit transaction or activation. See [daily](../90_HISTORY/DAILY/2026-10-14.md).
 
-### Worker host P0
-Existing runtime composition supports admission-only mode, blocking execution before
-claim/Provider.13 local tests PASS. Actual Cloudflare configuration has no host
-origin/binding/service token; operating host connection is NOT_COMPLETE. Owner
-host reuse information pending. No Provider/Credit call; public HOLD. Detailed
-configuration: APP `tool/essay_lab/deployment/README.md`.
+### Worker host P0 — Owner A supersedes Linux host request
+Cloudflare Python Worker + Supabase is the selected execution environment. No Linux
+server/container. Existing evaluator now shares sync/async execution; only I/O and
+file journal boundaries changed. Private DB checkpoint candidate and queue consumer
+are implemented, locally checked, NOT operating deployed. Pages service binding now
+forwards the separate host credential. Current deployment credential lacks Worker/Queue
+scopes. Independent SignedReview service and exact Provider/material policies remain
+unconfigured. Public HOLD; no actual Provider/Credit calls.
+See [current execution detail](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct14-owner-a-cloudflare-execution).

@@ -1001,3 +1001,47 @@ History are not deleted. Actual apply, exact model and material-transmission app
 private runtime/reviewer deployment, retained old Package access, admin QA projection,
 and limited real initial+free rewrite cross-platform E2E remain pending. No public
 activation, APP main merge, Store submission or payment changes.
+
+
+## Oct14 Owner A Cloudflare execution
+
+Owner selected existing Cloudflare + Supabase, superseding Linux/Python container
+host inquiry. Preserve canonical Registry76/234, Package16, Ledger, reviewed prompt,
+result Schema/UX, WEB/Native History and Math/Payment/IAP. No new evaluation engine.
+
+Implementation in APP `tool/cloudflare_essay/` + existing `tool/essay_lab/`:
+- Shared synchronous/asynchronous evaluator generator; unchanged prompt, Provider
+  request builder/parser and independent SignedReview requirement. Async fetch replaces
+  blocking network I/O. Canonical manifest is copied only into disposable build output.
+- Identity-only queue messages; existing account/allowlist/claim/lease checked on
+  consumption. Supabase checkpoint candidate replaces POSIX disk/locks with atomic
+  first dispatch and immutable reviewed/final checkpoints. Ambiguous pending dispatch
+  never automatically reruns Provider or refunds Credit.
+- Initial single-question Hanyang path only; multi-question reviewed synthesis and
+  DLQ/operator recovery remain incomplete. Registry scope is unchanged.
+- Pages binding forwards separate service credential and retains caller authentication;
+  production evaluation remains OFF. Existing UI/PDF/review untouched.
+
+Validation is local, not operating E2E: targeted Python16 PASS; actual disposable
+PostgreSQL Ledger/checkpoint permissions/concurrent begin/immutable write/first1Credit/
+free rewrite/History/erasure/rollback PASS. Simulated lost-finalization response resumes
+without repeating Provider (request count1). Real local workerd imports existing runtime
+and rejects missing service credentials. WEB binding/API11 tests and typecheck PASS.
+No live Provider, live Credit or new operating SQL/configuration applied.
+
+Operating prerequisites:
+1. Approve/apply only APP `supabase/candidates/essay_cloudflare_execution/install.sql`;
+   README contains exact impact, tests and empty-only rollback. Pending approval.
+2. Existing Cloudflare CLI credential has Pages scope only. Owner `wrangler login`
+   must authorize Worker/Queue deployment scopes. No secret values in chat/Git.
+3. Provision disabled Worker/Queues and private Pages binding following APP
+   `tool/cloudflare_essay/README.md`. This is not yet deployed.
+4. Existing independent SignedReview interface has no operating review service yet;
+   implement/connect it without synthetic approval. Exact Provider/model policy and
+   Package Provider rights are unapproved/unconfigured. These gates cannot be bypassed.
+5. Only then perform no-charge admission; actual Provider/Credit E2E requires separate
+   bounded Owner approval. Current overall status PARTIAL, public HOLD.
+
+Rollback: keep execution OFF, disable consumer, preserve pending/checkpoint/Ledger
+records; new checkpoint rollback refuses nonempty state. Do not reapply approved
+Registry/Package/role/disabled exam API migrations. APP main/store unchanged.
