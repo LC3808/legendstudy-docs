@@ -1,3 +1,15 @@
+### Oct14 Owner-approved question PDF read access applied
+
+Owner approved only one Hanyang question PDF SELECT. Production migration
+20261014002156_hanyang_2024_question_read applied. Authenticated active accounts
+may read the exact4f3b87f2…fc73b.pdf object; original bucket remains private.
+Production RLS transaction using active non-operator context: operator=false,
+question_visible=1, other_materials_visible=0. Anon sees0. No identity or data
+mutation. Non-operator browser download not independently tested; preceding
+operator PC/mobile real PDF rendering passed. No Provider/Credit/public evaluation
+activation. Rollback only drops hanyang_2024_question_read policy. SQL/evidence:
+LAB docs/reviews/hanyang-question-access. No further approval needed for this grant.
+
 ### Oct14 operating UX correction — live verification
 
 Scope: missing Hanyang question button and schedule order only. Root cause was
