@@ -1,3 +1,22 @@
+### Oct14 Secrets and private connection — operating PASS / evaluation PARTIAL
+
+Owner Secrets confirmed secret_text on Worker and Pages. Pages previously lacked
+service token in active deployment; deployed existing code plus bounded HOLD-only
+connection diagnostic as3b6c4c0b-41e0-477e-897b-9aff3ca9d6bb (LAB881a382).
+Worker0bab25ca-8f24-42bc-a20a-8d8e2f059234, workers.dev disabled, execution false.
+Actual allowed Chrome account: Pages Registry234, service auth PASS, online user
+Auth PASS, Worker Registry HTTP200/234. Nonce-only queue message sent and ACKed in
+operating consumer at14:36KST; no evaluation run, fake result or Provider call.
+Package HTTP400 is independently confirmed PROVIDER_RIGHTS_REQUIRED (rights empty).
+Preflight HTTP403: exact exam runtime policy null; Worker EXECUTE grant present.
+Missing bindings: ESSAY_REVIEWER, ESSAY_PROVIDER_BINDING, ESSAY_PROVIDER_KEY,
+ESSAY_REVIEW_VERIFY_KEYS. Reviewer is unfinished implementation, not an arbitrary
+Owner secret. Auth needs no Owner correction. Provider/Credit E2E remains NOT_RUN.
+Runs0/checkpoints0, visible Credit11; public HOLD. No SQL/migration/policy change.
+Next: complete reviewer integration and approved model/material/test policy, then
+request bounded Provider/Credit E2E authorization. Do not treat Queue probe ACK as
+real evaluation consumption. Local boundary tests2+7, lint/typecheck/build PASS.
+
 ### Oct14 Cloudflare dashboard visibility — VERIFIED
 
 Owner reported missing Worker. Read-only API confirms `legendstudy-essay-reviewed`
