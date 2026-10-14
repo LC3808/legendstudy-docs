@@ -1,3 +1,36 @@
+### Oct14 operating essay connection continuation — PARTIAL
+
+Owner accepted previous44 local runtime tests; this continuation connects new paths.
+WEB/Native now share a gated exam submission endpoint and owner-scoped History
+projection, reusing existing result/compare UX. Eligible parent selection requests
+free same-set rewrite. Backend candidate composes existing ReviewedRuntimeWorker,
+durable exam journal and canonical Ledger: one Credit, included rewrite, immutable
+lease, idempotent replay, telemetry persistence and owner isolation. No new engine.
+
+New local PG API→reviewed Worker with FAKE Provider transport→Ledger→History PASS.
+Receipt/telemetry redaction, account erasure retaining Ledger, empty rollback and
+nonempty rollback denial passed. WEB16 targeted tests/typecheck/lint and Node22
+webpack build PASS. Native analyze and direct real-Dart shared-result fixture PASS.
+Flutter suite blocked by PDFium download connection resets; no new APP build claim.
+Pre-existing broad WEB source-registry test incorrectly expects all mapped IDs null;
+not changed. These checks do not prove actual Provider or operational Credit E2E.
+
+Readonly Production: Provider policy helpers, telemetry RPC, exam submit/history
+RPCs absent; Package16 VERIFIED but Provider rights empty. Role-only migration
+20261014011329 and its rollback are prepared/local verified; Owner approval pending.
+No new production SQL, Provider/Credit transaction, WEB deployment or public release.
+Broader exam SQL remains candidate pending production lifecycle/owner integration,
+admin QA projection and private host/reviewer deployment. Actual Provider/model,
+source transmission rights and bounded E2E need explicit approval. Public HOLD.
+
+APP/backend commit eacb9a4; LAB source commit recorded in its branch. Both preserve
+codex/essay-shared-app-integration. Detailed file list,
+validation/limitations and preservation review: APP wiki/essay-runtime-completion.md;
+SQL scope/rollback: supabase/candidates/essay_exam_unit/README.md; role-only scope:
+supabase/reviews/essay-worker-gateway/README.md. Earlier completed PDF/admin work
+is preserved and not repeated. This section supersedes earlier "unmounted locally"
+statements only; operational A–F acceptance remains NOT RUN.
+
 ### Oct14 Owner PDF PASS; actual evaluation connection — PARTIAL
 
 Owner confirmed Hanyang problem PDF viewing PASS. PDF viewer/admin UX work stops;
