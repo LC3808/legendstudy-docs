@@ -1,3 +1,26 @@
+## 2026-10-14 — Approved Flutter Essay UX connected; device acceptance pending
+
+Owner GO implemented on `codex/essay-shared-app-integration` only. Existing
+EssayResultView now receives saved exam evaluations; canonical metadata header,
+short criterion titles/full detail, explicit History, parent-linked comparison,
+rewrite with saved-answer protection and server eligibility, writer review/submit/status
+reuse existing APIs. Catalog displays all42/Owner22 from existing LAB metadata.
+Native PDF supports the exact already-approved Hanyang question-only source;
+Math result/engine and payment/IAP unchanged. No new Provider/Credit/DB operation.
+
+Validation: focused58 PASS plus rewrite preservation test PASS (59 distinct tests),
+Flutter Analyze PASS, iOS simulator debug build PASS. Saved real initial/rewrite data
+renders at390dp/100–200%: utilitarian3→4 and four unchanged. Source writer360dp/200%
+PASS. This is local Native rendering, not new operating E2E or Owner device approval.
+Last Owner-reported Credit balance10 remains historical evidence; no new trade.
+
+Remaining: Owner iPhone approval of new screens; WEB/APP shared photo Draft has no
+compatible source-exam upload/read contract and remains unconnected. Existing
+server text Draft remains capability-gated; local Native drafts/images preserved.
+No Store submission, Claude branch/worktree changes, or public activation.
+Public evaluation HOLD/execution OFF retained. See [implementation and device steps](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#approved-native-operating-data-connection--2026-10-14)
+and [preserved operating evidence](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-runtime-completion.md#archived-oct14-operating-checkpoints-before-approved-native-ux-connection).
+
 ### 2026-10-14 — Owner iPhone 실기기 검증 및 UX 후속 과제
 
 Owner가 iPhone 실기기에서 직접 확인한 결과: review 계정 로그인, Supabase 연결,
