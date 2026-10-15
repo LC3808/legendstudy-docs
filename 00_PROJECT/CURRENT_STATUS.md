@@ -1,3 +1,11 @@
+## 2026-10-15 — Essay RPC inactive installation verified
+
+Owner approved installation only. Production migration20261015121723 applied once;
+quote/submit_cycle worker-only ACLs, nullable metadata and trigger/index verified.
+Before/after Registry234/runs2/Ledger31/material revisions17 hashes identical.
+No new cycle rows, Provider/Credit calls or flag changes. Public HOLD.
+Additional-paid operating E2E and activation remain separately approved steps.
+
 ## 2026-10-15 — Essay operating RPC final preparation
 
 LOCAL TEST PASS; production NOT_APPLIED. Existing submit/history rollback baseline

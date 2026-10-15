@@ -1392,3 +1392,14 @@ postflight.sql and rollback.sql. Rollback refuses after new submissions;
 otherwise restores old functions and drops only new metadata objects.
 Approval pending for inactive installation only. Provider/Credit E2E, flags and
 public activation remain separately gated. No further UX work.
+
+### Oct15 Owner-approved inactive RPC installation
+
+Supersedes NOT_APPLIED status above: migration20261015121723 applied once to
+LegendStudy production. Two RPCs execute only for postgres/essay_worker; old
+submit/history ACLs and private reserve/finish bodies preserved. Registry234,
+runs2, Ledger31 and material revisions17 fingerprints unchanged. New cycle rows0.
+APP migration file mirrors approved install.sql. No Provider/Credit invocation or
+execution flag change; public HOLD. Installation PASS is not operating E2E PASS.
+Further activation/trades require separate approval. Exact evidence in APP
+supabase/candidates/essay_continuous_cycles/README.md.
