@@ -1376,3 +1376,19 @@ before summary. Rewrite overview order and all TTS controls preserved.
 11 related tests and Analyze PASS (360px/200%, stored results). No new build,
 WEB change, operating write, Provider/Credit or Claude IAP modification.
 Continue with release preparation; no further unsolicited UX work. HOLD.
+
+### Oct15 final quote/continuous-cycle RPC preparation
+
+Existing candidate install.sql remains unchanged and NOT_APPLIED. Adds nullable
+previous_paid_run_id/submission_index, successor uniqueness, insertion trigger,
+worker-only quote/submit_cycle; replaces submit/history minimally. No Ledger,
+IAP, Payment, Math, Package or existing result updates. Actual production old
+submit/history body hashes match rollback baseline. Read-only counts: Registry234,
+runs2, material revisions17. Local disposable PostgreSQL async/cycle integration
+and14 base Ledger regression groups PASS; fake Provider only. Distinct-request
+concurrency and quote no-posting/role denial checked. Hosted IAP TEST untouched.
+Owner review: APP candidate README plus preflight.sql, preservation.sql,
+postflight.sql and rollback.sql. Rollback refuses after new submissions;
+otherwise restores old functions and drops only new metadata objects.
+Approval pending for inactive installation only. Provider/Credit E2E, flags and
+public activation remain separately gated. No further UX work.

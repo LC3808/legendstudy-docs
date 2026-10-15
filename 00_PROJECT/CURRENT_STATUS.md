@@ -1,3 +1,13 @@
+## 2026-10-15 — Essay operating RPC final preparation
+
+LOCAL TEST PASS; production NOT_APPLIED. Existing submit/history rollback baseline
+matches production read-only hashes. Missing quote/submit_cycle require inactive
+installation approval. Synthetic PostgreSQL async/cycle integration and14 Ledger
+regression groups PASS; no hosted IAP TEST/production writes or Provider/Credit calls.
+Registry234/runs2/material revisions17 observed; preservation SQL prepared.
+Exact install/preflight/postflight/rollback in APP supabase/candidates/essay_continuous_cycles.
+Public HOLD; no execution flag change. Owner applies only after separate approval.
+
 ## 2026-10-15 — Final mobile UX polish / local PASS
 
 APP only: track/session/question badges share one wrapping row/style. First-result
