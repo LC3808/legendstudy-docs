@@ -1353,3 +1353,17 @@ only UOS transparent margins removed.100×52 existing card box, centered contain
 zero internal padding for these two. Other university assets/UI unchanged.
 Related7tests (360px/200% text/card navigation/all42decode) and Analyze PASS.
 Owner iPhone size/alignment acceptance pending. No operating changes.
+
+### Result badges, change meaning and Native/WEB speech — 2026-10-15
+
+Owner device PASS accepted for History/navigation/versions/rewrite/import/Draft
+and speech controls. Only Registry track/session badges, factual change prose,
+and speech wording/order adjusted. Delta1–4 described as 한/두/세/네 단계;
+unchanged and decline handled. Previous comparator is not assumed initial.
+Separate speech reads5단계 평가 중3단계, never slash-formatted levels. Native
+overview precedes summary/strengths/criteria/weaknesses/actions; WEB retains its
+report→comparison layout and follows that order. Identical repeated lines skipped;
+folded criterion explanations included; submitted answers/examples excluded.
+Native32/Web102 relevant tests and Analyze/iOS/Lint/Typecheck/Build PASS.
+Owner iPhone final pronunciation/order/badges pending. APP logo assets preserved.
+No Provider/Credit/DB changes; HOLD. Detailed paths in existing APP UX wiki.

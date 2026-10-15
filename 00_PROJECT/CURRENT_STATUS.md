@@ -1,3 +1,12 @@
+## 2026-10-15 — Result UX / voice follow-up
+
+Owner device History/rewrite/Draft/voice controls PASS preserved. APP/WEB Registry
+track/session badges, factual change sentences and speech-specific 단계 wording
+connected. Reading follows existing visible section order; controls unchanged.
+Native32/Web102 related tests; Analyze/iOS build and WEB Lint/Typecheck/Build PASS.
+Owner final iPhone pronunciation/badges pending. Logos unchanged; public HOLD.
+No Provider/Credit/DB application.
+
 ## 2026-10-15 — APP/WEB result UX and local continuous cycles
 
 Existing branches preserved. History/result/rewrite UX connected on APP/WEB;
