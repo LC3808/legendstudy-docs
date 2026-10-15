@@ -1367,3 +1367,12 @@ folded criterion explanations included; submitted answers/examples excluded.
 Native32/Web102 relevant tests and Analyze/iOS/Lint/Typecheck/Build PASS.
 Owner iPhone final pronunciation/order/badges pending. APP logo assets preserved.
 No Provider/Credit/DB changes; HOLD. Detailed paths in existing APP UX wiki.
+
+### Final mobile polish / stop UX development — 2026-10-15
+
+Owner restricts work to a unified track/session/question badge row and actual
+voice order mismatch. APP first-result overview was skipped by speech; now read
+before summary. Rewrite overview order and all TTS controls preserved.
+11 related tests and Analyze PASS (360px/200%, stored results). No new build,
+WEB change, operating write, Provider/Credit or Claude IAP modification.
+Continue with release preparation; no further unsolicited UX work. HOLD.

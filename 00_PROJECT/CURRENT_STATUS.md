@@ -1,3 +1,10 @@
+## 2026-10-15 — Final mobile UX polish / local PASS
+
+APP only: track/session/question badges share one wrapping row/style. First-result
+speech now includes its top overview before summary; rewrite order already matched
+and remains unchanged.11 related tests/Analyze PASS; no new iOS build.
+No WEB/Provider/Credit/DB/IAP changes. Public HOLD; further UX development stopped.
+
 ## 2026-10-15 — Result UX / voice follow-up
 
 Owner device History/rewrite/Draft/voice controls PASS preserved. APP/WEB Registry
