@@ -8,7 +8,7 @@ change. Local PostgreSQL cycle/quote/concurrency/recovery/Rollback PASS.
 Actual stored Hanyang first/free results + Package17 read only, no reevaluation.
 Owner quality HTML prepared privately; quality NOT_VERIFIED, stored quote arrays
 empty. Rewrite cycle drafts local only; submitted results/History remain shared.
-No new logo file supplied. Native speech/device UX acceptance pending.
+Owner SKKU/UOS logos now supplied and applied to APP (assets/university-logos/skku.png, uos.png); transparent UOS margins trimmed,100×52 centered boxes. Related7tests/Analyze PASS; iPhone visual review pending. Native speech/device UX acceptance pending.
 Continuous-cycle SQL is CANDIDATE/NOT_APPLIED; no Provider/Credit/production deploy.
 General public HOLD. No Claude release/IAP branch change.
 [Detailed scope and gaps](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#appweb-result-consistency-and-paid-cycles--2026-10-15).

@@ -1344,3 +1344,12 @@ rewrite with photos; full/section voice pause/resume/stop and back navigation;
 Provider/Credit approval. Rollback is documented and refuses nonempty cycle data.
 
 APP implementation evidence: https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#appweb-result-consistency-and-paid-cycles--2026-10-15
+
+### Owner official logo delivery — 2026-10-15
+
+APP only: Owner `n_2.jpg` → `assets/university-logos/skku.png`;
+`logo_horizontal_2.png` → `assets/university-logos/uos.png`. Original colors/ratio;
+only UOS transparent margins removed.100×52 existing card box, centered contain,
+zero internal padding for these two. Other university assets/UI unchanged.
+Related7tests (360px/200% text/card navigation/all42decode) and Analyze PASS.
+Owner iPhone size/alignment acceptance pending. No operating changes.
