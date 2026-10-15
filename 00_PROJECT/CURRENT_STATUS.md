@@ -1,3 +1,15 @@
+## 2026-10-15 — Google IAP TEST auth preparation / LOCAL PASS
+
+Claude local b97e833 read-only; no merge. Codex TEST host/session/JWT routing guards
+implemented;39 Mock/local tests and Analyze PASS. SDK already project-scopes storage;
+reported prior cross-project session restoration remains unproven. TEST confirmed
+user1, no sign-in/profile/account/grant. Connected SM_G950N installed version1 has
+installer=null: Play binary/compiled defines unverified. No login, grants, purchase,
+DB writes or deployment today. Production/Claude/main untouched. Public HOLD.
+Next: Owner TEST login and verified internal-test build, then separate credit1
+purchase approval. Stop after today's preparation report.
+Details: APP wiki/iap-billing-preparation-2026-10-09.md (Oct15 section).
+
 ## 2026-10-15 — Essay RPC inactive installation verified
 
 Owner approved installation only. Production migration20261015121723 applied once;
