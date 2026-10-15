@@ -1155,3 +1155,31 @@ Canonical implementation/files/provenance/rollback and device checklist:
 [APP existing UX Wiki](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#mobile-entry-to-submit-ux-phase-1--2026-10-15).
 Rollback: revert APP UI/assets commit and rebuild; no DB rollback.
 
+## 2026-10-15 — Mobile UX finishing four fixes / LOCAL PASS
+
+Owner confirmed university→exam→writer flow on iPhone; follow-up scope only:
+white logo backgrounds, removal of Hero title, checkbox multi-question selection,
+navy actions. APP `1b90993` on existing codex/essay-shared-app-integration.
+
+Verified root cause: primaryInk token is brown; essay explicit CTA/container
+references were incorrect. Containers are now white, CTA uses existing textPrimary
+navy; global theme/brand untouched.9 official colored assets replace white variants;
+Hongik/Seoultech unchanged, all11 reviewed and SKKU scaling retained.
+Ewha/Seokyeong/Kangnam use official admissions-office signatures including 입학처.
+Source URLs and file hashes retained in APP provenance; no generated/recolored logo.
+Hero History/server Credit remain. Checkbox count/empty disable/single default and
+per-exam selected set preserve IDs. Existing per-question writer/Draft is kept alive
+while switching; review receives whole set and names missing answers. Original
+rewrite set/14-day policy and existing API/hash unchanged. Result page changes only
+다시 써보기 color; no result layout or engine change.
+
+Validation:25 tests PASS,4 existing private actual-result fixture tests SKIP;
+360dp/200% multi-selection, Draft switching/reopen, missing-answer review, Hero,
+logos, image/PDF, shared request hash/eligibility/History. Analyze and iOS simulator
+build PASS; APP Wiki check PASS. No Provider/Credit/DB/production operation. HOLD.
+
+Owner iPhone acceptance pending for these four fixes; previous initial server charge
+quote gap remains separately tracked, not changed by this scope. Exact files,
+source variants, component reuse and device checklist are in the existing
+[APP UX Wiki](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#mobile-ux-phase-1-finishing-fixes--2026-10-15).
+Rollback: revert follow-up APP UI/assets commit and rebuild; no DB rollback.
