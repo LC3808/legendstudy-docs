@@ -1,3 +1,15 @@
+## 2026-10-15 — iPhone logos/Hero/History follow-up / LOCAL VALIDATION
+
+APP `281dafa` on existing `codex/essay-shared-app-integration`.
+Four official basic logos replace admissions signatures; SKKU display enlarged.
+Hero vertical padding reduced; History identity and navy/green textual badges added.
+Existing result/comparison/Draft/query contracts preserved.13 tests PASS,4 private
+fixture SKIP; Analyze PASS. iOS simulator debug build PASS. Owner device recheck pending.
+Paid/free pairs can reuse existing Ledger, but continuous paid-cycle lineage and
+new-intent client flow require minimal shared contract/UI work (READ-ONLY analysis).
+Additional-paid badge is deferred until reliable cycle metadata exists.
+No Provider/Credit/DB/config change. Public HOLD.
+
 ## 2026-10-15 — Mobile UX finishing four fixes / LOCAL PASS
 
 Owner confirmed university→exam→writer flow on iPhone; follow-up scope only:
