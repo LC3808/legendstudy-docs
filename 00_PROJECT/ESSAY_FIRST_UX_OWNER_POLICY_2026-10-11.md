@@ -1128,3 +1128,30 @@ are expressly excluded from this closeout. No blocked implementation within the
 Rollback: revert this UI commit and rebuild; no DB/data rollback. General public
 HOLD and execution OFF maintained. Today stops after Wiki, Commit/Push/Remote Verify.
 Next resumption priority is Owner device verification only; no extra development started.
+
+## 2026-10-15 — Flutter mobile entry-to-submit UX phase 1 / PARTIAL
+
+Owner latest scope implemented on existing `codex/essay-shared-app-integration`.
+APP commit `d26213d`: whole university-card navigation and scroll restore, official
+42 bundled logos (missing11 corrected, white-logo contrast and SKKU scale), unified
+History/server-Credit Hero, question selection plus one 답안 작성하기 CTA,
+answer-first writer with existing Native 문제 보기 and Draft/photo preservation,
+concise submission review with existing server free-rewrite eligibility.
+
+15 focused tests PASS including360dp/200% text, native logo decode, Draft and
+scroll restore. Flutter Analyze, iOS simulator debug build, APP Wiki check PASS.
+Existing result/comparison/History detail UX, runtime, Package, Registry, Ledger,
+DB, Math, payment/IAP and Claude release branch untouched. No Provider/Credit or
+production operation. General public HOLD remains.
+
+Remaining: current availability API returns readiness only, not an initial charge
+quote. UI states 서버 확인 필요 rather than inventing server-confirmed1Credit.
+Exact initial-cost display requires a separately scoped backend quote contract;
+free rewrite0 is based on existing eligibility and exact question set. Owner iPhone
+acceptance still needed for logos, card/back/CTA, keyboard/Draft/photos, Native PDF
+and submission review without a new evaluation request.
+
+Canonical implementation/files/provenance/rollback and device checklist:
+[APP existing UX Wiki](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#mobile-entry-to-submit-ux-phase-1--2026-10-15).
+Rollback: revert APP UI/assets commit and rebuild; no DB rollback.
+
