@@ -1,3 +1,11 @@
+## 2026-10-16 — New TEST IAP real grant PASS, remaining E2E pending
+
+Owner-approved new credit1 purchase13:35KST processed. TEST auth/verifier/grant200;
+one +1 grant/transaction, test3 balance4/reserved0. Owner app charging confirmed.
+Old refunded order not replayed. Same-token dedup, explicit consume and restart
+balance acceptance remain pending (overall PARTIAL). APP IAP wiki holds evidence.
+No additional buy/manual grant/Production change. Public HOLD.
+
 ## 2026-10-16 — Final TEST refund analysis / READ-ONLY closed
 
 Google detail:12:50:05 processed→12:55:06 refunded (KST), no refund reason code.
