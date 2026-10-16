@@ -1,3 +1,13 @@
+## 2026-10-16 — TEST IAP grant failure / ACL application blocked
+
+Owner TEST version2 login/purchase confirmed; actual JWT auth PASS. Purchase
+verifier503 is grant RPC42501: postgres cannot execute inner credit_post_grant.
+Balance3/IAP grants0. Owner-approved direct GRANT failed; SET ROLE also denied.
+Both rolled back; ACL/function hash unchanged. Existing membership ADMIN=true,
+INHERIT=false, SET=false. Temporary SET enable/restore requires added approval.
+Exact proposed transaction and rollback in APP IAP preparation wiki. No replay,
+manual Credit, further purchase or Production changes. Public HOLD.
+
 ## 2026-10-16 — Google IAP TEST AAB / BUILD PASS
 
 Codex APP85e6161 TEST host/session/JWT guards included in signed0.1.0+2 AAB.
