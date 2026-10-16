@@ -1,3 +1,13 @@
+## 2026-10-16 — TEST order refunded; purchase history local implementation
+
+Owner was on product screen; prior history-screen assumption corrected. Read-only
+Play Console confirms today's12:50KST credit1 refunded/KRW0. No recovery replay.
+TEST balance3/IAP0. Existing ACL fix retained. Another purchase requires approval.
+APP adds requested top-up/purchase-history tabs using existing owner-only ledger,
+recent50 paid entries, refresh and truthful empty/error states. No DB/engine change.
+41 local tests and Analyze PASS; not in installed version2, upload/device check pending.
+APP IAP preparation wiki holds detail. Production/Claude unchanged; public HOLD.
+
 ## 2026-10-16 — TEST IAP grant ACL fixed; replay pending approval
 
 Owner temporary SET approval executed: target credit_post_grant postgres EXECUTE
