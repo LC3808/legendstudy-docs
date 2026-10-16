@@ -1,3 +1,11 @@
+## 2026-10-16 — E2E transport interruption; execution OFF
+
+Owner login PASS, but quote stopped at HTTP403/Cloudflare1010 before submit.
+Curl transport fixed and OFF503 checked. No run for approved request key; no Provider
+or Credit operation. Pages/Worker/continuous OFF verified, deploy5869f421.
+Awaiting terminal re-login (credentials intentionally memory-only); existing approval
+persists. General public HOLD. See APP essay-lab-ui-ux-v1 for exact evidence.
+
 ## 2026-10-16 — Approved gateway promotion / authenticated E2E waiting
 
 Owner approved one additional paid test: max2Provider/USD2/1Credit and same-run recovery.
