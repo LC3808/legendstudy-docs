@@ -4,7 +4,8 @@ Approved Hanyang Package17 run346083f3 completed14:48:27 KST: evaluation1+review
 1Credit settled, balance9/reserved0, submission3, old2 results preserved. Next free
 quote0 and predecessor duplicate-cycle rejection verified without another submit.
 All execution flagsOFF, deploy433141d6. Live WEB resultPASS; old operating UI labels
-additional as initial (UI promotion pending). APP new-result device check pending.
+additional as initial (UI promotion pending). Owner confirmed APP new result and
+balance9 match WEB on Oct16; device readback PASS.
 Native360px/200% and WEB actual-result QA each1 PASS. Cost fieldsNULL; measured
 USD charge not verified. DB/Math/Payment/IAP unchanged. General public HOLD.
 
