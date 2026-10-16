@@ -8,8 +8,9 @@ upload key; BILLING retained; all3 compiled architectures include TEST URL/key.
 Artifact: /private/tmp/legendstudy-app-iap-20261016/build/app/outputs/bundle/release/app-release.aab
 SHA256:66fd122b1f757f4f3b9341cdbeb335afedff301983d6b6383bd2ff2d06f9dda1.
 APP existing wiki/iap-billing-preparation-2026-10-09.md contains full evidence.
-Upload awaits separate Owner approval. Actual TEST device login/JWT, Play purchase,
-grant/dedup/consume/restart E2E remain NOT_VERIFIED. No upload/purchase/grant/DB/
+Owner approved upload only: Play accepted version2(0.1.0), internal release2 draft saved.
+Tester rollout NOT_STARTED; current tester release remains1. Actual TEST device login/JWT, Play purchase,
+grant/dedup/consume/restart E2E remain NOT_VERIFIED. No rollout/purchase/grant/DB/
 Provider/Production changes. Claude/main untouched. General public HOLD.
 
 ## 2026-10-15 — Google IAP TEST auth preparation / LOCAL PASS
