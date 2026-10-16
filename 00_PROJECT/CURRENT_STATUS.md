@@ -1,3 +1,14 @@
+## 2026-10-16 — Final TEST refund analysis / READ-ONLY closed
+
+Google detail:12:50:05 processed→12:55:06 refunded (KST), no refund reason code.
+First proven failure: internal grant EXECUTE42501→RPC403→verifier503; auth200.
+Code skips consume when verification pending; unacknowledged license-test refund
+is supported inference, not Google-confirmed cause. Installed controller source
+matches inspected code. ACL now normal; balance3/reserved0/IAP0. Actual post-fix
++1/dedup/consume/restart E2E awaits separate purchase approval. No refunded replay,
+manual grants, code/DB/Production/Claude changes. APP IAP wiki has full evidence.
+General public HOLD. Owner requested stop after documentation; work stopped.
+
 ## 2026-10-16 — TEST order refunded; purchase history local implementation
 
 Owner was on product screen; prior history-screen assumption corrected. Read-only
