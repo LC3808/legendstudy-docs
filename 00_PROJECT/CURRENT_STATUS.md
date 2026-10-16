@@ -1,3 +1,12 @@
+## 2026-10-16 — Approved gateway promotion / authenticated E2E waiting
+
+Owner approved one additional paid test: max2Provider/USD2/1Credit and same-run recovery.
+Gateway-only production deploy3b99d254 SUCCESS (live8518db6 + endpoint14e7612); no UI
+or Math/Payment delta. All execution flagsOFF; public503 held; runs2/additional0.
+Awaiting Owner review-account terminal login; password/JWT remain process-only.
+Provider/Credit not executed. Existing approval persists; no repeat approval required.
+APP25bf0cb records deployment, fixed request and rollback. General public HOLD.
+
 ## 2026-10-16 — Essay launch integration / PARTIAL, additional E2E approval pending
 
 Production read-only: Registry234, completed first/free runs2, new cycles0;

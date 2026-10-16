@@ -1436,3 +1436,11 @@ synthesis/source-exam photo submission remain unavailable; launch only verified
 single-question text exams unless separately completed. No broad234-question rollout.
 [Detailed evidence/approval plan](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#oct16-launch-preflight--additional-cycle-ready-locally--operating-e2e-pending).
 
+## 2026-10-16 — Approved gateway promotion / authenticated E2E waiting
+
+Owner approved one additional paid test: max2Provider/USD2/1Credit and same-run recovery.
+Gateway-only production deploy3b99d254 SUCCESS (live8518db6 + endpoint14e7612); no UI
+or Math/Payment delta. All execution flagsOFF; public503 held; runs2/additional0.
+Awaiting Owner review-account terminal login; password/JWT remain process-only.
+Provider/Credit not executed. Existing approval persists; no repeat approval required.
+APP25bf0cb records deployment, fixed request and rollback. General public HOLD.
