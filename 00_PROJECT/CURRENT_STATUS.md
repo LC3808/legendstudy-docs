@@ -1,3 +1,12 @@
+## 2026-10-16 — TEST IAP grant ACL fixed; replay pending approval
+
+Owner temporary SET approval executed: target credit_post_grant postgres EXECUTE
+added; executor retained, anon/authenticated/PUBLIC denied. Additional temporary
+grantor membership found and removed; original ADMIN=true/INHERIT=false/SET=false
+restored. Function hash unchanged. Balance3/reserved0/IAP0; no purchase replay.
+Exact evidence/rollback in APP IAP preparation wiki. Existing purchase recovery
+needs separate approval. Production/Claude unchanged; general public HOLD.
+
 ## 2026-10-16 — TEST IAP grant failure / ACL application blocked
 
 Owner TEST version2 login/purchase confirmed; actual JWT auth PASS. Purchase
