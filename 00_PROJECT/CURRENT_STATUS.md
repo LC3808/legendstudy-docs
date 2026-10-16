@@ -1,3 +1,35 @@
+## 2026-10-16 — Essay launch integration / PARTIAL, additional E2E approval pending
+
+Production read-only: Registry234, completed first/free runs2, new cycles0;
+review@legendstudy.com spendable10/reserved0; quote additional1 for exact Hanyang2024
+humanities afternoon2 question set, Package17 unchanged. Installed cycle RPCs and
+Worker grants normal. Cloudflare Pages/Worker OFF, continuous flag unset. Current
+operating gateway8518db6 lacks quote/cycle routing, so DB install alone is insufficient.
+
+LAB14e7612 adds bounded previousPaidRunId E2E scope over existing shared gateway;
+no UI/engine/Payment changes. Not deployed. APP9c4748e records read-only evidence,
+minimal protected IAP integration conflicts and exact next approval/recovery scope.
+APP50 + actual-result6 PASS; WEB133 + actual-result1 PASS; disposable DB continuous
+paid/free/concurrency/idempotency/recovery PASS; Analyze/iOS simulator/WEB lint,
+typecheck and build PASS. Real existing results rendered in both adapters; new live
+E2E NOT_RUN. Provider/Credit/DB/config changes NONE. Public HOLD.
+
+Claude latest local3b4e220 read-only: Apple Sandbox verifier changes stay protected;
+Codex session guard, balance refresh, purchase History and compact Credit component
+must survive selective integration. Existing IAP engine/credit_summary/Ledger reused.
+Google TEST PASS does not certify Apple Sandbox, Production IAP or final store build.
+Quality:3→4/four maintained, exactPackage17; empty sentence-feedback means quotations/
+examples NOT_VERIFIED. Private Owner review regenerated without Provider calls.
+
+Next: Owner approval for minimal gateway promotion + one pinned additional-paid test
+(review account,1Credit10→9,eval1+review1,max2Provider,USD2cap, no extra free test), then
+restoreOFF and verify new WEB/APP result. Preserve prior2results and all Ledger entries.
+Remaining launch gates: real additional cycle, live result equality, Apple/Production
+IAP/release integration, Owner quality and public release acceptance. Multi-question
+synthesis/source-exam photo submission remain unavailable; launch only verified
+single-question text exams unless separately completed. No broad234-question rollout.
+[Detailed evidence/approval plan](https://github.com/LC3808/legendstudy-app/blob/codex/essay-shared-app-integration/wiki/essay-lab-ui-ux-v1.md#oct16-launch-preflight--additional-cycle-ready-locally--operating-e2e-pending).
+
 ## 2026-10-16 — Google IAP TEST final verification complete
 
 Google Developer API directly confirms successful orderPROCESSED, purchase0,
