@@ -1,3 +1,15 @@
+## 2026-10-16 — Google IAP TEST final verification complete
+
+Google Developer API directly confirms successful orderPROCESSED, purchase0,
+acknowledgement1,consumption1,purchaseType0. No extra ack/consume calls.
+Exact existing successful order duplicate TEST RPC→already_processed (guarded
+BEGIN/ROLLBACK), postflight grant1/transaction1/original key1/balance4/reserved0.
+13 local verifier tests PASS. Same-token Edge HTTP replay NOT_RUN; duplicate
+acceptance verified via deployed RPC and local request contract. Prior Owner
+restart4 and real auth/verify/grant PASS retained. No remaining blocker for these
+checks; no new purchase/manual grant/Production/Claude change. Public HOLD.
+APP existing IAP Wiki records evidence/limits. Work ended after documentation.
+
 ## 2026-10-16 — New TEST IAP real grant PASS, remaining E2E pending
 
 Owner-approved new credit1 purchase13:35KST processed. TEST auth/verifier/grant200;
