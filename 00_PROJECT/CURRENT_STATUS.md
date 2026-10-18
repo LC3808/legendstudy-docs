@@ -1,3 +1,7 @@
+## Oct18 iPhone TEST-only follow-up
+
+APP `9c4bd73` on release-candidate-20261018 pushed/remote matched. Owner-approved minimal AppConfig gateway guard blocks TEST Catalog/exam/Math operating API requests before transport; Production unchanged. TEST Supabase History/result code unchanged; TEST Catalog gateway is not configured and actual TEST result data is not certified. No dummy data or Production copy. Analyze+16 focused tests PASS. Debug/Profile development-signing builds PASS; Profile installed and launched on connected iPhone12ProMax after unlock. Owner TEST login/Credit/purchase-history/UI verification pending; account-deletion flag remains OFF. No purchase/evaluation/DB/API deployment or Ledger change; public HOLD. Existing full tests remain previous-commit evidence. APP wiki production-integration contains device details.
+
 ## 2026-10-18 — Independent release candidate / public HOLD
 
 Integration branch: `codex/release-candidate-20261018` (APP + DOCS). Codex APP f62b1ee baseline; Claude2684cee read-only/remote matched. Selected Claude9d8bce2 Sandbox project/grant guard,0f20c76 refund notification source+unapplied Production migration,3b4e220 latest splash/font,2684cee encryption/team/scheme. No full merge, main/Claude worktree unchanged. Codex essay/Draft/onboarding/auth/session isolation/purchase history retained. Existing billing engines and common Ledger reused.
