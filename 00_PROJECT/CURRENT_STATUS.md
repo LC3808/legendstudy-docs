@@ -1,3 +1,19 @@
+## 2026-10-18 — Independent release candidate / public HOLD
+
+Integration branch: `codex/release-candidate-20261018` (APP + DOCS). Codex APP f62b1ee baseline; Claude2684cee read-only/remote matched. Selected Claude9d8bce2 Sandbox project/grant guard,0f20c76 refund notification source+unapplied Production migration,3b4e220 latest splash/font,2684cee encryption/team/scheme. No full merge, main/Claude worktree unchanged. Codex essay/Draft/onboarding/auth/session isolation/purchase history retained. Existing billing engines and common Ledger reused.
+
+APP Analyze PASS; final1076 tests PASS/7private-fixture skips, actual stored first/free6+additional1 separately PASS. Edge29 tests/typecheck PASS. Missing native Draft-purge test handler caused4 initial account-deletion test timeouts; test fixture repaired, product lifecycle unchanged. LAB916b46c already contains remote main8991b51; no WEB source changes required. Node22 lint/typecheck/build135pages PASS;1135tests PASS/3skips, actual results2 separately PASS.
+
+Signed TEST Android AAB0.1.0+3 PASS, existing upload key reused; iOS Production-host release --no-codesign PASS (com.legendstudy.app/iOS15). iOS artifact is not a distribution IPA. Candidate Production configuration keeps essay writes/requests OFF. Old store-release helper forces those flags true and was intentionally not used for HOLD builds. No uploads/submissions/deployments.
+
+Prior first/free/additional essay E2E, Owner APP/WEB results+balance9, GoogleTEST grant+restart4/ACK+consume/idempotency remain accepted historical evidence. No repeat Provider/Credit/store call or new DB audit. Shared source adapters and stored-result tests verified unchanged.
+
+Materials: Catalog42 and exact Owner22 order confirmed against code; existing registration snapshot76exams/234questions/21universities. Detailed22-row candidate evidence table is in APP wiki/essay-lab-ui-ux-v1.md Oct18. Intent/scoring/explanation/example candidates do not imply reviewed packages or redistribution rights; excellent-answer provenance absent from that inventory. Hanyang2024 afternoon2 Package17 is the specifically verified reference. Reuse existing files, classify only missing materials, then per-exam rights/automatic extraction/Owner approval/quality comparison. No mass import or PDF redistribution.
+
+BLOCKERS / separate gates: Apple Account Holder updated agreement/Paid Apps/tax-bank status and StoreKit Sandbox E2E; refund notification configuration/deployment/lifecycle acceptance; distribution signing, store build-number availability and integrated Android/iPhone smoke; latest approved WEB UI deployment and Production IAP/essay activation approval. Owner approves actual purchases/refund simulations, operating migrations/deployments and store submission separately. Existing operating data/Math/Payment preserved; general public HOLD.
+
+Full provenance/files/build limitations: APP wiki/production-integration-2026-10-09.md Oct18. APP commit `ae9296fb35da18743516f3de681350edcec9c73b` pushed to the independent integration branch; remote SHA matched. LAB `916b46ca6df47ce25dd8fdf5cbffcae481d1523c` unchanged. DOCS commit recorded by Git on the same independent branch.
+
 ## 2026-10-16 — Additional paid E2E PASS / release PARTIAL
 
 Approved Hanyang Package17 run346083f3 completed14:48:27 KST: evaluation1+review1,
@@ -2427,3 +2443,7 @@ forwards the separate host credential. Current deployment credential lacks Worke
 scopes. Independent SignedReview service and exact Provider/material policies remain
 unconfigured. Public HOLD; no actual Provider/Credit calls.
 See [current execution detail](ESSAY_FIRST_UX_OWNER_POLICY_2026-10-11.md#oct14-owner-a-cloudflare-execution).
+
+
+### Oct18 final candidate artifact verification
+Production-host Android signed HOLD AAB+3 PASS77.7MB, SHA256 cf0273b8c82c88b54b6ccc1939d70c7afa6909188ad94dd391b935964a1f4bc9. Concurrent test-generated plugin registration caused first attempt failure; sequential release rebuild PASS, no generated source edits. Signed TEST AAB preserved separately. Jarsigner jar verified with self-signed/no-timestamp/ZIP-reader warnings; no Play upload assertion. iOS unsigned Release PASS.
