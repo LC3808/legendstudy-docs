@@ -53,6 +53,8 @@ device-log capture pending. Approvals still pending (HOLD): TEST edge deploy, re
 Sandbox purchase (1×credit1), real refund, Production migration/IAP, TestFlight, Store
 submission, public release.
 
+UI/UX (Claude, APP `claude/app-release-readiness-eab636` @ be51e98): splash wordmark `+` enlarged 0.5x->0.9x (~1.8x), brand orange/position/Pretendard/1.8s kept; analyze+brand tests PASS. READ-ONLY analysis — onboarding is already a step-based (Toss-style) flow (`_StepProgress total 4`); APP has no university-logo image assets (name/text display; logos are remote/LAB); personalization data exists today (`study_sessions`, `day_target`/`day_event` D-Day, essay records) so rule-based messages need no new table (peer-comparison excluded — no real stats). Full input-UX rework / bulk logos / personalization system await Owner approval.
+
 ## Grok code review (LAB #1 / APP #9) + Essay-first reaffirmation — 2026-10-12 — RECORDED (documentation only)
 
 Recorded the Grok code review of the Essay full-service implementation and reaffirmed
