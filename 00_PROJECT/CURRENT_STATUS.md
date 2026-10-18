@@ -10,6 +10,49 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
+Owner-directed release-readiness snapshot (target 2026-10-25). Claude owns Apple
+Sandbox/StoreKit, IAP refund notifications, iOS signing/Archive/TestFlight, splash/
+release config; Codex owns APP·WEB·IAP final integration + 논술 LAB. Claude APP
+branch `claude/app-release-readiness-eab636 @ 2684cee` (NOT merged). Codex APP
+`origin/codex/essay-shared-app-integration @ f62b1ee`. No overlapping file edits.
+
+A. Google Play IAP — **PASS** (Codex-verified; Production activation HOLD): TEST
+   purchase E2E / Google server verify / Credit +1 / Ledger idempotency / acknowledge
+   / consume / relaunch-balance all PASS (Codex APP 4c532ab→f62b1ee).
+B. Apple IAP — **PARTIAL / BLOCKER**: StoreKit client; App Store Server API 7 secrets
+   registered + digest-verified; Sandbox tester; Copacabana Co. (VUKFS69GB4) signing;
+   TEST iPhone build+install PASS; TEST email login + credit_summary (balance 4) PASS.
+   BLOCKER — StoreKit product query returns 0 → buy buttons disabled → real Apple
+   purchase E2E NOT done.
+C. Refund/cancel — **PARTIAL** (local-verified; deploy pending): Toss engine
+   unchanged. IAP refund migration `20261016120000_iap_refund_recovery` applied to
+   TEST; `iap_revoke_refunded_purchase` + `iap_refund_events` locally verified
+   (unused-only recovery, shortfall, other-paid/free protected, idempotency, reversal,
+   Google grant preserved). Apple ASSN V2 + Google RTDN edge `iap-refund-notifications`
+   implemented, core tests 10/10. NOT done — TEST edge deploy, real store-notification E2E.
+D. 논술 LAB — **PASS** (Codex-verified; 추가 첨삭 OFF, public HOLD): 최초/무료 재/추가
+   유료 첨삭, WEB·APP history/result/Credit balance 일치 — PASS (Codex).
+E. iOS release prep — **PARTIAL**: Team Copacabana Co. (VUKFS69GB4), Bundle
+   `com.legendstudy.app`, dev signing PASS, splash brand improvement,
+   `ITSAppUsesNonExemptEncryption=false`, Info.plist lint PASS. BLOCKER — final Archive
+   NOT done: app version 0.1.0 vs ASC 1.0 mismatch + no Apple Distribution cert yet;
+   TestFlight upload NOT done (Owner-approval-gated).
+F. App Store Connect — **PARTIAL / BLOCKER**: app registered, iOS 1.0 created,
+   metadata / age 4+ / KR·EU compliance / Program License Agreement (2026-10-18) done.
+   BLOCKER — **Paid Applications agreement absent** (only Free Apps active) = root cause
+   of B's 0-product StoreKit query. Screenshots, support URL (Codex LAB site), review
+   account, final build — NOT done.
+
+Apple Sandbox BLOCKER: StoreKit returns products only when the Paid Applications
+agreement is active; product IDs (credit1/3/5/10), signing, and Apple secrets are all
+verified correct, and the products exist ("제출 준비 중"), so the missing Paid Apps
+agreement is the single remaining cause. Minimal fix = Owner (Account Holder) activates
+the Paid Apps agreement (banking/tax/contact); no app code change. Actual notFoundIDs
+device-log capture pending. Approvals still pending (HOLD): TEST edge deploy, real Apple
+Sandbox purchase (1×credit1), real refund, Production migration/IAP, TestFlight, Store
+submission, public release.
+
 ## Grok code review (LAB #1 / APP #9) + Essay-first reaffirmation — 2026-10-12 — RECORDED (documentation only)
 
 Recorded the Grok code review of the Essay full-service implementation and reaffirmed
