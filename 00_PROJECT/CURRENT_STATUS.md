@@ -1,6 +1,6 @@
 ## Oct18 MY major save defect
 
-Owner interested university setting PASS;major setting FAIL. Runtime column ACL/log evidence confirms upsert sends prohibited intended_major INSERT and updated_at write. APP now updates only own intended_major,requires returned row,server timestamp retained. No DB/permission change. Analyze+11tests PASS;development build10/signature/install/launch PASS;Owner save recheck pending. Prior PDF/bookmark/study/restart PASS preserved.
+Owner interested university setting PASS;major setting FAIL. Runtime column ACL/log evidence confirms upsert sends prohibited intended_major INSERT and updated_at write. APP now updates only own intended_major,requires returned row,server timestamp retained. No DB/permission change. Analyze+11tests PASS;development build10/signature/install/launch PASS;Owner save/navigation persistence PASS. Production readback: intended_major=자유전공·융합, updated_at=2026-10-18 13:29:43.64993+00 (22:29:43 KST), replacing prior Oct15 value. DEVICE+DB verified; no DB/ACL change. Prior PDF/bookmark/study/restart PASS preserved. Public HOLD remains.
 
 ## Oct18 functional Production RC — PARTIAL
 
