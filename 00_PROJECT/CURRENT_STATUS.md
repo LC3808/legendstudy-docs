@@ -2,7 +2,7 @@
 
 Codex sole execution authority; latest final directive supersedes earlier sequencing assumptions. Preserve completed Google/essay/UI/support results. Owner confirms iPhone existing results/Credit display. Android Production device QA deferred, existing TEST install/signing untouched.
 
-TEST refund preflight: existing revoke/purchase RPCs service_role-only, anon/authenticated denied, revoke owner can execute subject lock, refund audit RLS enabled. Refund Edge absent; existing migration not reapplied.10local handler tests/typecheck PASS. Disabled TEST-only deployment scope+rollback prepared in APP wiki/iap-billing-preparation; separate approval requested. No Store notification, refund, Credit or DB write.
+TEST refund preflight: existing revoke/purchase RPCs service_role-only, anon/authenticated denied, revoke owner can execute subject lock, refund audit RLS enabled. Owner-approved disabled TEST refund Edge installed v1/JWTfalse with IAP_REFUND_ENABLED=false; GET405/POST503 PASS. Purchase verifier JWTtrue/code hash unchanged; version now10 (preflight9). Existing migration not reapplied.10local handler tests/typecheck PASS retained. Scope/rollback/evidence in APP wiki/iap-billing-preparation. Store notification/signature/recovery E2E NOT_VERIFIED; separate activation approval required. No Store notification, refund, Credit or DB write.
 
 Unsigned iOS Archive1.0.0(6), bundlecom.legendstudy.app,204MB PASS; no IPA/upload. Only Apple Development identity available locally; Distribution export remains gate. Apple agreement handled by Owner, purchases still blocked pending active Paid Apps/product lookup. Existing support URL already accepted.
 
