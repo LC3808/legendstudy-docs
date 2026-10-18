@@ -1,3 +1,7 @@
+## Oct18 MY major save defect
+
+Owner interested university setting PASS;major setting FAIL. Runtime column ACL/log evidence confirms upsert sends prohibited intended_major INSERT and updated_at write. APP now updates only own intended_major,requires returned row,server timestamp retained. No DB/permission change. Analyze+11tests PASS;development build10/signature/install/launch PASS;Owner save recheck pending. Prior PDF/bookmark/study/restart PASS preserved.
+
 ## Oct18 functional Production RC — PARTIAL
 
 Latest Owner policy supersedes read-only-only validation: review@legendstudy.com normal personal-data actions allowed; shared data/DB migration/Provider/payment/Credit/deletion forbidden. Profile1.0.0(9) installed and launched, read-onlyfalse; native IAP separatelyOFF, essay/deletion executionOFF. RLS/owner policies for6personal tables inspected; pre-action counts recorded. Analyze/39regression+5gate tests PASS. Owner device PASS:search/PDF/bookmark/timer save/restart persistence;DBbookmark2/recent1/study1 confirms. MYschool/target and remaining screen acceptance pending. Android Release AAB1.0.0(9)77.7MB built; not uploaded/installed. Apple Distribution identity absent; Development only. Android TEST install preserved. No feature PASS inferred from builds. Public HOLD.
