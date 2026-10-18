@@ -1,3 +1,9 @@
+## Oct18 Owner-approved Claude UI selection into Codex RC
+
+Authority read: APP be51e98/c3ac6ec and DOCS4c7065e. Brand be51e98 already exactly present in RC1897c3c (plus1.8x/orange/top-right/Pretendard/1.8s). Only onboarding UI hunks selected:300ms fade/slide, step glow, Reduce Motion, rapid-tap guard. RC DeviceIntroPage/step1/auth separation and original copy/questions/save policy retained; no whole-branch merge. No new logos (existing42 preserved), personalization card, billing/Ledger/Provider/backend/DB changes.
+
+Analyze+36 focused tests PASS, including360px/200% with Reduce Motion on/off and backward/forward grade persistence through one canonical save. Android release APK0.1.0+5 PASS (89.0MB); iOS unsigned Release0.1.0+5 PASS (35.9MB), not a signed Archive/TestFlight build. APP e6efb55; Wiki handoff PASS. No installation/upload. New UI device acceptance pending; existing iPhone result/Credit readback is Owner-confirmed. Android Production device QA explicitly deferred; existing Google TEST app/E2E preserved, no re-investigation or installation. General HOLD. APP feature Wiki contains exact integration and regression evidence.
+
 ## Oct18 Phase1 Production read-only handoff — PARTIAL
 
 Latest Owner: Phase1 existing APP services → Phase2 Apple IAP/refunds → Phase3 WEB UX → Phase4 store submission. TEST operating-API boundary retained; no TEST backend/data clone. Codex integration authority, Claude UI only. Remote Claude be51e98 inspected; only approved wordmark plus sizing integrated. main/Claude/LAB unchanged.
