@@ -1,3 +1,7 @@
+## Oct18 read-only iPhone preparation
+
+Production review-only compile flag and explicit HTTP transport guard added; application mutations blocked before send, read RPC allowlist retained, native IAP controller disabled. Separate temporary config; Store tool rejects review config. No iPhone replacement or operational write. Resolver-dependent PDFs/school Edge/deletion status intentionally blocked; existing Catalog/History/Credit/REST reads remain. Device read acceptance pending Owner install approval. Local drafts/queues preserved; avoid edits/timer completion and inspect queues before normal build restoration. Analyze PASS;42focused tests+4review-flag tests PASS. iOS development Profile1.0.0(7),com.legendstudy.app,teamVUKFS69GB4,signature verification PASS. Not installed. APP production-integration Wiki contains full audit and test/build evidence. Public HOLD.
+
 ## Oct18 final release continuation — display correction
 
 APP account-deletion request copy now “2주 후”; actual336hours/14days, server deadline, cancellation/recovery unchanged. Other APP lib/assets show no336-hour copy. Analyze PASS and10existing deletion tests PASS. Local implementation only; new iPhone installation/device acceptance pending Owner approval. No DB/Provider/Credit/Store changes. Existing automatic recent-view and onboarding writes must be blocked/excluded before broader Production read-only verification. Preserve prior PASS; Phase1 PARTIAL, Apple/notification/TestFlight gates unchanged, Phase3WEB not started.
