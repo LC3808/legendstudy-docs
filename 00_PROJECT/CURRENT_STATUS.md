@@ -1,3 +1,13 @@
+## Oct18 Phase1 Production read-only handoff — PARTIAL
+
+Latest Owner: Phase1 existing APP services → Phase2 Apple IAP/refunds → Phase3 WEB UX → Phase4 store submission. TEST operating-API boundary retained; no TEST backend/data clone. Codex integration authority, Claude UI only. Remote Claude be51e98 inspected; only approved wordmark plus sizing integrated. main/Claude/LAB unchanged.
+
+Fresh operating evidence: Pages essay runtime/continuous flags false; Worker execution false. Production verify-iap-purchase v5 requires IAP_ENABLED=true, secret absent: IAP disabled. Public source Catalog21 universities/77 source exams merges with APP42/Owner22. Approved review account has3 completed existing essay runs, balance9/reserved0. Original results preserved; no Provider/Credit/purchase/DB mutation/deployment.
+
+Analyze+16 focused tests PASS. iPhone Production profile0.1.0(4), existing development signing PASS, installed/launched; actual review-account Catalog/History/results/Credit screen confirmation pending. Android releaseAPK+4 PASS; connected Play+2 certificate differs from local upload certificate, so no update/uninstall attempted. Preserve TEST data; another Android device or separately approved internal Play delivery required. Phase1 is not complete until actual device readback. Existing earlier full-suite/E2E PASS remains historical evidence, not new device PASS.
+
+Apple Developer agreement accepted Oct18, Account Holder/regional compliance Owner-confirmed. Remaining Apple gate: Paid Apps visibility, product lookup/Sandbox and refund operating acceptance. No repeat agreement task. WEB UX waits for Phase1. General release HOLD; new submissions/purchases/delete actions prohibited. Details in APP wiki/production-integration-2026-10-09.md Oct18 Phase1.
+
 ## Oct18 iPhone TEST-only follow-up
 
 APP `9c4bd73` on release-candidate-20261018 pushed/remote matched. Owner-approved minimal AppConfig gateway guard blocks TEST Catalog/exam/Math operating API requests before transport; Production unchanged. TEST Supabase History/result code unchanged; TEST Catalog gateway is not configured and actual TEST result data is not certified. No dummy data or Production copy. Analyze+16 focused tests PASS. Debug/Profile development-signing builds PASS; Profile installed and launched on connected iPhone12ProMax after unlock. Owner TEST login/Credit/purchase-history/UI verification pending; account-deletion flag remains OFF. No purchase/evaluation/DB/API deployment or Ledger change; public HOLD. Existing full tests remain previous-commit evidence. APP wiki production-integration contains device details.
