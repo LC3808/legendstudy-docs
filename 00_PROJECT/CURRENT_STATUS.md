@@ -1,3 +1,38 @@
+## Oct18 materials organizer + read-only Math/science/WEB/TTS audit
+
+A code/local PASS; physical display PARTIAL pending Owner. Official Incheon2026
+schedule confirms Sep G1/G2 organizer Incheon. APP shows organizer from canonical
+exam type + exact2026 calendar/grade cells; KICE for evaluation_mock/CSAT. Unknown
+national years/cells hidden. No source/raw-label/DB/PDF/bookmark mutation. Historical
+coverage registry remains QA authority, not an organizer DB column; historical display
+extension needs exact source review. Analyze28focused tests,360px/200%,iOS signed
+Profile1.0.0(11),AndroidRelease AAB11 PASS. Verification config disables IAP/evaluation/
+deletion; no install/upload. Existing build10 major DEVICE+DB PASS preserved.
+
+B Math: Production1 synthetic problem/1profile/0official scoring criteria;12attempts,
+4extractions,9evaluations are not university quality proof. Existing extraction
+confirmation/step/error/partial-point validators reused; high-confidence wrong OCR,
+real handwriting and official university corpus remain quality GAP.
+C Science: four-subject reviewed-binding candidate exists; synthetic physics tests
+only. Official subject benchmarks,significant figures,graph/table/experiment reasoning,
+canonical live linkage NOT_VERIFIED. No separate medical engine or invented points.
+D WEB: live anonymous42catalog/Hanyang2024 writer inspected. Redundant card CTAs,
+question-tab/inclusion-checkbox duplication,single-question inclusion default empty,
+PDF-page/History duplicate labels are minimal follow-up candidates. Existing result,
+History,rewrite components reused; no new authenticated E2E or WEB changes.
+E TTS: Native flutter_tts(OS defaults),1500-code-unit cuts and callback substring
+resume;WEB local Korean SpeechSynthesis/one utterance/rate0.8–1.2. No shared sentence,
+Markdown/formula normalization or explicit pauses. Propose sentence-aware queue,
+semantic stage wording,unknown-formula noninterpretation and one playback owner.
+Actual voice naturalness not remeasured; Math voice remains excluded/science gated.
+No paid TTS adoption; existing engine first.51mock contract tests PASS.
+
+Existing APP Wiki details: day-9-c-resource-detail.md (source link and scope),
+essay-mixed-mode-foundation.md (quality),essay-lab-ui-ux-v1.md (WEB/TTS).
+B–E implementation and any Provider test require separate Owner approval.
+No Production DB/Provider/Credit/Store operation; public HOLD. Device material label
+acceptance remains the next verification, not a code-based PASS claim.
+
 ## Oct18 MY major save defect
 
 Owner interested university setting PASS;major setting FAIL. Runtime column ACL/log evidence confirms upsert sends prohibited intended_major INSERT and updated_at write. APP now updates only own intended_major,requires returned row,server timestamp retained. No DB/permission change. Analyze+11tests PASS;development build10/signature/install/launch PASS;Owner save/navigation persistence PASS. Production readback: intended_major=자유전공·융합, updated_at=2026-10-18 13:29:43.64993+00 (22:29:43 KST), replacing prior Oct15 value. DEVICE+DB verified; no DB/ACL change. Prior PDF/bookmark/study/restart PASS preserved. Public HOLD remains.
