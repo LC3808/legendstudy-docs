@@ -55,6 +55,8 @@ submission, public release.
 
 UI/UX (Claude, APP `claude/app-release-readiness-eab636` @ be51e98): splash wordmark `+` enlarged 0.5x->0.9x (~1.8x), brand orange/position/Pretendard/1.8s kept; analyze+brand tests PASS. READ-ONLY analysis — onboarding is already a step-based (Toss-style) flow (`_StepProgress total 4`); APP has no university-logo image assets (name/text display; logos are remote/LAB); personalization data exists today (`study_sessions`, `day_target`/`day_event` D-Day, essay records) so rule-based messages need no new table (peer-comparison excluded — no real stats). Full input-UX rework / bulk logos / personalization system await Owner approval.
 
+UI/UX 2 (Claude, APP @ c3ac6ec): onboarding step transitions (AnimatedSwitcher fade+slide 300ms, Reduce-Motion aware), per-step ambient background glow (<=10% alpha, AnimatedAlign, no infinite loop, decorative), and fast-double-tap guards with value retention (State/providers) — copy/steps/save/backend unchanged; analyze + onboarding/brand tests + Android/iOS builds PASS. University-logo authority reconciled: Codex RC codex/release-candidate-20261018 already ships assets/university-logos/ (42, incl. 성균관/서울시립) — Claude does NOT duplicate. Personalization DESIGN only (no impl): rule-based messages from existing study_sessions / day_target / day_event / essay records (e.g. weekly hours, vs last week, hours-to-goal, D-Day, essay-logic trend); no new table; peer/grade comparison excluded until real stats exist; card impl awaits Owner approval.
+
 ## Grok code review (LAB #1 / APP #9) + Essay-first reaffirmation — 2026-10-12 — RECORDED (documentation only)
 
 Recorded the Grok code review of the Essay full-service implementation and reaffirmed
