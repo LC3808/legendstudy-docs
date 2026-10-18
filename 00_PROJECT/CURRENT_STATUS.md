@@ -1,3 +1,13 @@
+## Oct18 final directive — preparation PARTIAL, public HOLD
+
+Codex sole execution authority; latest final directive supersedes earlier sequencing assumptions. Preserve completed Google/essay/UI/support results. Owner confirms iPhone existing results/Credit display. Android Production device QA deferred, existing TEST install/signing untouched.
+
+TEST refund preflight: existing revoke/purchase RPCs service_role-only, anon/authenticated denied, revoke owner can execute subject lock, refund audit RLS enabled. Refund Edge absent; existing migration not reapplied.10local handler tests/typecheck PASS. Disabled TEST-only deployment scope+rollback prepared in APP wiki/iap-billing-preparation; separate approval requested. No Store notification, refund, Credit or DB write.
+
+Unsigned iOS Archive1.0.0(6), bundlecom.legendstudy.app,204MB PASS; no IPA/upload. Only Apple Development identity available locally; Distribution export remains gate. Apple agreement handled by Owner, purchases still blocked pending active Paid Apps/product lookup. Existing support URL already accepted.
+
+Production broad-read blocker: content detail automatically writes recent views after10s/meaningful action; onboarding finish/profile/bookmark/study changes write by design. EssayOFF flags are not whole-app read-only enforcement. These operations were NOT run. Existing Catalog/History/result/Credit acceptance preserved; new onboarding physical verification and broader app readback remain GAP. Safe review suppression or explicit write authorization required before these paths; do not infer UI PASS from build. No new product code or Phase3WEB edits this turn.
+
 ## Oct18 Owner-approved Claude UI selection into Codex RC
 
 Authority read: APP be51e98/c3ac6ec and DOCS4c7065e. Brand be51e98 already exactly present in RC1897c3c (plus1.8x/orange/top-right/Pretendard/1.8s). Only onboarding UI hunks selected:300ms fade/slide, step glow, Reduce Motion, rapid-tap guard. RC DeviceIntroPage/step1/auth separation and original copy/questions/save policy retained; no whole-branch merge. No new logos (existing42 preserved), personalization card, billing/Ledger/Provider/backend/DB changes.
