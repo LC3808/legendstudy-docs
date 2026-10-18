@@ -1,3 +1,7 @@
+## Oct18 final release continuation — display correction
+
+APP account-deletion request copy now “2주 후”; actual336hours/14days, server deadline, cancellation/recovery unchanged. Other APP lib/assets show no336-hour copy. Analyze PASS and10existing deletion tests PASS. Local implementation only; new iPhone installation/device acceptance pending Owner approval. No DB/Provider/Credit/Store changes. Existing automatic recent-view and onboarding writes must be blocked/excluded before broader Production read-only verification. Preserve prior PASS; Phase1 PARTIAL, Apple/notification/TestFlight gates unchanged, Phase3WEB not started.
+
 ## Oct18 final directive — preparation PARTIAL, public HOLD
 
 Codex sole execution authority; latest final directive supersedes earlier sequencing assumptions. Preserve completed Google/essay/UI/support results. Owner confirms iPhone existing results/Credit display. Android Production device QA deferred, existing TEST install/signing untouched.
