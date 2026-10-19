@@ -1,13 +1,13 @@
-## Oct19 Owner internal TestFlight distributed / device install pending
+## Oct19 Owner TestFlight install confirmed on iPhone17ProMax
 
-Owner Internal QA:existing account holder1/build1.0.0(18),ASC Testing;automatic
-distribution OFF. No external testers/rebuild/reupload/Store submission. iPhone remains
-1.0.0(17). Owner explicitly approved private local backup including actual Application Support.
-7support+1preferences files copied/manifest verified;no contents exposed or uploaded.
-iPhone17 unchanged;Owner TestFlight18 update requested. No app deletion/reset.
-Device QA and actual post-install data/session preservation not yet PASS.
-Fresh intro skipped for preserved existing state;isolated simulator PASS retained.
-[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-owner-internal-testflight-distribution). Public HOLD.
+Owner Internal QA:account holder1/build1.0.0(18),ASC Testing;automatic distribution OFF.
+Owner explicitly confirms install/version18 on a different iPhone17ProMax. USB-connected
+iPhone12ProMax remains1.0.0(17);original app/data not replaced/reset. Private local backup
+7support+1preferences files retained;contents not exposed/uploaded. Install PASS is
+Owner-reported,not direct tool inspection of17ProMax. Do not infer granular feature QA,
+fresh onboarding or a12ProMax17-to18 migration. Apple IAP gate remains separate.
+No external testers/rebuild/reupload/purchase/evaluation/Store submission. Public HOLD.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#owner-device-clarification-testflight-on-a-different-iphone).
 
 ## Oct19 TestFlight upload / Apple processing PASS
 
