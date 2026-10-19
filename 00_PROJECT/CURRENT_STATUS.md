@@ -1,3 +1,15 @@
+## Oct19 iOS App Store IPA Export PASS / upload not authorized
+
+Owner approved local Export;existing Archive reused,no rebuild.
+com.legendstudy.app1.0.0(18),Copacabana Co.Distribution signature/deep-strict verification
+and Store profile/entitlements PASS.Production Archive defines verified;review guard OFF.
+TEST host constant remains in isolation validator,not active connection/config.
+IPA:/private/tmp/legendstudy-ios-1.0.0-18/AppStoreExport/legendstudy_app.ipa
+Size:16105966bytes;SHA256:e1d3765351fb64e4c0dcffeae5205d318ee5e9a8f1c81326341692a0f61fa22b.
+No TestFlight upload/submission/public release. Next separate approval:TestFlight upload.
+Apple IAP contract/Sandbox/release-policy gates remain. No DB/Provider/Credit operation.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-approved-ios-ipa-export-pass). Public HOLD.
+
 ## Oct19 iOS Distribution preparation PASS / Export not authorized
 
 Owner authorized automatic signing;completed Xcode login and keychain approval.
