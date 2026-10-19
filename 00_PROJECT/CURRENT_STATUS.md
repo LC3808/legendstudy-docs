@@ -5,7 +5,8 @@ APP29d1917 resolves final10identities:legacy national G3June/Sep→KICE;source10
 displayable(285active),hidden0. No fabricated exams/DB/source data changes. Supersedes277/10.
 Analyze56tests PASS;Profile1.0.0(17)build/sign/install/launch PASS,actual15→17withoutreset.
 Support7files/Preferences1 byte-identical,Documents0. Production/read-onlyOFF;
-purchase/evaluation/deletionOFF. Owner2025and2special identity display/PDF QA pending.
+purchase/evaluation/deletionOFF. Owner1.0.0(17)2025SepG1/2008MayG2/2012MayG2organizer,source-button absence/PDF PASS.
+APP acceptance record b18f6b5;287/287mapping coverage is not all-PDF manual testing.
 Public HOLD. Canonical APP wiki/day-9-c-resource-detail.md and production-integration Wiki.
 
 ## Oct19 Owner-confirmed annual organizers (latest)
