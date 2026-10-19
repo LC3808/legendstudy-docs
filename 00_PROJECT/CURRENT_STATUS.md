@@ -1,3 +1,13 @@
+## Oct19 latest RC iPhone update
+
+Owner-approved development Profile1.0.0(13),sourceAPP2f2eb2f,installed/launched on iPhone12ProMax
+without deletion/reset. Actual previous version10. ApplicationSupport7files hash-preserved;
+app/auth preferences unchanged;only StoreKit last-checked timestamp changed. Documents empty.
+Production/read-onlyOFF;purchase/evaluation/deletion executionOFF,normal save functions retained.
+Existing PASS reused;Sep2026G1 Incheon organizer/changed-screen physical response pending.
+APP evidence a0c4c3a in existing production-integration Wiki. No upload/DB/Provider/Credit action.
+General public HOLD.
+
 ## Oct19 v1 Store release preparation — latest Owner priority
 
 Release-only; Math/science quality,WEB UX,TTS,personalization and catalog expansion
