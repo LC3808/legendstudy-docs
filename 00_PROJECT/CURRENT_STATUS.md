@@ -1,3 +1,34 @@
+## Oct19 v1 Store release preparation — latest Owner priority
+
+Release-only; Math/science quality,WEB UX,TTS,personalization and catalog expansion
+POST_LAUNCH. Existing device/essay/Google IAP PASS preserved; no new feature code.
+APP RC source5d106af; release evidence updated in APP2f2eb2f. LAB916b46c unchanged.
+[Canonical build/Store evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-v1-store-readiness).
+
+Analyze PASS,35 focused tests PASS. Production signed Android AAB1.0.0(12),77.7MB,
+com.legendstudy.app,BILLING,existing upload certificate match PASS. Play latest internal2,
+previous1;candidate12 greater. Android TEST installation preserved. iOS unsigned Release
+Archive204.0MB1.0.0(12),native Google callback/encryption=false PASS; Distribution identity
+absent,IPA NOT_READY. No new credential generated. Old temporary artifacts were absent;
+fresh local candidate at /private/tmp/legendstudy-release-candidate-20261019.
+
+Fresh Store read-only blockers:
+- Play authority **ceo@copacabana.co.kr**,not tester youngsook600405@gmail.com. Owner opened
+  existing Copacabana Console. LegendStudy initial setup0/11,Production inactive/locked:
+  privacy,access,ads,rating,audience,data safety,government,finance,health,category/contact,listing.
+- ASC iOS1.0: description/reviewer entered,but privacy URL blank,data questionnaire not started,
+  inspected iPhone screenshot slot0/10,no build,price not set,automatic release selected.
+  Manual-release policy requires approved correction;no fields changed.175 territories shown.
+- Paid Apps contract absent,Developer Agreement update banner visible. Owner Apple policy/
+  contract resolution remains required; StoreKit retained,not reimplemented or re-tested.
+- Public privacy/support URLs HTTP200. iPhone unavailable to CoreDevice;latest organizer
+  display confirmation requested. Existing functional/device PASS remains valid.
+
+No upload/install/review/Production DB/Provider/Credit/purchase/refund operation.
+Refund TEST OFF preserved. Next: prepare Play11-setting declarations/assets for Owner approval;
+Store edits,Distribution provisioning,uploads,iOS paid policy and public release remain gates.
+General release HOLD. Commit/build does not imply deployment acceptance.
+
 ## Oct18 materials organizer + read-only Math/science/WEB/TTS audit
 
 A code/local PASS; physical display PARTIAL pending Owner. Official Incheon2026
