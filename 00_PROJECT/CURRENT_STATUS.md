@@ -1,3 +1,13 @@
+## Oct19 TestFlight18 defects / local candidate19
+
+Owner startup/login deletion-form issue traced to global lifecycle loading/error redirect.
+Home fallback/manual deletion only;confirmed/unknown restriction and14-day server policy
+retained. Removed redundant filter-more;Hanyang shared2025mock URL now displays verified
+official archive. No DB/LAB/source-registry edits. Public Production catalog77exams/237
+questions,42APP catalog preserved;existing History OwnerPASS reused. Analyze150tests PASS.
+iOS Release1.0.0(19) no-codesign build PASS;no upload,new device validation still required.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-testflight18-owner-defect-fixes--local-candidate19). Public HOLD.
+
 ## Oct19 Owner TestFlight install confirmed on iPhone17ProMax
 
 Owner Internal QA:account holder1/build1.0.0(18),ASC Testing;automatic distribution OFF.
