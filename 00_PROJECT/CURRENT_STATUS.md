@@ -1,4 +1,25 @@
 
+## Oct19 official homepage prepared — deployment approval pending
+
+Owner requests home.legendstudy.com official homepage. Independent LAB worktree
+/private/tmp/legendstudy-home-20261019, branch codex/official-home-20261019,
+local commit 20cf31b. Only official-home/ added; LAB/app/payment/database unchanged.
+Hero, resources/PDF, study timer/D-Day, essay LAB, preparing store labels, support,
+privacy/terms/account-deletion links and authority-derived business footer ready.
+Actual Owner resource/timer screenshots; Pretendard, light background, navy/orange.
+Build/static checks PASS. Chrome desktop and mobile 360/390px QA PASS (no horizontal
+overflow/missing images). Existing public legal/support/LAB pages render in Chrome;
+non-browser requests to LAB receive edge 403. legendstudy.com HTTP200.
+
+home DNS NXDOMAIN, authoritative Gabia; existing LAB Cloudflare Pages unchanged.
+Proposed new independent Pages legendstudy-home + direct upload official-home/dist
++ home CNAME to confirmed new pages.dev hostname. Owner approval required before
+new hosting deployment/custom domain/DNS. No DNS or operating changes made.
+HTTPS home NOT PASS; awaiting approval. Branch kept local to avoid unintentionally
+triggering existing LAB preview deployment. Rollback and exact scope in official-home/README.md.
+General public app HOLD and store preparing labels maintained.
+
+
 ## Oct19 20:28 KST Owner submitted iOS and four IAPs
 
 Owner confirms App Store review submission completed at 2026-10-19 20:28 KST:
