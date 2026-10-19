@@ -1,3 +1,20 @@
+## Oct19 Android1.0 Production AAB prepared / release not authorized
+
+SourceAPPb18f6b5;recordAPPf883d48.Production signed AAB1.0.0(18),77,681,396bytes,
+com.legendstudy.app,target36,BILLING,existing uploadSHA256c00f4260…cfb8ef1 match.
+Analyze45tests/bundletool/signature PASS. Artifact SHA256
+c2c732f0c634cb4be29451436f4d06875a31a7b6add53de1eb304bf3d5a4ba0d.
+Path:/private/tmp/legendstudy-android-1.0.0-18/legendstudy-production-1.0.0-18.aab.
+Production Supabase/LAB;read-onlyOFF;normal release/deletion/IAP flags enabled in artifact;
+no TEST defines,no server activation/no app execution. ExistingGoogleE2E preserved.
+Play latest internal2;18not uploaded. Initial setup0/11:descriptions,icon,graphic,screenshots,
+privacyURL,category/contact,app-access/content-rating/data-safety/etc incomplete.
+Public privacy/support/deletion pages render but future-payment/preactivation/web-only
+refund wording needs approved release-policy alignment. No generic14day requirement inferred.
+Next:prepare/approve Store declarations/assets and policy alignment,then separate upload approval.
+No code feature change,DB/Provider/Credit/Store upload;AndroidTESTapp untouched. Public HOLD.
+[Canonical evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-final-android-production-aab18-preparation).
+
 ## Oct19 all registered historical organizers / device17
 
 APP29d1917 resolves final10identities:legacy national G3June/Sep→KICE;source1084confirms
