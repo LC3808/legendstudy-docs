@@ -1,3 +1,13 @@
+## Oct19 all registered historical organizers / device17
+
+APP29d1917 resolves final10identities:legacy national G3June/Sep→KICE;source1084confirms
+2008MayG2Gyeonggi;source123confirms2012MayG2preliminaryKICE.2000–2025registered287/287
+displayable(285active),hidden0. No fabricated exams/DB/source data changes. Supersedes277/10.
+Analyze56tests PASS;Profile1.0.0(17)build/sign/install/launch PASS,actual15→17withoutreset.
+Support7files/Preferences1 byte-identical,Documents0. Production/read-onlyOFF;
+purchase/evaluation/deletionOFF. Owner2025and2special identity display/PDF QA pending.
+Public HOLD. Canonical APP wiki/day-9-c-resource-detail.md and production-integration Wiki.
+
 ## Oct19 Owner-confirmed annual organizers (latest)
 
 APP3c03331 applies Owner2025schedule and explicit annual continuity, superseding the
