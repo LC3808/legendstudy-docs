@@ -1,3 +1,14 @@
+## Oct19 Owner-confirmed annual organizers (latest)
+
+APP3c03331 applies Owner2025schedule and explicit annual continuity, superseding the
+historical47-cell whitelist below. Preserve nominal rounds and2024April→May/November→October
+transition.2025all15records display;2000–2025inventory287:277displayable/10exceptional
+identities hidden. Existing47verified identities/2026PASS retained. NoDB/source/raw changes.
+Analyze55related tests PASS. iPhone1.0.0(16) build underway;device connection unavailable
+(CoreDevice4016),no install attempted/data reset. Physical2025acceptance pending.
+[Canonical mapping/evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/day-9-c-resource-detail.md#oct19-owner-annual-organizer-authority-supersedes-historical-whitelist).
+Public HOLD;no purchase/Provider/Credit/Store upload.
+
 ## Oct19 historical organizer recovery / device15 pending acceptance
 
 APP2f11c16 removes the blanket pre2026 national-mock exclusion using47 VERIFIED existing
