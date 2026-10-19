@@ -1,3 +1,19 @@
+## Oct19 historical organizer recovery / device15 pending acceptance
+
+APP2f11c16 removes the blanket pre2026 national-mock exclusion using47 VERIFIED existing
+registry identity cells; no year/month extrapolation or DB changes.2000–2025 registered287:
+97displayable(95active),190unverifiedhidden;48recovered rows,0known verified omissions.
+2000–2006 no registered rows;2025national12 remain unverified. Original-source button
+removal/2026organizer Owner device14 PASS retained. Raw/source data,PDF/listening/save unchanged.
+Analyze PASS;91related tests plus amended18detail widget PASS(360px/200%). iPhone Profile
+1.0.0(15) built/signed/installed/launched over14 without deletion;7support files and1preferences
+file hash-identical,Documents0. Production/read-onlyOFF;purchase/evaluation/deletionOFF.
+Owner historical display/PDF/splash verification PENDING; no final device UX PASS claimed.
+Safe onboarding: app-guide brand replay or isolated mock widgets; do not reset completion or
+force real onboarding writes on existing account. Full physical question flow needs separately
+approved write-free preview. No preview feature added. Public HOLD.
+[Canonical evidence/counts](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/day-9-c-resource-detail.md#oct19-historical-organizer-display-recovery).
+
 ## Oct19 material-detail minimal UX follow-up
 
 APP62b7330 removes top 원문 보기 action; obsolete source-page-only attachment instruction
