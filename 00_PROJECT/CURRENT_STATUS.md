@@ -1,3 +1,14 @@
+## Oct19 TestFlight upload / Apple processing PASS
+
+Owner-approved existing IPA1.0.0(18)SHA256 matched;official Transporter delivered.
+ASC app6820826957/build57833805-7b4a-47f6-9aeb-4556d27f5a4e:binary Validated,
+Ready to Submit;Apple processing complete. Bundlecom.legendstudy.app/teamVUKFS69GB4,
+version/build and server entitlements verified. Internal test group assignment available.
+No groups/testers added or distribution/Store submission. Next Owner gate:internal
+testers and build distribution. Apple IAP contract/Sandbox remains separate.
+No rebuild/code/DB/Provider/Credit operation. General public HOLD.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-approved-testflight-upload).
+
 ## Oct19 iOS App Store IPA Export PASS / upload not authorized
 
 Owner approved local Export;existing Archive reused,no rebuild.
