@@ -1,3 +1,18 @@
+## Oct19 iOS Distribution preparation PASS / Export not authorized
+
+Owner authorized automatic signing;completed Xcode login and keychain approval.
+Apple Distribution:Copacabana Co.(VUKFS69GB4) created,existing Development retained.
+Xcode automatically created matching Store profile for com.legendstudy.app;debug=false,
+no device list,certificate match verified.Production1.0.0(18)Archive/codesign PASS.
+Organizer automatic re-sign preparation reached final Export review with correct
+Distribution certificate/profile/entitlements. Cancelled before Export;no IPA exported,
+no TestFlight upload or Store submission. Archive itself retains normal development
+signing;distribution preview success is not Store validation/approval.
+Certificate/profile blocker closed. Apple paid-contract/Sandbox/policy gates remain.
+Next separate approval:IPA Export;TestFlight upload remains separately gated.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-xcode-automatic-distribution-signing-preparation).
+No source/project setting changes,DB/Provider/Credit operation;public HOLD.
+
 ## Oct19 service introduction closed / distribution preparation resumed
 
 Owner accepts existing3-slide service introduction copy and isolated fresh iOS simulator
