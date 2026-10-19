@@ -1,3 +1,15 @@
+## Oct19 TestFlight19 distributed / device QA pending
+
+SourceAPP2e32195:Distribution Archive/IPA PASS,1.0.0(19),com.legendstudy.app,
+Copacabana VUKFS69GB4. Production host/read-only OFF verified;strict signature PASS.
+Official Transporter delivered14:39KST;Apple processing complete;existing Owner Internal
+QA1tester/18+19 Testing. No new tester/group or iPhone12ProMax change.
+Owner iPhone17ProMax update/regression requested:startup/login home,manual-only deletion,
+LAB/history/Credit,filter removal/search,Hanyang archive. Device result pending;PARTIAL.
+Apple paid-contract/Sandbox separate blocker. No DB/Provider/Credit/purchase/deletion/
+Store review/public release. Public HOLD.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-testflight19-signed-release-and-internal-distribution).
+
 ## Oct19 TestFlight18 defects / local candidate19
 
 Owner startup/login deletion-form issue traced to global lifecycle loading/error redirect.
