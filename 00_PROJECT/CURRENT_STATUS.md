@@ -1,3 +1,41 @@
+
+## Oct19 Apple agreement processing and Sandbox readiness
+
+Owner reports Paid Apps terms accepted; agreement and bank account processing,
+two US tax forms active, Korea tax form pending. This is Owner-reported status,
+not confirmation that the contract is active. No StoreKit query or purchase run.
+
+Read-only ASC inspection: four consumable SKUs com.legendstudy.essay.credit1,
+credit3, credit5, credit10 exist and each shows Ready to Submit (심사 준비됨).
+Sandbox has two existing Korea testers: LegendStudyTester and TesterLegendstudy;
+no account created, reset or edited. Their device sign-in is not verified.
+
+Existing client queryProductDetails uses those four IDs. Existing path remains:
+TEST app/session -> verify-iap-purchase -> Apple Store Server API + signed
+transaction verification/account/SKU/revocation checks -> iap_post_verified_purchase
+-> shared Credit Ledger -> balance refresh -> completePurchase only on granted or
+already_processed. Pending/rejected transactions are not completed. Sandbox grants
+require the existing TEST project/environment/allowlist gates and are denied on
+Production. Live secret values and Apple server API permissions were not revalidated.
+Current TestFlight19 uses Production: do NOT use it for TEST Credit settlement;
+prepare/verify the existing isolated TEST app/session before any future purchase.
+
+Hosted TEST kpqbedylxlyntrrfybpn: verifier v10 ACTIVE, verify_jwt=true; refund v1
+ACTIVE, verify_jwt=false; hashes match Oct18 evidence. Empty JSON POST to refund
+returned HTTP503 {status:disabled}; no signed payload or purchase token sent.
+Refund notification delivery/signature/Credit recovery E2E remains unverified.
+No function deployment, DB mutation, purchase, Credit or Provider call occurred.
+
+Next: after Owner confirms contract Active, query all four products without buying;
+record returned IDs/localized prices/missing IDs/error on device. Only then prepare
+separate approved Sandbox credit1 E2E on TEST (baseline, one grant, replay, finish,
+restart). Actual purchase/refund recovery remain separately gated. Public HOLD.
+
+Additional live observation: ASC iOS1.0 shows Ready for Review/one submission draft
+and automatic release AFTER_APPROVAL selected, contrary to prior manual-release
+policy. No submission or release setting was changed. Owner should resolve the
+release-setting discrepancy before any submission/public release.
+
 ## Oct19 TestFlight19 distribution and Owner device PASS
 
 SourceAPP2e32195:Distribution Archive/IPA PASS,1.0.0(19),com.legendstudy.app,
