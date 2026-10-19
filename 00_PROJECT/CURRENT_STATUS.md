@@ -1,3 +1,13 @@
+## Oct19 Owner internal TestFlight distributed / device install pending
+
+Owner Internal QA:existing account holder1/build1.0.0(18),ASC Testing;automatic
+distribution OFF. No external testers/rebuild/reupload/Store submission. iPhone remains
+1.0.0(17). Preinstall local Documents/Preferences backup blocked by automatic approval
+review (may include auth data);explicit local-backup approval requested. No data copied,
+app deleted/reset/installed. Device QA and actual data/session preservation not yet PASS.
+Fresh intro skipped for preserved existing state;isolated simulator PASS retained.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/final-store-rc-1.md#oct19-owner-internal-testflight-distribution). Public HOLD.
+
 ## Oct19 TestFlight upload / Apple processing PASS
 
 Owner-approved existing IPA1.0.0(18)SHA256 matched;official Transporter delivered.
