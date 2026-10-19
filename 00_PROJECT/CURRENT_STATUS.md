@@ -1,3 +1,17 @@
+## Oct19 service introduction closed / distribution preparation resumed
+
+Owner accepts existing3-slide service introduction copy and isolated fresh iOS simulator
+QA (display/transitions/Start/Skip/Auth-guest connection/native completion persistence).
+Preserve: 레전드스터디+ — 내신 관리부터 수능, 논술 준비까지 / 나의 학습을 기록하고
+관리하세요 / 내신·수능·논술을 하나로. No copy change needed;not a release BLOCKER.
+Existing install/log-out skip policy retained. Physical iPhone/data/session untouched;
+fresh-install physical QA deferred to Store internal testing. Question onboarding unchanged.
+Android AAB18 prepared;no upload. Play registration gaps remain. Oct19 read-only local
+keychain check still Development only;Distribution identity/provisioning and signed iOS
+Archive/IPA remain pending. Apple paid-contract/Sandbox policy gates remain separate.
+No DB/purchase/Credit/Provider/upload/submission;public HOLD.
+[Evidence](https://github.com/LC3808/legendstudy-app/blob/codex/release-candidate-20261018/wiki/personalization-onboarding.md#oct19-service-introduction--owner-qa-acceptance).
+
 ## Oct19 Android1.0 Production AAB prepared / release not authorized
 
 SourceAPPb18f6b5;recordAPPf883d48.Production signed AAB1.0.0(18),77,681,396bytes,
