@@ -1,10 +1,19 @@
+## Oct19 material-detail minimal UX follow-up
+
+APP62b7330 removes top 원문 보기 action; obsolete source-page-only attachment instruction
+replaced with unavailable-file guidance. Source URL/source_posts/raw labels and DB unchanged.
+PDF/question/answer/explanation/listening/bookmark/search preserved. Analyze54tests/Wiki PASS.
+No install in this change; next release build device check pending. Organizer device13 PASS.
+Latest narrow instruction does not expand historical organizer mappings. No DB/Provider/Credit/
+purchase/Store operation. Public HOLD. Canonical: APP wiki/day-9-c-resource-detail.md.
+
 ## Oct19 latest RC iPhone update
 
 Owner-approved development Profile1.0.0(13),sourceAPP2f2eb2f,installed/launched on iPhone12ProMax
 without deletion/reset. Actual previous version10. ApplicationSupport7files hash-preserved;
 app/auth preferences unchanged;only StoreKit last-checked timestamp changed. Documents empty.
 Production/read-onlyOFF;purchase/evaluation/deletion executionOFF,normal save functions retained.
-Existing PASS reused;Sep2026G1 Incheon organizer/changed-screen physical response pending.
+Owner confirms device13 Sep2026G1 Incheon organizer PASS; other screen results not inferred.
 APP evidence a0c4c3a in existing production-integration Wiki. No upload/DB/Provider/Credit action.
 General public HOLD.
 
