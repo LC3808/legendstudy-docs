@@ -10,6 +10,19 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-20 가천대 Production 기본 탑재 — PASS (정밀 검수/AI 첨삭 PARTIAL·HOLD)
+
+- Owner 승인 범위로 17시험·166문항 등록. 17개 시험별 transaction, 기존 스키마/ID 보존. 활성 시험 0, 공개 문항 0.
+- 비공개 Storage PDF 39개/23,009,287 bytes 업로드. 31개 PDF 및 기존 한컴 변환 PDF 8개이며 HWP 원본은 변경하지 않음. SHA 키·페이지 수·파일 크기 39개 모두 승인 명세 일치. 기존 문서 2개 보존.
+- private review 17개 revision 1, NEEDS_REVIEW, 근거 연결 1,158건. 승인 명세 body 17/17 정확 일치. reviewer NULL(자동 등록), 승인 요청 false. 검수 완료/Provider 권한으로 승격하지 않음.
+- 오류 5문항 보존: 2024 수시 인문1/자연3, 2025 수시 의예6/자연7, 2027 모의 한의예·약학4. 검수 메모에 원본·페이지·오류 사유 유지.
+- 기존 96시험·234문항 전체 행 해시 변경 전후 일치. 중복 신규 ID 없음. 기존 학생 답안·History 테이블 쓰기 없음.
+- 실제 Owner WEB `/admin/materials/`: 가천대 17시험·166문항 조회, 문항 전환/원본 PDF 렌더/페이지 근거/HOLD 메모 확인. 검수 완료·Evaluation Package 생성 비활성. 비인증 공개 Storage URL은 HTTP400 NoSuchBucket으로 차단.
+- 기본 탑재 PASS는 첨삭 품질 PASS가 아님. 본문 추출 입력칸은 비어 있고 원본 PDF로 검수 가능. 77개 역할 연결 항목은 미완료 메모 유지. 정밀 원본 대조·이용권한·평가 품질 검증과 실제 첨삭 활성화는 별도 승인.
+- 건국대 준비 착수: 기존 6 PDF 조사 결과 재사용. Production 등록/Storage 업로드 미실행. 등록 명세와 건수 확정 후 별도 승인 필요.
+- Provider/Credit/Payment/Toss/IAP/JWT/앱 제출 빌드 변경 없음. 일반 공개 및 AI 평가 HOLD 유지.
+- 상세 명세·실행 SQL·원본 근거는 로컬 `essay-validation-2026-10/가천대/fast-load/`에만 보관. 저작권 원문 및 학생정보를 Wiki에 추가하지 않음.
+
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
 Owner-directed release-readiness snapshot (target 2026-10-25). Claude owns Apple
 Sandbox/StoreKit, IAP refund notifications, iOS signing/Archive/TestFlight, splash/
