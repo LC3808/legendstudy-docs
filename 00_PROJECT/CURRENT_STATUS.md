@@ -1586,3 +1586,15 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 
 - Owner supplied official guide URL: https://admission.gachon.ac.kr/admission/html/rolling/susi_guide.asp . This establishes the supplied source pointer; direct attachment comparison remains pending (web fetch 502).
 - Additional DB check: 22 Gachon-named resources already exist for earlier material; preserve all resource IDs. Zero essay exams/questions does not mean no existing material resources. Production identity/FK/check constraints inspected read-only and align with the existing canonical relationships.
+
+
+## 2026-10-20 — Gachon registration + WEB evaluation integration scope
+- Owner expanded university completion to independent A–J gates: originals, question links, criteria, registration, official webpage, WEB reads, submit, real quality, rewrite, History. No gate auto-passes from registration. Gachon remains IN_PROGRESS; other universities NOT_STARTED.
+- Official guide page now verified in actual browser: https://admission.gachon.ac.kr/admission/html/rolling/susi_guide.asp ; page identifies 2026 humanities/natural/medicine questions and answers. Prior HTTP-fetch failures do not represent the subsequent browser result. Attachment identity still separately unverified.
+- Production Gachon button still points directly to BBS0021 PDF. Prepared local-only researchSources entry uses official guide webpage; all prior PDF/source records and other universities unchanged. Actual localhost render href verified. Deployment requires Owner approval.
+- Verified code gaps: ordinary DB selection route keeps submit disabled; single-question automatic selection absent; existing exam-submit endpoint rejects image answers. Reuse existing gated gateway; no new engine and no silent image dropping.
+- Local contract tests: 4 suites / 27 tests passed. These mocks do not establish real evaluation quality or Production authorization. No Provider/credit/DB write performed.
+- Local integration plan specifies test-environment verification, approved synthetic answers, existing Human Quality procedure, scoped initial/rewrite requests and History checks. Environment/account scope, exact question IDs, invocation cap/cost and credit impact must be verified before requesting actual-test approval. No approval is inferred from this planning directive.
+- STEP1/3 remains incomplete. STEP4 DB registration, STEP7 actual evaluation and Production deployment are separate approvals. General evaluation/public HOLD and submitted app builds preserved.
+
+- Prepared LAB patch: local branch `codex/gachon-official-page-20261020`, commit `9610d8798be332fea9df44662a9fc0fd62cd3c09`; not a Production deployment.
