@@ -1598,3 +1598,10 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 - STEP1/3 remains incomplete. STEP4 DB registration, STEP7 actual evaluation and Production deployment are separate approvals. General evaluation/public HOLD and submitted app builds preserved.
 
 - Prepared LAB patch: local branch `codex/gachon-official-page-20261020`, commit `9610d8798be332fea9df44662a9fc0fd62cd3c09`; not a Production deployment.
+
+### Gachon follow-up verification and WEB path plan (2026-10-20)
+- No repeat of 39-file inventory/hash verification. Additional full visual review of 2027 medical mock problem4/solution10 pages confirmed 4 question/evidence links. Global 17 exams/166 questions still candidates; HWP full native comparison and other questions incomplete. Gachon PARTIAL; no next university.
+- Root cause refined: DB selection mounts draftOnly workspace (no submit/admission) plus hard-disabled parent CTA; source-registry route separately mounts existing exam submit consumer. Connecting validated IDs and saved draft revisions is required, not forcing the button on.
+- Image gap: shared local input supports six images, but existing Math student route uploads one artifact at position1. Math storage/admission/confirmation exists; exam text DTO cannot accept image references without verified canonical linkage. Prepared minimal reuse plan in private audit artifacts, no new storage/schema/engine.
+- Local security regression commit `368431a` (on top of preserved link patch `9610d87`): unsupported artifact/image/confirmed input fields and foreign origins rejected before Credit/worker. Five suites/33 tests PASS (mock). Mobile integrated upload and real quality NOT_ASSESSABLE.
+- No deployment, Production writes, extraction/evaluation Provider calls, Credit transactions, public activation or store build changes. Source-validation and integration completion still pending; DB/evaluation approval gates not yet requested.
