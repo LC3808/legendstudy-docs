@@ -1567,3 +1567,22 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 
 
 Owner authenticated acceptance: all requested Admin directory checks passed (immediate list/count, search/filter/sort/pagination where applicable, school names, Member Detail/Student360, tested denial boundaries). Owner requested ordinal numbers; bfc20c0 implements display-only server offset + position +1. No claim of extra test accounts or >25 Production members created.
+
+
+## 2026-10-20 — Owner sequential source-registration directive / Gachon IN_PROGRESS
+
+Latest Owner instruction supersedes the earlier cross-university parallel audit scope for material registration. Process Gachon only, then require university-specific registration approval, post-registration QA and next-university approval. Remaining ten universities NOT_STARTED for this sequential project. Existing catalog/priority order unchanged.
+
+- Source integrity: Gachon 39 originals (31 PDF / 8 HWP) listed and SHA-256 rechecked; originals unchanged. Readable page extraction totals 921 pages including converted HWP and reference guides. Extraction is not full visual validation.
+- Working candidate mapping: 17 exams / 166 questions, NOT approved registration totals. Individual problem/answer sections linked as candidates; shared passages, exact formulas and scoring boundaries still require review.
+- 2027 guidebook reprints 2026 admission exams. Its 134 corresponding pages match individual-file Korean/Latin prose after normalization; formula glyphs excluded from this check, so mathematical/visual equivalence remains pending. No extra 2027 admission exam inferred.
+- Production read-only snapshot: Gachon has 0 existing exams and 0 questions. No Production writes, migration, provider calls or credit transactions.
+- HWP: eight Hancom conversions retained separately. Full native-original versus converted-page comparison NOT complete; do not mark PASS.
+- Official-source verification impeded: admissions site returned explicit web-firewall blocking response. No bypass attempted. Search index alone is not attachment identity proof.
+- Private local artifacts: Gachon file inventory, exam mapping, question evidence, registration plan, validation report and unexecuted postflight in Owner-designated materials validation folder. No source documents or extracted copyrighted text included in Wiki/Git.
+- Current verdict PARTIAL / IN_PROGRESS. Registration approval gate NOT ready. WEB/APP registration QA NOT_EXECUTED. Public AI activation HOLD and store-submitted builds unchanged.
+
+Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk, Sogang, Seoul Women's, Sungkyunkwan, Sookmyung Women's, Soongsil, Korea Aerospace NOT_STARTED.
+
+- Owner supplied official guide URL: https://admission.gachon.ac.kr/admission/html/rolling/susi_guide.asp . This establishes the supplied source pointer; direct attachment comparison remains pending (web fetch 502).
+- Additional DB check: 22 Gachon-named resources already exist for earlier material; preserve all resource IDs. Zero essay exams/questions does not mean no existing material resources. Production identity/FK/check constraints inspected read-only and align with the existing canonical relationships.
