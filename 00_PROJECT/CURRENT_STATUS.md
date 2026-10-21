@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 Claude 대학 목록 UX 통합 — PASS (미배포)
+
+- LAB 기존 codex/gachon-official-page-20261020의 d20ccd9에서 Claude 54f40e18ec3811cd5d9db23a8fb68db1a57a5876으로 fast-forward. d3b7da8 포함, 충돌0/재작성0, 원본 커밋 보존.
+- 전체보기/페이지 보기 및 상세 복귀 시 검색·필터·정렬·페이지 상태 복원 구현 사용. UI 재설계 없음. 변경7파일은 기존 Claude UX/테스트에 한정; 서버·권한·Credit 및 이미지6장 계약 보존.
+- Node22.23.2/pnpm11.25.0, frozen-lockfile offline 의존성 확인. Typecheck/Lint PASS, 144 test files/1,150 tests PASS·3 SKIP(2 files), Boundary PASS, Production static Build PASS. sandbox compile 대기 중단 후 동일코드 일반 로컬 실행에서 성공.
+- 이번 검증은 자동 테스트/정적 빌드이며 실제 브라우저 E2E 신규 실행으로 보고하지 않는다. 이전 실측 증거와 구분. Production 적용은 별도 Owner 승인 필요.
+- main 병합/Production 배포/DB/Provider/Credit 변경 없음. 일반 사용자 AI HOLD. 서강대 PDF9개/78연결 등록 완료, WEB 최종검증 대기 상태 및 자료 탑재 순서 유지.
+
 ## 2026-10-21 서강대 Production 복구 — PARTIAL (WEB 최종 검증 대기)
 
 - 기존 신규9시험13문항 재생성 없이 보존. 비공개PDF9개(2,815,556bytes) 및 평가자료78연결/검수9건 등록 완료, 실제DB 재조회 확인.
