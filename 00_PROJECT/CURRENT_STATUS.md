@@ -1,3 +1,12 @@
+## Oct21 existing-success-path correction
+
+Hanyang Oct14 real Production humanities text initial/rewrite/History/Credit success
+reused. Sookmyung Sep28–30 real private image/model-quality experiments are not deployed
+WEB/History/re-evaluation success. Konkuk math Q1 needs existing Math content/leaf/profile
+binding (live problem_sets0); no new engine/History. Math-only route can reuse existing
+schema; generic essay-question bridge remains separate. Both migrations and all Production
+writes prohibited by latest Owner correction. Konkuk Mock E2E not yet run; AI HOLD.
+
 # Oct21 Production Migration 사전 검증
 기존 조건부 적용 승인 유지. 서비스 데이터·Storage 복구 검증 재사용, 예약 작업 2개 정의 복구 PASS(격리 비활성). Vault 암호문은 격리 복호화 실패로 전체 복구 PARTIAL; Migration 2개 미적용. 운영 Vault 정상. 건국대 2026 수시 자연 1번 원본·해설·기준·수식 확인 완료, 대표 선정. 해당 시험 Math 연결 레코드 없음; 실제 연결/E2E 미완료. [근거](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
 
