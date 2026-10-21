@@ -1886,3 +1886,11 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 - Related348tests, Typecheck/Lint/Build/Boundary PASS; mock/local checks are not Provider/Production PASS. Browser local static page smoke only; authenticated E2E pending.
 - Existing11college97/382/150/2484 registration preserved. WEB pending22exams56questions35PDF remains separate. No Provider, deployment, DB write or Credit transaction.
 - [Evidence, minimum approval scope and retained review queue](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
+
+## WEB UI Production promotion — 2026-10-21
+
+- Exact Owner-approved Claude UI54f40e1 deployed to lab.legendstudy.com; Pages deployment7e15bfa5-76de-439e-92da-5d0315b820d9. No main merge.
+- Approved gateway14e7612 byte parity PASS. Pages config before/after identical; Worker/Math/Continuous OFF, AI HOLD and503 retained. No DB migration/Provider/Credit/auth/payment changes.
+- Typecheck/Lint/135-route build/Boundary/GitHubReady and48related tests PASS. Production42-university navigation/state restore, sole-question writer,6local images order/preview/delete,360px and200% checks PASS.
+- New DB contracts and actual AI E2E remain separate; private-resource live security retest not performed. Previous backend-parity deployment blocker resolved by explicit Owner gateway authority.
+- Detailed scope and evidence:90_HISTORY/DAILY/2026-10-21-service-integration.md.

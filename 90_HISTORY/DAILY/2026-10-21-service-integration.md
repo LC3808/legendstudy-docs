@@ -106,3 +106,55 @@ available tools; must be confirmed before separately approved execution. Guarded
 read-only postflight SQL, lock/time limits, ACL/count/hash expectations and stop conditions
 are in APP supabase/verification/essay_service_contracts/production-plan.md.
 Existing tests reused; no Provider, Credit, DB migration, deployment or auth-key changes.
+
+## UI-only Production preparation — Oct21
+
+Owner authorized UI-only deployment conditional on unchanged Backend. Candidate
+codex/claude-ui-production-20261021 isolates Claude d3b7da8/54f40e1 from displayed
+Production8518db6; component conflicts resolved without importing newer DB/submit APIs.
+Typecheck/Lint/Boundary/135-route static build PASS;25unique related UI tests PASS.
+Local browser42cards and2/4 detail/list/back restoration PASS; Production QA not run.
+Deployment NOT_EXECUTED: current known-good433141d6 is manual, labelled8518db6,
+while neighbouring same-SHA deployments mention gateway14e7612/DTO corrections.
+Need actual uploaded backend source/artifact parity, not just metadata SHA. Preserve
+known-good; no DB/Provider/Credit/auth mutation. Direct OAuth extraction/API attempt
+was auto-review rejected and not executed. Existing Dashboard/Wrangler reads work.
+Candidate evidence: LAB docs/reviews/ui-production-20261021/README.md (local only).
+
+## Owner-approved exact Claude UI Production promotion — Oct21
+
+Supersedes the preceding deployment blocker after Owner explicitly identified approved
+backend gateway14e7612 and authorized exact54f40e18ec3811cd5d9db23a8fb68db1a57a5876.
+Dashboard preflight matched Production8518db6 /433141d6-b33b-4473-993c-7069697f3b75.
+Direct Pages Production deployment (branch selector main; no Git merge) completed:
+7e15bfa5-76de-439e-92da-5d0315b820d9, source54f40e1. Actual custom domain checked.
+
+Gateway functions/api/essay/exam.ts SHA256 in14e7612 and54f40e1 matches:
+d0640668a83904f966d98dd1da584734c09cad0fe4f12c7b72d3dba83a9020ab.
+No executable functions/src/server/runtime-server difference; one test-only change.
+No new DB contracts/Migrations included or applied. Exact target clean detached build,
+Node22, frozen pnpm11 dependencies, existing public Production variables.
+Typecheck/Lint/Build135routes/Boundary/GitHubReady PASS;8related files48tests PASS.
+These are local automated checks, not actual Provider evaluation.
+
+Official Wrangler config download before/after is semantically identical. Dashboard
+Pages has30plain+9secret variables and1service binding (earlier36 count stale).
+Worker10variables, ESSAY_EXECUTION_ENABLED=false, existing version41eb3165 unchanged.
+Math/exam/continuous OFF; no config, Worker, payment, auth or Credit change.
+Empty unauthenticated same-origin POST /api/essay/exam before/after returned503
+EVALUATION_UNAVAILABLE; source OFF guard precedes auth/body/worker. NoProvider call.
+
+Production browser PASS:42cards/all-page toggle;2/4→Dongguk→list and browserBack2/4;
+search/name-sort/major-filter restored; year/type/track/question/writer displayed;
+Hanyang2024admission humanities sole question enters writer without redundant selector;
+existing draft preserved, submit disabled. Local-only6image previews loaded; swap1/2
+and deletion verified; QA images removed. Extension file chooser lacked local-file
+permission; existing native chooser completed test without changing permissions.
+No remote image upload or submission.360px list/writer no horizontal overflow; Chrome
+confirmed200% zoom writer no horizontal overflow; zoom/viewport restored.
+
+UI promotion PASS within this scope. Private storage/evidence RLS retained by unchanged
+backend/config and zero DB writes; fresh anonymous private-resource penetration test
+was not performed in this UI deployment. Actual AI/credit/history E2E remains HOLD.
+Rollback target433141d6 retained; no rollback necessary. New DB metadata/mapping work
+is not part of this deployment.
