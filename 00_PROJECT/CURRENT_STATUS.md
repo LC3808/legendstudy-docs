@@ -18,12 +18,13 @@ SUPERSEDED_BY: —
 - 이번 검증은 자동 테스트/정적 빌드이며 실제 브라우저 E2E 신규 실행으로 보고하지 않는다. 이전 실측 증거와 구분. Production 적용은 별도 Owner 승인 필요.
 - main 병합/Production 배포/DB/Provider/Credit 변경 없음. 일반 사용자 AI HOLD. 서강대 PDF9개/78연결 등록 완료, WEB 최종검증 대기 상태 및 자료 탑재 순서 유지.
 
-## 2026-10-21 서강대 Production 복구 — PARTIAL (WEB 최종 검증 대기)
+## 2026-10-21 서강대 Production 기본 탑재 — PASS
 
-- 기존 신규9시험13문항 재생성 없이 보존. 비공개PDF9개(2,815,556bytes) 및 평가자료78연결/검수9건 등록 완료, 실제DB 재조회 확인.
-- 기존144시험501문항 행·ID 및RLS 정책 해시 동일. 신규공개문항0, 검수9건 NEEDS_REVIEW/승인요청0, AI HOLD.
-- 기존 검수계정으로 native Chrome 업로드 복구, 새 인증키·권한 변경 없음. WEB 시험/문항 조회 및PDF 실제렌더 최종 확인 대기. 기본 탑재 PASS 아님.
-- 성균관대 미착수. 11개대학 완료 후 DB 선택 UI 연결 일정 유지. Provider/Credit/결제/인증 변경 없음.
+- 승인 신규9시험13문항, 비공개PDF9개(2,815,556bytes), 검수9건/평가자료 페이지연결78건 실제 저장 확인.
+- 기존144시험501문항 행·ID 및RLS 해시 보존. 신규공개문항0, NEEDS_REVIEW/승인요청0, 일반사용자 AI HOLD.
+- 로그인된 Production WEB 검수 화면에서 신규9시험 및13문항 선택·근거조회, PDF9개 실제 렌더 확인. 검수 완료/Evaluation Package 생성 차단 유지. 비공개 화면 증빙은 로컬에만 보관.
+- 본문추출 미연결13문항, 자연계6문항 수식검수 등은 PHASE2/3 후속. 기본탑재 PASS이며 정밀검수/AI품질 PASS가 아님. 학생답안·History 쓰기 및 Provider/Credit/결제/인증 변경 없음.
+- PHASE1 누적6개대학57시험280문항 기본 탑재 PASS. 성균관대 기존16PDF 조사·해시 재사용 준비 IN_PROGRESS, 시험/문항수 미확정, Production 별도승인. 11개대학 완료 후 DB 선택 UI 연결 일정 유지.
 
 ## 2026-10-21 Owner 후속 지시 — DB 선택 UI 연결 (PHASE 1 완료 후 우선)
 
