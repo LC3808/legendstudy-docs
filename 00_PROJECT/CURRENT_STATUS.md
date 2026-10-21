@@ -1868,3 +1868,12 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 - Additional G38/G39 full-page visual comparison links 4 candidate questions to solutions/intents/scoring. Together with preserved medical4, local evidence links8/166 reviewed. 17 exams/166 questions remain candidates. G39 p9 prose/graph scoring sign discrepancy recorded for review, not silently fixed. HWP whole-source comparison and external file identity remain incomplete.
 - Gachon PARTIAL; DB registration specification not final. Mobile authenticated submission and actual AI E2E NOT_ASSESSABLE. No next university, deployment, Provider, Credit transaction, production data or store build change.
 - Private existing validation artifacts updated; copyrighted originals and full solutions excluded from Wiki. Push/remote status must be reported separately from these local commits.
+
+## Integrated LAB service — 2026-10-21 local follow-up (PARTIAL)
+
+- Claude54f40e18 and Codexd20ccd9 already included in LAB working branch; preserved without reintegration. APP untouched.
+- Existing reviewer RPCs now feed canonical DB exam/question metadata into the existing selector in local code. Operator only; no RLS/publication change, no admission call for review-required exams, local draft only. Gachon/Korea unpublished and Kookmin empty confirmed read-only.
+- Math question-to-leaf and owned confirmed-input snapshot bridge remains BLOCKED on separately approved DB contract work; no image rejection or Credit path relaxed.
+- Related348tests, Typecheck/Lint/Build/Boundary PASS; mock/local checks are not Provider/Production PASS. Browser local static page smoke only; authenticated E2E pending.
+- Existing11college97/382/150/2484 registration preserved. WEB pending22exams56questions35PDF remains separate. No Provider, deployment, DB write or Credit transaction.
+- [Evidence, minimum approval scope and retained review queue](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
