@@ -1,3 +1,12 @@
+## 2026-10-21 WEB 검증 병목 분리 및 숭실대 준비
+
+- Owner 지시에 따라 브라우저 연결 재시도 중단. 숙명여대 WEB 잔여6시험16문항·17PDF는 별도 로컬 체크리스트로 관리. 실제 WEB 완료 판정은 PARTIAL 유지.
+- 성균관대는 기존 사후 보고와14개 렌더 증거 확인:7시험21문항/14PDF 완료. 잔여 없음, 재검증하지 않음.
+- 숙명여대 read-only DB:7시험18문항/검수7건/평가자료124건/Storage20PDF8,622,774bytes 확인. 전체 신규시험 inactive·review, 공개문항0. 비공개bucket 유지.
+- HTTP 비인증 RPC401, 공개URL20개400으로 파일 미반환. 인증된 전체 RPC 상세/파일 다운로드 E2E는 NOT_ASSESSABLE; SQL 조회나 비인증 차단을 API/WEB 렌더 PASS로 대체하지 않음. 신규 인증키·권한 우회 없음.
+- 숭실대 등록 명세 준비 착수:21PDF 기존조사·해시·추출문 재사용, 분류초안 생성. 기존2022수시 인문1시험2문항 확인·보존. 신규 등록 건수/중복제외/복구안 아직 미확정, Production 별도승인 필요.
+- 기존 DB/파일 변경·재등록·Provider/Credit/Payment/IAP/JWT 작업 없음. AI HOLD 유지.
+
 <!--
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
