@@ -1894,3 +1894,10 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 - Typecheck/Lint/135-route build/Boundary/GitHubReady and48related tests PASS. Production42-university navigation/state restore, sole-question writer,6local images order/preview/delete,360px and200% checks PASS.
 - New DB contracts and actual AI E2E remain separate; private-resource live security retest not performed. Previous backend-parity deployment blocker resolved by explicit Owner gateway authority.
 - Detailed scope and evidence:90_HISTORY/DAILY/2026-10-21-service-integration.md.
+
+## Backend activation preparation — 2026-10-21 PARTIAL
+
+- DB logical backup,157Storage files and isolated service-data restore verified;132RLS policies match. Private backup stays outside Git.
+- Full-project recovery pending Vault key-dependent restore and cron restore validation. Two approved Production migrations remain NOT_APPLIED under Owner backup gate.
+- Konkuk representative math question not yet qualified; existing formula review HOLD retained. Existing mock/contract tests reused, no actual Provider/Credit/UI changes.
+- Details:90_HISTORY/DAILY/2026-10-21-service-integration.md.

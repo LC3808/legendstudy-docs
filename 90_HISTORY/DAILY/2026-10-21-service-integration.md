@@ -158,3 +158,37 @@ backend/config and zero DB writes; fresh anonymous private-resource penetration 
 was not performed in this UI deployment. Actual AI/credit/history E2E remains HOLD.
 Rollback target433141d6 retained; no rollback necessary. New DB metadata/mapping work
 is not part of this deployment.
+
+## Backend activation / recovery preparation — PARTIAL
+
+Current authority Wiki410c4e62 and Claude54f40e18 remote SHA confirmed; ProductionUI
+unchanged. APP8110492/b950512 implementations reused. Current DB193exams616questions.
+Existing11college97/382 and private materials are not re-ingested.
+
+Official CLI logical backup plus current managed schemas and private Storage captured
+in owner-only local folder, outside Git. Isolated PG17 schema/data restore succeeds.
+133tables:131live fingerprints match;2scheduled ops logs changed after snapshot.
+Business/ID/history/Credit/payment match.132RLS policies identical after normalizing
+search_path. Storage157files77,510,456bytes paths/sizes match, including152PDFs whose
+SHA256 equals stored content-address names. Math3/avatar2 included; no contents published.
+
+Full recovery gate remains PARTIAL: Vault ciphertext2 and cron definitions2 backed up,
+but key-dependent Vault restore and cron restore not validated. Standard CLI excludes
+extension table data; do not equate successful business-table restore with whole-project
+recoverability. Isolated container stopped. No Production migration applied.
+M1/M2 approved hashes unchanged; live mapping column absent. Metadata/RLS postflight
+for new contracts therefore NOT_EXECUTED. Existing Production RLS unchanged.
+
+Konkuk representative question NOT_SELECTED: existing2026natural7math-related records
+remain extraction review HOLD; no verified complete official/formula package established.
+NaturalQ1 candidate (not approval): exam25dc068b-4672-56e1-b8df-08ee8800e2f6,
+questioncea40cf3-dc05-507a-a6eb-fd5e1e1847bb. Reuse IDs; no Production mapping write.
+Image bridge preparation retains owned completed+student-confirmed input,1–6ordered
+PRESENT images, same-exam unique leaf mapping, immutable snapshot and server journal
+idempotency. Existing19PGchecks and235WEBtests reused; no new implementation or test
+claim. CurrentProduction54f40e18UI does not deploy newer bridge backend automatically.
+
+No Provider, Credit transaction, auth/payment change, public activation or WEB deployment.
+Next: finish full recovery validation; only then apply exact M1→M2 and non-destructive
+postflight. Review Konkuk original package before mapping/Provider approval. No request
+for duplicate migration approval; existing conditional authorization remains valid.
