@@ -291,3 +291,44 @@ Local PG17 metadata register/replay/oldfixture preservation/RLS/write denial/rol
 LAB local selector now separates admission/mock before track while preserving a sole type without an extra click.6targeted tests,Typecheck,changed-fileLint,Boundary PASS. First build failed from external node_modules symlink; physical dependency install corrected. Sandboxed Turbopack stall stopped; local escalated build succeeded, then explicit Node22.23.2 +pnpm11 build passed (bundled wrapper otherwise usesNode24). No deployment. Existing broader tests reused.
 
 Next authorized local work remains: reviewed official evaluation input and Math content/leaf binding, Konkuk-specific Mock E2E, Native APP connection/build preparation. Do not claim service complete. Provider/Credit/Production code/store upload/public activation require separate scoped approval. New data registration approval is already used; do not re-request it.
+
+
+## 건국대 대표 서비스 연결 — LOCAL PARTIAL
+
+### 운영 보존
+
+Production 조회만 수행. 건국대21시험58문항 재확인, 자연2026시험 Math세트0. 신규 DRAFT 후보14ID 모두 기존행 없음. 기존자료/학생답안/History/Storage/RLS/권한 및 HOLD 변경 없음. 두71701/02 미적용 유지.
+
+### 대표 입력
+
+인문2026수시인문2번60점: 공식 보고서 문제60, 제시문60–64, 의도64, 해설69–70, 기준71–72, 예시73. 공식5개 기준 private cache로 기존 Worker 연결. 채점표의 가산 요소를 필수감점 기준으로 변경하지 않음. 문제1 도표와 분리. 운영권리/검수/Provider 승인 false.
+
+수리2026수시자연1번17점: 기존문제·도형91/의도95/해설97/기준98/풀이99 검증 재사용. 기존 Math8테이블14행 DRAFT (세트1·문제1·leaf1·출처4·profile1·criterion1·solution1·step4), 공식 등급표 점수 임의 생성 없음. 논술question ID 보존, leaf 후보 대응명세이며 새FK 설치 아님.
+
+### 코드 및 검증
+
+- WEB/Native Math 요청leaf 고정. 승인catalog에 없으면 fallback/제출 차단. 기존availability/auth/Credit/History 유지.
+- Native 기존 AnswerImagesInput 재사용: 최대6장, 순서변경/미리보기/삭제, freeze후 같은attempt/artifact로 실패업로드만 재시도. 별도Storage 없음.
+- 실제SQL검증에서 도출한 WEB physical step enum CALCULATION/COMPUTATION 불일치 최소 변환 수정. 기존평가엔진/SQL 변경 없음.
+- WEB15관련테스트 PASS: 수리 UI합성6장→판독/확정→재첨삭/History, private Worker contract, 물리변환, 순서업로드, 인문 canonical-ID 합성 제출→결과→1/0Quote→History변환.
+- 기존 인문Worker + private 공식5기준 입력 Mock2회/재작성체크포인트재실행 PASS. 실제Provider0.
+- 격리PG17의 정확한DRAFT등록SQL2회/미사용롤백/재등록, private ACL/초안제출차단, 최초1/재첨삭0 테스트Credit, 소유권/중복/lineage/결과조회 포함27검증 PASS.
+- Flutter8tests/analyze PASS. AndroiddebugAPK/iOSsimulator Runner.app(build2026102101) PASS. 기기실측·TestFlight·Store업로드 아님.
+- WEB Node22/pnpm11 Typecheck/변경Lint/Build/Boundary/Ready PASS. Production배포 없음.
+
+별개 UI/Worker/DB 검증을 하나의 실제 브라우저→운영DB→Provider E2E PASS로 표현하지 않는다. Mock평가 품질과 실제품질 구분. 대표문항 서비스 전체 PARTIAL.
+
+### 다음 승인 및 BLOCKER
+
+1. 수리DRAFT14행 비공개등록 Owner승인 요청. 정확한SQL/복구계획 private production-preparation.md. 기존시험/문항/Storage/스키마 변경 없음. 한 트랜잭션, 재실행 동일내용 확인, 불일치롤백. 미사용·이번생성ID에 한해복구. 등록만으로평가활성화 금지.
+2. 인문 reviewed cache/criterion·evidence binding·검수/권리·Provider regime 운영설치 범위 확정 필요.
+3. 일반사용자 메타데이터조회와 목록→승인Mathleaf연결, WEB/APP교차E2E 미완료. admin조회 PASS와 구분.
+4. 실제Provider 승인 요청 전 실제계정/allowlist/모델·토큰/비용상한/Credit·History범위 확정. 추정 비용 제시하지 않음. Provider/실제Credit/공개/WEB배포/스토어승인 별도.
+
+private outputs: `~/development/legendstudy-materials/essay-validation-2026-10/건국대/service-20261021/`. Wiki에는 원문/평가본문/개인정보/백업키 미포함. APP 상세 `wiki/konkuk-service-20261021.md`.
+
+
+이번 코드 Push/remote 확인:
+- LAB `codex/konkuk-service-20261021`: `27f1106946264ea45c32caa9df152bfc25a82414`.
+- APP `codex/essay-service-contracts-20261021`: `8c52f0cfaad39d250a5efe62b3255e8dd04e0264`.
+- 로컬 HEAD와 원격 SHA 동일 확인. 기존 untracked supabase/.temp 및 실행 __pycache__ 미포함.

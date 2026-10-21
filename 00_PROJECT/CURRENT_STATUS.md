@@ -1,3 +1,13 @@
+## 2026-10-21 건국대 대표 서비스 연결 — LOCAL PARTIAL
+
+운영 READ-ONLY: 건국대21시험58문항 유지, 대표 자연시험 Math세트0. 자료 재등록 없음. 인문2026수시2번(60점) 공식5기준 private cache, 수리2026수시자연1번(17점) 기존 Math DRAFT14행 연결 후보를 준비했다. 원문은 비공개 로컬 산출물에만 보존한다.
+
+기존 한양대 Worker/제출/History, 기존 Math SQL/서버/Native UI 재사용. WEB·APP 지정leaf가 승인catalog에 없으면 다른 문항으로 대체하지 않도록 수정. APP6장·순서·삭제·부분업로드 재시도 연결. WEB 출력 CALCULATION→기존DB COMPUTATION 변환 결함 수정, 알 수 없는 종류 차단.
+
+WEB 관련15테스트/Typecheck/Lint/Build/Boundary/Ready PASS. 인문 공식입력 Worker Mock2회 및 재실행 PASS. Math 정확한DRAFT SQL 재실행/롤백+기존SQL 권한·Credit·History 등27검증 PASS. Flutter8테스트/analyze/Androiddebug/iOSsimulator 빌드 PASS. 개별 Mock·격리DB 검증은 실제 Provider/실기기/운영교차History PASS가 아니다.
+
+다음: Math 비공개DRAFT14행 등록 별도 Owner 승인 요청. 인문 운영reviewed cache/권리/binding, 일반사용자 탐색→제출, 실제 Provider 계정·모델·비용/Credit 범위 확정 필요. Production·두Migration·Provider·실제Credit·WEB배포·스토어 변경 없음, 전체AI HOLD. [상세](../90_HISTORY/DAILY/2026-10-21-service-integration.md#건국대-대표-서비스-연결--local-partial).
+
 ## 2026-10-21 건국대 최근 3개년 보완 등록 — PARTIAL
 
 Owner가 신규15시험40상위문항·32PDF·288근거를 검수 상태 등록 승인. Production 적용 완료:15시험40문항,32PDF/30,773,381bytes,18검수/288근거. 기존193시험616문항/98검수 전체행 digest 전후 동일. 기존2026모의3시험8문항은 ID 재사용·48근거 보완. 건국대 전체21시험58DB문항. 신규active0/published0, AI HOLD·private bucket·일반사용자 private schema 접근차단 유지.
