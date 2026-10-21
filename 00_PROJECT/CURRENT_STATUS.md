@@ -10,12 +10,21 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## 2026-10-21 성균관대 Production 등록 — PARTIAL (WEB 렌더 검증 대기)
+## 2026-10-21 숙명여대 등록 준비 — OWNER_APPROVAL_PENDING
 
-- Owner 승인7시험21문항 등록 완료. 비공개14PDF8,604,459bytes와126페이지연결/검수7건 저장 확인. 합본2개 제외.
-- 기존153시험514문항 및132 RLS정책 해시 전후 동일. 신규문항21개 unpublished, 검수NEEDS_REVIEW/승인요청false, AI HOLD. 수리12문항 추출불량 검수 유지.
-- 실제 WEB 목록 신규7시험 노출 확인. 2027모의 수리·언어 2시험6문항 선택 및 근거조회 확인. PDF 실제렌더는 수리 문제/해설, 언어 해설 3/14개 확인; 나머지11개 미검증. Chrome이 다른 탭으로 변경되어 자동화가 중단됨. 기본탑재 PASS 미선언, 숙명여대 미착수. 검수 완료/Evaluation Package 생성 비활성 확인.
-- Provider/Credit/Payment/IAP/JWT/학생답안/History 변경 없음.
+- 기존21PDF 조사/해시 재사용. 신규2026수시4시험10상위문항,2027모의3시험8상위문항: 총7시험18상위문항(36소문항 포함). 기존2025모의1시험4문항/ID 보존, 신규 시험 식별 및 문서SHA 중복0(read-only).
+- 비공개20PDF8,622,774bytes, 평가자료124페이지연결 준비. 인문합본1개 중복 제외(40쪽 텍스트/렌더 픽셀 일치). 총평·우수답안을 공식 채점기준과 구분하여 추가 연결.
+- 자연12문항 수식추출불량 NEEDS_REVIEW. 공식게시글/권리 및 정밀 내용검수 후속. 미공개/AI HOLD 유지.
+- 로컬PG17 등록2회·기존fixture보존·anon/auth 차단·RLS불변·rollback복구 PASS. 시험별7트랜잭션/상태·참조guard 복구안 준비. Production 쓰기·업로드 미실행, Owner 별도승인 대기.
+
+## 2026-10-21 성균관대 Production 기본 탑재 — PASS
+
+- 승인 범위 7시험·21문항, 비공개 PDF 14개(8,604,459 bytes), 평가자료 126건/검수 7건 저장 확인. 합본 2개 중복 제외.
+- 기존 153시험·514문항 및 132 RLS 정책 해시 전후 동일. 기존 DB 사후 검증 결과 재사용. 이번 잔여 검증에서는 DB/검수 상태를 변경하지 않음.
+- 기존 WEB 2시험·6문항/PDF 3개 증거를 보존하고, 잔여 5시험·15문항 및 PDF 11개의 실제 조회·렌더 완료. 누적 7시험·21문항 조회 PASS / PDF 14개 렌더 PASS. 각 파일의 연결 페이지 표시를 확인했으며 PDF 전 페이지 정밀 내용 검증을 의미하지 않음.
+- NEEDS_REVIEW/승인요청 false/신규 21문항 unpublished 유지. 검수 완료 및 Evaluation Package 생성 비활성 확인. 수리 12문항 수식 추출 불량, 본문 추출 미연결 및 공식 출처·권리 대조는 PHASE 2/3 후속. AI 품질 PASS 아님.
+- Provider/Credit/Payment/IAP/JWT/학생답안/History 변경 없음. 일반 사용자 AI 첨삭 HOLD 유지.
+- PHASE 1 누적 7개 대학 64시험·301문항 기본 탑재 PASS. 숙명여대 기존 21PDF 조사 재사용으로 등록 명세 준비 시작. 숙명여대 Production 등록은 별도 Owner 승인 필요.
 
 ## 2026-10-21 성균관대 등록 준비 — OWNER_APPROVAL_PENDING
 
