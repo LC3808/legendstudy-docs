@@ -1,5 +1,5 @@
 # Oct21 Production Migration 사전 검증
-SQL·현재 RLS·42Catalog 식별자·롤백 본문 대조 PASS. 운영 적용 준비 PARTIAL: 백업/복구 지점 확인 및 Owner 별도 적용 승인 필요. Migration 실행 없음. [근거](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
+기존 조건부 적용 승인 유지. 서비스 데이터·Storage 복구 검증 재사용, 예약 작업 2개 정의 복구 PASS(격리 비활성). Vault 암호문은 격리 복호화 실패로 전체 복구 PARTIAL; Migration 2개 미적용. 운영 Vault 정상. 건국대 2026 수시 자연 1번 원본·해설·기준·수식 확인 완료, 대표 선정. 해당 시험 Math 연결 레코드 없음; 실제 연결/E2E 미완료. [근거](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
 
 # Oct21 서비스 DB 계약 — 로컬 구현 / Production 미적용
 - Catalog42개 범위의 메타데이터 전용 조회 및 기존 WEB 선택 연결 준비.
