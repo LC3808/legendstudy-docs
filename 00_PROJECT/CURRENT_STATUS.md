@@ -1,3 +1,12 @@
+## 2026-10-21 서울여대 등록 준비 — OWNER_APPROVAL_PENDING
+
+- 기존2PDF 조사/해시 재사용. 2026수시 인문사회 오전1시험2상위문항, 자연 오후1시험3상위문항: 신규2시험5상위문항(13소문항 포함). 비공개2PDF1,214,006bytes/평가자료30건 준비.
+- Production read-only 대학/시험/문서해시 중복0. 서울여대 대학행 부재, 탐색Catalog swu universityId=null 확인. 기존스키마에 비활성 대학1행 추가를 승인범위에 포함. 기존42대학 목록/ID/우선순위 변경 없음.
+- 자연3문항 수식추출불량 NEEDS_REVIEW, 공식게시글·이용권한/정밀검수 후속. 대표 도표·수식·채점표 원본렌더 확인. AI HOLD 유지.
+- 로컬PG17 등록/재실행/기존fixture보존/anon·authenticated 비노출·쓰기차단/RLS불변/실패배치rollback/메타데이터복구 PASS. 30근거 페이지·중복검사 PASS. 실제Production/WEB검증과 구분.
+- 시험별2트랜잭션 및 상태·참조guard 복구안 준비. 성공분 보존·미완료만재개, 대학행/연결PDF 자동삭제 금지. Production 변경·Provider·Credit 실행 없음. Owner 승인 대기.
+- 숙명여대6시험16문항17PDF/숭실대11시험30문항13PDF WEB대기 유지. 한국항공대 미착수.
+
 ## 2026-10-21 숭실대 Production 등록 — PARTIAL (WEB 잔여)
 
 - Owner 승인15시험40문항, 비공개16PDF8,790,496bytes, 평가자료239건/검수15건 실제 저장 확인. 시험별15트랜잭션 성공, 합본/가이드북5개 제외.
