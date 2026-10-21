@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 숙명여대 Production 등록 — PARTIAL (WEB 잔여 검증)
+
+- Owner 승인 범위 신규7시험18상위문항(36소문항 포함), 비공개PDF20개8,622,774bytes, 평가자료124건/검수7건 실제 저장 확인. 시험별7트랜잭션 성공, 합본1개 중복 제외.
+- 기존160시험535문항 및132 RLS 정책 해시 전후 동일. 기존숙명2025모의1시험4문항/ID 보존. 비공개bucket public=false, 신규공개문항0, 검수7건 NEEDS_REVIEW/승인요청false. 수리12문항 검수필요 및 AI HOLD 유지.
+- 실제 WEB 신규7시험 목록 노출 확인. 2027모의 인문2문항 선택·근거 조회 확인. 문제PDF(SM12) 3/4쪽 실제 렌더 PASS. 해설PDF는 UI연결 확인했으나 스크린샷 시간초과로 렌더 PASS 미판정. 나머지6시험16문항/19PDF 실제검증 미완료.
+- Chrome 탭 전환 및 전용탭 연결 시간초과로 검증 중단. Owner에게 LAB검수탭 유지 요청. 기본탑재 PASS 미선언, 숭실대 미착수. 검수 완료/Evaluation Package 생성 비활성 확인.
+- DB 재등록/재업로드 불필요. Provider/Credit/Payment/IAP/JWT/기존학생답안/History 변경 없음. 원본 변경·GitHub 업로드 없음.
+
 ## 2026-10-21 숙명여대 등록 준비 — OWNER_APPROVAL_PENDING
 
 - 기존21PDF 조사/해시 재사용. 신규2026수시4시험10상위문항,2027모의3시험8상위문항: 총7시험18상위문항(36소문항 포함). 기존2025모의1시험4문항/ID 보존, 신규 시험 식별 및 문서SHA 중복0(read-only).
