@@ -10,6 +10,15 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 동국대 Production 기본 탑재 — PASS
+
+- Owner 승인10시험30문항, 비공개14PDF(5,323,192bytes), 평가자료 페이지연결180건 등록 완료. 시험별transaction 및 검수body10/10 승인명세 일치.
+- 기존 동국대6시험18문항 포함 전체134시험471문항 ID·행 해시 보존. 기존68문서/39검수/55이력 및132 RLS정책 해시 전후 일치. 신규 활성시험0/공개문항0/anon조회0.
+- WEB10시험30문항 직접 선택·페이지근거 조회, PDF14종 canvas렌더 확인. NEEDS_REVIEW 및 Evaluation Package 생성 차단10/10 확인.
+- 자연계12문항 수식추출불량, 2025수시자연2 공식시험오류·전원정답처리·수정본 기록 유지. 모의학년도 공식게시글 대조 미완료 유지. 본문추출·정밀검수·AI품질 PASS 아님. 전체 AI HOLD.
+- Provider/Credit/Payment/Toss/IAP/JWT/스토어빌드 변경 없음. 학생답안/History 쓰기 없음.
+- PHASE1 누적5개대학48시험267문항 기본 탑재 PASS. 서강대13PDF 기존조사 재사용 준비 IN_PROGRESS, 신규건수 미확정·Production 별도승인.
+
 ## 2026-10-21 동국대 등록 준비 — OWNER_APPROVAL_PENDING
 
 - 기존14PDF 조사 재사용. 2025수시3시험9문항, 2026수시3시험9문항, 2026/2027모의 각2시험6문항: 합계10시험30문항. 비공개14PDF5,323,192bytes, 페이지근거180건.
