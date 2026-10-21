@@ -1,3 +1,13 @@
+## 2026-10-21 건국대 최근 3개년 보완 등록 — PARTIAL
+
+Owner가 신규15시험40상위문항·32PDF·288근거를 검수 상태 등록 승인. Production 적용 완료:15시험40문항,32PDF/30,773,381bytes,18검수/288근거. 기존193시험616문항/98검수 전체행 digest 전후 동일. 기존2026모의3시험8문항은 ID 재사용·48근거 보완. 건국대 전체21시험58DB문항. 신규active0/published0, AI HOLD·private bucket·일반사용자 private schema 접근차단 유지.
+
+WEB 관리자 목록21시험58문항 실측,2024수시자연A4문항24근거 및 PDF1개 렌더 확인. 잔여31PDF 렌더 미검증. 페이지 근거 연결과 평가 본문 준비는 별개: 추출 본문/공식출처·이용권한/수식·소문항 검수 미완료. 일반 사용자/APP/Provider E2E PASS 아님.
+
+LAB `codex/konkuk-service-20261021`에서 기존 선택 UI에 수시/모의 구분 추가(동일 학년도 혼합 방지, 유형 변경 시 이전 답안 선택 초기화). 관련6테스트,Typecheck,변경파일Lint,Boundary,Node22/pnpm11 정적빌드 PASS. UI 로컬 변경만;Production 배포 없음. 기존 성공 Math/인문 경로 재사용 방침 유지. 건국대 Math 콘텐츠 패키지/leaf binding 및 공식 평가 입력 준비는 여전히 미완료. Migration/Provider/Credit/APP업로드 미실행.
+
+상세: [통합 일지](../90_HISTORY/DAILY/2026-10-21-service-integration.md). 비공개 산출물은 `essay-validation-2026-10/건국대/expansion-20261021/`; 원본·답안·PDF를 Wiki/Git에 포함하지 않음.
+
 ## Oct21 existing-success-path correction
 
 Hanyang Oct14 real Production humanities text initial/rewrite/History/Credit success

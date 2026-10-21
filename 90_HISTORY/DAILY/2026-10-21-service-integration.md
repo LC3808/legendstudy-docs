@@ -278,3 +278,16 @@ In-progress content inventory preserved privately:36current PDFs,32new filenames
 4known files; previous report/admission-guide paths absent in current source folder.
 Existing Production Konkuk6exams18questions all inactive/unpublished. No new registration.
 Latest correction takes priority for contract comparison; expansion specification pending.
+
+
+## Konkuk expansion approved and applied; service remains PARTIAL
+
+Owner approval received in chat:15new exams40upper questions32privatePDF,288review links(240new+48existingmock supplement). Reused guarded source registration and material review transactions. Fifteen metadata batches and18review batches succeeded.32Storage objects30,773,381bytes match local upload plan; document hash/page/size guard passed. Old193exams616questions and98reviews digests unchanged. New inactive/review, unpublished questions; private bucket and anon/authenticated schema denial retained. No Migration/Provider/Credit/payment/auth/production-code change.
+
+2024admission4/12,2024mock3/8,2025admission4/10,2025mock4/10 newly registered; existing2026admission3/10 and2026mock3/8 preserved. FinalKonkuk21exams58DBquestion rows. Existing2026integrated subquestion row granularity retained. Source section links NEEDS_REVIEW, not assessment-ready. Official year corroboration remains for2024naturalA/B and2025natural/free-major. Detailed nested subquestion count not asserted.
+
+Local PG17 metadata register/replay/oldfixture preservation/RLS/write denial/rollback restoration PASS. WEB admin21/58 visible;2024naturalA4questions24links and F03PDF renderer inspected.31remainingPDF render checks pending; not conflated with Storage success. Extracted question body empty in review UI; package/evaluation readiness not claimed.
+
+LAB local selector now separates admission/mock before track while preserving a sole type without an extra click.6targeted tests,Typecheck,changed-fileLint,Boundary PASS. First build failed from external node_modules symlink; physical dependency install corrected. Sandboxed Turbopack stall stopped; local escalated build succeeded, then explicit Node22.23.2 +pnpm11 build passed (bundled wrapper otherwise usesNode24). No deployment. Existing broader tests reused.
+
+Next authorized local work remains: reviewed official evaluation input and Math content/leaf binding, Konkuk-specific Mock E2E, Native APP connection/build preparation. Do not claim service complete. Provider/Credit/Production code/store upload/public activation require separate scoped approval. New data registration approval is already used; do not re-request it.
