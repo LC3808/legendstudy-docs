@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 동국대 등록 준비 — OWNER_APPROVAL_PENDING
+
+- 기존14PDF 조사 재사용. 2025수시3시험9문항, 2026수시3시험9문항, 2026/2027모의 각2시험6문항: 합계10시험30문항. 비공개14PDF5,323,192bytes, 페이지근거180건.
+- 기존Production2022~2024모의6시험18문항/ID 보존. 신규연도·유형 및PDF SHA중복0. 모의해설 재수록12문항은 별도 생성하지 않음.
+- 자연계12문항 수식추출불량. 이 중2025수시자연2는 공식자료가 실제시험오류·전원정답처리/용어수정본임을 명시하여 별도 기록. 모의학년도 공식게시글 및출처웹페이지 검증보류. 전수정밀검수 PASS 아님.
+- 로컬PG17 등록/재실행/기존fixture/RLS/권한 PASS. Owner승인 후10시험별transaction/실패배치rollback/기존행보존 및 WEB조회검증 예정.
+- Production DB/Storage 쓰기 없음. 모든문항 NEEDS_REVIEW/AI HOLD. Provider/Credit/Payment/IAP/JWT/스토어빌드 변경 없음.
+
+
+
 > 아래 기록은 최신순입니다. 이전 승인대기·준비 상태는 이력이며 가장 최근 대학별 결과를 우선합니다.
 
 ## 2026-10-21 고려대 Production 기본 탑재 — PASS
