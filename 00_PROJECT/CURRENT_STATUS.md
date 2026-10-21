@@ -1,3 +1,9 @@
+# Oct21 서비스 DB 계약 — 로컬 구현 / Production 미적용
+- Catalog42개 범위의 메타데이터 전용 조회 및 기존 WEB 선택 연결 준비.
+- 기존 Math 확정 입력→시험 제출 snapshot 계약 및 문항 FK 준비. 매핑 자동 생성 없음.
+- 격리 PG17 19검증 PASS. Provider·실제 Credit·Production 변경 없음; 일반 사용자 HOLD.
+- 실제 이미지 입력 handoff/E2E 및 운영 적용은 미완료. [상세](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
+
 # 한국항공대 Production 사후 검증 — PARTIAL (WEB 잔여)
 2026-10-21 Owner 승인 범위 적용.
 - 비활성 kau 대학 1행, 신규 9시험·18상위문항, PDF 9개 4,090,775bytes, 평가자료108건 및 검수9건 등록 확인.
