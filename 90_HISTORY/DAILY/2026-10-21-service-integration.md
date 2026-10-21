@@ -353,3 +353,13 @@ DRAFT등록 PASS와 실제서비스 PARTIAL을 구분. Migration/Provider/실제
 - 결과/History는 격리DB·비공개 산출물에 저장. 기존 run/lease/checkpoint/receipt 복구 재사용; 불명확 응답에서 새requestKey·임의환불 금지. 향후 운영 두 문항 최초평가는 합계2Credit, 재첨삭 추가0이나 이번 범위에서 실행하지 않음.
 
 실제 Provider 실행은 Owner 별도 승인 대기. 운영 E2E는 패키지/정책·DRAFT 조건으로 HOLD. 비공개 상세: `essay-validation-2026-10/건국대/service-20261021/provider-e2e-execution-plan.md`.
+
+## 2026-10-21 — 건국대 Provider 품질 확대 승인 / 실행 대기
+
+Owner 승인은 기존8회/$4를 대체하여 인문15회·수리20회·합계35회, 총US$30이다. 기존 승인분 실제 실행 기록0회/$0; 이번에도 Provider호출0, Production쓰기/Credit0. 재승인 요청이 아닌 기존키의 안전한 로컬 접근 경로 확인 대기. 환경의 Provider키 변수 및 해당 작업폴더 설정파일이 없고, 기존 성공은 Cloudflare secret binding에 의존한다. 운영Secret 추출·설정변경으로 우회하지 않는다.
+
+기존 공식입력·Worker/Math 계약 재사용. 비공개12사례 검증표 준비: 인문5수준(평가+독립검수10호출), 수리7유형(판독+평가14호출), 기본24호출 및 필요 시 잔여11호출 범위. 재작성은 실제 피드백 후 작성한다. 인문 항상성은 가산요소, 수리 등급별 숫자점수 미확정은 임의 배분하지 않는다. 손글씨 실측과 합성 이미지 테스트를 구분한다.
+
+gpt-5.6-sol 공식 Standard 단가 입력$4/출력$20 per1M 재확인. 호출당 총입력30k(이미지포함)/출력12k 검증 조건에서35회 추산$12.60, 승인상한$30. 아직 입력별 토큰 검증·실행transport 연결은 미완료. 호출·사용량·비용 ledger는 비공개 경로에 준비; 미확인 비용은0으로 간주하지 않는다. 실제 품질·재첨삭·History NOT_ASSESSABLE, 서비스 PARTIAL/HOLD. 기존 Mock PASS를 대체하지 않는다.
+
+비공개 산출물: `essay-validation-2026-10/건국대/service-20261021/quality-20261021/manifest.json`, `call-ledger.json`. 원문/답안/계정정보/키는 Wiki에 포함하지 않음. 다음: 승인된 Provider 자격증명 접근 경로 확인 후 제한된 실제 호출 시작. Production 패키지/binding 및 Math DRAFT 제약은 기존대로 유지.
