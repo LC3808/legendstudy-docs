@@ -10,6 +10,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 성균관대 Production 등록 — PARTIAL (WEB 렌더 검증 대기)
+
+- Owner 승인7시험21문항 등록 완료. 비공개14PDF8,604,459bytes와126페이지연결/검수7건 저장 확인. 합본2개 제외.
+- 기존153시험514문항 및132 RLS정책 해시 전후 동일. 신규문항21개 unpublished, 검수NEEDS_REVIEW/승인요청false, AI HOLD. 수리12문항 추출불량 검수 유지.
+- 실제 WEB 목록 신규7시험 노출 확인. 상세21문항·PDF14개 실제렌더는 Chrome 동시 조작으로 대기; Owner 준비 회신 후 재개. 기본탑재 PASS 미선언. 숙명여대 미착수.
+- Provider/Credit/Payment/IAP/JWT/학생답안/History 변경 없음.
+
 ## 2026-10-21 성균관대 등록 준비 — OWNER_APPROVAL_PENDING
 
 - 기존16PDF 조사/해시 재사용. 2026수시 수리1·2·3/언어1·2교시5시험15문항, 2027모의 수리/언어2시험6문항. 신규7시험21상위문항, 비공개14PDF8,604,459bytes, 평가자료126페이지연결.
