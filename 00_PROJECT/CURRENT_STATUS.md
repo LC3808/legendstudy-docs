@@ -14,7 +14,7 @@ SUPERSEDED_BY: —
 
 - Owner 승인7시험21문항 등록 완료. 비공개14PDF8,604,459bytes와126페이지연결/검수7건 저장 확인. 합본2개 제외.
 - 기존153시험514문항 및132 RLS정책 해시 전후 동일. 신규문항21개 unpublished, 검수NEEDS_REVIEW/승인요청false, AI HOLD. 수리12문항 추출불량 검수 유지.
-- 실제 WEB 목록 신규7시험 노출 확인. 상세21문항·PDF14개 실제렌더는 Chrome 동시 조작으로 대기; Owner 준비 회신 후 재개. 기본탑재 PASS 미선언. 숙명여대 미착수.
+- 실제 WEB 목록 신규7시험 노출 확인. 2027모의 수리·언어 2시험6문항 선택 및 근거조회 확인. PDF 실제렌더는 수리 문제/해설, 언어 해설 3/14개 확인; 나머지11개 미검증. Chrome이 다른 탭으로 변경되어 자동화가 중단됨. 기본탑재 PASS 미선언, 숙명여대 미착수. 검수 완료/Evaluation Package 생성 비활성 확인.
 - Provider/Credit/Payment/IAP/JWT/학생답안/History 변경 없음.
 
 ## 2026-10-21 성균관대 등록 준비 — OWNER_APPROVAL_PENDING
