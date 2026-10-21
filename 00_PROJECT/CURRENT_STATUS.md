@@ -1,3 +1,16 @@
+## 2026-10-21 — 건국대 실제 Provider 실행 준비 PARTIAL
+
+기존 DRAFT14행 등록과 코드·격리DB 테스트 결과 재사용. 이번에는 운영 조회와 실행계획 작성만 수행; Production 쓰기·Provider·실제Credit·배포0.
+
+- 인문2026수시2번: 기존 `/api/essay/exam` → ReviewedRuntimeWorker 경로 재사용. 실제 runtime_policy 없음, review NEEDS_REVIEW, 운영package 없음. 기존 provider_policy는 Hanyang만 지원. 공식 입력 패키지 검수·권리 및 건국대 한정 binding 준비가 필요하며 임의 활성화하지 않음.
+- 수리2026수시자연1번17점: 기존 Math 이미지/판독/확정/평가 경로 재사용. 운영 resolve_profile은 set/problem/profile ACTIVE를 요구하므로 DRAFT 유지 상태의 운영 제출은 차단되는 것이 정상. 차단 우회나 새 Migration 없음.
+- 기존 승인 테스트 계정과 과거 성공run 관계 확인. 실제 로그인 세션은 미검증. 공개 availability는 모든 유형false, AI HOLD 유지. 계정정보·잔액·UUID는 비공개 실행계획에만 보관.
+- 권장 승인안: 격리환경 실제 Provider 품질·계약 검증. 인문 최초/재첨삭 평가+독립검수4회, 수리 최초/재첨삭 판독+평가4회, 최대8회. 운영 Credit0, 운영 DRAFT/HOLD/History 불변. 운영 WEB/APP E2E로 판정하지 않음.
+- gpt-5.6-sol Standard 공식가격 입력$4/출력$20 per1M 기준, 각 호출 총입력30k 이하(이미지환산 포함)·출력12k 이하일 때 총추산$2.88, 승인예산안US$4. 입력 상한·기존 안전한 자격증명 접근·모델/가격 확인 불가 시 실행 중단. 실패/타임아웃도 호출한도 포함, 자동 추가호출 없음. 가격 근거: https://developers.openai.com/api/docs/models/gpt-5.6-sol
+- 결과/History는 격리DB·비공개 산출물에 저장. 기존 run/lease/checkpoint/receipt 복구 재사용; 불명확 응답에서 새requestKey·임의환불 금지. 향후 운영 두 문항 최초평가는 합계2Credit, 재첨삭 추가0이나 이번 범위에서 실행하지 않음.
+
+실제 Provider 실행은 Owner 별도 승인 대기. 운영 E2E는 패키지/정책·DRAFT 조건으로 HOLD. 비공개 상세: `essay-validation-2026-10/건국대/service-20261021/provider-e2e-execution-plan.md`.
+
 ## 2026-10-21 — 건국대 Math DRAFT 등록 승인 적용 PASS
 
 Owner 별도 승인 범위14행만 Production 적용: 세트1·문제1·소문항1·출처4·profile1·criterion1·solution1·step4. 기존 자연2026시험/문항 ID 보존. 상태열4개 DRAFT, 시험inactive·문항unpublished 유지. 동일내용 검증 포함 단일 트랜잭션 성공. 신규ID 중복없음.
