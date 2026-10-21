@@ -77,3 +77,32 @@ Local contract verification PASS; overall operating service remains PARTIAL. Pro
 migration/deployment need separate approval; existing image input handoff and reviewed
 canonical mapping/readiness must be verified before any live E2E or activation.
 No secrets, private PDFs or student data committed. No main merge or release build change.
+
+
+## Production Migration preflight — read-only, Oct21 07:48–07:53UTC
+
+APP8110492 exact two SQL files unchanged. Live submit/cycle bodies equal canonical
+rollback baseline; owner postgres NOSUPERUSER/BYPASSRLS, only essay_worker EXECUTE.
+42Catalog identity matches PASS. New objects/column/migration versions absent.
+Live total193exams616questions152documents;11college cohort97/382/150PDF/2484mappings,
+all97 NEEDS_REVIEW, active0/published0. Existing FK constraints valid. Data/function/
+policy fingerprints recorded without student content in APP verification artifacts.
+
+Current RLS PASS: anon originals0; active non-operator reads only previously approved
+Hanyang question-only1PDF, other originals0. Private documents/reviews schema access
+denied. Existing exception intentionally preserved; not a new grant or internal evidence
+exposure. Metadata function is an explicit bounded SECURITY DEFINER capability; postgres
+bypasses underlying row policies inside it. Approve that exact projection, not a claim
+that SECURITY INVOKER RLS applies. No base grants or RLS policy modifications proposed.
+
+Order:20261021071701 then20261021071702. One nullable FK/index/trigger +private helpers,
+two submit replacements; no data backfill/new table. Existing1Math leaf12attempts
+remain unmapped; used identity cannot be reassigned. Re-run M2 aborts atomically;
+migration ledger and exact objects govern resume. M1-only failure needs M1-only rollback;
+combined rollback only after both and before any mapping/input snapshot use.
+
+Production readiness PARTIAL: recent backup/PITR recovery point NOT_ASSESSABLE with
+available tools; must be confirmed before separately approved execution. Guarded rollback,
+read-only postflight SQL, lock/time limits, ACL/count/hash expectations and stop conditions
+are in APP supabase/verification/essay_service_contracts/production-plan.md.
+Existing tests reused; no Provider, Credit, DB migration, deployment or auth-key changes.

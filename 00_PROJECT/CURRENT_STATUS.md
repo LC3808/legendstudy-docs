@@ -1,3 +1,6 @@
+# Oct21 Production Migration 사전 검증
+SQL·현재 RLS·42Catalog 식별자·롤백 본문 대조 PASS. 운영 적용 준비 PARTIAL: 백업/복구 지점 확인 및 Owner 별도 적용 승인 필요. Migration 실행 없음. [근거](../90_HISTORY/DAILY/2026-10-21-service-integration.md).
+
 # Oct21 서비스 DB 계약 — 로컬 구현 / Production 미적용
 - Catalog42개 범위의 메타데이터 전용 조회 및 기존 WEB 선택 연결 준비.
 - 기존 Math 확정 입력→시험 제출 snapshot 계약 및 문항 FK 준비. 매핑 자동 생성 없음.
