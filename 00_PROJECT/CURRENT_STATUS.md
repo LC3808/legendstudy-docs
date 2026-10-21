@@ -10,6 +10,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-21 성균관대 등록 준비 — OWNER_APPROVAL_PENDING
+
+- 기존16PDF 조사/해시 재사용. 2026수시 수리1·2·3/언어1·2교시5시험15문항, 2027모의 수리/언어2시험6문항. 신규7시험21상위문항, 비공개14PDF8,604,459bytes, 평가자료126페이지연결.
+- 문제합본25페이지/평가보고서83페이지가 개별파일과 동일하여 중복2PDF 제외. 보고서 과학인재 면접은 논술범위 제외. Production 기존8시험6문항/ID 보존 대상, 신규 동년·유형 및문서SHA중복0.
+- 수리12문항 수식추출불량 NEEDS_REVIEW. 기존2025 시험 문항수 메타데이터와 실제행 차이는 후속조사. 원본 권리제한/공식게시글 대조 필요 유지. 정밀검수/AI품질 PASS 아님.
+- 로컬PG17 등록2회/기존fixture보존/anon·authenticated차단/RLS불변 PASS. 7개 시험별SQL·상태/참조guard 복구안 준비. Production 쓰기·업로드 미실행, Owner 별도승인 대기. AI HOLD, Provider/Credit/결제/인증 변경 없음. 숙명여대 미착수.
+
 ## 2026-10-21 Claude 대학 목록 UX 통합 — PASS (미배포)
 
 - LAB 기존 codex/gachon-official-page-20261020의 d20ccd9에서 Claude 54f40e18ec3811cd5d9db23a8fb68db1a57a5876으로 fast-forward. d3b7da8 포함, 충돌0/재작성0, 원본 커밋 보존.
