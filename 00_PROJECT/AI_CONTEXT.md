@@ -9,6 +9,8 @@ CORRECTION_BASIS: Owner-approved UWA-2D following UWA-2C independent review; APP
 SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
+> **OWNER 최상위 제품 원칙 (2026-10-21):** 작업 시작 및 날짜 변경 후 첫 작업 전에 [LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md](LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md)를 확인한다. ‘한 번도 사용하지 않은 사람은 있어도, 한 번만 사용한 사람은 없도록.’ 기존 성공 구현 재사용, 학생의 실제 첨삭·재첨삭·성장 경험 우선. 제품 원칙 변경은 Owner 승인 필요.
+
 
 ## Restore route — Grok code review + Essay-first reaffirmation Oct12
 
