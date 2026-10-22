@@ -1,3 +1,45 @@
+# 11개 대학 학생용 문제 PDF — Production 연결 결과
+
+# 학생용 PDF Production 반영 결과
+
+승인 범위 PASS / 전체 PARTIAL(성균관대 권리 HOLD 및 Owner 최종 검수 대기).
+
+|대학|시험|문항|운영 PDF 확인|공개 HOLD|
+|---|---:|---:|---:|---:|
+|가천대|17|166|166|0|
+|건국대|21|58|58|0|
+|경희대|10|38|38|0|
+|고려대|10|30|30|0|
+|동국대|16|48|48|0|
+|서강대|10|14|14|0|
+|성균관대|9|27|0|27|
+|숙명여대|8|22|22|0|
+|숭실대|16|42|42|0|
+|서울여대|2|5|5|0|
+|한국항공대|9|18|18|0|
+
+- 전체128시험468문항 / 로컬133PDF691페이지 / 운영441문항124PDF / 권리HOLD27문항9PDF.
+- Storage 신규73개31,764,197bytes, 기존51개재사용.124개다운로드 SHA-256·크기 일치. 기존257파일 중 승인124개만 새정책대상.
+- 운영 일반테스트계정 역할: operator=false, 승인124개+기존한양대예외1개 조회; 비허용0/anon0. 기존208시험656문항ID지문 동일.
+- 정책: student_problem_verified_20261022_read, authenticated exact-file SELECT + account_service_allowed. 기존정책보존.
+- WEB f1478612b09f91978be089d5f48954f843c9208e / deployment a3d5a58e-3de1-433e-90bb-486f6590808e.
+- Node22 관련19tests+auth3tests, Typecheck·변경Lint·Build·Boundary·GitHubReady PASS.
+- 최초배포 aef05193: 공개빌드환경변수누락 회귀 발견, 88a4c6b로복구·새정책제거·비공개파일보존. 운영공개변수주입후 재빌드·정책재적용·배포. Cloudflare전후설정동일.
+- 초기운영렌더12초초과3건은 재검증PASS. 원인미확정(네트워크/렌더 지연 가능성은 추정). first-pass.json/retest.json과개별스크린샷보존.
+- 모든문항별 선택·PDF열기·시작페이지검증. 파일별스크린샷보존, 모든페이지의 운영스크롤 시각 재검사는 아님; 로컬691페이지 및 기존원본/경계시각검수 재사용.
+- AI HOLD 유지. 답안입력/제출·Provider·Credit·APP·71702 작업없음.
+- Owner 최종11대학검수 전 APP/AI 시작금지.
+
+## 검증 범위와 증거
+
+운영 브라우저 검증은 기존 로그인 세션에서 일반 사용자 화면을 사용했다. 별도 일반 사용자 역할 SQL 검사에서 operator=false, 승인 파일 124개와 기존 한양대 예외 1개만 조회됨을 확인했다. 신규 학생 계정 생성이나 실제 제출은 하지 않았다. 모바일 360px 전수 문항 열기 및 대표 데스크톱 PDF 팝업 확인. 기존 소스·절단 경계 시각 검증을 재사용하며, 모든 운영 페이지의 수동 시각 검토를 새로 완료했다고 주장하지 않는다.
+
+비공개 증거 위치: `~/development/legendstudy-materials/essay-validation-2026-10/student-pdf-20261022/`. `production-final-report.md`, `production-web/question-checks.json`(441), `production-web/skku-hold.json`(27), `storage-transfer-results.json`(124), `browser-qa/all-page-checks.json`(691), `failures/`, `incomplete-questions.csv`(27). 원본·PDF·스크린샷·운영 설정은 GitHub에 업로드하지 않았다.
+
+현재 남은 실패/검수 대상은 성균관대 권리 HOLD 27문항. 초기 렌더 시간 초과 3건은 1회 재검증으로 해소했으며 원인 미확정 기록을 보존한다. Owner WEB 확인 전 APP 및 AI 단계는 진행하지 않는다.
+
+## 이전 단계 기록 — 아래 상태는 당시 기준
+
 # 11개 대학 학생용 문제 PDF — 로컬 검증 결과
 
 최종: PARTIAL. Production DB·Storage·권한·WEB 배포 변경 없음. APP·AI 작업 없음. AI HOLD 유지.
