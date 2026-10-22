@@ -1977,3 +1977,8 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 - Full-project recovery pending Vault key-dependent restore and cron restore validation. Two approved Production migrations remain NOT_APPLIED under Owner backup gate.
 - Konkuk representative math question not yet qualified; existing formula review HOLD retained. Existing mock/contract tests reused, no actual Provider/Credit/UI changes.
 - Details:90_HISTORY/DAILY/2026-10-21-service-integration.md.
+
+
+## 2026-10-22 사용자 자료 연결 — PARTIAL
+
+운영208시험/656문항·anon21/0·메타데이터RPC 미적용 확인. 11대학 비로그인 WEB 누락 실측. APP 공통조회/WEB 정확한 ID 콘텐츠 병합 로컬검증, 운영변경0. [결과 및 승인 경계](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
