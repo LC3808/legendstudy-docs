@@ -1,3 +1,17 @@
+## 2026-10-22 추가 보강 1차 — 승인 배치 반영, WEB 미배포
+
+Owner 별도 승인 후 서울여대2023~2025수시 신규9시험18문항9PDF(3,911,528bytes), 서강대2023~2025모의 신규14시험14문항14PDF(2,250,905bytes)를 등록했다. 기존 서강대2024모의경제경영1시험1문항 제외·ID보존. 합계23시험32문항23PDF. 11개 대학 메타데이터 총151시험500문항(기존128/468+23/32). API 조회와 WEB실측은 구분한다.
+
+시험별 트랜잭션·기존 등록 생성기 재사용. 각 배치 로컬 PG17 재실행/충돌rollback/기존행/RLS/복구 PASS. 운영 기존208시험656문항 및 Credit35행·Math평가9행 해시 변경없음. 신규파일 모두 다운로드 SHA256/크기 일치. 기존 단일 학생문제 SELECT정책의 exact-file 목록124→147만 확장, authenticated+account_service_allowed 유지. bucket비공개, RLS정책수133 유지. 학생답안/History/Payment/AI/71702 변경없음.
+
+로컬뷰어: 서울여대18문항·서강대14문항 로딩완료/시작페이지/오류0. 전체84PDF페이지는 로컬 렌더·contact-sheet 검수. 운영 WEB 후보 배포 및 사용자 로그인 PDF 열람은 아직 미검증이다. 서울여대 비로그인RPC11시험23문항, 서강대24시험28문항 반환. 비로그인 비공개파일 조회0. 로컬정책검사 authenticated147/blocked0/anon0. 운영 일반사용자 인증검증을 대체하지 않는다.
+
+WEB 기본 정렬은 평가가능 gate→기타 비준비목록→후순위16개, 서울소재→가나다순을 적용. 기존 평가가능 여부를 새로 활성화하지 않는다. 지원자 통계는 기본 정렬에서 제거. 42개 유지, 검색/필터/페이지복귀 보존. 관련41tests/Typecheck/Lint/Build/GitHubReady PASS; Backend/Gateway변경0. Production f1478612 유지. 새 후보는 별도배포승인 대상.
+
+잔여: 경희대83원본(2025기존8시험 문항0은 ID재사용 필요), 동국대13원본, 한국항공대6원본, 서강대2025수시4원본 분리/검수/등록명세 미완료. 일부승인배치 완료가 전체보강 완료를 뜻하지 않는다. 성균관대27문항9PDF 권리HOLD. APP·AI는 OwnerWEB검수 전 미착수.
+
+비공개 명세/SQL/복구/시각증거: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/`의 `progress.md`, `swu/production-result.md`, `sogang-mock/production-result.md`, `preservation-results.json`. 원본/PDF/학생정보/키를 Git에 넣지 않았다.
+
 # 11개 대학 학생용 문제 PDF — Production 연결 결과
 
 # 학생용 PDF Production 반영 결과

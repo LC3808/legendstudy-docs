@@ -1,3 +1,7 @@
+## 2026-10-22 — 누락 보강 1차: 서울여대·서강대 승인 등록 / WEB 후보 검증
+
+Owner 승인 신규23시험32문항23PDF 등록·해시검증 완료. 기존 데이터/ID/AI HOLD 유지. WEB 후보에 PDF연결과 서울·가나다순 기본정렬 반영, 관련41tests·Typecheck·Lint·Build·GitHubReady PASS. 현재 Production은 f1478612이며 새 후보 미배포. 전체 추가보강은 PARTIAL, 나머지 대학 명세 준비중. OwnerWEB검수 전 APP·AI 미착수. [세부·근거](../90_HISTORY/REVIEWS/2026-10-22-student-problem-pdf.md).
+
 ## 2026-10-22 — 학생용 PDF 승인 범위 Production 연결 완료
 
 Owner 승인 범위인 10개 대학 441문항·124PDF를 Production에 연결했다. 기존 51파일 재사용, 문제 전용 73파일 업로드. 로그인 WEB에서 441문항 각각 PDF 열기·정확한 시작 페이지 확인 PASS. 성균관대 27문항·9PDF는 권리 확인 전 공개 HOLD이며, 실제 화면 차단도 확인했다. 전체 판정 PARTIAL, Owner 최종 WEB 검수 대기.
