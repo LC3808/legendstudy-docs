@@ -571,3 +571,7 @@ deletion/essay-write/evaluation flags true; shared tool/store-release enforces t
 Next APP gate is Owner signing→focused physical-device smoke→Console inputs/policy review; do not
 reopen completed feature work or run Math/Payment work as part of APP RC. See CURRENT_STATUS
 and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.
+
+## 2026-10-23 — PHASE 3 실제 운영 체크포인트
+
+최신 Owner 통합 실행 승인 적용. 건국 인문2번 실제 APP 최초 첨삭→WEB 무료 재첨삭→APP History 교차조회 PASS(iOS Simulator), Credit1/0. 운영10 Provider 호출·보수비용USD0.972644. 전체11개 대학 서비스는 PARTIAL/공개HOLD. Math 전역OFF, 테스트 계정/leaf 한시 DB 예외 준비; 기존 Worker 인증 유효성 확인 필요. 과거 “Production 변경0/Provider 미실행”은 이전 체크포인트다. [최신 증거·정확한 변경·복구](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).

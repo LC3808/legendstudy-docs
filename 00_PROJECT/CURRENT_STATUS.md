@@ -2117,3 +2117,7 @@ PHASE1만 진행. 후보28c9dbb: 실제71701 응답128시험468문항 선택 컴
 
 ## 2026-10-22 PHASE 1 WEB Production 반영 / Owner 검수 대기
 Owner 승인 후보28c9dbb를 기존 Pages 직접 경로로 배포. 실제 Production8c234d9e-0129-4944-bafa-2771c3e95b5f/source28c9dbb 확인.11대학 최신 학년도·유형·계열·대표 문항을 비로그인/기존 로그인 사용자 화면에서 확인. 운영 설정 전후 동일, Backend/Gateway 동일,503/AI HOLD 유지. 기존30tests 재사용·운영 공개설정 재빌드PASS. 신규 자료 내부 원문 미연결/공식 페이지 문항별 대응은 PARTIAL이며 조회 PASS와 구분한다. Owner WEB 확인 전 APP/첨삭 진행 금지. [배포·대학별 검증 범위](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
+
+## 2026-10-23 — PHASE 3 실제 운영 체크포인트
+
+최신 Owner 통합 실행 승인 적용. 건국 인문2번 실제 APP 최초 첨삭→WEB 무료 재첨삭→APP History 교차조회 PASS(iOS Simulator), Credit1/0. 운영10 Provider 호출·보수비용USD0.972644. 전체11개 대학 서비스는 PARTIAL/공개HOLD. Math 전역OFF, 테스트 계정/leaf 한시 DB 예외 준비; 기존 Worker 인증 유효성 확인 필요. 과거 “Production 변경0/Provider 미실행”은 이전 체크포인트다. [최신 증거·정확한 변경·복구](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).

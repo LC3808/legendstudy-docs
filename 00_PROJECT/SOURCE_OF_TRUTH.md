@@ -65,3 +65,7 @@ Source material for this registry and the current-state snapshot (branch + full/
 - **day_targets least-privilege** — migration `20260930000100_day_targets_least_privilege` (Production ACL effect verified; tracking separate/unregistered → tracking debt)
 
 > Repository links: [`legendstudy-app`](https://github.com/LC3808/legendstudy-app) · [`legendstudy-lab`](https://github.com/LC3808/legendstudy-lab). Only publicly available refs are external evidence links. LAB `94d5d61` is local-only, not a retrievable GitHub source; do not substitute remote baseline silently. Public APP UWA-1B is the fallback. Branch tips may advance; preserve evidence SHA and verify the current task branch separately.
+
+## 2026-10-23 — PHASE 3 실제 운영 체크포인트
+
+최신 Owner 통합 실행 승인 적용. 건국 인문2번 실제 APP 최초 첨삭→WEB 무료 재첨삭→APP History 교차조회 PASS(iOS Simulator), Credit1/0. 운영10 Provider 호출·보수비용USD0.972644. 전체11개 대학 서비스는 PARTIAL/공개HOLD. Math 전역OFF, 테스트 계정/leaf 한시 DB 예외 준비; 기존 Worker 인증 유효성 확인 필요. 과거 “Production 변경0/Provider 미실행”은 이전 체크포인트다. [최신 증거·정확한 변경·복구](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).
