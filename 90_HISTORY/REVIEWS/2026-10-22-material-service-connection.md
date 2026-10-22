@@ -65,3 +65,13 @@ STEP 1 진단 완료, STEP 2 로컬 연결 준비, STEP 3 운영 전체 조회 B
 - APP `codex/material-service-app-20261022`: 415e4aff28ba97236c809bedb173247909f82a63 (origin 일치 확인).
 - Wiki `codex/material-service-docs-20261022`: 이 보고서 포함, Push 후 원격 확인.
 - 71701만의 조건부 적용 승인을 Owner에게 요청했다. 복구 게이트 미충족이면 실행하지 않음.
+
+## 2026-10-22 71701 적용 결과
+
+Owner의 71701-only 조건부 승인에 따라 복구 게이트 확인 후 적용. 원문 SHA256 불변. 기존 단일 트랜잭션 executor 패턴(소유자/충돌 guard,5s lock/60s statement timeout,canonical ledger 기록,PostgREST schema reload) 재사용. Function1개/comment/ACL 및 migration ledger71701만 변경.71702 미적용.
+
+사후: anon11대학128시험/468문항 메타데이터, 모두evaluationReady=false. 문항 없는 기존14시험은 함수의 기존 필터에 따라 반환되지 않음(경희8,성균관6); 시험 삭제 아님. 건국 비로그인 HTTP200,21시험58문항. authenticated 역할21시험,unknown ID빈배열. anon/authenticated privateStorage 조회0,private evidence schema접근불가. 함수 execute anon/auth=true,service_role=false.132RLS hash e0b124ac537d8b45f1ef523095176ffd 전후 동일.133테이블 중131지문 동일; 변경2개는 기존 예약작업 account_private.ops_log/dispatch_health. 기존ID·학생답안·History·Credit·결제·Storage 메타데이터 지문 유지.
+
+DB계약 PASS. 실제 WEB/APP 전체화면 PASS는 아님; 별도 배포/앱 실측 필요. Provider/Credit거래/WEB배포/APP업로드/AI활성화 없음. 복구의 실제전체실행은 하지 않았으며 supported physical restore+추가논리백업/Storage 복구경로 확인과 구분한다.
+
+복구 근거: 2026-10-22 01:04:24KST 동일프로젝트 물리백업/Restore 권한 확인(실행취소), 공식Vault문서 key portability의 동일프로젝트 키 보존 확인. 최신133테이블 논리백업 추가, Storage 기존157+추가32 로컬바이트 보존. 백업파일/키는 Git에 없음. 기존 격리 복구와 cron 정의 복구 증거 재사용. https://supabase.com/docs/guides/database/vault#key-portability-and-migration

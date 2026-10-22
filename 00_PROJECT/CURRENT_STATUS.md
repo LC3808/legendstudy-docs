@@ -1982,3 +1982,8 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 ## 2026-10-22 사용자 자료 연결 — PARTIAL
 
 운영208시험/656문항·anon21/0·메타데이터RPC 미적용 확인. 11대학 비로그인 WEB 누락 실측. APP 공통조회/WEB 정확한 ID 콘텐츠 병합 로컬검증, 운영변경0. [결과 및 승인 경계](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
+
+
+## 2026-10-22 71701 Production 적용 완료
+
+Owner 조건부 승인·물리백업/Vault 동일프로젝트 복구+논리/Storage 보완 확인 후71701만 적용. anon11대학128시험468문항·건국guest HTTP21/58·RLS132 보존 PASS.71702/WEB배포/Provider/Credit/AI활성화 없음. 운영 전체 UI 실측은 별도. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md). 이전 미적용 기록을 이 현재결과로 갱신.
