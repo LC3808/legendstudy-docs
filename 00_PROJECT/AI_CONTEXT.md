@@ -575,3 +575,6 @@ and Daily2026-10-07; APP closeout report is wiki/final-store-rc-1.md.
 ## 2026-10-23 — PHASE 3 실제 운영 체크포인트
 
 최신 Owner 통합 실행 승인 적용. 건국 인문2번 실제 APP 최초 첨삭→WEB 무료 재첨삭→APP History 교차조회 PASS(iOS Simulator), Credit1/0. 운영10 Provider 호출·보수비용USD0.972644. 전체11개 대학 서비스는 PARTIAL/공개HOLD. Math 전역OFF, 테스트 계정/leaf 한시 DB 예외 준비; 기존 Worker 인증 유효성 확인 필요. 과거 “Production 변경0/Provider 미실행”은 이전 체크포인트다. [최신 증거·정확한 변경·복구](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).
+
+## 2026-10-23 Math 인증 복구·실제 평가
+두 전용 JWT의 실제 만료를 확인하고 기존 키로7일 갱신, 설치 후 역할 인증PASS. WEB 건국 자연1번 이미지판독·확정·실제평가·저장PASS, 최초1Credit/예약0, APP Simulator 같은결과조회PASS. Native History→Math 화면이 뒤에 열리는 문제 최소수정·회귀테스트PASS. APP 합성답안 입력 대기, 무료재첨삭/APP→WEB는 미완료이므로 전체PARTIAL. 대기 중 Math실행flagsOFF·한시DBgate/status예외원복, JWT/답안/결과보존. 기존 인문성공반복없음. [상세](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).
