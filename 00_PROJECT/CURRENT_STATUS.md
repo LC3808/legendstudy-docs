@@ -1,10 +1,20 @@
+## 2026-10-22 — Flutter Native 자료·PDF 연결 / Owner APP 검수 대기
+
+- Owner가 KAU WEB `1638d9c` 검증 수용, APP 단계 승인. 경희·동국 WEB 추가보강은 보류하며 정상자료 보존.
+- APP 후보 `96830e2`: 기존71701·SourceCatalog·pdfrx·인증 Storage 재사용.11대학157시험512문항 실제 metadata와 WEB ID 일치, 승인485문항153PDF 연결. 성균관27문항 권리HOLD.42 Catalog 및 서비스준비16후순위/서울우선/가나다순 유지.
+- 관련35tests·Flutter analyze·Android APK/iOS Simulator 빌드 PASS. Android emulator와 iOS Simulator 각각11대학 최신시험/계열/문항 선택,10대표 PDF 실제 렌더·시작페이지·다음페이지 PASS. 플랫폼별10캡처 시각확인.512문항 전수렌더/물리기기검증으로 확대하지 않음.
+- 검증 앱1.0.0+2026102201은 REVIEW_READ_ONLY=true. 기존 로그인 세션 재사용, Provider·DB쓰기·Credit 차단. 초기 테스트 도구 기본버전 downgrade 및 종료시 uninstall로 Android 로컬로그인 초기화2회; Owner 재로그인 후 fixed prebuilt/keep-app-running으로 해결. 정상 앱 복원, 운영 데이터 변경없음.
+- Production WEB/DB/Storage/RLS/71702/결제/인증/AI상태 변경0, Store18 보존. APK 및 Simulator zip 생성, Store/TestFlight 업로드 없음. iOS Simulator zip은 실제 iPhone 설치파일이 아님.
+- Owner 실제 APP 검수 전 AI 연결 금지. 후속 WEB HOLD: 경희2021·2022수시/2023~2025수시·모의/2026모의, 동국2022~2024수시/2025모의(파일명우선·기존ID정정 필요).
+- 상세 APP wiki `wiki/native-material-pdf-20261022.md`. 비공개 증거/빌드: `~/development/legendstudy-materials/essay-validation-2026-10/app-connection-20261022/`. 원본·화면·키·학생정보 GitHub 미업로드.
+
 ## 2026-10-22 — 한국항공대 승인 WEB 배포 / 신규12문항 실제 렌더 PASS
 
 - Owner 배포 승인 후 WEB `1638d9ceb17dedfae5263d40a6e501652591ca01` Production 승격. 실제 Pages ID `08cd3e51-79ff-4017-bdac-8f97f21f1f1d`; 직전 `ca7dd361`/`289bdef5-bf30-4137-af9a-8dc672dbf4cd` 복구 지점 보존.
 - 한국항공대 2022·2023 수시 공학·사회·이학 6시험12문항 모두 로그인 운영 Chrome에서 선택→정확한 문항ID→문제 보기→PDF 시작페이지 실제 렌더 확인. 12개 화면 및 contact2장 시각 확인 PASS. 28페이지 전체 운영 스크롤 검증으로 확대하지 않음; 기존 로컬 전체페이지 검수 재사용.
 - 기존 항공대2024~2026 9시험18문항 보존, 현재 전체15시험30문항. 신규6PDF 해시검증 및 exact authenticated policy153파일 유지. Backend/Cloudflare 전체 설정 전후 동일, AI버튼12개 비활성. Provider/Credit/APP/71702 미실행.
 - 관련17tests·Typecheck·Lint·Build·Boundary·GitHubReady PASS. 기존500개 WEB 매핑 보존, 신규12개만 추가.
-- Owner 한국항공대 직접검수 대기. 경희대·동국대 보강 미완료; 동국대 파일명 우선·기존모의ID 재사용 정정 명세 준비. APP·AI 단계 시작하지 않음.
+- 후속 Owner 결정: 한국항공대 운영 검증 수용, APP 자료 연결 승인. 경희대·동국대 WEB 보강은 보류. AI 단계는 Owner APP 확인 전 금지.
 - 비공개 증거: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/kau/production-web/`. PDF원본·학생정보·설정값 GitHub 미업로드.
 
 ## 2026-10-22 — Owner 서울여대·서강대 PASS / 한국항공대 승인 등록

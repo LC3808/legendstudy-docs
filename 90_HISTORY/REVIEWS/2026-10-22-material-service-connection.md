@@ -200,3 +200,15 @@ Owner가88a4c6b 배포 후 검수를 승인했다. 배포 전 실제 Pages Produ
 11개전체128시험468문항 및 과거등록 포함25대학188시험656문항의 전수선택은 앞선 snapshot component 증거이며, 이번 새배포 브라우저는 대표6대학 실측이다. 360px/200% 기존 증거 재사용, 이번 재실측 없음. 전체 원문·자료연결 완료 또는 서비스E2E PASS로 확대하지 않음.
 
 판정: 배포 PASS, 대표6대학 운영선택/작성UI PASS, 한양대 승인PDF PASS, 전체 신규원문 PARTIAL, 실제첨삭 HOLD. Owner WEB 직접검수 대기. Owner확인 전 APP/첨삭 작업 금지. 복구대상8c234d9e 보존, 롤백실행 없음. 비공개 로컬증거 `/private/tmp/legendstudy-ui-deploy-88a4c6b/` (설정파일 포함하므로 GitHub 업로드 금지).
+
+
+## 2026-10-22 — Flutter Native 자료·PDF 연결 / Owner APP 검수 대기
+
+- Owner가 KAU WEB `1638d9c` 검증 수용, APP 단계 승인. 경희·동국 WEB 추가보강은 보류하며 정상자료 보존.
+- APP 후보 `96830e2`: 기존71701·SourceCatalog·pdfrx·인증 Storage 재사용.11대학157시험512문항 실제 metadata와 WEB ID 일치, 승인485문항153PDF 연결. 성균관27문항 권리HOLD.42 Catalog 및 서비스준비16후순위/서울우선/가나다순 유지.
+- 관련35tests·Flutter analyze·Android APK/iOS Simulator 빌드 PASS. Android emulator와 iOS Simulator 각각11대학 최신시험/계열/문항 선택,10대표 PDF 실제 렌더·시작페이지·다음페이지 PASS. 플랫폼별10캡처 시각확인.512문항 전수렌더/물리기기검증으로 확대하지 않음.
+- 검증 앱1.0.0+2026102201은 REVIEW_READ_ONLY=true. 기존 로그인 세션 재사용, Provider·DB쓰기·Credit 차단. 초기 테스트 도구 기본버전 downgrade 및 종료시 uninstall로 Android 로컬로그인 초기화2회; Owner 재로그인 후 fixed prebuilt/keep-app-running으로 해결. 정상 앱 복원, 운영 데이터 변경없음.
+- Production WEB/DB/Storage/RLS/71702/결제/인증/AI상태 변경0, Store18 보존. APK 및 Simulator zip 생성, Store/TestFlight 업로드 없음. iOS Simulator zip은 실제 iPhone 설치파일이 아님.
+- Owner 실제 APP 검수 전 AI 연결 금지. 후속 WEB HOLD: 경희2021·2022수시/2023~2025수시·모의/2026모의, 동국2022~2024수시/2025모의(파일명우선·기존ID정정 필요).
+- 상세 APP wiki `wiki/native-material-pdf-20261022.md`. 비공개 증거/빌드: `~/development/legendstudy-materials/essay-validation-2026-10/app-connection-20261022/`. 원본·화면·키·학생정보 GitHub 미업로드.
+

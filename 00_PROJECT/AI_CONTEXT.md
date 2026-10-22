@@ -12,6 +12,10 @@ SUPERSEDED_BY: —
 > **OWNER 최상위 제품 원칙 (2026-10-21):** 작업 시작 및 날짜 변경 후 첫 작업 전에 [LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md](LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md)를 확인한다. ‘한 번도 사용하지 않은 사람은 있어도, 한 번만 사용한 사람은 없도록.’ 기존 성공 구현 재사용, 학생의 실제 첨삭·재첨삭·성장 경험 우선. 제품 원칙 변경은 Owner 승인 필요.
 
 
+## 2026-10-22 현재 실행 단계 — Flutter Native 자료/PDF 검수
+
+Owner가 WEB `1638d9c` 운영 검증을 수용하고 APP 자료 연결을 승인했다. 경희대·동국대 WEB 보강은 후속 HOLD. 기존71701과 승인 PDF를 재사용하며 DB/Storage 재등록·Provider·Credit·스토어 업로드는 하지 않는다. Owner APP 실제 검수 전 AI 연결 금지. 최신 결과는 CURRENT_STATUS 및 material-service-connection review의 Native 후속 절을 따른다.
+
 ## Restore route — Grok code review + Essay-first reaffirmation Oct12
 
 Documentation only — no code/DB/Provider/Production/public-activation change.
