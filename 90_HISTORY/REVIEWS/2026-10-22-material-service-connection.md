@@ -155,3 +155,21 @@ Owner가 후보28c9dbb 배포 후 직접 검수를 승인했다. Dashboard에서
 **문제 원문 제공은 PARTIAL**: 신규 자료의 내부 본문/PDF는 공개 승인 없이 표시하지 않으며, 링크는 공식 자료 페이지이지 해당 문항 직접 원문 보장이 아니다. 특히 가천2027모의에 기존2026기출 자료 페이지가 안내되는 범위 등 문항별 원문 대응은 후속 검수 필요. 숙명 등 기존 참고 링크에는 기출 직접 자료가 아닌 안내성 게시글도 포함되어 있어 전체 원문 접근 PASS로 간주하지 않는다. 기존 승인 PDF 예외/뷰어는 코드 보존, 이번 모든PDF 렌더 재검증 없음. 360px/200% 기존 결과 재사용, 이번 운영 재실측 없음.
 
 이번 변경은 WEB 배포만. DB/Storage/Migration71702/Provider/Credit/Payment/IAP/JWT/APP 변경0. 기존 ID·RLS·비공개 정책은 변경하지 않았으며 기존 DB 보존 검증을 재실행하지 않음. 배포 PASS, 대표 메타데이터 UI 조회 PASS, 전체 원문/서비스 PARTIAL/HOLD. Owner가 실제 WEB를 확인하기 전 PHASE2 APP 및 PHASE3 첨삭 작업 금지.
+
+## 2026-10-22 — Claude P0 WEB 복원 후보 / 배포 승인 대기
+
+Owner의 최신 PHASE1 지시만 수행. 한양대 운영 로그인 화면에서 기존 승인 PDF·작성 UI가 사라진 현상을 확인했다. 한양대 Catalog UUID는 정상이며, 로그인 전용 published 필터/별도 선택기가 승인 PDF descriptor를 버린 것이 원인이다. 기존 SourceExamSelection·SourceExamWriter를 guest/login 공통으로 재사용했다. exact 시험 UUID+문항 UUID 집합이 일치할 때만 기존 승인 콘텐츠를 결합한다.
+
+- 서울여대·한국항공대 Catalog의 null UUID만 71701 실측 ID로 보완. DB 변경 없음.
+- 학년도·시험 통합(단일 선택도 수시/모의 명시), 기출 선택을 일정 앞에 배치, 중복 공식 버튼·장문 검수 안내 삭제, 첨삭 서비스 준비 중 회색 비활성 유지.
+- 한양대 상단 링크를 실제 브라우저에서 확인한 공식 연도별 기출 목록으로 변경. 기존 특정 2025모의 게시글 출처는 보존. 2024·2025·2026 수시 기출이 목록에 있음을 확인.
+- 42 Catalog/order 유지. 공개 71701 실측 25대학188시험656문항(11대학128/468 포함). 기존 과거 등록분도 동일 선택 경로 사용. 기존 20개 문항 없는 시험은 RPC 결과 제외 상태이며 삭제 아님.
+- 전체188시험656문항 선택 snapshot 테스트 포함50개, 기존 writer/discovery/materials 등19개 PASS. 링크 수정 후 영향12개 재확인. Node22 Typecheck/Lint/Build, Boundary/GitHub Ready PASS.
+- 실제 로컬 브라우저: 한양대2024수시인문오후2 문제 보기 버튼·작성 진입·합성 답안 로컬 저장·비활성 CTA 확인. 로컬 API는 공개 응답 캡처 fixture이며 liveRPC/auth/PDF 렌더 검증이 아니다. 운영 로그인 PDF 렌더·대표6대학 변경 UI 실측은 배포 승인 후 확인해야 한다.
+- 운영 Production은 기존28c9dbb/8c234d9e-0129-4944-bafa-2771c3e95b5f 유지. 후보88a4c6b, branch codex/material-browse-release-20261022. functions/src/server 변경0, 승인Gateway 해시 동일. DB/Storage/71702/Provider/Credit/Payment/IAP/JWT/APP 변경0. AI HOLD 유지.
+
+### 범위별 판정
+
+11개 대학의 기존 운영 메타데이터 화면 실측은 직전 기록을 재사용한다. 이번 새 UI는 로컬 테스트 PASS / 운영 미배포다. 한양대 승인 PDF의 실제 로그인 렌더는 아직 미검증이다. 신규 전체 문제 원문은 여전히 PARTIAL: 공개 승인된 본문/PDF가 없으면 상단 공식 자료실로 안내하며, 모든 문항에 대응하는 원문을 확인했다는 의미가 아니다. 기존 대량 자료5,664 archive entries/134분류 게시글 조사 재사용; 원본↔DB UUID 전체 대조는 미완료이며 미등록 총수를 추정하지 않는다. 데모/Mock 경로는 기존 명시 상태로 분리 유지, 대학 선택 경로에는 연결하지 않는다.
+
+다음: 후보 WEB 배포 별도 Owner 승인 → 기존 환경/Backend 보존하여 배포 → guest/login 대표6대학·한양대 승인 PDF 실측 → Owner WEB 직접 검수. 회귀 시 직전 배포8c234d9e로 복구하며 데이터는 변경하지 않는다. Owner 확인 전 APP/첨삭 단계 금지.
