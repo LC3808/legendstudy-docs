@@ -1,6 +1,6 @@
 # 2026-10-22 자료 사용자 조회 연결 — PARTIAL
 
-> 최신 상태: 71701 Production 적용 완료. 아래 최초 미적용 진단은 이력이며, 현재 UI는 미배포 상태다. 2026-10-22 사용자 조회 후속 결과는 문서 하단 참조.
+> 최신 상태: 71701 및 WEB 후보28c9dbb Production 반영 완료. 11대학 비로그인/기존 로그인 사용자 화면의 대표 문항 선택 확인. 내부 문제 원문 미연결은 PARTIAL, Owner WEB 검수 대기. 아래 최초 진단·미배포 상태는 이력이며 문서 하단의 최신 배포 결과를 우선한다.
 
 ## 최초 진단 / 공통 원인
 
@@ -118,3 +118,40 @@ Production DB/Storage/71702/Provider/Credit/배포/AI활성화 변경0. 전체 �
 중요한 잔여 한계: 공개 승인된 문제 원문이 없는 항목은 공식 입학처 웹페이지로 연결하며 LAB 내부 원문 표시 완료가 아님. 모든 문항 직접 PDF 제공 또는 권리 승인 없이 원문 공개하지 않는다. PHASE1 PARTIAL, 배포 및 Owner 실제 확인 전 완료 선언 금지.
 
 배포 승인 요청 범위: WEB28c9dbb만, Production 설정/현재known-good 확인 후 동일 설정 재빌드 및 배포, 회귀 시 직전 배포 복구. Backend/Functions는54f40e18과 동일, DB/71702/Provider/Credit/AI공개/APP 변경 제외.
+
+
+## PHASE 1 승인된 WEB Production 배포 — 2026-10-22
+
+Owner가 후보28c9dbb 배포 후 직접 검수를 승인했다. Dashboard에서 이전 Production54f40e18 /7e15bfa5-76de-439e-92da-5d0315b820d9 확인 후 기존 직접 Pages 경로로 배포했다. Production branch selector main 사용은 Git main 병합이 아니다.
+
+- 배포 소스: `28c9dbbd961d33a22d97eca7022eccce3e766b17`, `codex/material-browse-release-20261022`.
+- 실제 Production 배포: `8c234d9e-0129-4944-bafa-2771c3e95b5f`; Dashboard Production/source SHA와 https://lab.legendstudy.com 실측 확인.
+- 복구 대상: 직전 `7e15bfa5-76de-439e-92da-5d0315b820d9` 보존. 회귀 롤백 실행은 없었다.
+- Backend/Functions/server diff0, Gateway SHA256 `d0640668a83904f966d98dd1da584734c09cad0fe4f12c7b72d3dba83a9020ab` 동일.
+- 기존 영향30tests/typecheck/lint/Boundary/GitHub-ready PASS 재사용. 실제 Production NEXT_PUBLIC 설정으로 Node22 재빌드 PASS. 공개 인증 provider 목록 등 기존 설정 유지.
+- 공식 Wrangler config download의 배포 전후 구조/값 일치. Math/Provider/Exam/Continuous OFF 및 서비스 바인딩 보존. Secret 값을 조회/출력/변경하지 않음.
+- 배포 전후 비인증 빈 요청에 기존503 `EVALUATION_UNAVAILABLE` 확인. 최초 Python UA는Cloudflare403, 일반UA 재확인503. 실제 평가/Provider/Credit 호출0.
+
+### 실제 사용자 화면 확인 범위
+
+비로그인 IAB 및 기존 로그인 Chrome의 **사용자 대학 상세 화면**에서 아래 각 대학의 최신 학년도→유형→계열→대표 문항을 확인했다. 관리자 검수 화면이 아니다. 기존 로그인 계정은 Owner 세션이며 별도 일반 학생 계정 생성/권한 변경은 하지 않았다. 모든128시험468문항 전체 선택은 이전 컴포넌트 테스트 결과이고, 이번 운영 실측은 대학별 대표 경로이다.
+
+| 대학 | 71701 시험/문항 (기존 확인 재사용) | 화면 학년도 | 실제 대표 경로 | guest/로그인 화면 | 원문·AI 상태 |
+|---|---:|---|---|---|---|
+| 가천 |17/166|2027·2026·2025·2024|2027모의 A형1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 건국 |21/58|2026·2025·2024|2026수시 자연1/4번, 모의 인문1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 경희 |10/38|2027·2026·2022·2021|2027모의 사회 논제Ⅰ|PASS/PASS|내부 원문 미연결·HOLD|
+| 고려 |10/30|2026·2025|2026수시 인문 오전1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 동국 |16/48|2027·2026·2025·2024·2023·2022|2027모의 인문1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 서강 |10/14|2027·2026·2024|2027모의 인문 단일문항|PASS/PASS|내부 원문 미연결·HOLD|
+| 성균관 |9/27|2027·2026·2025·2023|2027모의 수리1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 숙명 |8/22|2027·2026·2025|2027모의 인문 문항1|PASS/PASS|내부 원문 미연결·HOLD|
+| 숭실 |16/42|2027·2026·2025·2024·2022|2027모의 경상1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 서울여 |2/5|2026|2026수시 인문사회1번|PASS/PASS|내부 원문 미연결·HOLD|
+| 한국항공 |9/18|2026·2025·2024|2026수시 공학1번|PASS/PASS|내부 원문 미연결·HOLD|
+
+42개 전체보기 실제42링크 유지. 건국 문항1→4 전환에 선택 문항명/안내/답안ID 동기화 확인. 모든 대표 경로 공식자료 링크 및 첨삭 준비중 비활성 표시. 단일문항 서강은 불필요한 문항 탭 없이 표시된다. 건국 공식 자료실 실제 페이지에2024~2027 KU논술가이드북 목록 확인. 다른 대학 공식페이지 확인은 기존 증거 재사용이며 모든 링크/학년도별 원문 대조를 새 PASS로 처리하지 않음.
+
+**문제 원문 제공은 PARTIAL**: 신규 자료의 내부 본문/PDF는 공개 승인 없이 표시하지 않으며, 링크는 공식 자료 페이지이지 해당 문항 직접 원문 보장이 아니다. 특히 가천2027모의에 기존2026기출 자료 페이지가 안내되는 범위 등 문항별 원문 대응은 후속 검수 필요. 숙명 등 기존 참고 링크에는 기출 직접 자료가 아닌 안내성 게시글도 포함되어 있어 전체 원문 접근 PASS로 간주하지 않는다. 기존 승인 PDF 예외/뷰어는 코드 보존, 이번 모든PDF 렌더 재검증 없음. 360px/200% 기존 결과 재사용, 이번 운영 재실측 없음.
+
+이번 변경은 WEB 배포만. DB/Storage/Migration71702/Provider/Credit/Payment/IAP/JWT/APP 변경0. 기존 ID·RLS·비공개 정책은 변경하지 않았으며 기존 DB 보존 검증을 재실행하지 않음. 배포 PASS, 대표 메타데이터 UI 조회 PASS, 전체 원문/서비스 PARTIAL/HOLD. Owner가 실제 WEB를 확인하기 전 PHASE2 APP 및 PHASE3 첨삭 작업 금지.

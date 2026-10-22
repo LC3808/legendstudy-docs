@@ -1993,3 +1993,7 @@ Owner 조건부 승인·물리백업/Vault 동일프로젝트 복구+논리/Stor
 
 ## 2026-10-22 Owner 검수 게이트 — WEB 우선
 PHASE1만 진행. 후보28c9dbb: 실제71701 응답128시험468문항 선택 컴포넌트 검증, 문항별 공식 자료 접근/문제탭 우선/단일 선택 개선. 영향30tests·typecheck/lint/build PASS. 배포 승인 및 Owner WEB 확인 대기, 내부 문제 원문 미연결은 별도 한계. Owner 확인 전 PHASE2 APP 및 PHASE3 첨삭 진행 금지. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
+
+
+## 2026-10-22 PHASE 1 WEB Production 반영 / Owner 검수 대기
+Owner 승인 후보28c9dbb를 기존 Pages 직접 경로로 배포. 실제 Production8c234d9e-0129-4944-bafa-2771c3e95b5f/source28c9dbb 확인.11대학 최신 학년도·유형·계열·대표 문항을 비로그인/기존 로그인 사용자 화면에서 확인. 운영 설정 전후 동일, Backend/Gateway 동일,503/AI HOLD 유지. 기존30tests 재사용·운영 공개설정 재빌드PASS. 신규 자료 내부 원문 미연결/공식 페이지 문항별 대응은 PARTIAL이며 조회 PASS와 구분한다. Owner WEB 확인 전 APP/첨삭 진행 금지. [배포·대학별 검증 범위](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
