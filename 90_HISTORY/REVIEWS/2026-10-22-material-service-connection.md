@@ -212,3 +212,9 @@ Owner가88a4c6b 배포 후 검수를 승인했다. 배포 전 실제 Pages Produ
 - Owner 실제 APP 검수 전 AI 연결 금지. 후속 WEB HOLD: 경희2021·2022수시/2023~2025수시·모의/2026모의, 동국2022~2024수시/2025모의(파일명우선·기존ID정정 필요).
 - 상세 APP wiki `wiki/native-material-pdf-20261022.md`. 비공개 증거/빌드: `~/development/legendstudy-materials/essay-validation-2026-10/app-connection-20261022/`. 원본·화면·키·학생정보 GitHub 미업로드.
 
+## 2026-10-22 — iPhone12 Pro Max 불일치 해결 / Owner 실측 PASS
+
+- 설치 앱0.1.0(1)과 검증 Simulator1.0.0(2026102201) 불일치. 현 로컬 실기기 build에서 Supabase URL/key·REVIEW_READ_ONLY dart-define 누락 확인. 설치 전 바이너리 소스SHA는 미내장으로 미확정, RLS오류로 추정하지 않음.
+- 제품코드96830e22 그대로 검증설정/버전 명시해 iphoneos 빌드, 동일Bundle ID·서명으로 삭제 없이 업데이트. 설치1.0.0(2026102201) 확인. Owner “최신 시험과 PDF 모두 표시됨” 회신 PASS. Native6/6·3/3페이지 렌더로그 확인; 전체512문항 물리기기검증으로 확대하지 않음.
+- 결제/Provider/DB/Storage/Store 업로드 없음, AI HOLD. HTTP 상태·세션 진단은 실기기 연결종료 전 수집 못했으므로 별도 PASS 주장 없음. 재발 방지: 기존 local define 파일과명시version을 사용하고 bare flutter build/run 금지.
+- APP 상세 `wiki/native-material-pdf-20261022.md#iphone-mismatch-investigation-owner-p0`; 비공개 증거 `app-connection-20261022/iphone-mismatch/`.
