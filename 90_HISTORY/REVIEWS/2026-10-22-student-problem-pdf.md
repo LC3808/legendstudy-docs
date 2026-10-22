@@ -156,3 +156,13 @@ Owner가 essay-2026-10 대학별 폴더에 추가한 경희대2021모의사회·
 실패 명세서의 원본 미확인12건은 해결 상태로 갱신. 공개 승인·Storage·배포 대기 항목은 유지. 신규 파일 후보75개/38,407,365bytes, 기존 Storage 동일58개. 공개 허용을 의미하지 않음. 성균관대 권리 HOLD 및 전체AI HOLD 유지. Production/APP/Provider/Credit 변경0.
 
 비공개 증거: 기존 검수 폴더 added-originals-exact.json, added-prepared.json, added-review/, browser-qa/load-results-added-12.json, browser-qa/added-page-navigation.json. 원본/파생PDF/스크린샷 GitHub 제외.
+
+## 2026-10-22 — Owner 서울여대·서강대 PASS / 한국항공대 승인 등록
+
+- Owner가 서울여대·서강대 Production WEB 검수 PASS 확인. 기존 정상 자료 재처리하지 않음.
+- 한국항공대 2022·2023 수시 6시험12문항·학생용6PDF(28페이지/3.20MB) 지정 승인 후 시험별 등록·Storage 업로드 및 다운로드 해시 확인 PASS. 기존 전체231시험688문항 및 Credit35건의 행 해시 보존. 기존 항공대9시험18문항 보존.
+- private bucket 및 기존 account_service_allowed 조건 유지. 기존 authenticated SELECT 파일147→153개만 확장. 정책 총133개 유지. 격리 권한검증 authenticated153/blocked0/anon0. Production anon 목록15시험30문항 확인; API PASS를 WEB 렌더 PASS로 간주하지 않음.
+- WEB 후보 `1638d9c`: 기존500문항 PDF매핑 보존, 신규12문항만 추가. 관련17tests/Typecheck/Lint/Build/Boundary/GitHubReady PASS. 기존 로컬12문항 뷰어·28페이지 검증 재사용. Production은 `ca7dd361`; 신규 WEB 배포 별도 승인 대기.
+- 동국대는 Owner 지시에 따라 파일명 학년도 우선. 새2025모의 원본이 기존2026모의2시험6문항과 동일하므로 기존ID 보존 학년도정정 명세 준비; 아직 Production 수정하지 않음. 경희대 요청 연도 보강 준비 계속.
+- APP·AI·Provider·Credit·71702 미착수. AI HOLD 및 성균관대 권리 HOLD 유지.
+- 비공개 상세: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/kau/production-result.md`, baseline/transfer/local SQL/뷰어 증거. 원본·학생정보·키는 업로드하지 않음.
