@@ -1,3 +1,14 @@
+## 2026-10-22 — 승인된 1차 WEB 보강 배포 및 운영 검증
+
+- Owner 승인 후 WEB `ca7dd361367a09408ee7972e54e1cfbd28c46374`를 Production 배포. Pages ID `289bdef5-bf30-4137-af9a-8dc672dbf4cd`; 이전 known-good `f1478612` / `a3d5a58e-3de1-433e-90bb-486f6590808e` 보존.
+- 범위: 서울여대 2023~2025 수시 9시험18문항9PDF, 서강대 2023~2025 모의 14시험14문항14PDF의 기존 승인 등록분 WEB 매핑; 서울 소재·가나다순·준비 대학 후순위 기본 정렬. DB/Storage 재등록 없음.
+- 로그인된 실제 Production Chrome에서 23시험32문항 각각 선택, textarea 문항 ID 대조, 문제 보기, 정확한 시작 페이지 및 PDF 내용 렌더 확인. 32개 첨삭 버튼 비활성. 실제 운영 페이지 전부 스크롤 재검사는 아님; 84페이지 기존 로컬 시각 검수 재사용.
+- 서강대 첫 자동 캡처는 PDF 문서 로드와 canvas 실제 그리기 시점 차이로 빈 화면을 조기 저장. PASS 근거에서 제외하고 실제 내용 픽셀 및 화면 시각 확인 후 14개 증거 교체. 제품 코드 수정 없음.
+- Production 대학 전체보기 42개, 첫 건국/경희/고려, 마지막 준비 대학 홍익 확인. Credit 표시 9 유지(거래 실행 없음). Backend/Gateway diff 0; Gateway SHA256 `d0640668a83904f966d98dd1da584734c09cad0fe4f12c7b72d3dba83a9020ab`. Cloudflare 배포 전후 전체 설정 동일.
+- 기존 41 관련 테스트/Typecheck/Lint/Build/GitHubReady PASS 재사용. 코드 변경 없이 승인된 동일 빌드 배포. Provider·Credit·APP·71702 실행 없음. 성균관대 권리 HOLD 유지.
+- 비공개 증거: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/production-web-20261022/`의 results.json, 문항별 화면, contact-0~3.jpg, catalog.png. 원본/학생정보/키는 Wiki에 첨부하지 않음.
+- 이번 1차 배포·32문항 운영 시작 페이지 렌더 PASS. 전체 보강 사업은 PARTIAL; 나머지 대학 준비 계속. Owner WEB 확인 전 APP·AI 단계 금지.
+
 ## 2026-10-22 추가 보강 1차 — 승인 배치 반영, WEB 미배포
 
 Owner 별도 승인 후 서울여대2023~2025수시 신규9시험18문항9PDF(3,911,528bytes), 서강대2023~2025모의 신규14시험14문항14PDF(2,250,905bytes)를 등록했다. 기존 서강대2024모의경제경영1시험1문항 제외·ID보존. 합계23시험32문항23PDF. 11개 대학 메타데이터 총151시험500문항(기존128/468+23/32). API 조회와 WEB실측은 구분한다.
