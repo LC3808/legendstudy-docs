@@ -173,3 +173,30 @@ Owner의 최신 PHASE1 지시만 수행. 한양대 운영 로그인 화면에서
 11개 대학의 기존 운영 메타데이터 화면 실측은 직전 기록을 재사용한다. 이번 새 UI는 로컬 테스트 PASS / 운영 미배포다. 한양대 승인 PDF의 실제 로그인 렌더는 아직 미검증이다. 신규 전체 문제 원문은 여전히 PARTIAL: 공개 승인된 본문/PDF가 없으면 상단 공식 자료실로 안내하며, 모든 문항에 대응하는 원문을 확인했다는 의미가 아니다. 기존 대량 자료5,664 archive entries/134분류 게시글 조사 재사용; 원본↔DB UUID 전체 대조는 미완료이며 미등록 총수를 추정하지 않는다. 데모/Mock 경로는 기존 명시 상태로 분리 유지, 대학 선택 경로에는 연결하지 않는다.
 
 다음: 후보 WEB 배포 별도 Owner 승인 → 기존 환경/Backend 보존하여 배포 → guest/login 대표6대학·한양대 승인 PDF 실측 → Owner WEB 직접 검수. 회귀 시 직전 배포8c234d9e로 복구하며 데이터는 변경하지 않는다. Owner 확인 전 APP/첨삭 단계 금지.
+
+## 2026-10-22 — Owner 승인 WEB 복원 후보 Production 배포
+
+Owner가88a4c6b 배포 후 검수를 승인했다. 배포 전 실제 Pages Production28c9dbb/8c234d9e-0129-4944-bafa-2771c3e95b5f 확인. 기존 직접 Pages 경로로 out+Functions 배포, Git main 병합 없음.
+
+- 소스 SHA: `88a4c6ba5ffaf2abefa5da9782828f5ed087c25b`.
+- 실제 Production deployment: `643fc68f-823a-4dfd-a440-dca8ca43e93e` (Pages deployment list의 Production/main/source88a4c6b 확인).
+- https://lab.legendstudy.com 실제 새 학년도·시험 UI 확인. 기존69tests/Node22 Typecheck/Lint/Build/Boundary/GitHubReady 결과 재사용, 불필요한 재실행 없음.
+- Wrangler config download 배포 전후 전체 구조·값 동일. 이전 known-good 설정과도 동일. Runtime/바인딩/인증/AI HOLD 유지. Secret 값 출력/변경 없음.
+- Backend/Gateway 변경 없음. DB/Storage/71702/Provider/Credit/Payment/IAP/JWT/APP 변경 없음. 이번에는 답안 제출 요청 자체를 실행하지 않았으며503 재호출 PASS를 새로 주장하지 않음.
+
+### 실제 운영 브라우저 결과
+
+|대학|확인 학년도·시험|guest / 기존 로그인|문항·작성 진입|원문|
+|---|---|---|---|---|
+|한양|2024수시·모의|PASS / PASS|수시 인문 오후2 단일문항 PASS|승인 PDF2·3페이지 실제 렌더 PASS|
+|건국|2026·2025·2024수시·모의|PASS / PASS|guest자연4문항 / 로그인인문2문항 PASS|공식 자료 링크, 내부 원문 PARTIAL|
+|숙명|2027모의·2026수시·2025모의|PASS / PASS|2027모의인문2상위문항 PASS|공식 자료 링크, 내부 원문 PARTIAL|
+|성균관|2027모의·2026수시·2025수시·2023모의|PASS / PASS|2027모의수리3문항 PASS|공식 자료 링크, 내부 원문 PARTIAL|
+|경희|2027모의·2026수시·2022모의·2021모의|PASS / PASS|2027모의사회2문항 PASS|공식 자료 링크, 내부 원문 PARTIAL|
+|서울여|2026수시|PASS / PASS|인문2문항·1→2전환 PASS|공식 자료 링크, 내부 원문 PARTIAL|
+
+로그인 검증은 기존 Owner 세션이며 신규 일반 학생 계정/권한을 생성하지 않았다. 기존 한양대 로컬 답안이 보존되어 표시됨을 확인했으며 내용은 변경·기록·업로드하지 않았다. 모든대표경로 첨삭 서비스 준비 중 비활성. 상단 공식링크만 유지, 기출선택이 일정 앞에 위치. 42개 대학 전체보기, 페이지보기 복귀,2/4→동국대→목록→2/4 실제PASS. UI 자동화의 전체보기 checkbox 선택은DOM button이라 실패 후 실제button으로확인, 제품오류아님.
+
+11개전체128시험468문항 및 과거등록 포함25대학188시험656문항의 전수선택은 앞선 snapshot component 증거이며, 이번 새배포 브라우저는 대표6대학 실측이다. 360px/200% 기존 증거 재사용, 이번 재실측 없음. 전체 원문·자료연결 완료 또는 서비스E2E PASS로 확대하지 않음.
+
+판정: 배포 PASS, 대표6대학 운영선택/작성UI PASS, 한양대 승인PDF PASS, 전체 신규원문 PARTIAL, 실제첨삭 HOLD. Owner WEB 직접검수 대기. Owner확인 전 APP/첨삭 작업 금지. 복구대상8c234d9e 보존, 롤백실행 없음. 비공개 로컬증거 `/private/tmp/legendstudy-ui-deploy-88a4c6b/` (설정파일 포함하므로 GitHub 업로드 금지).
