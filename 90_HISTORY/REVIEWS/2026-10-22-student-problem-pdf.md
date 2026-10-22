@@ -78,3 +78,14 @@ Production 소스88a4c6b / deployment643fc68f-823a-4dfd-a440-dca8ca43e93e 보존
 ## 코드 보존 지점
 
 LAB `b71f5f1c22177b983d46414cd9a08eb2f6eff375`, `codex/material-browse-release-20261022` Push 및 원격 SHA 일치 확인. 후보 manifest에는 문항/시험 ID·파일 해시·페이지 수·승인 상태만 포함하며 원문 파일이나 로컬 경로는 포함하지 않는다. staged GitHub Ready 검사791files/금지경로0/의심secret0 PASS.
+
+
+## 추가 원본 4개 확인 — 누락 12문항 해결
+
+Owner가 essay-2026-10 대학별 폴더에 추가한 경희대2021모의사회·2022모의자연, 성균관대2023모의자연, 숭실대2022수시인문 원본 모두 기존 Source Registry SHA-256과 정확히 일치. 기존12문항 ID 보존, DB 재등록 없음. 문제 전용3파일 원본 재사용, 숭실대는 문제·제시문3~6페이지를 분리하여 해설7~14페이지 제외. 원본 전체 페이지/문제 영역 시각 확인 및 기존 로컬 뷰어12문항 로딩·17페이지 이동 확인.
+
+현재468/468문항·133PDF 준비(원본69·분리64), 원본 미확인0. 기존456문항 증거 재사용. 관련 영향8tests PASS. 전체 브라우저 페이지의 전체 영역/서비스 통합 검증 완료는 아니며 Production 신규 PDF 렌더0, 전체PARTIAL 유지. 기존 공통 시험 PDF의 정확한 문항 시작 페이지도 후속 작업이다.
+
+실패 명세서의 원본 미확인12건은 해결 상태로 갱신. 공개 승인·Storage·배포 대기 항목은 유지. 신규 파일 후보75개/38,407,365bytes, 기존 Storage 동일58개. 공개 허용을 의미하지 않음. 성균관대 권리 HOLD 및 전체AI HOLD 유지. Production/APP/Provider/Credit 변경0.
+
+비공개 증거: 기존 검수 폴더 added-originals-exact.json, added-prepared.json, added-review/, browser-qa/load-results-added-12.json, browser-qa/added-page-navigation.json. 원본/파생PDF/스크린샷 GitHub 제외.

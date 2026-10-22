@@ -1,3 +1,7 @@
+## 2026-10-22 — 추가 원본 확인: 468문항 PDF 후보 준비
+
+원본 미확인12문항의4파일 SHA-256 일치 확인, 기존 ID로 연결. 468문항/133PDF 로컬 준비 및 문항별 로딩 확인. 원본 미확인0; 전체 페이지·서비스 통합 검증 및 Production 반영은 미완료. AI/권리 HOLD 유지. [상세](../90_HISTORY/REVIEWS/2026-10-22-student-problem-pdf.md#추가-원본-4개-확인--누락-12문항-해결).
+
 ## 2026-10-22 — 11개 대학 문제 PDF 로컬 준비 PARTIAL
 
 468문항 중456문항/129 PDF 연결 후보 준비. 기존 WEB 뷰어 로컬456문항 로딩 및129 PDF 첫 화면 시각 확인. 전체 페이지 브라우저·운영 렌더 PASS 아님. 원본 미확인12문항 별도 명세. 공개·Storage 승인 게이트 전부 PENDING, 성균관대 권리 HOLD. Production88a4c6b·기존 데이터·AI HOLD 유지, DB/Storage/배포/APP 변경 없음. 관련18tests·Typecheck·Lint·Build·Boundary PASS. [상세 및 비공개 검수 위치](../90_HISTORY/REVIEWS/2026-10-22-student-problem-pdf.md).
