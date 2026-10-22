@@ -1990,3 +1990,6 @@ Owner 조건부 승인·물리백업/Vault 동일프로젝트 복구+논리/Stor
 
 ## 2026-10-22 학생 자료 조회 UI 후속
 71701 완료 재사용. 운영11대학 비로그인 UI는 아직 Registry 일부/로그인 요구/준비중으로 누락 확인. WEB 학생용 원문 미연결 안내·공식 자료 페이지 및 APP canonical 링크 최소 수정, 테스트/검증용 빌드 완료. 일반 사용자/Native 전체 PASS 아님. UI-only 배포 후보 분리, 배포 승인 대기. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
+
+## 2026-10-22 Owner 검수 게이트 — WEB 우선
+PHASE1만 진행. 후보28c9dbb: 실제71701 응답128시험468문항 선택 컴포넌트 검증, 문항별 공식 자료 접근/문제탭 우선/단일 선택 개선. 영향30tests·typecheck/lint/build PASS. 배포 승인 및 Owner WEB 확인 대기, 내부 문제 원문 미연결은 별도 한계. Owner 확인 전 PHASE2 APP 및 PHASE3 첨삭 진행 금지. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).

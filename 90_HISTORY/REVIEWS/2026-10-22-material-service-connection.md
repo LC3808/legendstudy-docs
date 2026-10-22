@@ -104,3 +104,17 @@ Production DB/Storage/71702/Provider/Credit/배포/AI활성화 변경0. 전체 �
 - UI-only 배포 후보 7b836a2 / codex/material-browse-release-20261022, base54f40e18. 17files, Backend/Functions diff0. Gateway SHA256 d0640668a83904f966d98dd1da584734c09cad0fe4f12c7b72d3dba83a9020ab 동일.
 - 후보41관련tests/typecheck/lint/build/Boundary/GitHub-ready PASS. Production 설정 전체 대조 후 동일 설정으로 재빌드해야 하며 이번 빌드는 컴파일 검증이다. Owner 배포 승인 전 실행 금지.
 - Android APK/iOS Simulator build19 검증용 산출물만 생성. store18/Production 설정 미변경.
+
+## Owner 단계별 검수 전환 — PHASE 1만
+
+현재 후보 28c9dbbd961d33a22d97eca7022eccce3e766b17 (`codex/material-browse-release-20261022`), 7b836a2 보존 후 보완. Owner WEB 확인 전 APP 진행 금지, APP 설치 확인 전 첨삭 연결 진행 금지. 이번 후속 APP 변경/빌드0, 엔진/제출 계약 변경0.
+
+선택 문항 바로 옆에 학년도·수시/모의·계열·문항 정보 및 공식 입학처 링크 표시. 모바일 문제 탭 우선. 로그인 경로 단일 학년도/계열/회차 자동 선택, 유형 변경 시 이전 문항 초기화 검증. 기존 공개 승인 PDF 뷰어 유지. 비공개 원본/해설/채점기준 공개0.
+
+공식 웹페이지 추가 확인: [서울여 기출 자료실](https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=%EC%88%98%EC%8B%9C)에서 2026 인문 오전/자연 오후 문제 및 해설 첨부 확인. [서강 모의논술 자료실](https://admission.sogang.ac.kr/enter/html/rolling/data.asp)에서2027/2026/2025/2024 모의 목록, [서강 입시책자](https://admission.sogang.ac.kr/enter/html/counsel/book.asp)에서2027 논술가이드북 확인. 검색 엔진 실패를 자료 없음으로 판정하지 않고 실제 브라우저로 확인. 모든 선택 문항과 해당 외부 PDF의 원문 대조 완료를 뜻하지 않음.
+
+71701 공개 응답을 로컬 QA snapshot으로 사용하여11대학128시험468문항 전부 선택하는 DOM 컴포넌트 검증 PASS. snapshot은 Git 밖, 인증키 없음. 영향 테스트30 PASS, typecheck/lint/build/Boundary/GitHub-ready PASS. 시험·문항 ID 중복/변경 없음. 해당 결과는 운영 브라우저 또는 Owner E2E PASS가 아니다. 기존 정적 목록/토글은 신규 성과로 계산하지 않음.
+
+중요한 잔여 한계: 공개 승인된 문제 원문이 없는 항목은 공식 입학처 웹페이지로 연결하며 LAB 내부 원문 표시 완료가 아님. 모든 문항 직접 PDF 제공 또는 권리 승인 없이 원문 공개하지 않는다. PHASE1 PARTIAL, 배포 및 Owner 실제 확인 전 완료 선언 금지.
+
+배포 승인 요청 범위: WEB28c9dbb만, Production 설정/현재known-good 확인 후 동일 설정 재빌드 및 배포, 회귀 시 직전 배포 복구. Backend/Functions는54f40e18과 동일, DB/71702/Provider/Credit/AI공개/APP 변경 제외.
