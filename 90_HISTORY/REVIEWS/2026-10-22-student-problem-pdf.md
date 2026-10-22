@@ -166,3 +166,12 @@ Owner가 essay-2026-10 대학별 폴더에 추가한 경희대2021모의사회·
 - 동국대는 Owner 지시에 따라 파일명 학년도 우선. 새2025모의 원본이 기존2026모의2시험6문항과 동일하므로 기존ID 보존 학년도정정 명세 준비; 아직 Production 수정하지 않음. 경희대 요청 연도 보강 준비 계속.
 - APP·AI·Provider·Credit·71702 미착수. AI HOLD 및 성균관대 권리 HOLD 유지.
 - 비공개 상세: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/kau/production-result.md`, baseline/transfer/local SQL/뷰어 증거. 원본·학생정보·키는 업로드하지 않음.
+
+## 2026-10-22 — 한국항공대 승인 WEB 배포 / 신규12문항 실제 렌더 PASS
+
+- Owner 배포 승인 후 WEB `1638d9ceb17dedfae5263d40a6e501652591ca01` Production 승격. 실제 Pages ID `08cd3e51-79ff-4017-bdac-8f97f21f1f1d`; 직전 `ca7dd361`/`289bdef5-bf30-4137-af9a-8dc672dbf4cd` 복구 지점 보존.
+- 한국항공대 2022·2023 수시 공학·사회·이학 6시험12문항 모두 로그인 운영 Chrome에서 선택→정확한 문항ID→문제 보기→PDF 시작페이지 실제 렌더 확인. 12개 화면 및 contact2장 시각 확인 PASS. 28페이지 전체 운영 스크롤 검증으로 확대하지 않음; 기존 로컬 전체페이지 검수 재사용.
+- 기존 항공대2024~2026 9시험18문항 보존, 현재 전체15시험30문항. 신규6PDF 해시검증 및 exact authenticated policy153파일 유지. Backend/Cloudflare 전체 설정 전후 동일, AI버튼12개 비활성. Provider/Credit/APP/71702 미실행.
+- 관련17tests·Typecheck·Lint·Build·Boundary·GitHubReady PASS. 기존500개 WEB 매핑 보존, 신규12개만 추가.
+- Owner 한국항공대 직접검수 대기. 경희대·동국대 보강 미완료; 동국대 파일명 우선·기존모의ID 재사용 정정 명세 준비. APP·AI 단계 시작하지 않음.
+- 비공개 증거: `~/development/legendstudy-materials/essay-validation-2026-10/expansion-20261022/kau/production-web/`. PDF원본·학생정보·설정값 GitHub 미업로드.
