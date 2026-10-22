@@ -139,3 +139,16 @@ Ledger: 최초 paid_cycle1Credit settled, 재첨삭 included_revision0Credit set
 완료 후 기존 Math runtime_status/admission 함수 원복 및 실행flagsOFF. 유효한 갱신JWT, 사용한 콘텐츠·답안·결과·History·Credit보존. 새로운서명키/71702/결제/IAP/원본PDF/시험ID변경없음. 일반공개HOLD. 다른대학은공식평가기준·Math매핑준비상태에따라후속연결하며자동공개하지않음.
 
 증거: /private/tmp/math-app-free-rewrite-success.png, /private/tmp/math-web-app-cross-rewrite-success.png, /private/tmp/math-app-history-success.png 및 비공개 phase3-20261022/math-provider-usage.ndjson. 코드변경없음(LAB8a54f5f/APPe4d8e20 재사용).
+
+## 2026-10-23 E2E 통과 건국대 2문항 공개 연결 — 전체 PARTIAL
+
+Owner P0 실행 승인에 따라 기존 성공 E2E를 반복하지 않고 건국 인문2번/자연1번만 일반 로그인 사용자 실행 범위로 연결했다. 나머지 문항은 HOLD. 서버 Auth·문항별 정책·소유권·Credit/History 계약을 유지한다.
+
+- WEB 실제 Production: `ad6ffec`, Pages `eda6c546-e618-492f-b4cf-3527824736c9`. Worker `9df2da12-f9d9-4dd1-ad18-c0f0fd3ed90a`. 인문 q2 제출 버튼·q1 HOLD, 자연q1→기존Math입력/문제/History 화면 실제 확인.
+- 서버 설정은 정확한 인문 exam/Math leaf만 공개 허용. Math catalog/admission 기존 함수와 runtime_control만 최소 갱신. 71702/새 테이블/RLS 변경 없음. 시험237/문항700/Ledger45/Math답안14의 ID해시·133RLS·함수ACL 보존. 원복 SQL은 APP `supabase/candidates/math_konkuk_public_release/rollback.sql`; 원복은 실행 OFF/함수복구이며 답안·결과 삭제 없음.
+- WEB 선택17·서버71·Worker11·APP6 관련검사 및 Typecheck/Lint/Boundary/WEB Build/Flutter analyze/iOS Simulator Build PASS. WEB과 Simulator에서 대학→동일 canonical 문항→기존Math 화면 진입 PASS. 새APP 물리기기/Android 설치 검증은 미완료. 로그인 검증계정 API 실측을 별도 신규 일반계정 E2E로 확대하지 않음.
+- 이번 활성화 변경의 Provider 추가호출0/Credit추가거래0. 기존 운영 인문10호출/보수USD0.972644, 수리3호출/보수USD0.181868 재사용. 실청구액과 구분. 최초1/재첨삭0·양방향History 성공 근거는 앞선 기록 유지.
+- 숙명2025모의 인문1-1 기존 accepted_source_runtime 준비기를 재사용하여 공식근거4/기준7/공식이미지2를 해시대조했다. 기존 학생답안/이미지는 새입력에 포함하지 않음. 아직 Provider권리/운영policy/package 연결·E2E 미완료이므로 공개0.
+- 다른10대학 검수된 운영평가패키지·대표실제E2E 미완료. 페이지 연결만으로 공식기준검수/첨삭가능을 PASS 처리하지 않는다. 경희/동국 추가자료 HOLD, 결제/IAP/스토어 변경 없음.
+
+증거(비공개): `phase3-20261022/activation-20261023/` readiness/config/rollback, `/private/tmp/konkuk-web-canonical-math-entry.png`, `/private/tmp/konkuk-app-canonical-math-entry.png`. 실제 E2E는 기존 검증계정·WEB/iOS Simulator 범위. 전체11대학 서비스는 PARTIAL.
