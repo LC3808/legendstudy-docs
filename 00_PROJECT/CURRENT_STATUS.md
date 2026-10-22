@@ -1,5 +1,9 @@
 ## 2026-10-22 — iPhone12 Pro Max 불일치 해결 / Owner 실측 PASS
 
+## 2026-10-22 PHASE 3 — 연결 PARTIAL / 일반 AI HOLD
+
+Owner APP 실기기확인 후 기존Essay/Math로 로컬연결.512문항중430문항2772평가페이지연결보존,82문항연결보완필요. 검수된운영패키지·정책미설정으로신규11대학실제운영평가는HOLD. Native기기초안/WEBHistory상태조회/Math기존수정재사용. Owner 총7회/$5 승인 후 실제7회/$0.6167로3품질사례PASS(실청구미검증), 재작성ID오류는입력enum최소수정후재검증PASS. 최종검증은 [상세기록](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md). Production/실Credit/배포불변.
+
 - 설치 앱0.1.0(1)과 검증 Simulator1.0.0(2026102201) 불일치. 현 로컬 실기기 build에서 Supabase URL/key·REVIEW_READ_ONLY dart-define 누락 확인. 설치 전 바이너리 소스SHA는 미내장으로 미확정, RLS오류로 추정하지 않음.
 - 제품코드96830e22 그대로 검증설정/버전 명시해 iphoneos 빌드, 동일Bundle ID·서명으로 삭제 없이 업데이트. 설치1.0.0(2026102201) 확인. Owner “최신 시험과 PDF 모두 표시됨” 회신 PASS. Native6/6·3/3페이지 렌더로그 확인; 전체512문항 물리기기검증으로 확대하지 않음.
 - 결제/Provider/DB/Storage/Store 업로드 없음, AI HOLD. HTTP 상태·세션 진단은 실기기 연결종료 전 수집 못했으므로 별도 PASS 주장 없음. 재발 방지: 기존 local define 파일과명시version을 사용하고 bare flutter build/run 금지.
