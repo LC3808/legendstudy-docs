@@ -61,3 +61,9 @@ WEB Typecheck/Lint/Build PASS. Flutter analyze·Android debug APK·iOS Simulator
 ## 구현 Commit
 
 APP `b44ca2f` / LAB `042ee8e`. 각 기존 codex 작업브랜치에만 기록하며 Production 배포 아님.
+
+## Owner P0 실제 연결 후속
+
+운영읽기전용으로한양대정책보존/건국미설정확인. Worker prompt파일패키징·신규시험Registry누락·단일prompt정책충돌을로컬보완. 서버snapshot+배포exact allowlist일치때만기존prompt선택; 미승인모델거부. 21계약PASS. 기존공식cache9연결/5기준 투영PASS, 운영digest/권리/동일시험다른문항검수보존은준비중. 비공개`phase3-20261022/operating-connection-plan.md`에최소운영변경·복구·E2E순서기록. Provider/Credit/Production변경0. 대학별실제AI가능수는위표모두HOLD, 서비스완료아님.
+
+후속 APP/Worker 후보 Commit `93dca6d2548f125ac0fc1db1579bb43c26cd29b1` 원격일치확인. LAB은기존후보 `042ee8e`, Production은기존 `1638d9c` 유지(이번배포없음).
