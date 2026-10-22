@@ -12,9 +12,9 @@ SUPERSEDED_BY: —
 > **OWNER 최상위 제품 원칙 (2026-10-21):** 작업 시작 및 날짜 변경 후 첫 작업 전에 [LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md](LEGENDSTUDY_LAB_PRODUCT_NORTH_STAR.md)를 확인한다. ‘한 번도 사용하지 않은 사람은 있어도, 한 번만 사용한 사람은 없도록.’ 기존 성공 구현 재사용, 학생의 실제 첨삭·재첨삭·성장 경험 우선. 제품 원칙 변경은 Owner 승인 필요.
 
 
-## 2026-10-23 현재 실행 — E2E 통과 건국대2문항 공개 / 전체 PARTIAL
+## 2026-10-23 현재 실행 — 대학별 평가 프로필 PHASE 1 설계 완료
 
-Owner P0 승인으로 기존 실제 인문·수리 E2E 통과2문항만 서버 범위 연결. WEB 운영/Native Simulator canonical 진입PASS. 나머지10대학은 운영패키지·실제E2E 후 순차활성화. 이번변경 Provider추가0/Credit추가0, 기존133RLS·ID·Ledger보존. 경희·동국보강HOLD, 결제/IAP변경금지. [근거·복구·실측](../90_HISTORY/REVIEWS/2026-10-22-phase3-service-connection.md).
+Owner 전략18d5b70을 채택: 공통 UX·대학별 평가·문항별 근거. 분석/설계만 완료, PHASE2는Owner확인후. 기존건국인문/수리2문항활성 및성공E2E보존. 이번 Production/Provider/Credit/배포변경0. [표준·11대학표·최소변경계획](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase1.md). 이전운영확대지시의실행은이번단계에서보류, 경희·동국자료HOLD/결제IAP불변.
 
 ## Restore route — Grok code review + Essay-first reaffirmation Oct12
 

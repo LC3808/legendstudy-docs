@@ -1,3 +1,9 @@
+## 2026-10-23 — 대학별 첨삭 프로필 PHASE 1 설계 완료
+
+Owner 전략18d5b70을 기존 서비스계약과 대조. 기존Essay 가변criteria, Math 버전profile/기존scope 재사용. private revision JSON→문항공식근거우선합성→기존검수package/Math context가 권고안. 새테이블/RPC/Worker 기본제안없음; 프로필후보30+는공식검수확정수가아님. 적용학년도자동확장/숫자부분점수추정금지.
+
+[전체 명세·예시·11대학표·파일목록·위험](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase1.md). PHASE1문서PASS, 구현/운영검증은이번범위아님. Production schema/ACL SELECT만 수행, 배포/Provider/Credit/DB쓰기0. 기존활성2문항보존. Owner검수전PHASE2진행금지.
+
 
 ## 2026-10-23 E2E 통과 건국대 2문항 공개 연결 — 전체 PARTIAL
 
@@ -7,7 +13,7 @@ Owner P0 실행 승인에 따라 기존 성공 E2E를 반복하지 않고 건국
 - 서버 설정은 정확한 인문 exam/Math leaf만 공개 허용. Math catalog/admission 기존 함수와 runtime_control만 최소 갱신. 71702/새 테이블/RLS 변경 없음. 시험237/문항700/Ledger45/Math답안14의 ID해시·133RLS·함수ACL 보존. 원복 SQL은 APP `supabase/candidates/math_konkuk_public_release/rollback.sql`; 원복은 실행 OFF/함수복구이며 답안·결과 삭제 없음.
 - WEB 선택17·서버71·Worker11·APP6 관련검사 및 Typecheck/Lint/Boundary/WEB Build/Flutter analyze/iOS Simulator Build PASS. WEB과 Simulator에서 대학→동일 canonical 문항→기존Math 화면 진입 PASS. 새APP 물리기기/Android 설치 검증은 미완료. 로그인 검증계정 API 실측을 별도 신규 일반계정 E2E로 확대하지 않음.
 - 이번 활성화 변경의 Provider 추가호출0/Credit추가거래0. 기존 운영 인문10호출/보수USD0.972644, 수리3호출/보수USD0.181868 재사용. 실청구액과 구분. 최초1/재첨삭0·양방향History 성공 근거는 앞선 기록 유지.
-- 숙명2025모의 인문1-1 기존 accepted_source_runtime 준비기를 재사용하여 공식근거4/기준7/공식이미지2를 해시대조했다. 기존 학생답안/이미지는 새입력에 포함하지 않음. 아직 Provider권리/운영policy/package 연결·E2E 미완료이므로 공개0.
+- 숙명2025모의 인문1-1 기존 accepted_source_runtime 준비기를 재사용하여 공식근거4/내부진단축7/공식이미지2를 해시대조했다. 기존 학생답안/이미지는 새입력에 포함하지 않음. 아직 Provider권리/운영policy/package 연결·E2E 미완료이므로 공개0.
 - 다른10대학 검수된 운영평가패키지·대표실제E2E 미완료. 페이지 연결만으로 공식기준검수/첨삭가능을 PASS 처리하지 않는다. 경희/동국 추가자료 HOLD, 결제/IAP/스토어 변경 없음.
 
 증거(비공개): `phase3-20261022/activation-20261023/` readiness/config/rollback, `/private/tmp/konkuk-web-canonical-math-entry.png`, `/private/tmp/konkuk-app-canonical-math-entry.png`. 실제 E2E는 기존 검증계정·WEB/iOS Simulator 범위. 전체11대학 서비스는 PARTIAL.

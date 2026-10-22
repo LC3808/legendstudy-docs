@@ -12,6 +12,11 @@ SUPERSEDED_BY: —
 
 # SOURCE_OF_TRUTH — Capability registry
 
+## 대학별 평가 프로필 — 2026-10-23 설계 Authority
+
+[Owner 전략](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-strategy.md) 및 [PHASE1 표준](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase1.md). 대학프로필은검수된공통방향, 문항별공식근거가최우선이다. 새물리DB source를만든것이아니며 기존Registry/reviews/revisions/Math profiles가 구현후보. 현재운영계약/성공2문항은보존, PHASE2 Owner검수대기.
+
+
 > One capability = **one** canonical source. Consumers (dashboards, DTOs, analytics, mocks) are never sources.
 > **Link, don't copy** — this registry points to canonical records; it does not reproduce them.
 > Status axes: [`AI_CONTEXT.md` §7](AI_CONTEXT.md#7-status-vocabulary). `NOT_ASSESSABLE ≠ PASS`. `FUTURE` capabilities must not be presented as existing.
