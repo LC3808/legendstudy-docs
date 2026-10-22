@@ -1,3 +1,7 @@
+## 2026-10-23 현재 — 프로필 PHASE2 PARTIAL
+
+Owner PHASE1승인후기존엔진조립구현.30후보저장/문항한정검수3/27DRAFT,3문항입력조립,41검사PASS.509문항공식scope검수미완료.운영/Provider변경0,기존활성2보존. [현황·실패·한계](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase2.md). PHASE3전체공개미착수.
+
 ## 2026-10-23 — 대학별 첨삭 프로필 PHASE 1 설계 완료
 
 Owner 전략18d5b70을 기존 서비스계약과 대조. 기존Essay 가변criteria, Math 버전profile/기존scope 재사용. private revision JSON→문항공식근거우선합성→기존검수package/Math context가 권고안. 새테이블/RPC/Worker 기본제안없음; 프로필후보30+는공식검수확정수가아님. 적용학년도자동확장/숫자부분점수추정금지.
