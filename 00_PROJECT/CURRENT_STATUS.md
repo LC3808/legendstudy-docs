@@ -1,3 +1,7 @@
+## 2026-10-22 — 11개 대학 문제 PDF 로컬 준비 PARTIAL
+
+468문항 중456문항/129 PDF 연결 후보 준비. 기존 WEB 뷰어 로컬456문항 로딩 및129 PDF 첫 화면 시각 확인. 전체 페이지 브라우저·운영 렌더 PASS 아님. 원본 미확인12문항 별도 명세. 공개·Storage 승인 게이트 전부 PENDING, 성균관대 권리 HOLD. Production88a4c6b·기존 데이터·AI HOLD 유지, DB/Storage/배포/APP 변경 없음. 관련18tests·Typecheck·Lint·Build·Boundary PASS. [상세 및 비공개 검수 위치](../90_HISTORY/REVIEWS/2026-10-22-student-problem-pdf.md).
+
 
 ## 2026-10-22 — Owner 승인 WEB 복원 후보 Production 배포
 
