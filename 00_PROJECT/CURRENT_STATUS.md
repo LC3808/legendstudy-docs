@@ -1987,3 +1987,6 @@ Sequential project order: Gachon IN_PROGRESS; Konkuk, Kyung Hee, Korea, Dongguk,
 ## 2026-10-22 71701 Production 적용 완료
 
 Owner 조건부 승인·물리백업/Vault 동일프로젝트 복구+논리/Storage 보완 확인 후71701만 적용. anon11대학128시험468문항·건국guest HTTP21/58·RLS132 보존 PASS.71702/WEB배포/Provider/Credit/AI활성화 없음. 운영 전체 UI 실측은 별도. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md). 이전 미적용 기록을 이 현재결과로 갱신.
+
+## 2026-10-22 학생 자료 조회 UI 후속
+71701 완료 재사용. 운영11대학 비로그인 UI는 아직 Registry 일부/로그인 요구/준비중으로 누락 확인. WEB 학생용 원문 미연결 안내·공식 자료 페이지 및 APP canonical 링크 최소 수정, 테스트/검증용 빌드 완료. 일반 사용자/Native 전체 PASS 아님. UI-only 배포 후보 분리, 배포 승인 대기. [상세](../90_HISTORY/REVIEWS/2026-10-22-material-service-connection.md).
