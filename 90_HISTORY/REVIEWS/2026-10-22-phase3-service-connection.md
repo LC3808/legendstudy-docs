@@ -126,4 +126,4 @@ LAB Production4f42278c-7b9f-4f38-94c7-08a715702f61 / 8a54f5f. 기존 static out 
 
 APP Math→History도 동일 Navigator로 연결해 역방향 경로를 보완했다. 왕복 widget회귀 PASS. 최종 Simulator 빌드는 입력 중인 앱을 교체하지 않고 보관한다. 기존 실행 앱은 첫 수정(History→Math) 반영 상태다.
 
-최종 보호 상태 확인: Production c3e91ade-c052-480c-a13c-8a55058e4b00 / source 8a54f5f; Math flagsOFF, DB globalfalse 및 한시예외제거, 기존평가COMPLETED·잔액7/예약0 보존. 설치된 갱신JWT두개 current=true 재확인. LAB `8a54f5f857b490a50b553b64fa4cbbabb820fabd`, APP `e4d8e20b26bffe1bab13561b4fc238c7e1b8b871` Push·원격SHA일치. 최종APP 왕복회귀1testPASS(앞선6tests중해당test확장), analyze3filesPASS, SimulatorbuildPASS. 최종빌드는Owner입력대기를방해하지않기위해재설치하지않았다. WEB초기평가증거 `/private/tmp/legendstudy-math-web-initial-result.png`.
+최종 보호 상태 확인: Production 6a5ad6c4-11ed-4e6f-8376-b6212f8bbfec / source 8a54f5f; Math flagsOFF, DB globalfalse 및 한시예외제거, 기존평가COMPLETED·잔액7/예약0 보존. 설치된 갱신JWT두개 current=true 재확인. LAB `8a54f5f857b490a50b553b64fa4cbbabb820fabd`, APP `e4d8e20b26bffe1bab13561b4fc238c7e1b8b871` Push·원격SHA일치. 최종APP 왕복회귀1testPASS(앞선6tests중해당test확장), analyze3filesPASS, SimulatorbuildPASS. 최종빌드는Owner입력대기를방해하지않기위해재설치하지않았다. WEB초기평가증거 `/private/tmp/legendstudy-math-web-initial-result.png`.
