@@ -127,3 +127,15 @@ LAB Production4f42278c-7b9f-4f38-94c7-08a715702f61 / 8a54f5f. 기존 static out 
 APP Math→History도 동일 Navigator로 연결해 역방향 경로를 보완했다. 왕복 widget회귀 PASS. 최종 Simulator 빌드는 입력 중인 앱을 교체하지 않고 보관한다. 기존 실행 앱은 첫 수정(History→Math) 반영 상태다.
 
 최종 보호 상태 확인: Production 6a5ad6c4-11ed-4e6f-8376-b6212f8bbfec / source 8a54f5f; Math flagsOFF, DB globalfalse 및 한시예외제거, 기존평가COMPLETED·잔액7/예약0 보존. 설치된 갱신JWT두개 current=true 재확인. LAB `8a54f5f857b490a50b553b64fa4cbbabb820fabd`, APP `e4d8e20b26bffe1bab13561b4fc238c7e1b8b871` Push·원격SHA일치. 최종APP 왕복회귀1testPASS(앞선6tests중해당test확장), analyze3filesPASS, SimulatorbuildPASS. 최종빌드는Owner입력대기를방해하지않기위해재설치하지않았다. WEB초기평가증거 `/private/tmp/legendstudy-math-web-initial-result.png`.
+
+## 2026-10-23 APP 무료 재첨삭 및 양방향 교차 조회 완료
+
+Device Hub 입력 BLOCKER는 Edit→Send Clipboard로 해결했다. Mac 합성답안만 시뮬레이터로 전송한 후 앱의 Paste를 눌러 실제 한글/수식 전체일치를 확인했다. 별도 입력 시스템/앱 우회API 없음. 기존 승인된 한 계정·한 leaf·Oct24 이전 gate/status/Pages flags만 잠시 복원하여 수행했다.
+
+APP(iOS Simulator)에서 기존 최초평가에 대한 재작성·실제 Provider 재첨삭 완료: evaluation `8511e404-9343-4ff4-9b52-5666b24fd4e6`, predecessor `7a64b01f-8daf-4606-a6e3-3be62c156aa8`. 결과 COMPLETED 및 APP 결과/History 실제 렌더. Production WEB 학습기록1에서 같은 재첨삭 풀이·결과·변화 화면 렌더 PASS. 이전 WEB최초→APP조회와 합쳐 양방향 교차조회 PASS. 이 판정은 검증계정·건국자연1번·iOS Simulator 범위이며 Android/iPhone 실기기 및 전체11대학 PASS가 아니다.
+
+Ledger: 최초 paid_cycle1Credit settled, 재첨삭 included_revision0Credit settled, 최초decision FK연결. 각 balance_delta -1/0 및 reserved_delta0/0. 추가차감 없음. Math 이번 누적3Provider호출(이미지판독1·최초평가1·재평가1), input10812/output6931, 보수USD0.181868(캐시할인/실청구미반영). 기존인문성공은반복하지않음.
+
+완료 후 기존 Math runtime_status/admission 함수 원복 및 실행flagsOFF. 유효한 갱신JWT, 사용한 콘텐츠·답안·결과·History·Credit보존. 새로운서명키/71702/결제/IAP/원본PDF/시험ID변경없음. 일반공개HOLD. 다른대학은공식평가기준·Math매핑준비상태에따라후속연결하며자동공개하지않음.
+
+증거: /private/tmp/math-app-free-rewrite-success.png, /private/tmp/math-web-app-cross-rewrite-success.png, /private/tmp/math-app-history-success.png 및 비공개 phase3-20261022/math-provider-usage.ndjson. 코드변경없음(LAB8a54f5f/APPe4d8e20 재사용).
