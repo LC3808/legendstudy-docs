@@ -1,6 +1,6 @@
-## 2026-10-23 최신 — 성균 Q1 일반계정 실제 평가·무료재첨삭·WEB/APP History PASS
+## 2026-10-23 최신 — History 자동갱신·저장된 평가 근거 표시 수정 PASS
 
-최초/재첨삭 completed·Ledger1/0Credit·잔액1→0→0. 양쪽3기준5/5·독립8검수PASS. WEB History/5→5비교·GalaxyS8 실제 두기록19:58/19:59 교차조회PASS. 기존ID/정책/이전기록 보존. Provider4회·추산USD0.290560, 실청구 미확인. 신규배포/SQL없음. 공개3문항 유지. [실행ID·증거·잔여UX](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+성균 Q1 일반계정 실제1/0Credit·WEB/APP History PASS 유지. 복귀/재활성화/주기 History 갱신, 기준별 저장판단·근거참조 표시 수정. WEB a8796fb4/ca6022b·GalaxyS8 build2026102303 실제표시PASS. WEB4·Native26검사·빌드PASS. 기존정책/ID/평가기록·Ledger 보존검증PASS. 추가Provider/Credit0·SQL없음. [상세·검증범위·복구](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
