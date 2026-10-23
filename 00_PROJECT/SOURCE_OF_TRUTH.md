@@ -1,3 +1,7 @@
+## 2026-10-23 21:11 KST 최신 — 현재 Production Secret5개 빈 값 확정
+
+기존 WEB을 교체하지 않는 Production 빌드 전용 진단0cc2b617에서 Essay Registry JWT/Service Token, Math Evaluation JWT/Extraction JWT/Provider key 모두 **EMPTY_VALUE** 확인. 변수 미주입과 구분했다. 인증 HTTP 미전송(401 아님), Provider0/DB변경0. 진단 exit73으로 새 배포 차단, 정상a8796fb4 및 pnpm build 복원·보존. Owner에게 확인된5개만 기존값 복원 요청; 카카오·토스·결제 변경 제외. 이전9개 전체복원 요구는 이 범위로 정정한다. 복원 후 인증 재검증·서울여 E2E·전체512연결은 미완료. [실행증거·복구절차](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md#current-project-secret-diagnosis--2026-10-23-2111-kst).
+
 ## 2026-10-23 최신 — 전체512 일반계정 기본 / 배포 복구 대기
 
 Owner 지시: 일반계정 공개 기본, 기존 Essay/Math와 대학별 프로필 재사용, 전체512문항을 묶음 검증·활성화. Production SQL은 Owner 직접 실행. 512ID와 상속423 재대조PASS,89미상속 유지. 기존5대학7문항E2E/공개3 보존. 서울여 SQL사후15true·입력조립PASS이나 실제운영1/0Credit·신규History·WEB/APP 미완료. [전수 대학별 표·분류 한계](../90_HISTORY/REVIEWS/2026-10-23-essay-batch-service.md).
