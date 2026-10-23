@@ -1,5 +1,8 @@
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
+## P0 direct execution — Oct23 in progress
+Payment UI integrated (APP e40fb38); Flutter3.47.6/Dart3.13.5. Android/iOS Production builds and existing-app physical update installations PASS; actual physical E2E pending. Owner confirms SKKU PDF service-use rights. New7-university quality/SQL/public rollout ongoing; existing4universities6E2E/public2questions unchanged. [Evidence and open failures](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+
 고려2025수시 인문2 Owner SQL 적용 후 DB전체사후검증 PASS(revision2·단일문항·v12·기존ID/다른정책/submit 보존). WEB 최초/무료재첨삭 completed·독립검수8항목PASS, Credit1/0·잔액97→96, Native iOS Simulator History/결과/4→5비교 PASS. 새실패0, Provider4회/추산USD0.292664(기존격리59회와별도). 기존423/89·공개2 유지, 운영E2E5→6. 문항명/상세근거 표시 잔여 및 실기기 미검증. [실행ID·Ledger·품질·증거](../90_HISTORY/REVIEWS/2026-10-23-korea-operating-owner-sql.md).
 
 ## 2026-10-23 공식 예시답안 품질 검증 진행 — PARTIAL
