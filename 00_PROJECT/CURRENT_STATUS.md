@@ -1,6 +1,6 @@
 ## 2026-10-23 현재 — 프로필 PHASE2 PARTIAL
 
-기본 진단체계19/28관리단위 검수,150/512문항 프로필 연결. 미완료9유형은 공식 공통 채점 원칙/혼합유형/학년도 범위 검수 대기이며 개별362프로필 제작 대상이 아님. 기존 문항근거·조립4 보존, 새 기본체계 Essay3입력 조립·48계약검사PASS. 새 Provider0·Production변경0. 기존활성2보존. [유형별 범위·실패 명세](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase2.md). PHASE2 PARTIAL, 전체공개미착수.
+기본 진단체계28개 검수(공식 파생 방향과 내부 가이드 분리), 기존150보존·237추가로387/512상속. 미상속125=평가자료 참조누락78+학년도/유형범위47. 문항별 전체 근거·조립5(기존4+서강경제경영1), 최신 기본체계 Essay4입력PASS. 49계약검사PASS, 새Provider/Production변경0. 기본체계 검수와 실제 문항평가 가능은 별개; 전체 PHASE2 PARTIAL. 기존 건국 운영2·UI/Credit/History보존. [범위·실패·검증](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase2.md).
 
 ## 2026-10-23 — 대학별 첨삭 프로필 PHASE 1 설계 완료
 
