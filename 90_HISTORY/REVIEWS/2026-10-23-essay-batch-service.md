@@ -97,3 +97,13 @@ WEB/APP 성공은 위 기존 E2E 근거를 재사용한다. 이번 신규 교차
 조립하고 대학/유형/학년도 묶음 manifest와 Owner SQL을 생성하는 단계다.
 검사 도구: `tool/essay_lab/batch_inventory.py`; private 증거는 materials의
 `official-answer-quality-20261023/batch-inventory-512.private.json`에 보존한다.
+
+## 2026-10-24 — 대학 단위 실행으로 전환
+
+Owner 최신 결정: 하루1대학(가능하면2)을 목표로 전체등록문항을 처리하되, 보류문항이 있으면 대학 전체완료로 표시하지 않는다. 오류A공통서비스 즉시 대응, B대학/유형·C개별문항은 정상묶음과 분리. 개별오류 원인확인/최소수정30분 목표 후 증상·재현조건·영향ID·원인·기존성공·후속방법 기록. Credit/Ledger/인증/개인정보/공통Worker는 예외. 기존 성공E2E 재호출 금지, SQL은 Owner 직접실행.
+
+489보류 자동원인분류,89미상속37묶음. 기존자료 검토32문항 중17호환후보(건국9/항공3/서강5)를 확보했으나 상속/입력PASS/공개로 승격하지 않았다. 추가30Provider호출 추정USD2.496596, private누적229회/추정USD22.987344/기존불명2. 공식PDF 페이지별 오류격리로 고려12원문을 회복하고 다른500행을 보존했다. FULL23/DIAG0/REVIEW489 초안 기준선 유지.
+
+다음 집중 대학 건국: 전체21시험58문항, 기존프로필41, FULL초안5/보류53. 공식근거·입력PASS·공개·E2E는 각각 검증된 증거로 따로 집계한다. 일반공개 총12는 기존 적용 결과이며 전체서비스 미완료.
+
+SWUQ2 제출키충돌 최소수정 WEB f1a9e27 push완료, 최초평가 completed/1Credit settled. 무료재첨삭은 자료해석 오류누락을 독립검수가 차단해 failed/0Credit released. 재호출하지 않고 대학별 품질실패로 격리했다. 무료재첨삭 WEB/APP E2E는 보류. 기존Q1·다른대학 성공결과 보존. [APP 상세·대학별 표·실패명세](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/wiki/essay-batch-service-20261023.md#2026-10-24--대학-단위-실행-및-오류-일괄-관리).
