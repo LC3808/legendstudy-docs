@@ -1,3 +1,7 @@
+## 2026-10-23 최신 — JWT30일 복구 후보·갱신 설계 검토
+
+운영 성공로그 기준 Math2종 만료2026-10-30 00:30:23KST, Essay2027-10-14 14:05:09KST. 기존역할/issuer/audience/HS256 유지한30일은 코드상 호환후보, 실제발급·운영acceptance 미실행. eyJ는 토큰이며 서명키가 아니다. 기존 로컬 도구30일 명시옵션/5검사PASS. 만료7일 전 갱신·독립감시·실패알림·신구중첩/롤백은 설계만, 자동화미설치. 현재5Secret빈값 복구와 구분. 정상WEB/키/DB/Credit/History 변경0. [검토·Owner 절차](../90_HISTORY/REVIEWS/2026-10-23-essay-jwt-lifecycle-review.md).
+
 ## 2026-10-23 최신 — Owner 기존 서명키 JWT 복구 절차 준비
 
 기존 로컬 발급 도구 재사용: Essay essay_worker/HS256/iss·aud생략/365일, Math 두 전용역할/HS256/iss=supabase/aud생략/7일 유지. 숨김 입력·메모리 서명·읽기 인증 PASS 후 클립보드 복사, Owner가 Pages Production 직접 등록. 합성검사4PASS, 실제 발급/등록0·DB/Credit/History/Provider0. Service Token은 Owner 원문 유지; Math Provider key는 별도 기존값 필요. [Owner 실행 명령](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/tool/cloudflare_essay/OWNER_JWT_RECOVERY.md).
