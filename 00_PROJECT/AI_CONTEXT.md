@@ -1,6 +1,6 @@
-## 2026-10-23 P0 최신 — 성균 v15 Worker 배포·Owner SQL 대기
+## 2026-10-23 최신 — 성균관 WEB 운영 검증
 
-성균관대 이용권한 Owner 확인. 공식·부분·오답·대안·재작성5종 v15 평가/독립검수PASS. Worker `fef5aefd-380b-4185-a6d4-64e59b204048`100% 실측, 기존80 Registry/정책설정/공개범위 보존 + 성균 metadata1=81. 격리SQL11검사PASS, 배포 후 운영 read-only 사전검사10true. Owner 직접 적용·사후15검사 대기, DB변경0. 기존4대학6문항 운영E2E·일반공개건국2·423/89 기준 유지. 실기기 설치PASS/Android 로그인·MY표시 확인, 실기기E2E 미완료. 품질원장106회 시점 알려진 비용USD8.588736/미확정1; 이후 다른 대학 사례 검증 진행 중. [전체 실행·SQL파일·보존범위·복구](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+성균관대 Q1 Owner SQL 적용·DB사후15검사PASS. WEB 최초/무료재첨삭 완료·독립검수각8PASS·Credit1/0·History/5→5비교PASS, Provider4회 추산USD0.292412. 실기기 교차조회·문제PDF 노출 미완료, 공개2 유지. 성균관은 WEB 검증1문항 추가이며 기존4대학6문항 전체 E2E 기준과 구분. [상세·실행ID·잔여](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
