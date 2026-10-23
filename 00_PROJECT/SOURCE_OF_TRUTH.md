@@ -1,5 +1,9 @@
 ## 2026-10-23 22:19 KST 최신 — Service Token 실제 인증 및 서울여 기술 경로 확인
 
+## 2026-10-23 23:40 KST — 일괄512 조립 / 다대학 Owner SQL 대기
+
+157시험512문항/154묶음 초안, 상속423·미상속89, Essay입력22PASS+과거Math1 보존. FULL23/DIAGNOSTIC0/REVIEW489는 중간검수범위. 건국·성균·숭실6시험7문항 pre11/post14 격리PASS·운영pre11true, Owner적용대기. Worker d1036134 준비배포/WEB ff327e92 ca6022b 보존; 신규공개0. SWUrevision3 보존, Q2 pending key 충돌로 제출전차단/차감0. 신규Provider35회 추정USD6.717716·불명1, 누적199회 추정USD20.490748·불명2. 전체서비스 미완료. [전수표·파일·실패명세](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md#일괄-조립다대학-적용-패키지--2026-10-23-2340-kst). 아래 과거 체크포인트보다 이 검증을 우선한다.
+
 Owner4Secret복원 후 기존WEBca6022b를ff327e92로 동일소스 배포. 실제Pages→Worker 인증PASS; 서울여Q1 최초/재첨삭 completed·1/0Credit settled,110→109→109. WEB PDF·평가근거·성장비교·새로고침 없는 History 복귀 확인. GalaxyS8 두기록·4→5성장비교 직접확인, 평가근거Owner확인. 최초부분답안의 소문항(2)누락 미지적은 v17후보6답안 재검증PASS. Q1보완+Q2묶음 revision3 Owner적용·독립사후10true·조회함수일치 확인. READER_BASELINE_CHANGED는 이미 적용된 상태에서 확인됐으며 재실행/롤백 불필요. Q2운영E2E는 다음 작업. Worker3922d417는 기존정책 유지+v17추가. 기존Worker/정책/ID/기록·롤백a8796fb4보존; 운영SQL실행0. 전체Registry237시험700문항, 기존512 중요청연도509·2021경희3보존. 182PDF/154묶음 검사,114추출통과는 운영PASS가 아니다. 전체서비스연결 미완료. [증거](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md#service-token-recovery-and-swu-operating-runs).
 
 아래 항목은 이전 시점의 기록이다.
