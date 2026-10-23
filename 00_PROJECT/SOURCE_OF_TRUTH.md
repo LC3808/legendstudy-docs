@@ -1,6 +1,6 @@
-## 2026-10-23 최신 — 성균 Q1 일반계정 WEB 연결 PASS / 실기기 대기
+## 2026-10-23 최신 — 성균 Q1 WEB·GalaxyS8 PDF/첨삭 진입 PASS
 
-Owner PDF SQL 사후검증PASS. WEB29b85199/Worker85a7a6a5에서 일반계정 PDF2/6·첨삭1Credit 버튼PASS, Q2/Q3 준비중 보존. 공개 WEB 연결3문항(기존건국2+성균Q1). GalaxyS8 0.1.0/build2026102302 설치PASS; 미러링 터치 불응으로 실기기 확인 대기. 신규 Provider/Credit 소비0. [상세](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+Owner PDF SQL 사후검증PASS. WEB29b85199/Worker85a7a6a5에서 일반계정 PDF2/6·첨삭1Credit 버튼PASS, Q2/Q3 준비중 보존. 공개 WEB 연결3문항(기존건국2+성균Q1). GalaxyS8 0.1.0/build2026102302 설치PASS; 실기기 문제 표시·첨삭 버튼 동작 Owner PASS. 일반계정 실제 평가·재첨삭·History 별도 미검증. 신규 Provider/Credit 소비0. [상세](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
