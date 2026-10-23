@@ -1,6 +1,6 @@
-## 2026-10-23 최신 — 성균관 WEB 운영 검증
+## 2026-10-23 최신 — 성균 Q1 일반계정 연결 후보
 
-성균관대 Q1 Owner SQL 적용·DB사후15검사PASS. WEB 최초/무료재첨삭 완료·독립검수각8PASS·Credit1/0·History/5→5비교PASS, Provider4회 추산USD0.292412. 실기기 교차조회·문제PDF 노출 미완료, 공개2 유지. 동일계정 Native iOS Simulator History/결과/5→5비교도PASS: 기존6 보존+성균1=5대학7문항(실기기 제외). [상세·실행ID·잔여](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+Owner 실기기에서 PDF/서비스 준비중 확인. 승인PDF map·공개목록 연결 후보 준비, 시작쪽6→2 수정. SQL사전9·격리권한7·WEB24·APP15 및 WEB빌드PASS. Owner Storage SELECT SQL 적용 대기, 아직 미배포·일반계정 미검증. 기존 운영자/Simulator5대학7문항과 공개2를 구분. [상세·SQL 경로](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
