@@ -1,6 +1,14 @@
-## 2026-10-23 최신 — 11대학 연결 후속 / 서울여대 Owner SQL 대기
+## 2026-10-23 최신 — 전체512 일반계정 기본 / 배포 복구 대기
 
-성균 일반계정1/0Credit·WEB/GalaxyS8 History와 기존 UI 배포 완료를 재사용한다. UI 추가 수정 없음. 운영E2E5대학7문항/일반공개3문항, 프로필423/512·미상속89 유지. 서울여·숭실 미검증 재작성/대안 실제Provider·독립8항목PASS. 서울여Q1 Worker80e1badb 배포/설정보존PASS·격리SQL11검사/운영사전10true, **Owner SQL 적용 대기**. 신규 운영 History 자동반영·1/0Credit·WEB/APP는 적용 이후 미완료다. 경희 대안의 의미과잉진단·항공 인용범위 실패는 v16격리후보 재검증PASS, 회귀/운영승격은 미완료로 운영v15 유지. 이번16호출/추정USD1.276760, 격리누적143호출(142완료/1미확정)/USD11.763768, 실청구미확인·운영Credit0. [11대학표·최신비용·Owner SQL·배포·실패](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+Owner 지시: 일반계정 공개 기본, 기존 Essay/Math와 대학별 프로필 재사용, 전체512문항을 묶음 검증·활성화. Production SQL은 Owner 직접 실행. 512ID와 상속423 재대조PASS,89미상속 유지. 기존5대학7문항E2E/공개3 보존. 서울여 SQL사후15true·입력조립PASS이나 실제운영1/0Credit·신규History·WEB/APP 미완료. [전수 대학별 표·분류 한계](../90_HISTORY/REVIEWS/2026-10-23-essay-batch-service.md).
+
+**복구 필요:** agent의 Pages 설정 PATCH가 마스킹된 Secret값을 재전송했고 신규배포에서503 WORKER_UNAVAILABLE 발생. 이전 a8796fb4로 롤백해 기존 성균 첨삭 버튼 활성 복구 확인. 다음 배포 전 Production Secret9개 기존값 복원 필요, Owner 확인 대기. 결제/Auth 전체 재검증은 미완료이며 설정 보존을 주장하지 않는다. 이번 Provider0/DB변경0; 기존 격리143호출·추산USD11.763768 유지. [오류 원인·영향·복구·필요조치](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md#swu-public-configuration-incident-and-rollback--2026-10-23).
+
+아래는 과거 체크포인트이며 위 최신 상태를 우선한다.
+
+## 2026-10-23 최신 — 11대학 연결 후속 / 서울여대 Owner SQL 사후검증 PASS
+
+성균 일반계정1/0Credit·WEB/GalaxyS8 History와 기존 UI 배포 완료를 재사용한다. UI 추가 수정 없음. 운영E2E5대학7문항/일반공개3문항, 프로필423/512·미상속89 유지. 서울여·숭실 미검증 재작성/대안 실제Provider·독립8항목PASS. 서울여Q1 Worker80e1badb 배포/설정보존PASS·격리SQL11검사/운영사전10true, **Owner 적용·독립 사후15true**. 신규 운영 History 자동반영·1/0Credit·WEB/APP는 적용 이후 미완료다. 경희 대안의 의미과잉진단·항공 인용범위 실패는 v16격리후보 재검증PASS, 회귀/운영승격은 미완료로 운영v15 유지. 이번16호출/추정USD1.276760, 격리누적143호출(142완료/1미확정)/USD11.763768, 실청구미확인·운영Credit0. [11대학표·최신비용·Owner SQL·배포·실패](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 아래는 날짜별 과거 체크포인트이며, 이전 공개2/상속387·125/운영5·6 수치를 현재 값으로 사용하지 않는다.
 
