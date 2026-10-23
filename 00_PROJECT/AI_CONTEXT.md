@@ -1,4 +1,9 @@
 <!--
+
+## 최신 체크포인트 — 2026-10-23 프로필 대표3문항 운영 E2E
+
+숙명2025모의1-1 APP 실제 최초·무료재첨삭→WEB, 숙명2026수시1/서강2026모의 경제경영 WEB 실제 최초·무료재첨삭→APP PASS. Credit 각1/0·실패3건0, 관리자잔액97. Worker `6b7593a4`, APP `b1d5b1c`; WEB source ad6ffec 및 config배포17244d3b. 신규3문항 일반공개 확대 없음; Android/iPhone 신규코드 미검증. 전체11대학 PARTIAL, 387상속/125보완 유지. [실제 실행·장애·비용·대학별 범위](../90_HISTORY/REVIEWS/2026-10-23-university-profile-production-e2e.md). 아래 날짜별 상태는 과거 근거이며 이 최신 체크포인트와 구분한다.
+
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-01
