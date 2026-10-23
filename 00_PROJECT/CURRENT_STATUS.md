@@ -1575,3 +1575,7 @@ rejects issuance. Historical pre-refund422 remains unresolved. Google package no
 matches. Apple WebCrypto/OCSP draft23tests and isolated Edge EC/RSA PASS; actual
 Apple transaction/device acceptance pending. Production/Essay changes0 by agent.
 [Investigation and exact next gate](../90_HISTORY/2026-10-23-iap-recovery-investigation.md).
+
+## 2026-10-23 IAP Owner-approved recovery update
+
+Production verifier v23 deployed with JWT enabled; Apple OCSP P384/SHA256 runtime incompatibility corrected without bypass. Existing iOS1+3 Credit recovered, Owner device and canonical Ledger confirmed (one grant each, duplicate0, spendable11). Android official release100% and four SKUs active; Owner purchaser is a license tester, non-test real-charge E2E pending. Signup missing3 is Owner-confirmed re-registration; existing-identity benefit suppression retained. Current Admin DB lookup succeeds, school cache miss0. APP branch commit9830bc6. Full sanitized [evidence](../90_HISTORY/2026-10-23-iap-recovery-investigation.md). No Essay worker/DB/Secret changes.
