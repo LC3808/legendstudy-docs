@@ -1,3 +1,9 @@
+## 2026-10-23 21:41 KST 최신 — JWT3개 인증 복구 확인
+
+Owner30일 복구 승인·JWT3/Service Token 등록, Provider 키 유지 보고. 배포 차단 진단7c06ee59에서 Registry200·Math2종400/22023 인증PASS. Service Token은 비어 있지 않으나 실제Worker 인증미검증. **현재 프로젝트 Provider key는 여전히EMPTY_VALUE**; 현재 정상WEB의 별도 바인딩 실패를 뜻하지 않는다. 정상a8796fb4·pnpm build 보존, 신규WEB승격/Worker/DB/Credit/History 변경0·Provider생성0. 서울여/전체512연결은 미완료. [독립검사·잔여범위](../90_HISTORY/REVIEWS/2026-10-23-essay-jwt-lifecycle-review.md#owner-registration-recheck).
+
+아래는 이전 체크포인트이며 위 사후검사 결과를 우선한다.
+
 ## 2026-10-23 최신 — JWT30일 복구 후보·갱신 설계 검토
 
 운영 성공로그 기준 Math2종 만료2026-10-30 00:30:23KST, Essay2027-10-14 14:05:09KST. 기존역할/issuer/audience/HS256 유지한30일은 코드상 호환후보, 실제발급·운영acceptance 미실행. eyJ는 토큰이며 서명키가 아니다. 기존 로컬 도구30일 명시옵션/5검사PASS. 만료7일 전 갱신·독립감시·실패알림·신구중첩/롤백은 설계만, 자동화미설치. 현재5Secret빈값 복구와 구분. 정상WEB/키/DB/Credit/History 변경0. [검토·Owner 절차](../90_HISTORY/REVIEWS/2026-10-23-essay-jwt-lifecycle-review.md).
