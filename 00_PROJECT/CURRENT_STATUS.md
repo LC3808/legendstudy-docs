@@ -1567,3 +1567,11 @@ These are **current** pointers, not pinned evidence (which uses commit SHAs — 
 
 
 Owner authenticated acceptance: all requested Admin directory checks passed (immediate list/count, search/filter/sort/pagination where applicable, school names, Member Detail/Student360, tested denial boundaries). Owner requested ordinal numbers; bfc20c0 implements display-only server offset + position +1. No claim of extra test accounts or >25 Production members created.
+
+## IAP recovery — Oct23 read-only evidence / local draft
+
+Android reported orders are API-verified refunded TEST purchases; current state1
+rejects issuance. Historical pre-refund422 remains unresolved. Google package now
+matches. Apple WebCrypto/OCSP draft23tests and isolated Edge EC/RSA PASS; actual
+Apple transaction/device acceptance pending. Production/Essay changes0 by agent.
+[Investigation and exact next gate](../90_HISTORY/2026-10-23-iap-recovery-investigation.md).
