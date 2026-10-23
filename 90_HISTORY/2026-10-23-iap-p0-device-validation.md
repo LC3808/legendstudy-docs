@@ -104,3 +104,11 @@ as distinct from production distribution. Development signing is confirmed; the
 precise reason this device received USD remains unverified until storefront check.
 
 APP source commit b75bac51848ef68d7c5432142f787a9c19dcdf14 pushed and remote SHA matched. This is NOT an APP target-branch merge.
+
+## Later Owner acceptance / Android rebuild
+
+Owner confirms iPhone prices returned to KRW. No code/account/currency override;
+transient USD cause remains unproven. Android signed1.0.0+18 rebuilt PASS with
+Flutter3.47.7, same artifact SHA256 as above. Only existing Play SM-G950N detected;
+separate Android test device pending, no uninstall or merge. APP evidence commit
+`a1a64c1` on codex/iap-credit-production-recovery-20261023.

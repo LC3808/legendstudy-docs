@@ -14,8 +14,7 @@ SUPERSEDED_BY: —
 
 Flutter3.47.7/Dart3.13.5; source and scoped APP-target candidate Android/iOS builds
 PASS. Source analyze/Credit26/regression49; candidate analyze/UI6/regression34 PASS.
-iPhone12 installed/launched and Owner UI completion reported; USD storefront
-follow-up remains. Android separate device pending (Play/upload signer mismatch;
+iPhone12 installed/launched and Owner UI completion and restored KRW display confirmed. Android separate device pending (Play/upload signer mismatch;
 no uninstall). Expiry exact-second SQL isolated PASS, Production NOT_APPLIED.
 Target claude/app-release-readiness-eab636 confirmed; no merge/Store submission.
 [Full evidence and remaining acceptance](../90_HISTORY/2026-10-23-iap-p0-device-validation.md).
