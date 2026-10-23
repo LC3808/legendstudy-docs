@@ -1,3 +1,7 @@
+## 2026-10-23 최신 — Owner 기존 서명키 JWT 복구 절차 준비
+
+기존 로컬 발급 도구 재사용: Essay essay_worker/HS256/iss·aud생략/365일, Math 두 전용역할/HS256/iss=supabase/aud생략/7일 유지. 숨김 입력·메모리 서명·읽기 인증 PASS 후 클립보드 복사, Owner가 Pages Production 직접 등록. 합성검사4PASS, 실제 발급/등록0·DB/Credit/History/Provider0. Service Token은 Owner 원문 유지; Math Provider key는 별도 기존값 필요. [Owner 실행 명령](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/tool/cloudflare_essay/OWNER_JWT_RECOVERY.md).
+
 ## 2026-10-23 21:11 KST 최신 — 현재 Production Secret5개 빈 값 확정
 
 기존 WEB을 교체하지 않는 Production 빌드 전용 진단0cc2b617에서 Essay Registry JWT/Service Token, Math Evaluation JWT/Extraction JWT/Provider key 모두 **EMPTY_VALUE** 확인. 변수 미주입과 구분했다. 인증 HTTP 미전송(401 아님), Provider0/DB변경0. 진단 exit73으로 새 배포 차단, 정상a8796fb4 및 pnpm build 복원·보존. Owner에게 확인된5개만 기존값 복원 요청; 카카오·토스·결제 변경 제외. 이전9개 전체복원 요구는 이 범위로 정정한다. 복원 후 인증 재검증·서울여 E2E·전체512연결은 미완료. [실행증거·복구절차](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md#current-project-secret-diagnosis--2026-10-23-2111-kst).
