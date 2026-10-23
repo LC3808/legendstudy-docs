@@ -75,3 +75,8 @@ Repo: [`LC3808/legendstudy-lab`](https://github.com/LC3808/legendstudy-lab) · B
 - [`90_HISTORY/OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md`](OWNER_DIRECTIVES/2026-10-08-admin-members-essay-foundation.md) — 관리자·회원·Student360 기반 Owner 지시
 - [`90_HISTORY/EVIDENCE/2026-10-09-admin-grant-golive.json`](EVIDENCE/2026-10-09-admin-grant-golive.json) — 수동 Credit 지급 go-live evidence
 - [`00_PROJECT/SOURCE_OF_TRUTH.md`](../00_PROJECT/SOURCE_OF_TRUTH.md) — capability 레지스트리(#16 Quality Console: lab future)
+
+---
+
+## 후속 (2026-10-24)
+관리자 콘솔 미완료 GAP은 MY P1과 함께 통합 백로그에 P1 후속으로 정리: [`90_HISTORY/2026-10-23-my-admin-p1-backlog.md`](2026-10-23-my-admin-p1-backlog.md). PR #2는 Open 유지.
