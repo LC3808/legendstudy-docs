@@ -1,6 +1,6 @@
-## 2026-10-23 최신 — 성균 Q1 WEB·GalaxyS8 PDF/첨삭 진입 PASS
+## 2026-10-23 최신 — 성균 Q1 일반계정 실제 평가·무료재첨삭·WEB/APP History PASS
 
-Owner PDF SQL 사후검증PASS. WEB29b85199/Worker85a7a6a5에서 일반계정 PDF2/6·첨삭1Credit 버튼PASS, Q2/Q3 준비중 보존. 공개 WEB 연결3문항(기존건국2+성균Q1). GalaxyS8 0.1.0/build2026102302 설치PASS; 실기기 문제 표시·첨삭 버튼 동작 Owner PASS. 일반계정 실제 평가·재첨삭·History 별도 미검증. 신규 Provider/Credit 소비0. [상세](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+최초/재첨삭 completed·Ledger1/0Credit·잔액1→0→0. 양쪽3기준5/5·독립8검수PASS. WEB History/5→5비교·GalaxyS8 실제 두기록19:58/19:59 교차조회PASS. 기존ID/정책/이전기록 보존. Provider4회·추산USD0.290560, 실청구 미확인. 신규배포/SQL없음. 공개3문항 유지. [실행ID·증거·잔여UX](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
 
 ## 2026-10-23 최신 — 고려 대표 운영 E2E PASS
 
