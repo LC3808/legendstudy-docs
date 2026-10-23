@@ -1,3 +1,7 @@
+## 2026-10-23 최신 재개 — 고려대 Owner SQL 준비 / 운영 미적용
+
+현재28기본체계·423/512상속·89잔여·운영5·공개건국2·품질57회 기준. 과거387/125·41회는 이력이다. v12 로더/49검사·한문항SQL 격리8검사/입력조립 PASS, Production read-only10검사true. Owner SQL 직접실행 확정. **현재Worker6b7593a4 100%, v12 미배포이므로 SQL 적용 전 배포확인 필요.** DB/Provider/Credit 변경0. [정확한 범위·SQL·복구·남은gate](../90_HISTORY/REVIEWS/2026-10-23-korea-operating-owner-sql.md).
+
 
 ## 2026-10-23 공식 평가자료 연결 후속 — PARTIAL
 
