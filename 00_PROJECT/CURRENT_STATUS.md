@@ -2,6 +2,9 @@
 
 기본 진단체계28개 검수(공식 파생 방향과 내부 가이드 분리), 기존150보존·237추가로387/512상속. 미상속125=평가자료 참조누락78+학년도/유형범위47. 문항별 전체 근거·조립5(기존4+서강경제경영1), 최신 기본체계 Essay4입력PASS. 49계약검사PASS, 새Provider/Production변경0. 기본체계 검수와 실제 문항평가 가능은 별개; 전체 PHASE2 PARTIAL. 기존 건국 운영2·UI/Credit/History보존. [범위·실패·검증](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-phase2.md).
 
+
+Owner 확정 확대 순서: 누적 **11→22→30→35개 이상**. 현재11대학 PHASE2 우선 완료, 기존 작업 재수행 없이 프로필 재사용·신규 대학 평가체계 추가. 대학별 대표 실제E2E 후 정상 문항부터 반영. [로드맵](../90_HISTORY/REVIEWS/2026-10-23-university-evaluation-profile-strategy.md).
+
 ## 2026-10-23 — 대학별 첨삭 프로필 PHASE 1 설계 완료
 
 Owner 전략18d5b70을 기존 서비스계약과 대조. 기존Essay 가변criteria, Math 버전profile/기존scope 재사용. private revision JSON→문항공식근거우선합성→기존검수package/Math context가 권고안. 새테이블/RPC/Worker 기본제안없음; 프로필후보30+는공식검수확정수가아님. 적용학년도자동확장/숫자부분점수추정금지.
