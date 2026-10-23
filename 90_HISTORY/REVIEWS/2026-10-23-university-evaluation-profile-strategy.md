@@ -42,3 +42,6 @@ Owner가 1단계를 확인하면 기존 평가 입력 계약에 프로필 선택
 
 ## 제품 North Star
 “한 번도 사용하지 않은 사람은 있어도, 한 번만 사용한 사람이 없도록.” 학생에게 대학별로 정확한 피드백과 재작성에 따른 성장 경험을 제공한다. **공통 UX, 대학별 평가, 문항별 근거.**
+
+## Owner 최종 명확화 — 2026-10-23
+대학·유형별 기본체계를 먼저 검수하고 기존 문항에 상속한다. 512개 독립 프로필을 만들지 않는다. 변경이 검증된 학년도·시험만 보정하며 문항 고유 기준을 우선한다. PROFILE_READY/PROFILE_MAPPED/QUESTION_EVIDENCE_READY/EVALUATION_READY/E2E_PASS를 분리한다. 공통 역량 진단 범위와 문항 정답 정확성 평가 범위도 분리한다. 기존 운영·UI·Credit·History는 보존한다. [진행 결과](2026-10-23-university-evaluation-profile-phase2.md).
