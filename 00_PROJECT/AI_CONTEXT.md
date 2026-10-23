@@ -1,7 +1,6 @@
-## 2026-10-23 최신 재개 — 고려대 Owner SQL 준비 / 운영 미적용
+## 2026-10-23 최신 — 고려 Worker v12 배포 / Owner SQL 대기
 
-현재28기본체계·423/512상속·89잔여·운영5·공개건국2·품질57회 기준. 과거387/125·41회는 이력이다. v12 로더/49검사·한문항SQL 격리8검사/입력조립 PASS, Production read-only10검사true. Owner SQL 직접실행 확정. **현재Worker6b7593a4 100%, v12 미배포이므로 SQL 적용 전 배포확인 필요.** DB/Provider/Credit 변경0. [정확한 범위·SQL·복구·남은gate](../90_HISTORY/REVIEWS/2026-10-23-korea-operating-owner-sql.md).
-
+Worker `2413fe3d-226d-4181-92a8-0eda81e2309e` 100%를 실제 API로 확인. v12 prompt/loader 일치, 기존79 Registry/설정 보존 + 고려 추가80. DB read-only10검사true·변경0, Owner 직접 SQL 후 운영 검증 필요. 품질59회/추산USD4.854720(+2회/USD0.163360), 서강A v12 자동검수PASS이나 calibration PARTIAL. 28체계/423상속/89잔여/운영5/공개2 유지. 과거387/125·57회는 이력. [전체SQL·검증·복구·배포증거](../90_HISTORY/REVIEWS/2026-10-23-korea-operating-owner-sql.md).
 
 ## 2026-10-23 공식 예시답안 품질 검증 진행 — PARTIAL
 
