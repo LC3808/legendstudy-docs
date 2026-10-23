@@ -1,3 +1,9 @@
+## 2026-10-23 최신 — 11대학 연결 후속 / 서울여대 Owner SQL 대기
+
+성균 일반계정1/0Credit·WEB/GalaxyS8 History와 기존 UI 배포 완료를 재사용한다. UI 추가 수정 없음. 운영E2E5대학7문항/일반공개3문항, 프로필423/512·미상속89 유지. 서울여·숭실 미검증 재작성/대안 실제Provider·독립8항목PASS. 서울여Q1 Worker80e1badb 배포/설정보존PASS·격리SQL11검사/운영사전10true, **Owner SQL 적용 대기**. 신규 운영 History 자동반영·1/0Credit·WEB/APP는 적용 이후 미완료다. 경희 대안의 의미과잉진단·항공 인용범위 실패는 v16격리후보 재검증PASS, 회귀/운영승격은 미완료로 운영v15 유지. 이번16호출/추정USD1.276760, 격리누적143호출(142완료/1미확정)/USD11.763768, 실청구미확인·운영Credit0. [11대학표·최신비용·Owner SQL·배포·실패](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
+
+아래는 날짜별 과거 체크포인트이며, 이전 공개2/상속387·125/운영5·6 수치를 현재 값으로 사용하지 않는다.
+
 ## 2026-10-23 최신 — History 자동갱신·저장된 평가 근거 표시 수정 PASS
 
 성균 Q1 일반계정 실제1/0Credit·WEB/APP History PASS 유지. 복귀/재활성화/주기 History 갱신, 기준별 저장판단·근거참조 표시 수정. WEB a8796fb4/ca6022b·GalaxyS8 build2026102303 실제표시PASS. WEB4·Native26검사·빌드PASS. 기존정책/ID/평가기록·Ledger 보존검증PASS. 추가Provider/Credit0·SQL없음. [상세·검증범위·복구](../90_HISTORY/REVIEWS/2026-10-23-essay-p0-direct-execution.md).
