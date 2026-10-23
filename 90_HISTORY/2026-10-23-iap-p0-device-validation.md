@@ -1,5 +1,14 @@
 # Owner P0 — Payment / Credit / MY native validation (2026-10-23)
 
+**ACCEPTANCE WITHDRAWN — Owner follow-up Oct23:** Installed4035592 uses obsolete
+Claude baseline c3ac6ec with only payment UI integrated. Current APP has60 differing
+lib files including material catalog/PDF/shared History/Math/native UX. Startup
+delete redirect and orange CTA are confirmed old-code regressions. Production URL
+is correct; runtime DB disconnect is not proven. Partial theme/startup candidate
+was NOT installed/published. Full baseline reconciliation required; release HOLD.
+See APP evidence3817694. Earlier PASS below is historical and superseded.
+
+
 Latest Owner returns work to `legendstudy-iap-fix`, branch
 `codex/iap-credit-production-recovery-20261023`. Initial dirty PHASE1 Wiki notes
 were preserved in e9722bd. UI from c603059/32eb5b7 was brought forward explicitly;

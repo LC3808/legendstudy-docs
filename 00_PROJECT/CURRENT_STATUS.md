@@ -10,15 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## Payment Codex P0 native validation — 2026-10-23 — APP INTEGRATED
+## Payment Codex P0 — 2026-10-23 — ACCEPTANCE WITHDRAWN / RELEASE HOLD
 
-Flutter3.47.7/Dart3.13.5; final target Android/iOS release builds, analyze and40
-regression tests PASS. Galaxy S8 and iPhone12 final candidate accepted by Owner.
-APP remote `claude/app-release-readiness-eab636` verified at
-`40355925c8cb7cc4787c6393681568e8457f0949` (scoped UI11 + Wiki4 files).
-Existing refund/onboarding/backend preserved; no other worktree edits. Expiry
-exact KST23:59:59 SQL isolated PASS but Production NOT_APPLIED; no Store submission.
-[Full evidence and remaining release gates](../90_HISTORY/2026-10-23-iap-p0-device-validation.md).
+Owner reports obsolete UI and missing latest material connection after4035592.
+Confirmed wrong integration baseline: Claude c3ac6ec lacks current APP changes
+across60 lib files. Payment-only selective integration did not preserve full APP.
+No partial-fix installation or additional merge; full baseline reconciliation next.
+Production URL correct; runtime DB disconnect unproven. Expiry SQL NOT_APPLIED.
+[Corrected evidence](../90_HISTORY/2026-10-23-iap-p0-device-validation.md).
 
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
 Owner-directed release-readiness snapshot (target 2026-10-25). Claude owns Apple
