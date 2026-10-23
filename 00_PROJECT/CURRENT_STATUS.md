@@ -10,6 +10,16 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Payment Codex P0 native validation — 2026-10-23 — MERGE PENDING
+
+Flutter3.47.7/Dart3.13.5; source and scoped APP-target candidate Android/iOS builds
+PASS. Source analyze/Credit26/regression49; candidate analyze/UI6/regression34 PASS.
+iPhone12 installed/launched and Owner UI completion reported; USD storefront
+follow-up remains. Android separate device pending (Play/upload signer mismatch;
+no uninstall). Expiry exact-second SQL isolated PASS, Production NOT_APPLIED.
+Target claude/app-release-readiness-eab636 confirmed; no merge/Store submission.
+[Full evidence and remaining acceptance](../90_HISTORY/2026-10-23-iap-p0-device-validation.md).
+
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
 Owner-directed release-readiness snapshot (target 2026-10-25). Claude owns Apple
 Sandbox/StoreKit, IAP refund notifications, iOS signing/Archive/TestFlight, splash/
