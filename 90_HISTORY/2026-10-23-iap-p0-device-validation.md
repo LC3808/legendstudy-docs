@@ -32,9 +32,9 @@ change. Run native builds sequentially after tests.
 | Android source APK | PASS; com.legendstudy.app,1.0.0+18,89,477,950 bytes |
 | Android APK SHA256 | 89796069c07c8cd316f33a4be0ab3e3460aba666e23534b236e455f3a860dfb2 |
 | iOS source release | PASS; com.legendstudy.app, existing team/signing,36.3MB |
-| Android device | Existing SM-G950N Play build1.0.0+18; installed Play signer differs from existing upload key. No uninstall/data clear attempted. Owner selected separate test device; it has not appeared in adb yet. |
+| Android device | SM-G950N: Owner explicitly authorized removal/reinstall after signer mismatch. Uninstall found package already absent; fresh source installation and final candidate update succeeded. Owner confirmed final candidate normal. |
 | iPhone device | Owner clarified iPhone12ProMax “자유잍튜브”; install and launch PASS. Earlier iPhone17ProMax attempts failed locked and made no installation. |
-| Physical UI acceptance | Owner replied 완료 to the UI checklist; exact balance number not supplied. New issue: USD prices2.99/6.99/9.99/19.99. No new purchase. |
+| Physical UI acceptance | Owner replied 완료 to the UI checklist; exact balance number not supplied. Owner subsequently confirmed prices returned to KRW. No new purchase; transient USD cause unproven. |
 
 Existing signing references and production public config reused in ignored local
 files only. No new key/account/certificate. Public config targets LegendStudy
@@ -50,7 +50,7 @@ stlhijzpjfgwwdgunlsd; package/bundle unchanged. No Store upload/submission.
 - Purchase-history first back → top-up; subsequent back → prior page.
 - LAB copy uses Owner's university-criteria/self-revision sentence.
 
-No new storage design; the [payment preservation review](https://github.com/LC3808/legendstudy-app/blob/b75bac51848ef68d7c5432142f787a9c19dcdf14/wiki/payment-app-foundation.md)
+No new storage design; the [payment preservation review](https://github.com/LC3808/legendstudy-app/blob/640c24e/wiki/payment-app-foundation.md)
 applies: immutable transaction facts, shared account identity, derived summary,
 financial/learning separation, owner-only access. Dates display current server
 terms; UI does not pretend the new expiry policy is already deployed.
@@ -58,34 +58,36 @@ terms; UI does not pretend the new expiry policy is already deployed.
 Target snapshot c3ac6ec2b156a5aa1f5ae5bb0c072bedb03b0fe8 contains distinct refund,
 onboarding and brand work. Whole-file overwrite of router/profile would introduce
 unrelated source-branch device-intro, aspirations and LAB label differences.
-Prepared [scoped patch](https://github.com/LC3808/legendstudy-app/blob/b75bac51848ef68d7c5432142f787a9c19dcdf14/tool/iap_recovery/p0_scoped_app_merge.patch) preserves
+Prepared [scoped patch](https://github.com/LC3808/legendstudy-app/blob/640c24e/tool/iap_recovery/p0_scoped_app_merge.patch) preserves
 those target choices, changes only11 UI/test files, and passes git apply check on
 an isolated target index. Candidate archive is under this worktree's ignored
 build/device-validation/merge-candidate; other worktrees/target refs untouched.
 Candidate analyze PASS, focused UI6 and auth/LAB regression34 PASS. Candidate Android release PASS.
 Candidate iOS release PASS (34.7MB). Both candidate builds retain existing signing.
 
-**MERGE NOT EXECUTED. MERGE SHA: none.** Owner requires physical verification first.
-Recheck target SHA before applying the patch. Source commit is not a merge commit;
-pre-merge candidate checks are not post-merge regression claims.
+Scoped integration commit published: `40355925c8cb7cc4787c6393681568e8457f0949`, parent target c3ac6ec2. Eleven UI/test files plus four Wiki files, preserving target refund/onboarding/backend. Both final candidate devices accepted by Owner. Publication and post-integration checks recorded below; other worktrees remain untouched.
 
 ## Expiry review — Production NOT_APPLIED
 
 Latest Owner specifies exactly KST23:59:59 (prior draft fractional second removed).
 Fresh read-only scope: Apple+1 and+3 → Jan22 2027 23:59:59KST; Google+1 → Jan23
 2027 23:59:59KST. Existing quantities/transactions stay unchanged, no new grant.
-[Owner SQL and procedure](https://github.com/LC3808/legendstudy-app/blob/b75bac51848ef68d7c5432142f787a9c19dcdf14/tool/iap_recovery/expiry/README.md) retains old terms
+[Owner SQL and procedure](https://github.com/LC3808/legendstudy-app/blob/640c24e/tool/iap_recovery/expiry/README.md) retains old terms
 in restricted immutable audit, verifies runtime/inventory, restores grant guard,
 and keeps old/new receipt replay compatible. Isolated Postgres contract rerun PASS
 for the exact-second version. It does not mean Production apply. No DB mutation.
 
-## Remaining acceptance
+## Final device acceptance and remaining release gates
 
-1. Connect separate Android device with USB debugging/trust; install signed APK.
-2. Finish iPhone and Android UI/unchanged-session/balance and existing content checks.
-3. Verify final target candidate native builds/device paths, then scoped merge only.
-4. Re-run analyze/build/regression on merged tree, push and compare remote SHA.
-5. Record final results in Unified Wiki; app distribution still needs Owner confirmation.
+Owner first confirmed source Android, then explicitly confirmed both final
+APP-target candidate devices normal. Final candidate APK update PASS; iPhone
+candidate install PASS (automated launch encountered lock; subsequent Owner
+acceptance supersedes the launch-only limitation). Login, MY/balance/buttons,
+history/back, LAB/PDF/Essay History accepted; exact numerical balance not recorded.
+No new purchase. All 1,106 tracked candidate files matched the integration index
+before Wiki-only additions. Analyze and 40 focused regression tests PASS.
+
+Remaining: Production expiry SQL is NOT_APPLIED; no Store submission/distribution.
 
 ## iPhone USD price follow-up
 
@@ -96,19 +98,31 @@ development signing (get-task-allow=true), no local StoreKit configuration file.
 This is not the App Store-distributed binary even though Supabase is Production.
 Actual sandbox account/storefront is not yet known; Owner asked to inspect existing
 settings without changing account/country or buying. Do not force KRW strings over
-Apple's returned price. Price-region acceptance remains open.
+Apple's returned price. Owner subsequently confirmed the display returned to KRW without a code/account change; current price display accepted.
 
 Apple documents [displayPrice](https://developer.apple.com/documentation/storekit/product/displayprice)
 as storefront-localized and [development sandbox testing](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox)
 as distinct from production distribution. Development signing is confirmed; the
-precise reason this device received USD remains unverified until storefront check.
+precise reason for the transient USD response remains unverified.
 
-APP source commit b75bac51848ef68d7c5432142f787a9c19dcdf14 pushed and remote SHA matched. This is NOT an APP target-branch merge.
+## Android rebuild requested by Owner
 
-## Later Owner acceptance / Android rebuild
+Android release rebuild PASS with Flutter3.47.7/Dart3.13.5, existing signing,
+Production public config, com.legendstudy.app1.0.0+18. APK SHA256: `89796069c07c8cd316f33a4be0ab3e3460aba666e23534b236e455f3a860dfb2`.
+Historical rebuild checkpoint preceded device replacement. Owner subsequently authorized the existing SM-G950N reinstall; installation and final two-device acceptance completed as recorded above.
 
-Owner confirms iPhone prices returned to KRW. No code/account/currency override;
-transient USD cause remains unproven. Android signed1.0.0+18 rebuilt PASS with
-Flutter3.47.7, same artifact SHA256 as above. Only existing Play SM-G950N detected;
-separate Android test device pending, no uninstall or merge. APP evidence commit
-`a1a64c1` on codex/iap-credit-production-recovery-20261023.
+## Final publication and post-integration verification
+
+APP target `claude/app-release-readiness-eab636` fast-forward push PASS; remote SHA
+`40355925c8cb7cc4787c6393681568e8457f0949` exactly matches scoped integration.
+Single-parent selective integration, not a whole payment-branch merge. Code11 +
+Wiki4 files; no backend/config/dependency changes. Other worktrees and their local
+checked-out branch refs were left untouched; their next update must fast-forward
+from origin normally, preserving any local work.
+
+Post-integration tree: analyze PASS, Android release PASS (87.0MB), iOS release PASS
+(34.7MB), focused regression40 PASS. Candidate tracked-content equality verified;
+build output and local public configuration remain ignored. Android candidate APK
+SHA256 `3a70bebb349c4d5f21ceb640ff4dc15055bacc75f0b29c3658fac9b445d8a666`.
+Both physical devices Owner PASS. Wiki handoff/link checks PASS. Production expiry
+SQL remains NOT_APPLIED; no Store submission.
