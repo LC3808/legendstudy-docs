@@ -16,7 +16,8 @@ SOURCES: 90_HISTORY/2026-10-24-my-dashboard-redesign.md, 90_HISTORY/2026-10-23-a
 ## 연결 (기존 기록)
 - MY 재설계: [`90_HISTORY/2026-10-24-my-dashboard-redesign.md`](2026-10-24-my-dashboard-redesign.md) · PR [`legendstudy-lab#3`](https://github.com/LC3808/legendstudy-lab/pull/3) (commit `1bae540`)
 - 관리자 콘솔 PHASE 1~3: [`90_HISTORY/2026-10-23-admin-console-redesign-phase123.md`](2026-10-23-admin-console-redesign-phase123.md) · PR [`legendstudy-lab#2`](https://github.com/LC3808/legendstudy-lab/pull/2)
-- 각 GAP 상세는 위 두 문서 참조 — 본 백로그는 **중복 생성하지 않고** P1 후속으로 연결·명세한다.
+- 논술 LAB WEB UI: [`90_HISTORY/2026-10-24-essay-lab-ui-redesign.md`](2026-10-24-essay-lab-ui-redesign.md) · PR [`legendstudy-lab#4`](https://github.com/LC3808/legendstudy-lab/pull/4) (commit `39b1e19`)
+- 각 GAP 상세는 위 문서들 참조 — 본 백로그는 **중복 생성하지 않고** P1 후속으로 연결·명세한다.
 
 ---
 
@@ -108,6 +109,19 @@ P1로 중복 등록하지 않는다. (출처: MY 재설계 문서 / PR #3)
 - 공통 집계 규칙: 실패·중복 제외, 최초/재첨삭 구분(무료 재첨삭도 실제 작성 완료면 포함), 동일 답안 중복 저장 제외, 개인정보·답안 비노출·집계만, 표본 30명↑ 게이트, 순위/백분위/합격가능성 해석 금지, 기존 RLS 유지.
 
 ## 5. 상태
-- MY PR [#3](https://github.com/LC3808/legendstudy-lab/pull/3) · 관리자 PR [#2](https://github.com/LC3808/legendstudy-lab/pull/2) — **둘 다 Open 유지.**
+- MY PR [#3](https://github.com/LC3808/legendstudy-lab/pull/3) · 관리자 PR [#2](https://github.com/LC3808/legendstudy-lab/pull/2) · 논술 LAB WEB PR [#4](https://github.com/LC3808/legendstudy-lab/pull/4) — **모두 Open 유지.**
 - main 병합 ✗ · Production 배포 ✗ · Production DB/Credit/Ledger 변경 ✗ · Codex 백엔드 파일 변경 ✗.
 - 위 P1 항목은 Codex 백엔드 완료 + Owner 승인 후 착수.
+
+## 6. 논술 LAB WEB UI — P1 미완료 (GAP)
+출처: [`2026-10-24-essay-lab-ui-redesign.md`](2026-10-24-essay-lab-ui-redesign.md) / PR #4. 완료분(결과·성장·History·미리보기
+프레젠테이션)은 PASS로 중복 등록하지 않는다. 아래는 WEB에 대상이 없어 **구현하지 않고 GAP으로 기록**한 항목.
+
+| # | 기능 | 현재 | 사유 | 필요 API/작업 | 담당 | 완료 판정 |
+|---|---|---|---|---|---|---|
+| K | 실제 작성→제출→AI 첨삭 흐름(§3) | essay-lab은 mock, runtime client 미연결 | WEB 작성 UI가 `EssayRuntimeClient`에 미연결 + 11대학 백엔드 미완 | Codex 백엔드 + WEB 작성/제출/상태 화면 연결 | Codex+Claude | 로그인 사용자가 실제 제출→상태→결과까지 WEB에서 완료 |
+| L | 문제영역 너비 제거(§4) | 대상 UI 없음(이미 반응형) | WEB에 너비 조절 UI 자체가 없음 | (PDF+너비 UI 신규 결정 시에만) | — | 해당 없음(요건 이미 충족) |
+| M | 2027 일정 펼침 이동(§5) | 펼침 컴포넌트 부재 | 공식 링크 버튼만 존재 | 일정 데이터 소스 + 펼침 UI 신규 | Codex+Owner+Claude | 공식 링크 바로 아래 일정 펼침 배치 |
+| N | 문제 PDF Viewer(§6) | 없음(문제는 텍스트) | PDF 소스·뷰어 미존재 | 문제 PDF 소스 + 뷰어(줌/페이지/전체화면) + 열람 정책 | Codex+Claude | 문항 PDF 열람 가능 |
+| O | 대학별 라이브 상태(§14) | 조회 불가 | 기존 API 미제공(availability는 math boolean만) | 대학별 essay 활성 상태 조회 API | Codex+Claude | 운영 DB 기준 상태 표시(하드코딩 없이) |
+| P | APP 세부 UI 조정(§19) | 미적용(APP 수정 범위 아님) | 버튼 간격·여백 등 APP측 조정 | APP 디자인 조정(본 WEB 범위 외) | Owner/APP | APP UI 세부 정렬 적용 |
