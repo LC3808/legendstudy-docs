@@ -16,9 +16,9 @@ Only this checkout's Wiki handoff was edited.
 ## Authority and scope
 
 Restore sources: AGENTS, index, current-status, decisions, product-scope,
-[payment foundation](payment-app-foundation.md),
-[Production integration](production-integration-2026-10-09.md),
-[IAP history](iap-billing-preparation-2026-10-09.md), and existing IAP acceptance SQL.
+[payment foundation](https://github.com/LC3808/legendstudy-app/blob/9830bc6127fc38adb2984acba45a0c6cd976d40e/wiki/payment-app-foundation.md),
+[Production integration](https://github.com/LC3808/legendstudy-app/blob/9830bc6127fc38adb2984acba45a0c6cd976d40e/wiki/production-integration-2026-10-09.md),
+[IAP history](https://github.com/LC3808/legendstudy-app/blob/9830bc6127fc38adb2984acba45a0c6cd976d40e/wiki/iap-billing-preparation-2026-10-09.md), and existing IAP acceptance SQL.
 The exact earlier Owner PHASE 1 directive is not present in these repository
 sources; this checkpoint covers the explicitly authorized read-only investigation,
 not certification that every item in that unseen directive is complete.
@@ -106,7 +106,7 @@ legendstudy-iap-fix. Other checkouts were inspected read-only as evidence.
   Preserve existing Essay engines, server-authoritative Ledger and actual E2E evidence.
   These docs were not edited or checked out by this task.
 - Claude [Oct07 gap analysis](https://github.com/LC3808/legendstudy-app/blob/e4b225572a9b876b44107d847c00772304166905/wiki/iap-store-billing-gap-analysis-v1.md),
-  local [Oct09 integration handoff](iap-billing-preparation-2026-10-09.md#codex-integration-handoff),
+  local [Oct09 integration handoff](https://github.com/LC3808/legendstudy-app/blob/9830bc6127fc38adb2984acba45a0c6cd976d40e/wiki/iap-billing-preparation-2026-10-09.md#codex-integration-handoff),
   Oct18 release/TEST history read. Early design proposals are superseded by actual
   implemented IAP wrapper; do not rebuild Toss or adopt historical proposed SKU IDs.
 - [Grok Oct12 review](https://github.com/LC3808/legendstudy-docs/blob/e7fe78f40e4b2d4de876e0546c46c1afcde13597/90_HISTORY/REVIEWS/2026-10-12-grok-code-review.md)
