@@ -10,6 +10,11 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-25 — WEB corrections: Math SQL installed, integration validation
+
+Owner Math session installation verification PASS: four RPC privileges/search_path, RLS, original owner/ACL/UNIQUE and definition hashes preserved. WEB submission and round History connected locally; related22/MY123 tests PASS (overlap;2skipped). New WEB deployment and authenticated PC/mobile acceptance pending; Production6b69acb3/a21642c and Worker c3fb54be unchanged. New MY redesign remains queued behind correction completion. [Evidence and remaining work](../90_HISTORY/2026-10-24-web-release-codex.md#2026-10-25-math-session-sql--owner-applied-web-integration-in-progress).
+
+
 ## WEB MY 추가 지시 — 2026-10-25 — 선행 작업 완료 조건 대기
 
 Owner는 기존 관리자·회차 과금·결과 수정의 완료 및 Commit/Push/검증 확인 후, 일반 MY와 나의 논술 LAB 전체 개선을 함께 수행하도록 지시했다. WEB만 변경하며 APP 코드·공통 저장 계약·DB/Ledger·Secret 보존. [Owner 전체 원문 및 완료 보고 항목](../90_HISTORY/2026-10-25-web-my-owner-directive.md). 기존 수정은 Math/이미지 회차 연결 및 운영 검증이 남아 있으며 Math 운영 함수 조회 결과 대기 중이다. MY 구현은 아직 시작하지 않았다.
