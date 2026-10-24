@@ -10,6 +10,11 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## WEB release execution — 2026-10-24 — Preview gate pending
+
+Codex is the sole WEB integration/deployment owner. PR #5 candidate includes admin/MY and selective essay UI; Typecheck/Lint/Boundary/Production build PASS. Preview deployed, authenticated parity blocked by existing Preview Auth/runtime configuration. Production remains e67a0d37/f1a9e27. APP edits await Owner WEB acceptance. [Current execution, evidence and exact gate](../90_HISTORY/2026-10-24-web-release-codex.md).
+
+
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
 Owner-directed release-readiness snapshot (target 2026-10-25). Claude owns Apple
 Sandbox/StoreKit, IAP refund notifications, iOS signing/Archive/TestFlight, splash/

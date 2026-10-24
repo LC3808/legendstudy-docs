@@ -57,3 +57,7 @@ Production 네이티브로 이미 구현(`catalog-policy`의 launch-hold 목록 
 - 논술 WEB UI PR #4: [2026-10-24 essay-lab-ui-redesign](2026-10-24-essay-lab-ui-redesign.md)
 - 공개 서비스 인벤토리: [2026-10-24 essay-public-service-inventory](2026-10-24-essay-public-service-inventory.md)
 - P1 백로그: [2026-10-23 my-admin-p1-backlog](2026-10-23-my-admin-p1-backlog.md)
+
+## Codex continuation
+
+[Latest release execution](2026-10-24-web-release-codex.md) supersedes the initial build blocker and card-count-as-availability statement; original checkpoint remains historical.
