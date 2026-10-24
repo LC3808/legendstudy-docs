@@ -37,6 +37,11 @@ WEB 논술 LAB는 ① 공개 **미리보기/카탈로그**(`src/app/essay-lab/**
   카드 입체감·포커스 링·≥44px 터치 타겟·좁은 폭 레이아웃. mock 표기·Owner 문구·브라우저 Draft 불변.
 - `globals.css`는 **중간부만** 수정 — MY PR#3은 파일 끝만 수정하여 머지 충돌 없음.
 
+## 2a. 사용자 화면 용어 (§3 정책, Owner 추가 지시)
+사용자 화면 'AI' 표현 금지 반영: OriginLabel `MODEL_DERIVED` 배지 "AI 평가"→"첨삭 평가", 합성 평가
+fixture 면책 "AI 출력이 아님"→"첨삭 결과가 아님". '예시답안'/'공식 예시답안' 문구는 사용자 화면에
+애초에 없음(변경 불필요). 운영자 전용 `/ql` 콘솔 문구와 `business-info` 제공자 법적 고지는 범위 밖→불변.
+
 ## 3. 미완료 GAP (구현 금지·날조 금지)
 1. **§3 실제 작성→제출→AI 첨삭 흐름**: essay-lab은 mock, `EssayRuntimeClient`가 작성 UI에 미연결 →
    Codex 11대학 백엔드 + WEB 작성/제출/상태 화면 연결 필요.
@@ -48,7 +53,7 @@ WEB 논술 LAB는 ① 공개 **미리보기/카탈로그**(`src/app/essay-lab/**
 
 ## 4. PR / Commit
 - PR: **[LC3808/legendstudy-lab#4](https://github.com/LC3808/legendstudy-lab/pull/4)** — ready, **Open 유지**.
-- Base `main`(8991b51) ← `claude/web-essay-ui-redesign-20261024-81e3c9` · Commit `39b1e19`(코드 `674e11f`)
+- Base `main`(8991b51) ← `claude/web-essay-ui-redesign-20261024-81e3c9` · 코드 `674e11f` + §3 용어 `5b31633`
   · Remote SHA 일치 확인 · auto-merge OFF.
 
 ## 5. 검증 (모두 통과)
