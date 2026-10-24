@@ -10,10 +10,9 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## 2026-10-25 — WEB corrections: Math SQL installed, integration validation
+## 2026-10-25 — WEB corrections deployed; acceptance pending
 
-Owner Math session installation verification PASS: four RPC privileges/search_path, RLS, original owner/ACL/UNIQUE and definition hashes preserved. WEB submission and round History connected locally; related22/MY123 tests PASS (overlap;2skipped). New WEB deployment and authenticated PC/mobile acceptance pending; Production6b69acb3/a21642c and Worker c3fb54be unchanged. New MY redesign remains queued behind correction completion. [Evidence and remaining work](../90_HISTORY/2026-10-24-web-release-codex.md#2026-10-25-math-session-sql--owner-applied-web-integration-in-progress).
-
+WEB73145355/source8e3d3c8 and Worker17b3bd65 at100% verified. Owner Math SQL privileges/definitions/ACL PASS. Worker transport guard omission corrected after rollback;42 checks and70 live-file hashes PASS. Logged-in Math entry/History/stored result read PASS, new Provider/Credit0. Admin account UNAUTHORIZED and Mac lock block remaining admin/mobile checks; requested existing administrator login. MY redesign remains queued. [Postflight and remaining work](../90_HISTORY/2026-10-24-web-release-codex.md#2026-10-25-production-integration-postflight--not-full-acceptance).
 
 ## WEB MY 추가 지시 — 2026-10-25 — 선행 작업 완료 조건 대기
 
