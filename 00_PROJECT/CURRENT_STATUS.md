@@ -10,6 +10,10 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## WEB MY 추가 지시 — 2026-10-25 — 선행 작업 완료 조건 대기
+
+Owner는 기존 관리자·회차 과금·결과 수정의 완료 및 Commit/Push/검증 확인 후, 일반 MY와 나의 논술 LAB 전체 개선을 함께 수행하도록 지시했다. WEB만 변경하며 APP 코드·공통 저장 계약·DB/Ledger·Secret 보존. [Owner 전체 원문 및 완료 보고 항목](../90_HISTORY/2026-10-25-web-my-owner-directive.md). 기존 수정은 Math/이미지 회차 연결 및 운영 검증이 남아 있으며 Math 운영 함수 조회 결과 대기 중이다. MY 구현은 아직 시작하지 않았다.
+
 ## WEB Owner review — 2026-10-24 — IN PROGRESS / NOT DEPLOYED
 
 Production remains a21642c /6b69acb3-f497-48e4-8f79-559fc82a7b95. All Owner corrections remain one task. Owner confirmed omitted questions require a new paid round1Credit; existing submitted set alone qualifies for the existing free rewrite. Narrow Worker session/retry changes authorized. Owner supplied actual Production columns/functions, then applied additive admin reporting and session retry SQL; reported role/search_path verification PASS. WEB261 tests + build, local canonical Ledger18 checks and confirmed-failure-only retry/concurrent8 duplicate requests PASS. New Worker/WEB deployment, authenticated visual acceptance and image/Math session integration remain open. No Secret/evaluation-engine/Registry changes. [Detailed evidence](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/README.md).

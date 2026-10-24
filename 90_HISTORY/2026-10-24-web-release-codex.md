@@ -47,3 +47,7 @@ Owner confirmed exam ID vs submission-round ID, omitted questions later = new pa
 
 ### 2026-10-25 Preview checkpoint
 WEB b9fd103fdaf743ee4ee1e939a21b1fe6dedc1129 Preview [8e9b0f07](https://8e9b0f07.legendstudy-lab.pages.dev) uploaded; public LAB browser rendering verified. Production/Worker unchanged. APP d258d30d149239f568a453e682a473f3b625eeaf remote verified. Full suite observed1232PASS/7FAIL/4skip plus empty suite; consent-modal journey failure corrected and targeted PASS, remaining6 catalog baseline failures/empty suite recorded. Full request still IN_PROGRESS; Math/image authoritative contract lookup pending.
+
+### 2026-10-25 MY 추가 지시 접수
+
+[Owner 원문](2026-10-25-web-my-owner-directive.md)을 보존했다. 선행 수정 전체 완료 후 WEB MY와 나의 논술 LAB을 함께 개선한다. 프로필→이용 현황→LAB→성장→학습시간→목표→대학 지원→계정·지원 순서, 크레딧 명칭, 실제 만료 수량, 동일 기준 성장 그래프, 대학/학과 동시 입력, 안전한 뒤로가기, 대표 주소 복사 및 개인정보 제외 로컬 성장 이미지 저장이 포함된다. PDF와 기존 공통 데이터 계약은 유지한다. 구현 미착수이며 완료/배포로 보고하지 않는다. WEB 원격2e20e81098213ddbc68421aefd0ec167aa24aca2 확인, 작업 트리 clean. 기존 Math 계약 조회 결과 대기와 미완료 항목을 유지한다.
