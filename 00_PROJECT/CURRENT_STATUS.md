@@ -10,13 +10,11 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## 2026-10-25 — WEB corrections deployed; acceptance pending
+## 2026-10-25 — WEB MY deployed; admin read acceptance complete
 
-WEB73145355/source8e3d3c8 and Worker17b3bd65 at100% verified. Owner Math SQL privileges/definitions/ACL PASS. Worker transport guard omission corrected after rollback;42 checks and70 live-file hashes PASS. Logged-in Math entry/History/stored result read PASS, new Provider/Credit0. Admin account UNAUTHORIZED and Mac lock block remaining admin/mobile checks; requested existing administrator login. MY redesign remains queued. [Postflight and remaining work](../90_HISTORY/2026-10-24-web-release-codex.md#2026-10-25-production-integration-postflight--not-full-acceptance).
+Existing administrator login resolved UNAUTHORIZED: period/member/credit/TEST-payment filters and400px verified, recorded/pushed b16e46f before MY work. MY source e97c82a+79040d6, Production7f9defb7-9e6e-4e50-ae52-fd256ba1d43c verified by canonical Pages API. Profile/credit/LAB/growth/goals/applications and local PNG sharing implemented. Live400/500px, canonical clipboard and PNG download PASS. APP code/DB/Worker17b3bd65/Secrets unchanged. Full suite1249PASS/6 existing catalogFAIL+empty suite1; real APP write-sync/wide-desktop retest not performed. Legacy dashboard12 vs member directory13 remains GAP. [Detailed evidence and limits](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/my-redesign.md), [Owner directive](../90_HISTORY/2026-10-25-web-my-owner-directive.md).
 
-## WEB MY 추가 지시 — 2026-10-25 — 선행 작업 완료 조건 대기
-
-Owner는 기존 관리자·회차 과금·결과 수정의 완료 및 Commit/Push/검증 확인 후, 일반 MY와 나의 논술 LAB 전체 개선을 함께 수행하도록 지시했다. WEB만 변경하며 APP 코드·공통 저장 계약·DB/Ledger·Secret 보존. [Owner 전체 원문 및 완료 보고 항목](../90_HISTORY/2026-10-25-web-my-owner-directive.md). 기존 수정은 Math/이미지 회차 연결 및 운영 검증이 남아 있으며 Math 운영 함수 조회 결과 대기 중이다. MY 구현은 아직 시작하지 않았다.
+The following dated entries preserve historical status; the current WEB state above supersedes their deployment/queued claims.
 
 ## WEB Owner review — 2026-10-24 — IN PROGRESS / NOT DEPLOYED
 
