@@ -1,3 +1,5 @@
+> Final update: WEB Production source a21642c / deployment6b69acb3 is live. Owner Preview-gate amendment, rollback/corrections, current11-question evidence and outstanding gaps are recorded in [Codex final release](2026-10-24-web-release-codex.md). Earlier preparation statuses below are historical.
+
 <!--
 DOCUMENT_STATUS: HISTORY
 SCOPE: Production WEB 통합 (admin PR#2 + MY PR#3 선별 반영 + 사용자 용어·대학 상태)

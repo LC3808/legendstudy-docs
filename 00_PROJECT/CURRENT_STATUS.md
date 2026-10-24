@@ -10,9 +10,9 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## WEB release execution — 2026-10-24 — Preview gate pending
+## WEB release execution — 2026-10-24 — Production deployed / Owner acceptance pending
 
-Codex is the sole WEB integration/deployment owner. PR #5 candidate includes admin/MY and selective essay UI; Typecheck/Lint/Boundary/Production build PASS. Preview deployed, authenticated parity blocked by existing Preview Auth/runtime configuration. Production remains e67a0d37/f1a9e27. APP edits await Owner WEB acceptance. [Current execution, evidence and exact gate](../90_HISTORY/2026-10-24-web-release-codex.md).
+Codex integrated admin/MY and selective essay UI on the verified Production lineage. Production source `a21642c`, canonical deployment `6b69acb3-f497-48e4-8f79-559fc82a7b95` verified successful. Owner explicitly allowed Preview visual/local checks followed by Production deployment; existing Preview Auth/Secret boundaries preserved. Typecheck/Lint/Boundary/build and related tests PASS. Runtime university metadata and MY History integration defects were corrected; first failed status rollout was immediately rolled back before redeployment. Current UI verifies 4 active universities / 9 configured exams / 11 active question tabs (historical12 discrepancy remains explicit), existing results/drafts/Credit/History, and administrator/MY surfaces. Admin aggregate coverage remains a documented GAP. APP edits/build/device/store work await Owner WEB acceptance. Prior Android/iOS purchase success is Owner-reported; no repeat purchase. [Execution, exact matrix, evidence and rollback](../90_HISTORY/2026-10-24-web-release-codex.md).
 
 
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
