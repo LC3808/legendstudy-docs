@@ -1,6 +1,6 @@
 # WEB release execution — Codex, 2026-10-24
 
-Final state: **WEB PRODUCTION DEPLOYED / OWNER ACCEPTANCE PENDING**. The preparation snapshot below is historical; the final postflight section supersedes its pending gate and unchanged-Production claims.
+Previous release state: **WEB PRODUCTION DEPLOYED / OWNER ACCEPTANCE PENDING**. New Owner corrections are IN PROGRESS; see the final section below. The preparation snapshot below is historical; the final postflight section supersedes its pending gate and unchanged-Production claims.
 
 Owner latest authority: Codex alone integrates/deploys WEB; preserve Claude work. APP edits wait for Owner WEB acceptance. Store submission requires later final Owner approval. No new engine/profile/Provider quality work; no Production SQL, DB writes, Worker/Registry/Secret/Ledger changes.
 
@@ -32,3 +32,11 @@ Owner decision: “Preview 화면·로컬 검증 후 Production 배포 허용”
 - Rollback target remains `e67a0d37-0d1f-4042-b480-7ffd7ba18b5b` / f1a9e27. APP untouched; APP changes, Android/iOS builds, devices and stores NOT_STARTED until Owner WEB acceptance. Prior Android/iOS purchase PASS is Owner-reported and preserved.
 
 [Full release evidence and question matrix](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/WEB_RELEASE_2026-10-24.md). Owner reviews [Production WEB](https://lab.legendstudy.com/) before APP phase.
+
+## Owner correction task — ongoing, no partial release
+
+Owner reaffirmed original session-based1Credit/zero-cost saved drafts/free rewrite0, explicit partial-answer consent and no added charge for retries. No arbitrary staged release or waiting for general MY review. WEB changes cover saved-answer collection/confirmation, missing member fields, operational dashboard ordering, bounded real payment filters, History grouping/search/growth, result hierarchy/evidence/voice/comparison. No completion claim: Credit aggregate and current Registry definitions require Owner read-only SQL evidence; Worker has explicit len(questions)==1 and whole-run failure finalization, and Math/image remain separate. Worker scope clarification requested. A gateway protection blocks unsupported multi-question reservation before any Credit posting while the contract is unresolved. [Full itemized status and exact read-only SQL](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/README.md).
+
+Validation: related257 tests PASS/2 skipped plus2 payment-filter tests PASS; existing real local PostgreSQL Ledger14 checks PASS; Typecheck/Lint/Boundary/Production build PASS. No Provider or Production DB writes. Local built LAB browsing checked; authenticated result/admin visual validation remains pending. The earlier historical12/current11 discrepancy is resolved by reading the canonical APP handoff:12=Essay11+Math1. This is a documentation correction, not new public activation. Current Production and rollback baseline both remain6b69acb3/a21642c. APP code and existing uncommitted files preserved; local wiki current/log/decision updated and handoff PASS11951bytes/1726links.
+
+WEB review checkpoint `1226cfb` is on the release branch only; PR #5 deployment head is not advanced by this incomplete checkpoint. Production remains unchanged.

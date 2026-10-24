@@ -10,9 +10,11 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## WEB release execution — 2026-10-24 — Production deployed / Owner acceptance pending
+## WEB Owner review — 2026-10-24 — IN PROGRESS / NOT DEPLOYED
 
-Codex integrated admin/MY and selective essay UI on the verified Production lineage. Production source `a21642c`, canonical deployment `6b69acb3-f497-48e4-8f79-559fc82a7b95` verified successful. Owner explicitly allowed Preview visual/local checks followed by Production deployment; existing Preview Auth/Secret boundaries preserved. Typecheck/Lint/Boundary/build and related tests PASS. Runtime university metadata and MY History integration defects were corrected; first failed status rollout was immediately rolled back before redeployment. Current UI verifies 4 active universities / 9 configured exams / 11 active question tabs (historical12 discrepancy remains explicit), existing results/drafts/Credit/History, and administrator/MY surfaces. Admin aggregate coverage remains a documented GAP. APP edits/build/device/store work await Owner WEB acceptance. Prior Android/iOS purchase success is Owner-reported; no repeat purchase. [Execution, exact matrix, evidence and rollback](../90_HISTORY/2026-10-24-web-release-codex.md).
+Production remains a21642c /6b69acb3-f497-48e4-8f79-559fc82a7b95. Owner requested all admin, writing/submission, History, reports, rewriting and growth corrections together; general MY follow-up is not a dependency. Original exam-session1Credit/free rewrite0 policy reaffirmed. WEB local changes and checks underway; Worker single-question guard, terminal whole-run failure, image/Math separate route and missing admin aggregate contracts prevent completion. Owner read-only SQL evidence and narrowly scoped Worker change clarification requested. No new deployment/Secret/DB/Ledger/Provider changes. [Itemized state and contract evidence](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/README.md), [release history](../90_HISTORY/2026-10-24-web-release-codex.md).
+
+Public scope correction: prior UI11 meant Essay only; canonical backend handoff records Essay11 + Math1 = public12. That count comparison alone is not a regression. Actual all-question evaluation remains incomplete. APP code/device/store work awaits WEB acceptance.
 
 
 ## Apple IAP / iOS release prep — 2026-10-18 — PARTIAL (release blockers open)
