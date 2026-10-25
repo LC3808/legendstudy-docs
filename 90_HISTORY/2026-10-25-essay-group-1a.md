@@ -158,3 +158,16 @@ SQL: continuous-text10회차(pre20/post7), continuous-social10회차(pre20/post7
 Production: WEB `011af05b-b281-43cb-9557-0b4824e9fbcb` success/code `7cc0a6fb54615107b6335813cc09453489bb9a65`. Worker `fafe9380-2af4-4bca-8fb6-9a370c9f3f48`100%/deployment`acb0813a-7a55-478a-bcfd-f8d1127f202f`, CPU30000ms. 공개목록55,목록용량64;UUID/승인경계불변. 잘못된중간4ffdaa8d는42한도초과로초기화거절되어직전정상c863c315로복귀후수정. 해당중간버전으로복구금지. 노출기간다른사용자영향미확인,이번작업평가/예약0. 정상최종버전유지.
 
 APP source/wiki `52895837ccc1f911e7480dad949fe1f3c11851d5` push, WEB위SHA push. APP UI의기존미커밋변경은미수정/미포함. 필요한WEB배포컴파일과연결검사만수행,실제Provider/평가품질반복검수0. Wiki handoff검사PASS(current11793bytes). 최종일반계정대학카드에서경희·성균·중앙등‘첨삭시작하기’활성표시확인.
+
+
+## 38회차 STANDBY 실제 입력·서버 견적 확인
+
+Production 일반계정에서 경희 인문11·사회11·성균언어16의38회차 각각 답안 입력→브라우저저장→버튼활성→실제 서버1Credit quote 확인 후 취소/초안복원. Provider·평가제출·예약/차감0, 잔액10 유지. PDF는정확한객체/접근승인38·대표화면렌더확인 범위이며 전페이지전수열람아님. 사회그래프2회차보류유지, 신규E2E PASS아님. WEB0465161/Production fd558454-b9bd-4bae-8078-3ac307353428 success: 조회중·실패를준비중으로숨기지않고오류/재시도표시. Workerfafe9380·기존학생기록/Secret보존, SQL·APP빌드0.
+
+| 대학·계열 | 대상 | 연결/PDF승인 | 입력저장/버튼/서버quote | STANDBY | 보류 |
+|---|---:|---:|---:|---:|---:|
+| 경희 인문·체육 |11|11|11|11|0|
+| 경희 사회 |13|11|11|11|2|
+| 성균 언어형 |16|16|16|16|0|
+
+실제평가는Owner QA. 공식예시/해설발췌를입력조건확인에만사용하고최종평가진행을누르지않음. 무료재첨삭0/History는기존계약보존,새평가로반복확인하지않음. WEB롤백은직전정상011af05b이며이번표시/오류응답수정만제거. 기존38회차연결과Worker보존. [증거 및 상세](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/wiki/essay-group-1a-20261025.md#standby-실제-입력서버-견적-확인).
