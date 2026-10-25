@@ -1,5 +1,26 @@
 # Owner 1-A 전환 — 2026-10-25
 
+## 2026-10-25 승인 묶음 적용 후 현재 상태
+
+Owner 승인 중앙10회차30문항 Production 적용: 사전11/사후8true, 기존ID·다른정책·Credit·History·Ledger보존. 문제PDF10개만 로그인SELECT, 해설비공개. 이전 경희2/성균1묶음도 적용·공개확인 완료. 이미 적용한SQL재실행금지.
+
+|대학|대상|전체연결|일반WEB공개경로 확인|미완료|
+|---|---:|---:|---:|---:|
+|중앙|22|10|10|12|
+|성균관|15|3|3|12|
+|경희|17|2|2|15|
+
+일반계정 전체문항 입력·PDF연결·1Credit 요청경로 총15회차 확인. 신규 Provider0/평가비용0; 실제 회차 최초1/무료0·History·성장비교는 기존성균언어2교시 성공근거 재사용. 새로운15회차 실평가E2E를 주장하지 않는다. 남은39회차는 빈Registry/공식자료·답안단위연결/수리·혼합회차계약 미완료.
+
+WEB `6a9b716`, Production `497ea786-6dc8-42a9-aeeb-7db20a1d9fa0`; Worker `53d20942-24cd-4286-b18b-ff6e254a6e2f`100%. 중앙2027 admission의 Pyodide초기화오류를 동일70모듈·bindings·runtime설정 재배포와 WEB목록순차조회로 복구. 31tests PASS·두2027일반계정경로 회복. Cloudflare원천버그/다중사용자부하해결 판정 아님. 재발하면 기존요청/예약보존 후 tail확인, 무조건재제출금지. Secret변경0.
+
+APP UI/빌드/스토어 중단. 기존앱 정적PDF목록에 중앙10/성균2027없음, 이미지회차제출차단으로 수리·혼합 호환GAP. WEB공개와 APP완료를 구분한다.
+
+복구: 중앙확대전 WEB1455ed8b/Workerc9470a54 및 중앙10개공개목록만복원. DB central-owner-sql/rollback.sql은 신규실행case·정확PDF정책만복구하고 평가/revision/ID/기록보존. 추가SQL/권한변경은Owner승인범위 준수.
+
+[APP 최신 근거·실행파일·복구](https://github.com/LC3808/legendstudy-app/blob/4a9ef9d/wiki/essay-group-1a-20261025.md#2026-10-25-최신--승인-묶음-적용회차-서비스-확대). APP문서/도구 commit4a9ef9d; 모바일앱배포를 뜻하지 않는다.
+
+
 APP MY Native 복원 및 양기기 재설치 기존완료증거를확인했다. 첨삭결과UI는Owner문제보고/회귀여부미확정으로미완료기록. 추가APP UI·빌드·스토어작업중단. WEB Production·기존결제/Credit/History보존.
 
 Owner지정중앙·성균·경희,2022이후인문/언어·수리·혼합형의전체시험회차를연결한다. 최초회차1Credit/기존무료0Credit,당시Owner추가승인으로Codex SQL직접실행. 현재는Owner복귀후SQL개별승인원칙복원.
