@@ -10,6 +10,10 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-25 — APP 중단 / 논술1-A 전환
+
+MY Native복원완료증거확인,APP UI/빌드/스토어중단. 첨삭결과UI문제원인미확정·후속보류. 중앙·성균·경희54시험131문항회차연결착수,전체시험공개완료0/기존부분승인보존. [현재범위·실행명세](../90_HISTORY/2026-10-25-essay-group-1a.md).
+
 ## 2026-10-25 — Native APP 후보 / MY 복원
 
 WEB e9f1d4a/e6af7b54 Production·고객 Credit/관리자 원장 실화면 확인, remote 일치. APP 회차 Math·History·성장/공유·Credit 구현, Owner iPhone 검수 후 MY UI 기존 복원. 복원 후 Analyze/1123검사 PASS(7skip), Android/iOS Release 빌드·기기 교체 실행 PASS, 상세 실기기 검수 미완료. 스토어 제출은 최종 승인 필요. [현재 검증·잔여·롤백](../90_HISTORY/2026-10-25-native-app-release.md).
