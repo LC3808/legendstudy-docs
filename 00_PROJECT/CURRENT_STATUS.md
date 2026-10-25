@@ -10,6 +10,10 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-25 — Integrated WEB Production update
+
+WEB `e5106e3` / Production `f73a03d0-6fa7-4969-9e93-d099fb513a1c` canonical API 확인. Essay Worker17b3bd65 유지, Math는 같은 WEB Pages Functions. MY 목표 통합·공유 팝오버·공통 관리자 디자인 반영. Owner가 추가 조회 RPC 적용, 실화면 회원13/profiles12·인문30회·실행승인10시험12문항 확인. 0건 원인은 legacy 단일문항 집계 누락, 공개0은 is_published와 runtime scope 차이. 관련244PASS/3skip·타입/Lint/boundary/buildPASS. 기존 catalog6FAIL+빈suite, 신규 실운영 다문항Math·Native실기기 미검증은 남김. Provider/과금/Secret/APP코드 변경0. 롤백WEB eba32637; Worker 과거 단일문항 버전 rollback 금지. [검증·차단·Authority](../90_HISTORY/2026-10-25-integrated-release-closeout.md).
+
 ## 2026-10-25 — WEB MY deployed; admin read acceptance complete
 
 Existing administrator login resolved UNAUTHORIZED: period/member/credit/TEST-payment filters and400px verified, recorded/pushed b16e46f before MY work. MY source651479b (vertical growth bars and meaningful criterion labels), Productioneba32637-25f3-4d36-bec9-c3acaf4fd99e verified by canonical Pages API. Profile/credit/LAB/growth/goals/applications and local PNG sharing implemented. Live400/500px, canonical clipboard and PNG download PASS. APP code/DB/Worker17b3bd65/Secrets unchanged. Full suite1249PASS/6 existing catalogFAIL+empty suite1; real APP write-sync not performed; follow-up growth1752px/19 criteria/PNG verified. Legacy dashboard12 vs member directory13 remains GAP. [Detailed evidence and limits](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/my-redesign.md), [Owner directive](../90_HISTORY/2026-10-25-web-my-owner-directive.md).
