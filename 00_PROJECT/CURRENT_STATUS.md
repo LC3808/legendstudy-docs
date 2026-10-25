@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-Production 일반계정에서 경희 인문11·사회11·성균언어16의38회차 각각 답안 입력→브라우저저장→버튼활성→실제 서버1Credit quote 확인 후 취소/초안복원. Provider·평가제출·예약/차감0, 잔액10 유지. PDF는정확한객체/접근승인38·대표화면렌더확인 범위이며 전페이지전수열람아님. 사회그래프2회차보류유지, 신규E2E PASS아님. WEB0465161/Production fd558454-b9bd-4bae-8078-3ac307353428 success: 조회중·실패를준비중으로숨기지않고오류/재시도표시. Workerfafe9380·기존학생기록/Secret보존, SQL·APP빌드0. [회차별 실제 WEB 증거](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/supabase/candidates/standby_continuous_20261025/web-standby-evidence.json).
+성균언어16회차 문제 확인 버튼 표시, 2025수시1교시 stale PDF승인행3개 수정·렌더 확인. 한양 준비된 인문13회차 STANDBY, 상경8회차는 수리 혼합 단일예약 경로 부재로 보류. 추가2025모의2회차 원본미확보. Provider/차감/APP빌드0·잔액10. WEB f5cebe5/Production d4037191, Worker238ab93f100%. [최종범위·SQL·복구·실측](../90_HISTORY/2026-10-25-essay-group-1a.md#2026-10-25-최종-범위--성균-pdf-수정한양-standby).
 
 <!--
 DOCUMENT_STATUS: CANONICAL
