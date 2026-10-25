@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-중앙인문 기존10회차 STANDBY 보존. 최신 순서 중앙경영경제→경희인문·체육→경희사회, 단계별 승인 대기 없이 준비. Owner 승인으로 경희 누락16시험/기존무문항4시험에51문항 등록 완료(사후 일치). 경희 준비자료24회차 중 기존공개2 보존, 신규STANDBY0. 신규5회차10문항 공식자료 입력 패키지 준비, 배포 전. 중앙경영경제10회차는 언어/Math 단일예약 연결 GAP. WEB/Worker/Secret/Credit/History 보존, Provider/빌드/배포0. [정확한 상태·재개 지점](https://github.com/LC3808/legendstudy-app/blob/b08a4652d0efd0d557b6396b4f47312cbd2dc447/wiki/essay-group-1a-20261025.md#연속-연결--중앙경영경제경희인문사회).
+Owner 연속 승인 범위 운영 반영: 경희 인문·체육11/11(신규9), 사회11/13(신규11), 성균 언어16/16(신규13). 총 신규33+기존5=38/40회차 STANDBY / OWNER QA PENDING. 사회 그래프답안2회차는 단일예약 이미지제출 경로 미연결로 보류. 일반계정에서 PDF/전체문항/소답안/입력·저장UI/1Credit요청경로 확인, Provider·학생답안쓰기·APP빌드0. 기존 Credit·Ledger·History·Secret 보존. SQL4묶음 적용, WEB7cc0a6f/011af05b, Workerfafe9380 100%. 공개목록상한42→64 최소수정; 중간장애버전복귀후최종반영. [정확한대상·미완료·복구](https://github.com/LC3808/legendstudy-app/blob/52895837ccc1f911e7480dad949fe1f3c11851d5/wiki/essay-group-1a-20261025.md#연속-연결-최종-상태).
 
 <!--
 DOCUMENT_STATUS: CANONICAL

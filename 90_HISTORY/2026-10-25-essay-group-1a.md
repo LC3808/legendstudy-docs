@@ -138,3 +138,23 @@ Owner가인문/상경누락지적. 운영resources에는정확문제/해설4개�
 Owner 승인 후 경희 신규16시험+기존무문항4시험의51문항 등록. 사전2true→apply성공→사후exact_question_sets=true. 기존ID·공개정책·Credit·History·Ledger 변경0. 재실행 금지. 준비자료: 인문·체육11회차/사회13회차. 기존공개인문2회차 보존, 신규STANDBY0. 공식자료 입력 패키지5회차10문항은 준비됐으나 운영 미반영. 중앙경영경제10회차는 기존 Essay/Math의 개별 유료 제출을 단순 결합하지 않고 단일 예약으로 연결하는 계약 보완이 필요하다. 신규Provider/APP빌드/운영배포0.
 
 APP b08a4652d0efd0d557b6396b4f47312cbd2dc447 push/remote 일치. WEB code1c6339b/deployment2cc8cd0a, Worker3e31db73 유지. [후속 SQL·공식자료·보류 원인](https://github.com/LC3808/legendstudy-app/blob/b08a4652d0efd0d557b6396b4f47312cbd2dc447/wiki/essay-group-1a-20261025.md#연속-연결--중앙경영경제경희인문사회).
+
+## Owner 연속 SQL 승인 — 경희·성균 33회차 추가
+
+Owner 연속 승인 범위 운영 반영: 경희 인문·체육11/11(신규9), 사회11/13(신규11), 성균 언어16/16(신규13). 총 신규33+기존5=38/40회차 STANDBY / OWNER QA PENDING. 사회 그래프답안2회차는 단일예약 이미지제출 경로 미연결로 보류. 일반계정에서 PDF/전체문항/소답안/입력·저장UI/1Credit요청경로 확인, Provider·학생답안쓰기·APP빌드0. 기존 Credit·Ledger·History·Secret 보존. SQL4묶음 적용, WEB7cc0a6f/011af05b, Workerfafe9380 100%. 공개목록상한42→64 최소수정; 중간장애버전복귀후최종반영. [정확한대상·미완료·복구](https://github.com/LC3808/legendstudy-app/blob/52895837ccc1f911e7480dad949fe1f3c11851d5/wiki/essay-group-1a-20261025.md#연속-연결-최종-상태).
+
+| 대학·계열 | 대상 | 신규 | 기존 | STANDBY | 보류 |
+|---|---:|---:|---:|---:|---:|
+| 경희 인문·체육 | 11 | 9 | 2 | 11 | 0 |
+| 경희 사회 | 13 | 11 | 0 | 11 | 2 |
+| 성균 언어 | 16 | 13 | 3 | 16 | 0 |
+
+대상은2022이후현재확보된공식시험자료와2027공식모의이며성균2024모의는자료미확보로대상수에포함하지않음. 신규89문항을각회차전체로연결. 실제평가호출0으로새E2E성공주장없음. Owner 실제답안QA대기.
+
+미완료: 경희2023수시사회오전/2025모의사회는공식그래프직접작성요구. Essay회차submit은현재image필드를거절하며별도Math예약동시호출은1Credit계약을위험하게하므로미공개. 기존이미지처리와단일예약연결후공개;정산계약변경은현승인범위밖. 2025모의채점섹션locator잔여.
+
+SQL: continuous-text10회차(pre20/post7), continuous-social10회차(pre20/post7), continuous-skku A7(pre17/post7)/B6(pre16/post7) 모두true/APPLIED. 기존정상정책/학생기록보존. 성균13통합SQL HTTP413 실행전거절로분할대체,재실행금지. [정확한manifest와복구](https://github.com/LC3808/legendstudy-app/blob/52895837ccc1f911e7480dad949fe1f3c11851d5/supabase/candidates/standby_continuous_20261025/README.md).
+
+Production: WEB `011af05b-b281-43cb-9557-0b4824e9fbcb` success/code `7cc0a6fb54615107b6335813cc09453489bb9a65`. Worker `fafe9380-2af4-4bca-8fb6-9a370c9f3f48`100%/deployment`acb0813a-7a55-478a-bcfd-f8d1127f202f`, CPU30000ms. 공개목록55,목록용량64;UUID/승인경계불변. 잘못된중간4ffdaa8d는42한도초과로초기화거절되어직전정상c863c315로복귀후수정. 해당중간버전으로복구금지. 노출기간다른사용자영향미확인,이번작업평가/예약0. 정상최종버전유지.
+
+APP source/wiki `52895837ccc1f911e7480dad949fe1f3c11851d5` push, WEB위SHA push. APP UI의기존미커밋변경은미수정/미포함. 필요한WEB배포컴파일과연결검사만수행,실제Provider/평가품질반복검수0. Wiki handoff검사PASS(current11793bytes). 최종일반계정대학카드에서경희·성균·중앙등‘첨삭시작하기’활성표시확인.
