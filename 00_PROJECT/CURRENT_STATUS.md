@@ -1,3 +1,6 @@
+<!-- 1-A latest 2026-10-25 -->
+성균2교시 중단요청 Owner승인복구·전체3문항 최초1/무료0Credit 완료(관리자). 일반계정 전체3문항·PDF·1Credit견적 확인, 추가실평가없음. 중앙44기존PDF재사용·경희9시험초안조립, 전체서비스미완료. SQL개별승인원칙복원. [최신근거](../90_HISTORY/2026-10-25-essay-group-1a.md).
+
 <!--
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
