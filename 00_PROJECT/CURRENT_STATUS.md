@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-1-A 전체연결·일반WEB공개경로 중앙10/성균3/경희2=15회차,39미완료. 승인SQL적용완료·재실행금지. WEBad522cdf/Worker53d20942, 카드공개목록Worker분리·4상태·5회반복PASS. 평가Worker자원오류잔여. 기존최초1/무료0E2E재사용,신규Provider0. APP UI/빌드중단·정적PDF/수리혼합호환GAP. [최신실행·복구·보류](../90_HISTORY/2026-10-25-essay-group-1a.md).
+중앙인문10회차 실서비스우선,Owner확인전경영경제금지. Worker Free플랜CPU10ms/API100328확정,Workers Paid전환 Owner조치대기. 기존자료/SQL보존,중앙요청0·차감0. WEB2cc8cd0a/Worker53d20942,APP빌드/수정중단. [장애·재개](../90_HISTORY/2026-10-25-essay-group-1a.md).
 
 <!--
 DOCUMENT_STATUS: CANONICAL

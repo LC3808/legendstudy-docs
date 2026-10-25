@@ -1,5 +1,10 @@
 # Owner 1-A 전환 — 2026-10-25
 
+## 중앙 인문사회 실행 장애 — Owner 조치 대기
+
+중앙10회차 기존연결재사용,경영경제는인문완료후Owner확인전착수금지. 현재중앙runs0/Provider0/차감0. Worker CPU30초설정요청이HTTP400/100328(Free plan은CPU설정불가)으로거절돼Free플랜확정. Workers Free10ms제약과실제자원초과/초기화오류확인. 새version/배포변경0,WEB2cc8cd0a/Worker53d20942 유지. Owner에게Workers Paid전환요청(비용계정작업직접실행). 이후기존소스/Secret보존CPU설정·최소실행경로확인. 아직실서비스완료아님. [근거·재개](https://github.com/LC3808/legendstudy-app/blob/fab0234/wiki/essay-group-1a-20261025.md#2026-10-25-중앙대-인문사회-실서비스--실행-한도-장애-확인).
+
+
 ## 2026-10-25 대학 카드 상태 안정화
 
 WEB b3a1c6d / Production ad522cdf-1bbf-4961-827d-be1a1253b40f. 카드조회를Python평가Worker에서분리하여기존서버공개목록+공개metadata로1회응답. 확인중/공개/준비중/조회오류구분, focus중복요청제거·이전응답무시. 기존제출승인·Credit·History·Registry·공개22시험목록불변. 41tests/typecheck/buildPASS,일반계정새로고침3회·페이지왕복2회6대학동일활성/1-A3대학보존·잔액11. Provider0/SQL쓰기0/APP변경0. Worker자원초과3·예외4집계와ErrnoError관찰,평가Worker안정성은별도잔여이며카드복구를엔진완치로보고하지않음.
