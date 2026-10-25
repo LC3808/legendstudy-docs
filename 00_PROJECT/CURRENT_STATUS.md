@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-1-A 전체연결·일반WEB공개경로 중앙10/성균3/경희2=15회차,39미완료. 승인SQL적용완료·재실행금지. WEB497ea786/Worker53d20942, Python초기화오류증상복구·목록순차화/재발위험기록. 기존최초1/무료0E2E재사용,신규Provider0. APP UI/빌드중단·정적PDF/수리혼합호환GAP. [최신실행·복구·보류](../90_HISTORY/2026-10-25-essay-group-1a.md).
+1-A 전체연결·일반WEB공개경로 중앙10/성균3/경희2=15회차,39미완료. 승인SQL적용완료·재실행금지. WEBad522cdf/Worker53d20942, 카드공개목록Worker분리·4상태·5회반복PASS. 평가Worker자원오류잔여. 기존최초1/무료0E2E재사용,신규Provider0. APP UI/빌드중단·정적PDF/수리혼합호환GAP. [최신실행·복구·보류](../90_HISTORY/2026-10-25-essay-group-1a.md).
 
 <!--
 DOCUMENT_STATUS: CANONICAL

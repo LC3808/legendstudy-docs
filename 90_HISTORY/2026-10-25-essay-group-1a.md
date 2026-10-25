@@ -1,5 +1,12 @@
 # Owner 1-A 전환 — 2026-10-25
 
+## 2026-10-25 대학 카드 상태 안정화
+
+WEB b3a1c6d / Production ad522cdf-1bbf-4961-827d-be1a1253b40f. 카드조회를Python평가Worker에서분리하여기존서버공개목록+공개metadata로1회응답. 확인중/공개/준비중/조회오류구분, focus중복요청제거·이전응답무시. 기존제출승인·Credit·History·Registry·공개22시험목록불변. 41tests/typecheck/buildPASS,일반계정새로고침3회·페이지왕복2회6대학동일활성/1-A3대학보존·잔액11. Provider0/SQL쓰기0/APP변경0. Worker자원초과3·예외4집계와ErrnoError관찰,평가Worker안정성은별도잔여이며카드복구를엔진완치로보고하지않음.
+
+[원인·수정·복구·검증범위](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/wiki/essay-group-1a-20261025.md#2026-10-25-대학-카드-공개-상태-안정화).
+
+
 ## 2026-10-25 승인 묶음 적용 후 현재 상태
 
 Owner 승인 중앙10회차30문항 Production 적용: 사전11/사후8true, 기존ID·다른정책·Credit·History·Ledger보존. 문제PDF10개만 로그인SELECT, 해설비공개. 이전 경희2/성균1묶음도 적용·공개확인 완료. 이미 적용한SQL재실행금지.
