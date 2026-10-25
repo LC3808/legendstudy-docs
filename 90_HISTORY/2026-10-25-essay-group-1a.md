@@ -127,3 +127,7 @@ Provider영수증6(평가3+기존독립검수3), 입력51324/출력6510tokens. c
 [전체 대학 공통 개발 원칙](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책). 실제 Provider 평가·가상답안·문항별 품질 검수는 STANDBY의 선행조건이 아니다. 전체 회차의 문항/PDF/입력·저장/Registry/공식근거/기존Worker·승인 연결만 완료하고 **STANDBY / OWNER QA PENDING**으로 구분한다. E2E PASS나 Owner검수완료로 표시하지 않는다. 기존 인증·공개승인·Credit·History·Ledger를 보존하며 버튼 강제활성화 금지.
 
 중앙인문10회차·30문항 WEB STANDBY(기존 연결증거 재사용) → Owner확인 → 중앙경영경제 → 경희 → 성균. 다른 대학은 지정 시 진행. 모든유형 공통원칙이며 일괄 공개승인이 아니다. 기존 운영Worker3e31db73/WEB2cc8cd0a 유지, APP수정·빌드·스토어 중단. 이번정책반영 Provider/DB/코드/배포변경0.
+
+## 중앙2026모의 누락 계열 등록 복구
+
+Owner가인문/상경누락지적. 운영resources에는정확문제/해설4개가있으나Registry에자연만존재. 초기등록대상누락으로기존22시험/인문10회차범위에서도빠졌다. 인문대상최소11(기존10STANDBY+모의1미연결)로정정. Owner별도승인후등록SQL2시험/6문항추가, 사전4/사후4true. WEB일반계정2026모의에3계열·두신규계열각3문항입력표시확인. PDF·Worker연결은미완료이며계열복구를STANDBY완료로보고하지않음. 기존정책/Credit/History/자료보존, Provider0. 후보경로: APP supabase/candidates/cau_2026_mock_missing_tracks/.

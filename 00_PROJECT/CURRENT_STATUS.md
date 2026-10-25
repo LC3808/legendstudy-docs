@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-중앙인문10회차·30문항 WEB STANDBY / OWNER QA PENDING. [전체 대학 공통 정책](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책): 실제 평가 없이 기존 자료·ID·입력·승인 연결. Owner확인후 중앙경영경제→경희→성균. 기존 성공기록/정책보존,APP빌드중단.
+중앙인문 기존10회차 WEB STANDBY. 2026모의인문누락발견으로대상최소11. Owner승인후인문/경영경제모의2회차등록복구, PDF/Worker연결잔여. [전체 대학 공통 정책](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책): 실제 평가 없이 기존 자료·ID·입력·승인 연결. Owner확인후 중앙경영경제→경희→성균. 기존 성공기록/정책보존,APP빌드중단.
 
 <!--
 DOCUMENT_STATUS: CANONICAL
