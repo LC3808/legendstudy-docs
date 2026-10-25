@@ -12,6 +12,8 @@ SUPERSEDED_BY: —
 
 ## 2026-10-25 — APP 중단 / 논술1-A 전환
 
+후속: 성균2026언어1·2교시 전체6문항 DB연결·WEB PDF배포. 실제3문항 요청은 부분성공/검수차단/pending으로 전체E2E 미완료,1Credit 예약보존. Worker큐분할e6ffbdb4 배포,기존pending복구우선. 이번범위SQL은Owner추가승인으로Codex직접실행. [상세](../90_HISTORY/2026-10-25-essay-group-1a.md).
+
 MY Native복원완료증거확인,APP UI/빌드/스토어중단. 첨삭결과UI문제원인미확정·후속보류. 중앙·성균·경희54시험131문항회차연결착수,전체시험공개완료0/기존부분승인보존. [현재범위·실행명세](../90_HISTORY/2026-10-25-essay-group-1a.md).
 
 ## 2026-10-25 — Native APP 후보 / MY 복원
