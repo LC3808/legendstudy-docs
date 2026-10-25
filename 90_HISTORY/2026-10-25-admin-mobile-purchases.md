@@ -13,3 +13,8 @@ WEB source8261d17d1d379feff16e247267583ea4a165f86b / Production7ff387f2-4625-40e
 스토어: 기존IAP작업의ignoredproductionconfig로양플랫폼wrapper설정검사PASS. 현재APPAndroid서명설정존재/iOSAuth.local.xcconfig부재. Apple로그인·Play기존개발자계정전환대기. 최신콘솔버전/심사상태/중복없는빌드번호 확인 후 RC서명빌드·실기기검증·업로드를이어간다. 이번에새구매/수동지급/Secret변경/스토어제출없음. 신규대학공개없음.
 
 [SQL package, preservation review, implementation and evidence](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/admin-purchases-20261025/README.md).
+
+## Owner 후속 정정·사용자 Credit UI
+로그인후스토어실측Android1.0.0(18)전체출시/iOS1.0(build19)배포준비됨. 앱수정전에빌드를진행한것은순서오류. Owner지시로iOS중단,이미생성된Android20은수정전후보이며업로드금지. 스토어업로드0.
+
+추가지침으로APP/WEB 사용자reserve/release숨김·동일decision consume합산·논술첨삭/부호있는금액표시를로컬수정했다. 기존credit_summary·관리자Ledger·정산·DB불변. 이름은확인가능한시험메타데이터가없어추정하지않는다. APP15/WEB80테스트PASS(2skip),Dart분석/타입/Lint/boundaryPASS. 로컬commit후push/빌드/운영배포보류. 앱수정완료후새RC로검증하고업데이트한다.

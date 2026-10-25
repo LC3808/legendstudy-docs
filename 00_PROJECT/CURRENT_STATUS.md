@@ -10,6 +10,10 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-25 — 사용자 Credit UI 로컬 수정 / 빌드 보류
+
+Owner: 앱수정후빌드·업데이트. 조기iOS빌드중단,Android20미업로드/사용금지. 현재스토어Android18/iOS19확인. APP/WEB reserve/release숨김·consume합산·논술첨삭표기 로컬수정,잔액/DB/관리자원장불변. APP15/WEB80검사PASS(2skip),빌드·push·배포보류. [후속정책·현재상태](../90_HISTORY/2026-10-25-admin-mobile-purchases.md#owner-후속-정정사용자-credit-ui).
+
 ## 2026-10-25 — Admin mobile purchases follow-up
 
 WEB8261d17/Production7ff387f2 운영확인. 모바일3구매/5지급/사용후4잔액 구분, Toss분리, 결제·원장5행페이지·한국어예약/확정 표시. Owner조회RPC적용·관련102검사/타입/Lint/boundary/buildPASS. APP구매12PASS·양플랫폼설정검사PASS; 스토어콘솔로그인/빌드번호확인대기. Ledger/Worker/결제설정불변. [조사·보존·복귀·잔여](../90_HISTORY/2026-10-25-admin-mobile-purchases.md).
