@@ -10,9 +10,9 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
-## 2026-10-25 — 사용자 Credit UI 로컬 수정 / 빌드 보류
+## 2026-10-25 — Native APP 후보 / MY 복원
 
-Owner: 앱수정후빌드·업데이트. 조기iOS빌드중단,Android20미업로드/사용금지. 현재스토어Android18/iOS19확인. APP/WEB reserve/release숨김·consume합산·논술첨삭표기 로컬수정,잔액/DB/관리자원장불변. APP15/WEB80검사PASS(2skip),빌드·push·배포보류. [후속정책·현재상태](../90_HISTORY/2026-10-25-admin-mobile-purchases.md#owner-후속-정정사용자-credit-ui).
+WEB e9f1d4a/e6af7b54 Production·고객 Credit/관리자 원장 실화면 확인, remote 일치. APP 회차 Math·History·성장/공유·Credit 구현, Owner iPhone 검수 후 MY UI 기존 복원. 복원 후 Analyze/1123검사 PASS(7skip), Android/iOS Release 빌드·기기 교체 실행 PASS, 상세 실기기 검수 미완료. 스토어 제출은 최종 승인 필요. [현재 검증·잔여·롤백](../90_HISTORY/2026-10-25-native-app-release.md).
 
 ## 2026-10-25 — Admin mobile purchases follow-up
 

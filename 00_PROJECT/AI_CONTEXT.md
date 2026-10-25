@@ -10,6 +10,11 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## Restore — 2026-10-25 Native APP / MY Owner rollback
+
+[최신 후보 검증](../90_HISTORY/2026-10-25-native-app-release.md)부터 확인. WEB e9f1d4a 운영 반영. APP MY 재설계는 Owner 실기기 검수 후 철회, 기존 UI 복원. Credit·회차·결과 개선 유지. 스토어 최종 승인 전 제출 금지. 과거 날짜의 NOT_APPLIED/HOLD 문구를 현재 운영 상태로 단정하지 말 것.
+
+
 ## Restore route — Grok code review + Essay-first reaffirmation Oct12
 
 Documentation only — no code/DB/Provider/Production/public-activation change.
