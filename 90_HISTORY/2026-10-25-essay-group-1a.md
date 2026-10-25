@@ -131,3 +131,10 @@ Provider영수증6(평가3+기존독립검수3), 입력51324/출력6510tokens. c
 ## 중앙2026모의 누락 계열 등록 복구
 
 Owner가인문/상경누락지적. 운영resources에는정확문제/해설4개가있으나Registry에자연만존재. 초기등록대상누락으로기존22시험/인문10회차범위에서도빠졌다. 인문대상최소11(기존10STANDBY+모의1미연결)로정정. Owner별도승인후등록SQL2시험/6문항추가, 사전4/사후4true. WEB일반계정2026모의에3계열·두신규계열각3문항입력표시확인. PDF·Worker연결은미완료이며계열복구를STANDBY완료로보고하지않음. 기존정책/Credit/History/자료보존, Provider0. 후보경로: APP supabase/candidates/cau_2026_mock_missing_tracks/.
+
+
+## 연속 연결 — 경희 Registry 일괄 적용
+
+Owner 승인 후 경희 신규16시험+기존무문항4시험의51문항 등록. 사전2true→apply성공→사후exact_question_sets=true. 기존ID·공개정책·Credit·History·Ledger 변경0. 재실행 금지. 준비자료: 인문·체육11회차/사회13회차. 기존공개인문2회차 보존, 신규STANDBY0. 공식자료 입력 패키지5회차10문항은 준비됐으나 운영 미반영. 중앙경영경제10회차는 기존 Essay/Math의 개별 유료 제출을 단순 결합하지 않고 단일 예약으로 연결하는 계약 보완이 필요하다. 신규Provider/APP빌드/운영배포0.
+
+APP b08a4652d0efd0d557b6396b4f47312cbd2dc447 push/remote 일치. WEB code1c6339b/deployment2cc8cd0a, Worker3e31db73 유지. [후속 SQL·공식자료·보류 원인](https://github.com/LC3808/legendstudy-app/blob/b08a4652d0efd0d557b6396b4f47312cbd2dc447/wiki/essay-group-1a-20261025.md#연속-연결--중앙경영경제경희인문사회).
