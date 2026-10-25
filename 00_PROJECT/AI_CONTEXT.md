@@ -10,6 +10,14 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-26 최신 마감 — 4대학 WEB STANDBY 82회차
+
+중앙21·경희24·성균16·한양21, 신규21회차(한양상경8/중앙11/경희2). 한양2025모의 인문·상경2회차는 공식자료 부족으로 미완료. **STANDBY / OWNER QA PENDING**, 실제 Provider 평가/E2E PASS 아님. Provider·신규run·차감0, 일반계정 잔액10. WEB `a8f3ba51-4c00-4bd7-8896-72f233d17817`/source `a6accdf`, Worker `5fe85e6c-2ba4-4562-8943-b2d2ead9eb6b`100%. Native 혼합 제출/결과 호환 GAP; APP빌드·스토어 작업 없음.
+
+[Canonical 인수인계: 범위·실측·SQL 재실행 금지·Owner QA·롤백](https://github.com/LC3808/legendstudy-app/blob/839b156d643226fd255c959baf76712c81c9377c/wiki/essay-handoff-20261025-final.md#2026-10-26-최종-추가-작업--standby-82회차). 아래 이전 시점 보류/승인 대기 기록보다 이 마감과 canonical 기록을 먼저 읽는다. 새로운 개발은 종료했으며 다음은 Owner 실제 답안 검수다. 기존 Credit/History/Ledger/Secret 보존.
+
+
+
 ## 2026-10-25 최신 Owner 정책 — 전체 대학 STANDBY
 
 [전체 대학 공통 개발 원칙](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책). 실제 Provider 평가·가상답안·문항별 품질 검수는 STANDBY의 선행조건이 아니다. 전체 회차의 문항/PDF/입력·저장/Registry/공식근거/기존Worker·승인 연결만 완료하고 **STANDBY / OWNER QA PENDING**으로 구분한다. E2E PASS나 Owner검수완료로 표시하지 않는다. 기존 인증·공개승인·Credit·History·Ledger를 보존하며 버튼 강제활성화 금지.

@@ -1,8 +1,8 @@
-최종 마감: [내일 재개 인수인계](https://github.com/LC3808/legendstudy-app/blob/codex/material-service-app-20261022/wiki/essay-handoff-20261025-final.md). 개발 중단·Mac 종료는 Owner 담당.
+## 2026-10-26 최신 마감 — 4대학 WEB STANDBY 82회차
 
-<!-- 1-A latest 2026-10-25 -->
+중앙21·경희24·성균16·한양21, 신규21회차(한양상경8/중앙11/경희2). 한양2025모의 인문·상경2회차는 공식자료 부족으로 미완료. **STANDBY / OWNER QA PENDING**, 실제 Provider 평가/E2E PASS 아님. Provider·신규run·차감0, 일반계정 잔액10. WEB `a8f3ba51-4c00-4bd7-8896-72f233d17817`/source `a6accdf`, Worker `5fe85e6c-2ba4-4562-8943-b2d2ead9eb6b`100%. Native 혼합 제출/결과 호환 GAP; APP빌드·스토어 작업 없음.
 
-성균언어16회차 문제 확인 버튼 표시, 2025수시1교시 stale PDF승인행3개 수정·렌더 확인. 한양 준비된 인문13회차 STANDBY, 상경8회차는 수리 혼합 단일예약 경로 부재로 보류. 추가2025모의2회차 원본미확보. Provider/차감/APP빌드0·잔액10. WEB f5cebe5/Production d4037191, Worker238ab93f100%. [최종범위·SQL·복구·실측](../90_HISTORY/2026-10-25-essay-group-1a.md#2026-10-25-최종-범위--성균-pdf-수정한양-standby).
+[Canonical 인수인계: 범위·실측·SQL 재실행 금지·Owner QA·롤백](https://github.com/LC3808/legendstudy-app/blob/839b156d643226fd255c959baf76712c81c9377c/wiki/essay-handoff-20261025-final.md#2026-10-26-최종-추가-작업--standby-82회차). 아래 이전 시점 보류/승인 대기 기록보다 이 마감과 canonical 기록을 먼저 읽는다. 새로운 개발은 종료했으며 다음은 Owner 실제 답안 검수다. 기존 Credit/History/Ledger/Secret 보존.
 
 <!--
 DOCUMENT_STATUS: CANONICAL

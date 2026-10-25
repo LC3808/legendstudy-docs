@@ -1,5 +1,12 @@
 # Owner 1-A 전환 — 2026-10-25
 
+## 2026-10-26 최신 마감 — 4대학 WEB STANDBY 82회차
+
+중앙21·경희24·성균16·한양21, 신규21회차(한양상경8/중앙11/경희2). 한양2025모의 인문·상경2회차는 공식자료 부족으로 미완료. **STANDBY / OWNER QA PENDING**, 실제 Provider 평가/E2E PASS 아님. Provider·신규run·차감0, 일반계정 잔액10. WEB `a8f3ba51-4c00-4bd7-8896-72f233d17817`/source `a6accdf`, Worker `5fe85e6c-2ba4-4562-8943-b2d2ead9eb6b`100%. Native 혼합 제출/결과 호환 GAP; APP빌드·스토어 작업 없음.
+
+[Canonical 인수인계: 범위·실측·SQL 재실행 금지·Owner QA·롤백](https://github.com/LC3808/legendstudy-app/blob/839b156d643226fd255c959baf76712c81c9377c/wiki/essay-handoff-20261025-final.md#2026-10-26-최종-추가-작업--standby-82회차). 아래 이전 시점 보류/승인 대기 기록보다 이 마감과 canonical 기록을 먼저 읽는다. 새로운 개발은 종료했으며 다음은 Owner 실제 답안 검수다. 기존 Credit/History/Ledger/Secret 보존.
+
+
 ## 중앙 인문사회 실행 장애 — Owner 조치 대기
 
 중앙10회차 기존연결재사용,경영경제는인문완료후Owner확인전착수금지. 현재중앙runs0/Provider0/차감0. Worker CPU30초설정요청이HTTP400/100328(Free plan은CPU설정불가)으로거절돼Free플랜확정. Workers Free10ms제약과실제자원초과/초기화오류확인. 새version/배포변경0,WEB2cc8cd0a/Worker53d20942 유지. Owner에게Workers Paid전환요청(비용계정작업직접실행). 이후기존소스/Secret보존CPU설정·최소실행경로확인. 아직실서비스완료아님. [근거·재개](https://github.com/LC3808/legendstudy-app/blob/fab0234/wiki/essay-group-1a-20261025.md#2026-10-25-중앙대-인문사회-실서비스--실행-한도-장애-확인).
