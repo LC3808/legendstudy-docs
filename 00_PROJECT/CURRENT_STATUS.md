@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-중앙인문10회차 실서비스우선,Owner확인전경영경제금지. Worker Free플랜CPU10ms/API100328확정,Workers Paid전환 Owner조치대기. 기존자료/SQL보존,중앙요청0·차감0. WEB2cc8cd0a/Worker53d20942,APP빌드/수정중단. [장애·재개](../90_HISTORY/2026-10-25-essay-group-1a.md).
+중앙인문10회차 실서비스우선,Owner확인전경영경제금지. Owner Paid전환후Worker3e31db73 CPU30초반영(코드/바인딩보존). 중앙2026수시3문항23b818bd실평가완료·1Credit정산·WEB결과/History/무료재작성진입. 기존자료/SQL보존. WEB2cc8cd0a,APP빌드/수정중단. [장애·재개](../90_HISTORY/2026-10-25-essay-group-1a.md).
 
 <!--
 DOCUMENT_STATUS: CANONICAL
