@@ -1,6 +1,6 @@
 <!-- 1-A latest 2026-10-25 -->
 
-중앙인문10회차 실서비스우선,Owner확인전경영경제금지. Owner Paid전환후Worker3e31db73 CPU30초반영(코드/바인딩보존). 중앙2026수시3문항23b818bd실평가완료·1Credit정산·WEB결과/History/무료재작성진입. 기존자료/SQL보존. WEB2cc8cd0a,APP빌드/수정중단. [장애·재개](../90_HISTORY/2026-10-25-essay-group-1a.md).
+중앙인문10회차·30문항 WEB STANDBY / OWNER QA PENDING. [전체 대학 공통 정책](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책): 실제 평가 없이 기존 자료·ID·입력·승인 연결. Owner확인후 중앙경영경제→경희→성균. 기존 성공기록/정책보존,APP빌드중단.
 
 <!--
 DOCUMENT_STATUS: CANONICAL

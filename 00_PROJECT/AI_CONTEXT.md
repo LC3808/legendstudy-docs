@@ -10,6 +10,13 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## 2026-10-25 최신 Owner 정책 — 전체 대학 STANDBY
+
+[전체 대학 공통 개발 원칙](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책). 실제 Provider 평가·가상답안·문항별 품질 검수는 STANDBY의 선행조건이 아니다. 전체 회차의 문항/PDF/입력·저장/Registry/공식근거/기존Worker·승인 연결만 완료하고 **STANDBY / OWNER QA PENDING**으로 구분한다. E2E PASS나 Owner검수완료로 표시하지 않는다. 기존 인증·공개승인·Credit·History·Ledger를 보존하며 버튼 강제활성화 금지.
+
+중앙인문10회차·30문항 WEB STANDBY(기존 연결증거 재사용) → Owner확인 → 중앙경영경제 → 경희 → 성균. 다른 대학은 지정 시 진행. 모든유형 공통원칙이며 일괄 공개승인이 아니다. 기존 운영Worker3e31db73/WEB2cc8cd0a 유지, APP수정·빌드·스토어 중단. 이번정책반영 Provider/DB/코드/배포변경0.
+
+
 ## Restore — 2026-10-25 Native APP / MY Owner rollback
 
 [최신 후보 검증](../90_HISTORY/2026-10-25-native-app-release.md)부터 확인. WEB e9f1d4a 운영 반영. APP MY 재설계는 Owner 실기기 검수 후 철회, 기존 UI 복원. Credit·회차·결과 개선 유지. 스토어 최종 승인 전 제출 금지. 과거 날짜의 NOT_APPLIED/HOLD 문구를 현재 운영 상태로 단정하지 말 것.

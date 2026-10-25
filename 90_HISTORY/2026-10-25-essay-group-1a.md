@@ -121,3 +121,9 @@ Provider영수증6(평가3+기존독립검수3), 입력51324/출력6510tokens. c
 잔여표시문제: 평가결과는자동표시됐으나앞서노출된‘평가완료를아직확인하지못했어요’안내문구가함께남았다. History에는정상완료이며정산/결과저장실패아님. 별도최소표시수정대상으로기록,이번에UI/WEB재배포확대안함. Owner화면확인전경영경제작업금지.
 
 복구: 기존Worker53d20942버전으로deployment전환가능하나이전실행한도장애재현가능. 정상3e31db73유지우선. SQL재실행·Secret변경·기존요청새예약우회금지. evidence: text-expansion/central-cpu-limit-candidate.json.
+
+## 2026-10-25 최신 Owner 정책 — 전체 대학 STANDBY
+
+[전체 대학 공통 개발 원칙](https://github.com/LC3808/legendstudy-app/blob/7419d631355a2d59ba8b9e80770747cf26b94589/wiki/essay-batch-service-20261023.md#2026-10-25--전체-대학-standby-공통-정책). 실제 Provider 평가·가상답안·문항별 품질 검수는 STANDBY의 선행조건이 아니다. 전체 회차의 문항/PDF/입력·저장/Registry/공식근거/기존Worker·승인 연결만 완료하고 **STANDBY / OWNER QA PENDING**으로 구분한다. E2E PASS나 Owner검수완료로 표시하지 않는다. 기존 인증·공개승인·Credit·History·Ledger를 보존하며 버튼 강제활성화 금지.
+
+중앙인문10회차·30문항 WEB STANDBY(기존 연결증거 재사용) → Owner확인 → 중앙경영경제 → 경희 → 성균. 다른 대학은 지정 시 진행. 모든유형 공통원칙이며 일괄 공개승인이 아니다. 기존 운영Worker3e31db73/WEB2cc8cd0a 유지, APP수정·빌드·스토어 중단. 이번정책반영 Provider/DB/코드/배포변경0.
