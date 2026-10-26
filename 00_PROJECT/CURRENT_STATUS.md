@@ -1,3 +1,11 @@
+## 2026-10-26 최신 — 외대·건국·서강 신규 54회차 STANDBY
+
+한국외대 대상20/신규20/보류0, 건국 대상14/신규12/기존1/보류1, 서강 대상23/신규22/기존1/보류0. **일반계정 Production WEB에서 전체 답안 입력·저장·PDF·서버 1 Credit 안내창까지 확인**, 최종 제출 취소. STANDBY / OWNER QA PENDING이며 E2E PASS 아님. Provider·신규평가·차감0. 기존 중앙21·경희24·성균16·한양21=82회차 보존. 고려대 변경0, APP UI/빌드/스토어 작업0.
+
+건국2026수시 인문1회차는 기존 제출 처리 상태 확인 안내로 서버 안내창 확인을 보류했다. 기존 답안·제출키·History를 지우지 않는다. WEB `aedbf200-98f1-46c9-b565-a94bb9d3fddf` / source `c01caf0`, Worker `a99a7cfc-022d-4408-84b5-cc9c44f967dd` 100%. 기존91정책·금융/조회5함수·기존ID 보존 확인. 공개 ID142는 STANDBY 완료 수와 구분한다. Worker/Pages Secret 보존.
+
+[Canonical 전체 회차 목록·SQL 적용/재실행 금지·Owner QA·복구·후속 순서](https://github.com/LC3808/legendstudy-app/blob/8aaf6fe83abd678635e89bb867d7b362b1acdc6e/wiki/essay-standby-expansion-20261026.md). APP/Worker/Wiki branch `codex/material-service-app-20261022`, WEB branch `codex/web-app-release-20261024`. 기존82회차 마감은 아래 역사 기록으로 보존한다. 이번 추가 개발 종료, 다음은 Owner 실제 답안 검수와 지정 오류 수정이다.
+
 ## 2026-10-26 최신 마감 — 4대학 WEB STANDBY 82회차
 
 중앙21·경희24·성균16·한양21, 신규21회차(한양상경8/중앙11/경희2). 한양2025모의 인문·상경2회차는 공식자료 부족으로 미완료. **STANDBY / OWNER QA PENDING**, 실제 Provider 평가/E2E PASS 아님. Provider·신규run·차감0, 일반계정 잔액10. WEB `a8f3ba51-4c00-4bd7-8896-72f233d17817`/source `a6accdf`, Worker `5fe85e6c-2ba4-4562-8943-b2d2ead9eb6b`100%. Native 혼합 제출/결과 호환 GAP; APP빌드·스토어 작업 없음.
