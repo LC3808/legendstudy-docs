@@ -1,3 +1,9 @@
+## 2026-10-26 — 인하대 34회차 WEB STANDBY
+
+인문10·자연15·의예9, 총34회차92문항. 자연/의예 별도 공식PDF·근거/ID 연결. 일반사용자 WEB에서34회차 PDF·입력/저장·활성CTA·서버1Credit확인창 확인, 최종제출/Provider0·인하runs0. STANDBY / OWNER QA PENDING이며 평가 E2E PASS가 아니다. 기존 제출/예약/정산함수5개·Credit/History보존. 화이트 대학별Theme PC/400px 확인.
+
+WEB `b62b123` / Pages `48b95117-75fe-488e-a7bc-6fb243778da1` success, Worker `e85c587b-46fe-4abd-b871-3c84eb4305d7`100%. 승인 Registry/연결SQL 전부적용, 재실행금지. APP Native 변경/빌드0. [Canonical 대상34·공식파일 주의·검사·복구·Owner QA](https://github.com/LC3808/legendstudy-app/blob/5449684/wiki/inha-standby-20261026.md). 아래는 이전 상태 기록이다.
+
 2026-10-26 후속: WEB `0704f33` / Production `069e9c29-c2a6-48c5-89d1-7a3c046b077e` success. 미제공 회차 하단 비활성 ‘첨삭 서비스 제공 예정’ 표시, 조회오류/확인중은 별도 유지. 고려 자연 운영조회는 오류가 관찰돼 실제 미제공 버튼 확인과 구분. Canonical `wiki/essay-web-studio-ui-20261026.md` 참조.
 
 ## 2026-10-26 — 문항 토글·입력 메뉴 배포
