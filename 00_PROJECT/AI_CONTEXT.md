@@ -1,6 +1,6 @@
 ## 2026-10-26 — 인하 자연 다중 사진 추출 복구
 
-운영 저장 오류(reading_order unique 충돌) 수정. WEB3e2e0e4 / Pages00f8c3a8 Production. 기존 Q1/Q2/Q3 사진4/2/2장·attempt 보존, 추출25/23/16영역 COMPLETED 및 수정/확인 UI 표시. 학생 확인0·유료평가0·Credit7유지. Owner 내용 확인 후 제출버튼/1Credit 안내창 확인 대기, 전체 완료/E2E PASS 아님. SQL/DB구조/평가Worker/Secret/APP 변경0. [Canonical 원인·보존·남은 단계·롤백](https://github.com/LC3808/legendstudy-app/blob/22da575/wiki/inha-photo-extraction-20261026.md). 아래는 이전 상태 기록이다.
+운영 저장 오류(reading_order unique 충돌) 수정. WEB3e2e0e4 / Pages00f8c3a8 Production. 기존 Q1/Q2/Q3 사진4/2/2장·attempt 보존, 추출25/23/16영역 COMPLETED 및 수정/확인 UI 표시. Owner 확인 후 동일 attempt3개 CONFIRMED·사진8장 보존 확인. 기존3문항 요청 fe6a3c4b가 이미 접수/1Credit예약 상태이며 사용확정·평가완료 미확정. 추가 제출/재추출 없음. 모바일·1Credit 안내창 직접 확인 미수행, E2E PASS 아님. SQL/DB구조/평가Worker/Secret/APP 변경0. [Canonical 원인·보존·남은 단계·롤백](https://github.com/LC3808/legendstudy-app/blob/828df74991703c4984150158f9866e340e7eed9f/wiki/inha-photo-extraction-20261026.md). 아래는 이전 상태 기록이다.
 
 ## 2026-10-26 — 대학 브랜드 히어로 Production
 
