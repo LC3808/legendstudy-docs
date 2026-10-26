@@ -1,3 +1,9 @@
+## 2026-10-26 — 한양2027 모의 상경 사진 확인 경로 수정
+
+실제 운영 조사: Q1 Essay/Q2 Math child 연결이며 시험 전체 Math 전환 아님. 사진 추출 COMPLETED/학생확인0, 평가·회차·Credit예약0. 해당 시험의 기존 사진 입력을 자동 복원하는 최소 WEB 수정 반영(`2737bf18-b6f7-453f-b784-48bdd2ae0d04`, source `d861586`). Worker `a99a7cfc`·DB·Secret·Credit/History/Ledger 그대로. 일반계정 재진입 시 기존 내용·‘이 내용으로 확인’ 자동 표시 확인. 실제 학생 확인 이후 제출/평가는 Owner 대기이며 E2E PASS 아님. 새 Provider/OCR 호출0.
+
+[Canonical 장애 원인·기존 계약·Owner 다음 순서·복구](https://github.com/LC3808/legendstudy-app/blob/87810aa4f499bff3be00cda27513af8c90c6d6e9/wiki/hanyang-mixed-incident-20261026.md). 앞선 신규54 및 기존82 STANDBY 범위는 보존한다.
+
 ## 2026-10-26 최신 — 외대·건국·서강 신규 54회차 STANDBY
 
 한국외대 대상20/신규20/보류0, 건국 대상14/신규12/기존1/보류1, 서강 대상23/신규22/기존1/보류0. **일반계정 Production WEB에서 전체 답안 입력·저장·PDF·서버 1 Credit 안내창까지 확인**, 최종 제출 취소. STANDBY / OWNER QA PENDING이며 E2E PASS 아님. Provider·신규평가·차감0. 기존 중앙21·경희24·성균16·한양21=82회차 보존. 고려대 변경0, APP UI/빌드/스토어 작업0.
