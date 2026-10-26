@@ -1,3 +1,7 @@
+## 2026-10-26 관리자 Credit P0
+
+[조회RPC 승인적용·WEB배포·P1 검토](../90_HISTORY/REVIEWS/2026-10-26-admin-credit-directory.md). 대학 연결 상태는 별도 정본을 따른다.
+
 ## 2026-10-24 최신 — 다대학 묶음 적용·숭실 WEB/APP 검증
 
 2026-10-24 논술LAB Codex 5%중단: [Claude 최종 인수인계](../90_HISTORY/HANDOFF/2026-10-24-essay-lab-claude-handoff.md). 기존성공유지,신규개발·Provider중단,일반공개12/전체서비스미완료.
