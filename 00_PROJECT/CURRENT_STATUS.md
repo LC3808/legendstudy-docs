@@ -1,3 +1,7 @@
+## 2026-10-26 — 인하 자연 다중 사진 추출 복구
+
+운영 저장 오류(reading_order unique 충돌) 수정. WEB3e2e0e4 / Pages00f8c3a8 Production. 기존 Q1/Q2/Q3 사진4/2/2장·attempt 보존, 추출25/23/16영역 COMPLETED 및 수정/확인 UI 표시. 학생 확인0·유료평가0·Credit7유지. Owner 내용 확인 후 제출버튼/1Credit 안내창 확인 대기, 전체 완료/E2E PASS 아님. SQL/DB구조/평가Worker/Secret/APP 변경0. [Canonical 원인·보존·남은 단계·롤백](https://github.com/LC3808/legendstudy-app/blob/22da575/wiki/inha-photo-extraction-20261026.md). 아래는 이전 상태 기록이다.
+
 ## 2026-10-26 — 대학 브랜드 히어로 Production
 
 Catalog42 공통 설정, Manus27/Claude33 매칭. 원문 직접확인 A1/B11 공식색 적용, C5/D2/E23은 임시 UI 색상으로 구분. 경희 원문 R164 G15 B22 → #A40F16(Manus 오류 정정). 인하·건국 원문 접근 재확인 보류, 기존 UI색 유지. WEB `86282c7f352a7fafbffcb6f3fd99288fbc7a13a2`, Pages `e8def797-e14c-40f0-ad05-d50017f8fc7f` production/success. PC/400px 대표화면·선택/입력/일정 확인, Provider/SQL/차감0. APP Native/DB/Worker/Secrets 불변. Typecheck·7검사·Build PASS, lint 기존2경고. [Canonical 근거·42설정·한계·롤백](https://github.com/LC3808/legendstudy-app/blob/6c80c8c/wiki/university-brand-hero-20261026.md). 아래는 이전 상태 기록이다.
