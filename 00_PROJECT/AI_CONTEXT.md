@@ -1,3 +1,9 @@
+## 2026-10-26 — WEB 작성·진행 UI Production 반영
+
+네이비 대학 히어로·전체 문항 카드·저장/사진 확인·회차 제출·실제 상태 진행 모달·History 목록 표현 변경. 결과 상세·Flutter APP·DB·평가 Worker·Secret 불변. Pages `93aaf61c-13f3-463e-8257-099c6178a028` production/success, 소스 `894180c`, WEB 최종 `376e6b2`는 후속 테스트만 추가. Typecheck/build/UI 검사 PASS, lint 오류0/기존경고2. 일반계정 입력·부분제출 모달·PDF 확인, 최종평가 제출0/Provider0/추가차감0. 실제 진행은 합성 상태로 검사했으며 새 평가 E2E로 보고하지 않는다.
+
+[Canonical UI·검사·제한·복구](https://github.com/LC3808/legendstudy-app/blob/07b356823675a92af17a330e66acec34b1a0acca/wiki/essay-web-studio-ui-20261026.md). 이전 고려·상경 기록은 해당 시점의 증거로 보존한다. UI 롤백은 Pages `758c9a18-f1a2-49b3-87f9-bd0b9e52b8ba`; DB/Worker 복구 불필요.
+
 ## 2026-10-26 — 고려4회차 STANDBY·서강 예약 해제 완료
 
 Owner 승인SQL 사전18/사후7 true. 고려 인문4회차8문항은 일반계정 WEB에서 PDF·전체 문항 표시·입력 자동저장·첨삭 버튼 활성화 확인. 기존2025오후Q2 예외 보존. 실제 평가 미제출/OWNER QA PENDING. Worker `65fd5977-fbac-460a-bfc9-a38d836f6357`, WEB `758c9a18-f1a2-49b3-87f9-bd0b9e52b8ba` / `225cc2d`. 공개 scope147, Secret·Credit·History 계약 보존. 서강 실패 요청은 승인에 따라 release1/consume0 완료. 한양은 사진내용 확인0으로 제출 차단/예약0, Owner 확인 필요. 추가 Provider0. 잘못된 파일 확인 모달은 제안만 기록, UI 미변경.
