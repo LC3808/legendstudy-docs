@@ -1,3 +1,9 @@
+## 2026-10-26 — 서강·고려 카드 활성화 및 우선 배치
+
+운영 일반계정에서 서강→고려 순서와 첨삭 시작 링크 확인. 고려는 Owner 명시 승인으로 2025수시 인문오후 문제2만 예외 공개하며 전체회차 완료 수에 포함하지 않는다. WEB `c244b76f-aafa-4301-bdb7-70b922b4cc3c` / `2fbde34`, Worker `57dfa6c1-6bc8-4616-8dbe-78e516df727c`, 공개 scope143. 기존 DB 승인·Secret·Credit·History·Ledger 보존, SQL쓰기/Provider/평가제출0. 한양 사진확인 대기 상태 유지.
+
+[Canonical 범위·Owner 예외 결정·복구](https://github.com/LC3808/legendstudy-app/blob/c6b2c12521d2c5b2e34d687862b3a91493d1507e/wiki/essay-standby-expansion-20261026.md).
+
 ## 2026-10-26 — 한양2027 모의 상경 사진 확인 경로 수정
 
 실제 운영 조사: Q1 Essay/Q2 Math child 연결이며 시험 전체 Math 전환 아님. 사진 추출 COMPLETED/학생확인0, 평가·회차·Credit예약0. 해당 시험의 기존 사진 입력을 자동 복원하는 최소 WEB 수정 반영(`2737bf18-b6f7-453f-b784-48bdd2ae0d04`, source `d861586`). Worker `a99a7cfc`·DB·Secret·Credit/History/Ledger 그대로. 일반계정 재진입 시 기존 내용·‘이 내용으로 확인’ 자동 표시 확인. 실제 학생 확인 이후 제출/평가는 Owner 대기이며 E2E PASS 아님. 새 Provider/OCR 호출0.
