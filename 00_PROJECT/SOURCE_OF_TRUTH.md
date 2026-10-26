@@ -1,3 +1,9 @@
+## 2026-10-26 — 문항 토글·입력 메뉴 배포
+
+WEB `8cb9342`, Production `3909b32a-faa2-4d75-b9d8-a72c5c66005a` success. 첫문항 펼침/나머지접힘, 저장 후 다음 미작성 문항·사용자 토글 우선, TEXT/문항별Math 입력 구분. 운영 한양2027상경 기존 텍스트/사진 복원·CTA 확인, 실제 제출/Provider0. 관련17검사·typecheck/build PASS, lint 기존경고2. 건국자연1번 실제 Math 최초/재첨삭·합성인쇄이미지 성공은 재사용; 다문항 자연계/타대학 공식시험 성공은 확정하지 않음. APP·DB·Worker·Credit 계약 불변.
+
+[Canonical UI·기존 Math 증거·복구](https://github.com/LC3808/legendstudy-app/blob/f4aa989f9a58e9268873a9606cad6000a5a63ab9/wiki/essay-web-studio-ui-20261026.md). UI 롤백은 Pages `bb120a6a-c50c-4ced-80ed-d11860fec1f0`. 아래는 이전 배포 기록이다.
+
 ## 2026-10-26 — 완료 결과 화면 통합 배포
 
 최신 WEB `ce433f8`, Production `bb120a6a-c50c-4ced-80ed-d11860fec1f0` success. 작성 화면 하단 결과 제거, 완료/History 동일 결과 전용 URL·컴포넌트 사용. 전체 문항 완료 시만 자동 이동, 4단계 표시 삭제, 비교 없는 성장 영역 숨김. 기존 한양 완료 결과와 무료 재작성 0Credit UI 확인. Typecheck·lint(기존경고2)·관련UI·build 확인, Provider/추가차감0. APP·DB·Worker·Secret 불변.
