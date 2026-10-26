@@ -1,3 +1,9 @@
+## 2026-10-26 — 고려4회차 STANDBY·서강 예약 해제 완료
+
+Owner 승인SQL 사전18/사후7 true. 고려 인문4회차8문항은 일반계정 WEB에서 PDF·전체 문항 표시·입력 자동저장·첨삭 버튼 활성화 확인. 기존2025오후Q2 예외 보존. 실제 평가 미제출/OWNER QA PENDING. Worker `65fd5977-fbac-460a-bfc9-a38d836f6357`, WEB `758c9a18-f1a2-49b3-87f9-bd0b9e52b8ba` / `225cc2d`. 공개 scope147, Secret·Credit·History 계약 보존. 서강 실패 요청은 승인에 따라 release1/consume0 완료. 한양은 사진내용 확인0으로 제출 차단/예약0, Owner 확인 필요. 추가 Provider0. 잘못된 파일 확인 모달은 제안만 기록, UI 미변경.
+
+[Canonical 결과·미완료·복구](https://github.com/LC3808/legendstudy-app/blob/a01ebf34deed59fe3757282950bbe66163a53008/wiki/commerce-korea-20261026.md). 아래 승인대기 기록은 이전 시점이다.
+
 ## 2026-10-26 — 상경 정책·고려 연결 준비 / 승인 대기
 
 Worker `c2766277-c063-4ef8-8ea9-af7c841f33a9` 상경 정책 선택 모듈 반영, 기존 Essay/Math·정산·History 보존. WEB `c244b76f`/`2fbde34` 및 진행 직후 UI 불변. 고려인문4회차8문항 SQL준비·사전18true/승인대기, 신규STANDBY0, 기존오후Q2 보존. 자연5회차 Math연결 미완료. 한양사진 Owner확인대기/예약0. 서강2025모의경제경영2차 대표평가 독립검수실패, 예약1/확정0/해제승인대기. Provider2회/27,930tokens/금액NULL. 성공E2E로 보고하지 않는다.
