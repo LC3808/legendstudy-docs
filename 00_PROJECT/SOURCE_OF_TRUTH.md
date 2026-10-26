@@ -1,3 +1,7 @@
+## 2026-10-26 — 기존 첨삭 시험 재진입 WEB 배포
+
+WEB `b49d52f` / Pages `460e65a3-30fc-4300-9c1a-71bbfff1aa48` Production success. 시험 재선택 시 자동 이동 대신 기록 확인/독립 새 작성 모달. exact exam ID History, 기존 초안·평가 보존, 신규1/재작성0Credit 분리. 한양2026수시 인문 오후1(Owner 문구 오전1은 운영 목록 없음) 일반계정 PC/400px 확인. 기존1314자 복원·결과 유지·Credit7→7. Provider/최종제출/SQL0, Worker/APP 변경0. 새 초안은 브라우저 보관이며 기기간 동기화는 미추가. [Canonical 구현·검사·복구](https://github.com/LC3808/legendstudy-app/blob/5a75369/wiki/essay-web-studio-ui-20261026.md#2026-10-26--기존-첨삭-시험-재진입과-독립-초안). 아래는 이전 상태 기록이다.
+
 ## 2026-10-26 — 인하대 34회차 WEB STANDBY
 
 인문10·자연15·의예9, 총34회차92문항. 자연/의예 별도 공식PDF·근거/ID 연결. 일반사용자 WEB에서34회차 PDF·입력/저장·활성CTA·서버1Credit확인창 확인, 최종제출/Provider0·인하runs0. STANDBY / OWNER QA PENDING이며 평가 E2E PASS가 아니다. 기존 제출/예약/정산함수5개·Credit/History보존. 화이트 대학별Theme PC/400px 확인.
