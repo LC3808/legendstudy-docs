@@ -1,3 +1,9 @@
+## 2026-10-26 — 상경 정책·고려 연결 준비 / 승인 대기
+
+Worker `c2766277-c063-4ef8-8ea9-af7c841f33a9` 상경 정책 선택 모듈 반영, 기존 Essay/Math·정산·History 보존. WEB `c244b76f`/`2fbde34` 및 진행 직후 UI 불변. 고려인문4회차8문항 SQL준비·사전18true/승인대기, 신규STANDBY0, 기존오후Q2 보존. 자연5회차 Math연결 미완료. 한양사진 Owner확인대기/예약0. 서강2025모의경제경영2차 대표평가 독립검수실패, 예약1/확정0/해제승인대기. Provider2회/27,930tokens/금액NULL. 성공E2E로 보고하지 않는다.
+
+[Canonical 실제 결과·SQL·요청ID·재개순서·복구](https://github.com/LC3808/legendstudy-app/blob/178213c82ef79484df68ae20507702cff902d971/wiki/commerce-korea-20261026.md).
+
 ## 2026-10-26 — 서강·고려 카드 활성화 및 우선 배치
 
 운영 일반계정에서 서강→고려 순서와 첨삭 시작 링크 확인. 고려는 Owner 명시 승인으로 2025수시 인문오후 문제2만 예외 공개하며 전체회차 완료 수에 포함하지 않는다. WEB `c244b76f-aafa-4301-bdb7-70b922b4cc3c` / `2fbde34`, Worker `57dfa6c1-6bc8-4616-8dbe-78e516df727c`, 공개 scope143. 기존 DB 승인·Secret·Credit·History·Ledger 보존, SQL쓰기/Provider/평가제출0. 한양 사진확인 대기 상태 유지.
