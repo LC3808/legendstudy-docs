@@ -1,3 +1,5 @@
+2026-10-26 후속: WEB `0704f33` / Production `069e9c29-c2a6-48c5-89d1-7a3c046b077e` success. 미제공 회차 하단 비활성 ‘첨삭 서비스 제공 예정’ 표시, 조회오류/확인중은 별도 유지. 고려 자연 운영조회는 오류가 관찰돼 실제 미제공 버튼 확인과 구분. Canonical `wiki/essay-web-studio-ui-20261026.md` 참조.
+
 ## 2026-10-26 — 문항 토글·입력 메뉴 배포
 
 WEB `8cb9342`, Production `3909b32a-faa2-4d75-b9d8-a72c5c66005a` success. 첫문항 펼침/나머지접힘, 저장 후 다음 미작성 문항·사용자 토글 우선, TEXT/문항별Math 입력 구분. 운영 한양2027상경 기존 텍스트/사진 복원·CTA 확인, 실제 제출/Provider0. 관련17검사·typecheck/build PASS, lint 기존경고2. 건국자연1번 실제 Math 최초/재첨삭·합성인쇄이미지 성공은 재사용; 다문항 자연계/타대학 공식시험 성공은 확정하지 않음. APP·DB·Worker·Credit 계약 불변.
