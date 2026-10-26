@@ -1,3 +1,9 @@
+## 2026-10-26 — 완료 결과 화면 통합 배포
+
+최신 WEB `ce433f8`, Production `bb120a6a-c50c-4ced-80ed-d11860fec1f0` success. 작성 화면 하단 결과 제거, 완료/History 동일 결과 전용 URL·컴포넌트 사용. 전체 문항 완료 시만 자동 이동, 4단계 표시 삭제, 비교 없는 성장 영역 숨김. 기존 한양 완료 결과와 무료 재작성 0Credit UI 확인. Typecheck·lint(기존경고2)·관련UI·build 확인, Provider/추가차감0. APP·DB·Worker·Secret 불변.
+
+[Canonical 구현·운영 확인·복구](https://github.com/LC3808/legendstudy-app/blob/31ad1a90dd484f51fb7d69a50c4a97b13dc1573b/wiki/essay-web-studio-ui-20261026.md). 롤백은 Pages `93aaf61c-13f3-463e-8257-099c6178a028`만 대상. 아래 기록은 이전 배포 시점이다.
+
 ## 2026-10-26 — WEB 작성·진행 UI Production 반영
 
 네이비 대학 히어로·전체 문항 카드·저장/사진 확인·회차 제출·실제 상태 진행 모달·History 목록 표현 변경. 결과 상세·Flutter APP·DB·평가 Worker·Secret 불변. Pages `93aaf61c-13f3-463e-8257-099c6178a028` production/success, 소스 `894180c`, WEB 최종 `376e6b2`는 후속 테스트만 추가. Typecheck/build/UI 검사 PASS, lint 오류0/기존경고2. 일반계정 입력·부분제출 모달·PDF 확인, 최종평가 제출0/Provider0/추가차감0. 실제 진행은 합성 상태로 검사했으며 새 평가 E2E로 보고하지 않는다.
