@@ -1,3 +1,7 @@
+## 2026-10-26 — 대학 브랜드 히어로 Production
+
+Catalog42 공통 설정, Manus27/Claude33 매칭. 원문 직접확인 A1/B11 공식색 적용, C5/D2/E23은 임시 UI 색상으로 구분. 경희 원문 R164 G15 B22 → #A40F16(Manus 오류 정정). 인하·건국 원문 접근 재확인 보류, 기존 UI색 유지. WEB `86282c7f352a7fafbffcb6f3fd99288fbc7a13a2`, Pages `e8def797-e14c-40f0-ad05-d50017f8fc7f` production/success. PC/400px 대표화면·선택/입력/일정 확인, Provider/SQL/차감0. APP Native/DB/Worker/Secrets 불변. Typecheck·7검사·Build PASS, lint 기존2경고. [Canonical 근거·42설정·한계·롤백](https://github.com/LC3808/legendstudy-app/blob/6c80c8c/wiki/university-brand-hero-20261026.md). 아래는 이전 상태 기록이다.
+
 ## 2026-10-26 — 기존 첨삭 시험 재진입 WEB 배포
 
 WEB `b49d52f` / Pages `460e65a3-30fc-4300-9c1a-71bbfff1aa48` Production success. 시험 재선택 시 자동 이동 대신 기록 확인/독립 새 작성 모달. exact exam ID History, 기존 초안·평가 보존, 신규1/재작성0Credit 분리. 한양2026수시 인문 오후1(Owner 문구 오전1은 운영 목록 없음) 일반계정 PC/400px 확인. 기존1314자 복원·결과 유지·Credit7→7. Provider/최종제출/SQL0, Worker/APP 변경0. 새 초안은 브라우저 보관이며 기기간 동기화는 미추가. [Canonical 구현·검사·복구](https://github.com/LC3808/legendstudy-app/blob/5a75369/wiki/essay-web-studio-ui-20261026.md#2026-10-26--기존-첨삭-시험-재진입과-독립-초안). 아래는 이전 상태 기록이다.
