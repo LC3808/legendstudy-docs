@@ -10,6 +10,20 @@ SUPERSEDES: —
 SUPERSEDED_BY: —
 -->
 
+## LAB 출시 전 독립 감사 — 2026-10-27 — RECORDED (문서만, 코드/DB/Production 무변경)
+
+읽기 전용 제품·엔지니어링 독립 감사 기록. 운영후보 `legendstudy-lab codex/web-app-release-20261024
+@ 91c19ea`(+173 vs main 8991b51)와 `legendstudy-app` essay/credit feature 브랜치를 읽기 전용
+워크트리로 정적 분석. **Provider 호출·DB 쿼리·배포 없음.** 핵심 결론: (1) Credit 원장·성장 비교(비합산)·
+근거/원문 인용 계약은 견고 → 보존. (2) **출시 차단 후보(런타임 확인 필요)**: 평가 런타임 활성
+(`ESSAY_REVIEWED_RUNTIME_ENABLED`+Worker+Secret) 및 24개 대학 실서비스 연결은 코드로 미입증 →
+"24개 준비됨" 보고 금지. (3) **학습 가치 P1**: Owner §4.C "[수정된 문장 보기]"(수정된 문장 예시)가
+학생 화면에 미표시(`report.example`/`sentences[].example` 미렌더, 부재 강제 테스트 존재) — 의도적이나
+Owner 요구와 충돌. (4) 결과 렌더 경로 비일관(essay/math 경로 문장 다듬기 부재), 대학 정책 상수가
+2026-10-11 기준(덕성여대 상태 충돌), 베타 일일 2 Credit·피드백 보상 미구현(설계만). 독립 의견: 정식
+유료 출시 불가, 제한적 베타는 조건부 가능(대표 회차 E2E 확인·검수 회차만 공개·정산 무변경).
+상세: [감사 보고서](../90_HISTORY/REVIEWS/LEGENDSTUDY_LAB_PRODUCT_ENGINEERING_AUDIT_20261027.md).
+
 ## WEB Owner review — 2026-10-24 — IN PROGRESS / NOT DEPLOYED
 
 Production remains a21642c /6b69acb3-f497-48e4-8f79-559fc82a7b95. All Owner corrections remain one task. Owner confirmed omitted questions require a new paid round1Credit; existing submitted set alone qualifies for the existing free rewrite. Narrow Worker session/retry changes authorized. Owner supplied actual Production columns/functions, then applied additive admin reporting and session retry SQL; reported role/search_path verification PASS. WEB261 tests + build, local canonical Ledger18 checks and confirmed-failure-only retry/concurrent8 duplicate requests PASS. New Worker/WEB deployment, authenticated visual acceptance and image/Math session integration remain open. No Secret/evaluation-engine/Registry changes. [Detailed evidence](https://github.com/LC3808/legendstudy-lab/blob/codex/web-app-release-20261024/docs/owner-review-20261024/README.md).
