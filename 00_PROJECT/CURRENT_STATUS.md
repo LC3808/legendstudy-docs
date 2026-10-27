@@ -1,4 +1,4 @@
-<!--
+> **[OWNER P0 / 2026-10-27] 수리·상경·과학논술 시각적 스캐폴딩 코칭 시스템 — 11월 10일 베타 STANDBY 목표.** Claude·Grok·Manus 핵심 연구와 실행 게이트: [PRIORITY_MATH_VISUAL_COACHING_20261027.md](PRIORITY_MATH_VISUAL_COACHING_20261027.md). 이 우선순위는 기존 아래 상태 기록보다 최신 Owner 결정이며 구현 완료 선언이 아님.\n\n<!--
 DOCUMENT_STATUS: CANONICAL
 SCOPE: PROJECT
 LAST_VERIFIED: 2026-10-04 (PRICING-UX-CLEANUP-1D: legendstudy-lab feat/pricing-ux-cleanup @ f84b81e merged into main 3370dad and released to Production, PRODUCTION_VERIFIED on the live site; Math LAB consumer MATH-RELEASE-CLOSEOUT-1 (MATH-3B…7B) @ 6dec4f98887cee2e7c661996e083289b853054b3 local-verified 405 tests, PRODUCTION_NOT_APPLIED; all other domains retain their cited verification unchanged)
